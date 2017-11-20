@@ -1,0 +1,46 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Sitecore Commerce Engine",
+    "BootStrapFile": "Global",
+    "DeploymentId": "Deployment01",
+    "EnvironmentName": "HabitatMinions",
+    "EncryptionProtectionType": "Machine",
+    "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
+    "EncryptionSID": "Enter a valid SID for a domain registered user",
+    "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
+    "SitecoreIdentityServerUrl": "http://localhost:5050"
+  },
+  "ApplicationInsights": {
+    "InstrumentationKey": "",
+    "MinimumLevel": "Information"
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Information",
+      "System": "Warning",
+      "Microsoft": "Warning"
+    },
+    "ApplicationInsightsLoggingEnabled": false
+  },
+  "Serilog": {
+    "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
+    },
+    "FileSizeLimitBytes": 100000000
+  },
+  "Certificates": {
+    "Certificates": [
+      {
+        "Subject": "CN=storefront.engine",
+        "IssuerCN": "CN=storefront.engine",
+        "Thumbprint": "F1D8349D784BF672B99103C1C204A57556DD263A"
+      }
+    ]
+  } 
+}

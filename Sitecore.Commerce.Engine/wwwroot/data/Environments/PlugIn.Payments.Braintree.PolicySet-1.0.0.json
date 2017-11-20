@@ -1,0 +1,23 @@
+﻿{
+    "$type":  "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+    "ArtifactStoreId":  "1E72831D-50CE-43C2-A253-042BFB841CDF",
+    "DateCreated":  "2017-06-23T18:04:08.1660038Z",
+    "DateUpdated":  "2017-06-23T18:04:08.1760227Z",
+    "Id":  "Entity-PolicySet-BraintreePolicySet",
+    "Version":  1,
+    "IsPersisted":  false,
+    "Name":  "BraintreePolicySet",
+    "Policies":  {
+                     "$type":  "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+                     "$values":  [
+                                     {
+                                         "$type":  "Plugin.Sample.Payments.Braintree.BraintreeClientPolicy, Plugin.Sample.Payments.Braintree",
+                                         "Environment":  "sandbox",
+                                         "MerchantId":  0,
+                                         "PublicKey":  0,
+                                         "PrivateKey":  0,
+                                         "ConnectTimeout":  120000
+                                     }
+                                 ]
+                 }
+}

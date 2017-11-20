@@ -1,0 +1,64 @@
+{
+  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+  "ArtifactStoreId": "1E72831D-50CE-43C2-A253-042BFB841CDF",
+  "Id": "Entity-PolicySet-RelationshipsPolicySet",
+  "Version": 1,
+  "IsPersisted": false,
+  "Name": "RelationshipsPolicySet",
+  "Policies": {
+    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.RelationshipPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Type": "Sitecore.Commerce.Plugin.Catalog.Catalog",
+        "AllowedTargetTypes": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Category",
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem"
+          ]
+        },
+        "AllowedViews": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Master"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.RelationshipPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Type": "Sitecore.Commerce.Plugin.Catalog.Category",
+        "AllowedTargetTypes": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.Category",
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem"
+          ]
+        },
+        "AllowedViews": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Master"
+          ]
+        }
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.Catalog.RelationshipPolicy, Sitecore.Commerce.Plugin.Catalog",
+        "Type": "Sitecore.Commerce.Plugin.Catalog.SellableItem",
+        "AllowedTargetTypes": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Sitecore.Commerce.Plugin.Catalog.SellableItem"
+          ]
+        },
+        "AllowedViews": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [
+            "Master",
+            "Variant"
+          ]
+        }
+      }
+    ]
+  }
+}
