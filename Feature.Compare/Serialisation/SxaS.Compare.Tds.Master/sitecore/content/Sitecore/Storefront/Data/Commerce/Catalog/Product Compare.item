@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {FCB6F8C6-21FB-487F-8092-3F498145C7B6}
+database: master
+path: /sitecore/content/Sitecore/Storefront/Data/Commerce/Catalog/Product Compare
+parent: {848C044B-30CA-4D68-A43C-02164C972402}
+name: Product Compare
+master: {00000000-0000-0000-0000-000000000000}
+template: {39B86C7B-CC75-401D-8B75-A3C29978E7F1}
+templatekey: Product Compare
+created: 20170920T062741Z
+
+----version----
+language: en
+version: 1
+revision: 61d5b314-b13c-4aea-a41c-20512506f8fd
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170920T062741Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+61d5b314-b13c-4aea-a41c-20512506f8fd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170920T062741Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,198 @@
+﻿@using Sitecore.Commerce.XA.Foundation.Common
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods
+
+@model SxaS.Compare.Website.Models.ProductCompareListItemModel
+@{
+    if (Model == null)
+    {
+        return;
+    }
+
+    var catalogRenderingModel = Model.CatalogItemRenderingModel;
+}
+
+<div class="product-summary">
+    <div class="photo">
+        @if (catalogRenderingModel.CatalogItem != null)
+        {
+            using (Html.EditFrame(catalogRenderingModel.CatalogItem.Paths.FullPath, Constants.ItemPaths.EditFrameImages))
+            {
+                if (catalogRenderingModel.Images != null && catalogRenderingModel.Images.Count > 0)
+                {
+                    <a href="@catalogRenderingModel.Link">
+                        <img src="@catalogRenderingModel.Images[0].GetImageUrl(300, 300)" alt="product image" title="@catalogRenderingModel.DisplayName" />
+                    </a>
+                }
+                else
+                {
+                    <a href="@catalogRenderingModel.Link">
+                        @Html.Sitecore().Field("Image", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @catalogRenderingModel.DisplayName } } })
+                    </a>
+                }
+            }
+        }
+        else
+        {
+            if (catalogRenderingModel.Images != null && catalogRenderingModel.Images.Count > 0)
+            {
+                <a href="@catalogRenderingModel.Link">
+                    <img src="@catalogRenderingModel.Images[0].GetImageUrl(300, 300)" alt="product image" title="@catalogRenderingModel.DisplayName" />
+                </a>
+            }
+            else
+            {
+                <a href="@catalogRenderingModel.Link">
+                    @Html.Sitecore().Field("Image", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "title", @catalogRenderingModel.DisplayName } } })
+                </a>
+            }
+        }
+    </div>
+    
+
+    <div class="product-info">
+        <h5 class="product-title">
+            <a href="@catalogRenderingModel.Link">@catalogRenderingModel.DisplayName</a>
+        </h5>
+    </div>
+    
+    @{
+        var isVariant = catalogRenderingModel.LowestPricedVariantAdjustedPrice.HasValue;
+        var listPriceWithCurrency = string.Empty;
+
+        if (isVariant && catalogRenderingModel.LowestPricedVariantListPrice.HasValue)
+        {
+            listPriceWithCurrency = catalogRenderingModel.LowestPricedVariantAdjustedPriceWithCurrency;
+        }
+        else
+        {
+            listPriceWithCurrency = catalogRenderingModel.ListPriceWithCurrency;
+        }
+    }
+        
+    <div class="product-compare-details">
+        <ul class="compare-list">
+            <li class="compare-value">
+                <span class="title">Price:</span>
+                <span class="value">@listPriceWithCurrency</span>
+            </li>
+            <li class="compare-value">
+                <span class="title">Width:</span>
+                @GetIntCompareValue(Model.Width, "mm")
+            </li>
+            <li class="compare-value">
+                <span class="title">Height:</span>
+                @GetIntCompareValue(Model.Height, "mm")
+            </li>
+            <li class="compare-value">
+                <span class="title">Depth:</span>
+                @GetIntCompareValue(Model.Depth, "mm")
+            </li>
+            <li class="compare-value">
+                <span class="title">Volume:</span>
+                @GetIntCompareValue(Model.Volume, "l")
+            </li>
+            <li class="compare-value">
+                <span class="title">Energy Consumption:</span>
+                <span class="value">@Model.EnergyConsumption</span>
+            </li>
+            <li class="compare-value">
+                <span class="title">Energy Star Rating:</span>
+                <span class="value">@Model.EnergyStarRating</span>
+            </li>
+            <li class="compare-value">
+                <span class="title">Internal Lighting:</span>
+                <span class="value">@Model.InternalLighting</span>
+            </li>
+            <li class="compare-value">
+                <span class="title">Ice Dispenser:</span>
+                <span class="value">@Model.IceDispenser</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="remove-form" style="float: right; clear: both; width: 230px; margin: 30px 0;">
+        @{ var formDisabledAttr = Model.IsEdit ? "disabled" : "";}
+        @using (Ajax.BeginForm("RemoveProductFromCompareList", "ProductCompare", null, new AjaxOptions {OnBegin = "RemoveFromCompareForm.SetAddButton", OnSuccess = "RemoveFromCompareForm.OnSuccess", OnFailure = "RemoveFromCompareForm.OnFailure", HttpMethod = "Post"}))
+        {
+            @Html.ValidationSummary(true)
+            @Html.Hidden("removeFromCompareProductId", Model.SellableItemId)
+            @Html.AntiForgeryToken()
+            <button type="submit" class="remove-from-compare-btn" style="margin-right: 37px;" @formDisabledAttr>Remove from Compare</button>
+        }
+    </div>
+</div>
+
+
+@helper GetIntCompareValue(int value, string suffix)
+{
+    if (value != -1)
+    {
+        <span class="value">@value@suffix</span>
+    }
+    else
+    {
+        <span class="value">--</span>
+    }
+}
+
+
+
+
+
+
+
+
+
+<style>
+    .product-info {
+        height: 90px;
+    }
+
+    .product-compare-details {
+        margin-top: 10px;    
+    }
+
+    .compare-list .title {
+        float: left;
+        font-weight: bold;
+        margin-left: 20px;
+        font-size: 0.8em;
+    }
+
+    .compare-list .value {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .compare-list .compare-value {
+        clear: both;
+        height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .remove-from-compare-btn {
+        border: 2px solid #0e909f;
+        font-size: 14px !important;
+        font-weight: 400;
+        text-align: center !important;
+        background: #0e909f;
+        color: #fff !important;
+        text-shadow: none;
+        box-shadow: none;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 4px;
+        min-height: 42px;
+        height: 42px;
+        padding: 8px 25px 8px 25px;
+        width: 210px;
+    }
+
+    .photo img {
+        width: 225px;
+    }
+
+    .product-title {
+        text-align: center;
+    }
+</style>
