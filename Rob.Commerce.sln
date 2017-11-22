@@ -39,6 +39,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Brai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SxaS.Compare.Engine", "2. Feature\Feature.Compare\Engine\SxaS.Compare.Engine\SxaS.Compare.Engine.csproj", "{A86633CE-7F45-48C4-BC92-54E27078203C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation.ServiceProxy", "Foundation.ServiceProxy", "{BB1F8DD9-410B-4F8F-9323-0B4EFFC3CE79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "1. Foundation\Foundation.ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{99ED5D0F-2499-47B6-8BFA-7C6824335D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{A86633CE-7F45-48C4-BC92-54E27078203C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A86633CE-7F45-48C4-BC92-54E27078203C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A86633CE-7F45-48C4-BC92-54E27078203C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,8 @@ Global
 		{30845800-BC54-44FB-8645-AFFB0BA66965} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{F4427B4B-8338-4EFF-AD66-8C097189FACB} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{A86633CE-7F45-48C4-BC92-54E27078203C} = {B454B22B-73FD-4BA7-8D48-21653C42226D}
+		{BB1F8DD9-410B-4F8F-9323-0B4EFFC3CE79} = {8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}
+		{99ED5D0F-2499-47B6-8BFA-7C6824335D05} = {BB1F8DD9-410B-4F8F-9323-0B4EFFC3CE79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
