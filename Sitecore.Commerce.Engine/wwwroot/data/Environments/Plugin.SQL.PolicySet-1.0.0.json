@@ -1,24 +1,24 @@
 ﻿{
-  "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
-  "ArtifactStoreId": "1E72831D-50CE-43C2-A253-042BFB841CDF",
-  "Id": "Entity-PolicySet-SqlPolicySet",
-  "Version": 1,
-  "IsPersisted": false,
-  "Name": "SqlPolicySet",
-  "Policies": {
-    "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-    "$values": [
-      {
-        "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
-        "TrustedConnection": true,
-        "UserName": "",
-        "Password": "",
-        "Server": ".",
-        "Database": "SitecoreCommerce9_SharedEnvironments",
-        "AdditionalParameters": "",
-        "ConnectTimeout": 120000,
-        "CleanEnvironmentTimeout": 120000
-      }
-    ]
-  }
+    "$type":  "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
+    "ArtifactStoreId":  "1E72831D-50CE-43C2-A253-042BFB841CDF",
+    "Id":  "Entity-PolicySet-SqlPolicySet",
+    "Version":  1,
+    "IsPersisted":  false,
+    "Name":  "SqlPolicySet",
+    "Policies":  {
+                     "$type":  "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+                     "$values":  [
+                                     {
+                                         "$type":  "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
+                                         "TrustedConnection":  true,
+                                         "UserName":  "",
+                                         "Password":  "",
+                                         "Server":  ".",
+                                         "Database":  "xp0_SharedEnvironments",
+                                         "AdditionalParameters":  "",
+                                         "ConnectTimeout":  120000,
+                                         "CleanEnvironmentTimeout":  120000
+                                     }
+                                 ]
+                 }
 }
