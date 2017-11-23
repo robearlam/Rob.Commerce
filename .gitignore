@@ -33,3 +33,6 @@ msbuild.wrn
 
 # nuget
 packages/
+
+#SC-Engine
+logs/

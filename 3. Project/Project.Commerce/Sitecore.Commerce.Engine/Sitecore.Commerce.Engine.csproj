@@ -12,9 +12,6 @@
     <None Update="wwwroot\**\*;Views;Areas\**\Views">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </None>
-    <None Update="wwwroot\logs\**\*">
-      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
