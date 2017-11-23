@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Description>Product Compare Feature</Description>
     <Copyright>� 2017 Rob Earlam</Copyright>
-    <AssemblyTitle>SxaS.Compare.Engine</AssemblyTitle>
+    <AssemblyTitle>Feature.Compare.Engine</AssemblyTitle>
     <Authors>Rob Earlam</Authors>
     <TargetFramework>net47</TargetFramework>
     <AssemblyName>Feature.Compare.Engine</AssemblyName>
-    <PackageId>SxaS.Compare.Engine</PackageId>
+    <PackageId>Feature.Compare.Engine</PackageId>
     <PackageTags>Sitecore;Commerce;Plugin;Compare</PackageTags>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
