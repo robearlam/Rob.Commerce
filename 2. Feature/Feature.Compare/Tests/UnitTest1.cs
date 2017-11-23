@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace Feature.Compare.Engine.Tests
+namespace Tests
 {
     public class UnitTest1
     {
