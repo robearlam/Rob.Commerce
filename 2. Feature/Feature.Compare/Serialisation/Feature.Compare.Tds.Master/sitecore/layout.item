@@ -8,7 +8,7 @@ name: layout
 master: {00000000-0000-0000-0000-000000000000}
 template: {E3E2D58C-DF95-4230-ADC9-279924CECE84}
 templatekey: Main section
-created: 20170728T140314Z
+created: 20171002T183350Z
 
 ----field----
 field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
@@ -62,7 +62,7 @@ au|sitecore\ServicesAPI|p*|-item:read|
 ----version----
 language: da
 version: 1
-revision: dca135b0-4639-447a-99d6-40fc32973a16
+revision: 08621575-dd68-4d43-9763-ad5f8661bdf9
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -98,7 +98,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20170728T142152Z
+20171002T184312Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -112,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dca135b0-4639-447a-99d6-40fc32973a16
+08621575-dd68-4d43-9763-ad5f8661bdf9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170728T142152Z
+20171002T184312Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -130,29 +130,29 @@ sitecore\admin
 ----version----
 language: de-DE
 version: 1
-revision: 2bd3a101-c79f-49db-8c86-877811eec903
+revision: 7303914a-3d78-408b-84a2-267b95cfcfee
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 9
+content-length: 6
 
-Vorlagen.
+Layout
 ----field----
 field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
 name: __Long description
 key: __long description
 content-length: 66
 
-Dieser Bereich enthält Informationen über das Rendern der Website.
+Dieser Bereich enthält Informationen für das Rendering der Website
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 45
+content-length: 43
 
-Layouts, Unterlayouts, Renderings und Geräte.
+Layouts, Sublayouts, Renderings und Geräte.
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -166,7 +166,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20170728T142525Z
+20171002T184620Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -180,25 +180,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2bd3a101-c79f-49db-8c86-877811eec903
+7303914a-3d78-408b-84a2-267b95cfcfee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20171009T234526Z
+20171002T184620Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 17
+content-length: 14
 
-default\Anonymous
+sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 74b57f62-1a2c-49f1-8591-d91fba6f2ae7
+revision: 4fdd1caa-be62-4144-9e00-4cacb22b46ac
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -248,14 +248,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-74b57f62-1a2c-49f1-8591-d91fba6f2ae7
+4fdd1caa-be62-4144-9e00-4cacb22b46ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170728T140920Z
+20171002T183753Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -266,7 +266,7 @@ extranet\Anonymous
 ----version----
 language: ja-JP
 version: 1
-revision: 1bee1e7e-8835-4065-b5d8-3f64bcf1bd9e
+revision: 470103be-4f0b-4b4b-a880-3584a71d6697
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -302,7 +302,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20170728T142832Z
+20171002T184910Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -316,14 +316,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1bee1e7e-8835-4065-b5d8-3f64bcf1bd9e
+470103be-4f0b-4b4b-a880-3584a71d6697
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170728T142832Z
+20171002T184910Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

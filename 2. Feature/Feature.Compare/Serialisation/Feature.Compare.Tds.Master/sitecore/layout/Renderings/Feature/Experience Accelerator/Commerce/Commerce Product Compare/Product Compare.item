@@ -14,9 +14,9 @@ created: 20170920T055305Z
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
 name: Controller
 key: controller
-content-length: 79
+content-length: 86
 
-SxaS.Compare.Website.Controllers.ProductCompareController, SxaS.Compare.Website
+Feature.Compare.Website.Controllers.ProductCompareController, Feature.Compare.Website
 ----field----
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
