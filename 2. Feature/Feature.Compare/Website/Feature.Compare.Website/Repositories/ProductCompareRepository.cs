@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Feature.Compare.Website.Managers;
 using Feature.Compare.Website.Models;
 using Microsoft.OData.Client;
@@ -45,15 +46,15 @@ namespace Feature.Compare.Website.Repositories
             }
             else
             {
-                //var currentCatalogItem = _siteContext.CurrentCatalogItem;
-                //if (currentCatalogItem != null && _siteContext.IsProduct)
-                //    model.Initialize(currentCatalogItem);
+                var currentCatalogItem = _siteContext.CurrentCatalogItem;
+                if (currentCatalogItem != null && _siteContext.IsProduct)
+                    model.Initialize(currentCatalogItem);
 
-                //var productCompare = _compareManager.GetCurrentProductCompare(visitorContext, storefrontContext);
-                //var productIsInCompare = productCompare?.Result != null &&
-                //                         productCompare.Result.Products.Any(x => x.FriendlyId == currentCatalogItem?.Name);
+                var productCompare = _compareManager.GetCurrentProductCompare(visitorContext, storefrontContext);
+                var productIsInCompare = productCompare?.Result != null &&
+                                         productCompare.Result.Products.Any(x => x.FriendlyId == currentCatalogItem?.Name);
 
-                //model.IsProductInCompareList = productIsInCompare;
+                model.IsProductInCompareList = productIsInCompare;
             }
 
             model.ViewCompareButtonText = "View Product Comparison";
@@ -74,13 +75,13 @@ namespace Feature.Compare.Website.Repositories
             }
             else
             {
-                //var productCompare = _compareManager.GetCurrentProductCompare(visitorContext, storefrontContext);
-                //if (productCompare.ServiceProviderResult.Success)
-                //{
-                //    model.Products = ConvertSellableItemsToModelList(productCompare.Result.Products, visitorContext);
-                //    model.RemoveFromCompareText = "Remove";
-                //    model.IsValid = true;
-                //}
+                var productCompare = _compareManager.GetCurrentProductCompare(visitorContext, storefrontContext);
+                if (productCompare.ServiceProviderResult.Success)
+                {
+                    model.Products = ConvertSellableItemsToModelList(productCompare.Result.Products, visitorContext);
+                    model.RemoveFromCompareText = "Remove";
+                    model.IsValid = true;
+                }
             }
             return model;
         }
@@ -157,12 +158,12 @@ namespace Feature.Compare.Website.Repositories
 
             var model = _modelProvider.GetModel<BaseJsonResult>();
 
-            //var productCompare = _compareManager.AddProductToCompareCollection(visitorContext, storefrontContext, catalogName, productId, varientId);
-            //if (!productCompare.ServiceProviderResult.Success)
-            //{
-            //    model.SetErrors(productCompare.ServiceProviderResult);
-            //    return model;
-            //}
+            var productCompare = _compareManager.AddProductToCompareCollection(visitorContext, storefrontContext, catalogName, productId, varientId);
+            if (!productCompare.ServiceProviderResult.Success)
+            {
+                model.SetErrors(productCompare.ServiceProviderResult);
+                return model;
+            }
 
             model.Success = true;
             return model;
@@ -177,16 +178,15 @@ namespace Feature.Compare.Website.Repositories
             var model = _modelProvider.GetModel<RemoveFromProductCompareModel>();
             model.RemovedSellableItemId = sellableItemId;
 
-            //var productCompare = _compareManager.RemoveProductFromCompareCollection(visitorContext, storefrontContext, sellableItemId);
-            //if (!productCompare.ServiceProviderResult.Success)
-            //{
-            //    model.SetErrors(productCompare.ServiceProviderResult);
-            //    return model;
-            //}
+            var productCompare = _compareManager.RemoveProductFromCompareCollection(visitorContext, storefrontContext, sellableItemId);
+            if (!productCompare.ServiceProviderResult.Success)
+            {
+                model.SetErrors(productCompare.ServiceProviderResult);
+                return model;
+            }
 
             model.Success = true;
             return model;
-            
         }
     }
 }
