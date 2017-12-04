@@ -15,7 +15,6 @@ namespace Feature.Compare.Website.Models
 
         public void Initialize(Item productItem)
         {
-            CatalogName = productItem["CatalogName"];
             ProductId = productItem.Name;
         }
     }

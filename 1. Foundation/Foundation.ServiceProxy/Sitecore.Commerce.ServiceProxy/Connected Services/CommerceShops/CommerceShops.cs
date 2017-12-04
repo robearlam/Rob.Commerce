@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 11/24/2017 4:42:52 PM
+// Generation date: 12/4/2017 5:45:50 PM
 namespace Sitecore.Commerce.Core
 {
     /// <summary>

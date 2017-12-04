@@ -50,6 +50,7 @@ namespace Feature.Compare.Website.Repositories
                 if (currentCatalogItem != null && _siteContext.IsProduct)
                     model.Initialize(currentCatalogItem);
 
+                model.CatalogName = StorefrontContext.CurrentStorefront.Catalog;
                 var productCompare = _compareManager.GetCurrentProductCompare(visitorContext, storefrontContext);
                 var productIsInCompare = productCompare?.Result != null &&
                                          productCompare.Result.Products.Any(x => x.FriendlyId == currentCatalogItem?.Name);
