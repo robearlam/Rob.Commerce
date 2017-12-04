@@ -93,12 +93,13 @@ namespace Feature.Compare.Website.Repositories
 
             foreach (var sellableItem in resultProducts)
             {
-                var scItem = SearchManager.GetProduct(sellableItem.FriendlyId, "Habitat_Master");
+                var scItem = SearchManager.GetProduct(sellableItem.FriendlyId, StorefrontContext.CurrentStorefront.Catalog);
                 if (scItem != null)
                 {
                     var productCompareListItemModel = GenerateProductCompareListModel(scItem, sellableItem, visitorContext);
                     items.Add(productCompareListItemModel);
                 }
+                SiteContext.Items.Remove("CurrentCatalogItemRenderingModel");
             }
             return items;
         }
