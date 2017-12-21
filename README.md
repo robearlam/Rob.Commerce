@@ -26,6 +26,12 @@ Delpoy all of the Website projects for each module to the Website folder of your
 ### Deploy TDS Items
 Deploy TDS items.
 
+### Setup
+To use the compare plugin, you will need to follow these steps:
+* Add the _'Add/view compare button'_ to the Product Detail page. 
+* Create a new page called _Compare_ and add the _Product Compare_ control to it.
+* Publish
+
 ## Notes
 
 This is a POC and as such there are some hardcoded values which I've not had chance to move to be populated from data templates. Most of these are just text values, however the one that might cause issue is that the _View Compare_ link is currently hardcoded to go to _/compare_ for the URL.
