@@ -37,3 +37,9 @@ packages/
 #SC-Engine
 logs/
 lib/**/*.dll
+lib/**/*.xml
+lib/**/*.XML
+lib/**/*.Xml
+lib/**/*.config
+lib/**/*.lic
+lib/**/*.lastcodeanalysissucceeded
