@@ -36,4 +36,4 @@ packages/
 
 #SC-Engine
 logs/
-lib/
+lib/**/*.dll
