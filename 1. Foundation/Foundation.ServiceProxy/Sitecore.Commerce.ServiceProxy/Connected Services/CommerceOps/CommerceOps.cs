@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 12/4/2017 5:45:33 PM
+// Generation date: 12/14/2017 10:58:34 AM
 namespace CommerceOps.Sitecore.Commerce.Core.Commands
 {
     /// <summary>
@@ -4731,9 +4731,114 @@ namespace CommerceOps.Sitecore.Commerce.Core
         partial void OnInflateViaStreamChanged();
     }
     /// <summary>
-    /// There are no comments for LocalizedEntityPolicy in the schema.
+    /// There are no comments for LocalizeEntityComponentPolicy in the schema.
     /// </summary>
-    public partial class LocalizedEntityPolicy : Policy
+    public partial class LocalizeEntityComponentPolicy : Policy
+    {
+        /// <summary>
+        /// Create a new LocalizeEntityComponentPolicy object.
+        /// </summary>
+        /// <param name="isItemComponent">Initial value of IsItemComponent.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static LocalizeEntityComponentPolicy CreateLocalizeEntityComponentPolicy(bool isItemComponent)
+        {
+            LocalizeEntityComponentPolicy localizeEntityComponentPolicy = new LocalizeEntityComponentPolicy();
+            localizeEntityComponentPolicy.IsItemComponent = isItemComponent;
+            return localizeEntityComponentPolicy;
+        }
+        /// <summary>
+        /// There are no comments for Property Path in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Path
+        {
+            get
+            {
+                return this._Path;
+            }
+            set
+            {
+                this.OnPathChanging(value);
+                this._Path = value;
+                this.OnPathChanged();
+                this.OnPropertyChanged("Path");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Path;
+        partial void OnPathChanging(string value);
+        partial void OnPathChanged();
+        /// <summary>
+        /// There are no comments for Property Properties in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> Properties
+        {
+            get
+            {
+                return this._Properties;
+            }
+            set
+            {
+                this.OnPropertiesChanging(value);
+                this._Properties = value;
+                this.OnPropertiesChanged();
+                this.OnPropertyChanged("Properties");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _Properties = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnPropertiesChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnPropertiesChanged();
+        /// <summary>
+        /// There are no comments for Property ActionView in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ActionView
+        {
+            get
+            {
+                return this._ActionView;
+            }
+            set
+            {
+                this.OnActionViewChanging(value);
+                this._ActionView = value;
+                this.OnActionViewChanged();
+                this.OnPropertyChanged("ActionView");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ActionView;
+        partial void OnActionViewChanging(string value);
+        partial void OnActionViewChanged();
+        /// <summary>
+        /// There are no comments for Property IsItemComponent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public bool IsItemComponent
+        {
+            get
+            {
+                return this._IsItemComponent;
+            }
+            set
+            {
+                this.OnIsItemComponentChanging(value);
+                this._IsItemComponent = value;
+                this.OnIsItemComponentChanged();
+                this.OnPropertyChanged("IsItemComponent");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private bool _IsItemComponent;
+        partial void OnIsItemComponentChanging(bool value);
+        partial void OnIsItemComponentChanged();
+    }
+    /// <summary>
+    /// There are no comments for LocalizeEntityPolicy in the schema.
+    /// </summary>
+    public partial class LocalizeEntityPolicy : Policy
     {
         /// <summary>
         /// There are no comments for Property Type in the schema.
@@ -4779,6 +4884,50 @@ namespace CommerceOps.Sitecore.Commerce.Core
         private global::System.Collections.ObjectModel.ObservableCollection<string> _Properties = new global::System.Collections.ObjectModel.ObservableCollection<string>();
         partial void OnPropertiesChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
         partial void OnPropertiesChanged();
+        /// <summary>
+        /// There are no comments for Property ActionView in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ActionView
+        {
+            get
+            {
+                return this._ActionView;
+            }
+            set
+            {
+                this.OnActionViewChanging(value);
+                this._ActionView = value;
+                this.OnActionViewChanged();
+                this.OnPropertyChanged("ActionView");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ActionView;
+        partial void OnActionViewChanging(string value);
+        partial void OnActionViewChanged();
+        /// <summary>
+        /// There are no comments for Property ComponentsPolicies in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.LocalizeEntityComponentPolicy> ComponentsPolicies
+        {
+            get
+            {
+                return this._ComponentsPolicies;
+            }
+            set
+            {
+                this.OnComponentsPoliciesChanging(value);
+                this._ComponentsPolicies = value;
+                this.OnComponentsPoliciesChanged();
+                this.OnPropertyChanged("ComponentsPolicies");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.LocalizeEntityComponentPolicy> _ComponentsPolicies = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.LocalizeEntityComponentPolicy>();
+        partial void OnComponentsPoliciesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.LocalizeEntityComponentPolicy> value);
+        partial void OnComponentsPoliciesChanged();
     }
     /// <summary>
     /// There are no comments for SpecialCharactersPolicy in the schema.
@@ -5358,7 +5507,7 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// There are no comments for Property DefaultAltText in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString DefaultAltText
+        public string DefaultAltText
         {
             get
             {
@@ -5373,8 +5522,8 @@ namespace CommerceOps.Sitecore.Commerce.Core
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString _DefaultAltText;
-        partial void OnDefaultAltTextChanging(global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString value);
+        private string _DefaultAltText;
+        partial void OnDefaultAltTextChanging(string value);
         partial void OnDefaultAltTextChanged();
     }
     /// <summary>
@@ -5527,96 +5676,6 @@ namespace CommerceOps.Sitecore.Commerce.Core
         private double _Height;
         partial void OnHeightChanging(double value);
         partial void OnHeightChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for Localized_1OfString in the schema.
-    /// </summary>
-    public partial class Localized_1OfString : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property LocalizedString in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string LocalizedString
-        {
-            get
-            {
-                return this._LocalizedString;
-            }
-            set
-            {
-                this.OnLocalizedStringChanging(value);
-                this._LocalizedString = value;
-                this.OnLocalizedStringChanged();
-                this.OnPropertyChanged("LocalizedString");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LocalizedString;
-        partial void OnLocalizedStringChanging(string value);
-        partial void OnLocalizedStringChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for Parameter in the schema.
-    /// </summary>
-    public partial class Parameter : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property Key in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Key
-        {
-            get
-            {
-                return this._Key;
-            }
-            set
-            {
-                this.OnKeyChanging(value);
-                this._Key = value;
-                this.OnKeyChanged();
-                this.OnPropertyChanged("Key");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Key;
-        partial void OnKeyChanging(string value);
-        partial void OnKeyChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>
@@ -6874,6 +6933,67 @@ namespace CommerceOps.Sitecore.Commerce.Core
         private decimal _MinAllow;
         partial void OnMinAllowChanging(decimal value);
         partial void OnMinAllowChanged();
+    }
+    /// <summary>
+    /// There are no comments for PaginationPolicy in the schema.
+    /// </summary>
+    public partial class PaginationPolicy : Policy
+    {
+        /// <summary>
+        /// Create a new PaginationPolicy object.
+        /// </summary>
+        /// <param name="pageSize">Initial value of PageSize.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static PaginationPolicy CreatePaginationPolicy(int pageSize)
+        {
+            PaginationPolicy paginationPolicy = new PaginationPolicy();
+            paginationPolicy.PageSize = pageSize;
+            return paginationPolicy;
+        }
+        /// <summary>
+        /// There are no comments for Property PageSize in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int PageSize
+        {
+            get
+            {
+                return this._PageSize;
+            }
+            set
+            {
+                this.OnPageSizeChanging(value);
+                this._PageSize = value;
+                this.OnPageSizeChanged();
+                this.OnPropertyChanged("PageSize");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _PageSize;
+        partial void OnPageSizeChanging(int value);
+        partial void OnPageSizeChanged();
+        /// <summary>
+        /// There are no comments for Property PageSizeOptions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<int> PageSizeOptions
+        {
+            get
+            {
+                return this._PageSizeOptions;
+            }
+            set
+            {
+                this.OnPageSizeOptionsChanging(value);
+                this._PageSizeOptions = value;
+                this.OnPageSizeOptionsChanged();
+                this.OnPropertyChanged("PageSizeOptions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<int> _PageSizeOptions = new global::System.Collections.ObjectModel.ObservableCollection<int>();
+        partial void OnPageSizeOptionsChanging(global::System.Collections.ObjectModel.ObservableCollection<int> value);
+        partial void OnPageSizeOptionsChanged();
     }
     /// <summary>
     /// There are no comments for PolicySetPolicy in the schema.
@@ -8593,7 +8713,7 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// There are no comments for Property DisplayName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString DisplayName
+        public string DisplayName
         {
             get
             {
@@ -8608,8 +8728,8 @@ namespace CommerceOps.Sitecore.Commerce.Core
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString _DisplayName;
-        partial void OnDisplayNameChanging(global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString value);
+        private string _DisplayName;
+        partial void OnDisplayNameChanging(string value);
         partial void OnDisplayNameChanged();
         /// <summary>
         /// There are no comments for Property Image in the schema.
@@ -11194,7 +11314,7 @@ namespace CommerceOps.Sitecore.Commerce.Core
         /// There are no comments for Property DisplayName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString DisplayName
+        public string DisplayName
         {
             get
             {
@@ -11209,8 +11329,8 @@ namespace CommerceOps.Sitecore.Commerce.Core
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString _DisplayName;
-        partial void OnDisplayNameChanging(global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString value);
+        private string _DisplayName;
+        partial void OnDisplayNameChanging(string value);
         partial void OnDisplayNameChanged();
     }
     /// <summary>
@@ -11658,6 +11778,73 @@ namespace CommerceOps.Sitecore.Commerce.Core
         private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter> _Properties = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter>();
         partial void OnPropertiesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter> value);
         partial void OnPropertiesChanged();
+        /// <summary>
+        /// There are no comments for Property ComponentsProperties in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter> ComponentsProperties
+        {
+            get
+            {
+                return this._ComponentsProperties;
+            }
+            set
+            {
+                this.OnComponentsPropertiesChanging(value);
+                this._ComponentsProperties = value;
+                this.OnComponentsPropertiesChanged();
+                this.OnPropertyChanged("ComponentsProperties");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter> _ComponentsProperties = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter>();
+        partial void OnComponentsPropertiesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter> value);
+        partial void OnComponentsPropertiesChanged();
+    }
+    /// <summary>
+    /// There are no comments for Parameter in the schema.
+    /// </summary>
+    public partial class Parameter : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Key in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Key
+        {
+            get
+            {
+                return this._Key;
+            }
+            set
+            {
+                this.OnKeyChanging(value);
+                this._Key = value;
+                this.OnKeyChanged();
+                this.OnPropertyChanged("Key");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Key;
+        partial void OnKeyChanging(string value);
+        partial void OnKeyChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
     }
     /// <summary>
     /// There are no comments for TombstoneSingle in the schema.
@@ -12068,6 +12255,51 @@ namespace CommerceOps.Sitecore.Commerce.Core
         private bool _PostalCodeOptional;
         partial void OnPostalCodeOptionalChanging(bool value);
         partial void OnPostalCodeOptionalChanged();
+    }
+    /// <summary>
+    /// There are no comments for Localized_1OfString in the schema.
+    /// </summary>
+    public partial class Localized_1OfString : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property LocalizedString in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string LocalizedString
+        {
+            get
+            {
+                return this._LocalizedString;
+            }
+            set
+            {
+                this.OnLocalizedStringChanging(value);
+                this._LocalizedString = value;
+                this.OnLocalizedStringChanged();
+                this.OnPropertyChanged("LocalizedString");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _LocalizedString;
+        partial void OnLocalizedStringChanging(string value);
+        partial void OnLocalizedStringChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
     }
     /// <summary>
     /// There are no comments for RelatedList in the schema.
@@ -13191,6 +13423,347 @@ namespace CommerceOps.Sitecore.Commerce.Core
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Country> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Core.Country>();
             return new global::CommerceOps.Sitecore.Commerce.Core.CountrySingle(source.Context, query.GetPath(null));
+        }
+    }
+}
+namespace CommerceOps.System.Collections.Generic
+{
+    /// <summary>
+    /// There are no comments for Dictionary_2OfString_String in the schema.
+    /// </summary>
+    public partial class Dictionary_2OfString_String : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Keys in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> Keys
+        {
+            get
+            {
+                return this._Keys;
+            }
+            set
+            {
+                this.OnKeysChanging(value);
+                this._Keys = value;
+                this.OnKeysChanged();
+                this.OnPropertyChanged("Keys");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _Keys = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnKeysChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnKeysChanged();
+        /// <summary>
+        /// There are no comments for Property Values in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> Values
+        {
+            get
+            {
+                return this._Values;
+            }
+            set
+            {
+                this.OnValuesChanging(value);
+                this._Values = value;
+                this.OnValuesChanged();
+                this.OnPropertyChanged("Values");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _Values = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnValuesChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnValuesChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for Dictionary_2OfString_Nullable_1OfInt32 in the schema.
+    /// </summary>
+    public partial class Dictionary_2OfString_Nullable_1OfInt32 : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Keys in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> Keys
+        {
+            get
+            {
+                return this._Keys;
+            }
+            set
+            {
+                this.OnKeysChanging(value);
+                this._Keys = value;
+                this.OnKeysChanged();
+                this.OnPropertyChanged("Keys");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _Keys = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnKeysChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnKeysChanged();
+        /// <summary>
+        /// There are no comments for Property Values in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<int> Values
+        {
+            get
+            {
+                return this._Values;
+            }
+            set
+            {
+                this.OnValuesChanging(value);
+                this._Values = value;
+                this.OnValuesChanged();
+                this.OnPropertyChanged("Values");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<int> _Values = new global::System.Collections.ObjectModel.ObservableCollection<int>();
+        partial void OnValuesChanging(global::System.Collections.ObjectModel.ObservableCollection<int> value);
+        partial void OnValuesChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for KeyValuePair_2OfString_DataType in the schema.
+    /// </summary>
+    public partial class KeyValuePair_2OfString_DataType : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for KeyValuePair_2OfString_Totals in the schema.
+    /// </summary>
+    public partial class KeyValuePair_2OfString_Totals : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for KeyValuePair_2OfString_ItemModel in the schema.
+    /// </summary>
+    public partial class KeyValuePair_2OfString_ItemModel : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for KeyValuePair_2OfString_List_1OfParameter in the schema.
+    /// </summary>
+    public partial class KeyValuePair_2OfString_List_1OfParameter : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter> Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter> _Value = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter>();
+        partial void OnValueChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter> value);
+        partial void OnValueChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter in the schema.
+    /// </summary>
+    public partial class KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter> Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter> _Value = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter>();
+        partial void OnValueChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter> value);
+        partial void OnValueChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter in the schema.
+    /// </summary>
+    public partial class KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter> Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter> _Value = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter>();
+        partial void OnValueChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter> value);
+        partial void OnValueChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
         }
     }
 }
@@ -16091,6 +16664,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         private string _RemoveSellableItemImage;
         partial void OnRemoveSellableItemImageChanging(string value);
         partial void OnRemoveSellableItemImageChanged();
+        /// <summary>
+        /// There are no comments for Property PaginateCategoryList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PaginateCategoryList
+        {
+            get
+            {
+                return this._PaginateCategoryList;
+            }
+            set
+            {
+                this.OnPaginateCategoryListChanging(value);
+                this._PaginateCategoryList = value;
+                this.OnPaginateCategoryListChanged();
+                this.OnPropertyChanged("PaginateCategoryList");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PaginateCategoryList;
+        partial void OnPaginateCategoryListChanging(string value);
+        partial void OnPaginateCategoryListChanged();
     }
     /// <summary>
     /// There are no comments for KnownCatalogListsPolicy in the schema.
@@ -17540,6 +18135,96 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         }
     }
     /// <summary>
+    /// There are no comments for RemoveAllCatalogItemsCommandSingle in the schema.
+    /// </summary>
+    public partial class RemoveAllCatalogItemsCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveAllCatalogItemsCommand>
+    {
+        /// <summary>
+        /// Initialize a new RemoveAllCatalogItemsCommandSingle object.
+        /// </summary>
+        public RemoveAllCatalogItemsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new RemoveAllCatalogItemsCommandSingle object.
+        /// </summary>
+        public RemoveAllCatalogItemsCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new RemoveAllCatalogItemsCommandSingle object.
+        /// </summary>
+        public RemoveAllCatalogItemsCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveAllCatalogItemsCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for RemoveAllCatalogItemsCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class RemoveAllCatalogItemsCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new RemoveAllCatalogItemsCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static RemoveAllCatalogItemsCommand CreateRemoveAllCatalogItemsCommand(string ID)
+        {
+            RemoveAllCatalogItemsCommand removeAllCatalogItemsCommand = new RemoveAllCatalogItemsCommand();
+            removeAllCatalogItemsCommand.Id = ID;
+            return removeAllCatalogItemsCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for StreamCatalogItemsToArchiveCommandSingle in the schema.
+    /// </summary>
+    public partial class StreamCatalogItemsToArchiveCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<StreamCatalogItemsToArchiveCommand>
+    {
+        /// <summary>
+        /// Initialize a new StreamCatalogItemsToArchiveCommandSingle object.
+        /// </summary>
+        public StreamCatalogItemsToArchiveCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new StreamCatalogItemsToArchiveCommandSingle object.
+        /// </summary>
+        public StreamCatalogItemsToArchiveCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new StreamCatalogItemsToArchiveCommandSingle object.
+        /// </summary>
+        public StreamCatalogItemsToArchiveCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<StreamCatalogItemsToArchiveCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for StreamCatalogItemsToArchiveCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class StreamCatalogItemsToArchiveCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new StreamCatalogItemsToArchiveCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static StreamCatalogItemsToArchiveCommand CreateStreamCatalogItemsToArchiveCommand(string ID)
+        {
+            StreamCatalogItemsToArchiveCommand streamCatalogItemsToArchiveCommand = new StreamCatalogItemsToArchiveCommand();
+            streamCatalogItemsToArchiveCommand.Id = ID;
+            return streamCatalogItemsToArchiveCommand;
+        }
+    }
+    /// <summary>
     /// There are no comments for UpdateExternalSettingsCommandSingle in the schema.
     /// </summary>
     public partial class UpdateExternalSettingsCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<UpdateExternalSettingsCommand>
@@ -18530,6 +19215,51 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         }
     }
     /// <summary>
+    /// There are no comments for GetSellableItemConnectCommandSingle in the schema.
+    /// </summary>
+    public partial class GetSellableItemConnectCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetSellableItemConnectCommand>
+    {
+        /// <summary>
+        /// Initialize a new GetSellableItemConnectCommandSingle object.
+        /// </summary>
+        public GetSellableItemConnectCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new GetSellableItemConnectCommandSingle object.
+        /// </summary>
+        public GetSellableItemConnectCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new GetSellableItemConnectCommandSingle object.
+        /// </summary>
+        public GetSellableItemConnectCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetSellableItemConnectCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for GetSellableItemConnectCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class GetSellableItemConnectCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new GetSellableItemConnectCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static GetSellableItemConnectCommand CreateGetSellableItemConnectCommand(string ID)
+        {
+            GetSellableItemConnectCommand getSellableItemConnectCommand = new GetSellableItemConnectCommand();
+            getSellableItemConnectCommand.Id = ID;
+            return getSellableItemConnectCommand;
+        }
+    }
+    /// <summary>
     /// There are no comments for GetSellableItemsCommandSingle in the schema.
     /// </summary>
     public partial class GetSellableItemsCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetSellableItemsCommand>
@@ -18909,6 +19639,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         partial void OnSitecoreIdChanging(string value);
         partial void OnSitecoreIdChanged();
         /// <summary>
+        /// There are no comments for Property ParentCatalogList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ParentCatalogList
+        {
+            get
+            {
+                return this._ParentCatalogList;
+            }
+            set
+            {
+                this.OnParentCatalogListChanging(value);
+                this._ParentCatalogList = value;
+                this.OnParentCatalogListChanged();
+                this.OnPropertyChanged("ParentCatalogList");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ParentCatalogList;
+        partial void OnParentCatalogListChanging(string value);
+        partial void OnParentCatalogListChanged();
+        /// <summary>
         /// There are no comments for Property ParentCategoryList in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -19035,15 +19787,13 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// <param name="ID">Initial value of Id.</param>
         /// <param name="version">Initial value of Version.</param>
         /// <param name="isPersisted">Initial value of IsPersisted.</param>
-        /// <param name="isSearchable">Initial value of IsSearchable.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static Category CreateCategory(string ID, int version, bool isPersisted, bool isSearchable)
+        public static Category CreateCategory(string ID, int version, bool isPersisted)
         {
             Category category = new Category();
             category.Id = ID;
             category.Version = version;
             category.IsPersisted = isPersisted;
-            category.IsSearchable = isSearchable;
             return category;
         }
         /// <summary>
@@ -19068,28 +19818,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         private string _Description;
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
-        /// <summary>
-        /// There are no comments for Property IsSearchable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public bool IsSearchable
-        {
-            get
-            {
-                return this._IsSearchable;
-            }
-            set
-            {
-                this.OnIsSearchableChanging(value);
-                this._IsSearchable = value;
-                this.OnIsSearchableChanged();
-                this.OnPropertyChanged("IsSearchable");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private bool _IsSearchable;
-        partial void OnIsSearchableChanging(bool value);
-        partial void OnIsSearchableChanged();
     }
     /// <summary>
     /// There are no comments for CatalogsComponentSingle in the schema.
@@ -20169,28 +20897,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
             imagesComponent.Id = ID;
             return imagesComponent;
         }
-        /// <summary>
-        /// There are no comments for Property ProductImage in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string ProductImage
-        {
-            get
-            {
-                return this._ProductImage;
-            }
-            set
-            {
-                this.OnProductImageChanging(value);
-                this._ProductImage = value;
-                this.OnProductImageChanged();
-                this.OnPropertyChanged("ProductImage");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _ProductImage;
-        partial void OnProductImageChanging(string value);
-        partial void OnProductImageChanged();
         /// <summary>
         /// There are no comments for Property Images in the schema.
         /// </summary>
@@ -24231,6 +24937,94 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         partial void OnWarrantyPartsChanged();
     }
     /// <summary>
+    /// There are no comments for RelationshipsComponentSingle in the schema.
+    /// </summary>
+    public partial class RelationshipsComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RelationshipsComponent>
+    {
+        /// <summary>
+        /// Initialize a new RelationshipsComponentSingle object.
+        /// </summary>
+        public RelationshipsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new RelationshipsComponentSingle object.
+        /// </summary>
+        public RelationshipsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new RelationshipsComponentSingle object.
+        /// </summary>
+        public RelationshipsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RelationshipsComponent> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for RelationshipsComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class RelationshipsComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new RelationshipsComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static RelationshipsComponent CreateRelationshipsComponent(string ID)
+        {
+            RelationshipsComponent relationshipsComponent = new RelationshipsComponent();
+            relationshipsComponent.Id = ID;
+            return relationshipsComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property Relationships in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models.Relationship> Relationships
+        {
+            get
+            {
+                return this._Relationships;
+            }
+            set
+            {
+                this.OnRelationshipsChanging(value);
+                this._Relationships = value;
+                this.OnRelationshipsChanged();
+                this.OnPropertyChanged("Relationships");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models.Relationship> _Relationships = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models.Relationship>();
+        partial void OnRelationshipsChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models.Relationship> value);
+        partial void OnRelationshipsChanged();
+    }
+    /// <summary>
     /// There are no comments for CatalogSingle in the schema.
     /// </summary>
     public partial class CatalogSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<Catalog>
@@ -24344,6 +25138,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         partial void OnPromotionBookNameChanging(string value);
         partial void OnPromotionBookNameChanged();
         /// <summary>
+        /// There are no comments for Property DefaultInventorySetName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string DefaultInventorySetName
+        {
+            get
+            {
+                return this._DefaultInventorySetName;
+            }
+            set
+            {
+                this.OnDefaultInventorySetNameChanging(value);
+                this._DefaultInventorySetName = value;
+                this.OnDefaultInventorySetNameChanged();
+                this.OnPropertyChanged("DefaultInventorySetName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _DefaultInventorySetName;
+        partial void OnDefaultInventorySetNameChanging(string value);
+        partial void OnDefaultInventorySetNameChanged();
+        /// <summary>
         /// There are no comments for Property Currency in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -24426,15 +25242,13 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         /// <param name="ID">Initial value of Id.</param>
         /// <param name="version">Initial value of Version.</param>
         /// <param name="isPersisted">Initial value of IsPersisted.</param>
-        /// <param name="isSearchable">Initial value of IsSearchable.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static SellableItem CreateSellableItem(string ID, int version, bool isPersisted, bool isSearchable)
+        public static SellableItem CreateSellableItem(string ID, int version, bool isPersisted)
         {
             SellableItem sellableItem = new SellableItem();
             sellableItem.Id = ID;
             sellableItem.Version = version;
             sellableItem.IsPersisted = isPersisted;
-            sellableItem.IsSearchable = isSearchable;
             return sellableItem;
         }
         /// <summary>
@@ -24591,28 +25405,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Tag> _Tags = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Tag>();
         partial void OnTagsChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Tag> value);
         partial void OnTagsChanged();
-        /// <summary>
-        /// There are no comments for Property IsSearchable in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public bool IsSearchable
-        {
-            get
-            {
-                return this._IsSearchable;
-            }
-            set
-            {
-                this.OnIsSearchableChanging(value);
-                this._IsSearchable = value;
-                this.OnIsSearchableChanged();
-                this.OnPropertyChanged("IsSearchable");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private bool _IsSearchable;
-        partial void OnIsSearchableChanging(bool value);
-        partial void OnIsSearchableChanged();
         /// <summary>
         /// There are no comments for Property ListPrice in the schema.
         /// </summary>
@@ -26246,6 +27038,70 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.ImportCSCatalogCommandSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle CastToRemoveAllCatalogItemsCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RemoveAllCatalogItemsCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle CastToStreamCatalogItemsToArchiveCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.StreamCatalogItemsToArchiveCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.UpdateExternalSettingsCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.UpdateExternalSettingsCommandSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
@@ -26948,6 +27804,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemCommand>();
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle CastToGetSellableItemConnectCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemConnectCommandSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemsCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.GetSellableItemsCommandSingle specified by key from an entity set
@@ -28111,6 +28999,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.WarrantyComponentSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle CastToRelationshipsComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponent>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.RelationshipsComponentSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.Catalog as global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.CatalogSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
@@ -28278,6 +29198,275 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog
                 { "Id", id }
             };
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.ProductVariantSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+    }
+}
+namespace CommerceOps.Plugin.Sample.Upgrade
+{
+    /// <summary>
+    /// There are no comments for MigrateEnvironmentCommandSingle in the schema.
+    /// </summary>
+    public partial class MigrateEnvironmentCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<MigrateEnvironmentCommand>
+    {
+        /// <summary>
+        /// Initialize a new MigrateEnvironmentCommandSingle object.
+        /// </summary>
+        public MigrateEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new MigrateEnvironmentCommandSingle object.
+        /// </summary>
+        public MigrateEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new MigrateEnvironmentCommandSingle object.
+        /// </summary>
+        public MigrateEnvironmentCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<MigrateEnvironmentCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for MigrateEnvironmentCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class MigrateEnvironmentCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new MigrateEnvironmentCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static MigrateEnvironmentCommand CreateMigrateEnvironmentCommand(string ID)
+        {
+            MigrateEnvironmentCommand migrateEnvironmentCommand = new MigrateEnvironmentCommand();
+            migrateEnvironmentCommand.Id = ID;
+            return migrateEnvironmentCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for MigrationPolicy in the schema.
+    /// </summary>
+    public partial class MigrationPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// Create a new MigrationPolicy object.
+        /// </summary>
+        /// <param name="reviewOnly">Initial value of ReviewOnly.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static MigrationPolicy CreateMigrationPolicy(bool reviewOnly)
+        {
+            MigrationPolicy migrationPolicy = new MigrationPolicy();
+            migrationPolicy.ReviewOnly = reviewOnly;
+            return migrationPolicy;
+        }
+        /// <summary>
+        /// There are no comments for Property DefaultEnvironmentName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string DefaultEnvironmentName
+        {
+            get
+            {
+                return this._DefaultEnvironmentName;
+            }
+            set
+            {
+                this.OnDefaultEnvironmentNameChanging(value);
+                this._DefaultEnvironmentName = value;
+                this.OnDefaultEnvironmentNameChanged();
+                this.OnPropertyChanged("DefaultEnvironmentName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _DefaultEnvironmentName;
+        partial void OnDefaultEnvironmentNameChanging(string value);
+        partial void OnDefaultEnvironmentNameChanged();
+        /// <summary>
+        /// There are no comments for Property SqlPolicySetName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SqlPolicySetName
+        {
+            get
+            {
+                return this._SqlPolicySetName;
+            }
+            set
+            {
+                this.OnSqlPolicySetNameChanging(value);
+                this._SqlPolicySetName = value;
+                this.OnSqlPolicySetNameChanged();
+                this.OnPropertyChanged("SqlPolicySetName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SqlPolicySetName;
+        partial void OnSqlPolicySetNameChanging(string value);
+        partial void OnSqlPolicySetNameChanged();
+        /// <summary>
+        /// There are no comments for Property ListsToMigrate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_Nullable_1OfInt32 ListsToMigrate
+        {
+            get
+            {
+                return this._ListsToMigrate;
+            }
+            set
+            {
+                this.OnListsToMigrateChanging(value);
+                this._ListsToMigrate = value;
+                this.OnListsToMigrateChanged();
+                this.OnPropertyChanged("ListsToMigrate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_Nullable_1OfInt32 _ListsToMigrate;
+        partial void OnListsToMigrateChanging(global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_Nullable_1OfInt32 value);
+        partial void OnListsToMigrateChanged();
+        /// <summary>
+        /// There are no comments for Property ReviewOnly in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public bool ReviewOnly
+        {
+            get
+            {
+                return this._ReviewOnly;
+            }
+            set
+            {
+                this.OnReviewOnlyChanging(value);
+                this._ReviewOnly = value;
+                this.OnReviewOnlyChanged();
+                this.OnPropertyChanged("ReviewOnly");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private bool _ReviewOnly;
+        partial void OnReviewOnlyChanging(bool value);
+        partial void OnReviewOnlyChanged();
+    }
+    /// <summary>
+    /// There are no comments for MigrationSqlPolicy in the schema.
+    /// </summary>
+    public partial class MigrationSqlPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property ArtifactStoreId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ArtifactStoreId
+        {
+            get
+            {
+                return this._ArtifactStoreId;
+            }
+            set
+            {
+                this.OnArtifactStoreIdChanging(value);
+                this._ArtifactStoreId = value;
+                this.OnArtifactStoreIdChanged();
+                this.OnPropertyChanged("ArtifactStoreId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ArtifactStoreId;
+        partial void OnArtifactStoreIdChanging(string value);
+        partial void OnArtifactStoreIdChanged();
+        /// <summary>
+        /// There are no comments for Property SourceStoreSqlPolicy in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy SourceStoreSqlPolicy
+        {
+            get
+            {
+                return this._SourceStoreSqlPolicy;
+            }
+            set
+            {
+                this.OnSourceStoreSqlPolicyChanging(value);
+                this._SourceStoreSqlPolicy = value;
+                this.OnSourceStoreSqlPolicyChanged();
+                this.OnPropertyChanged("SourceStoreSqlPolicy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy _SourceStoreSqlPolicy;
+        partial void OnSourceStoreSqlPolicyChanging(global::CommerceOps.Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy value);
+        partial void OnSourceStoreSqlPolicyChanged();
+    }
+    /// <summary>
+    /// There are no comments for ArtifactStore in the schema.
+    /// </summary>
+    public partial class ArtifactStore : global::CommerceOps.Sitecore.Commerce.Core.Model
+    {
+        /// <summary>
+        /// There are no comments for Property ArtifactStoreId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ArtifactStoreId
+        {
+            get
+            {
+                return this._ArtifactStoreId;
+            }
+            set
+            {
+                this.OnArtifactStoreIdChanging(value);
+                this._ArtifactStoreId = value;
+                this.OnArtifactStoreIdChanged();
+                this.OnPropertyChanged("ArtifactStoreId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ArtifactStoreId;
+        partial void OnArtifactStoreIdChanging(string value);
+        partial void OnArtifactStoreIdChanged();
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand as global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand as global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle CastToMigrateEnvironmentCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand> query = source.CastTo<global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommand>();
+            return new global::CommerceOps.Plugin.Sample.Upgrade.MigrateEnvironmentCommandSingle(source.Context, query.GetPath(null));
         }
     }
 }
@@ -29289,6 +30478,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Customers
         private string _InactiveAccount;
         partial void OnInactiveAccountChanging(string value);
         partial void OnInactiveAccountChanged();
+        /// <summary>
+        /// There are no comments for Property RequiresApproval in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string RequiresApproval
+        {
+            get
+            {
+                return this._RequiresApproval;
+            }
+            set
+            {
+                this.OnRequiresApprovalChanging(value);
+                this._RequiresApproval = value;
+                this.OnRequiresApprovalChanged();
+                this.OnPropertyChanged("RequiresApproval");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _RequiresApproval;
+        partial void OnRequiresApprovalChanging(string value);
+        partial void OnRequiresApprovalChanged();
     }
     /// <summary>
     /// There are no comments for KnownCustomerViewsPolicy in the schema.
@@ -31009,6 +32220,50 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         private string _TransferInventory;
         partial void OnTransferInventoryChanging(string value);
         partial void OnTransferInventoryChanged();
+        /// <summary>
+        /// There are no comments for Property AssociateCatalog in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string AssociateCatalog
+        {
+            get
+            {
+                return this._AssociateCatalog;
+            }
+            set
+            {
+                this.OnAssociateCatalogChanging(value);
+                this._AssociateCatalog = value;
+                this.OnAssociateCatalogChanged();
+                this.OnPropertyChanged("AssociateCatalog");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AssociateCatalog;
+        partial void OnAssociateCatalogChanging(string value);
+        partial void OnAssociateCatalogChanged();
+        /// <summary>
+        /// There are no comments for Property DisassociateCatalog in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string DisassociateCatalog
+        {
+            get
+            {
+                return this._DisassociateCatalog;
+            }
+            set
+            {
+                this.OnDisassociateCatalogChanging(value);
+                this._DisassociateCatalog = value;
+                this.OnDisassociateCatalogChanged();
+                this.OnPropertyChanged("DisassociateCatalog");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _DisassociateCatalog;
+        partial void OnDisassociateCatalogChanging(string value);
+        partial void OnDisassociateCatalogChanged();
     }
     /// <summary>
     /// There are no comments for KnownInventoryViewsPolicy in the schema.
@@ -31059,6 +32314,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         private string _InventorySets;
         partial void OnInventorySetsChanging(string value);
         partial void OnInventorySetsChanged();
+        /// <summary>
+        /// There are no comments for Property InventorySetCatalogs in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string InventorySetCatalogs
+        {
+            get
+            {
+                return this._InventorySetCatalogs;
+            }
+            set
+            {
+                this.OnInventorySetCatalogsChanging(value);
+                this._InventorySetCatalogs = value;
+                this.OnInventorySetCatalogsChanged();
+                this.OnPropertyChanged("InventorySetCatalogs");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _InventorySetCatalogs;
+        partial void OnInventorySetCatalogsChanging(string value);
+        partial void OnInventorySetCatalogsChanged();
         /// <summary>
         /// There are no comments for Property InventorySetSellableItems in the schema.
         /// </summary>
@@ -31300,6 +32577,162 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         partial void OnLogGetDefaultInventoryItemChanged();
     }
     /// <summary>
+    /// There are no comments for FlatInventoryInformation in the schema.
+    /// </summary>
+    public partial class FlatInventoryInformation : global::CommerceOps.Sitecore.Commerce.Core.Model
+    {
+        /// <summary>
+        /// Create a new FlatInventoryInformation object.
+        /// </summary>
+        /// <param name="count">Initial value of Count.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static FlatInventoryInformation CreateFlatInventoryInformation(decimal count)
+        {
+            FlatInventoryInformation flatInventoryInformation = new FlatInventoryInformation();
+            flatInventoryInformation.Count = count;
+            return flatInventoryInformation;
+        }
+        /// <summary>
+        /// There are no comments for Property ItemId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ItemId
+        {
+            get
+            {
+                return this._ItemId;
+            }
+            set
+            {
+                this.OnItemIdChanging(value);
+                this._ItemId = value;
+                this.OnItemIdChanged();
+                this.OnPropertyChanged("ItemId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ItemId;
+        partial void OnItemIdChanging(string value);
+        partial void OnItemIdChanged();
+        /// <summary>
+        /// There are no comments for Property Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public decimal Count
+        {
+            get
+            {
+                return this._Count;
+            }
+            set
+            {
+                this.OnCountChanging(value);
+                this._Count = value;
+                this.OnCountChanged();
+                this.OnPropertyChanged("Count");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private decimal _Count;
+        partial void OnCountChanging(decimal value);
+        partial void OnCountChanged();
+    }
+    /// <summary>
+    /// There are no comments for InventoryAssociation in the schema.
+    /// </summary>
+    public partial class InventoryAssociation : global::CommerceOps.Sitecore.Commerce.Core.Model
+    {
+        /// <summary>
+        /// There are no comments for Property InventoryInformation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.Sitecore.Commerce.Core.EntityReference InventoryInformation
+        {
+            get
+            {
+                return this._InventoryInformation;
+            }
+            set
+            {
+                this.OnInventoryInformationChanging(value);
+                this._InventoryInformation = value;
+                this.OnInventoryInformationChanged();
+                this.OnPropertyChanged("InventoryInformation");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.Sitecore.Commerce.Core.EntityReference _InventoryInformation;
+        partial void OnInventoryInformationChanging(global::CommerceOps.Sitecore.Commerce.Core.EntityReference value);
+        partial void OnInventoryInformationChanged();
+        /// <summary>
+        /// There are no comments for Property InventorySet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.Sitecore.Commerce.Core.EntityReference InventorySet
+        {
+            get
+            {
+                return this._InventorySet;
+            }
+            set
+            {
+                this.OnInventorySetChanging(value);
+                this._InventorySet = value;
+                this.OnInventorySetChanged();
+                this.OnPropertyChanged("InventorySet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.Sitecore.Commerce.Core.EntityReference _InventorySet;
+        partial void OnInventorySetChanging(global::CommerceOps.Sitecore.Commerce.Core.EntityReference value);
+        partial void OnInventorySetChanged();
+    }
+    /// <summary>
+    /// There are no comments for AssociateCatalogToInventorySetCommandSingle in the schema.
+    /// </summary>
+    public partial class AssociateCatalogToInventorySetCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssociateCatalogToInventorySetCommand>
+    {
+        /// <summary>
+        /// Initialize a new AssociateCatalogToInventorySetCommandSingle object.
+        /// </summary>
+        public AssociateCatalogToInventorySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new AssociateCatalogToInventorySetCommandSingle object.
+        /// </summary>
+        public AssociateCatalogToInventorySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new AssociateCatalogToInventorySetCommandSingle object.
+        /// </summary>
+        public AssociateCatalogToInventorySetCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AssociateCatalogToInventorySetCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for AssociateCatalogToInventorySetCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class AssociateCatalogToInventorySetCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new AssociateCatalogToInventorySetCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static AssociateCatalogToInventorySetCommand CreateAssociateCatalogToInventorySetCommand(string ID)
+        {
+            AssociateCatalogToInventorySetCommand associateCatalogToInventorySetCommand = new AssociateCatalogToInventorySetCommand();
+            associateCatalogToInventorySetCommand.Id = ID;
+            return associateCatalogToInventorySetCommand;
+        }
+    }
+    /// <summary>
     /// There are no comments for AssociateSellableItemToInventorySetCommandSingle in the schema.
     /// </summary>
     public partial class AssociateSellableItemToInventorySetCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AssociateSellableItemToInventorySetCommand>
@@ -31387,6 +32820,51 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             CreateInventorySetCommand createInventorySetCommand = new CreateInventorySetCommand();
             createInventorySetCommand.Id = ID;
             return createInventorySetCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for DisassociateCatalogFromInventorySetCommandSingle in the schema.
+    /// </summary>
+    public partial class DisassociateCatalogFromInventorySetCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<DisassociateCatalogFromInventorySetCommand>
+    {
+        /// <summary>
+        /// Initialize a new DisassociateCatalogFromInventorySetCommandSingle object.
+        /// </summary>
+        public DisassociateCatalogFromInventorySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new DisassociateCatalogFromInventorySetCommandSingle object.
+        /// </summary>
+        public DisassociateCatalogFromInventorySetCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new DisassociateCatalogFromInventorySetCommandSingle object.
+        /// </summary>
+        public DisassociateCatalogFromInventorySetCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<DisassociateCatalogFromInventorySetCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for DisassociateCatalogFromInventorySetCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class DisassociateCatalogFromInventorySetCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new DisassociateCatalogFromInventorySetCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static DisassociateCatalogFromInventorySetCommand CreateDisassociateCatalogFromInventorySetCommand(string ID)
+        {
+            DisassociateCatalogFromInventorySetCommand disassociateCatalogFromInventorySetCommand = new DisassociateCatalogFromInventorySetCommand();
+            disassociateCatalogFromInventorySetCommand.Id = ID;
+            return disassociateCatalogFromInventorySetCommand;
         }
     }
     /// <summary>
@@ -31567,6 +33045,96 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             ExportInventorySetsCommand exportInventorySetsCommand = new ExportInventorySetsCommand();
             exportInventorySetsCommand.Id = ID;
             return exportInventorySetsCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for GetBulkStockInformationCommandSingle in the schema.
+    /// </summary>
+    public partial class GetBulkStockInformationCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetBulkStockInformationCommand>
+    {
+        /// <summary>
+        /// Initialize a new GetBulkStockInformationCommandSingle object.
+        /// </summary>
+        public GetBulkStockInformationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new GetBulkStockInformationCommandSingle object.
+        /// </summary>
+        public GetBulkStockInformationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new GetBulkStockInformationCommandSingle object.
+        /// </summary>
+        public GetBulkStockInformationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetBulkStockInformationCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for GetBulkStockInformationCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class GetBulkStockInformationCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new GetBulkStockInformationCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static GetBulkStockInformationCommand CreateGetBulkStockInformationCommand(string ID)
+        {
+            GetBulkStockInformationCommand getBulkStockInformationCommand = new GetBulkStockInformationCommand();
+            getBulkStockInformationCommand.Id = ID;
+            return getBulkStockInformationCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for GetInventoryInformationCommandSingle in the schema.
+    /// </summary>
+    public partial class GetInventoryInformationCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventoryInformationCommand>
+    {
+        /// <summary>
+        /// Initialize a new GetInventoryInformationCommandSingle object.
+        /// </summary>
+        public GetInventoryInformationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new GetInventoryInformationCommandSingle object.
+        /// </summary>
+        public GetInventoryInformationCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new GetInventoryInformationCommandSingle object.
+        /// </summary>
+        public GetInventoryInformationCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetInventoryInformationCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for GetInventoryInformationCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class GetInventoryInformationCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new GetInventoryInformationCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static GetInventoryInformationCommand CreateGetInventoryInformationCommand(string ID)
+        {
+            GetInventoryInformationCommand getInventoryInformationCommand = new GetInventoryInformationCommand();
+            getInventoryInformationCommand.Id = ID;
+            return getInventoryInformationCommand;
         }
     }
     /// <summary>
@@ -31792,6 +33360,51 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             GetInventorySkuCommand getInventorySkuCommand = new GetInventorySkuCommand();
             getInventorySkuCommand.Id = ID;
             return getInventorySkuCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for StreamInventorySetsToArchiveCommandSingle in the schema.
+    /// </summary>
+    public partial class StreamInventorySetsToArchiveCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<StreamInventorySetsToArchiveCommand>
+    {
+        /// <summary>
+        /// Initialize a new StreamInventorySetsToArchiveCommandSingle object.
+        /// </summary>
+        public StreamInventorySetsToArchiveCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new StreamInventorySetsToArchiveCommandSingle object.
+        /// </summary>
+        public StreamInventorySetsToArchiveCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new StreamInventorySetsToArchiveCommandSingle object.
+        /// </summary>
+        public StreamInventorySetsToArchiveCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<StreamInventorySetsToArchiveCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for StreamInventorySetsToArchiveCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class StreamInventorySetsToArchiveCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new StreamInventorySetsToArchiveCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static StreamInventorySetsToArchiveCommand CreateStreamInventorySetsToArchiveCommand(string ID)
+        {
+            StreamInventorySetsToArchiveCommand streamInventorySetsToArchiveCommand = new StreamInventorySetsToArchiveCommand();
+            streamInventorySetsToArchiveCommand.Id = ID;
+            return streamInventorySetsToArchiveCommand;
         }
     }
     /// <summary>
@@ -32369,140 +33982,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             inventoryComponent.Id = ID;
             return inventoryComponent;
         }
-    }
-    /// <summary>
-    /// There are no comments for InventoryInformationComponentSingle in the schema.
-    /// </summary>
-    public partial class InventoryInformationComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InventoryInformationComponent>
-    {
         /// <summary>
-        /// Initialize a new InventoryInformationComponentSingle object.
-        /// </summary>
-        public InventoryInformationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new InventoryInformationComponentSingle object.
-        /// </summary>
-        public InventoryInformationComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new InventoryInformationComponentSingle object.
-        /// </summary>
-        public InventoryInformationComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<InventoryInformationComponent> query)
-            : base(query) {}
-
-        /// <summary>
-        /// There are no comments for ChildComponents in the schema.
+        /// There are no comments for Property InventoryAssociations in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryAssociation> InventoryAssociations
         {
             get
             {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ChildComponents == null))
-                {
-                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
-                }
-                return this._ChildComponents;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
-    }
-    /// <summary>
-    /// There are no comments for InventoryInformationComponent in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class InventoryInformationComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
-    {
-        /// <summary>
-        /// Create a new InventoryInformationComponent object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        /// <param name="quantity">Initial value of Quantity.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static InventoryInformationComponent CreateInventoryInformationComponent(string ID, int quantity)
-        {
-            InventoryInformationComponent inventoryInformationComponent = new InventoryInformationComponent();
-            inventoryInformationComponent.Id = ID;
-            inventoryInformationComponent.Quantity = quantity;
-            return inventoryInformationComponent;
-        }
-        /// <summary>
-        /// There are no comments for Property InventorySet in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Sitecore.Commerce.Core.EntityReference InventorySet
-        {
-            get
-            {
-                return this._InventorySet;
+                return this._InventoryAssociations;
             }
             set
             {
-                this.OnInventorySetChanging(value);
-                this._InventorySet = value;
-                this.OnInventorySetChanged();
-                this.OnPropertyChanged("InventorySet");
+                this.OnInventoryAssociationsChanging(value);
+                this._InventoryAssociations = value;
+                this.OnInventoryAssociationsChanged();
+                this.OnPropertyChanged("InventoryAssociations");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Sitecore.Commerce.Core.EntityReference _InventorySet;
-        partial void OnInventorySetChanging(global::CommerceOps.Sitecore.Commerce.Core.EntityReference value);
-        partial void OnInventorySetChanged();
-        /// <summary>
-        /// There are no comments for Property Quantity in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public int Quantity
-        {
-            get
-            {
-                return this._Quantity;
-            }
-            set
-            {
-                this.OnQuantityChanging(value);
-                this._Quantity = value;
-                this.OnQuantityChanged();
-                this.OnPropertyChanged("Quantity");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private int _Quantity;
-        partial void OnQuantityChanging(int value);
-        partial void OnQuantityChanged();
-        /// <summary>
-        /// There are no comments for Property InvoiceUnitPrice in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Sitecore.Commerce.Core.Money InvoiceUnitPrice
-        {
-            get
-            {
-                return this._InvoiceUnitPrice;
-            }
-            set
-            {
-                this.OnInvoiceUnitPriceChanging(value);
-                this._InvoiceUnitPrice = value;
-                this.OnInvoiceUnitPriceChanged();
-                this.OnPropertyChanged("InvoiceUnitPrice");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Sitecore.Commerce.Core.Money _InvoiceUnitPrice;
-        partial void OnInvoiceUnitPriceChanging(global::CommerceOps.Sitecore.Commerce.Core.Money value);
-        partial void OnInvoiceUnitPriceChanged();
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryAssociation> _InventoryAssociations = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryAssociation>();
+        partial void OnInventoryAssociationsChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryAssociation> value);
+        partial void OnInventoryAssociationsChanged();
     }
     /// <summary>
     /// There are no comments for PreorderableComponentSingle in the schema.
@@ -32663,6 +34164,188 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         partial void OnPreorderLimitChanged();
     }
     /// <summary>
+    /// There are no comments for InventoryInformationSingle in the schema.
+    /// </summary>
+    public partial class InventoryInformationSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InventoryInformation>
+    {
+        /// <summary>
+        /// Initialize a new InventoryInformationSingle object.
+        /// </summary>
+        public InventoryInformationSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new InventoryInformationSingle object.
+        /// </summary>
+        public InventoryInformationSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new InventoryInformationSingle object.
+        /// </summary>
+        public InventoryInformationSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<InventoryInformation> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Components in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> Components
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Components == null))
+                {
+                    this._Components = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("Components"));
+                }
+                return this._Components;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _Components;
+    }
+    /// <summary>
+    /// There are no comments for InventoryInformation in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class InventoryInformation : global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity
+    {
+        /// <summary>
+        /// Create a new InventoryInformation object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="version">Initial value of Version.</param>
+        /// <param name="isPersisted">Initial value of IsPersisted.</param>
+        /// <param name="quantity">Initial value of Quantity.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static InventoryInformation CreateInventoryInformation(string ID, int version, bool isPersisted, int quantity)
+        {
+            InventoryInformation inventoryInformation = new InventoryInformation();
+            inventoryInformation.Id = ID;
+            inventoryInformation.Version = version;
+            inventoryInformation.IsPersisted = isPersisted;
+            inventoryInformation.Quantity = quantity;
+            return inventoryInformation;
+        }
+        /// <summary>
+        /// There are no comments for Property InventorySet in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.Sitecore.Commerce.Core.EntityReference InventorySet
+        {
+            get
+            {
+                return this._InventorySet;
+            }
+            set
+            {
+                this.OnInventorySetChanging(value);
+                this._InventorySet = value;
+                this.OnInventorySetChanged();
+                this.OnPropertyChanged("InventorySet");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.Sitecore.Commerce.Core.EntityReference _InventorySet;
+        partial void OnInventorySetChanging(global::CommerceOps.Sitecore.Commerce.Core.EntityReference value);
+        partial void OnInventorySetChanged();
+        /// <summary>
+        /// There are no comments for Property SellableItem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.Sitecore.Commerce.Core.EntityReference SellableItem
+        {
+            get
+            {
+                return this._SellableItem;
+            }
+            set
+            {
+                this.OnSellableItemChanging(value);
+                this._SellableItem = value;
+                this.OnSellableItemChanged();
+                this.OnPropertyChanged("SellableItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.Sitecore.Commerce.Core.EntityReference _SellableItem;
+        partial void OnSellableItemChanging(global::CommerceOps.Sitecore.Commerce.Core.EntityReference value);
+        partial void OnSellableItemChanged();
+        /// <summary>
+        /// There are no comments for Property VariationId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string VariationId
+        {
+            get
+            {
+                return this._VariationId;
+            }
+            set
+            {
+                this.OnVariationIdChanging(value);
+                this._VariationId = value;
+                this.OnVariationIdChanged();
+                this.OnPropertyChanged("VariationId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _VariationId;
+        partial void OnVariationIdChanging(string value);
+        partial void OnVariationIdChanged();
+        /// <summary>
+        /// There are no comments for Property Quantity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int Quantity
+        {
+            get
+            {
+                return this._Quantity;
+            }
+            set
+            {
+                this.OnQuantityChanging(value);
+                this._Quantity = value;
+                this.OnQuantityChanged();
+                this.OnPropertyChanged("Quantity");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _Quantity;
+        partial void OnQuantityChanging(int value);
+        partial void OnQuantityChanged();
+        /// <summary>
+        /// There are no comments for Property InvoiceUnitPrice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.Sitecore.Commerce.Core.Money InvoiceUnitPrice
+        {
+            get
+            {
+                return this._InvoiceUnitPrice;
+            }
+            set
+            {
+                this.OnInvoiceUnitPriceChanging(value);
+                this._InvoiceUnitPrice = value;
+                this.OnInvoiceUnitPriceChanged();
+                this.OnPropertyChanged("InvoiceUnitPrice");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.Sitecore.Commerce.Core.Money _InvoiceUnitPrice;
+        partial void OnInvoiceUnitPriceChanging(global::CommerceOps.Sitecore.Commerce.Core.Money value);
+        partial void OnInvoiceUnitPriceChanged();
+    }
+    /// <summary>
     /// There are no comments for InventorySetSingle in the schema.
     /// </summary>
     public partial class InventorySetSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<InventorySet>
@@ -32735,7 +34418,7 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         /// There are no comments for Property Description in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString Description
+        public string Description
         {
             get
             {
@@ -32750,8 +34433,8 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString _Description;
-        partial void OnDescriptionChanging(global::CommerceOps.Sitecore.Commerce.Core.Localized_1OfString value);
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
     }
     /// <summary>
@@ -33119,6 +34802,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
     public static class ExtensionMethods
     {
         /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle CastToAssociateCatalogToInventorySetCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateCatalogToInventorySetCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateSellableItemToInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.AssociateSellableItemToInventorySetCommandSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
@@ -33181,6 +34896,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.CreateInventorySetCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.CreateInventorySetCommand>();
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.CreateInventorySetCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle CastToDisassociateCatalogFromInventorySetCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateCatalogFromInventorySetCommandSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateSellableItemFromInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.DisassociateSellableItemFromInventorySetCommandSingle specified by key from an entity set
@@ -33309,6 +35056,70 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.ExportInventorySetsCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.ExportInventorySetsCommand>();
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.ExportInventorySetsCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle CastToGetBulkStockInformationCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetBulkStockInformationCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle CastToGetInventoryInformationCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventoryInformationCommandSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventorySetCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventorySetCommandSingle specified by key from an entity set
@@ -33471,6 +35282,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.GetInventorySkuCommandSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle CastToStreamInventorySetsToArchiveCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.StreamInventorySetsToArchiveCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.TransferInventoryCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.TransferInventoryCommandSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
@@ -33599,38 +35442,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryComponentSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle CastToInventoryInformationComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponent>();
-            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationComponentSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.PreorderableComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.PreorderableComponentSingle specified by key from an entity set
         /// </summary>
         /// <param name="source">source entity set</param>
@@ -33661,6 +35472,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Inventory
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.PreorderableComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.PreorderableComponent>();
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.PreorderableComponentSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle CastToInventoryInformation(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformation>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventoryInformationSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventorySet as global::CommerceOps.Sitecore.Commerce.Plugin.Inventory.InventorySetSingle specified by key from an entity set
@@ -34172,6 +36015,50 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Management
     /// </summary>
     public partial class SitecoreControlPanelItemsPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
     {
+        /// <summary>
+        /// There are no comments for Property BusinessToolsViewActionMessagesPath in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string BusinessToolsViewActionMessagesPath
+        {
+            get
+            {
+                return this._BusinessToolsViewActionMessagesPath;
+            }
+            set
+            {
+                this.OnBusinessToolsViewActionMessagesPathChanging(value);
+                this._BusinessToolsViewActionMessagesPath = value;
+                this.OnBusinessToolsViewActionMessagesPathChanged();
+                this.OnPropertyChanged("BusinessToolsViewActionMessagesPath");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _BusinessToolsViewActionMessagesPath;
+        partial void OnBusinessToolsViewActionMessagesPathChanging(string value);
+        partial void OnBusinessToolsViewActionMessagesPathChanged();
+        /// <summary>
+        /// There are no comments for Property BusinessToolsViewActionDefaultMessageName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string BusinessToolsViewActionDefaultMessageName
+        {
+            get
+            {
+                return this._BusinessToolsViewActionDefaultMessageName;
+            }
+            set
+            {
+                this.OnBusinessToolsViewActionDefaultMessageNameChanging(value);
+                this._BusinessToolsViewActionDefaultMessageName = value;
+                this.OnBusinessToolsViewActionDefaultMessageNameChanged();
+                this.OnPropertyChanged("BusinessToolsViewActionDefaultMessageName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _BusinessToolsViewActionDefaultMessageName;
+        partial void OnBusinessToolsViewActionDefaultMessageNameChanging(string value);
+        partial void OnBusinessToolsViewActionDefaultMessageNameChanged();
         /// <summary>
         /// There are no comments for Property PaymentConfigurationTemplate in the schema.
         /// </summary>
@@ -36999,6 +38886,28 @@ namespace CommerceOps.Sitecore.Commerce.EntityViews
         partial void OnRequiresConfirmationChanging(bool value);
         partial void OnRequiresConfirmationChanged();
         /// <summary>
+        /// There are no comments for Property ConfirmationMessage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ConfirmationMessage
+        {
+            get
+            {
+                return this._ConfirmationMessage;
+            }
+            set
+            {
+                this.OnConfirmationMessageChanging(value);
+                this._ConfirmationMessage = value;
+                this.OnConfirmationMessageChanged();
+                this.OnPropertyChanged("ConfirmationMessage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ConfirmationMessage;
+        partial void OnConfirmationMessageChanging(string value);
+        partial void OnConfirmationMessageChanged();
+        /// <summary>
         /// There are no comments for Property UiHint in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -37798,60 +39707,54 @@ namespace CommerceOps.Plugin.Sample.Customers.CsMigration
         }
     }
     /// <summary>
-    /// There are no comments for PartyProfilePropertiesMappingPolicy in the schema.
-    /// </summary>
-    public partial class PartyProfilePropertiesMappingPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// There are no comments for Property PartyProfileProperties in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String> PartyProfileProperties
-        {
-            get
-            {
-                return this._PartyProfileProperties;
-            }
-            set
-            {
-                this.OnPartyProfilePropertiesChanging(value);
-                this._PartyProfileProperties = value;
-                this.OnPartyProfilePropertiesChanged();
-                this.OnPropertyChanged("PartyProfileProperties");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String> _PartyProfileProperties = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String>();
-        partial void OnPartyProfilePropertiesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String> value);
-        partial void OnPartyProfilePropertiesChanged();
-    }
-    /// <summary>
     /// There are no comments for ProfilePropertiesMappingPolicy in the schema.
     /// </summary>
     public partial class ProfilePropertiesMappingPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
     {
         /// <summary>
-        /// There are no comments for Property ProfileProperties in the schema.
+        /// There are no comments for Property UserProperties in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String> ProfileProperties
+        public global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_String UserProperties
         {
             get
             {
-                return this._ProfileProperties;
+                return this._UserProperties;
             }
             set
             {
-                this.OnProfilePropertiesChanging(value);
-                this._ProfileProperties = value;
-                this.OnProfilePropertiesChanged();
-                this.OnPropertyChanged("ProfileProperties");
+                this.OnUserPropertiesChanging(value);
+                this._UserProperties = value;
+                this.OnUserPropertiesChanged();
+                this.OnPropertyChanged("UserProperties");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String> _ProfileProperties = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String>();
-        partial void OnProfilePropertiesChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_String> value);
-        partial void OnProfilePropertiesChanged();
+        private global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_String _UserProperties;
+        partial void OnUserPropertiesChanging(global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_String value);
+        partial void OnUserPropertiesChanged();
+        /// <summary>
+        /// There are no comments for Property AddressProperties in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_String AddressProperties
+        {
+            get
+            {
+                return this._AddressProperties;
+            }
+            set
+            {
+                this.OnAddressPropertiesChanging(value);
+                this._AddressProperties = value;
+                this.OnAddressPropertiesChanged();
+                this.OnPropertyChanged("AddressProperties");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_String _AddressProperties;
+        partial void OnAddressPropertiesChanging(global::CommerceOps.System.Collections.Generic.Dictionary_2OfString_String value);
+        partial void OnAddressPropertiesChanged();
     }
     /// <summary>
     /// There are no comments for ProfilePropertiesPolicy in the schema.
@@ -37903,72 +39806,6 @@ namespace CommerceOps.Plugin.Sample.Customers.CsMigration
         partial void OnUserObjectTypeChanging(string value);
         partial void OnUserObjectTypeChanged();
         /// <summary>
-        /// There are no comments for Property SitecoreDomainName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string SitecoreDomainName
-        {
-            get
-            {
-                return this._SitecoreDomainName;
-            }
-            set
-            {
-                this.OnSitecoreDomainNameChanging(value);
-                this._SitecoreDomainName = value;
-                this.OnSitecoreDomainNameChanged();
-                this.OnPropertyChanged("SitecoreDomainName");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _SitecoreDomainName;
-        partial void OnSitecoreDomainNameChanging(string value);
-        partial void OnSitecoreDomainNameChanged();
-        /// <summary>
-        /// There are no comments for Property GeneralInfoPropertyGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string GeneralInfoPropertyGroup
-        {
-            get
-            {
-                return this._GeneralInfoPropertyGroup;
-            }
-            set
-            {
-                this.OnGeneralInfoPropertyGroupChanging(value);
-                this._GeneralInfoPropertyGroup = value;
-                this.OnGeneralInfoPropertyGroupChanged();
-                this.OnPropertyChanged("GeneralInfoPropertyGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _GeneralInfoPropertyGroup;
-        partial void OnGeneralInfoPropertyGroupChanging(string value);
-        partial void OnGeneralInfoPropertyGroupChanged();
-        /// <summary>
-        /// There are no comments for Property AccountInfoPropertyGroup in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string AccountInfoPropertyGroup
-        {
-            get
-            {
-                return this._AccountInfoPropertyGroup;
-            }
-            set
-            {
-                this.OnAccountInfoPropertyGroupChanging(value);
-                this._AccountInfoPropertyGroup = value;
-                this.OnAccountInfoPropertyGroupChanged();
-                this.OnPropertyChanged("AccountInfoPropertyGroup");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AccountInfoPropertyGroup;
-        partial void OnAccountInfoPropertyGroupChanging(string value);
-        partial void OnAccountInfoPropertyGroupChanged();
-        /// <summary>
         /// There are no comments for Property UserIdProperty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -38013,116 +39850,6 @@ namespace CommerceOps.Plugin.Sample.Customers.CsMigration
         partial void OnAccountStatusPropertyChanging(string value);
         partial void OnAccountStatusPropertyChanged();
         /// <summary>
-        /// There are no comments for Property FirstNameProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string FirstNameProperty
-        {
-            get
-            {
-                return this._FirstNameProperty;
-            }
-            set
-            {
-                this.OnFirstNamePropertyChanging(value);
-                this._FirstNameProperty = value;
-                this.OnFirstNamePropertyChanged();
-                this.OnPropertyChanged("FirstNameProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _FirstNameProperty;
-        partial void OnFirstNamePropertyChanging(string value);
-        partial void OnFirstNamePropertyChanged();
-        /// <summary>
-        /// There are no comments for Property LastNameProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string LastNameProperty
-        {
-            get
-            {
-                return this._LastNameProperty;
-            }
-            set
-            {
-                this.OnLastNamePropertyChanging(value);
-                this._LastNameProperty = value;
-                this.OnLastNamePropertyChanged();
-                this.OnPropertyChanged("LastNameProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LastNameProperty;
-        partial void OnLastNamePropertyChanging(string value);
-        partial void OnLastNamePropertyChanged();
-        /// <summary>
-        /// There are no comments for Property EmailAddressProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string EmailAddressProperty
-        {
-            get
-            {
-                return this._EmailAddressProperty;
-            }
-            set
-            {
-                this.OnEmailAddressPropertyChanging(value);
-                this._EmailAddressProperty = value;
-                this.OnEmailAddressPropertyChanged();
-                this.OnPropertyChanged("EmailAddressProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _EmailAddressProperty;
-        partial void OnEmailAddressPropertyChanging(string value);
-        partial void OnEmailAddressPropertyChanged();
-        /// <summary>
-        /// There are no comments for Property AddressListProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string AddressListProperty
-        {
-            get
-            {
-                return this._AddressListProperty;
-            }
-            set
-            {
-                this.OnAddressListPropertyChanging(value);
-                this._AddressListProperty = value;
-                this.OnAddressListPropertyChanged();
-                this.OnPropertyChanged("AddressListProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AddressListProperty;
-        partial void OnAddressListPropertyChanging(string value);
-        partial void OnAddressListPropertyChanged();
-        /// <summary>
-        /// There are no comments for Property ExternalIdProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string ExternalIdProperty
-        {
-            get
-            {
-                return this._ExternalIdProperty;
-            }
-            set
-            {
-                this.OnExternalIdPropertyChanging(value);
-                this._ExternalIdProperty = value;
-                this.OnExternalIdPropertyChanged();
-                this.OnPropertyChanged("ExternalIdProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _ExternalIdProperty;
-        partial void OnExternalIdPropertyChanging(string value);
-        partial void OnExternalIdPropertyChanged();
-        /// <summary>
         /// There are no comments for Property PasswordProperty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -38145,138 +39872,6 @@ namespace CommerceOps.Plugin.Sample.Customers.CsMigration
         partial void OnPasswordPropertyChanging(string value);
         partial void OnPasswordPropertyChanged();
         /// <summary>
-        /// There are no comments for Property AddressIdProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string AddressIdProperty
-        {
-            get
-            {
-                return this._AddressIdProperty;
-            }
-            set
-            {
-                this.OnAddressIdPropertyChanging(value);
-                this._AddressIdProperty = value;
-                this.OnAddressIdPropertyChanged();
-                this.OnPropertyChanged("AddressIdProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AddressIdProperty;
-        partial void OnAddressIdPropertyChanging(string value);
-        partial void OnAddressIdPropertyChanged();
-        /// <summary>
-        /// There are no comments for Property Country in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Country
-        {
-            get
-            {
-                return this._Country;
-            }
-            set
-            {
-                this.OnCountryChanging(value);
-                this._Country = value;
-                this.OnCountryChanged();
-                this.OnPropertyChanged("Country");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Country;
-        partial void OnCountryChanging(string value);
-        partial void OnCountryChanged();
-        /// <summary>
-        /// There are no comments for Property CountryCode in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string CountryCode
-        {
-            get
-            {
-                return this._CountryCode;
-            }
-            set
-            {
-                this.OnCountryCodeChanging(value);
-                this._CountryCode = value;
-                this.OnCountryCodeChanged();
-                this.OnPropertyChanged("CountryCode");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _CountryCode;
-        partial void OnCountryCodeChanging(string value);
-        partial void OnCountryCodeChanged();
-        /// <summary>
-        /// There are no comments for Property State in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string State
-        {
-            get
-            {
-                return this._State;
-            }
-            set
-            {
-                this.OnStateChanging(value);
-                this._State = value;
-                this.OnStateChanged();
-                this.OnPropertyChanged("State");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _State;
-        partial void OnStateChanging(string value);
-        partial void OnStateChanged();
-        /// <summary>
-        /// There are no comments for Property StateCode in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string StateCode
-        {
-            get
-            {
-                return this._StateCode;
-            }
-            set
-            {
-                this.OnStateCodeChanging(value);
-                this._StateCode = value;
-                this.OnStateCodeChanged();
-                this.OnPropertyChanged("StateCode");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _StateCode;
-        partial void OnStateCodeChanging(string value);
-        partial void OnStateCodeChanged();
-        /// <summary>
-        /// There are no comments for Property City in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string City
-        {
-            get
-            {
-                return this._City;
-            }
-            set
-            {
-                this.OnCityChanging(value);
-                this._City = value;
-                this.OnCityChanged();
-                this.OnPropertyChanged("City");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _City;
-        partial void OnCityChanging(string value);
-        partial void OnCityChanged();
-        /// <summary>
         /// There are no comments for Property AccountNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
@@ -38298,138 +39893,6 @@ namespace CommerceOps.Plugin.Sample.Customers.CsMigration
         private string _AccountNumber;
         partial void OnAccountNumberChanging(string value);
         partial void OnAccountNumberChanged();
-        /// <summary>
-        /// There are no comments for Property Email in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Email
-        {
-            get
-            {
-                return this._Email;
-            }
-            set
-            {
-                this.OnEmailChanging(value);
-                this._Email = value;
-                this.OnEmailChanged();
-                this.OnPropertyChanged("Email");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Email;
-        partial void OnEmailChanging(string value);
-        partial void OnEmailChanged();
-        /// <summary>
-        /// There are no comments for Property Password in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Password
-        {
-            get
-            {
-                return this._Password;
-            }
-            set
-            {
-                this.OnPasswordChanging(value);
-                this._Password = value;
-                this.OnPasswordChanged();
-                this.OnPropertyChanged("Password");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Password;
-        partial void OnPasswordChanging(string value);
-        partial void OnPasswordChanged();
-        /// <summary>
-        /// There are no comments for Property Value in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Value
-        {
-            get
-            {
-                return this._Value;
-            }
-            set
-            {
-                this.OnValueChanging(value);
-                this._Value = value;
-                this.OnValueChanged();
-                this.OnPropertyChanged("Value");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Value;
-        partial void OnValueChanging(string value);
-        partial void OnValueChanged();
-        /// <summary>
-        /// There are no comments for Property Languages in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string Languages
-        {
-            get
-            {
-                return this._Languages;
-            }
-            set
-            {
-                this.OnLanguagesChanging(value);
-                this._Languages = value;
-                this.OnLanguagesChanged();
-                this.OnPropertyChanged("Languages");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _Languages;
-        partial void OnLanguagesChanging(string value);
-        partial void OnLanguagesChanged();
-        /// <summary>
-        /// There are no comments for Property UserTypeSiteTerm in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string UserTypeSiteTerm
-        {
-            get
-            {
-                return this._UserTypeSiteTerm;
-            }
-            set
-            {
-                this.OnUserTypeSiteTermChanging(value);
-                this._UserTypeSiteTerm = value;
-                this.OnUserTypeSiteTermChanged();
-                this.OnPropertyChanged("UserTypeSiteTerm");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _UserTypeSiteTerm;
-        partial void OnUserTypeSiteTermChanging(string value);
-        partial void OnUserTypeSiteTermChanged();
-        /// <summary>
-        /// There are no comments for Property AccountStatusSiteTerm in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string AccountStatusSiteTerm
-        {
-            get
-            {
-                return this._AccountStatusSiteTerm;
-            }
-            set
-            {
-                this.OnAccountStatusSiteTermChanging(value);
-                this._AccountStatusSiteTerm = value;
-                this.OnAccountStatusSiteTermChanged();
-                this.OnPropertyChanged("AccountStatusSiteTerm");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _AccountStatusSiteTerm;
-        partial void OnAccountStatusSiteTermChanging(string value);
-        partial void OnAccountStatusSiteTermChanged();
     }
     /// <summary>
     /// There are no comments for ProfilesSqlPolicy in the schema.
@@ -42387,49 +43850,49 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers
     public partial class KnownBusinessUsersActionsPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
     {
         /// <summary>
-        /// There are no comments for Property LocalizeEntityProperty in the schema.
+        /// There are no comments for Property LocalizeProperty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string LocalizeEntityProperty
+        public string LocalizeProperty
         {
             get
             {
-                return this._LocalizeEntityProperty;
+                return this._LocalizeProperty;
             }
             set
             {
-                this.OnLocalizeEntityPropertyChanging(value);
-                this._LocalizeEntityProperty = value;
-                this.OnLocalizeEntityPropertyChanged();
-                this.OnPropertyChanged("LocalizeEntityProperty");
+                this.OnLocalizePropertyChanging(value);
+                this._LocalizeProperty = value;
+                this.OnLocalizePropertyChanged();
+                this.OnPropertyChanged("LocalizeProperty");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LocalizeEntityProperty;
-        partial void OnLocalizeEntityPropertyChanging(string value);
-        partial void OnLocalizeEntityPropertyChanged();
+        private string _LocalizeProperty;
+        partial void OnLocalizePropertyChanging(string value);
+        partial void OnLocalizePropertyChanged();
         /// <summary>
-        /// There are no comments for Property SelectLocalizableEntityProperty in the schema.
+        /// There are no comments for Property SelectLocalizableProperty in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string SelectLocalizableEntityProperty
+        public string SelectLocalizableProperty
         {
             get
             {
-                return this._SelectLocalizableEntityProperty;
+                return this._SelectLocalizableProperty;
             }
             set
             {
-                this.OnSelectLocalizableEntityPropertyChanging(value);
-                this._SelectLocalizableEntityProperty = value;
-                this.OnSelectLocalizableEntityPropertyChanged();
-                this.OnPropertyChanged("SelectLocalizableEntityProperty");
+                this.OnSelectLocalizablePropertyChanging(value);
+                this._SelectLocalizableProperty = value;
+                this.OnSelectLocalizablePropertyChanged();
+                this.OnPropertyChanged("SelectLocalizableProperty");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _SelectLocalizableEntityProperty;
-        partial void OnSelectLocalizableEntityPropertyChanging(string value);
-        partial void OnSelectLocalizableEntityPropertyChanged();
+        private string _SelectLocalizableProperty;
+        partial void OnSelectLocalizablePropertyChanging(string value);
+        partial void OnSelectLocalizablePropertyChanged();
         /// <summary>
         /// There are no comments for Property AddTimeZone in the schema.
         /// </summary>
@@ -42568,28 +44031,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers
         private string _Summary;
         partial void OnSummaryChanging(string value);
         partial void OnSummaryChanged();
-        /// <summary>
-        /// There are no comments for Property LocalizeEntityProperty in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public string LocalizeEntityProperty
-        {
-            get
-            {
-                return this._LocalizeEntityProperty;
-            }
-            set
-            {
-                this.OnLocalizeEntityPropertyChanging(value);
-                this._LocalizeEntityProperty = value;
-                this.OnLocalizeEntityPropertyChanged();
-                this.OnPropertyChanged("LocalizeEntityProperty");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private string _LocalizeEntityProperty;
-        partial void OnLocalizeEntityPropertyChanging(string value);
-        partial void OnLocalizeEntityPropertyChanged();
         /// <summary>
         /// There are no comments for Property LocalizedValue in the schema.
         /// </summary>
@@ -42744,6 +44185,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers
         private string _TimeZone;
         partial void OnTimeZoneChanging(string value);
         partial void OnTimeZoneChanged();
+        /// <summary>
+        /// There are no comments for Property ToolsLanguages in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ToolsLanguages
+        {
+            get
+            {
+                return this._ToolsLanguages;
+            }
+            set
+            {
+                this.OnToolsLanguagesChanging(value);
+                this._ToolsLanguages = value;
+                this.OnToolsLanguagesChanged();
+                this.OnPropertyChanged("ToolsLanguages");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ToolsLanguages;
+        partial void OnToolsLanguagesChanging(string value);
+        partial void OnToolsLanguagesChanged();
     }
     /// <summary>
     /// There are no comments for PluginPolicy in the schema.
@@ -42861,6 +44324,51 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers
             BizFxEnvironmentsCommand bizFxEnvironmentsCommand = new BizFxEnvironmentsCommand();
             bizFxEnvironmentsCommand.Id = ID;
             return bizFxEnvironmentsCommand;
+        }
+    }
+    /// <summary>
+    /// There are no comments for BizFxLanguagesCommandSingle in the schema.
+    /// </summary>
+    public partial class BizFxLanguagesCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<BizFxLanguagesCommand>
+    {
+        /// <summary>
+        /// Initialize a new BizFxLanguagesCommandSingle object.
+        /// </summary>
+        public BizFxLanguagesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new BizFxLanguagesCommandSingle object.
+        /// </summary>
+        public BizFxLanguagesCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new BizFxLanguagesCommandSingle object.
+        /// </summary>
+        public BizFxLanguagesCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<BizFxLanguagesCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for BizFxLanguagesCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class BizFxLanguagesCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new BizFxLanguagesCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static BizFxLanguagesCommand CreateBizFxLanguagesCommand(string ID)
+        {
+            BizFxLanguagesCommand bizFxLanguagesCommand = new BizFxLanguagesCommand();
+            bizFxLanguagesCommand.Id = ID;
+            return bizFxLanguagesCommand;
         }
     }
     /// <summary>
@@ -43122,6 +44630,38 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxEnvironmentsCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxEnvironmentsCommand>();
             return new global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxEnvironmentsCommandSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand as global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand as global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle CastToBizFxLanguagesCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxLanguagesCommandSingle(source.Context, query.GetPath(null));
         }
         /// <summary>
         /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxNavigationCommand as global::CommerceOps.Sitecore.Commerce.Plugin.BusinessUsers.BizFxNavigationCommandSingle specified by key from an entity set
@@ -45534,6 +47074,1605 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Carts
         {
             global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Carts.Cart> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Carts.Cart>();
             return new global::CommerceOps.Sitecore.Commerce.Plugin.Carts.CartSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
+namespace CommerceOps.Sitecore.Commerce.Plugin.Content
+{
+    /// <summary>
+    /// There are no comments for DefaultContentPathsPolicy in the schema.
+    /// </summary>
+    public partial class DefaultContentPathsPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property ContentPaths in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> ContentPaths
+        {
+            get
+            {
+                return this._ContentPaths;
+            }
+            set
+            {
+                this.OnContentPathsChanging(value);
+                this._ContentPaths = value;
+                this.OnContentPathsChanged();
+                this.OnPropertyChanged("ContentPaths");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _ContentPaths = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnContentPathsChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnContentPathsChanged();
+    }
+    /// <summary>
+    /// There are no comments for KnownContentActionsPolicy in the schema.
+    /// </summary>
+    public partial class KnownContentActionsPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property SynchronizeContentPath in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SynchronizeContentPath
+        {
+            get
+            {
+                return this._SynchronizeContentPath;
+            }
+            set
+            {
+                this.OnSynchronizeContentPathChanging(value);
+                this._SynchronizeContentPath = value;
+                this.OnSynchronizeContentPathChanged();
+                this.OnPropertyChanged("SynchronizeContentPath");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SynchronizeContentPath;
+        partial void OnSynchronizeContentPathChanging(string value);
+        partial void OnSynchronizeContentPathChanged();
+        /// <summary>
+        /// There are no comments for Property SynchronizeContentItem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SynchronizeContentItem
+        {
+            get
+            {
+                return this._SynchronizeContentItem;
+            }
+            set
+            {
+                this.OnSynchronizeContentItemChanging(value);
+                this._SynchronizeContentItem = value;
+                this.OnSynchronizeContentItemChanged();
+                this.OnPropertyChanged("SynchronizeContentItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SynchronizeContentItem;
+        partial void OnSynchronizeContentItemChanging(string value);
+        partial void OnSynchronizeContentItemChanged();
+        /// <summary>
+        /// There are no comments for Property UnSynchronizeContentPath in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string UnSynchronizeContentPath
+        {
+            get
+            {
+                return this._UnSynchronizeContentPath;
+            }
+            set
+            {
+                this.OnUnSynchronizeContentPathChanging(value);
+                this._UnSynchronizeContentPath = value;
+                this.OnUnSynchronizeContentPathChanged();
+                this.OnPropertyChanged("UnSynchronizeContentPath");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _UnSynchronizeContentPath;
+        partial void OnUnSynchronizeContentPathChanging(string value);
+        partial void OnUnSynchronizeContentPathChanged();
+        /// <summary>
+        /// There are no comments for Property EnsureDefaultContentPaths in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string EnsureDefaultContentPaths
+        {
+            get
+            {
+                return this._EnsureDefaultContentPaths;
+            }
+            set
+            {
+                this.OnEnsureDefaultContentPathsChanging(value);
+                this._EnsureDefaultContentPaths = value;
+                this.OnEnsureDefaultContentPathsChanged();
+                this.OnPropertyChanged("EnsureDefaultContentPaths");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _EnsureDefaultContentPaths;
+        partial void OnEnsureDefaultContentPathsChanging(string value);
+        partial void OnEnsureDefaultContentPathsChanged();
+        /// <summary>
+        /// There are no comments for Property AddContentPath in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string AddContentPath
+        {
+            get
+            {
+                return this._AddContentPath;
+            }
+            set
+            {
+                this.OnAddContentPathChanging(value);
+                this._AddContentPath = value;
+                this.OnAddContentPathChanged();
+                this.OnPropertyChanged("AddContentPath");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AddContentPath;
+        partial void OnAddContentPathChanging(string value);
+        partial void OnAddContentPathChanged();
+        /// <summary>
+        /// There are no comments for Property RemoveContentPath in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string RemoveContentPath
+        {
+            get
+            {
+                return this._RemoveContentPath;
+            }
+            set
+            {
+                this.OnRemoveContentPathChanging(value);
+                this._RemoveContentPath = value;
+                this.OnRemoveContentPathChanged();
+                this.OnPropertyChanged("RemoveContentPath");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _RemoveContentPath;
+        partial void OnRemoveContentPathChanging(string value);
+        partial void OnRemoveContentPathChanged();
+    }
+    /// <summary>
+    /// There are no comments for KnownContentListsPolicy in the schema.
+    /// </summary>
+    public partial class KnownContentListsPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property ContentPathItems in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentPathItems
+        {
+            get
+            {
+                return this._ContentPathItems;
+            }
+            set
+            {
+                this.OnContentPathItemsChanging(value);
+                this._ContentPathItems = value;
+                this.OnContentPathItemsChanged();
+                this.OnPropertyChanged("ContentPathItems");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentPathItems;
+        partial void OnContentPathItemsChanging(string value);
+        partial void OnContentPathItemsChanged();
+        /// <summary>
+        /// There are no comments for Property ContentItemChildren in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentItemChildren
+        {
+            get
+            {
+                return this._ContentItemChildren;
+            }
+            set
+            {
+                this.OnContentItemChildrenChanging(value);
+                this._ContentItemChildren = value;
+                this.OnContentItemChildrenChanged();
+                this.OnPropertyChanged("ContentItemChildren");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentItemChildren;
+        partial void OnContentItemChildrenChanging(string value);
+        partial void OnContentItemChildrenChanged();
+    }
+    /// <summary>
+    /// There are no comments for KnownContentViewsPolicy in the schema.
+    /// </summary>
+    public partial class KnownContentViewsPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property ContentDashboard in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentDashboard
+        {
+            get
+            {
+                return this._ContentDashboard;
+            }
+            set
+            {
+                this.OnContentDashboardChanging(value);
+                this._ContentDashboard = value;
+                this.OnContentDashboardChanged();
+                this.OnPropertyChanged("ContentDashboard");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentDashboard;
+        partial void OnContentDashboardChanging(string value);
+        partial void OnContentDashboardChanged();
+        /// <summary>
+        /// There are no comments for Property SitecoreIntegration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SitecoreIntegration
+        {
+            get
+            {
+                return this._SitecoreIntegration;
+            }
+            set
+            {
+                this.OnSitecoreIntegrationChanging(value);
+                this._SitecoreIntegration = value;
+                this.OnSitecoreIntegrationChanged();
+                this.OnPropertyChanged("SitecoreIntegration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SitecoreIntegration;
+        partial void OnSitecoreIntegrationChanging(string value);
+        partial void OnSitecoreIntegrationChanged();
+        /// <summary>
+        /// There are no comments for Property RegisteredContentPaths in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string RegisteredContentPaths
+        {
+            get
+            {
+                return this._RegisteredContentPaths;
+            }
+            set
+            {
+                this.OnRegisteredContentPathsChanging(value);
+                this._RegisteredContentPaths = value;
+                this.OnRegisteredContentPathsChanged();
+                this.OnPropertyChanged("RegisteredContentPaths");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _RegisteredContentPaths;
+        partial void OnRegisteredContentPathsChanging(string value);
+        partial void OnRegisteredContentPathsChanged();
+        /// <summary>
+        /// There are no comments for Property Master in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Master
+        {
+            get
+            {
+                return this._Master;
+            }
+            set
+            {
+                this.OnMasterChanging(value);
+                this._Master = value;
+                this.OnMasterChanged();
+                this.OnPropertyChanged("Master");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Master;
+        partial void OnMasterChanging(string value);
+        partial void OnMasterChanged();
+        /// <summary>
+        /// There are no comments for Property ContentProperties in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentProperties
+        {
+            get
+            {
+                return this._ContentProperties;
+            }
+            set
+            {
+                this.OnContentPropertiesChanging(value);
+                this._ContentProperties = value;
+                this.OnContentPropertiesChanged();
+                this.OnPropertyChanged("ContentProperties");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentProperties;
+        partial void OnContentPropertiesChanging(string value);
+        partial void OnContentPropertiesChanged();
+        /// <summary>
+        /// There are no comments for Property ContentProperty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentProperty
+        {
+            get
+            {
+                return this._ContentProperty;
+            }
+            set
+            {
+                this.OnContentPropertyChanging(value);
+                this._ContentProperty = value;
+                this.OnContentPropertyChanged();
+                this.OnPropertyChanged("ContentProperty");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentProperty;
+        partial void OnContentPropertyChanging(string value);
+        partial void OnContentPropertyChanged();
+        /// <summary>
+        /// There are no comments for Property ContentChildren in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentChildren
+        {
+            get
+            {
+                return this._ContentChildren;
+            }
+            set
+            {
+                this.OnContentChildrenChanging(value);
+                this._ContentChildren = value;
+                this.OnContentChildrenChanged();
+                this.OnPropertyChanged("ContentChildren");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentChildren;
+        partial void OnContentChildrenChanging(string value);
+        partial void OnContentChildrenChanged();
+        /// <summary>
+        /// There are no comments for Property ContentChild in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentChild
+        {
+            get
+            {
+                return this._ContentChild;
+            }
+            set
+            {
+                this.OnContentChildChanging(value);
+                this._ContentChild = value;
+                this.OnContentChildChanged();
+                this.OnPropertyChanged("ContentChild");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentChild;
+        partial void OnContentChildChanging(string value);
+        partial void OnContentChildChanged();
+        /// <summary>
+        /// There are no comments for Property ContentItems in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentItems
+        {
+            get
+            {
+                return this._ContentItems;
+            }
+            set
+            {
+                this.OnContentItemsChanging(value);
+                this._ContentItems = value;
+                this.OnContentItemsChanged();
+                this.OnPropertyChanged("ContentItems");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentItems;
+        partial void OnContentItemsChanging(string value);
+        partial void OnContentItemsChanged();
+        /// <summary>
+        /// There are no comments for Property ContentItem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string ContentItem
+        {
+            get
+            {
+                return this._ContentItem;
+            }
+            set
+            {
+                this.OnContentItemChanging(value);
+                this._ContentItem = value;
+                this.OnContentItemChanged();
+                this.OnPropertyChanged("ContentItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _ContentItem;
+        partial void OnContentItemChanging(string value);
+        partial void OnContentItemChanged();
+        /// <summary>
+        /// There are no comments for Property AddContentPath in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string AddContentPath
+        {
+            get
+            {
+                return this._AddContentPath;
+            }
+            set
+            {
+                this.OnAddContentPathChanging(value);
+                this._AddContentPath = value;
+                this.OnAddContentPathChanged();
+                this.OnPropertyChanged("AddContentPath");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _AddContentPath;
+        partial void OnAddContentPathChanging(string value);
+        partial void OnAddContentPathChanged();
+        /// <summary>
+        /// There are no comments for Property SynchronizeContentItem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SynchronizeContentItem
+        {
+            get
+            {
+                return this._SynchronizeContentItem;
+            }
+            set
+            {
+                this.OnSynchronizeContentItemChanging(value);
+                this._SynchronizeContentItem = value;
+                this.OnSynchronizeContentItemChanged();
+                this.OnPropertyChanged("SynchronizeContentItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SynchronizeContentItem;
+        partial void OnSynchronizeContentItemChanging(string value);
+        partial void OnSynchronizeContentItemChanged();
+    }
+    /// <summary>
+    /// There are no comments for PluginPolicy in the schema.
+    /// </summary>
+    public partial class PluginPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property Icon in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Icon
+        {
+            get
+            {
+                return this._Icon;
+            }
+            set
+            {
+                this.OnIconChanging(value);
+                this._Icon = value;
+                this.OnIconChanged();
+                this.OnPropertyChanged("Icon");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Icon;
+        partial void OnIconChanging(string value);
+        partial void OnIconChanged();
+    }
+    /// <summary>
+    /// There are no comments for SyncCounterModel in the schema.
+    /// </summary>
+    public partial class SyncCounterModel : global::CommerceOps.Sitecore.Commerce.Core.Model
+    {
+        /// <summary>
+        /// Create a new SyncCounterModel object.
+        /// </summary>
+        /// <param name="syncCount">Initial value of SyncCount.</param>
+        /// <param name="skipCount">Initial value of SkipCount.</param>
+        /// <param name="started">Initial value of Started.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static SyncCounterModel CreateSyncCounterModel(int syncCount, int skipCount, global::System.DateTimeOffset started)
+        {
+            SyncCounterModel syncCounterModel = new SyncCounterModel();
+            syncCounterModel.SyncCount = syncCount;
+            syncCounterModel.SkipCount = skipCount;
+            syncCounterModel.Started = started;
+            return syncCounterModel;
+        }
+        /// <summary>
+        /// There are no comments for Property SyncCount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int SyncCount
+        {
+            get
+            {
+                return this._SyncCount;
+            }
+            set
+            {
+                this.OnSyncCountChanging(value);
+                this._SyncCount = value;
+                this.OnSyncCountChanged();
+                this.OnPropertyChanged("SyncCount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _SyncCount;
+        partial void OnSyncCountChanging(int value);
+        partial void OnSyncCountChanged();
+        /// <summary>
+        /// There are no comments for Property SkipCount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int SkipCount
+        {
+            get
+            {
+                return this._SkipCount;
+            }
+            set
+            {
+                this.OnSkipCountChanging(value);
+                this._SkipCount = value;
+                this.OnSkipCountChanged();
+                this.OnPropertyChanged("SkipCount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _SkipCount;
+        partial void OnSkipCountChanging(int value);
+        partial void OnSkipCountChanged();
+        /// <summary>
+        /// There are no comments for Property Started in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.DateTimeOffset Started
+        {
+            get
+            {
+                return this._Started;
+            }
+            set
+            {
+                this.OnStartedChanging(value);
+                this._Started = value;
+                this.OnStartedChanged();
+                this.OnPropertyChanged("Started");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _Started;
+        partial void OnStartedChanging(global::System.DateTimeOffset value);
+        partial void OnStartedChanged();
+    }
+    /// <summary>
+    /// There are no comments for ContentCommanderSingle in the schema.
+    /// </summary>
+    public partial class ContentCommanderSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ContentCommander>
+    {
+        /// <summary>
+        /// Initialize a new ContentCommanderSingle object.
+        /// </summary>
+        public ContentCommanderSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ContentCommanderSingle object.
+        /// </summary>
+        public ContentCommanderSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ContentCommanderSingle object.
+        /// </summary>
+        public ContentCommanderSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ContentCommander> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for ContentCommander in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class ContentCommander : global::CommerceOps.Sitecore.Commerce.Core.CommerceCommander
+    {
+        /// <summary>
+        /// Create a new ContentCommander object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static ContentCommander CreateContentCommander(string ID)
+        {
+            ContentCommander contentCommander = new ContentCommander();
+            contentCommander.Id = ID;
+            return contentCommander;
+        }
+    }
+    /// <summary>
+    /// There are no comments for ContentItemSyncComponentSingle in the schema.
+    /// </summary>
+    public partial class ContentItemSyncComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ContentItemSyncComponent>
+    {
+        /// <summary>
+        /// Initialize a new ContentItemSyncComponentSingle object.
+        /// </summary>
+        public ContentItemSyncComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ContentItemSyncComponentSingle object.
+        /// </summary>
+        public ContentItemSyncComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ContentItemSyncComponentSingle object.
+        /// </summary>
+        public ContentItemSyncComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ContentItemSyncComponent> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for ContentItemSyncComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class ContentItemSyncComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new ContentItemSyncComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="syncDate">Initial value of SyncDate.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static ContentItemSyncComponent CreateContentItemSyncComponent(string ID, global::System.DateTimeOffset syncDate)
+        {
+            ContentItemSyncComponent contentItemSyncComponent = new ContentItemSyncComponent();
+            contentItemSyncComponent.Id = ID;
+            contentItemSyncComponent.SyncDate = syncDate;
+            return contentItemSyncComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property SyncDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.DateTimeOffset SyncDate
+        {
+            get
+            {
+                return this._SyncDate;
+            }
+            set
+            {
+                this.OnSyncDateChanging(value);
+                this._SyncDate = value;
+                this.OnSyncDateChanged();
+                this.OnPropertyChanged("SyncDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _SyncDate;
+        partial void OnSyncDateChanging(global::System.DateTimeOffset value);
+        partial void OnSyncDateChanged();
+        /// <summary>
+        /// There are no comments for Property SyncName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SyncName
+        {
+            get
+            {
+                return this._SyncName;
+            }
+            set
+            {
+                this.OnSyncNameChanging(value);
+                this._SyncName = value;
+                this.OnSyncNameChanged();
+                this.OnPropertyChanged("SyncName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SyncName;
+        partial void OnSyncNameChanging(string value);
+        partial void OnSyncNameChanged();
+    }
+    /// <summary>
+    /// There are no comments for ContentPathSyncComponentSingle in the schema.
+    /// </summary>
+    public partial class ContentPathSyncComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ContentPathSyncComponent>
+    {
+        /// <summary>
+        /// Initialize a new ContentPathSyncComponentSingle object.
+        /// </summary>
+        public ContentPathSyncComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ContentPathSyncComponentSingle object.
+        /// </summary>
+        public ContentPathSyncComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ContentPathSyncComponentSingle object.
+        /// </summary>
+        public ContentPathSyncComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ContentPathSyncComponent> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for ContentPathSyncComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class ContentPathSyncComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new ContentPathSyncComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="syncDate">Initial value of SyncDate.</param>
+        /// <param name="syncCount">Initial value of SyncCount.</param>
+        /// <param name="skipCount">Initial value of SkipCount.</param>
+        /// <param name="elapsed">Initial value of Elapsed.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static ContentPathSyncComponent CreateContentPathSyncComponent(string ID, global::System.DateTimeOffset syncDate, int syncCount, int skipCount, int elapsed)
+        {
+            ContentPathSyncComponent contentPathSyncComponent = new ContentPathSyncComponent();
+            contentPathSyncComponent.Id = ID;
+            contentPathSyncComponent.SyncDate = syncDate;
+            contentPathSyncComponent.SyncCount = syncCount;
+            contentPathSyncComponent.SkipCount = skipCount;
+            contentPathSyncComponent.Elapsed = elapsed;
+            return contentPathSyncComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property SyncDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.DateTimeOffset SyncDate
+        {
+            get
+            {
+                return this._SyncDate;
+            }
+            set
+            {
+                this.OnSyncDateChanging(value);
+                this._SyncDate = value;
+                this.OnSyncDateChanged();
+                this.OnPropertyChanged("SyncDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.DateTimeOffset _SyncDate;
+        partial void OnSyncDateChanging(global::System.DateTimeOffset value);
+        partial void OnSyncDateChanged();
+        /// <summary>
+        /// There are no comments for Property SyncCount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int SyncCount
+        {
+            get
+            {
+                return this._SyncCount;
+            }
+            set
+            {
+                this.OnSyncCountChanging(value);
+                this._SyncCount = value;
+                this.OnSyncCountChanged();
+                this.OnPropertyChanged("SyncCount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _SyncCount;
+        partial void OnSyncCountChanging(int value);
+        partial void OnSyncCountChanged();
+        /// <summary>
+        /// There are no comments for Property SkipCount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int SkipCount
+        {
+            get
+            {
+                return this._SkipCount;
+            }
+            set
+            {
+                this.OnSkipCountChanging(value);
+                this._SkipCount = value;
+                this.OnSkipCountChanged();
+                this.OnPropertyChanged("SkipCount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _SkipCount;
+        partial void OnSkipCountChanging(int value);
+        partial void OnSkipCountChanged();
+        /// <summary>
+        /// There are no comments for Property Elapsed in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public int Elapsed
+        {
+            get
+            {
+                return this._Elapsed;
+            }
+            set
+            {
+                this.OnElapsedChanging(value);
+                this._Elapsed = value;
+                this.OnElapsedChanged();
+                this.OnPropertyChanged("Elapsed");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private int _Elapsed;
+        partial void OnElapsedChanging(int value);
+        partial void OnElapsedChanged();
+    }
+    /// <summary>
+    /// There are no comments for ItemsComponentSingle in the schema.
+    /// </summary>
+    public partial class ItemsComponentSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ItemsComponent>
+    {
+        /// <summary>
+        /// Initialize a new ItemsComponentSingle object.
+        /// </summary>
+        public ItemsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ItemsComponentSingle object.
+        /// </summary>
+        public ItemsComponentSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ItemsComponentSingle object.
+        /// </summary>
+        public ItemsComponentSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ItemsComponent> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+    }
+    /// <summary>
+    /// There are no comments for ItemsComponent in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class ItemsComponent : global::CommerceOps.Sitecore.Commerce.Core.Component
+    {
+        /// <summary>
+        /// Create a new ItemsComponent object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static ItemsComponent CreateItemsComponent(string ID)
+        {
+            ItemsComponent itemsComponent = new ItemsComponent();
+            itemsComponent.Id = ID;
+            return itemsComponent;
+        }
+        /// <summary>
+        /// There are no comments for Property Items in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ItemModel> Items
+        {
+            get
+            {
+                return this._Items;
+            }
+            set
+            {
+                this.OnItemsChanging(value);
+                this._Items = value;
+                this.OnItemsChanged();
+                this.OnPropertyChanged("Items");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ItemModel> _Items = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ItemModel>();
+        partial void OnItemsChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_ItemModel> value);
+        partial void OnItemsChanged();
+    }
+    /// <summary>
+    /// There are no comments for ContentItemSingle in the schema.
+    /// </summary>
+    public partial class ContentItemSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ContentItem>
+    {
+        /// <summary>
+        /// Initialize a new ContentItemSingle object.
+        /// </summary>
+        public ContentItemSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ContentItemSingle object.
+        /// </summary>
+        public ContentItemSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ContentItemSingle object.
+        /// </summary>
+        public ContentItemSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ContentItem> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Children in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> Children
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Children == null))
+                {
+                    this._Children = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem>(GetPath("Children"));
+                }
+                return this._Children;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> _Children;
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+        /// <summary>
+        /// There are no comments for Components in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> Components
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Components == null))
+                {
+                    this._Components = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("Components"));
+                }
+                return this._Components;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _Components;
+    }
+    /// <summary>
+    /// There are no comments for ContentItem in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class ContentItem : global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity
+    {
+        /// <summary>
+        /// Create a new ContentItem object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="version">Initial value of Version.</param>
+        /// <param name="isPersisted">Initial value of IsPersisted.</param>
+        /// <param name="hasChildren">Initial value of HasChildren.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static ContentItem CreateContentItem(string ID, int version, bool isPersisted, bool hasChildren)
+        {
+            ContentItem contentItem = new ContentItem();
+            contentItem.Id = ID;
+            contentItem.Version = version;
+            contentItem.IsPersisted = isPersisted;
+            contentItem.HasChildren = hasChildren;
+            return contentItem;
+        }
+        /// <summary>
+        /// There are no comments for Property Path in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Path
+        {
+            get
+            {
+                return this._Path;
+            }
+            set
+            {
+                this.OnPathChanging(value);
+                this._Path = value;
+                this.OnPathChanged();
+                this.OnPropertyChanged("Path");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Path;
+        partial void OnPathChanging(string value);
+        partial void OnPathChanged();
+        /// <summary>
+        /// There are no comments for Property Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Parent
+        {
+            get
+            {
+                return this._Parent;
+            }
+            set
+            {
+                this.OnParentChanging(value);
+                this._Parent = value;
+                this.OnParentChanged();
+                this.OnPropertyChanged("Parent");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Parent;
+        partial void OnParentChanging(string value);
+        partial void OnParentChanged();
+        /// <summary>
+        /// There are no comments for Property HasChildren in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public bool HasChildren
+        {
+            get
+            {
+                return this._HasChildren;
+            }
+            set
+            {
+                this.OnHasChildrenChanging(value);
+                this._HasChildren = value;
+                this.OnHasChildrenChanged();
+                this.OnPropertyChanged("HasChildren");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private bool _HasChildren;
+        partial void OnHasChildrenChanging(bool value);
+        partial void OnHasChildrenChanged();
+        /// <summary>
+        /// There are no comments for Property Children in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> Children
+        {
+            get
+            {
+                return this._Children;
+            }
+            set
+            {
+                this.OnChildrenChanging(value);
+                this._Children = value;
+                this.OnChildrenChanged();
+                this.OnPropertyChanged("Children");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> _Children = new global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnChildrenChanging(global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> value);
+        partial void OnChildrenChanged();
+        /// <summary>
+        /// There are no comments for Property ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                return this._ChildComponents;
+            }
+            set
+            {
+                this.OnChildComponentsChanging(value);
+                this._ChildComponents = value;
+                this.OnChildComponentsChanged();
+                this.OnPropertyChanged("ChildComponents");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents = new global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnChildComponentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component> value);
+        partial void OnChildComponentsChanged();
+    }
+    /// <summary>
+    /// There are no comments for ContentPathSingle in the schema.
+    /// </summary>
+    public partial class ContentPathSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ContentPath>
+    {
+        /// <summary>
+        /// Initialize a new ContentPathSingle object.
+        /// </summary>
+        public ContentPathSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ContentPathSingle object.
+        /// </summary>
+        public ContentPathSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ContentPathSingle object.
+        /// </summary>
+        public ContentPathSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ContentPath> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ChildComponents == null))
+                {
+                    this._ChildComponents = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("ChildComponents"));
+                }
+                return this._ChildComponents;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents;
+        /// <summary>
+        /// There are no comments for Components in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> Components
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Components == null))
+                {
+                    this._Components = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("Components"));
+                }
+                return this._Components;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _Components;
+    }
+    /// <summary>
+    /// There are no comments for ContentPath in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class ContentPath : global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity
+    {
+        /// <summary>
+        /// Create a new ContentPath object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="version">Initial value of Version.</param>
+        /// <param name="isPersisted">Initial value of IsPersisted.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static ContentPath CreateContentPath(string ID, int version, bool isPersisted)
+        {
+            ContentPath contentPath = new ContentPath();
+            contentPath.Id = ID;
+            contentPath.Version = version;
+            contentPath.IsPersisted = isPersisted;
+            return contentPath;
+        }
+        /// <summary>
+        /// There are no comments for Property Path in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Path
+        {
+            get
+            {
+                return this._Path;
+            }
+            set
+            {
+                this.OnPathChanging(value);
+                this._Path = value;
+                this.OnPathChanged();
+                this.OnPropertyChanged("Path");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Path;
+        partial void OnPathChanging(string value);
+        partial void OnPathChanged();
+        /// <summary>
+        /// There are no comments for Property Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string Parent
+        {
+            get
+            {
+                return this._Parent;
+            }
+            set
+            {
+                this.OnParentChanging(value);
+                this._Parent = value;
+                this.OnParentChanged();
+                this.OnPropertyChanged("Parent");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _Parent;
+        partial void OnParentChanging(string value);
+        partial void OnParentChanged();
+        /// <summary>
+        /// There are no comments for Property ChildComponents in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component> ChildComponents
+        {
+            get
+            {
+                return this._ChildComponents;
+            }
+            set
+            {
+                this.OnChildComponentsChanging(value);
+                this._ChildComponents = value;
+                this.OnChildComponentsChanged();
+                this.OnPropertyChanged("ChildComponents");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component> _ChildComponents = new global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnChildComponentsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Core.Component> value);
+        partial void OnChildComponentsChanged();
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.CommerceCommander to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle CastToContentCommander(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.CommerceCommander> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle CastToContentCommander(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommander>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentCommanderSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle CastToContentItemSyncComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponent>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSyncComponentSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle CastToContentPathSyncComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponent>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSyncComponentSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Component to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle CastToItemsComponent(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Component> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponent>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ItemsComponentSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle CastToContentItem(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItem>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentItemSingle(source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath as global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle CastToContentPath(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPath>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Content.ContentPathSingle(source.Context, query.GetPath(null));
         }
     }
 }
@@ -51554,6 +54693,28 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Orders
         private string _AddLineItem;
         partial void OnAddLineItemChanging(string value);
         partial void OnAddLineItemChanged();
+        /// <summary>
+        /// There are no comments for Property PaginateOrdersList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PaginateOrdersList
+        {
+            get
+            {
+                return this._PaginateOrdersList;
+            }
+            set
+            {
+                this.OnPaginateOrdersListChanging(value);
+                this._PaginateOrdersList = value;
+                this.OnPaginateOrdersListChanged();
+                this.OnPropertyChanged("PaginateOrdersList");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PaginateOrdersList;
+        partial void OnPaginateOrdersListChanging(string value);
+        partial void OnPaginateOrdersListChanged();
     }
     /// <summary>
     /// There are no comments for KnownOrderListsPolicy in the schema.
@@ -57446,6 +60607,50 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Pricing
         private string _RemovePriceTag;
         partial void OnRemovePriceTagChanging(string value);
         partial void OnRemovePriceTagChanged();
+        /// <summary>
+        /// There are no comments for Property PaginatePriceBooks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PaginatePriceBooks
+        {
+            get
+            {
+                return this._PaginatePriceBooks;
+            }
+            set
+            {
+                this.OnPaginatePriceBooksChanging(value);
+                this._PaginatePriceBooks = value;
+                this.OnPaginatePriceBooksChanged();
+                this.OnPropertyChanged("PaginatePriceBooks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PaginatePriceBooks;
+        partial void OnPaginatePriceBooksChanging(string value);
+        partial void OnPaginatePriceBooksChanged();
+        /// <summary>
+        /// There are no comments for Property PaginatePriceCards in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PaginatePriceCards
+        {
+            get
+            {
+                return this._PaginatePriceCards;
+            }
+            set
+            {
+                this.OnPaginatePriceCardsChanging(value);
+                this._PaginatePriceCards = value;
+                this.OnPaginatePriceCardsChanged();
+                this.OnPropertyChanged("PaginatePriceCards");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PaginatePriceCards;
+        partial void OnPaginatePriceCardsChanging(string value);
+        partial void OnPaginatePriceCardsChanged();
     }
     /// <summary>
     /// There are no comments for KnownPricingListsPolicy in the schema.
@@ -62089,6 +65294,50 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Promotions
         private string _RemoveItem;
         partial void OnRemoveItemChanging(string value);
         partial void OnRemoveItemChanged();
+        /// <summary>
+        /// There are no comments for Property PaginatePromotionsBooks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PaginatePromotionsBooks
+        {
+            get
+            {
+                return this._PaginatePromotionsBooks;
+            }
+            set
+            {
+                this.OnPaginatePromotionsBooksChanging(value);
+                this._PaginatePromotionsBooks = value;
+                this.OnPaginatePromotionsBooksChanged();
+                this.OnPropertyChanged("PaginatePromotionsBooks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PaginatePromotionsBooks;
+        partial void OnPaginatePromotionsBooksChanging(string value);
+        partial void OnPaginatePromotionsBooksChanged();
+        /// <summary>
+        /// There are no comments for Property PaginatePromotions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string PaginatePromotions
+        {
+            get
+            {
+                return this._PaginatePromotions;
+            }
+            set
+            {
+                this.OnPaginatePromotionsChanging(value);
+                this._PaginatePromotions = value;
+                this.OnPaginatePromotionsChanged();
+                this.OnPropertyChanged("PaginatePromotions");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _PaginatePromotions;
+        partial void OnPaginatePromotionsChanging(string value);
+        partial void OnPaginatePromotionsChanged();
     }
     /// <summary>
     /// There are no comments for KnownPromotionsListsPolicy in the schema.
@@ -66354,6 +69603,192 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Rules
         }
     }
 }
+namespace CommerceOps.Sitecore.Commerce.Plugin.Search.Azure
+{
+    /// <summary>
+    /// There are no comments for AzureDataTypeMap in the schema.
+    /// </summary>
+    public partial class AzureDataTypeMap : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property Map in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_DataType> Map
+        {
+            get
+            {
+                return this._Map;
+            }
+            set
+            {
+                this.OnMapChanging(value);
+                this._Map = value;
+                this.OnMapChanged();
+                this.OnPropertyChanged("Map");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_DataType> _Map = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_DataType>();
+        partial void OnMapChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.System.Collections.Generic.KeyValuePair_2OfString_DataType> value);
+        partial void OnMapChanged();
+    }
+    /// <summary>
+    /// There are no comments for AzureSearchPolicy in the schema.
+    /// </summary>
+    public partial class AzureSearchPolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
+    {
+        /// <summary>
+        /// There are no comments for Property SearchServiceQueryApiKey in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SearchServiceQueryApiKey
+        {
+            get
+            {
+                return this._SearchServiceQueryApiKey;
+            }
+            set
+            {
+                this.OnSearchServiceQueryApiKeyChanging(value);
+                this._SearchServiceQueryApiKey = value;
+                this.OnSearchServiceQueryApiKeyChanged();
+                this.OnPropertyChanged("SearchServiceQueryApiKey");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SearchServiceQueryApiKey;
+        partial void OnSearchServiceQueryApiKeyChanging(string value);
+        partial void OnSearchServiceQueryApiKeyChanged();
+        /// <summary>
+        /// There are no comments for Property SearchServiceAdminApiKey in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SearchServiceAdminApiKey
+        {
+            get
+            {
+                return this._SearchServiceAdminApiKey;
+            }
+            set
+            {
+                this.OnSearchServiceAdminApiKeyChanging(value);
+                this._SearchServiceAdminApiKey = value;
+                this.OnSearchServiceAdminApiKeyChanged();
+                this.OnPropertyChanged("SearchServiceAdminApiKey");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SearchServiceAdminApiKey;
+        partial void OnSearchServiceAdminApiKeyChanging(string value);
+        partial void OnSearchServiceAdminApiKeyChanged();
+        /// <summary>
+        /// There are no comments for Property SearchServiceName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public string SearchServiceName
+        {
+            get
+            {
+                return this._SearchServiceName;
+            }
+            set
+            {
+                this.OnSearchServiceNameChanging(value);
+                this._SearchServiceName = value;
+                this.OnSearchServiceNameChanged();
+                this.OnPropertyChanged("SearchServiceName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private string _SearchServiceName;
+        partial void OnSearchServiceNameChanging(string value);
+        partial void OnSearchServiceNameChanged();
+    }
+    /// <summary>
+    /// There are no comments for AzureContextCommandSingle in the schema.
+    /// </summary>
+    public partial class AzureContextCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AzureContextCommand>
+    {
+        /// <summary>
+        /// Initialize a new AzureContextCommandSingle object.
+        /// </summary>
+        public AzureContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new AzureContextCommandSingle object.
+        /// </summary>
+        public AzureContextCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new AzureContextCommandSingle object.
+        /// </summary>
+        public AzureContextCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AzureContextCommand> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for AzureContextCommand in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    public partial class AzureContextCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
+    {
+        /// <summary>
+        /// Create a new AzureContextCommand object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public static AzureContextCommand CreateAzureContextCommand(string ID)
+        {
+            AzureContextCommand azureContextCommand = new AzureContextCommand();
+            azureContextCommand.Id = ID;
+            return azureContextCommand;
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand as global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand> source,
+            string id)
+        {
+            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand
+        /// </summary>
+        /// <param name="source">source entity</param>
+        public static global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle CastToAzureContextCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand> query = source.CastTo<global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommand>();
+            return new global::CommerceOps.Sitecore.Commerce.Plugin.Search.Azure.AzureContextCommandSingle(source.Context, query.GetPath(null));
+        }
+    }
+}
 namespace CommerceOps.Sitecore.Commerce.Plugin.Search.Solr
 {
     /// <summary>
@@ -68236,166 +71671,6 @@ namespace CommerceOps.Sitecore.Commerce.Plugin.Tax
         partial void OnIsShippingChanged();
     }
 }
-namespace CommerceOps.Feature.Compare.Engine.Policies
-{
-    /// <summary>
-    /// There are no comments for ProductComparePolicy in the schema.
-    /// </summary>
-    public partial class ProductComparePolicy : global::CommerceOps.Sitecore.Commerce.Core.Policy
-    {
-        /// <summary>
-        /// Create a new ProductComparePolicy object.
-        /// </summary>
-        /// <param name="maxCompareCount">Initial value of MaxCompareCount.</param>
-        /// <param name="compareFullAction">Initial value of CompareFullAction.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static ProductComparePolicy CreateProductComparePolicy(int maxCompareCount, global::CommerceOps.Feature.Compare.Engine.CompareFullAction compareFullAction)
-        {
-            ProductComparePolicy productComparePolicy = new ProductComparePolicy();
-            productComparePolicy.MaxCompareCount = maxCompareCount;
-            productComparePolicy.CompareFullAction = compareFullAction;
-            return productComparePolicy;
-        }
-        /// <summary>
-        /// There are no comments for Property MaxCompareCount in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public int MaxCompareCount
-        {
-            get
-            {
-                return this._MaxCompareCount;
-            }
-            set
-            {
-                this.OnMaxCompareCountChanging(value);
-                this._MaxCompareCount = value;
-                this.OnMaxCompareCountChanged();
-                this.OnPropertyChanged("MaxCompareCount");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private int _MaxCompareCount;
-        partial void OnMaxCompareCountChanging(int value);
-        partial void OnMaxCompareCountChanged();
-        /// <summary>
-        /// There are no comments for Property CompareFullAction in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::CommerceOps.Feature.Compare.Engine.CompareFullAction CompareFullAction
-        {
-            get
-            {
-                return this._CompareFullAction;
-            }
-            set
-            {
-                this.OnCompareFullActionChanging(value);
-                this._CompareFullAction = value;
-                this.OnCompareFullActionChanged();
-                this.OnPropertyChanged("CompareFullAction");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::CommerceOps.Feature.Compare.Engine.CompareFullAction _CompareFullAction;
-        partial void OnCompareFullActionChanging(global::CommerceOps.Feature.Compare.Engine.CompareFullAction value);
-        partial void OnCompareFullActionChanged();
-    }
-}
-namespace CommerceOps.System.Collections.Generic
-{
-    /// <summary>
-    /// There are no comments for KeyValuePair_2OfString_String in the schema.
-    /// </summary>
-    public partial class KeyValuePair_2OfString_String : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for KeyValuePair_2OfString_Totals in the schema.
-    /// </summary>
-    public partial class KeyValuePair_2OfString_Totals : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for KeyValuePair_2OfString_List_1OfParameter in the schema.
-    /// </summary>
-    public partial class KeyValuePair_2OfString_List_1OfParameter : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// There are no comments for Property Value in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter> Value
-        {
-            get
-            {
-                return this._Value;
-            }
-            set
-            {
-                this.OnValueChanging(value);
-                this._Value = value;
-                this.OnValueChanged();
-                this.OnPropertyChanged("Value");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter> _Value = new global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter>();
-        partial void OnValueChanging(global::System.Collections.ObjectModel.ObservableCollection<global::CommerceOps.Sitecore.Commerce.Core.Parameter> value);
-        partial void OnValueChanged();
-        /// <summary>
-        /// This event is raised when the value of the property is changed
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        /// <summary>
-        /// The value of the property is changed
-        /// </summary>
-        /// <param name="property">property name</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-}
 namespace CommerceOps.Plugin.Sample.Payments.Braintree
 {
     /// <summary>
@@ -68491,6 +71766,37 @@ namespace CommerceOps.Plugin.Sample.Payments.Braintree
         private string _PrivateKey;
         partial void OnPrivateKeyChanging(string value);
         partial void OnPrivateKeyChanged();
+    }
+}
+namespace CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models
+{
+    /// <summary>
+    /// There are no comments for Relationship in the schema.
+    /// </summary>
+    public partial class Relationship : global::CommerceOps.Sitecore.Commerce.Core.Model
+    {
+        /// <summary>
+        /// There are no comments for Property RelationshipList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public global::System.Collections.ObjectModel.ObservableCollection<string> RelationshipList
+        {
+            get
+            {
+                return this._RelationshipList;
+            }
+            set
+            {
+                this.OnRelationshipListChanging(value);
+                this._RelationshipList = value;
+                this.OnRelationshipListChanged();
+                this.OnPropertyChanged("RelationshipList");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::System.Collections.ObjectModel.ObservableCollection<string> _RelationshipList = new global::System.Collections.ObjectModel.ObservableCollection<string>();
+        partial void OnRelationshipListChanging(global::System.Collections.ObjectModel.ObservableCollection<string> value);
+        partial void OnRelationshipListChanged();
     }
 }
 namespace CommerceOps.Sitecore.Commerce.Plugin.Shops
@@ -69667,264 +72973,6 @@ namespace CommerceOps.Sitecore.Commerce.EntityViews.Commands
         }
     }
 }
-namespace CommerceOps.Feature.Compare.Engine.Commands
-{
-    /// <summary>
-    /// There are no comments for GetProductCompareCommandSingle in the schema.
-    /// </summary>
-    public partial class GetProductCompareCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<GetProductCompareCommand>
-    {
-        /// <summary>
-        /// Initialize a new GetProductCompareCommandSingle object.
-        /// </summary>
-        public GetProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new GetProductCompareCommandSingle object.
-        /// </summary>
-        public GetProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new GetProductCompareCommandSingle object.
-        /// </summary>
-        public GetProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<GetProductCompareCommand> query)
-            : base(query) {}
-
-    }
-    /// <summary>
-    /// There are no comments for GetProductCompareCommand in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class GetProductCompareCommand : global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand
-    {
-        /// <summary>
-        /// Create a new GetProductCompareCommand object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static GetProductCompareCommand CreateGetProductCompareCommand(string ID)
-        {
-            GetProductCompareCommand getProductCompareCommand = new GetProductCompareCommand();
-            getProductCompareCommand.Id = ID;
-            return getProductCompareCommand;
-        }
-    }
-    /// <summary>
-    /// There are no comments for AddToProductCompareCommandSingle in the schema.
-    /// </summary>
-    public partial class AddToProductCompareCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<AddToProductCompareCommand>
-    {
-        /// <summary>
-        /// Initialize a new AddToProductCompareCommandSingle object.
-        /// </summary>
-        public AddToProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new AddToProductCompareCommandSingle object.
-        /// </summary>
-        public AddToProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new AddToProductCompareCommandSingle object.
-        /// </summary>
-        public AddToProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<AddToProductCompareCommand> query)
-            : base(query) {}
-
-    }
-    /// <summary>
-    /// There are no comments for AddToProductCompareCommand in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class AddToProductCompareCommand : GetProductCompareCommand
-    {
-        /// <summary>
-        /// Create a new AddToProductCompareCommand object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static AddToProductCompareCommand CreateAddToProductCompareCommand(string ID)
-        {
-            AddToProductCompareCommand addToProductCompareCommand = new AddToProductCompareCommand();
-            addToProductCompareCommand.Id = ID;
-            return addToProductCompareCommand;
-        }
-    }
-    /// <summary>
-    /// There are no comments for RemoveFromProductCompareCommandSingle in the schema.
-    /// </summary>
-    public partial class RemoveFromProductCompareCommandSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveFromProductCompareCommand>
-    {
-        /// <summary>
-        /// Initialize a new RemoveFromProductCompareCommandSingle object.
-        /// </summary>
-        public RemoveFromProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new RemoveFromProductCompareCommandSingle object.
-        /// </summary>
-        public RemoveFromProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new RemoveFromProductCompareCommandSingle object.
-        /// </summary>
-        public RemoveFromProductCompareCommandSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RemoveFromProductCompareCommand> query)
-            : base(query) {}
-
-    }
-    /// <summary>
-    /// There are no comments for RemoveFromProductCompareCommand in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class RemoveFromProductCompareCommand : GetProductCompareCommand
-    {
-        /// <summary>
-        /// Create a new RemoveFromProductCompareCommand object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static RemoveFromProductCompareCommand CreateRemoveFromProductCompareCommand(string ID)
-        {
-            RemoveFromProductCompareCommand removeFromProductCompareCommand = new RemoveFromProductCompareCommand();
-            removeFromProductCompareCommand.Id = ID;
-            return removeFromProductCompareCommand;
-        }
-    }
-    /// <summary>
-    /// Class containing all extension methods
-    /// </summary>
-    public static class ExtensionMethods
-    {
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand as global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand as global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle CastToGetProductCompareCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand> query = source.CastTo<global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand>();
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand as global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand as global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand to its derived type global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle CastToAddToProductCompareCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand> query = source.CastTo<global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand>();
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle CastToAddToProductCompareCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand> query = source.CastTo<global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommand>();
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.AddToProductCompareCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand as global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand as global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand to its derived type global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle CastToRemoveFromProductCompareCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.GetProductCompareCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand> query = source.CastTo<global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand>();
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle(source.Context, query.GetPath(null));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand to its derived type global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle CastToRemoveFromProductCompareCommand(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand> query = source.CastTo<global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommand>();
-            return new global::CommerceOps.Feature.Compare.Engine.Commands.RemoveFromProductCompareCommandSingle(source.Context, query.GetPath(null));
-        }
-    }
-}
 namespace CommerceOps.Sitecore.Framework.Caching
 {
     /// <summary>
@@ -70219,160 +73267,6 @@ namespace CommerceOps.Sitecore.Framework.Rules
         }
     }
 }
-namespace CommerceOps.Feature.Compare.Engine.Entities
-{
-    /// <summary>
-    /// There are no comments for ProductCompareSingle in the schema.
-    /// </summary>
-    public partial class ProductCompareSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ProductCompare>
-    {
-        /// <summary>
-        /// Initialize a new ProductCompareSingle object.
-        /// </summary>
-        public ProductCompareSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
-            : base(context, path) {}
-
-        /// <summary>
-        /// Initialize a new ProductCompareSingle object.
-        /// </summary>
-        public ProductCompareSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
-            : base(context, path, isComposable) {}
-
-        /// <summary>
-        /// Initialize a new ProductCompareSingle object.
-        /// </summary>
-        public ProductCompareSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ProductCompare> query)
-            : base(query) {}
-
-        /// <summary>
-        /// There are no comments for Products in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem> Products
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Products == null))
-                {
-                    this._Products = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem>(GetPath("Products"));
-                }
-                return this._Products;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem> _Products;
-        /// <summary>
-        /// There are no comments for Components in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> Components
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._Components == null))
-                {
-                    this._Components = Context.CreateQuery<global::CommerceOps.Sitecore.Commerce.Core.Component>(GetPath("Components"));
-                }
-                return this._Components;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Sitecore.Commerce.Core.Component> _Components;
-    }
-    /// <summary>
-    /// There are no comments for ProductCompare in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Id")]
-    public partial class ProductCompare : global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity
-    {
-        /// <summary>
-        /// Create a new ProductCompare object.
-        /// </summary>
-        /// <param name="ID">Initial value of Id.</param>
-        /// <param name="version">Initial value of Version.</param>
-        /// <param name="isPersisted">Initial value of IsPersisted.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public static ProductCompare CreateProductCompare(string ID, int version, bool isPersisted)
-        {
-            ProductCompare productCompare = new ProductCompare();
-            productCompare.Id = ID;
-            productCompare.Version = version;
-            productCompare.IsPersisted = isPersisted;
-            return productCompare;
-        }
-        /// <summary>
-        /// There are no comments for Property Products in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        public global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem> Products
-        {
-            get
-            {
-                return this._Products;
-            }
-            set
-            {
-                this.OnProductsChanging(value);
-                this._Products = value;
-                this.OnProductsChanged();
-                this.OnPropertyChanged("Products");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem> _Products = new global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnProductsChanging(global::Microsoft.OData.Client.DataServiceCollection<global::CommerceOps.Sitecore.Commerce.Plugin.Catalog.SellableItem> value);
-        partial void OnProductsChanged();
-    }
-    /// <summary>
-    /// Class containing all extension methods
-    /// </summary>
-    public static class ExtensionMethods
-    {
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare as global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="keys">dictionary with the names and values of keys</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare> source, global::System.Collections.Generic.Dictionary<string, object> keys)
-        {
-            return new global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Get an entity of type global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare as global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle specified by key from an entity set
-        /// </summary>
-        /// <param name="source">source entity set</param>
-        /// <param name="id">The value of id</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare> source,
-            string id)
-        {
-            global::System.Collections.Generic.Dictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
-            {
-                { "Id", id }
-            };
-            return new global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle(source.Context, source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(source.Context, keys)));
-        }
-        /// <summary>
-        /// Cast an entity of type global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity to its derived type global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare
-        /// </summary>
-        /// <param name="source">source entity</param>
-        public static global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle CastToProductCompare(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.CommerceEntity> source)
-        {
-            global::Microsoft.OData.Client.DataServiceQuerySingle<global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare> query = source.CastTo<global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompare>();
-            return new global::CommerceOps.Feature.Compare.Engine.Entities.ProductCompareSingle(source.Context, query.GetPath(null));
-        }
-    }
-}
 namespace CommerceOps.System.Transactions
 {
     /// <summary>
@@ -70382,17 +73276,6 @@ namespace CommerceOps.System.Transactions
     {
         Suppress = 0,
         Enabled = 1
-    }
-}
-namespace CommerceOps.Feature.Compare.Engine
-{
-    /// <summary>
-    /// There are no comments for CompareFullAction in the schema.
-    /// </summary>
-    public enum CompareFullAction
-    {
-        RemoveOldest = 0,
-        DenyAdd = 1
     }
 }
 namespace CommerceOps.Sitecore.Commerce.Engine
@@ -70425,6 +73308,11 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
             global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Orders.DelayedAvailability", "CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Catalog.Models", "CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -70470,6 +73358,11 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Preorderable", "CommerceOps.Sitecore.Commerce.Plugin.Preorderable");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Search.Azure", "CommerceOps.Sitecore.Commerce.Plugin.Search.Azure");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -70534,6 +73427,11 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             {
                 return resolvedType;
             }
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Content", "CommerceOps.Sitecore.Commerce.Plugin.Content");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
             resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Coupons", "CommerceOps.Sitecore.Commerce.Plugin.Coupons");
             if ((resolvedType != null))
             {
@@ -70545,21 +73443,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Plugin.Returns", "CommerceOps.Sitecore.Commerce.Plugin.Returns");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Feature.Compare.Engine.Commands", "CommerceOps.Feature.Compare.Engine.Commands");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Feature.Compare.Engine.Entities", "CommerceOps.Feature.Compare.Engine.Entities");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Feature.Compare.Engine.Policies", "CommerceOps.Feature.Compare.Engine.Policies");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -70649,12 +73532,12 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             {
                 return resolvedType;
             }
-            resolvedType = this.DefaultResolveType(typeName, "Feature.Compare.Engine", "CommerceOps.Feature.Compare.Engine");
+            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Core", "CommerceOps.Sitecore.Commerce.Core");
             if ((resolvedType != null))
             {
                 return resolvedType;
             }
-            resolvedType = this.DefaultResolveType(typeName, "Sitecore.Commerce.Core", "CommerceOps.Sitecore.Commerce.Core");
+            resolvedType = this.DefaultResolveType(typeName, "Plugin.Sample.Upgrade", "CommerceOps.Plugin.Sample.Upgrade");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -70677,6 +73560,10 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Orders.DelayedAvailability", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Orders.DelayedAvailability.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Catalog.Models", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Commerce.Plugin.Catalog.Models.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.EntityViews.Commands", global::System.StringComparison.Ordinal))
             {
@@ -70713,6 +73600,10 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Preorderable", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Preorderable.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Search.Azure", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Commerce.Plugin.Search.Azure.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Fulfillment", global::System.StringComparison.Ordinal))
             {
@@ -70762,6 +73653,10 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Catalog.", clientType.Name);
             }
+            if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Content", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Sitecore.Commerce.Plugin.Content.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Coupons", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Coupons.", clientType.Name);
@@ -70773,18 +73668,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Plugin.Returns", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Plugin.Returns.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("CommerceOps.Feature.Compare.Engine.Commands", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Feature.Compare.Engine.Commands.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("CommerceOps.Feature.Compare.Engine.Entities", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Feature.Compare.Engine.Entities.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("CommerceOps.Feature.Compare.Engine.Policies", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Feature.Compare.Engine.Policies.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Core.Commands", global::System.StringComparison.Ordinal))
             {
@@ -70854,13 +73737,13 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             {
                 return string.Concat("Sitecore.Framework.Rules.", clientType.Name);
             }
-            if (clientType.Namespace.Equals("CommerceOps.Feature.Compare.Engine", global::System.StringComparison.Ordinal))
-            {
-                return string.Concat("Feature.Compare.Engine.", clientType.Name);
-            }
             if (clientType.Namespace.Equals("CommerceOps.Sitecore.Commerce.Core", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("Sitecore.Commerce.Core.", clientType.Name);
+            }
+            if (clientType.Namespace.Equals("CommerceOps.Plugin.Sample.Upgrade", global::System.StringComparison.Ordinal))
+            {
+                return string.Concat("Plugin.Sample.Upgrade.", clientType.Name);
             }
             if (clientType.Namespace.Equals("CommerceOps.System.Transactions", global::System.StringComparison.Ordinal))
             {
@@ -71144,9 +74027,17 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <ComplexType Name=""EntitySerializationPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""InflateViaStream"" Type=""Edm.Boolean"" Nullable=""false"" />
       </ComplexType>
-      <ComplexType Name=""LocalizedEntityPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+      <ComplexType Name=""LocalizeEntityComponentPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""Path"" Type=""Edm.String"" />
+        <Property Name=""Properties"" Type=""Collection(Edm.String)"" />
+        <Property Name=""ActionView"" Type=""Edm.String"" />
+        <Property Name=""IsItemComponent"" Type=""Edm.Boolean"" Nullable=""false"" />
+      </ComplexType>
+      <ComplexType Name=""LocalizeEntityPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""Type"" Type=""Edm.String"" />
         <Property Name=""Properties"" Type=""Collection(Edm.String)"" />
+        <Property Name=""ActionView"" Type=""Edm.String"" />
+        <Property Name=""ComponentsPolicies"" Type=""Collection(Sitecore.Commerce.Core.LocalizeEntityComponentPolicy)"" />
       </ComplexType>
       <ComplexType Name=""SpecialCharactersPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""NotAllowedCharacters"" Type=""Edm.String"" />
@@ -71185,7 +74076,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       </ComplexType>
       <ComplexType Name=""GlobalImagePolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""DefaultImage"" Type=""Sitecore.Commerce.Core.Image"" />
-        <Property Name=""DefaultAltText"" Type=""Sitecore.Commerce.Core.Localized_1OfString"" />
+        <Property Name=""DefaultAltText"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""Image"">
         <Property Name=""ImageName"" Type=""Edm.String"" />
@@ -71194,12 +74085,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""AltText"" Type=""Edm.String"" />
         <Property Name=""Width"" Type=""Edm.Double"" Nullable=""false"" />
         <Property Name=""Height"" Type=""Edm.Double"" Nullable=""false"" />
-      </ComplexType>
-      <ComplexType Name=""Localized_1OfString"">
-        <Property Name=""LocalizedString"" Type=""Edm.String"" />
-      </ComplexType>
-      <ComplexType Name=""Parameter"">
-        <Property Name=""Key"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""MinionDelayPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""ReleaseDelaySeconds"" Type=""Edm.Int32"" Nullable=""false"" />
@@ -71281,6 +74166,10 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <ComplexType Name=""MinMaxValuePolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""MaxAllow"" Type=""Edm.Decimal"" Nullable=""false"" />
         <Property Name=""MinAllow"" Type=""Edm.Decimal"" Nullable=""false"" />
+      </ComplexType>
+      <ComplexType Name=""PaginationPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""PageSize"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""PageSizeOptions"" Type=""Collection(Edm.Int32)"" Nullable=""false"" />
       </ComplexType>
       <ComplexType Name=""PolicySetPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""PolicySetId"" Type=""Edm.String"" />
@@ -71389,7 +74278,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       </ComplexType>
       <ComplexType Name=""Language"" BaseType=""Sitecore.Commerce.Core.Model"">
         <Property Name=""Code"" Type=""Edm.String"" />
-        <Property Name=""DisplayName"" Type=""Sitecore.Commerce.Core.Localized_1OfString"" />
+        <Property Name=""DisplayName"" Type=""Edm.String"" />
         <Property Name=""Image"" Type=""Sitecore.Commerce.Core.Image"" />
         <Property Name=""SortOrder"" Type=""Edm.Int32"" Nullable=""false"" />
       </ComplexType>
@@ -71493,7 +74382,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       </EntityType>
       <EntityType Name=""StateProvinceComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
         <Property Name=""Code"" Type=""Edm.String"" />
-        <Property Name=""DisplayName"" Type=""Sitecore.Commerce.Core.Localized_1OfString"" />
+        <Property Name=""DisplayName"" Type=""Edm.String"" />
       </EntityType>
       <ComplexType Name=""SearchOption"">
         <Property Name=""Phrase"" Type=""Edm.String"" />
@@ -71510,7 +74399,11 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       </EntityType>
       <EntityType Name=""LocalizationEntity"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
         <Property Name=""Properties"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter)"" />
+        <Property Name=""ComponentsProperties"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter)"" />
       </EntityType>
+      <ComplexType Name=""Parameter"">
+        <Property Name=""Key"" Type=""Edm.String"" />
+      </ComplexType>
       <EntityType Name=""Tombstone"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
         <Property Name=""IndexId"" Type=""Edm.String"" />
         <Property Name=""EntityId"" Type=""Edm.String"" />
@@ -71526,12 +74419,37 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""AddressFormat"" Type=""Edm.String"" />
         <Property Name=""PostalCodeOptional"" Type=""Edm.Boolean"" Nullable=""false"" />
       </EntityType>
+      <ComplexType Name=""Localized_1OfString"">
+        <Property Name=""LocalizedString"" Type=""Edm.String"" />
+      </ComplexType>
       <ComplexType Name=""RelatedList"">
         <Property Name=""ListName"" Type=""Edm.String"" />
         <Property Name=""RelationshipType"" Type=""Edm.String"" />
         <Property Name=""Policies"" Type=""Collection(Sitecore.Commerce.Core.Policy)"" />
         <Property Name=""ListDisplayName"" Type=""Edm.String"" />
         <Property Name=""TotalItemCount"" Type=""Edm.Int64"" Nullable=""false"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""System.Collections.Generic"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""Dictionary_2OfString_String"">
+        <Property Name=""Keys"" Type=""Collection(Edm.String)"" />
+        <Property Name=""Values"" Type=""Collection(Edm.String)"" />
+      </ComplexType>
+      <ComplexType Name=""Dictionary_2OfString_Nullable_1OfInt32"">
+        <Property Name=""Keys"" Type=""Collection(Edm.String)"" />
+        <Property Name=""Values"" Type=""Collection(Edm.Int32)"" />
+      </ComplexType>
+      <ComplexType Name=""KeyValuePair_2OfString_DataType"" />
+      <ComplexType Name=""KeyValuePair_2OfString_Totals"" />
+      <ComplexType Name=""KeyValuePair_2OfString_ItemModel"" OpenType=""true"" />
+      <ComplexType Name=""KeyValuePair_2OfString_List_1OfParameter"">
+        <Property Name=""Value"" Type=""Collection(Sitecore.Commerce.Core.Parameter)"" />
+      </ComplexType>
+      <ComplexType Name=""KeyValuePair_2OfString_ConcurrentDictionary_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter"">
+        <Property Name=""Value"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter)"" />
+      </ComplexType>
+      <ComplexType Name=""KeyValuePair_2OfString_ConcurrentDictionary_2OfString_List_1OfParameter"">
+        <Property Name=""Value"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_List_1OfParameter)"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Plugin.Search"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -71639,6 +74557,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <ComplexType Name=""KnownCatalogActionsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""AddSellableItemImage"" Type=""Edm.String"" />
         <Property Name=""RemoveSellableItemImage"" Type=""Edm.String"" />
+        <Property Name=""PaginateCategoryList"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""KnownCatalogListsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""Catalogs"" Type=""Edm.String"" />
@@ -71713,6 +74632,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <EntityType Name=""GetCatalogsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""ImportCatalogsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""ImportCSCatalogCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""RemoveAllCatalogItemsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""StreamCatalogItemsToArchiveCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""UpdateExternalSettingsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""CreateCategoryCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""DeleteCategoryCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
@@ -71735,6 +74656,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <EntityType Name=""EditSellableItemCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetBulkPricesCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetSellableItemCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""GetSellableItemConnectCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetSellableItemsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""RemoveListPricesCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""UpdateListPricesCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
@@ -71745,13 +74667,13 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       </EntityType>
       <EntityType Name=""CatalogItemBase"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
         <Property Name=""SitecoreId"" Type=""Edm.String"" />
+        <Property Name=""ParentCatalogList"" Type=""Edm.String"" />
         <Property Name=""ParentCategoryList"" Type=""Edm.String"" />
         <Property Name=""ChildrenCategoryList"" Type=""Edm.String"" />
         <Property Name=""ChildrenSellableItemList"" Type=""Edm.String"" />
       </EntityType>
       <EntityType Name=""Category"" BaseType=""Sitecore.Commerce.Plugin.Catalog.CatalogItemBase"">
         <Property Name=""Description"" Type=""Edm.String"" />
-        <Property Name=""IsSearchable"" Type=""Edm.Boolean"" Nullable=""false"" />
       </EntityType>
       <EntityType Name=""CatalogsComponent"" BaseType=""Sitecore.Commerce.Core.Component"" />
       <EntityType Name=""CustomerReviewsComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
@@ -71795,7 +74717,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Value"" Type=""Edm.String"" />
       </ComplexType>
       <EntityType Name=""ImagesComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
-        <Property Name=""ProductImage"" Type=""Edm.String"" />
         <Property Name=""Images"" Type=""Collection(Edm.String)"" />
       </EntityType>
       <EntityType Name=""ItemSpecificationsComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
@@ -71954,9 +74875,13 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""WarrantyLabor"" Type=""Edm.String"" />
         <Property Name=""WarrantyParts"" Type=""Edm.String"" />
       </EntityType>
+      <EntityType Name=""RelationshipsComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""Relationships"" Type=""Collection(Sitecore.Commerce.Plugin.Catalog.Models.Relationship)"" />
+      </EntityType>
       <EntityType Name=""Catalog"" BaseType=""Sitecore.Commerce.Plugin.Catalog.CatalogItemBase"">
         <Property Name=""PriceBookName"" Type=""Edm.String"" />
         <Property Name=""PromotionBookName"" Type=""Edm.String"" />
+        <Property Name=""DefaultInventorySetName"" Type=""Edm.String"" />
         <Property Name=""Currency"" Type=""Sitecore.Commerce.Core.Currency"" />
       </EntityType>
       <EntityType Name=""SellableItem"" BaseType=""Sitecore.Commerce.Plugin.Catalog.CatalogItemBase"">
@@ -71967,7 +74892,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Manufacturer"" Type=""Edm.String"" />
         <Property Name=""TypeOfGood"" Type=""Edm.String"" />
         <Property Name=""Tags"" Type=""Collection(Sitecore.Commerce.Core.Tag)"" />
-        <Property Name=""IsSearchable"" Type=""Edm.Boolean"" Nullable=""false"" />
         <Property Name=""ListPrice"" Type=""Sitecore.Commerce.Core.Money"" />
       </EntityType>
       <EntityType Name=""Product"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
@@ -72033,6 +74957,22 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Language"" Type=""Edm.String"" />
       </ComplexType>
     </Schema>
+    <Schema Namespace=""Plugin.Sample.Upgrade"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <EntityType Name=""MigrateEnvironmentCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <ComplexType Name=""MigrationPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""DefaultEnvironmentName"" Type=""Edm.String"" />
+        <Property Name=""SqlPolicySetName"" Type=""Edm.String"" />
+        <Property Name=""ListsToMigrate"" Type=""System.Collections.Generic.Dictionary_2OfString_Nullable_1OfInt32"" />
+        <Property Name=""ReviewOnly"" Type=""Edm.Boolean"" Nullable=""false"" />
+      </ComplexType>
+      <ComplexType Name=""MigrationSqlPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""ArtifactStoreId"" Type=""Edm.String"" />
+        <Property Name=""SourceStoreSqlPolicy"" Type=""Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy"" />
+      </ComplexType>
+      <ComplexType Name=""ArtifactStore"" BaseType=""Sitecore.Commerce.Core.Model"">
+        <Property Name=""ArtifactStoreId"" Type=""Edm.String"" />
+      </ComplexType>
+    </Schema>
     <Schema Namespace=""Sitecore.Commerce.Core.Caching"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""EntityMemoryCachingPolicy"" BaseType=""Sitecore.Commerce.Core.CachePolicy"">
         <Property Name=""EntityFullName"" Type=""Edm.String"" />
@@ -72090,6 +75030,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <ComplexType Name=""KnownCustomersStatusesPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""ActiveAccount"" Type=""Edm.String"" />
         <Property Name=""InactiveAccount"" Type=""Edm.String"" />
+        <Property Name=""RequiresApproval"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""KnownCustomerViewsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""Master"" Type=""Edm.String"" />
@@ -72146,10 +75087,13 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""DisassociateSellableItemFromInventorySet"" Type=""Edm.String"" />
         <Property Name=""EditInventoryInformation"" Type=""Edm.String"" />
         <Property Name=""TransferInventory"" Type=""Edm.String"" />
+        <Property Name=""AssociateCatalog"" Type=""Edm.String"" />
+        <Property Name=""DisassociateCatalog"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""KnownInventoryViewsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""InventoryDashboard"" Type=""Edm.String"" />
         <Property Name=""InventorySets"" Type=""Edm.String"" />
+        <Property Name=""InventorySetCatalogs"" Type=""Edm.String"" />
         <Property Name=""InventorySetSellableItems"" Type=""Edm.String"" />
         <Property Name=""SellableItemInventorySets"" Type=""Edm.String"" />
         <Property Name=""AssociateSellableItem"" Type=""Edm.String"" />
@@ -72163,17 +75107,30 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""LogInventoryItemFromContext"" Type=""Edm.Boolean"" Nullable=""false"" />
         <Property Name=""LogGetDefaultInventoryItem"" Type=""Edm.Boolean"" Nullable=""false"" />
       </ComplexType>
+      <ComplexType Name=""FlatInventoryInformation"" BaseType=""Sitecore.Commerce.Core.Model"">
+        <Property Name=""ItemId"" Type=""Edm.String"" />
+        <Property Name=""Count"" Type=""Edm.Decimal"" Nullable=""false"" />
+      </ComplexType>
+      <ComplexType Name=""InventoryAssociation"" BaseType=""Sitecore.Commerce.Core.Model"">
+        <Property Name=""InventoryInformation"" Type=""Sitecore.Commerce.Core.EntityReference"" />
+        <Property Name=""InventorySet"" Type=""Sitecore.Commerce.Core.EntityReference"" />
+      </ComplexType>
+      <EntityType Name=""AssociateCatalogToInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""AssociateSellableItemToInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""CreateInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""DisassociateCatalogFromInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""DisassociateSellableItemFromInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""EditInventoryInformationCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""EditInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""ExportInventorySetsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""GetBulkStockInformationCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""GetInventoryInformationCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetInventorySetCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetInventorySetsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetInventoryCatalogCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetInventoryItemCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetInventorySkuCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""StreamInventorySetsToArchiveCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""TransferInventoryCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""AllocationComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
         <Property Name=""FulfillmentCenterId"" Type=""Edm.String"" />
@@ -72193,11 +75150,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""BackorderedQuantity"" Type=""Edm.Int32"" Nullable=""false"" />
         <Property Name=""BackorderLimit"" Type=""Edm.Int32"" />
       </EntityType>
-      <EntityType Name=""InventoryComponent"" BaseType=""Sitecore.Commerce.Core.Component"" />
-      <EntityType Name=""InventoryInformationComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
-        <Property Name=""InventorySet"" Type=""Sitecore.Commerce.Core.EntityReference"" />
-        <Property Name=""Quantity"" Type=""Edm.Int32"" Nullable=""false"" />
-        <Property Name=""InvoiceUnitPrice"" Type=""Sitecore.Commerce.Core.Money"" />
+      <EntityType Name=""InventoryComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""InventoryAssociations"" Type=""Collection(Sitecore.Commerce.Plugin.Inventory.InventoryAssociation)"" />
       </EntityType>
       <EntityType Name=""PreorderableComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
         <Property Name=""Preorderable"" Type=""Edm.Boolean"" Nullable=""false"" />
@@ -72205,8 +75159,15 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""PreorderedQuantity"" Type=""Edm.Int32"" Nullable=""false"" />
         <Property Name=""PreorderLimit"" Type=""Edm.Int32"" />
       </EntityType>
+      <EntityType Name=""InventoryInformation"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
+        <Property Name=""InventorySet"" Type=""Sitecore.Commerce.Core.EntityReference"" />
+        <Property Name=""SellableItem"" Type=""Sitecore.Commerce.Core.EntityReference"" />
+        <Property Name=""VariationId"" Type=""Edm.String"" />
+        <Property Name=""Quantity"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""InvoiceUnitPrice"" Type=""Sitecore.Commerce.Core.Money"" />
+      </EntityType>
       <EntityType Name=""InventorySet"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
-        <Property Name=""Description"" Type=""Sitecore.Commerce.Core.Localized_1OfString"" />
+        <Property Name=""Description"" Type=""Edm.String"" />
       </EntityType>
       <EntityType Name=""FulfillmentCenter"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
         <Property Name=""PhysicalParty"" Type=""Sitecore.Commerce.Core.Party"" />
@@ -72246,6 +75207,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""AuthRequestUrl"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""SitecoreControlPanelItemsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""BusinessToolsViewActionMessagesPath"" Type=""Edm.String"" />
+        <Property Name=""BusinessToolsViewActionDefaultMessageName"" Type=""Edm.String"" />
         <Property Name=""PaymentConfigurationTemplate"" Type=""Edm.String"" />
         <Property Name=""FulfillmentConfigurationTemplate"" Type=""Edm.String"" />
         <Property Name=""CurrencyConfigurationTemplate"" Type=""Edm.String"" />
@@ -72378,6 +75341,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Description"" Type=""Edm.String"" />
         <Property Name=""IsEnabled"" Type=""Edm.Boolean"" Nullable=""false"" />
         <Property Name=""RequiresConfirmation"" Type=""Edm.Boolean"" Nullable=""false"" />
+        <Property Name=""ConfirmationMessage"" Type=""Edm.String"" />
         <Property Name=""UiHint"" Type=""Edm.String"" />
         <Property Name=""EntityView"" Type=""Edm.String"" />
         <Property Name=""Icon"" Type=""Edm.String"" />
@@ -72425,39 +75389,17 @@ namespace CommerceOps.Sitecore.Commerce.Engine
     </Schema>
     <Schema Namespace=""Plugin.Sample.Customers.CsMigration"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""ProfilesCsCachePolicy"" BaseType=""Sitecore.Commerce.Core.CachePolicy"" />
-      <ComplexType Name=""PartyProfilePropertiesMappingPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""PartyProfileProperties"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_String)"" />
-      </ComplexType>
       <ComplexType Name=""ProfilePropertiesMappingPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""ProfileProperties"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_String)"" />
+        <Property Name=""UserProperties"" Type=""System.Collections.Generic.Dictionary_2OfString_String"" />
+        <Property Name=""AddressProperties"" Type=""System.Collections.Generic.Dictionary_2OfString_String"" />
       </ComplexType>
       <ComplexType Name=""ProfilePropertiesPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""AddressType"" Type=""Edm.String"" />
         <Property Name=""UserObjectType"" Type=""Edm.String"" />
-        <Property Name=""SitecoreDomainName"" Type=""Edm.String"" />
-        <Property Name=""GeneralInfoPropertyGroup"" Type=""Edm.String"" />
-        <Property Name=""AccountInfoPropertyGroup"" Type=""Edm.String"" />
         <Property Name=""UserIdProperty"" Type=""Edm.String"" />
         <Property Name=""AccountStatusProperty"" Type=""Edm.String"" />
-        <Property Name=""FirstNameProperty"" Type=""Edm.String"" />
-        <Property Name=""LastNameProperty"" Type=""Edm.String"" />
-        <Property Name=""EmailAddressProperty"" Type=""Edm.String"" />
-        <Property Name=""AddressListProperty"" Type=""Edm.String"" />
-        <Property Name=""ExternalIdProperty"" Type=""Edm.String"" />
         <Property Name=""PasswordProperty"" Type=""Edm.String"" />
-        <Property Name=""AddressIdProperty"" Type=""Edm.String"" />
-        <Property Name=""Country"" Type=""Edm.String"" />
-        <Property Name=""CountryCode"" Type=""Edm.String"" />
-        <Property Name=""State"" Type=""Edm.String"" />
-        <Property Name=""StateCode"" Type=""Edm.String"" />
-        <Property Name=""City"" Type=""Edm.String"" />
         <Property Name=""AccountNumber"" Type=""Edm.String"" />
-        <Property Name=""Email"" Type=""Edm.String"" />
-        <Property Name=""Password"" Type=""Edm.String"" />
-        <Property Name=""Value"" Type=""Edm.String"" />
-        <Property Name=""Languages"" Type=""Edm.String"" />
-        <Property Name=""UserTypeSiteTerm"" Type=""Edm.String"" />
-        <Property Name=""AccountStatusSiteTerm"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""ProfilesSqlPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""TrustedConnection"" Type=""Edm.Boolean"" Nullable=""false"" />
@@ -72636,8 +75578,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""EnvironmentList"" Type=""Collection(Edm.String)"" />
       </ComplexType>
       <ComplexType Name=""KnownBusinessUsersActionsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""LocalizeEntityProperty"" Type=""Edm.String"" />
-        <Property Name=""SelectLocalizableEntityProperty"" Type=""Edm.String"" />
+        <Property Name=""LocalizeProperty"" Type=""Edm.String"" />
+        <Property Name=""SelectLocalizableProperty"" Type=""Edm.String"" />
         <Property Name=""AddTimeZone"" Type=""Edm.String"" />
         <Property Name=""RemoveTimeZone"" Type=""Edm.String"" />
         <Property Name=""EditTimeFormats"" Type=""Edm.String"" />
@@ -72646,7 +75588,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""ToolsNavigation"" Type=""Edm.String"" />
         <Property Name=""ToolsEnvironments"" Type=""Edm.String"" />
         <Property Name=""Summary"" Type=""Edm.String"" />
-        <Property Name=""LocalizeEntityProperty"" Type=""Edm.String"" />
         <Property Name=""LocalizedValue"" Type=""Edm.String"" />
         <Property Name=""BusinessUserDashboard"" Type=""Edm.String"" />
         <Property Name=""EditTimeFormats"" Type=""Edm.String"" />
@@ -72654,12 +75595,14 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""CurrentRoles"" Type=""Edm.String"" />
         <Property Name=""TimeZones"" Type=""Edm.String"" />
         <Property Name=""TimeZone"" Type=""Edm.String"" />
+        <Property Name=""ToolsLanguages"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""PluginPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""Icon"" Type=""Edm.String"" />
       </ComplexType>
       <EntityType Name=""BusinessUserCommander"" BaseType=""Sitecore.Commerce.Core.CommerceCommander"" />
       <EntityType Name=""BizFxEnvironmentsCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      <EntityType Name=""BizFxLanguagesCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""BizFxNavigationCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""LocalizeEntityPropertyCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""BusinessUser"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
@@ -72753,6 +75696,71 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Totals"" Type=""Sitecore.Commerce.Plugin.Carts.Totals"" />
         <Property Name=""Adjustments"" Type=""Collection(Sitecore.Commerce.Plugin.Pricing.AwardedAdjustment)"" />
         <NavigationProperty Name=""Lines"" Type=""Collection(Sitecore.Commerce.Plugin.Carts.CartLineComponent)"" ContainsTarget=""true"" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace=""Sitecore.Commerce.Plugin.Content"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""DefaultContentPathsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""ContentPaths"" Type=""Collection(Edm.String)"" />
+      </ComplexType>
+      <ComplexType Name=""KnownContentActionsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""SynchronizeContentPath"" Type=""Edm.String"" />
+        <Property Name=""SynchronizeContentItem"" Type=""Edm.String"" />
+        <Property Name=""UnSynchronizeContentPath"" Type=""Edm.String"" />
+        <Property Name=""EnsureDefaultContentPaths"" Type=""Edm.String"" />
+        <Property Name=""AddContentPath"" Type=""Edm.String"" />
+        <Property Name=""RemoveContentPath"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""KnownContentListsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""ContentPathItems"" Type=""Edm.String"" />
+        <Property Name=""ContentItemChildren"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""KnownContentViewsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""ContentDashboard"" Type=""Edm.String"" />
+        <Property Name=""SitecoreIntegration"" Type=""Edm.String"" />
+        <Property Name=""RegisteredContentPaths"" Type=""Edm.String"" />
+        <Property Name=""Master"" Type=""Edm.String"" />
+        <Property Name=""ContentProperties"" Type=""Edm.String"" />
+        <Property Name=""ContentProperty"" Type=""Edm.String"" />
+        <Property Name=""ContentChildren"" Type=""Edm.String"" />
+        <Property Name=""ContentChild"" Type=""Edm.String"" />
+        <Property Name=""ContentItems"" Type=""Edm.String"" />
+        <Property Name=""ContentItem"" Type=""Edm.String"" />
+        <Property Name=""AddContentPath"" Type=""Edm.String"" />
+        <Property Name=""SynchronizeContentItem"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""PluginPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""Icon"" Type=""Edm.String"" />
+      </ComplexType>
+      <ComplexType Name=""SyncCounterModel"" BaseType=""Sitecore.Commerce.Core.Model"">
+        <Property Name=""SyncCount"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""SkipCount"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""Started"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+      </ComplexType>
+      <EntityType Name=""ContentCommander"" BaseType=""Sitecore.Commerce.Core.CommerceCommander"" />
+      <EntityType Name=""ContentItemSyncComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""SyncDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""SyncName"" Type=""Edm.String"" />
+      </EntityType>
+      <EntityType Name=""ContentPathSyncComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""SyncDate"" Type=""Edm.DateTimeOffset"" Nullable=""false"" />
+        <Property Name=""SyncCount"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""SkipCount"" Type=""Edm.Int32"" Nullable=""false"" />
+        <Property Name=""Elapsed"" Type=""Edm.Int32"" Nullable=""false"" />
+      </EntityType>
+      <EntityType Name=""ItemsComponent"" BaseType=""Sitecore.Commerce.Core.Component"">
+        <Property Name=""Items"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_ItemModel)"" />
+      </EntityType>
+      <EntityType Name=""ContentItem"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
+        <Property Name=""Path"" Type=""Edm.String"" />
+        <Property Name=""Parent"" Type=""Edm.String"" />
+        <Property Name=""HasChildren"" Type=""Edm.Boolean"" Nullable=""false"" />
+        <NavigationProperty Name=""Children"" Type=""Collection(Sitecore.Commerce.Plugin.Content.ContentItem)"" />
+        <NavigationProperty Name=""ChildComponents"" Type=""Collection(Sitecore.Commerce.Core.Component)"" ContainsTarget=""true"" />
+      </EntityType>
+      <EntityType Name=""ContentPath"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
+        <Property Name=""Path"" Type=""Edm.String"" />
+        <Property Name=""Parent"" Type=""Edm.String"" />
+        <NavigationProperty Name=""ChildComponents"" Type=""Collection(Sitecore.Commerce.Core.Component)"" ContainsTarget=""true"" />
       </EntityType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Plugin.DigitalItems"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -72973,6 +75981,7 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""EditLineItem"" Type=""Edm.String"" />
         <Property Name=""DeleteLineItem"" Type=""Edm.String"" />
         <Property Name=""AddLineItem"" Type=""Edm.String"" />
+        <Property Name=""PaginateOrdersList"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""KnownOrderListsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""CustomerOrders"" Type=""Edm.String"" />
@@ -73206,6 +76215,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""SelectCurrency"" Type=""Edm.String"" />
         <Property Name=""AddPriceTag"" Type=""Edm.String"" />
         <Property Name=""RemovePriceTag"" Type=""Edm.String"" />
+        <Property Name=""PaginatePriceBooks"" Type=""Edm.String"" />
+        <Property Name=""PaginatePriceCards"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""KnownPricingListsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""PriceBookCards"" Type=""Edm.String"" />
@@ -73374,6 +76385,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""EditBenefit"" Type=""Edm.String"" />
         <Property Name=""AddItem"" Type=""Edm.String"" />
         <Property Name=""RemoveItem"" Type=""Edm.String"" />
+        <Property Name=""PaginatePromotionsBooks"" Type=""Edm.String"" />
+        <Property Name=""PaginatePromotions"" Type=""Edm.String"" />
       </ComplexType>
       <ComplexType Name=""KnownPromotionsListsPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""PromotionBookPromotions"" Type=""Edm.String"" />
@@ -73513,6 +76526,17 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""Rules"" Type=""Collection(Sitecore.Framework.Rules.IRule)"" />
       </EntityType>
     </Schema>
+    <Schema Namespace=""Sitecore.Commerce.Plugin.Search.Azure"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""AzureDataTypeMap"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""Map"" Type=""Collection(System.Collections.Generic.KeyValuePair_2OfString_DataType)"" />
+      </ComplexType>
+      <ComplexType Name=""AzureSearchPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
+        <Property Name=""SearchServiceQueryApiKey"" Type=""Edm.String"" />
+        <Property Name=""SearchServiceAdminApiKey"" Type=""Edm.String"" />
+        <Property Name=""SearchServiceName"" Type=""Edm.String"" />
+      </ComplexType>
+      <EntityType Name=""AzureContextCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+    </Schema>
     <Schema Namespace=""Sitecore.Commerce.Plugin.Search.Solr"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""SolrSearchPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""DefaultSearchOnlyStringFields"" Type=""Edm.Boolean"" Nullable=""false"" />
@@ -73583,25 +76607,17 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Property Name=""IsShipping"" Type=""Edm.Boolean"" Nullable=""false"" />
       </ComplexType>
     </Schema>
-    <Schema Namespace=""Feature.Compare.Engine.Policies"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""ProductComparePolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
-        <Property Name=""MaxCompareCount"" Type=""Edm.Int32"" Nullable=""false"" />
-        <Property Name=""CompareFullAction"" Type=""Feature.Compare.Engine.CompareFullAction"" Nullable=""false"" />
-      </ComplexType>
-    </Schema>
-    <Schema Namespace=""System.Collections.Generic"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <ComplexType Name=""KeyValuePair_2OfString_String"" />
-      <ComplexType Name=""KeyValuePair_2OfString_Totals"" />
-      <ComplexType Name=""KeyValuePair_2OfString_List_1OfParameter"">
-        <Property Name=""Value"" Type=""Collection(Sitecore.Commerce.Core.Parameter)"" />
-      </ComplexType>
-    </Schema>
     <Schema Namespace=""Plugin.Sample.Payments.Braintree"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""BraintreeClientPolicy"" BaseType=""Sitecore.Commerce.Core.Policy"">
         <Property Name=""Environment"" Type=""Edm.String"" />
         <Property Name=""MerchantId"" Type=""Edm.String"" />
         <Property Name=""PublicKey"" Type=""Edm.String"" />
         <Property Name=""PrivateKey"" Type=""Edm.String"" />
+      </ComplexType>
+    </Schema>
+    <Schema Namespace=""Sitecore.Commerce.Plugin.Catalog.Models"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
+      <ComplexType Name=""Relationship"" BaseType=""Sitecore.Commerce.Core.Model"">
+        <Property Name=""RelationshipList"" Type=""Collection(Edm.String)"" />
       </ComplexType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Plugin.Shops"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -73643,11 +76659,6 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       <EntityType Name=""DoActionCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
       <EntityType Name=""GetEntityViewCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
     </Schema>
-    <Schema Namespace=""Feature.Compare.Engine.Commands"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <EntityType Name=""GetProductCompareCommand"" BaseType=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
-      <EntityType Name=""AddToProductCompareCommand"" BaseType=""Feature.Compare.Engine.Commands.GetProductCompareCommand"" />
-      <EntityType Name=""RemoveFromProductCompareCommand"" BaseType=""Feature.Compare.Engine.Commands.GetProductCompareCommand"" />
-    </Schema>
     <Schema Namespace=""Sitecore.Framework.Caching"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <ComplexType Name=""ICacheStore"" Abstract=""true"" />
       <ComplexType Name=""ICache"" Abstract=""true"" />
@@ -73665,21 +76676,10 @@ namespace CommerceOps.Sitecore.Commerce.Engine
       </ComplexType>
       <ComplexType Name=""IAction"" Abstract=""true"" />
     </Schema>
-    <Schema Namespace=""Feature.Compare.Engine.Entities"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <EntityType Name=""ProductCompare"" BaseType=""Sitecore.Commerce.Core.CommerceEntity"">
-        <NavigationProperty Name=""Products"" Type=""Collection(Sitecore.Commerce.Plugin.Catalog.SellableItem)"" ContainsTarget=""true"" />
-      </EntityType>
-    </Schema>
     <Schema Namespace=""System.Transactions"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EnumType Name=""TransactionScopeAsyncFlowOption"">
         <Member Name=""Suppress"" Value=""0"" />
         <Member Name=""Enabled"" Value=""1"" />
-      </EnumType>
-    </Schema>
-    <Schema Namespace=""Feature.Compare.Engine"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
-      <EnumType Name=""CompareFullAction"">
-        <Member Name=""RemoveOldest"" Value=""0"" />
-        <Member Name=""DenyAdd"" Value=""1"" />
       </EnumType>
     </Schema>
     <Schema Namespace=""Sitecore.Commerce.Engine"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
@@ -73773,6 +76773,17 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <Parameter Name=""take"" Type=""Edm.Int32"" Nullable=""false"" />
         <ReturnType Type=""Sitecore.Commerce.Plugin.Catalog.CatalogManagedList"" />
       </Function>
+      <Function Name=""EnsureSyncDefaultContentPaths"">
+        <Parameter Name=""environment"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""shopName"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      </Function>
+      <Action Name=""MigrateEnvironment"">
+        <Parameter Name=""sourceName"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""newName"" Type=""Edm.String"" Unicode=""false"" />
+        <Parameter Name=""newArtifactStoreId"" Type=""Edm.String"" Unicode=""false"" />
+        <ReturnType Type=""Sitecore.Commerce.Core.Commands.CommerceCommand"" />
+      </Action>
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Environments"" EntityType=""Sitecore.Commerce.Core.CommerceEnvironment"">
           <NavigationPropertyBinding Path=""Components"" Target=""Components"" />
@@ -73808,6 +76819,8 @@ namespace CommerceOps.Sitecore.Commerce.Engine
         <ActionImport Name=""GetRawEntity"" Action=""Sitecore.Commerce.Engine.GetRawEntity"" />
         <ActionImport Name=""RequestCacheReset"" Action=""Sitecore.Commerce.Engine.RequestCacheReset"" EntitySet=""Commands"" />
         <FunctionImport Name=""GetCatalogItems"" Function=""Sitecore.Commerce.Engine.GetCatalogItems"" EntitySet=""CatalogItems"" IncludeInServiceDocument=""true"" />
+        <FunctionImport Name=""EnsureSyncDefaultContentPaths"" Function=""Sitecore.Commerce.Engine.EnsureSyncDefaultContentPaths"" EntitySet=""Commands"" IncludeInServiceDocument=""true"" />
+        <ActionImport Name=""MigrateEnvironment"" Action=""Sitecore.Commerce.Engine.MigrateEnvironment"" EntitySet=""Commands"" />
       </EntityContainer>
     </Schema>
   </edmx:DataServices>
@@ -73902,6 +76915,14 @@ namespace CommerceOps.Sitecore.Commerce.Engine
                     new global::Microsoft.OData.Client.UriOperationParameter("take", take)));
         }
         /// <summary>
+        /// There are no comments for EnsureSyncDefaultContentPaths in the schema.
+        /// </summary>
+        public global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommandSingle EnsureSyncDefaultContentPaths(string environment, string shopName)
+        {
+            return new global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommandSingle(this.CreateFunctionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>("", "EnsureSyncDefaultContentPaths", false, new global::Microsoft.OData.Client.UriOperationParameter("environment", environment),
+                    new global::Microsoft.OData.Client.UriOperationParameter("shopName", shopName)));
+        }
+        /// <summary>
         /// There are no comments for CleanEnvironment in the schema.
         /// </summary>
         public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> CleanEnvironment(string environment)
@@ -73991,6 +77012,15 @@ namespace CommerceOps.Sitecore.Commerce.Engine
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/RequestCacheReset", new global::Microsoft.OData.Client.BodyOperationParameter("environmentName", environmentName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("cacheStoreName", cacheStoreName),
                     new global::Microsoft.OData.Client.BodyOperationParameter("cacheName", cacheName));
+        }
+        /// <summary>
+        /// There are no comments for MigrateEnvironment in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand> MigrateEnvironment(string sourceName, string newName, string newArtifactStoreId)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::CommerceOps.Sitecore.Commerce.Core.Commands.CommerceCommand>(this, this.BaseUri.OriginalString.Trim('/') + "/MigrateEnvironment", new global::Microsoft.OData.Client.BodyOperationParameter("sourceName", sourceName),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("newName", newName),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("newArtifactStoreId", newArtifactStoreId));
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿{
     "$type":  "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
-    "ArtifactStoreId":  "1E72831D-50CE-43C2-A253-042BFB841CDF",
     "Id":  "Entity-PolicySet-SearchPolicySet",
     "Version":  1,
     "IsPersisted":  false,
@@ -10,22 +9,22 @@
                      "$values":  [
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xp0OrdersScope",
+                                         "SearchScopeName":  "xp901_OrdersScope",
                                          "ViewName":  "OrdersDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xp0CustomersScope",
+                                         "SearchScopeName":  "xp901_CustomersScope",
                                          "ViewName":  "CustomersDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xp0CatalogItemsScope",
+                                         "SearchScopeName":  "xp901_CatalogItemsScope",
                                          "ViewName":  "MerchandisingDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xp0CatalogItemsScope",
+                                         "Name":  "xp901_CatalogItemsScope",
                                          "IncrementalListName":  "CatalogItemsIndex",
                                          "FullListName":  "CatalogItems",
                                          "DeletedListName":  "",
@@ -40,13 +39,16 @@
                                          "ResultDetailsTags":  {
                                                                    "$type":  "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core]], mscorlib",
                                                                    "$values":  [
-
+                                                                                   {
+                                                                                       "$type":  "Sitecore.Commerce.Core.Tag, Sitecore.Commerce.Core",
+                                                                                       "Name":  "CatalogTable"
+                                                                                   }
                                                                                ]
                                                                }
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xp0CustomersScope",
+                                         "Name":  "xp901_CustomersScope",
                                          "IncrementalListName":  "CustomersIndex",
                                          "FullListName":  "Customers",
                                          "DeletedListName":  "DeletedCustomersIndex",
@@ -68,7 +70,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xp0OrdersScope",
+                                         "Name":  "xp901_OrdersScope",
                                          "IncrementalListName":  "OrdersIndex",
                                          "FullListName":  "Orders",
                                          "DeletedListName":  "DeletedOrdersIndex",
@@ -90,7 +92,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xp0CatalogItemsScope",
+                                         "SearchScopeName":  "xp901_CatalogItemsScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
@@ -99,7 +101,7 @@
                                                                              "IsFilterable":  false,
                                                                              "IsSortable":  false,
                                                                              "IsFacetable":  false,
-                                                                             "isRetrievable":  true
+                                                                             "IsRetrievable":  true
                                                                          },
                                                             "SitecoreId":  {
                                                                                "TypeName":  "System.String",
@@ -108,8 +110,17 @@
                                                                                "IsFilterable":  false,
                                                                                "IsSortable":  false,
                                                                                "IsFacetable":  false,
-                                                                               "isRetrievable":  true
+                                                                               "IsRetrievable":  true
                                                                            },
+                                                            "ProductId":  {
+                                                                              "TypeName":  "System.String",
+                                                                              "IsKey":  false,
+                                                                              "IsSearchable":  true,
+                                                                              "IsFilterable":  false,
+                                                                              "IsSortable":  false,
+                                                                              "IsFacetable":  false,
+                                                                              "IsRetrievable":  true
+                                                                          },
                                                             "DisplayName":  {
                                                                                 "TypeName":  "System.String",
                                                                                 "IsKey":  false,
@@ -117,7 +128,7 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  true,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  true
+                                                                                "IsRetrievable":  true
                                                                             },
                                                             "DateCreated":  {
                                                                                 "TypeName":  "System.DateTimeOffset",
@@ -126,7 +137,7 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  true,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  true
+                                                                                "IsRetrievable":  true
                                                                             },
                                                             "DateUpdated":  {
                                                                                 "TypeName":  "System.DateTimeOffset",
@@ -135,8 +146,17 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  true,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  true
+                                                                                "IsRetrievable":  true
                                                                             },
+                                                            "Name":  {
+                                                                         "TypeName":  "System.String",
+                                                                         "IsKey":  false,
+                                                                         "IsSearchable":  true,
+                                                                         "IsFilterable":  true,
+                                                                         "IsSortable":  true,
+                                                                         "IsFacetable":  false,
+                                                                         "IsRetrievable":  true
+                                                                     },
                                                             "ArtifactStoreId":  {
                                                                                     "TypeName":  "System.String",
                                                                                     "IsKey":  false,
@@ -144,13 +164,31 @@
                                                                                     "IsFilterable":  true,
                                                                                     "IsSortable":  false,
                                                                                     "IsFacetable":  false,
-                                                                                    "isRetrievable":  false
-                                                                                }
+                                                                                    "IsRetrievable":  false
+                                                                                },
+                                                            "VariantId":  {
+                                                                              "TypeName":  "System.String",
+                                                                              "IsKey":  false,
+                                                                              "IsSearchable":  true,
+                                                                              "IsFilterable":  false,
+                                                                              "IsSortable":  false,
+                                                                              "IsFacetable":  false,
+                                                                              "IsRetrievable":  true
+                                                                          },
+                                                            "VariantDisplayName":  {
+                                                                                       "TypeName":  "System.String",
+                                                                                       "IsKey":  false,
+                                                                                       "IsSearchable":  true,
+                                                                                       "IsFilterable":  true,
+                                                                                       "IsSortable":  true,
+                                                                                       "IsFacetable":  false,
+                                                                                       "IsRetrievable":  true
+                                                                                   }
                                                         }
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xp0CustomersScope",
+                                         "SearchScopeName":  "xp901_CustomersScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
@@ -159,7 +197,7 @@
                                                                              "IsFilterable":  false,
                                                                              "IsSortable":  false,
                                                                              "IsFacetable":  false,
-                                                                             "isRetrievable":  true
+                                                                             "IsRetrievable":  true
                                                                          },
                                                             "Email":  {
                                                                           "TypeName":  "System.String",
@@ -168,7 +206,7 @@
                                                                           "IsFilterable":  false,
                                                                           "IsSortable":  false,
                                                                           "IsFacetable":  false,
-                                                                          "isRetrievable":  true
+                                                                          "IsRetrievable":  true
                                                                       },
                                                             "Status":  {
                                                                            "TypeName":  "System.String",
@@ -177,7 +215,7 @@
                                                                            "IsFilterable":  true,
                                                                            "IsSortable":  true,
                                                                            "IsFacetable":  true,
-                                                                           "isRetrievable":  true
+                                                                           "IsRetrievable":  true
                                                                        },
                                                             "FirstName":  {
                                                                               "TypeName":  "System.String",
@@ -186,7 +224,7 @@
                                                                               "IsFilterable":  true,
                                                                               "IsSortable":  true,
                                                                               "IsFacetable":  false,
-                                                                              "isRetrievable":  true
+                                                                              "IsRetrievable":  true
                                                                           },
                                                             "LastName":  {
                                                                              "TypeName":  "System.String",
@@ -195,7 +233,7 @@
                                                                              "IsFilterable":  true,
                                                                              "IsSortable":  true,
                                                                              "IsFacetable":  false,
-                                                                             "isRetrievable":  true
+                                                                             "IsRetrievable":  true
                                                                          },
                                                             "DateCreated":  {
                                                                                 "TypeName":  "System.DateTimeOffset",
@@ -204,7 +242,7 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  true,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  true
+                                                                                "IsRetrievable":  true
                                                                             },
                                                             "DateUpdated":  {
                                                                                 "TypeName":  "System.DateTimeOffset",
@@ -213,7 +251,7 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  true,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  true
+                                                                                "IsRetrievable":  true
                                                                             },
                                                             "ArtifactStoreId":  {
                                                                                     "TypeName":  "System.String",
@@ -222,13 +260,13 @@
                                                                                     "IsFilterable":  true,
                                                                                     "IsSortable":  false,
                                                                                     "IsFacetable":  false,
-                                                                                    "isRetrievable":  false
+                                                                                    "IsRetrievable":  false
                                                                                 }
                                                         }
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xp0OrdersScope",
+                                         "SearchScopeName":  "xp901_OrdersScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
@@ -237,7 +275,7 @@
                                                                              "IsFilterable":  false,
                                                                              "IsSortable":  false,
                                                                              "IsFacetable":  false,
-                                                                             "isRetrievable":  true
+                                                                             "IsRetrievable":  true
                                                                          },
                                                             "Email":  {
                                                                           "TypeName":  "System.String",
@@ -246,7 +284,7 @@
                                                                           "IsFilterable":  false,
                                                                           "IsSortable":  false,
                                                                           "IsFacetable":  false,
-                                                                          "isRetrievable":  true
+                                                                          "IsRetrievable":  true
                                                                       },
                                                             "CustomerId":  {
                                                                                "TypeName":  "System.String",
@@ -255,7 +293,7 @@
                                                                                "IsFilterable":  true,
                                                                                "IsSortable":  true,
                                                                                "IsFacetable":  false,
-                                                                               "isRetrievable":  true
+                                                                               "IsRetrievable":  true
                                                                            },
                                                             "OrderConfirmationId":  {
                                                                                         "TypeName":  "System.String",
@@ -264,7 +302,7 @@
                                                                                         "IsFilterable":  true,
                                                                                         "IsSortable":  true,
                                                                                         "IsFacetable":  false,
-                                                                                        "isRetrievable":  true
+                                                                                        "IsRetrievable":  true
                                                                                     },
                                                             "Status":  {
                                                                            "TypeName":  "System.String",
@@ -273,7 +311,7 @@
                                                                            "IsFilterable":  true,
                                                                            "IsSortable":  true,
                                                                            "IsFacetable":  true,
-                                                                           "isRetrievable":  true
+                                                                           "IsRetrievable":  true
                                                                        },
                                                             "OrderPlacedDate":  {
                                                                                     "TypeName":  "System.DateTimeOffset",
@@ -282,7 +320,7 @@
                                                                                     "IsFilterable":  true,
                                                                                     "IsSortable":  true,
                                                                                     "IsFacetable":  false,
-                                                                                    "isRetrievable":  true
+                                                                                    "IsRetrievable":  true
                                                                                 },
                                                             "DateCreated":  {
                                                                                 "TypeName":  "System.DateTimeOffset",
@@ -291,7 +329,7 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  false,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  false
+                                                                                "IsRetrievable":  false
                                                                             },
                                                             "DateUpdated":  {
                                                                                 "TypeName":  "System.DateTimeOffset",
@@ -300,7 +338,7 @@
                                                                                 "IsFilterable":  true,
                                                                                 "IsSortable":  true,
                                                                                 "IsFacetable":  false,
-                                                                                "isRetrievable":  true
+                                                                                "IsRetrievable":  true
                                                                             },
                                                             "ArtifactStoreId":  {
                                                                                     "TypeName":  "System.String",
@@ -309,7 +347,7 @@
                                                                                     "IsFilterable":  true,
                                                                                     "IsSortable":  false,
                                                                                     "IsFacetable":  false,
-                                                                                    "isRetrievable":  false
+                                                                                    "IsRetrievable":  false
                                                                                 }
                                                         }
                                      }

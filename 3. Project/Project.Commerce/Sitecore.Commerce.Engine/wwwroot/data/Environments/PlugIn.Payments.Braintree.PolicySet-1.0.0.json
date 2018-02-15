@@ -1,8 +1,5 @@
 ﻿{
     "$type":  "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
-    "ArtifactStoreId":  "1E72831D-50CE-43C2-A253-042BFB841CDF",
-    "DateCreated":  "2017-06-23T18:04:08.1660038Z",
-    "DateUpdated":  "2017-06-23T18:04:08.1760227Z",
     "Id":  "Entity-PolicySet-BraintreePolicySet",
     "Version":  1,
     "IsPersisted":  false,

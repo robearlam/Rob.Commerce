@@ -1,6 +1,5 @@
 {
   "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
-  "ArtifactStoreId": "1E72831D-50CE-43C2-A253-042BFB841CDF",
   "Id": "Entity-PolicySet-ShardingPolicySet",
   "Version": 1,
   "IsPersisted": false,
@@ -232,6 +231,16 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
         "RegularExpression": "Content-.*?$",
         "TableName": "ContentEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "Entity-RelationshipDefinition.*?$",
+        "TableName": "CatalogEntities"
+      },
+      {
+        "$type": "Sitecore.Commerce.Plugin.SQL.EntityShardingPolicy, Sitecore.Commerce.Plugin.SQL",
+        "RegularExpression": "RelationshipDefinition-.*?$",
+        "TableName": "CatalogEntities"
       }
     ]
   }

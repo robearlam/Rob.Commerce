@@ -9,7 +9,7 @@
     "IgnoreUnexpectedElementsAndAttributes": false,
     "IncludeT4File": false,
     "ServiceName": "CommerceOps",
-    "Endpoint": "http://localhost:5000/commerceops/$metadata",
+    "Endpoint": "https://localhost:5000/commerceops/$metadata",
     "EdmxVersion": {
       "Major": 4,
       "Minor": 0,

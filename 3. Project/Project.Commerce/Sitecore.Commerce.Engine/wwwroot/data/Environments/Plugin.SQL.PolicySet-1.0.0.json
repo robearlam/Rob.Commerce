@@ -1,6 +1,5 @@
 ﻿{
     "$type":  "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
-    "ArtifactStoreId":  "1E72831D-50CE-43C2-A253-042BFB841CDF",
     "Id":  "Entity-PolicySet-SqlPolicySet",
     "Version":  1,
     "IsPersisted":  false,
@@ -14,10 +13,11 @@
                                          "UserName":  "",
                                          "Password":  "",
                                          "Server":  ".",
-                                         "Database":  "xp0_SharedEnvironments",
+                                         "Database":  "xp901_SharedEnvironments",
                                          "AdditionalParameters":  "",
                                          "ConnectTimeout":  120000,
-                                         "CleanEnvironmentTimeout":  120000
+                                         "CommandTimeout":  180,
+                                         "CleanEnvironmentCommandTimeout":  120000
                                      }
                                  ]
                  }

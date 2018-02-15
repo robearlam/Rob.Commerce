@@ -9,7 +9,7 @@
     "IgnoreUnexpectedElementsAndAttributes": false,
     "IncludeT4File": false,
     "ServiceName": "CommerceShops",
-    "Endpoint": "http://localhost:5000/api/$metadata",
+    "Endpoint": "https://localhost:5000/api/$metadata",
     "EdmxVersion": {
       "Major": 4,
       "Minor": 0,

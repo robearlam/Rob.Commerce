@@ -30,15 +30,14 @@ namespace Sitecore.Commerce.Engine
     using Serilog;
     using Serilog.Events;
 
-    using Sitecore.Commerce.Core;
-    using Sitecore.Commerce.Core.Commands;
-    using Sitecore.Commerce.Core.Logging;
-    using Sitecore.Commerce.Core.Logging.Serilog;
-    using Sitecore.Commerce.Provider.FileSystem;
-    using Sitecore.Framework.Diagnostics;
-    using Sitecore.Framework.Rules;
+    using Core;
+    using Core.Commands;
+    using Core.Logging;
+    using Provider.FileSystem;
+    using Framework.Diagnostics;
+    using Framework.Rules;
 
-    using Convert = Sitecore.Convert;
+    using System.Collections.Generic;
 
     /// <summary>
     /// Defines the engine startup.
@@ -56,28 +55,18 @@ namespace Sitecore.Commerce.Engine
         /// </summary>
         /// <param name="serviceProvider">The service provider.</param>
         /// <param name="hostEnv">The host env.</param>
+        /// <param name="configuration">The configuration.</param>
         public Startup(
             IServiceProvider serviceProvider,
-            IHostingEnvironment hostEnv)
+            IHostingEnvironment hostEnv,
+            IConfiguration configuration)
         {
             this._hostEnv = hostEnv;
             this._serviceProvider = serviceProvider;
+            
+            this.Configuration = configuration;
 
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(this._hostEnv.WebRootPath)
-                .AddJsonFile("config.json", false, true)
-                .AddJsonFile($"config.{this._hostEnv.EnvironmentName}.json", true, true)
-                .AddEnvironmentVariables();
-
-            if (this._hostEnv.IsDevelopment())
-            {
-                builder.AddApplicationInsightsSettings(true);
-            }
-
-            this.Configuration = builder.Build();
-
-            long fileSize;
-            if (!long.TryParse(this.Configuration.GetSection("Serilog:FileSizeLimitBytes").Value, out fileSize))
+            if (!long.TryParse(this.Configuration.GetSection("Serilog:FileSizeLimitBytes").Value, out var fileSize))
             {
                 fileSize = 100000000;
             }
@@ -114,7 +103,7 @@ namespace Sitecore.Commerce.Engine
         /// <value>
         /// The configuration.
         /// </value>
-        public IConfigurationRoot Configuration { get; }
+        public IConfiguration Configuration { get; }
 
         /// <summary>
         /// Configures the services.
@@ -147,6 +136,7 @@ namespace Sitecore.Commerce.Engine
             services.AddApplicationInsightsTelemetry(this.Configuration);
             services.Configure<ApplicationInsightsSettings>(options => this.Configuration.GetSection("ApplicationInsights").Bind(options));
             services.Configure<CertificatesSettings>(this.Configuration.GetSection("Certificates"));
+            services.Configure<List<string>>(Configuration.GetSection("AppSettings:AllowedOrigins"));
 
             TelemetryConfiguration.Active.DisableTelemetry = true;
 
@@ -164,7 +154,7 @@ namespace Sitecore.Commerce.Engine
 
             services.AddOData();
             services.AddCors();
-            services.AddMvcCore().AddJsonFormatters();
+            services.AddMvcCore(options => options.InputFormatters.Add(new ODataFormInputFormatter())).AddJsonFormatters();
             services.AddWebEncoders();
             services.AddDistributedMemoryCache();
             services.AddAuthentication(options =>
@@ -173,19 +163,27 @@ namespace Sitecore.Commerce.Engine
                     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 })
                 .AddIdentityServerAuthentication(options =>
-                    {
-                        options.Authority = this.Configuration.GetSection("AppSettings:SitecoreIdentityServerUrl").Value;
-                        options.RequireHttpsMetadata = false;
-                        options.EnableCaching = false;
-                        options.ApiName = "EngineAPI";
-                        options.ApiSecret = "secret";
-                    });
+                {
+                    options.Authority = this.Configuration.GetSection("AppSettings:SitecoreIdentityServerUrl").Value;
+                    options.RequireHttpsMetadata = false;
+                    options.EnableCaching = false;
+                    options.ApiName = "EngineAPI";
+                    options.ApiSecret = "secret";
+                });
+
+            this._nodeContext.CertificateHeaderName = this.Configuration.GetSection("Certificates:CertificateHeaderName").Value;
+
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("RoleRequirement", policy => policy.Requirements.Add(new RoleAuthorizationRequirement()));
+                options.AddPolicy("RoleRequirement", policy => policy.Requirements.Add(new RoleAuthorizationRequirement(this._nodeContext.CertificateHeaderName)));
             });
 
-            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            var antiForgeryEnabledSetting = this.Configuration.GetSection("AppSettings:AntiForgeryEnabled").Value;
+            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting);
+            if(this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
+           
+            services.AddMvc()
+                    .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             this._nodeContext.AddObject(services);
         }
@@ -202,6 +200,7 @@ namespace Sitecore.Commerce.Engine
         /// <param name="loggingSettings">The logging settings.</param>
         /// <param name="applicationInsightsSettings">The application insights settings.</param>
         /// <param name="certificatesSettings">The certificates settings.</param>
+        /// <param name="allowedOriginsOptions"></param>
         public void Configure(
             IApplicationBuilder app,
             IConfigureServiceApiPipeline configureServiceApiPipeline,
@@ -211,7 +210,8 @@ namespace Sitecore.Commerce.Engine
             ILoggerFactory loggerFactory,
             IOptions<LoggingSettings> loggingSettings,
             IOptions<ApplicationInsightsSettings> applicationInsightsSettings,
-            IOptions<CertificatesSettings> certificatesSettings)
+            IOptions<CertificatesSettings> certificatesSettings,
+            IOptions<List<string>> allowedOriginsOptions)
         {
             app.UseDiagnostics();
             app.UseStaticFiles();
@@ -227,12 +227,15 @@ namespace Sitecore.Commerce.Engine
             }
 
             app.UseClientCertificateValidationMiddleware(certificatesSettings);
+
             app.UseCors(builder =>
-                builder.AllowAnyOrigin()
+                builder.WithOrigins(allowedOriginsOptions.Value.ToArray())
+                    .AllowCredentials()
                     .AllowAnyHeader()
                     .AllowAnyMethod());
-            app.UseAuthentication();
 
+            app.UseAuthentication();
+            
             Task.Run(() => startNodePipeline.Run(this._nodeContext, this._nodeContext.GetPipelineContextOptions())).Wait();
 
             var environmentName = this.Configuration.GetSection("AppSettings:EnvironmentName").Value;
@@ -249,13 +252,6 @@ namespace Sitecore.Commerce.Engine
             // Run the pipeline to configure the plugin's OData context
             var contextResult = Task.Run(() => configureServiceApiPipeline.Run(modelBuilder, this._nodeContext.GetPipelineContextOptions())).Result;
             contextResult.Namespace = "Sitecore.Commerce.Engine";
-
-            app.UseCors(builder =>
-                builder.AllowAnyOrigin()
-                    .AllowAnyHeader()
-                    .AllowAnyMethod());
-
-            app.UseAuthentication();
 
             // Get the model and register the ODataRoute
             var model = contextResult.GetEdmModel();
@@ -275,7 +271,7 @@ namespace Sitecore.Commerce.Engine
                 var appInsightsSettings = applicationInsightsSettings.Value;
                 appInsightsSettings.DeveloperMode = this._hostEnv.IsDevelopment();
                 loggerFactory.AddApplicationInsights(appInsightsSettings);
-            }
+            }          
         }
 
         /// <summary>
