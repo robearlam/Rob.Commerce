@@ -1,0 +1,27 @@
+{
+  "name": "rob.commerce",
+  "version": "1.0.0",
+  "description": "A series of plugins for Sitecore Experience Commerce",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-dotnet-cli": "^1.1.0",
+    "run-sequence": "^2.2.1",
+    "gulp-nuget-restore": "^0.6.0",
+    "gulp-debug": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robearlam/Rob.Commerce.git"
+  },
+  "author": "Rob Earlam",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/robearlam/Rob.Commerce/issues"
+  },
+  "homepage": "https://github.com/robearlam/Rob.Commerce#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

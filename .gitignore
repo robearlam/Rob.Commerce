@@ -43,3 +43,6 @@ lib/**/*.Xml
 lib/**/*.config
 lib/**/*.lic
 lib/**/*.lastcodeanalysissucceeded
+
+#node/gulp
+node_modules/
