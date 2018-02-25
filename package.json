@@ -4,11 +4,13 @@
   "description": "A series of plugins for Sitecore Experience Commerce",
   "main": "gulpfile.js",
   "dependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-debug": "^3.2.0",
     "gulp-dotnet-cli": "^1.1.0",
-    "run-sequence": "^2.2.1",
     "gulp-nuget-restore": "^0.6.0",
-    "gulp-debug": "^3.2.0"
+    "run-sequence": "^2.2.1"
   },
   "repository": {
     "type": "git",

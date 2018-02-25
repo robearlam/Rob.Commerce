@@ -1,8 +1,9 @@
 let { clean, restore, build, test, pack, publish, run } = require('gulp-dotnet-cli');
 let gulp = require('gulp');
-let debug = require("gulp-debug");
 let runSequence = require("run-sequence");
 let fs = require('fs');
+let gulpCopy = require('gulp-copy');
+let del = require('del');
 
 var config;
 if (fs.existsSync('./gulp-config.js.user')) {
@@ -20,16 +21,6 @@ gulp.task("default", function (callback) {
 });
 
 gulp.task("01-Build-Commerce-Engine", function (callback) {
-    return runSequence(
-        "Build-Solution", callback);
-});
-
-gulp.task("Copy-SC-Assemblies-To-Lib", function () {
-    console.log("Copying Sitecore Assemblies");
-    return gulp.src(config.sitecoreRoot + "\\bin").pipe(gulp.dest("./lib"));
-});
-
-gulp.task("Build-Solution", function () {
     var targets = ["Build"];
     if (config.runCleanBuilds) {
         targets = ["Clean", "Build"];
@@ -53,33 +44,37 @@ gulp.task("Build-Solution", function () {
         }));
 });
 
-gulp.task("Publish-Commerce-Engine", function() {
-    publishStream("./3. Project/Project.Commerce/Sitecore.Commerce.Engine/Sitecore.Commerce.Engine.csproj",
-        "C:\\inetpub\\wwwroot\\_CommercePublish");
+gulp.task('02-Publish-Commerce-Engine-To-Instances', function(callback) {
+    return runSequence(
+        "Delete-Existing-Engine-Files",
+        "Publish-Commerce-Engine",
+        "Copy-Published-Engine-To-Instances",
+        "Transform-Published-Instances",
+        callback
+    );
 });
 
-//gulp.task('publish', ['test'], () => {
-//    return gulp.src('src/TestWebProject.csproj', { read: false })
-//        .pipe(publish({ configuration: configuration, version: version }));
-//});
+gulp.task('Copy-Published-Engine-To-Instances', function() {
+    return gulp.src("./bin/publish/**/*")
+        .pipe(gulpCopy(config.engineAuthoringRoot, options));
+    //.pipe(gulpCopy(config.engineShopsRoot, options))
+    //.pipe(gulpCopy(config.engineMinionsRoot, options))
+    //.pipe(gulpCopy(config.engineOpsRoot, options));
+});
 
+gulp.task('Transform-Published-Instances', function() {
+    return null;
+});
 
-var publishStream = function (stream, dest) {
-    var targets = ["Build"];
-    return gulp.src(stream, { read: false })
+gulp.task('Publish-Commerce-Engine', function() {
+    return gulp.src('./3. Project/Project.Commerce/Sitecore.Commerce.Engine/Sitecore.Commerce.Engine.csproj', { read: false })
         .pipe(publish({
             configuration: config.buildConfiguration,
-            ouptut: dest,
-            verbosity: config.buildVerbosity,
-            targets: targets,
-            logCommand: false,
-            stdout: true,
-            errorOnFail: true,
-            maxcpucount: config.buildMaxCpuCount,
-            nodeReuse: false,
-            toolsVersion: config.buildToolsVersion,
-            properties: {
-                Platform: config.buildPlatform
-            }
+            output: "./bin/publish",
+            verbosity: config.buildVerbosity
         }));
-}
+});
+
+gulp.task('Delete-Existing-Engine-Files', function() {
+    return gulp.pipe(del(config.engineAuthoringRoot + "\\**\\*.*", { force: true }));
+});
