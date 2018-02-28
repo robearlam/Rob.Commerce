@@ -9,6 +9,7 @@
     "gulp-copy": "^1.1.0",
     "gulp-debug": "^3.2.0",
     "gulp-dotnet-cli": "^1.1.0",
+    "gulp-json-modify": "^1.0.2",
     "gulp-nuget-restore": "^0.6.0",
     "run-sequence": "^2.2.1"
   },
