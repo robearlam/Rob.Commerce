@@ -47,11 +47,11 @@
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "F1D8349D784BF672B99103C1C204A57556DD263A",
+        "Thumbprint": "88AC21AB2E4AD0315F8E3B0920C97AF902199AC8",
         "DefaultRoles": [
           "sitecore\\QA",
           "sitecore\\Commerce Business User"
-        ] 
+        ]
       }
     ],
     "CertificateHeaderName": "X-CommerceEngineCert"
