@@ -4,6 +4,7 @@ let runSequence = require("run-sequence");
 let fs = require('fs');
 let del = require('del');
 let jsonModify = require('gulp-json-modify');
+let exec = require('child_process').exec;
 
 var config;
 if (fs.existsSync('./gulp-config.js.user')) {
@@ -47,10 +48,12 @@ gulp.task("01-Build-Commerce-Engine", function (callback) {
 
 gulp.task('02-Publish-Commerce-Engine-To-Instances', function(callback) {
     return runSequence(
+        "Stop-Local-IIS",
         "Delete-Existing-Engine-Files",
         "Publish-Commerce-Engine",
         "Copy-Published-Engine-To-All-Instances",
         "Transform-All-Engine-Env-Variables",
+        "Start-Local-IIS",
         callback
     );
 });
@@ -64,16 +67,17 @@ gulp.task('Copy-Published-Engine-To-All-Instances', function() {
 });
 
 gulp.task('Transform-All-Engine-Env-Variables', function(cb) {
-    return TransformSingleEngineEnvVariables(config.engineAuthoringRoot, 'HabitatAuthoring',
-        TransformSingleEngineEnvVariables(config.engineShopsRoot, 'HabitatShops',
-            TransformSingleEngineEnvVariables(config.engineMinionsRoot, 'HabitatMinions',
-                TransformSingleEngineEnvVariables(config.engineOpsRoot, 'AdventureWorksOpsApi'))));
+    TransformSingleEngineEnvVariables(config.engineAuthoringRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatAuthoring');
+    TransformSingleEngineEnvVariables(config.engineShopsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatShops');
+    TransformSingleEngineEnvVariables(config.engineMinionsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatMinions');
+    TransformSingleEngineEnvVariables(config.engineOpsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'AdventureWorksOpsApi');
+    cb();
 });
 
-TransformSingleEngineEnvVariables = function(engineLocation, environmentName) {
-    return gulp.src(engineLocation + "\\wwwroot\\config.json")
-        .pipe(jsonModify({ key: 'AppSettings.EnvironmentName', value: environmentName }))
-        .pipe(gulp.dest(engineLocation + "\\wwwroot"));
+TransformSingleEngineEnvVariables = function(fileLocation, filename, jsonSelector, jsonValue) {
+    return gulp.src(fileLocation + "\\" + filename)
+        .pipe(jsonModify({ key: jsonSelector, value: jsonValue }))
+        .pipe(gulp.dest(fileLocation));
 };
 
 gulp.task('Publish-Commerce-Engine', function() {
@@ -90,4 +94,18 @@ gulp.task('Delete-Existing-Engine-Files', function() {
             del(config.engineOpsRoot + "\\**\\*.*", { force: true },
             del(config.engineMinionsRoot + "\\**\\*.*", { force: true },
             del(config.engineShopsRoot + "\\**\\*.*", { force: true }))));
+});
+
+gulp.task('Stop-Local-IIS', function(callback) {
+    exec('Powershell.exe  iisreset /timeout:0 /stop', function(err, stdout) {
+        console.log(stdout);
+        callback(err);
+    });
+});
+
+gulp.task('Start-Local-IIS', function (callback) {
+    exec('Powershell.exe  iisreset /timeout:0 /start', function (err, stdout) {
+        console.log(stdout);
+        callback(err);
+    });
 });

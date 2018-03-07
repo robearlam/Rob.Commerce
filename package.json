@@ -4,6 +4,7 @@
   "description": "A series of plugins for Sitecore Experience Commerce",
   "main": "gulpfile.js",
   "dependencies": {
+    "child_process": "^1.0.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-copy": "^1.1.0",
