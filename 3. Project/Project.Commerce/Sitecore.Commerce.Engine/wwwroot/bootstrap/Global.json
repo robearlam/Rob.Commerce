@@ -41,7 +41,7 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
         "PolicyId": "Global",
         "AllowAdmin": true,
-        "Database": "xc90_Global",
+        "Database": "xp901_Global",
         "EffectiveDate": "0001-01-01T00:00:00",
         "IsVisible": false,
         "Password": "",

@@ -47,7 +47,7 @@
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "88AC21AB2E4AD0315F8E3B0920C97AF902199AC8",
+        "Thumbprint": "8C2B80FE188A0EC6888C5FC1C2C596657F159408",
         "DefaultRoles": [
           "sitecore\\QA",
           "sitecore\\Commerce Business User"

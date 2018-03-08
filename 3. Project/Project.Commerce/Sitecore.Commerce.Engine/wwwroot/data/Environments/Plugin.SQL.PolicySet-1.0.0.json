@@ -13,7 +13,7 @@
                                          "UserName":  "",
                                          "Password":  "",
                                          "Server":  ".",
-                                         "Database":  "xc90_SharedEnvironments",
+                                         "Database":  "xp901_SharedEnvironments",
                                          "AdditionalParameters":  "",
                                          "ConnectTimeout":  120000,
                                          "CommandTimeout":  180,
