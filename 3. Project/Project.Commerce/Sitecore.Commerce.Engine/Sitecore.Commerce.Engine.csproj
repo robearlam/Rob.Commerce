@@ -55,6 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\2. Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
     <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj" />
     <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
     <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />

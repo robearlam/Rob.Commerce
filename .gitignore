@@ -43,6 +43,7 @@ lib/**/*.Xml
 lib/**/*.config
 lib/**/*.lic
 lib/**/*.lastcodeanalysissucceeded
+**/wwwroot/localhost.pfx
 
 #node/gulp
 node_modules/

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{568C6A8E-A6AC-4A00-BDA0-F8BDA498A365}"
 	ProjectSection(SolutionItems) = preProject
@@ -39,6 +39,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Brai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "2. Feature\Feature.SDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj", "{3BC75EB5-BE41-45E3-89F9-166F571CFC42}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature.Compare", "Feature.Compare", "{68D2E66C-4F5F-4E8F-817B-4643D8BE557A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{F6C292E5-7B98-480B-9F34-C349F1D23A4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine", "2. Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj", "{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22660103-B270-48E5-BA79-E152AEC6688D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine.Tests", "2. Feature\Feature.Compare\Tests\Feature.Compare.Engine.Tests\Feature.Compare.Engine.Tests.csproj", "{88410B58-6133-4BD4-AA67-9F16AA59487B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisation", "{BAD15B5B-AEB9-4253-B2CD-8A24C1C418A3}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Feature.Compare.Tds.Master", "2. Feature\Feature.Compare\Serialisation\Feature.Compare.Tds.Master\Feature.Compare.Tds.Master.scproj", "{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +87,16 @@ Global
 		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88410B58-6133-4BD4-AA67-9F16AA59487B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88410B58-6133-4BD4-AA67-9F16AA59487B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88410B58-6133-4BD4-AA67-9F16AA59487B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88410B58-6133-4BD4-AA67-9F16AA59487B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,9 +112,16 @@ Global
 		{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{3BC75EB5-BE41-45E3-89F9-166F571CFC42} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
+		{68D2E66C-4F5F-4E8F-817B-4643D8BE557A} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
+		{F6C292E5-7B98-480B-9F34-C349F1D23A4F} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
+		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20} = {F6C292E5-7B98-480B-9F34-C349F1D23A4F}
+		{22660103-B270-48E5-BA79-E152AEC6688D} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
+		{88410B58-6133-4BD4-AA67-9F16AA59487B} = {22660103-B270-48E5-BA79-E152AEC6688D}
+		{BAD15B5B-AEB9-4253-B2CD-8A24C1C418A3} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
+		{A2D6ACBE-0210-43B4-9963-19CB89CF87B0} = {BAD15B5B-AEB9-4253-B2CD-8A24C1C418A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal

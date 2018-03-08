@@ -48,12 +48,12 @@ gulp.task("01-Build-Commerce-Engine", function (callback) {
 
 gulp.task('02-Publish-Commerce-Engine-To-Instances', function(callback) {
     return runSequence(
-        "Stop-Local-IIS",
+       // "Stop-Local-IIS",
         "Delete-Existing-Engine-Files",
         "Publish-Commerce-Engine",
         "Copy-Published-Engine-To-All-Instances",
         "Transform-All-Engine-Env-Variables",
-        "Start-Local-IIS",
+        //"Start-Local-IIS",
         callback
     );
 });
