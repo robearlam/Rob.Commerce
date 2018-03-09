@@ -165,6 +165,9 @@
       <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions">
+      <HintPath>..\..\..\..\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">

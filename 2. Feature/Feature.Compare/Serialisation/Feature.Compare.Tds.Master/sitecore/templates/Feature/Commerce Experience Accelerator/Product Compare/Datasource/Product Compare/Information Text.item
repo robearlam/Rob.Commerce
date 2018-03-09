@@ -2,7 +2,7 @@
 version: 1
 id: {C763451C-2193-4977-A220-14BEAB1E7770}
 database: master
-path: /sitecore/templates/Feature/Commerce Experience Accelerator/Catalog/Datasource/Product Compare/Information Text
+path: /sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource/Product Compare/Information Text
 parent: {39B86C7B-CC75-401D-8B75-A3C29978E7F1}
 name: Information Text
 master: {00000000-0000-0000-0000-000000000000}

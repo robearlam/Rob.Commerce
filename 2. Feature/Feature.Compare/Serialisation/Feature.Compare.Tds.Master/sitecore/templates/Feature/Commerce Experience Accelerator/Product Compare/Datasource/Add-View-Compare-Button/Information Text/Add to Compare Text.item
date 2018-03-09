@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {84AD6914-262E-42F6-AA6D-6F438BD5BD51}
+id: {DDF7A736-3405-411A-883B-C858802BEA57}
 database: master
-path: /sitecore/templates/Feature/Commerce Experience Accelerator/Catalog/Datasource/Add-View-Compare-Button/Information Text/View Compare Text
+path: /sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource/Add-View-Compare-Button/Information Text/Add to Compare Text
 parent: {5A9E9AE6-96E7-40BD-97F9-7D72F1EB13B8}
-name: View Compare Text
+name: Add to Compare Text
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -23,11 +23,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+100
 ----version----
 language: en
 version: 1
-revision: 95894a60-95a4-4c91-88f0-766ae729c78b
+revision: 78471bc3-5d06-4ece-9138-9cc1b35d8bff
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-95894a60-95a4-4c91-88f0-766ae729c78b
+78471bc3-5d06-4ece-9138-9cc1b35d8bff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170920T200154Z
+20180309T195452Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

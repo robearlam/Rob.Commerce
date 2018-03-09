@@ -1,14 +1,14 @@
 ----item----
 version: 1
-id: {F62038BD-D519-4A6F-9FA5-27C46E903375}
+id: {A631F6D3-2FE0-432C-8862-488CA54CA430}
 database: master
-path: /sitecore/layout/Renderings/Feature/Commerce Experience Accelerator/Commerce Catalog/Product Compare
-parent: {7E57CE9B-7895-442E-B0C8-521E7D5BD987}
-name: Product Compare
+path: /sitecore/layout/Renderings/Feature/Commerce Experience Accelerator/Commerce Product Compare/Add-View-Compare-Button
+parent: {E5572B28-D687-4254-882B-1BD995628F24}
+name: Add-View-Compare-Button
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
-created: 20170920T055305Z
+created: 20170920T194753Z
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -21,9 +21,9 @@ Feature.Compare.Website.Controllers.ProductCompareController, Feature.Compare.We
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 14
+content-length: 19
 
-ProductCompare
+AddVewCompareButton
 ----field----
 field: {13F89250-AD6B-4548-882E-118A12C18094}
 name: Parameters Template
@@ -42,28 +42,28 @@ query:./ancestor::*[@@templatename='Site']/Data/Commerce/Catalog
 field: {1A7C85E5-DC0B-490D-9187-BB1DBCB4C72F}
 name: Datasource Template
 key: datasource template
-content-length: 94
+content-length: 102
 
-/sitecore/templates/Feature/Experience Accelerator/Commerce/Catalog/Datasource/Product Compare
+/sitecore/templates/Feature/Experience Accelerator/Commerce/Catalog/Datasource/Add-View-Compare-Button
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 34
+content-length: 23
 
-Office/32x32/document_notebook.png
+Office/32x32/button.png
 ----version----
 language: en
 version: 1
-revision: a45afaba-4ebb-4900-b008-4d3374cbfaa8
+revision: 4a86540a-bdde-4eff-8aac-66e87e8f73c4
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 15
+content-length: 23
 
-Product Compare
+Add/View Compare Button
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -91,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a45afaba-4ebb-4900-b008-4d3374cbfaa8
+4a86540a-bdde-4eff-8aac-66e87e8f73c4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180309T162534Z
+20180309T195410Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

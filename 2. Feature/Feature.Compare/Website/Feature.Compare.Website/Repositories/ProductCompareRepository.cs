@@ -14,8 +14,10 @@ using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common.Search;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
+using Sitecore.Links;
 
 namespace Feature.Compare.Website.Repositories
 {
@@ -58,8 +60,21 @@ namespace Feature.Compare.Website.Repositories
                 model.IsProductInCompareList = productIsInCompare;
             }
 
-            model.ViewCompareButtonText = "View Product Comparison";
-            model.AddToCompareButtonText = "Add to Compare";
+            model.ViewCompareButtonText = Rendering.DataSourceItem["View Compare Text"];
+            model.AddToCompareButtonText = Rendering.DataSourceItem["Add to Compare Text"];
+
+            LinkField linkField = Rendering.DataSourceItem.Fields["Compare Page"];
+            if (linkField != null && linkField.IsInternal)
+            {
+                model.IsValid = true;
+                model.ComparePageLink = LinkManager.GetItemUrl(linkField.TargetItem);
+            }
+            else
+            {
+                model.IsValid = false;
+                Log.Error("Unable to render add/view compare link, Compare Page field not populated in datasource.", this);
+            }
+
             return model;
         }
 

@@ -1,59 +1,59 @@
 ----item----
 version: 1
-id: {3F703CD5-7734-4405-BF5F-C96CA0F524AB}
+id: {FE7A5C81-FE4E-4F30-A344-1F56038BFF23}
 database: master
-path: /sitecore/templates/Feature/Commerce Experience Accelerator/Catalog/Datasource
-parent: {776314BA-CC2F-4C30-8437-BA6E7005B550}
+path: /sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource
+parent: {B887964B-DEEE-4577-92E0-3BCD4882D9DE}
 name: Datasource
 master: {00000000-0000-0000-0000-000000000000}
 template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
-created: 20180128T192907Z
+created: 20180309T194704Z
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+100
 ----version----
 language: en
 version: 1
-revision: ee5c5d3c-f79a-4a9e-8120-8caf147107ac
+revision: faee8a99-b24e-4598-8be9-220c124f009f
 
-----field----
-field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
-name: __Display name
-key: __display name
-content-length: 10
-
-Datasource
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\Admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20170213T134338Z
+20180309T194704Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ee5c5d3c-f79a-4a9e-8120-8caf147107ac
+faee8a99-b24e-4598-8be9-220c124f009f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170531T065332Z
+20180309T194723Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\Admin
+sitecore\admin

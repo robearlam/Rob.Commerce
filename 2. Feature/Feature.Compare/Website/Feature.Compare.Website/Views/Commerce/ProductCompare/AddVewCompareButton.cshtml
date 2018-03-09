@@ -3,30 +3,35 @@
 @{
     var viewCompareLinkStyle = Model.IsProductInCompareList ? "" : "none";
     var addToCompareLinkStyle = Model.IsProductInCompareList ? "none" : "";
+
+    if (!Model.IsValid)
+    {
+        return;
+    }
 }
 
-<div>
+    <div>
     
-    <div class="add-product-to-compare cxa-addtocart-component" style="display:@addToCompareLinkStyle; Margin: 10px 0px;">
-        @{ var formDisabledAttr = Model.IsEdit ? "disabled" : "";}
-        @using (Ajax.BeginForm("AddProductToCompareList", "ProductCompare", null, new AjaxOptions { OnBegin = "AddToCompareForm.SetAddButton", OnSuccess = "AddToCompareForm.OnSuccess", OnFailure = "AddToCompareForm.OnFailure", HttpMethod = "Post" }))
-        {
-            @Html.ValidationSummary(true)
-            @Html.Hidden("addToCompareProductId", Model.ProductId)
-            @Html.Hidden("addToCompareVarientId", Model.VarientId)
-            @Html.Hidden("addToCompareCatalogName", Model.CatalogName)
-            @Html.AntiForgeryToken()
+        <div class="add-product-to-compare cxa-addtocart-component" style="display:@addToCompareLinkStyle; Margin: 10px 0px;">
+            @{ var formDisabledAttr = Model.IsEdit ? "disabled" : "";}
+            @using (Ajax.BeginForm("AddProductToCompareList", "ProductCompare", null, new AjaxOptions { OnBegin = "AddToCompareForm.SetAddButton", OnSuccess = "AddToCompareForm.OnSuccess", OnFailure = "AddToCompareForm.OnFailure", HttpMethod = "Post" }))
+            {
+                @Html.ValidationSummary(true)
+                @Html.Hidden("addToCompareProductId", Model.ProductId)
+                @Html.Hidden("addToCompareVarientId", Model.VarientId)
+                @Html.Hidden("addToCompareCatalogName", Model.CatalogName)
+                @Html.AntiForgeryToken()
 
-            <button type="submit" class="add-to-compare-btn add-to-cart-btn" data-loading-text="@Model.AddingToCompareWaitText" style="width: 170px;" @formDisabledAttr>
-                @Model.AddToCompareButtonText
-            </button>
-        }
+                <button type="submit" class="add-to-compare-btn add-to-cart-btn" data-loading-text="@Model.AddingToCompareWaitText" style="width: 170px;" @formDisabledAttr>
+                    @Model.AddToCompareButtonText
+                </button>
+            }
+        </div>
+
+        <div class="view-product-compare" style="display:@viewCompareLinkStyle">
+            <h5>
+                <a href="@Model.ComparePageLink" style="float: left; clear: both; margin: 10px 0;">@Model.ViewCompareButtonText</a>
+            </h5>
+        </div>
+
     </div>
-
-    <div class="view-product-compare" style="display:@viewCompareLinkStyle">
-        <h5>
-            <a href="/Compare" style="float: left; clear: both; margin: 10px 0;">@Model.ViewCompareButtonText</a>
-        </h5>
-    </div>
-
-</div>
