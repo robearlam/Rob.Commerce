@@ -53,6 +53,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisat
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Feature.Compare.Tds.Master", "2. Feature\Feature.Compare\Serialisation\Feature.Compare.Tds.Master\Feature.Compare.Tds.Master.scproj", "{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{03A5656F-1894-4E51-95AE-31F41B189E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.Compare.Website", "2. Feature\Feature.Compare\Website\Feature.Compare.Website\Feature.Compare.Website.csproj", "{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{88410B58-6133-4BD4-AA67-9F16AA59487B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,9 +127,11 @@ Global
 		{88410B58-6133-4BD4-AA67-9F16AA59487B} = {22660103-B270-48E5-BA79-E152AEC6688D}
 		{BAD15B5B-AEB9-4253-B2CD-8A24C1C418A3} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
 		{A2D6ACBE-0210-43B4-9963-19CB89CF87B0} = {BAD15B5B-AEB9-4253-B2CD-8A24C1C418A3}
+		{03A5656F-1894-4E51-95AE-31F41B189E14} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
+		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379} = {03A5656F-1894-4E51-95AE-31F41B189E14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
