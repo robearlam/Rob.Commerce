@@ -1,4 +1,4 @@
-{
+﻿{
   "$type": "Sitecore.Commerce.Core.CommerceEnvironment, Sitecore.Commerce.Core",
   "Components": {
     "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
@@ -17,7 +17,7 @@
     "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, mscorlib]], mscorlib",
     "$values": [
       "Environments",
-      "AllEntities" 
+      "AllEntities"
     ]
   },
   "Name": "GlobalEnvironment",
@@ -33,7 +33,7 @@
             "AdventureWorksShops",
             "AdventureWorksAuthoring",
             "HabitatAuthoring",
-            "HabitatShops" 
+            "HabitatShops"
           ]
         }
       },
@@ -41,7 +41,7 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
         "PolicyId": "Global",
         "AllowAdmin": true,
-        "Database": "xp901_Global",
+        "Database": "xc901_Global",
         "EffectiveDate": "0001-01-01T00:00:00",
         "IsVisible": false,
         "Password": "",
@@ -66,6 +66,8 @@
           "carts": null,
           "giftcards": null,
           "order-*-salesactivity": null,
+          "completedrmas": null,
+          "journalentries*": null,
           "coupons": null,
           "entitlements": null,
           "managedlists": null,

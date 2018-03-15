@@ -40,6 +40,11 @@ namespace Sitecore.Commerce.Engine
             }
         }
 
+        /// <summary>
+        /// Builds the web host.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
+        /// <returns>A <see cref="IWebHost"/></returns>
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()

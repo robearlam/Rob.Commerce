@@ -28,7 +28,7 @@ gulp.task("01-Build-Commerce-Engine", function (callback) {
         targets = ["Clean", "Build"];
     }
 
-    var solution = "./" + config.solutionName + ".sln";
+    var solution = "./" + config.engineProjectPath + '/Sitecore.Commerce.Engine.csproj';
     return gulp.src(solution)
         .pipe(build({
             targets: targets,
@@ -49,8 +49,8 @@ gulp.task("01-Build-Commerce-Engine", function (callback) {
 gulp.task('02-Publish-Commerce-Engine-To-Instances', function(callback) {
     return runSequence(
        // "Stop-Local-IIS",
-        "Delete-Existing-Engine-Files",
         "Publish-Commerce-Engine",
+        "Delete-Existing-Engine-Files",
         "Copy-Published-Engine-To-All-Instances",
         "Transform-All-Engine-Env-Variables",
         //"Start-Local-IIS",

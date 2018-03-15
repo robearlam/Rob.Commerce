@@ -64,6 +64,7 @@ namespace Plugin.Sample.Upgrade
                      .Add<GetSourceEntityBlock>()
                      .Add<MigrateOrderEntityBlock>()
                      .Add<MigrateGiftCardBlock>()
+                     .Add<MigrateJournalEntryBlock>()
                      .Add<MigrateSellableItemBlock>()
                      .Add<SetEntityListMembershipsBlock>()
                      .Add<PersistMigratedEntityBlock>();                      

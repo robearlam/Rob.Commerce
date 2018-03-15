@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Description>The Sitecore Commerce Engine SDK.</Description>
-    <VersionPrefix>2.0.0</VersionPrefix>
+    <VersionPrefix>2.1.0</VersionPrefix>
     <Authors>Sitecore</Authors>
     <TargetFramework>net462</TargetFramework>
     <PlatformTarget>x64</PlatformTarget>
@@ -43,15 +43,15 @@
     <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
 
-    <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="2.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="2.1.*" />
 
-    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="2.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="2.1.*" />
 
-    <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="2.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="2.0.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="2.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="2.1.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="2.1.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -71,5 +71,15 @@
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1603</NoWarn>
+    <WarningsAsErrors />
   </PropertyGroup>
 </Project>
