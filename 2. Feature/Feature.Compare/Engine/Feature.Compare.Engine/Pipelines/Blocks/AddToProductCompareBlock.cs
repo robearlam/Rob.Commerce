@@ -1,11 +1,11 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Feature.Compare.Engine.Entities;
 using Feature.Compare.Engine.Pipelines.Arguments;
 using Microsoft.Extensions.Logging;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Plugin.Catalog;
-using Sitecore.Commerce.Plugin.ManagedLists;
 using Sitecore.Framework.Conditions;
 using Sitecore.Framework.Pipelines;
 
@@ -14,12 +14,12 @@ namespace Feature.Compare.Engine.Pipelines.Blocks
     public class AddToProductCompareBlock : PipelineBlock<AddProductToCompareArgument, ProductCompare, CommercePipelineExecutionContext>
     {
         private readonly IGetSellableItemPipeline _getSellableItemPipeline;
-        private readonly IPersistEntityPipeline _persistEntityPipeline;
+        private readonly IAddListEntitiesPipeline _addListEntitiesPipeline;
 
-        public AddToProductCompareBlock(IGetSellableItemPipeline getSellableItemPipeline, IPersistEntityPipeline persistEntityPipeline)
+        public AddToProductCompareBlock(IGetSellableItemPipeline getSellableItemPipeline, IAddListEntitiesPipeline addListEntitiesPipeline)
         {
             _getSellableItemPipeline = getSellableItemPipeline;
-            _persistEntityPipeline = persistEntityPipeline;
+            _addListEntitiesPipeline = addListEntitiesPipeline;
         }
 
         public override async Task<ProductCompare> Run(AddProductToCompareArgument arg, CommercePipelineExecutionContext context)
@@ -42,10 +42,8 @@ namespace Feature.Compare.Engine.Pipelines.Blocks
                 return arg.CompareCollection;
             }
 
-            var listMemebership = sellableItem.GetComponent<TransientListMembershipsComponent>();
-            listMemebership.Memberships.Add(arg.CompareCollection.Name);
-            await _persistEntityPipeline.Run(new PersistEntityArgument(sellableItem), context);
-            context.Logger.LogDebug($"{Name}: SellableItem {sellableItem.FriendlyId} added to compare collection {arg.CompareCollection.Name}");
+            var addArg = new ListEntitiesArgument(new List<string> {sellableItem.Id}, arg.CompareCollection.Name);
+            await _addListEntitiesPipeline.Run(addArg, context);
             return arg.CompareCollection;
         }
 

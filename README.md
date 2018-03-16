@@ -3,8 +3,7 @@ A series of plugins for Sitecore Experience Commerce
 
 ## Prerequisites
 
-* Built against SxP 9.0.0
-* Built against XC 9.0-LA
+* Built against XP9.0.1 & XC9.0.1
 
 This is built against the software versions above, you should follow the installation instructions for both of these and ensure the installation is successfully running.
 
@@ -14,10 +13,16 @@ Before installing these plugins, it is **strongly** recommended to take a backup
 Follow the steps below to deploy the plugins contained in this solution.
 
 ### Copy Libraries
-As Commerce 9.0 is still in LA, there is no nuget feed for the references. For this reason you need to copy all of the DLL's from your Website/bin folder into the lib folder at the root of this solution.
+There is no nuget feed for the SxA references. For this reason you need to copy all of the DLL's from your Website/bin folder into the lib folder at the root of this solution.
+
+### Gulp-Config
+Edit the _gulp-config.js_ to ensure that the various parameters are correct for your system. 
+
+### ES6
+The gulp scripts are written using ES6, which isn't supported OOTB in VS2017, follow the fix here to enable that: https://github.com/madskristensen/NpmTaskRunner/issues/47
 
 ### Deploy Engine
-Build & Deploy the Project.Commerce module to a location on disk, then overwrite all instances of the Engine you have installed with this new version
+Excucute the _default_ task to build and deploy the engine to all of your roles.
 
 ### Deploy Website
 Delpoy all of the Website projects for each module to the Website folder of your XP instance, currently the list of projects you need to deploy are:
@@ -25,13 +30,3 @@ Delpoy all of the Website projects for each module to the Website folder of your
 
 ### Deploy TDS Items
 Deploy TDS items.
-
-### Setup
-To use the compare plugin, you will need to follow these steps:
-* Add the _'Add/view compare button'_ to the Product Detail page. 
-* Create a new page called _Compare_ and add the _Product Compare_ control to it.
-* Publish
-
-## Notes
-
-This is a POC and as such there are some hardcoded values which I've not had chance to move to be populated from data templates. Most of these are just text values, however the one that might cause issue is that the _View Compare_ link is currently hardcoded to go to _/compare_ for the URL.
