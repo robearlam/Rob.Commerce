@@ -55,12 +55,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\2. Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
-    <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj" />
-    <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
-    <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
-    <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
-    <ProjectReference Include="..\..\..\2. Feature\Feature.SDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

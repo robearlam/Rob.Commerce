@@ -15,8 +15,8 @@ Follow the steps below to deploy the plugins contained in this solution.
 ### Copy Libraries
 There is no nuget feed for the SxA references. For this reason you need to copy all of the DLL's from your Websites bin folder into the lib folder at the root of this solution.
 
-### Gulp-Config
-Edit the _gulp-config.js_ to ensure that the various parameters are correct for your system. 
+### Configuration
+Edit the _gulp-config.js_ & _z.RobStorefront.DevSettings.config_ to ensure that the various parameters are correct for your system. 
 
 ### ES6
 The gulp scripts are written using ES6, which isn't supported OOTB in VS2017, follow the fix here to enable that: https://github.com/madskristensen/NpmTaskRunner/issues/47

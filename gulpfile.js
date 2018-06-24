@@ -18,15 +18,15 @@ else {
 module.exports.config = config;
 
 gulp.task("Publish-Foundation-Projects", function () {
-    return publishProjects("./src/1. Foundation");
+    return publishProjects("./src/Foundation");
 });
 
 gulp.task("Publish-Feature-Projects", function () {
-    return publishProjects("./src/2. Feature");
+    return publishProjects("./src/Feature");
 });
 
 gulp.task("Publish-Project-Projects", function () {
-    return publishProjects("./src/3. Project");
+    return publishProjects("./src/Project");
 });
 
 gulp.task('Stop-Local-IIS', function (callback) {

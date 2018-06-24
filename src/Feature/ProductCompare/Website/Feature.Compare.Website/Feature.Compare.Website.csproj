@@ -263,7 +263,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\1. Foundation\ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj">
+    <ProjectReference Include="..\..\..\..\Foundation\ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj">
       <Project>{99ed5d0f-2499-47b6-8bfa-7c6824335d05}</Project>
       <Name>Sitecore.Commerce.ServiceProxy</Name>
       <Private>True</Private>
