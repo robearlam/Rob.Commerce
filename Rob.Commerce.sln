@@ -23,39 +23,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Project", "3. Project", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature.SDK", "Feature.SDK", "{27295EFA-C61D-4901-BEDE-DBD3E3ADB992}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.Engine", "3. Project\Project.Commerce\Sitecore.Commerce.Engine\Sitecore.Commerce.Engine.csproj", "{64130C81-FF1E-4B00-8AD9-7B8430C72259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.Engine", "src\3. Project\Project.Commerce\Sitecore.Commerce.Engine\Sitecore.Commerce.Engine.csproj", "{64130C81-FF1E-4B00-8AD9-7B8430C72259}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation.ServiceProxy", "Foundation.ServiceProxy", "{BB1F8DD9-410B-4F8F-9323-0B4EFFC3CE79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "1. Foundation\Foundation.ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{99ED5D0F-2499-47B6-8BFA-7C6824335D05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "src\1. Foundation\Foundation.ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{99ED5D0F-2499-47B6-8BFA-7C6824335D05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.AdventureWorks", "2. Feature\Feature.SDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj", "{A80576E2-D4F4-4A0E-96EC-61BE311148E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.AdventureWorks", "src\2. Feature\Feature.SDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj", "{A80576E2-D4F4-4A0E-96EC-61BE311148E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Customers.CsMigration", "2. Feature\Feature.SDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj", "{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Customers.CsMigration", "src\2. Feature\Feature.SDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj", "{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Habitat", "2. Feature\Feature.SDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj", "{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Habitat", "src\2. Feature\Feature.SDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj", "{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Braintree", "2. Feature\Feature.SDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj", "{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Braintree", "src\2. Feature\Feature.SDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj", "{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "2. Feature\Feature.SDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj", "{3BC75EB5-BE41-45E3-89F9-166F571CFC42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "src\2. Feature\Feature.SDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj", "{3BC75EB5-BE41-45E3-89F9-166F571CFC42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature.Compare", "Feature.Compare", "{68D2E66C-4F5F-4E8F-817B-4643D8BE557A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{F6C292E5-7B98-480B-9F34-C349F1D23A4F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine", "2. Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj", "{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine", "src\2. Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj", "{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22660103-B270-48E5-BA79-E152AEC6688D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine.Tests", "2. Feature\Feature.Compare\Tests\Feature.Compare.Engine.Tests\Feature.Compare.Engine.Tests.csproj", "{88410B58-6133-4BD4-AA67-9F16AA59487B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine.Tests", "src\2. Feature\Feature.Compare\Tests\Feature.Compare.Engine.Tests\Feature.Compare.Engine.Tests.csproj", "{88410B58-6133-4BD4-AA67-9F16AA59487B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisation", "{BAD15B5B-AEB9-4253-B2CD-8A24C1C418A3}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Feature.Compare.Tds.Master", "2. Feature\Feature.Compare\Serialisation\Feature.Compare.Tds.Master\Feature.Compare.Tds.Master.scproj", "{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Feature.Compare.Tds.Master", "src\2. Feature\Feature.Compare\Serialisation\Feature.Compare.Tds.Master\Feature.Compare.Tds.Master.scproj", "{A2D6ACBE-0210-43B4-9963-19CB89CF87B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{03A5656F-1894-4E51-95AE-31F41B189E14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.Compare.Website", "2. Feature\Feature.Compare\Website\Feature.Compare.Website\Feature.Compare.Website.csproj", "{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.Compare.Website", "src\2. Feature\Feature.Compare\Website\Feature.Compare.Website\Feature.Compare.Website.csproj", "{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,7 +131,7 @@ Global
 		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379} = {03A5656F-1894-4E51-95AE-31F41B189E14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal
