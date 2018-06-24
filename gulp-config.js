@@ -8,7 +8,7 @@ module.exports = function () {
         engineMinionsRoot: webroot + "\\xc901.CommerceMinions",
         solutionName: "Rob.Commerce",
         dbSuffix: "xc901",
-        engineProjectPath: "./src/3. Project/Project.Commerce/Sitecore.Commerce.Engine",
+        engineProjectPath: "./src/3. Project/Engine/Sitecore.Commerce.Engine",
         buildConfiguration: "Debug",
         buildToolsVersion: 15.0,
         buildMaxCpuCount: 0,

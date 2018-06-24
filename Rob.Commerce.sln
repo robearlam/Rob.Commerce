@@ -61,6 +61,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation.Serialisation.Website", "src\1. Foundation\Serialisation\Website\Foundation.Serialisation.Website.csproj", "{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{D8F9BE9D-89A1-4AD0-950E-B05238475EB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,7 +140,8 @@ Global
 		{03A5656F-1894-4E51-95AE-31F41B189E14} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
 		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379} = {03A5656F-1894-4E51-95AE-31F41B189E14}
 		{E1E0F6B9-0C51-4C11-896A-35199A614973} = {8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}
-		{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C} = {E1E0F6B9-0C51-4C11-896A-35199A614973}
+		{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C} = {D8F9BE9D-89A1-4AD0-950E-B05238475EB4}
+		{D8F9BE9D-89A1-4AD0-950E-B05238475EB4} = {E1E0F6B9-0C51-4C11-896A-35199A614973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
