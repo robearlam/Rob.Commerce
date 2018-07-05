@@ -12,7 +12,7 @@
                                          "TrustedConnection":  true,
                                          "UserName":  "",
                                          "Password":  "",
-                                         "Server":  ".",
+                                         "Server":  "LT-REA-T-AU",
                                          "Database":  "xc901_SharedEnvironments",
                                          "AdditionalParameters":  "",
                                          "ConnectTimeout":  120000,

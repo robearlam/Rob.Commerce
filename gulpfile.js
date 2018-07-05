@@ -137,7 +137,7 @@ gulp.task("default",
 
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
-    return gulp.src([location + "/**/website/**/*.csproj"])
+    return gulp.src([location + "/**/Website/**/*.csproj"])
         .pipe(flatmap(function (stream, file) {
             return publishStream(stream);
         }));

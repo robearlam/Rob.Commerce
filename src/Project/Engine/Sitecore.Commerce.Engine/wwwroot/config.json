@@ -3,19 +3,15 @@
     "SiteTitle": "Sitecore Commerce Engine",
     "BootStrapFile": "Global",
     "DeploymentId": "Deployment01",
-    "EnvironmentName": "HabitatMinions",
+    "EnvironmentName": "HabitatAuthoring",
     "EncryptionProtectionType": "Machine",
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
     "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
     "SitecoreIdentityServerUrl": "https://localhost:5050",
-    "AllowedOrigins": [
-      "https://localhost:4200",
-      "http://localhost:4200",
-      "http://sxa.storefront.com"
-    ],
-    "AntiForgeryEnabled": false,
-    "UseHttpsInKestrel": true,  
+    "AllowedOrigins": [ "https://localhost:4200", "https://xc901.sc" ],
+    "AntiForgeryEnabled": true,
+    "UseHttpsInKestrel": true,
     "SslPort": 5000,
     "SslPfxPath": "wwwroot/localhost.pfx",
     "SslPfxPassword": "sitecore"
@@ -34,7 +30,7 @@
     "ApplicationInsightsLoggingEnabled": false
   },
   "Serilog": {
-    "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
+    "Using": [ "Serilog.Sinks.Literate", "Serilog.Sinks.File" ],
     "MinimumLevel": {
       "Default": "Information",
       "Override": {
@@ -47,13 +43,10 @@
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "8C2B80FE188A0EC6888C5FC1C2C596657F159408",
-        "DefaultRoles": [
-          "sitecore\\QA",
-          "sitecore\\Commerce Business User"
-        ]
+        "Thumbprint": "DDFD90315A364DBFF278AE24CB62B7A65D22865A",
+        "DefaultRoles": [ "sitecore\\QA", "sitecore\\Commerce Business User" ]
       }
     ],
     "CertificateHeaderName": "X-CommerceEngineCert"
-  } 
+  }
 }

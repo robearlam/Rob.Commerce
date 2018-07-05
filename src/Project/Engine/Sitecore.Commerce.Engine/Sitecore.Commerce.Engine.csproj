@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <Description>The Sitecore Commerce Engine SDK.</Description>
@@ -55,12 +55,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Feature\Feature.Compare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Feature.SDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
+    <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj" />
+    <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj" />
+    <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
+    <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
+    <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
+    <ProjectReference Include="..\..\..\Feature\ProductCompare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
