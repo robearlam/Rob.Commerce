@@ -1,0 +1,21 @@
+﻿---
+ID: "7da2cede-b7a4-4f20-9df1-99d1922a0597"
+Parent: "418c578b-401a-4090-8183-79af38d4e2ac"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource/Add-View-Compare-Button/Links/Compare Page"
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: General Link
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180309T194817Z

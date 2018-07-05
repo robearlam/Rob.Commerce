@@ -218,7 +218,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Commerce\Feature.Compare.config" />
+    <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductCompare.config" />
+    <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductCompare.Serialisation.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
