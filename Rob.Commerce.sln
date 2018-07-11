@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solutio
 		src\Project\RobStorefront\Website\App_Config\Include\Project\z.RobStorefront.DevSettings.config = src\Project\RobStorefront\Website\App_Config\Include\Project\z.RobStorefront.DevSettings.config
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{5AA9BFF2-9CA0-472F-BBA6-306BDE978318}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommerceEngine", "CommerceEngine", "{5AA9BFF2-9CA0-472F-BBA6-306BDE978318}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}"
 EndProject
@@ -42,23 +42,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductCompare", "ProductCompare", "{68D2E66C-4F5F-4E8F-817B-4643D8BE557A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{F6C292E5-7B98-480B-9F34-C349F1D23A4F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine", "src\Feature\ProductCompare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj", "{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22660103-B270-48E5-BA79-E152AEC6688D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Compare.Engine.Tests", "src\Feature\ProductCompare\Tests\Feature.Compare.Engine.Tests\Feature.Compare.Engine.Tests.csproj", "{88410B58-6133-4BD4-AA67-9F16AA59487B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{03A5656F-1894-4E51-95AE-31F41B189E14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.Compare.Website", "src\Feature\ProductCompare\Website\Feature.Compare.Website\Feature.Compare.Website.csproj", "{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialisation", "Serialisation", "{E1E0F6B9-0C51-4C11-896A-35199A614973}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation.Serialisation.Website", "src\Foundation\Serialisation\Website\Foundation.Serialisation.Website.csproj", "{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{D8F9BE9D-89A1-4AD0-950E-B05238475EB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RobStorefront", "RobStorefront", "{58559F1B-2C1D-486E-95A9-D9A840A71B5B}"
 EndProject
@@ -134,20 +126,16 @@ Global
 		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{3BC75EB5-BE41-45E3-89F9-166F571CFC42} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{68D2E66C-4F5F-4E8F-817B-4643D8BE557A} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
-		{F6C292E5-7B98-480B-9F34-C349F1D23A4F} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
-		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20} = {F6C292E5-7B98-480B-9F34-C349F1D23A4F}
-		{22660103-B270-48E5-BA79-E152AEC6688D} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
-		{88410B58-6133-4BD4-AA67-9F16AA59487B} = {22660103-B270-48E5-BA79-E152AEC6688D}
-		{03A5656F-1894-4E51-95AE-31F41B189E14} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
-		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379} = {03A5656F-1894-4E51-95AE-31F41B189E14}
+		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
+		{88410B58-6133-4BD4-AA67-9F16AA59487B} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
+		{AE17A9F6-7C72-4A17-BF3C-DEDD2C296379} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
 		{E1E0F6B9-0C51-4C11-896A-35199A614973} = {8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}
-		{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C} = {D8F9BE9D-89A1-4AD0-950E-B05238475EB4}
-		{D8F9BE9D-89A1-4AD0-950E-B05238475EB4} = {E1E0F6B9-0C51-4C11-896A-35199A614973}
+		{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C} = {E1E0F6B9-0C51-4C11-896A-35199A614973}
 		{58559F1B-2C1D-486E-95A9-D9A840A71B5B} = {A08B8D71-0A0E-4CE0-887A-3A7776EE435A}
 		{5D1F0143-7A82-43AE-B4B1-2EFC97AFAFC8} = {58559F1B-2C1D-486E-95A9-D9A840A71B5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal
