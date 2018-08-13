@@ -24,5 +24,5 @@ The gulp scripts are written using ES6, which isn't supported OOTB in VS2017, fo
 ### Deploy
 Excucute the _default_ task to build and deploy the engine to all of your roles, and all of website projects.
 
-### Deploy TDS Items
-Deploy TDS items.
+### Deploy Unicorn Items
+Deploy Unicorn items.
