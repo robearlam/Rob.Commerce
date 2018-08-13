@@ -9,6 +9,7 @@ using Sitecore.Commerce.XA.Feature.Catalog.Models;
 using Sitecore.Commerce.XA.Feature.Catalog.Repositories;
 using Sitecore.Commerce.XA.Foundation.Catalog.Managers;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Common.Search;
@@ -28,8 +29,8 @@ namespace Feature.Compare.Website.Repositories
         private readonly ISiteContext _siteContext;
         private const int DefaultIntValue = -1;
 
-        public ProductCompareRepository(IModelProvider modelProvider, ISiteContext siteContext, ICompareManager compareManager, IStorefrontContext storefrontContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager) 
-            : base(modelProvider,storefrontContext,siteContext,searchInformation,searchManager,catalogManager,catalogUrlManager)
+        public ProductCompareRepository(IModelProvider modelProvider, ISiteContext siteContext, ICompareManager compareManager, IStorefrontContext storefrontContext, ISearchInformation searchInformation, ISearchManager searchManager, ICatalogManager catalogManager, ICatalogUrlManager catalogUrlManager, IContext context) 
+            : base(modelProvider,storefrontContext,siteContext,searchInformation,searchManager,catalogManager,catalogUrlManager, context)
         {
             Assert.ArgumentNotNull(modelProvider, nameof(modelProvider));
             _modelProvider = modelProvider;

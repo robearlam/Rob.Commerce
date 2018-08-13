@@ -86,6 +86,11 @@ namespace Plugin.Sample.Customers.CsMigration
                 }
             }
 
+            if (string.IsNullOrEmpty(customer.Email))
+            {
+                customer.Email = customer.UserName.Substring(customer.UserName.IndexOf('\\') + 1);
+            }
+
             customer.GetComponent<CustomerDetailsComponent>()?.View.ChildViews.Add(details);
             return customer;
         }

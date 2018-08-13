@@ -2395,6 +2395,11 @@ namespace Plugin.Sample.AdventureWorks
                 item.FriendlyId = item.Id.SimplifyEntityName();
             }
 
+            if (string.IsNullOrEmpty(item.SitecoreId))
+            {
+                item.SitecoreId = GuidUtils.GetDeterministicGuidString(item.Id);
+            }
+
             var entity = await _findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), item.Id), context);
             if (entity == null)
             {

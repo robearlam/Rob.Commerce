@@ -24,6 +24,7 @@ namespace Plugin.Sample.Customers.CsMigration
             {
                 { "GeneralInfo.user_id", "AccountNumber" },
                 { "AccountInfo.account_status", "AccountStatus" },
+                { "GeneralInfo.ExternalId", "UserName" },
                 { "GeneralInfo.email_address", "Email" },
                 { "GeneralInfo.first_name", "FirstName" },
                 { "GeneralInfo.last_name", "LastName" }

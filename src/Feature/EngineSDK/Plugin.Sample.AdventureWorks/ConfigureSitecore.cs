@@ -35,6 +35,7 @@ namespace Plugin.Sample.AdventureWorks
                 {
                     d.Add<InitializeCatalogBlock>()
                         .Add<InitializeInventoryBlock>()
+                        .Add<InitializeEnvironmentSellableItemsBlock>()
                         .Add<InitializeEnvironmentRegionsBlock>()
                         .Add<InitializeEnvironmentShopsBlock>()
                         .Add<InitializeEnvironmentPricingBlock>()
@@ -42,9 +43,6 @@ namespace Plugin.Sample.AdventureWorks
                         .Add<InitializeEnvironmentGiftCardsBlock>();
                 })
              .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); }));
-
-            services.ConfigureCartPipelines();
-            services.ConfigureOrdersPipelines();
         }
     }
 }

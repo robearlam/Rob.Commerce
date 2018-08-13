@@ -1,46 +1,46 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ServiceCollectionExtensions.cs" company="Sitecore Corporation">
+// <copyright file="SitecoreServiceConfigurationExtensions.cs" company="Sitecore Corporation">
 //   Copyright (c) Sitecore Corporation 1999-2017
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Plugin.Sample.AdventureWorks
+namespace Sitecore.Commerce.Engine
 {
     using Microsoft.Extensions.DependencyInjection;
 
     using Sitecore.Commerce.Plugin.Carts;
-    using Sitecore.Commerce.Plugin.Catalog;
     using Sitecore.Commerce.Plugin.Coupons;
     using Sitecore.Commerce.Plugin.Fulfillment;
     using Sitecore.Commerce.Plugin.Payments;
     using Sitecore.Commerce.Plugin.Promotions;
     using Sitecore.Commerce.Plugin.Tax;
+
+    using Sitecore.Framework.Configuration;
     using Sitecore.Framework.Pipelines.Definitions.Extensions;
 
     /// <summary>
-    /// The services extensions.
+    /// The sitecore services configuration xtensions.
     /// </summary>
-    public static class ServiceCollectionExtensions
+    public static class SitecoreServiceConfigurationExtensions
     {
         /// <summary>
-        /// The configure cart pipelines.
+        /// The configure commerce pipelines.
         /// </summary>
         /// <param name="services">
-        /// The services.
+        /// The sitecore services configuration.
         /// </param>
         /// <returns>
-        /// The <see cref="IServiceCollection"/>.
+        /// The <see cref="ISitecoreServicesConfiguration"/>.
         /// </returns>
-        public static IServiceCollection ConfigureCartPipelines(this IServiceCollection services)
+        public static ISitecoreServicesConfiguration ConfigureCommercePipelines(this ISitecoreServicesConfiguration services)
         {
-            services.Sitecore().Pipelines(config => config
+            services.Pipelines(config => config
+                .ConfigurePipeline<IPopulateValidateCartPipeline>(builder => builder
+                    .Add<ValidateCartCouponsBlock>().After<PopulateCartLineItemsBlock>())
+
                 .ConfigurePipeline<ICalculateCartLinesPipeline>(builder => builder
-                    .Add<PopulateCartLineItemsBlock>()
-                    .Add<CalculateCartLinesPriceBlock>()
-                    .Add<ValidateCartLinesPriceBlock>()
                     .Add<CalculateCartLinesSubTotalsBlock>()
                     .Add<CalculateCartLinesFulfillmentBlock>()
-                    .Add<ValidateCartCouponsBlock>()
                     .Add<CalculateCartLinesPromotionsBlock>()
                     .Add<CalculateCartLinesTaxBlock>()
                     .Add<CalculateCartLinesTotalsBlock>())
@@ -51,27 +51,11 @@ namespace Plugin.Sample.AdventureWorks
                     .Add<CalculateCartPromotionsBlock>()
                     .Add<CalculateCartTaxBlock>()
                     .Add<CalculateCartTotalsBlock>()
-                    .Add<CalculateCartPaymentsBlock>())
-                    
-              .ConfigurePipeline<IAddPaymentsPipeline>(builder => builder.Add<ValidateCartHasFulfillmentBlock>().After<ValidateCartAndPaymentsBlock>()));
+                    .Add<CalculateCartPaymentsBlock>()
+                    .Add<WriteCartTotalsToContextBlock>())
 
-            return services;
-        }
-
-        /// <summary>
-        /// The configure orders pipelines.
-        /// </summary>
-        /// <param name="services">
-        /// The services.
-        /// </param>
-        /// <returns>
-        /// The <see cref="IServiceCollection"/>.
-        /// </returns>
-        public static IServiceCollection ConfigureOrdersPipelines(this IServiceCollection services)
-        {
-            //services.Sitecore().Pipelines(config => config
-            //    .ConfigurePipeline<IItemOrderedPipeline>(builder => builder
-            //        .Add<UpdateItemsOrderedInventoryBlock>()));
+                .ConfigurePipeline<IAddPaymentsPipeline>(builder =>
+                    builder.Add<ValidateCartHasFulfillmentBlock>().After<ValidateCartAndPaymentsBlock>()));
 
             return services;
         }

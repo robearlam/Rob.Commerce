@@ -64,6 +64,7 @@ namespace Sitecore.Commerce.Engine
                 {
                     var configuration =
                         options.ApplicationServices.GetRequiredService<IConfiguration>();
+                    options.Limits.MinResponseDataRate = null;
 
                     var useHttps = configuration.GetValue("AppSettings:UseHttpsInKestrel", false);
                     if (useHttps)
@@ -82,7 +83,7 @@ namespace Sitecore.Commerce.Engine
 
                         if (File.Exists(Path.Combine(hostingEnvironment.ContentRootPath, pfxPath)))
                         {
-                            options.Listen(IPAddress.Loopback, port, listenOptions =>
+                            options.Listen(IPAddress.Any, port, listenOptions =>
                             {
                                 listenOptions.UseHttps(pfxPath, pfxPassword);
                             });

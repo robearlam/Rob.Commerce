@@ -13,6 +13,7 @@ namespace Plugin.Sample.Customers.CsMigration
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Core.Commands;
     using Sitecore.Commerce.Plugin.Customers;
+    using Sitecore.Framework.Conditions;
 
     /// <summary>
     /// Defines a get user site terms command
@@ -52,9 +53,10 @@ namespace Plugin.Sample.Customers.CsMigration
                 {
                     try
                     {                       
-                        var contextOptions = commerceContext.GetPipelineContextOptions();
+                        var cloneContext = this.CloneCommerceContext(commerceContext);
 
-                        var csCustomer = await this._migrateCustomerPipeline.Run(row, contextOptions);
+                        var csCustomer = await this._migrateCustomerPipeline.Run(row, cloneContext);
+                        this.MergeMessages(commerceContext,cloneContext.CommerceContext);
                         if (csCustomer != null)
                         {
                             migratedCustomers.Add(csCustomer);
@@ -71,6 +73,42 @@ namespace Plugin.Sample.Customers.CsMigration
                 }
 
                 return migratedCustomers;
+            }
+        }
+
+        /// <summary>
+        /// Clones the commerce context.
+        /// </summary>
+        /// <param name="commerceContext">The commerce context.</param>
+        /// <returns>Clone pipeline execution context</returns>
+        protected virtual CommercePipelineExecutionContext CloneCommerceContext(CommerceContext commerceContext)
+        {
+            Condition.Requires(commerceContext, nameof(commerceContext)).IsNotNull();
+
+            var commerceContextClone = new CommerceContext(commerceContext.Logger, commerceContext.TelemetryClient, commerceContext.LocalizableMessagePipeline)
+            { 
+                Environment = commerceContext.Environment,
+                GlobalEnvironment = commerceContext.GlobalEnvironment,
+                Headers = commerceContext.Headers
+            };
+            var commerceOptionsClone = commerceContextClone.GetPipelineContextOptions();
+            return new CommercePipelineExecutionContext(commerceOptionsClone, commerceContext.Logger);
+        }
+
+        /// <summary>
+        /// Copies messages from one context into another.
+        /// </summary>
+        /// <param name="targetContext">The context that will recieve the messages.</param>
+        /// <param name="sourceContext">The context that is the source of the messages.</param>
+        protected void MergeMessages(CommerceContext targetContext, CommerceContext sourceContext)
+        {
+            Condition.Requires(targetContext, nameof(targetContext)).IsNotNull();
+            if (sourceContext != null)
+            {
+                foreach (var message in sourceContext.GetMessages())
+                {
+                    targetContext.AddMessage(message);
+                }
             }
         }
     }

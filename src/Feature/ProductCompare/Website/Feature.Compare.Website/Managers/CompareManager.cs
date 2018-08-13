@@ -4,6 +4,7 @@ using Feature.Compare.Website.Managers.Messages;
 using Sitecore.Commerce.Engine.Connect;
 using Sitecore.Commerce.ServiceProxy;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Connect;
 using Sitecore.Commerce.XA.Foundation.Connect.Managers;
 using Sitecore.Commerce.XA.Foundation.Connect.Providers;

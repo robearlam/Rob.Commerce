@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System.Web.UI;
 using Feature.Compare.Website.Repositories;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Controllers;
 using Sitecore.Commerce.XA.Foundation.Common.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
@@ -16,7 +17,7 @@ namespace Feature.Compare.Website.Controllers
         private readonly IVisitorContext _visitorContext;
         private readonly IModelProvider _modelProvider;
 
-        public ProductCompareController(IProductCompareRepository productCompareRepository, IVisitorContext visitorContext, IModelProvider modelProvider, IStorefrontContext storefrontContext) : base(storefrontContext)
+        public ProductCompareController(IProductCompareRepository productCompareRepository, IVisitorContext visitorContext, IModelProvider modelProvider, IStorefrontContext storefrontContext, IContext context) : base(storefrontContext, context)
         {
             _productCompareRepository = productCompareRepository;
             _visitorContext = visitorContext;

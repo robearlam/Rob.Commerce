@@ -38,9 +38,10 @@ namespace Plugin.Sample.Habitat
                             d =>
                             {
                                 d.Add<InitializeCatalogBlock>()
-                                    .Add<InitializeInventoryBlock>()
-                                    .Add<InitializeEnvironmentPricingBlock>()
-                                    .Add<InitializeEnvironmentPromotionsBlock>();
+                                .Add<InitializeEnvironmentSellableItemsBlock>()
+                                .Add<InitializeInventoryBlock>()
+                                .Add<InitializeEnvironmentPricingBlock>()
+                                .Add<InitializeEnvironmentPromotionsBlock>();
                             })
                         .ConfigurePipeline<IRunningPluginsPipeline>(c =>
                         {

@@ -96,6 +96,34 @@ namespace Plugin.Sample.AdventureWorks
                context);
 
             await this._persistEntityPipeline.Run(
+                             new PersistEntityArgument(
+                                 new GiftCard
+                                     {
+                                        Id = $"{CommerceEntity.IdPrefix<GiftCard>()}GC100B",
+                                        Name = "Test Gift Card ($100,000,000,000,000)",
+                                        Balance = new Money("USD", 100000000000000M),
+                                        ActivationDate = DateTimeOffset.UtcNow,
+                                        Customer = new EntityReference { EntityTarget = "DefaultCustomer" },
+                                        OriginalAmount = new Money("USD", 100000000000000M),
+                                        GiftCardCode = "GC100B",
+                                        Components = new List<Component>
+                                        {
+                                                new ListMembershipsComponent { Memberships = new List<string> { CommerceEntity.ListName<Entitlement>(), CommerceEntity.ListName<GiftCard>() } }
+                                        }
+                             }),
+                context);
+
+            await this._persistEntityPipeline.Run(
+                new PersistEntityArgument(
+                    new EntityIndex
+                        {
+                            Id = $"{EntityIndex.IndexPrefix<GiftCard>("Id")}GC100B",
+                            IndexKey = "GC100B",
+                            EntityId = $"{CommerceEntity.IdPrefix<GiftCard>()}GC100B"
+                        }), 
+               context);
+
+            await this._persistEntityPipeline.Run(
                 new PersistEntityArgument(
                     new GiftCard
                         {

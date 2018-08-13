@@ -9,25 +9,25 @@
                      "$values":  [
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc901_OrdersScope",
+                                         "SearchScopeName":  "xc902_OrdersScope",
                                          "ViewName":  "OrdersDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc901_CustomersScope",
+                                         "SearchScopeName":  "xc902_CustomersScope",
                                          "ViewName":  "CustomersDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc901_CatalogItemsScope",
+                                         "SearchScopeName":  "xc902_CatalogItemsScope",
                                          "ViewName":  "MerchandisingDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xc901_CatalogItemsScope",
+                                         "Name":  "xc902_CatalogItemsScope",
                                          "IncrementalListName":  "CatalogItemsIndex",
                                          "FullListName":  "CatalogItems",
-                                         "DeletedListName":  "",
+                                         "DeletedListName":  "DeletedCatalogItemsIndex",
                                          "EntityTypeNames":  {
                                                                  "$type":  "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
                                                                  "$values":  [
@@ -48,7 +48,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xc901_CustomersScope",
+                                         "Name":  "xc902_CustomersScope",
                                          "IncrementalListName":  "CustomersIndex",
                                          "FullListName":  "Customers",
                                          "DeletedListName":  "DeletedCustomersIndex",
@@ -70,7 +70,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xc901_OrdersScope",
+                                         "Name":  "xc902_OrdersScope",
                                          "IncrementalListName":  "OrdersIndex",
                                          "FullListName":  "Orders",
                                          "DeletedListName":  "DeletedOrdersIndex",
@@ -92,7 +92,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc901_CatalogItemsScope",
+                                         "SearchScopeName":  "xc902_CatalogItemsScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
@@ -103,6 +103,15 @@
                                                                              "IsFacetable":  false,
                                                                              "IsRetrievable":  true
                                                                          },
+                                                            "EntityVersion":  {
+                                                                                  "TypeName":  "System.Int32",
+                                                                                  "IsKey":  false,
+                                                                                  "IsSearchable":  false,
+                                                                                  "IsFilterable":  false,
+                                                                                  "IsSortable":  false,
+                                                                                  "IsFacetable":  false,
+                                                                                  "IsRetrievable":  true
+                                                                              },
                                                             "SitecoreId":  {
                                                                                "TypeName":  "System.String",
                                                                                "IsKey":  true,
@@ -188,11 +197,20 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc901_CustomersScope",
+                                         "SearchScopeName":  "xc902_CustomersScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
                                                                              "IsKey":  true,
+                                                                             "IsSearchable":  true,
+                                                                             "IsFilterable":  false,
+                                                                             "IsSortable":  false,
+                                                                             "IsFacetable":  false,
+                                                                             "IsRetrievable":  true
+                                                                         },
+                                                            "UserName":  {
+                                                                             "TypeName":  "System.String",
+                                                                             "IsKey":  false,
                                                                              "IsSearchable":  true,
                                                                              "IsFilterable":  false,
                                                                              "IsSortable":  false,
@@ -266,7 +284,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc901_OrdersScope",
+                                         "SearchScopeName":  "xc902_OrdersScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",

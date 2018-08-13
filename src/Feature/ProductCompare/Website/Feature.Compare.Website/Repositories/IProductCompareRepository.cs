@@ -1,5 +1,6 @@
 ﻿using Feature.Compare.Website.Models;
 using Sitecore.Commerce.XA.Foundation.Common;
+using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.Commerce.XA.Foundation.Common.Models.JsonResults;
 using Sitecore.Commerce.XA.Foundation.Connect;
 

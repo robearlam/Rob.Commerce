@@ -51,7 +51,7 @@ namespace Plugin.Sample.Payments.Braintree
             try
             {
                 var gateway = new BraintreeGateway(braintreeClientPolicy?.Environment, braintreeClientPolicy?.MerchantId, braintreeClientPolicy?.PublicKey, braintreeClientPolicy?.PrivateKey);
-                var clientToken = gateway.ClientToken.generate();
+                var clientToken = gateway.ClientToken.Generate();
                 return clientToken;
             }
             catch (BraintreeException ex)
