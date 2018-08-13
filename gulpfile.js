@@ -6,7 +6,7 @@ let jsonModify = require('gulp-json-modify');
 let exec = require('child_process').exec;
 let msbuild = require("gulp-msbuild");
 let flatmap = require('gulp-flatmap');
-var debug = require("gulp-debug");
+let debug = require("gulp-debug");
 
 var config;
 if (fs.existsSync('./gulp-config.js.user')) {
@@ -51,12 +51,20 @@ gulp.task('Copy-Published-Engine-To-All-Instances', function () {
         .pipe(gulp.dest(config.engineOpsRoot));
 });
 
-gulp.task('Transform-All-Engine-Env-Variables', function (cb) {
-    TransformSingleEngineEnvVariables(config.engineAuthoringRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatAuthoring');
-    TransformSingleEngineEnvVariables(config.engineShopsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatShops');
-    TransformSingleEngineEnvVariables(config.engineMinionsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatMinions');
-    TransformSingleEngineEnvVariables(config.engineOpsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'AdventureWorksOpsApi');
-    cb();
+gulp.task('Transform-All-Engine-Env-Variables', function (callback) {
+    //TransformSingleEngineEnvVariables(config.engineAuthoringRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatAuthoring');
+    //TransformSingleEngineEnvVariables(config.engineShopsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatShops');
+    //TransformSingleEngineEnvVariables(config.engineMinionsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatMinions');
+    //TransformSingleEngineEnvVariables(config.engineOpsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'AdventureWorksOpsApi');
+    var transformscript = 'Powershell.exe ./scripts/TransformEngineParams.ps1' +
+        ' -DatabaseServer ' + config.xcDatabaseServer +
+        ' -Thumbprint ' + config.xcCertificateThumbprint +
+        ' -EngineConnectIncludeDir ' + config.engineConnectIncludeDir +
+        ' -EngineRootPaths ' + config.engineRootPaths;
+    exec(transformscript, function (err, stdout) {
+        console.log(stdout);
+        callback(err);
+    });
 });
 
 TransformSingleEngineEnvVariables = function (fileLocation, filename, jsonSelector, jsonValue) {
