@@ -57,10 +57,11 @@ gulp.task('Transform-All-Engine-Env-Variables', function (callback) {
     //TransformSingleEngineEnvVariables(config.engineMinionsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatMinions');
     //TransformSingleEngineEnvVariables(config.engineOpsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'AdventureWorksOpsApi');
     var transformscript = 'Powershell.exe ./scripts/TransformEngineParams.ps1' +
-        ' -DatabaseServer ' + config.xcDatabaseServer +
+        ' -DatabaseServer \'' + config.xcDatabaseServer + '\'' +
         ' -Thumbprint ' + config.xcCertificateThumbprint +
-        ' -EngineConnectIncludeDir ' + config.engineConnectIncludeDir +
-        ' -EngineRootPaths ' + config.engineRootPaths;
+        ' -EngineConnectIncludeDir ' + config.engineConnectIncludeDir + 
+        ' -EngineRolesJson \'' + JSON.stringify(config.engineRoles) + '\'';
+
     exec(transformscript, function (err, stdout) {
         console.log(stdout);
         callback(err);

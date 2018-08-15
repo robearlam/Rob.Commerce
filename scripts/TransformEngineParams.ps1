@@ -7,7 +7,7 @@ param
 	[Parameter(Mandatory = $true)]
     [string]$EngineConnectIncludeDir,
 	[Parameter(Mandatory = $true)]
-    [string[]]$EngineRootPaths
+    [string]$EngineRolesJson
 )
 
 Write-Host "Transforming CommerceConnect Certificate thumbprint";
@@ -18,10 +18,23 @@ $node.certificateThumbprint = $Thumbprint
 $xml.Save($pathToConfig)  
 
 Write-Host "Transforming Commerce Engine Certificate thumbprint";
-foreach ($path in $EngineRootPaths) {
-    $pathToJson = $(Join-Path -Path $path -ChildPath "wwwroot\config.json") 
+
+Write-Host $EngineRolesJson;
+
+$engineRoles = $EngineRolesJson | ConvertFrom-Json
+
+
+Write-Host $engineRoles
+
+Write-Host "End";
+<#
+foreach ($engineInstance in $engineRoles) {
+    $pathToJson = $(Join-Path -Path $engineInstance.path -ChildPath "wwwroot\config.json") 
     $originalJson = Get-Content $pathToJson -Raw | ConvertFrom-Json
     $certificateNode = $originalJson.Certificates.Certificates[0]
-    $certificateNode.Thumbprint = $Thumbprint       
+    $certificateNode.Thumbprint = $Thumbprint  
+	$appSettingsNode = $originalJson.AppSettings
+	$appSettingsNode.EnvironmentName = $engineInstance.environmentName
     $originalJson | ConvertTo-Json -Depth 100 -Compress | set-content $pathToJson
 } 
+#>

@@ -15,11 +15,23 @@ module.exports = function () {
         xcDatabaseServer: ".",
         xcCertificateThumbprint: "58DC94A32702431CDD5F3B7FEE49FF8FA2BF8CEA",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
-        engineRootPaths: [
-            webroot + "\\" + siteName + ".CommerceAuthoring",
-            webroot + "\\" + siteName + ".CommerceShops",
-            webroot + "\\" + siteName + ".CommerceOps",
-            webroot + "\\" + siteName + ".CommerceMinions",
+        engineRoles: [
+            {
+                path: webroot + "\\" + siteName + ".CommerceAuthoring",
+                environmentName: 'HabitatAuthoringBOBOB'
+            },
+            {
+                path: webroot + "\\" + siteName + ".CommerceShops",
+                environmentName: 'HabitatShops'
+            },
+            {
+                path: webroot + "\\" + siteName + ".CommerceOps",
+                environmentName: 'AdventureWorksOpsApi'
+            },
+            {
+                path: webroot + "\\" + siteName + ".CommerceMinions",
+                environmentName: 'HabitatMinions'
+            },
         ]
     };
     return config;
