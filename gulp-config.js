@@ -13,12 +13,12 @@ module.exports = function () {
         publishPlatform: "AnyCpu",
         runCleanBuilds: true,
         xcDatabaseServer: ".",
-        xcCertificateThumbprint: "58DC94A32702431CDD5F3B7FEE49FF8FA2BF8CEA",
+        xcCertificateThumbprint: "DDFD90315A364DBFF278AE24CB62B7A65D22865A",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
         engineRoles: [
             {
                 path: webroot + "\\" + siteName + ".CommerceAuthoring",
-                environmentName: 'HabitatAuthoringBOBOB'
+                environmentName: 'HabitatAuthoring'
             },
             {
                 path: webroot + "\\" + siteName + ".CommerceShops",

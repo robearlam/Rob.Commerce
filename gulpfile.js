@@ -2,7 +2,6 @@ let { build, publish } = require('gulp-dotnet-cli');
 let gulp = require('gulp');
 let fs = require('fs');
 let del = require('del');
-let jsonModify = require('gulp-json-modify');
 let exec = require('child_process').exec;
 let msbuild = require("gulp-msbuild");
 let flatmap = require('gulp-flatmap');
@@ -51,16 +50,10 @@ gulp.task('Copy-Published-Engine-To-All-Instances', function () {
         .pipe(gulp.dest(config.engineOpsRoot));
 });
 
-gulp.task('Transform-All-Engine-Env-Variables', function (callback) {
-    //TransformSingleEngineEnvVariables(config.engineAuthoringRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatAuthoring');
-    //TransformSingleEngineEnvVariables(config.engineShopsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatShops');
-    //TransformSingleEngineEnvVariables(config.engineMinionsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'HabitatMinions');
-    //TransformSingleEngineEnvVariables(config.engineOpsRoot + "\\wwwroot", "config.json", 'AppSettings.EnvironmentName', 'AdventureWorksOpsApi');
-    var transformscript = 'Powershell.exe ./scripts/TransformEngineParams.ps1' +
-        ' -DatabaseServer \'' + config.xcDatabaseServer + '\'' +
-        ' -Thumbprint ' + config.xcCertificateThumbprint +
-        ' -EngineConnectIncludeDir ' + config.engineConnectIncludeDir + 
-        ' -EngineRolesJson \'' + JSON.stringify(config.engineRoles) + '\'';
+gulp.task('Transform-Website', function (callback) {
+    var transformscript = 'Powershell.exe ./scripts/TransformWebsite.ps1' +
+        ' -Thumbprint \'' + config.xcCertificateThumbprint + "\'" +
+        ' -EngineConnectIncludeDir \'' + config.engineConnectIncludeDir + '\'';
 
     exec(transformscript, function (err, stdout) {
         console.log(stdout);
@@ -68,11 +61,21 @@ gulp.task('Transform-All-Engine-Env-Variables', function (callback) {
     });
 });
 
-TransformSingleEngineEnvVariables = function (fileLocation, filename, jsonSelector, jsonValue) {
-    return gulp.src(fileLocation + "\\" + filename)
-        .pipe(jsonModify({ key: jsonSelector, value: jsonValue }))
-        .pipe(gulp.dest(fileLocation));
-};
+gulp.task('Transform-All-Engine-Roles', function (callback) {
+    for (var i = 0; i < config.engineRoles.length; i++) {
+        var engineRole = config.engineRoles[i];
+        var transformscript = 'Powershell.exe ./scripts/TransformEngineRole.ps1' +
+            ' -Thumbprint \'' + config.xcCertificateThumbprint + "\'" +
+            ' -EnvironmentName \'' + engineRole.environmentName + "\'" +
+            ' -RolePath \'' + engineRole.path + '\'';
+
+        exec(transformscript, function (err, stdout) {
+            console.log(stdout);
+        });
+    }
+    callback();
+});
+
 
 gulp.task('Publish-Commerce-Engine', function () {
     return gulp.src(config.engineProjectPath + '/Sitecore.Commerce.Engine.csproj', { read: false })
@@ -122,7 +125,6 @@ gulp.task('02-Publish-Commerce-Engine-To-Instances',
         "Publish-Commerce-Engine",
         "Delete-Existing-Engine-Files",
         "Copy-Published-Engine-To-All-Instances",
-        "Transform-All-Engine-Env-Variables",
         "Start-Local-IIS", function(done) {
             done();
 }));
@@ -133,13 +135,22 @@ gulp.task('03-Publish-Website-Projects',
         "Publish-Feature-Projects",
         "Publish-Project-Projects", function (done) {
             done();
-        }));
+}));
+
+
+gulp.task('04-Transform-All-Env-Variables',
+    gulp.series(
+        "Transform-Website",
+        "Transform-All-Engine-Roles", function(done) {
+            done();
+}));
 
 gulp.task("default",
     gulp.series(
         "01-Build-Commerce-Engine",
         "02-Publish-Commerce-Engine-To-Instances",
-        "03-Publish-Website-Projects", function (done) {
+        "03-Publish-Website-Projects",
+        "04-Transform-All-Env-Variables", function (done) {
             done();
 }));
 
