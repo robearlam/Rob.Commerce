@@ -43,11 +43,12 @@ gulp.task('Start-Local-IIS', function (callback) {
 });
 
 gulp.task('Copy-Published-Engine-To-All-Instances', function () {
-    return gulp.src(config.engineProjectPath + "/bin/publish/**/*")
-        .pipe(gulp.dest(config.engineAuthoringRoot))
-        .pipe(gulp.dest(config.engineShopsRoot))
-        .pipe(gulp.dest(config.engineMinionsRoot))
-        .pipe(gulp.dest(config.engineOpsRoot));
+    for (let i = 0; i < config.engineRoles.length; i++) {
+        var engineRole = config.engineRoles[i];
+        return gulp.src(config.engineProjectPath + "/bin/publish/**/*")
+                   .pipe(gulp.dest(engineRole.path));
+
+    }
 });
 
 gulp.task('Transform-Website', function (callback) {
@@ -62,7 +63,7 @@ gulp.task('Transform-Website', function (callback) {
 });
 
 gulp.task('Transform-All-Engine-Roles', function (callback) {
-    for (var i = 0; i < config.engineRoles.length; i++) {
+    for (let i = 0; i < config.engineRoles.length; i++) {
         var engineRole = config.engineRoles[i];
         var transformscript = 'Powershell.exe ./scripts/TransformEngineRole.ps1' +
             ' -Thumbprint \'' + config.xcCertificateThumbprint + "\'" +

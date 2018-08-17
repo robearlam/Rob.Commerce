@@ -42,6 +42,10 @@ lib/**/*.XML
 lib/**/*.Xml
 lib/**/*.config
 lib/**/*.lic
+lib/**/*.pdb
+lib/**/*.exe
+lib/**/*.rsp
+lib/**/*.targets
 lib/**/*.lastcodeanalysissucceeded
 **/wwwroot/localhost.pfx
 

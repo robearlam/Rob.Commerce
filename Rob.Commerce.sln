@@ -11,7 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solutio
 		nuget.config = nuget.config
 		package.json = package.json
 		README.md = README.md
-		scripts\TransformEngineParams.ps1 = scripts\TransformEngineParams.ps1
+		scripts\TransformEngineRole.ps1 = scripts\TransformEngineRole.ps1
+		scripts\TransformWebsite.ps1 = scripts\TransformWebsite.ps1
 		src\Project\RobStorefront\Website\App_Config\Include\Project\z.RobStorefront.DevSettings.config = src\Project\RobStorefront\Website\App_Config\Include\Project\z.RobStorefront.DevSettings.config
 	EndProjectSection
 EndProject
@@ -136,7 +137,7 @@ Global
 		{5D1F0143-7A82-43AE-B4B1-2EFC97AFAFC8} = {58559F1B-2C1D-486E-95A9-D9A840A71B5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal
