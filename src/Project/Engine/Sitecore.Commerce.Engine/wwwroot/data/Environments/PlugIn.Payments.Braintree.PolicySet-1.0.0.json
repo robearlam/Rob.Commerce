@@ -7,14 +7,14 @@
     "Policies":  {
                      "$type":  "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
                      "$values":  [
-                                     {
-                                         "$type":  "Plugin.Sample.Payments.Braintree.BraintreeClientPolicy, Plugin.Sample.Payments.Braintree",
-                                         "Environment":  "sandbox",
-                                         "MerchantId":  "td36vffdxhswkxd8",
-                                         "PublicKey":  "6xx489xc5dc3qgz8",
-                                         "PrivateKey":  "8c993559c6717d8dfe3deded17826934",
-                                         "ConnectTimeout":  120000
-                                     }
+                      {
+                        "$type": "Plugin.Sample.Payments.Braintree.BraintreeClientPolicy, Plugin.Sample.Payments.Braintree",
+                        "Environment": "sandbox",
+                        "MerchantId": "624qhcdgygp58k3n",
+                        "PublicKey": "vbfd3dm8dhb2pfvc",
+                        "PrivateKey": "915d38e6ca5f810dfd6ac5db1ed3412c",
+                        "ConnectTimeout": 120000
+                      }
                                  ]
                  }
 }
