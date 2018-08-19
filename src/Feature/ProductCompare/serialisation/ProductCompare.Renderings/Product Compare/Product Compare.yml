@@ -1,8 +1,8 @@
 ﻿---
 ID: "f62038bd-d519-4a6f-9fa5-27c46e903375"
-Parent: "e5572b28-d687-4254-882b-1bd995628f24"
+Parent: "00fc231a-0acb-433c-935e-abe2038af707"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Feature/Commerce Experience Accelerator/Commerce Product Compare/Product Compare
+Path: /sitecore/layout/Renderings/Feature/Product Compare/Product Compare
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -22,8 +22,7 @@ SharedFields:
   Value: ProductCompare
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: |
-    Feature.Compare.Website.Controllers.ProductCompareController, Feature.Compare.Website
+  Value: Feature.Compare.Website.Controllers.ProductCompareController, Feature.Compare.Website
 Languages:
 - Language: en
   Fields:

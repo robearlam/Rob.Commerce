@@ -1,8 +1,8 @@
 ﻿---
 ID: "999c2f01-3f1a-4710-ba43-21a231faa78c"
-Parent: "b887964b-deee-4577-92e0-3bcd4882d9de"
+Parent: "7b466299-6ab8-453f-ad72-89819b729a6e"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Product Compare Folder
+Path: /sitecore/templates/Feature/Product Compare/Product Compare Folder
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

@@ -2,7 +2,7 @@
 ID: "84ad6914-262e-42f6-aa6d-6f438bd5bd51"
 Parent: "5a9e9ae6-96e7-40bd-97f9-7d72f1eb13b8"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: "/sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource/Add-View-Compare-Button/Information Text/View Compare Text"
+Path: "/sitecore/templates/Feature/Product Compare/Datasource/Add-View-Compare-Button/Information Text/View Compare Text"
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

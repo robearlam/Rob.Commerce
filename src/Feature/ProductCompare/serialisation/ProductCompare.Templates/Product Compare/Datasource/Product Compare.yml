@@ -2,7 +2,7 @@
 ID: "39b86c7b-cc75-401d-8b75-a3c29978e7f1"
 Parent: "fe7a5c81-fe4e-4f30-a344-1f56038bff23"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource/Product Compare
+Path: /sitecore/templates/Feature/Product Compare/Datasource/Product Compare
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
