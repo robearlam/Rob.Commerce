@@ -126,13 +126,14 @@
       <HintPath>..\..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.0.192\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Commerce.Connect.Collection.Model, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Collection.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.0.192\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.0.835\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
@@ -157,8 +158,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Mvc.dll</HintPath>
