@@ -61,6 +61,7 @@ namespace Feature.Compare.Website.Repositories
                 model.IsProductInCompareList = productIsInCompare;
             }
 
+            Rendering.DataSourceItem.Fields.ReadAll();
             model.ViewCompareButtonText = Rendering.DataSourceItem["View Compare Text"];
             model.AddToCompareButtonText = Rendering.DataSourceItem["Add to Compare Text"];
 
