@@ -2,7 +2,7 @@
 ID: "e5c0799e-4343-41c2-ad59-d1d1b6d758be"
 Parent: "39b86c7b-cc75-401d-8b75-a3c29978e7f1"
 Template: "39b86c7b-cc75-401d-8b75-a3c29978e7f1"
-Path: /sitecore/templates/Feature/Commerce Experience Accelerator/Product Compare/Datasource/Product Compare/__Standard Values
+Path: /sitecore/templates/Feature/Product Compare/Datasource/Product Compare/__Standard Values
 DB: master
 Languages:
 - Language: en

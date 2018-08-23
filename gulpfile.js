@@ -22,21 +22,21 @@ gulp.task("Publish-Foundation-Projects", function () {
 
 gulp.task("Publish-Feature-Projects", function () {
     return publishProjects("./src/Feature");
-});
+}); 
 
 gulp.task("Publish-Project-Projects", function () {
     return publishProjects("./src/Project");
 });
 
 gulp.task('Stop-Local-IIS', function (callback) {
-    exec('Powershell.exe  iisreset /stop', function (err, stdout) {
+    exec('Powershell.exe iisreset /stop', function (err, stdout) {
         console.log(stdout);
         callback(err);
     });
 });
 
 gulp.task('Start-Local-IIS', function (callback) {
-    exec('Powershell.exe  iisreset /start', function (err, stdout) {
+    exec('Powershell.exe iisreset /start', function (err, stdout) {
         console.log(stdout);
         callback(err);
     });

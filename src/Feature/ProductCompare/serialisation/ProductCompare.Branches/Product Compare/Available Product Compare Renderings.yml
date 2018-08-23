@@ -1,8 +1,8 @@
 ﻿---
-ID: "5a9e9ae6-96e7-40bd-97f9-7d72f1eb13b8"
-Parent: "836e6f9c-e261-4ad1-ae4d-3d68e653ad78"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/Feature/Product Compare/Datasource/Add-View-Compare-Button/Information Text"
+ID: "48c8980f-4020-4578-b9bd-45b7a4063ace"
+Parent: "8b6e4e50-b680-4cff-99ef-8811136304fe"
+Template: "35e75c72-4985-4e09-88c3-0eac6cd1e64f"
+Path: /sitecore/templates/Branches/Feature/Product Compare/Available Product Compare Renderings
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170920T200129Z
+      Value: 20180819T033012Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
