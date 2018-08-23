@@ -12,7 +12,13 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20170920T062311Z
+    - ID: "5c107df3-5aee-415c-abe4-c7f0886c0c59"
+      Hint: Add to Compare Text
+      Value: Add to compare
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "d4b2ce12-46c2-4720-9949-45bbf559b9af"
+      Hint: Remove from Compare Text
+      Value: Remove from compare
