@@ -53,6 +53,9 @@
     <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -88,13 +91,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Rules.Website.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Rules.Website.Serialisation.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conditions\BaseOrderCondition.cs" />
-    <Compile Include="Conditions\HasNotPurchasedProductCondition.cs" />
-    <Compile Include="Conditions\HasPurchasedProductCondition.cs" />
+    <Compile Include="Conditions\HasPurchasedContextProductCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
