@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Commerce.CustomModels.Goals;
-using Sitecore.Commerce.CustomModels.Outcomes;
+using Sitecore.Commerce.CustomModels.Models;
 using Sitecore.Commerce.XA.Foundation.Common.Context;
 using Sitecore.DependencyInjection;
 using Sitecore.Diagnostics;
@@ -18,43 +18,41 @@ namespace Feature.Rules.Website.Conditions
         public int Days { get; set; }
         protected override bool Execute(T ruleContext)
         {
-            var siteContext = ServiceLocator.ServiceProvider.GetService(typeof(ISiteContext)) as ISiteContext;
-            if (siteContext == null || 
+            if (!(ServiceLocator.ServiceProvider.GetService(typeof(ISiteContext)) is ISiteContext siteContext) || 
                !siteContext.IsProduct ||
                !Sitecore.Context.IsLoggedIn)
             {
                 return false;
             }
 
-            var productId = siteContext?.CurrentCatalogItem?.Name;
+            var productId = siteContext.CurrentCatalogItem?.Name;
             return DidUserOrderProductInTimeframe(productId, Days);
         }
 
         protected bool DidUserOrderProductInTimeframe(string productId, int pastDaysAmount)
         {
-            var orderOutcomes = GetSubmittedOrderOutcomes(pastDaysAmount);
-            if (orderOutcomes.Count() > 0)
-            {
-                if (orderOutcomes.Where(o => o.Order.CartLines.Where(c => (c.Product.ProductId.Contains("|") ? c.Product.ProductId.Split('|')[1] : c.Product.ProductId) == productId).FirstOrDefault() != null).FirstOrDefault() != null)
-                    return true;              
-                
-                return false;
-            }
-            else
-                return false;
+            var orderGoals = GetSubmittedOrderGoals(pastDaysAmount);
+            return orderGoals.Any(orderGoal => orderGoal.Order.CartLines.Any(cartline => DoesProductIdMatch(productId, cartline)));
         }
 
-        public IEnumerable<VisitorOrderCreatedGoal> GetSubmittedOrderOutcomes(double? pastDaysAmount)
+        private static bool DoesProductIdMatch(string productId, CartLine cartline)
+        {
+            return (cartline.Product.ProductId.Contains("|")
+                       ? cartline.Product.ProductId.Split('|')[1]
+                       : cartline.Product.ProductId) == productId;
+        }
+
+        public List<VisitorOrderCreatedGoal> GetSubmittedOrderGoals(double? pastDaysAmount)
         {
             var submittedOrderOutcomes = new List<VisitorOrderCreatedGoal>();
 
-            using (XConnectClient client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
+            using (var client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
             {
                 try
                 {
                     var reference = new IdentifiedContactReference("CommerceUser", Sitecore.Context.GetUserName());
                     var interactionFacets = client.Model.Facets.Where(c => c.Target == EntityType.Interaction).Select(x => x.Name);
-                    Contact contact = client.Get<Contact>(reference, new ContactExpandOptions()
+                    var contact = client.Get(reference, new ContactExpandOptions()
                     {
                         Interactions = new RelatedInteractionsExpandOptions(interactionFacets.ToArray())
                         {
@@ -62,6 +60,7 @@ namespace Feature.Rules.Website.Conditions
                             StartDateTime = DateTime.MinValue
                         }
                     });
+
                     if (contact != null)
                     {
                         foreach (var interaction in contact.Interactions)
