@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Views" Version="2.2.29" />
   </ItemGroup>
 
 </Project>

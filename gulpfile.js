@@ -126,6 +126,7 @@ gulp.task('02-Publish-Commerce-Engine-To-Instances',
         "Publish-Commerce-Engine",
         "Delete-Existing-Engine-Files",
         "Copy-Published-Engine-To-All-Instances",
+        "Transform-All-Engine-Roles",
         "Start-Local-IIS", function(done) {
             done();
 }));
@@ -134,15 +135,8 @@ gulp.task('03-Publish-Website-Projects',
     gulp.series(
         "Publish-Foundation-Projects",
         "Publish-Feature-Projects",
-        "Publish-Project-Projects", function (done) {
-            done();
-}));
-
-
-gulp.task('04-Transform-All-Env-Variables',
-    gulp.series(
-        "Transform-Website",
-        "Transform-All-Engine-Roles", function(done) {
+        "Publish-Project-Projects",
+        "Transform-Website", function (done) {
             done();
 }));
 
@@ -150,8 +144,7 @@ gulp.task("default",
     gulp.series(
         "01-Build-Commerce-Engine",
         "02-Publish-Commerce-Engine-To-Instances",
-        "03-Publish-Website-Projects",
-        "04-Transform-All-Env-Variables", function (done) {
+        "03-Publish-Website-Projects", function (done) {
             done();
 }));
 
