@@ -1,20 +1,15 @@
-﻿using System.Reflection;
-using Feature.Rules.Engine.Pipelines.Blocks;
+﻿using Feature.ProductImport.Engine.Pipelines.Blocks;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
-using Sitecore.Framework.Rules;
 
-namespace Feature.Rules.Engine
+namespace Feature.ProductImport.Engine
 {
     public class ConfigureSitecore : IConfigureSitecore
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            services.Sitecore().Rules(config => config.Registry(registry => registry.RegisterAssembly(assembly)));
-
             services.Sitecore().Pipelines(config => config
                 .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); }));
         }

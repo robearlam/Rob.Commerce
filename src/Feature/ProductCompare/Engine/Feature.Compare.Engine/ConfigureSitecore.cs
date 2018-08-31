@@ -33,6 +33,8 @@ namespace Feature.Compare.Engine
                 .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure
                     .Add<ConfigureServiceApiBlock>()
                 )
+
+                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); })
             );
 
             services.RegisterAllCommands(assembly);

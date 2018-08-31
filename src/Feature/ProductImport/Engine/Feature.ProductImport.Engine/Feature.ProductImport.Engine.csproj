@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Commerce Engine Product Import</Description>
+    <Authors>Rob Earlam</Authors>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <TargetFramework>net462</TargetFramework>
+    <PackageTags>$(PackageTags);Sitecore;Commerce;Plugin;Product;Import</PackageTags>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
+  </ItemGroup>
+
+</Project>
