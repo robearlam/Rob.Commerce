@@ -26,6 +26,7 @@ namespace Feature.ProductImport.Engine
 
                 .AddPipeline<IImportCsvProductsPipeline, ImportCsvProductsPipeline>(configure => configure
                     .Add<ImportCsvProductsPrepareBlock>()
+                    .Add<ImportCatalogsBlock>()
                     .Add<ImportSellableItemsBlock>()
                     .Add<ImportCsvProductsFinalizeBlock>()
                 )

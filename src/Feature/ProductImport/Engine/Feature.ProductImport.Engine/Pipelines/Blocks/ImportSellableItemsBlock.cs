@@ -21,25 +21,21 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             Condition.Requires(arg, nameof(arg)).IsNotNull();
             Condition.Requires(arg.ImportFile, nameof(arg.ImportFile)).IsNotNull();
 
-            var shouldContinue = true;
-            if (shouldContinue)
+            using (var reader = new StreamReader(arg.ImportFile.OpenReadStream()))
             {
-                using (var reader = new StreamReader(arg.ImportFile.OpenReadStream()))
+                var counter = 0; 
+                while (reader.Peek() >= 0)
                 {
-                    var counter = 0; 
-                    while (reader.Peek() >= 0)
+                    if(counter == 0) //skip header
+                        await reader.ReadLineAsync();
+
+                    var importSingleCsvLineArgument = new ImportSingleCsvLineArgument
                     {
-                        if(counter == 0) //skip header
-                            await reader.ReadLineAsync();
+                        Line = await reader.ReadLineAsync()
+                    };
 
-                        var importSingleCsvLineArgument = new ImportSingleCsvLineArgument
-                        {
-                            Line = await reader.ReadLineAsync()
-                        };
-
-                        await _importSingleCsvRowPipeline.Run(importSingleCsvLineArgument, context);
-                        counter++;
-                    }
+                    await _importSingleCsvRowPipeline.Run(importSingleCsvLineArgument, context);
+                    counter++;
                 }
             }
 

@@ -10,7 +10,7 @@ using Sitecore.Framework.Pipelines;
 
 namespace Feature.ProductImport.Engine.Pipelines.Blocks
 {
-    public class EnsureSellableItemExistsBlock : PipelineBlock<ImportSingleCsvLineArgument, ImportSingleCsvLineResult, CommercePipelineExecutionContext>
+    public class EnsureSellableItemExistsBlock : PipelineBlock<ImportSingleCsvLineArgument, ImportSingleCsvLineArgument, CommercePipelineExecutionContext>
     {
         private readonly ISellableItemMapper _sellableItemMapper;
         private readonly ICreateSellableItemPipeline _createSellableItemPipeline;
@@ -23,7 +23,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             _editSellableItemPipeline = editSellableItemPipeline;
         }
 
-        public override async Task<ImportSingleCsvLineResult> Run(ImportSingleCsvLineArgument arg, CommercePipelineExecutionContext context)
+        public override async Task<ImportSingleCsvLineArgument> Run(ImportSingleCsvLineArgument arg, CommercePipelineExecutionContext context)
         {
             Condition.Requires(arg, nameof(arg)).IsNotNull();
             Condition.Requires(arg.Line, nameof(arg.Line)).IsNotNull();
@@ -32,19 +32,11 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             var createResult = await _createSellableItemPipeline.Run(createSellableItemArg, context);
             var sellableItem = createResult.SellableItems.FirstOrDefault();
             if (sellableItem == null)
-            {
-                return new ImportSingleCsvLineResult
-                {
-                    Success = false
-                };
-            }
+                return arg;
 
             sellableItem = _sellableItemMapper.MapToEntity(sellableItem, arg.Line);
             await _editSellableItemPipeline.Run(sellableItem, context);
-            return new ImportSingleCsvLineResult
-            {
-                Success = true
-            };
+            return arg;
         }
     }
 }
