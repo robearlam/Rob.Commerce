@@ -11,7 +11,7 @@
     "SitecoreIdentityServerUrl": "https://localhost:5050",
     "AllowedOrigins": [ "https://localhost:4200", "https://xc902.sc", "http://localhost:8080" ],
     "AntiForgeryEnabled": false,
-    "UseHttpsInKestrel": false,
+    "UseHttpsInKestrel": true,
     "SslPort": 5000,
     "SslPfxPath": "wwwroot/localhost.pfx",
     "SslPfxPassword": "sitecore"

@@ -13,6 +13,7 @@
     <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
     <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.2.46" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="2.2.12" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Views" Version="2.2.29" />
   </ItemGroup>
 
