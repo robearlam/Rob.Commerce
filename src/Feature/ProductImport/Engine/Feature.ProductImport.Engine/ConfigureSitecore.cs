@@ -1,10 +1,9 @@
 ﻿using System.Reflection;
-using Feature.ProductImport.Engine.EntityViews;
+using Feature.ProductImport.Engine.Pipelines;
 using Feature.ProductImport.Engine.Pipelines.Blocks;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
-using Sitecore.Commerce.EntityViews;
-using Sitecore.Commerce.Plugin.BusinessUsers;
+using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
 using RegisteredPluginBlock = Feature.ProductImport.Engine.Pipelines.Blocks.RegisteredPluginBlock;
@@ -16,12 +15,27 @@ namespace Feature.ProductImport.Engine
         public void ConfigureServices(IServiceCollection services)
         {
             var assembly = Assembly.GetExecutingAssembly();
-            services.RegisterAllCommands(assembly);
+            services.RegisterAllPipelineBlocks(assembly);
 
             services.Sitecore().Pipelines(config => config
-                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); }));
-                //.ConfigurePipeline<IBizFxNavigationPipeline>(d => { d.Add<EnsureNavigationView>(); })
-                //.ConfigurePipeline<IGetEntityViewPipeline>(d => { d.Add<Dashboard>().Before<IFormatEntityViewPipeline>(); }));            
+                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); })
+
+                .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure
+                    .Add<Pipelines.Blocks.ConfigureServiceApiBlock>()
+                )
+
+                .AddPipeline<IImportCsvProductsPipeline, ImportCsvProductsPipeline>(configure => configure
+                    .Add<ImportCsvProductsPrepareBlock>()
+                    .Add<Pipelines.Blocks.ImportSellableItemsBlock>()
+                    .Add<ImportCsvProductsFinalizeBlock>()
+                )
+
+                .AddPipeline<IImportSingleCsvRowPipeline, ImportSingleCsvRowPipeline>(configure => configure
+                    .Add<EnsureSellableItemExistsBlock>()
+                )
+            );
+
+            services.RegisterAllCommands(assembly);
         }
     }
 }

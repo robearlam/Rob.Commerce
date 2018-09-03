@@ -13,7 +13,7 @@ namespace Feature.Compare.Engine.Controllers
         {
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("AddProductToComparison()")]
         public async Task<IActionResult> AddProductToComparison([FromBody] ODataActionParameters value)
         {

@@ -34,11 +34,15 @@ namespace Feature.ProductImport.Engine.Controllers
             var file = new FormFile(memoryStream, 0L, formFile.Length, formFile.Name, formFile.FileName);
             var updateMode = value["mode"].ToString();
 
+            var errorThreshold = 100;
+            if (value.ContainsKey("errorThreshold"))
+                errorThreshold = int.Parse(value["errorThreshold"].ToString());
+
             var publishEntities = true;
             if (value.ContainsKey("publish") && bool.TryParse(value["publish"].ToString(), out var result))
                 publishEntities = result;
 
-            return new ObjectResult(ExecuteLongRunningCommand(() => Command<ImportCsvProductsCommand>().Process(CurrentContext, file, updateMode,  publishEntities)));
+            return new ObjectResult(ExecuteLongRunningCommand(() => Command<ImportCsvProductsCommand>().Process(CurrentContext, file, updateMode, errorThreshold, publishEntities)));
         }
     }
 }
