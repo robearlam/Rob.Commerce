@@ -1,10 +1,11 @@
-﻿using Sitecore.Commerce.Plugin.Catalog;
+﻿using Feature.ProductImport.Engine.Pipelines.Arguments;
+using Sitecore.Commerce.Plugin.Catalog;
 
 namespace Feature.ProductImport.Engine.Mappers
 {
     public interface ISellableItemMapper
     {
-        CreateSellableItemArgument MapToArg(string csvLine);
-        SellableItem MapToEntity(SellableItem sellableItem, string csvLine);
+        CreateSellableItemArgument MapToArg(CsvImportLine csvImportLine);
+        SellableItem MapToEntity(SellableItem sellableItem, CsvImportLine csvImportLine);
     }
 }

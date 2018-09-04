@@ -10,8 +10,6 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 {
     public class ImportCatalogsBlock : PipelineBlock<ImportCsvProductsArgument, ImportCsvProductsArgument, CommercePipelineExecutionContext>
     {
-        private const int CatalogNameIndex = 10;
-        private const int CatalogDisplayNameIndex = 11;
         private readonly IFindEntityPipeline _findEntityPipeline;
         private readonly ICreateCatalogPipeline _createCatalogPipeline;
 
@@ -26,14 +24,10 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             Condition.Requires(arg, nameof(arg)).IsNotNull();
             Condition.Requires(arg.FileLines, nameof(arg.FileLines)).IsNotNull();          
 
-            var catalogNames = new List<string>();
-            var catalogDisplayNames = new Dictionary<string, string>();
-            GetDestinctCatalogData(arg, catalogNames, catalogDisplayNames);
-
-            foreach (var catalogName in catalogNames)
+            var catalogList = GetDestinctCatalogData(arg);
+            foreach (var (catalogName, fullCatalogName, catalogDisplayName) in catalogList)
             {
-                var catalogDisplayName = catalogDisplayNames[catalogName];
-                var catalog = await _findEntityPipeline.Run(new FindEntityArgument(typeof(Catalog), $"{CommerceEntity.IdPrefix<Catalog>()}{catalogName}", 1), context);
+                var catalog = await _findEntityPipeline.Run(new FindEntityArgument(typeof(Catalog), fullCatalogName, 1), context);
                 if (catalog != null)
                     continue;
 
@@ -43,19 +37,17 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             return arg;
         }
 
-        private static void GetDestinctCatalogData(ImportCsvProductsArgument arg, ICollection<string> catalogNames, IDictionary<string, string> catalogDisplayNames)
+        private static List<(string CatalogName, string CatalogFullEntityName, string CatalogDisplayName)> GetDestinctCatalogData(ImportCsvProductsArgument arg)
         {
+            var catalogList = new List<(string CatalogName, string CatalogFullEntityName, string CatalogDisplayName)>();
             foreach (var line in arg.FileLines)
             {
-                var catalogData = line.Split(',');
-                var catalogName = catalogData[CatalogNameIndex];
-                var catalogDisplayName = catalogData[CatalogDisplayNameIndex];
-                if (catalogNames.Contains(catalogName))
+                if (catalogList.Exists(x => x.CatalogFullEntityName == line.FullEntityCatalogName))
                     continue;
 
-                catalogNames.Add(catalogName);
-                catalogDisplayNames.Add(catalogName, catalogDisplayName);
+                catalogList.Add((CatalogName:line.CatalogName, CatalogFullEntityName: line.FullEntityCatalogName, CatalogDisplayName: line.CatalogDisplayName));
             }
+            return catalogList;
         }
     }
 }

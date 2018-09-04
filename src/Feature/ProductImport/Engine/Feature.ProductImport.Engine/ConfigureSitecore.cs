@@ -38,6 +38,7 @@ namespace Feature.ProductImport.Engine
 
                 .AddPipeline<IImportSingleCsvRowPipeline, ImportSingleCsvRowPipeline>(configure => configure
                     .Add<EnsureSellableItemExistsBlock>()
+                    .Add<EnsureSellableItemIsInCategory>()
                 )
             );
 

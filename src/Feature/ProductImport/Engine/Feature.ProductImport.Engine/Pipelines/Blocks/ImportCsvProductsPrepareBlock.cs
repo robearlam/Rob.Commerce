@@ -39,7 +39,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 
         private static void PopulateArgFileLines(ImportCsvProductsArgument arg)
         {
-            arg.FileLines = new List<string>();
+            arg.FileLines = new List<CsvImportLine>();
             using (var reader = new StreamReader(arg.ImportFile.OpenReadStream()))
             {
                 var counter = 0;
@@ -48,7 +48,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
                     if (counter == 0) //skip header
                         reader.ReadLine();
 
-                    arg.FileLines.Add(reader.ReadLine());
+                    arg.FileLines.Add(new CsvImportLine(reader.ReadLine()));
                     counter++;
                 }
             }

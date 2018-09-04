@@ -12,8 +12,6 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
     {
         private readonly CreateCategoryCommand _createCategoryCommand;
         private readonly AssociateCategoryToParentCommand _associateCategoryToParentCommand;
-        private const int CategoryIndex = 12;
-        private const int CatalogNameIndex = 10;
 
         public ImportCategoriesBlock(CreateCategoryCommand createCategoryCommand, AssociateCategoryToParentCommand associateCategoryToParentCommand)
         {
@@ -53,30 +51,27 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             var categoriesToImport = new List<(string CategoryName, string CatalogName, string ParentId)>();
             foreach (var line in arg.FileLines)
             {
-                var catalogName = line.Split(',')[CatalogNameIndex];
-                var categoryData = line.Split(',')[CategoryIndex];
-                var categories = categoryData.Split('|');
-                for (var i = 0; i < categories.Length; i++)
+                for (var i = 0; i < line.Categories.Count; i++)
                 {
-                    var categoryName = categories[i];
+                    var categoryName = line.Categories[i];
                     if (categoriesToImport.Exists(c => c.CategoryName == categoryName))
                         continue;
 
-                    categoriesToImport.Add(GenerateCategoryTuple(i, catalogName, categories, categoryName));
+                    categoriesToImport.Add(GenerateCategoryTuple(i, line, categoryName));
                 }
             }
             return categoriesToImport;
         }
 
-        private static (string CategoryName, string CatalogName, string ParentId) GenerateCategoryTuple(int i, string catalogName, string[] categories, string categoryName)
+        private static (string CategoryName, string CatalogName, string ParentId) GenerateCategoryTuple(int i, CsvImportLine line, string categoryName)
         {
             var isTopLevelCategory = i == 0;
             var parentCategory = isTopLevelCategory
-                                ? GenerateFullCatalogName(catalogName)
-                                : GenerateFullCategoryId(catalogName, categories[i - 1]);
+                                ? line.FullEntityCatalogName
+                                : GenerateFullCategoryId(line.CatalogName, line.Categories[i - 1]);
 
             var category = (CategoryName: categoryName,
-                            CatalogName: catalogName,
+                            CatalogName: line.CatalogName,
                             ParentId: parentCategory);
 
             return category;

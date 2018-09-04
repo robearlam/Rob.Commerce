@@ -21,6 +21,6 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
 
         public int ErrorThreshold { get; set; } = 100;
 
-        public IList<string> FileLines { get; set; }
+        public IList<CsvImportLine> FileLines { get; set; }
     }
 }
