@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Feature.ProductImport.Engine.Pipelines.Arguments;
 using Sitecore.Commerce.Core;
@@ -30,29 +29,28 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             var categories = GetCategoriesToImport(arg);
             await CreateCategories(context, categories);
             await CreateCategoryRelationships(context, categories);
-
             return arg;
         }
 
-        private async Task CreateCategoryRelationships(CommercePipelineExecutionContext context, Dictionary<string, Tuple<string, string, string>> categories)
+        private async Task CreateCategoryRelationships(CommercePipelineExecutionContext context, List<(string CategoryName, string CatalogName, string ParentId)> categories)
         {
-            foreach (var category in categories.Values)
+            foreach (var category in categories)
             {
-                await _associateCategoryToParentCommand.Process(context.CommerceContext, $"{CommerceEntity.IdPrefix<Catalog>()}{category.Item3}", category.Item2, $"{CommerceEntity.IdPrefix<Category>()}{category.Item3}-{category.Item1}");
+                await _associateCategoryToParentCommand.Process(context.CommerceContext, GenerateFullCatalogName(category.CatalogName), category.ParentId, GenerateFullCategoryId(category.CatalogName, category.CategoryName));
             }
         }
 
-        private async Task CreateCategories(CommercePipelineExecutionContext context, Dictionary<string, Tuple<string, string, string>> categories)
+        private async Task CreateCategories(CommercePipelineExecutionContext context, List<(string CategoryName, string CatalogName, string ParentId)> categories)
         {
-            foreach (var category in categories.Values)
+            foreach (var category in categories)
             {
-                await _createCategoryCommand.Process(context.CommerceContext, category.Item3, category.Item1, category.Item1, category.Item1);
+                await _createCategoryCommand.Process(context.CommerceContext, category.CatalogName, category.CategoryName, category.CategoryName, category.CategoryName);
             }
         }
 
-        private static Dictionary<string, Tuple<string, string, string>> GetCategoriesToImport(ImportCsvProductsArgument arg)
+        private static List<(string CategoryName, string CatalogName, string ParentId)> GetCategoriesToImport(ImportCsvProductsArgument arg)
         {
-            var categoriesToImport = new Dictionary<string, Tuple<string, string, string>>();
+            var categoriesToImport = new List<(string CategoryName, string CatalogName, string ParentId)>();
             foreach (var line in arg.FileLines)
             {
                 var catalogName = line.Split(',')[CatalogNameIndex];
@@ -61,15 +59,37 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
                 for (var i = 0; i < categories.Length; i++)
                 {
                     var categoryName = categories[i];
-                    if (categoriesToImport.ContainsKey(categoryName))
+                    if (categoriesToImport.Exists(c => c.CategoryName == categoryName))
                         continue;
 
-                    var parentId = i == 0 ? $"{CommerceEntity.IdPrefix<Catalog>()}{catalogName}" : $"{CommerceEntity.IdPrefix<Category>()}{catalogName}-{categories[i - 1]}";
-                    var category = new Tuple<string, string, string>(categoryName, parentId, catalogName);
-                    categoriesToImport.Add(categoryName, category);
+                    categoriesToImport.Add(GenerateCategoryTuple(i, catalogName, categories, categoryName));
                 }
             }
             return categoriesToImport;
+        }
+
+        private static (string CategoryName, string CatalogName, string ParentId) GenerateCategoryTuple(int i, string catalogName, string[] categories, string categoryName)
+        {
+            var isTopLevelCategory = i == 0;
+            var parentCategory = isTopLevelCategory
+                                ? GenerateFullCatalogName(catalogName)
+                                : GenerateFullCategoryId(catalogName, categories[i - 1]);
+
+            var category = (CategoryName: categoryName,
+                            CatalogName: catalogName,
+                            ParentId: parentCategory);
+
+            return category;
+        }
+
+        private static string GenerateFullCatalogName(string catalogName)
+        {
+            return $"{CommerceEntity.IdPrefix<Catalog>()}{catalogName}";
+        }
+
+        private static string GenerateFullCategoryId(string catalogName, string categoryName)
+        {
+            return $"{CommerceEntity.IdPrefix<Category>()}{catalogName}-{categoryName}";
         }
     }
 }
