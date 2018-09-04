@@ -4,8 +4,12 @@ using Feature.ProductImport.Engine.Pipelines;
 using Feature.ProductImport.Engine.Pipelines.Blocks;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
+using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
+using ImportCatalogsBlock = Feature.ProductImport.Engine.Pipelines.Blocks.ImportCatalogsBlock;
+using ImportCategoriesBlock = Feature.ProductImport.Engine.Pipelines.Blocks.ImportCategoriesBlock;
+using ImportSellableItemsBlock = Feature.ProductImport.Engine.Pipelines.Blocks.ImportSellableItemsBlock;
 using RegisteredPluginBlock = Feature.ProductImport.Engine.Pipelines.Blocks.RegisteredPluginBlock;
 
 namespace Feature.ProductImport.Engine
@@ -27,6 +31,7 @@ namespace Feature.ProductImport.Engine
                 .AddPipeline<IImportCsvProductsPipeline, ImportCsvProductsPipeline>(configure => configure
                     .Add<ImportCsvProductsPrepareBlock>()
                     .Add<ImportCatalogsBlock>()
+                    .Add<ImportCategoriesBlock>()
                     .Add<ImportSellableItemsBlock>()
                     .Add<ImportCsvProductsFinalizeBlock>()
                 )

@@ -5,5 +5,10 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
     public class ImportSingleCsvLineArgument : PipelineArgument
     {
         public string Line { get; set; }
+
+        public ImportSingleCsvLineArgument(string line)
+        {
+            Line = line;
+        }
     }
 }

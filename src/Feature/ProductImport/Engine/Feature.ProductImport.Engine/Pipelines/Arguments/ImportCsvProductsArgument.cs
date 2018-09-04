@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using Sitecore.Commerce.Core;
 using Sitecore.Framework.Conditions;
 
@@ -19,5 +20,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
         public string Mode { get; set; }
 
         public int ErrorThreshold { get; set; } = 100;
+
+        public IList<string> FileLines { get; set; }
     }
 }

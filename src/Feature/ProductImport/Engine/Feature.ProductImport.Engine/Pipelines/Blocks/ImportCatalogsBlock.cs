@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using Feature.ProductImport.Engine.Pipelines.Arguments;
 using Sitecore.Commerce.Core;
@@ -12,6 +10,8 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 {
     public class ImportCatalogsBlock : PipelineBlock<ImportCsvProductsArgument, ImportCsvProductsArgument, CommercePipelineExecutionContext>
     {
+        private const int CatalogNameIndex = 10;
+        private const int CatalogDisplayNameIndex = 11;
         private readonly IFindEntityPipeline _findEntityPipeline;
         private readonly ICreateCatalogPipeline _createCatalogPipeline;
 
@@ -24,39 +24,16 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
         public override async Task<ImportCsvProductsArgument> Run(ImportCsvProductsArgument arg, CommercePipelineExecutionContext context)
         {
             Condition.Requires(arg, nameof(arg)).IsNotNull();
-            Condition.Requires(arg.ImportFile, nameof(arg.ImportFile)).IsNotNull();
-
-            var lines = new List<string>();
-            using (var reader = new StreamReader(arg.ImportFile.OpenReadStream()))
-            {
-                var counter = 0;
-                while (!reader.EndOfStream)
-                {
-                    if (counter == 0) //skip header
-                        reader.ReadLine();
-
-                    lines.Add(reader.ReadLine());
-                }
-            }
+            Condition.Requires(arg.FileLines, nameof(arg.FileLines)).IsNotNull();          
 
             var catalogNames = new List<string>();
             var catalogDisplayNames = new Dictionary<string, string>();
-            foreach (var line in lines)
-            {
-                var catalogData = line.Split(',');
-                var catalogName = catalogData[10];
-                var catalogDisplayName = catalogData[11];
-                if (catalogNames.Contains(catalogName))
-                    continue;
-
-                catalogNames.Add(catalogName);
-                catalogDisplayNames.Add(catalogName, catalogDisplayName);
-            }
+            GetDestinctCatalogData(arg, catalogNames, catalogDisplayNames);
 
             foreach (var catalogName in catalogNames)
             {
                 var catalogDisplayName = catalogDisplayNames[catalogName];
-                var catalog = await _findEntityPipeline.Run(new FindEntityArgument(typeof(Catalog), catalogName, 1), context);
+                var catalog = await _findEntityPipeline.Run(new FindEntityArgument(typeof(Catalog), $"{CommerceEntity.IdPrefix<Catalog>()}{catalogName}", 1), context);
                 if (catalog != null)
                     continue;
 
@@ -64,6 +41,21 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             }
 
             return arg;
+        }
+
+        private static void GetDestinctCatalogData(ImportCsvProductsArgument arg, ICollection<string> catalogNames, IDictionary<string, string> catalogDisplayNames)
+        {
+            foreach (var line in arg.FileLines)
+            {
+                var catalogData = line.Split(',');
+                var catalogName = catalogData[CatalogNameIndex];
+                var catalogDisplayName = catalogData[CatalogDisplayNameIndex];
+                if (catalogNames.Contains(catalogName))
+                    continue;
+
+                catalogNames.Add(catalogName);
+                catalogDisplayNames.Add(catalogName, catalogDisplayName);
+            }
         }
     }
 }

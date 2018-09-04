@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Feature.ProductImport.Engine.Pipelines.Arguments;
 using Sitecore.Commerce.Core;
 using Sitecore.Framework.Conditions;
@@ -19,24 +18,11 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
         public override async Task<ImportCsvProductsArgument> Run(ImportCsvProductsArgument arg, CommercePipelineExecutionContext context)
         {
             Condition.Requires(arg, nameof(arg)).IsNotNull();
-            Condition.Requires(arg.ImportFile, nameof(arg.ImportFile)).IsNotNull();
+            Condition.Requires(arg.FileLines, nameof(arg.FileLines)).IsNotNull();
 
-            using (var reader = new StreamReader(arg.ImportFile.OpenReadStream()))
+            foreach (var line in arg.FileLines)
             {
-                var counter = 0; 
-                while (reader.Peek() >= 0)
-                {
-                    if(counter == 0) //skip header
-                        await reader.ReadLineAsync();
-
-                    var importSingleCsvLineArgument = new ImportSingleCsvLineArgument
-                    {
-                        Line = await reader.ReadLineAsync()
-                    };
-
-                    await _importSingleCsvRowPipeline.Run(importSingleCsvLineArgument, context);
-                    counter++;
-                }
+                await _importSingleCsvRowPipeline.Run(new ImportSingleCsvLineArgument(line), context);
             }
 
             return arg;
