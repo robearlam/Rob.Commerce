@@ -10,10 +10,12 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
     public class ImportInventorySetsBlocks : PipelineBlock<ImportCsvProductsArgument, ImportCsvProductsArgument, CommercePipelineExecutionContext>
     {
         private readonly CreateInventorySetCommand _createInventorySetCommand;
+        private readonly IFindEntityPipeline _findEntityPipeline;
 
-        public ImportInventorySetsBlocks(CreateInventorySetCommand createInventorySetCommand)
+        public ImportInventorySetsBlocks(CreateInventorySetCommand createInventorySetCommand, IFindEntityPipeline findEntityPipeline)
         {
             _createInventorySetCommand = createInventorySetCommand;
+            _findEntityPipeline = findEntityPipeline;
         }
 
         public override async Task<ImportCsvProductsArgument> Run(ImportCsvProductsArgument arg, CommercePipelineExecutionContext context)
@@ -21,10 +23,19 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             var inventorySets = GetDistinctInventorySetNames(arg);
             foreach (var inventorySetName in inventorySets)
             {
+                if (InventorySetExists(inventorySetName, context))
+                    continue;
+
                 await _createInventorySetCommand.Process(context.CommerceContext, inventorySetName, inventorySetName, inventorySetName);
             }
 
             return arg;
+        }
+
+        private bool InventorySetExists(string inventorySetName, CommercePipelineExecutionContext context)
+        {
+            var inventorySet = _findEntityPipeline.Run(new FindEntityArgument(typeof(InventorySet), $"{CommerceEntity.IdPrefix<InventorySet>()}{inventorySetName}"), context);
+            return inventorySet != null;
         }
 
         private static IEnumerable<string> GetDistinctInventorySetNames(ImportCsvProductsArgument arg)
