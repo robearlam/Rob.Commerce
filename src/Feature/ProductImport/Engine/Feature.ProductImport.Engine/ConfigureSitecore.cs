@@ -1,10 +1,8 @@
 ﻿using System.Reflection;
-using Feature.ProductImport.Engine.Mappers;
 using Feature.ProductImport.Engine.Pipelines;
 using Feature.ProductImport.Engine.Pipelines.Blocks;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
-using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
 using ImportCatalogsBlock = Feature.ProductImport.Engine.Pipelines.Blocks.ImportCatalogsBlock;
@@ -32,6 +30,7 @@ namespace Feature.ProductImport.Engine
                     .Add<ImportCsvProductsPrepareBlock>()
                     .Add<ImportCatalogsBlock>()
                     .Add<ImportCategoriesBlock>()
+                    .Add<ImportInventorySetsBlocks>()
                     .Add<ImportSellableItemsBlock>()
                     .Add<ImportCsvProductsFinalizeBlock>()
                 )
@@ -39,10 +38,10 @@ namespace Feature.ProductImport.Engine
                 .AddPipeline<IImportSingleCsvRowPipeline, ImportSingleCsvRowPipeline>(configure => configure
                     .Add<EnsureSellableItemExistsBlock>()
                     .Add<EnsureSellableItemIsInCategory>()
+                    .Add<EnsureInventoryIsPopulatedBlock>()
                 )
             );
 
-            services.AddTransient<ISellableItemMapper, SellableItemMapper>();
             services.RegisterAllCommands(assembly);
         }
     }

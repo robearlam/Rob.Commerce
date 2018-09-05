@@ -20,14 +20,12 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
         private const int CatalogNameIndex = 10;
         private const int CatalogDisplayNameIndex = 11;
         private const int CategoryNameIndex = 12;
+        private const int InventorySetsIndex = 13;
         private const int CurrencyCodeIndex = 1;
         private const int ListPriceAmountIndex = 0;
+        private const int InventorySetNameIndex = 0;
+        private const int InventorySetValueIndex = 1;
         private readonly string[] _rawFields;
-
-        public CsvImportLine(string rawData)
-        {
-            _rawFields = rawData.Split(',');
-        }
 
         public string ProductId => _rawFields[ProductIdIndex];
         public string ProductName => _rawFields[ProductNameIndex];
@@ -42,10 +40,32 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
         public string CatalogName => _rawFields[CatalogNameIndex];
         public string CatalogDisplayName => _rawFields[CatalogDisplayNameIndex];
         public IList<string> Categories => _rawFields[CategoryNameIndex].Split('|').ToList();
+        public IDictionary<string, int> InventorySets => GenerateInventorySets();
 
         public string FullEntityCatalogName => $"{CommerceEntity.IdPrefix<Catalog>()}{CatalogName}";
         public string FullEntityCategoryName => $"{CommerceEntity.IdPrefix<Category>()}{CatalogName}-{Categories.Last()}";
         public string FullEntitySellableItemName => $"{CommerceEntity.IdPrefix<SellableItem>()}{ProductId}";
+
+        public CsvImportLine(string rawData)
+        {
+            _rawFields = rawData.Split(',');
+        }
+
+        private IDictionary<string, int> GenerateInventorySets()
+        {
+            var inventorySetsData = _rawFields[InventorySetsIndex].Split('|');
+            var inventorySets = new Dictionary<string, int>();
+            foreach (var inventorySetData in inventorySetsData)
+            {
+                var inventoryData = inventorySetData.Split('-');
+                if (inventorySets.ContainsKey(inventoryData[InventorySetNameIndex]))
+                    continue;
+
+                var inventoryValue = int.Parse(inventoryData[InventorySetValueIndex]);
+                inventorySets.Add(inventoryData[InventorySetNameIndex], inventoryValue);
+            }
+            return inventorySets;
+        }
 
         private IEnumerable<Money> GenerateListPrice()
         {
