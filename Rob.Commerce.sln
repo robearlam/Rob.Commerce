@@ -67,7 +67,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Rules.Engine", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductImport", "ProductImport", "{6487B6C7-7C65-4D7C-8474-865A1B45F664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.ProductImport.Engine", "src\Feature\ProductImport\Engine\Feature.ProductImport.Engine\Feature.ProductImport.Engine.csproj", "{FFCE0DAE-08B2-4C45-9409-554355B5E5DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.ProductImport.Engine", "src\Feature\ProductImport\Engine\Feature.ProductImport.Engine\Feature.ProductImport.Engine.csproj", "{FFCE0DAE-08B2-4C45-9409-554355B5E5DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PluginEnhancements", "PluginEnhancements", "{FB8749EF-65CA-476F-8700-27851A625117}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foundation.PluginEnhancements.Engine", "src\Foundation\PluginEnhancements\Engine\Foundation.PluginEnhancements.Engine\Foundation.PluginEnhancements.Engine.csproj", "{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.ServiceBus", "Orders.ServiceBus", "{AC526173-2555-4838-BA6B-59A1260004F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Orders.ServiceBus.Engine", "src\Feature\Orders.ServiceBus\Engine\Feature.Orders.ServiceBus.Engine\Feature.Orders.ServiceBus.Engine.csproj", "{0D84EC04-9E1A-4807-B263-36716670D38C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +143,14 @@ Global
 		{FFCE0DAE-08B2-4C45-9409-554355B5E5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFCE0DAE-08B2-4C45-9409-554355B5E5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFCE0DAE-08B2-4C45-9409-554355B5E5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D84EC04-9E1A-4807-B263-36716670D38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D84EC04-9E1A-4807-B263-36716670D38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D84EC04-9E1A-4807-B263-36716670D38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D84EC04-9E1A-4807-B263-36716670D38C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -163,9 +179,13 @@ Global
 		{17F08B7B-CFC4-47C8-8B95-965F8FDD0E93} = {0600A469-FCD4-4A8E-9455-1B36632DA6AF}
 		{6487B6C7-7C65-4D7C-8474-865A1B45F664} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
 		{FFCE0DAE-08B2-4C45-9409-554355B5E5DC} = {6487B6C7-7C65-4D7C-8474-865A1B45F664}
+		{FB8749EF-65CA-476F-8700-27851A625117} = {8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}
+		{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46} = {FB8749EF-65CA-476F-8700-27851A625117}
+		{AC526173-2555-4838-BA6B-59A1260004F1} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
+		{0D84EC04-9E1A-4807-B263-36716670D38C} = {AC526173-2555-4838-BA6B-59A1260004F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal

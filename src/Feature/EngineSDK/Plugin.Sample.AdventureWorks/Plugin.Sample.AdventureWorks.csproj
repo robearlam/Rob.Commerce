@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.2.*" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.26" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="2.2.*" />
     <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.2.*" />
   </ItemGroup>

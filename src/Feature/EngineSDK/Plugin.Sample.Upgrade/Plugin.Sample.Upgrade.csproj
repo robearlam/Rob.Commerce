@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.2.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.2.6" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.2.*" />
     <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.2.*" />
   </ItemGroup>
