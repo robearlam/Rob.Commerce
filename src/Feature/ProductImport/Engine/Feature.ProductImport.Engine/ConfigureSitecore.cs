@@ -1,8 +1,11 @@
 ﻿using System.Reflection;
+using Feature.ProductImport.Engine.EntityViews;
 using Feature.ProductImport.Engine.Pipelines;
 using Feature.ProductImport.Engine.Pipelines.Blocks;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
+using Sitecore.Commerce.EntityViews;
+using Sitecore.Commerce.Plugin.BusinessUsers;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
 using ImportCatalogsBlock = Feature.ProductImport.Engine.Pipelines.Blocks.ImportCatalogsBlock;
@@ -21,6 +24,8 @@ namespace Feature.ProductImport.Engine
 
             services.Sitecore().Pipelines(config => config
                 .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); })
+                .ConfigurePipeline<IBizFxNavigationPipeline>(d => { d.Add<EnsureNavigationView>(); })
+                .ConfigurePipeline<IGetEntityViewPipeline>(d => { d.Add<Dashboard>().Before<IFormatEntityViewPipeline>(); })
 
                 .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure
                     .Add<Pipelines.Blocks.ConfigureServiceApiBlock>()

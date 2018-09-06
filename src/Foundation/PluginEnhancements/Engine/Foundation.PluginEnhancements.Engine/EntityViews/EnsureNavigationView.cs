@@ -1,33 +1,45 @@
 ﻿using System.Threading.Tasks;
+using Foundation.PluginEnhancements.Engine.Commands;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.EntityViews;
 using Sitecore.Framework.Conditions;
 using Sitecore.Framework.Pipelines;
 
-namespace Feature.ProductImport.Engine.Pipelines.Blocks
+namespace Foundation.PluginEnhancements.Engine.EntityViews
 {
     [PipelineDisplayName("EnsureNavigationView")]
     public class EnsureNavigationView : PipelineBlock<EntityView, EntityView, CommercePipelineExecutionContext>
     {
+        private readonly CommerceCommander _commerceCommander;
+
+        public EnsureNavigationView(CommerceCommander commerceCommander)
+        {
+            _commerceCommander = commerceCommander;
+        }
+
         public override async Task<EntityView> Run(EntityView entityView, CommercePipelineExecutionContext context)
         {
-            Condition.Requires(entityView).IsNotNull($"{this.Name}: The argument cannot be null");
+            Condition.Requires(entityView).IsNotNull($"{Name}: The argument cannot be null");
 
             if (entityView.Name != "ToolsNavigation")
             {
                 return entityView;
             }
 
+            var pluginPolicy = context.GetPolicy<PluginPolicy>();
+
+            await _commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, _commerceCommander);
+
             var newEntityView = new EntityView
             {
-                Name = "ProductImport-Dashboard",
-                DisplayName = "Product Import",
-                UiHint = "extension",
-                Icon = "store",
-                ItemId = "ProductImport-Dashboard"
+                Name = "Plugins",
+                DisplayName = "Plugins",
+                Icon = pluginPolicy.Icon,
+                ItemId = "Plugins"
             };
 
             entityView.ChildViews.Add(newEntityView);
+
             return entityView;
         }
     }

@@ -26,3 +26,8 @@ Excucute the _default_ task to build and deploy the engine to all of your roles,
 
 ### Deploy Unicorn Items
 Deploy Unicorn items.
+
+## Credits
+Code for the following modules was provided by:
+- Foundation.PluginEnhancements - [Kerry Havas](https://github.com/kerryhavas)
+- Feature.Order.ServiceBus - Mike Shae

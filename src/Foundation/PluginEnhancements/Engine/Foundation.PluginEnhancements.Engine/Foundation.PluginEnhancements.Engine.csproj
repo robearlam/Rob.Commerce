@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Commerce Engine Plugin Enhancements</Description>
+    <Authors>Kerry Havas, Rob Earlam</Authors>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <TargetFramework>net462</TargetFramework>
+    <PackageTags>$(PackageTags);Sitecore;Commerce;Plugin;Enhancements</PackageTags>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.2.29" />
+  </ItemGroup>
+
+</Project>
