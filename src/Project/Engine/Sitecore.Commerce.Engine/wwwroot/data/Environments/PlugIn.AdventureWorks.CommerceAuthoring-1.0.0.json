@@ -23,6 +23,7 @@
   "DateCreated": "2016-09-23T18:04:08.1660038Z",
   "DateUpdated": "2016-09-23T18:04:08.1760227Z",
   "Id": "Entity-CommerceEnvironment-AdventureWorksAuthoring",
+  "Id": "Entity-CommerceEnvironment-AdventureWorksAuthoring",
   "Version": 1,
   "IsPersisted": false,
   "Name": "AdventureWorksAuthoring",
@@ -249,7 +250,7 @@
             "PhoneNumber"
           ]
         },
-        "Domains": [ "Storefront", "extranet", "CommerceUsers", "xc902" ] 
+        "Domains": [ "Storefront", "extranet", "CommerceUsers", "storefront" ] 
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Customers.CustomersRemovePolicy, Sitecore.Commerce.Plugin.Customers",

@@ -214,7 +214,7 @@
             "PhoneNumber"
           ]
         },
-        "Domains": [ "Storefront", "extranet", "CommerceUsers", "xc902" ] 
+        "Domains": [ "Storefront", "extranet", "CommerceUsers", "storefront" ] 
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Customers.CustomersRemovePolicy, Sitecore.Commerce.Plugin.Customers",
