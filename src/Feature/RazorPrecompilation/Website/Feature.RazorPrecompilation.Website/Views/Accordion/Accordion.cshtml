@@ -1,0 +1,55 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Composites.Models.AccordionRenderingModel
+
+@{
+    var headerBaseKey = "section-title";
+    var contentBaseKey = "section-content";
+}
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "accordion", Model.Attributes) data-properties='@Model.JsonDataProperties' >
+    <div class="component-content">
+        @if (Model.HasCompositeLoop)
+        {
+            @Model.MessageHasLoop
+        }
+        else if (Model.DataSourceItem == null)
+        {
+           @Model.MessageIsEmpty
+        }
+        @if (Model.Rendering.DataSourceItem != null && Model.CompositeItems!=null && !Model.CompositeItems.Any())
+        {
+            using (Html.Sxa().BeginEditFrame(Html.Sitecore().CurrentRendering.DataSource, "Accordion Empty", Model.IsControlEditable))
+             {
+                 @Model.MessageIsEmpty
+             }
+        }
+        @if (Model.Rendering.DataSourceItem != null && Model.CompositeItems.Any() && !Model.HasCompositeLoop)
+        {
+            <div>
+                <ul class="items">
+                    @foreach (var composite in Model.CompositeItems)
+                    {
+                        <li class="item">
+                            @using (Html.Sxa().BeginEditFrame(composite.Value.ID.ToString(), "Accordion", Model.IsControlEditable))
+                            {
+                                var headerKey = string.Format("{0}-{1}-{2}", headerBaseKey, composite.Key, Model.Id);
+                                <div class="toggle-header">
+                                    <div class="label">
+                                        @Html.Sitecore().Placeholder(headerKey)
+                                    </div>
+                                </div>
+                                var contentKey = string.Format("{0}-{1}-{2}", contentBaseKey, composite.Key, Model.Id);
+                                <div class="toggle-content">
+                                    @Html.Sitecore().Placeholder(contentKey)
+                                </div>
+                            }
+                        </li>
+                    }
+                </ul>                            
+            </div>
+        }
+    </div>
+</div>

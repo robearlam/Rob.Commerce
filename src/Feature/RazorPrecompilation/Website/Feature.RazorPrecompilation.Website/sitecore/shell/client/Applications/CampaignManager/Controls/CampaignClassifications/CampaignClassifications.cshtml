@@ -1,0 +1,32 @@
+﻿@using Sitecore.Marketing.Campaigns.Client.Web.UI.Controls.CampaignClassifications
+@using Sitecore.Marketing.Campaigns.Client
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+  var resolver = Html.Sitecore().Controls().GetParametersResolver(Model.Rendering);
+  var rendering = new CampaignClassifications(resolver) { Class = "sc-campaignClassifications" };
+
+  var htmlAttributes = rendering.HtmlAttributes;
+
+  var optionsCaption = Sitecore.ClientHost.Globalization.Translate(Texts.SelectAnOption);
+}
+
+<div @htmlAttributes>
+  <div class="sc-align-center" data-bind="foreach: items">
+    <div class="row sc-show-padding">
+      <div class="col-md-@rendering.LabelColumnSize">
+        <span data-bind="attr: { 'data-id': $parent.name() + 'Label' + $index() }, text: name + ':'"></span>
+      </div>
+      <div class="col-md-@rendering.ValueColumnSize">
+        @if (rendering.ReadOnly)
+        {
+          <span data-bind="text: selectedName"></span>
+        }
+        else
+        {
+          <select class="form-control sc-combobox" data-bind="options: values, optionsText: 'name', optionsValue: 'value', value: selected, optionsCaption: '@optionsCaption', attr: { 'data-id': $parent.name() + 'Value' + $index() }"></select>
+        }
+      </div>
+    </div>
+  </div>
+</div>

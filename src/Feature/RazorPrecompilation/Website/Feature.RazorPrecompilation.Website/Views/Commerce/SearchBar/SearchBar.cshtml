@@ -1,0 +1,40 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods
+@using Sitecore.Commerce.XA.Feature.SearchBar.Models
+
+@model SearchBarRenderingModel
+
+@{
+    var currentItem = Html.Sitecore().CurrentItem;
+
+    var searchPlaceholder = currentItem["Search Hint Text"];
+    var searchButtonTooltip = currentItem["Search Button Tooltip"];
+
+    var searchPageUrl = Model.SearchPageLink;
+}
+
+<div @Html.Sxa().Component("cxa-searchbar-component", Model.Attributes)>
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        if (Model == null)
+        {
+            return;
+        }
+        <div class="component-content search-widget" >
+            <span class="toggle-search-bar"></span>
+            <form action="@searchPageUrl" method="get" id="SearchForm">
+                <div class="search-input-section">                    
+                    <input type="text" class="search-textbox" placeholder="@searchPlaceholder" name="@Sitecore.Commerce.XA.Feature.SearchBar.SearchBarFeatureConstants.QueryStrings.SearchKeyword" value="@Model.SearchKeyword">
+                    <button class="search-button" type="submit" title="@searchButtonTooltip"><span class="search-icon"></span></button>
+                </div>
+            </form>
+        </div>
+    }
+</div>

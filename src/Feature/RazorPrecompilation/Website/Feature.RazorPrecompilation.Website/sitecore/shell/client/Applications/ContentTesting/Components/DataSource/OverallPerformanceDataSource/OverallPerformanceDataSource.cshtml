@@ -1,0 +1,13 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.ContentTesting.Components.DataSource
+
+@model RenderingModel
+
+@{
+  var resolver = Html.Sitecore().Controls().GetParametersResolver(Model.Rendering);
+  var rendering = new OverallPerformanceDataSource(resolver);
+  var output = new HtmlString(rendering.Render());
+}
+
+@output

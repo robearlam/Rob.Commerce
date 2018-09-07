@@ -1,0 +1,22 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.ContentTesting.Components
+@model RenderingModel
+@{    
+    var resolver = this.Html.Sitecore().Controls().GetParametersResolver(this.Model.Rendering);
+    var component = new KPISpot(resolver);
+    var htmlAttributes = component.HtmlAttributes;
+}
+
+<div @htmlAttributes class="sc-KPISpot" data-sc-hasnested="true">
+  <div class="spot">
+    <div class="sc-KPISpot-text">
+      <span data-bind="text: text"></span>
+      <span class="sc-KPISpot-tooltip">
+        @Html.Sitecore().Placeholder(component.ControlId + ".Tooltip")
+      </span>
+    </div>
+    <div class="sc-KPISpot-value" data-bind="text: value() != null && value() != undefined ? (value() + (percentage() ? '%' : '')) : '--'">
+    </div>
+  </div>
+</div>

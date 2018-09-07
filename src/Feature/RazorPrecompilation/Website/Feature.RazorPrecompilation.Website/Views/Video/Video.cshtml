@@ -1,0 +1,68 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.XA.Feature.Media.Models.VideoRenderingModel
+
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "video", Model.Attributes) data-properties="@Model.JavaScriptProperties">
+    @if (Html.Sxa().IsEdit)
+    {
+        @Model.MessageEditHere
+    }
+
+    @if (Model.DataSourceItem == null)
+    {
+        <div class="component-content">
+            @Model.MessageIsEmpty
+        </div>
+    }
+    else
+    {
+        using (Html.Sxa().BeginEditFrame(Model.DataSourceItem.ID.ToString(), "Video", Model.IsControlEditable))
+        {
+        <div class="component-content">
+            @if (Model.IsMobile && Model.IsYoutube)
+            {
+                <div class="mobile-youtube">
+                    <iframe src="@Model.VideoUrl"></iframe>
+                </div>
+            }
+            else
+            {
+                var autoplay = Model.AutoPlay ? "autoplay" : "";
+                <div class="sxa-video-wrapper">
+                    <video style="width: 100%; height: 100%;" preload="none" @autoplay poster="@Model.PosterImage">
+                        @foreach (var videoSource in Model.VideoSources)
+                        {
+                            <source type="@videoSource.Key" src="@videoSource.Value" />
+                        }
+                        <object type="application/x-shockwave-flash" data="@Model.VideoData">
+                            <param name="movie" value="@Model.VideoData" />
+                            <param name="flashvars" value="controls=true&amp;poster=@Model.PosterImage&amp;file=@Model.Mp4VideoUrl" />
+                            @if (Model.VideoUnavailableImage.Any())
+                            {
+                                var image = new
+                                {
+                                    src = Model.VideoUnavailableImage["ImageUrl"],
+                                    title = Model.VideoUnavailableImage["ToolTip"],
+                                    alt = Model.VideoUnavailableImage["AlternateText"]
+                                };
+                                <img src="@image.src" title="@image.title" alt="@image.alt" />
+                            }
+                        </object>
+                    </video>
+                    <div class="video-init"></div>
+                </div>
+            }
+            <div class="video-caption">
+                @Html.Sxa().Field("MovieCaption", Model.DataSourceItem, Model.GetRenderingWebEditingParams())
+            </div>
+            <div class="video-description">
+                @Html.Sxa().Field("MovieDescription", Model.DataSourceItem, Model.GetRenderingWebEditingParams())
+            </div>
+        </div>
+        }
+    }
+
+</div>
+
+

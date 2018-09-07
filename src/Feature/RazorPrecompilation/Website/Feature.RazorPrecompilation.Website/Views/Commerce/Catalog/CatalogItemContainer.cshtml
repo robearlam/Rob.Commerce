@@ -1,0 +1,31 @@
+﻿@using Sitecore.XA.Foundation.DynamicPlaceholders.Models
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Mvc
+
+@model CatalogItemContainerRenderingModel
+
+@{
+    const string placeholderKeyPrefix = "Container";
+    const string idPrefix = "2";
+
+    var modelId = Model.Id;
+    var bodyClass = Model.BodyClass;
+
+    var key = string.Format("{0}-{1}{2}", placeholderKeyPrefix, idPrefix, modelId);
+    var backgroundStyle = string.IsNullOrWhiteSpace(Model.BackgroundUrl) ? string.Empty : string.Format(@" style=""background-image: url('{0}')""", HttpUtility.HtmlEncode(Model.BackgroundUrl));
+
+    var containerCssClass = "catalog-item-container";
+
+    if(!string.IsNullOrEmpty(bodyClass))
+    {
+        containerCssClass = containerCssClass + " " + bodyClass;
+    }
+}
+
+<div @Html.Sxa().Component(containerCssClass, Model.Attributes)>
+    <div class="component-content" @Html.Raw(backgroundStyle)>
+        @Html.Sitecore().Placeholder(key)
+    </div>
+</div>

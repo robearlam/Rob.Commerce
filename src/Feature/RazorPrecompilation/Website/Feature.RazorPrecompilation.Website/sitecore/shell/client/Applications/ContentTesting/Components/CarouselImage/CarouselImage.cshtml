@@ -1,0 +1,57 @@
+﻿@using Sitecore.ContentTesting
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Globalization;
+@using Sitecore.ContentTesting.Components;
+
+@model Sitecore.Mvc.Presentation.RenderingModel                  
+@{
+  var textClickImageToZoom = Translate.Text(Texts.CLICK_IMAGE_TO_ZOOM);
+  var textVariationInformation = Translate.Text(Texts.VARIATION_INFORMATION);
+
+  var resolver = Html.Sitecore().Controls().GetParametersResolver(Model.Rendering);
+  var rendering = new CarouselImage(resolver);
+  var htmlAttributes = rendering.HtmlAttributes;
+}
+
+<div class="sc-carouselimage" @htmlAttributes data-bind="visible: isVisible">
+  <div class="dvInfoPanel">
+    <div class="dvInfoLeftPanel">
+      <div class="imgBigWrapper">
+        <img class="imgBig sc-image img-loading" />
+      </div>
+      <span>@textClickImageToZoom</span>
+    </div>
+    <div class="dvInfoRightPanel">
+      <div>
+        <span class="spHeader">@textVariationInformation</span><br/>
+        <div id="dvInformation" class="dvInformation tab-content"></div>
+      </div>
+    </div>
+  </div>
+  <div class="dvCarouselContent">
+    <div class="sc-carousel dvCarousel">
+      <ul class="elastislide-list">
+        </ul>
+</div>
+    </div>
+</div>
+
+@* Template for rendering image-item in carousel *@
+  <script type="text/html" id='liItem'>
+
+    <li>
+      <a href='#'>
+        <div class='elastislide-tile'>
+          <div class='elastislide-tile-content'>
+            <div class='imgCarouselWrapper'>
+              <img id='<%= id %>' src='<%= imgSrc %>' class='sc-image imgCarousel img-loading' data-entry-id='<%= entryid %>'/>
+              <span title='<%= name %>'><%= name %></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+    
+
+  </script>

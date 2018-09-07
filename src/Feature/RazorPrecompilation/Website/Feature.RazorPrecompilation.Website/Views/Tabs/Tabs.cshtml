@@ -1,0 +1,48 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Composites.Models.TabsRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "tabs", Model.Attributes)>
+    <div class="component-content">
+        @if (Model.HasCompositeLoop)
+        {
+            @Model.MessageHasLoop
+        }
+        else if (Model.DataSourceItem == null)
+        {
+           @Model.MessageIsEmpty
+        }
+        else if (Model.CompositeCount == 0)
+        {
+            using (Html.Sxa().BeginEditFrame(Model.DataSourceItem.ID.ToString(), "Tabs Empty", Model.IsControlEditable))
+            {
+                @Model.MessageIsEmpty
+            }
+        }
+        else
+        {
+            <div class="tabs-inner">
+                @if (!Model.TabsOnBottom)
+                {
+                    <ul class="tabs-heading">
+                        @{ Html.RenderPartial("TabsHeading", Model); }
+                    </ul>
+                    <div class="tabs-container">
+                        @{ Html.RenderPartial("TabsContent", Model); }
+                    </div>
+                }
+                else
+                {
+                    <div class="tabs-container">
+                        @{ Html.RenderPartial("TabsContent", Model); }
+                    </div>
+                    <ul class="tabs-heading">
+                        @{ Html.RenderPartial("TabsHeading", Model); }
+                    </ul>
+
+                }
+            </div>    
+        }
+    </div>
+</div>

@@ -1,0 +1,64 @@
+﻿@using System.Globalization
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model RenderingModel
+@{
+    var userControl = this.Html.Sitecore().Controls().GetUserControl(this.Model.Rendering);
+    userControl.Requires.Script("contenttesting", "ProgressBarCustom.js");
+    userControl.Requires.Css("contenttesting", "ProgressBarCustom.css");
+
+
+    var minimum = userControl.GetInt("Minimum", "Minimum");
+    var maximum = userControl.GetInt("Maximum", "Maximum");
+    var value = userControl.GetInt("Value", "Value");
+
+    var headerBar = userControl.GetString("HeaderBar", "HeaderBar");
+    var valueAll = userControl.GetString("ValueAll", "ValueAll");
+    var footerTitle1 = userControl.GetString("FooterTitle1", "FooterTitle1");
+    var footerTitle2 = userControl.GetString("FooterTitle2", "FooterTitle2");
+    
+    userControl.Attributes["data-sc-minimum"] = minimum.ToString(CultureInfo.InvariantCulture);
+    userControl.Attributes["data-sc-maximum"] = maximum.ToString(CultureInfo.InvariantCulture);
+    userControl.Attributes["data-sc-value"] = value.ToString(CultureInfo.InvariantCulture);
+
+    userControl.Attributes["data-sc-headerbar"] = headerBar.ToString();
+    userControl.Attributes["data-sc-valueall"] = valueAll.ToString();
+    userControl.Attributes["data-sc-footertitle1"] = footerTitle1.ToString();
+    userControl.Attributes["data-sc-footertitle2"] = footerTitle2.ToString();
+
+
+    var htmlAttributes = userControl.HtmlAttributes;
+}
+
+
+<div style="" class="sc-progressbarcustom "  @htmlAttributes>
+
+  <div class="scPrBar-dvHeader">
+    <span class="scPrBar-spHeader">
+      Header
+    </span> 
+  </div>
+  <div class="scPrBar-dvContent">
+    <div class="scPrBar-dvIndicator">
+      <div class="scPrBar-dvInfo">
+        <span class="scPrBar-spValueAll">0</span>
+      </div>
+      <div class="scPrBar-dvField">
+        <div class="scPrBar-dvValue"></div>
+      </div>
+    </div>
+    <div class="scPrBar-dvFooter">
+      <div class="scPrBar-dvFooterTitle1">
+        <span class="scPrBar-spFooterTitle1">FooterTitle1</span>
+      </div>
+      <div class="scPrBar-dvFooterTitle2">
+        <span class="scPrBar-spValue">0%</span>
+        <span class="scPrBar-spFooterTitle2">FooterTitle2</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>

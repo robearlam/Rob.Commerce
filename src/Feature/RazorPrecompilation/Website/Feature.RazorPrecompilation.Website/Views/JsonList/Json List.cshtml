@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.JsonVariants.Extensions
+
+
+@model Sitecore.XA.Feature.Json.Models.JsonListModel
+
+@if (Sitecore.Context.PageMode.IsNormal || Sitecore.Context.PageMode.IsPreview)
+{
+    @Html.JsonVariants().RenderJsonVariantList(Model.VariantFields, Model.Items, Model.PropertyName)
+}
+else
+{
+    string renderingClass = Model.Rendering.RenderingCssClass ?? "json-list";
+    <div class="json-component-wrapper @renderingClass"><pre class="language-json">@Html.JsonVariants().RenderJsonVariantList(Model.VariantFields, Model.Items, Model.PropertyName)</pre></div>
+}

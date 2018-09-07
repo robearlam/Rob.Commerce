@@ -1,0 +1,58 @@
+﻿@model Sitecore.ExperienceForms.Client.Models.DynamicDataSourceRenderingModel
+@{
+    Model.Class.Append("sc-dynamicdatasource");
+    Model.DataBind.IsVisible().IsEnabled();
+}
+
+<div @Model.HtmlAttributes>
+    <div class="sc-small-bottom-padding">
+        <div class="sc-formlabeltop"><span data-bind="text: LabelForSelectDataSource">@Model.LabelForSelectDataSource</span></div>
+        <div class="input-group sc-bottom-margin">
+            <div class="sc-buttontextbox input-group">
+                <input class="form-control"
+                       data-bind="value:Path, attr:{ title: Path, placeholder: WatermarkForSelectDataSource }"
+                       placeholder="@Model.WatermarkForSelectDataSource" readonly="readonly" />
+                <span class="input-group-btn">
+                    <button data-bind="click:clickHandler" class="btn sc-button btn-default">
+                        <span class="sc-button-text" data-bind="text: LabelForButton">@Model.LabelForButton</span>
+                    </button>
+                </span>
+            </div>
+            <span class="input-group-btn sc-dynamicdatasource-remove" data-bind="click:$root.clearDatasource">×</span>
+        </div>
+    </div>
+    <div class="sc-small-bottom-padding">
+        <div class="sc-formlabeltop" data-bind="text: LabelForValueField">@Model.LabelForValueField</div>
+        <select data-sc-id="sc-valueFieldSelect" class="form-control sc-droplist sc-bottom-margin"
+                data-bind='event:{ change: function(data, event) { $root.changeFieldName(event, "CurrentValueFieldName") }},
+                optionsText:"text",
+                optionsValue: "value",
+                options: ValueFields,
+                optionsCaption: "",
+                optionsAfterRender: function() {$root.afterRenderField("sc-valueFieldSelect", "CurrentValueFieldName")};'></select>
+    </div>
+    <div class="sc-small-bottom-padding">
+        <div class="sc-formlabeltop" data-bind="text: LabelForTextField">@Model.LabelForTextField</div>
+        <select data-sc-id="sc-displayFieldSelect" class="form-control sc-droplist sc-bottom-margin"
+                data-bind='event:{ change: function(data, event) { $root.changeFieldName(event, "CurrentDisplayFieldName") }},
+                optionsText:"text",
+                optionsValue: "value",
+                options: DisplayFields,
+                optionsCaption: "",
+                optionsAfterRender: function() {$root.afterRenderField("sc-displayFieldSelect","CurrentDisplayFieldName")};'></select>
+    </div>
+    <div class="sc-small-bottom-padding">
+        <div class="sc-formlabeltop" data-bind="text: LabelForSelection">@Model.LabelForSelection</div>
+        <select @(Model.MultipleSelection ? "multiple" : string.Empty)
+                data-sc-id="sc-selectOptions"
+                size='@(Model.MultipleSelection ? "8" : "1")'
+                class="form-control sc-droplist sc-selection-options-droplist"
+                data-bind='attr:{multiple:MultipleSelection || null, size:MultipleSelection() ? "8" : "1"},
+                optionsText:"text",
+                optionsValue:"itemId",
+                selectedOptions: Selection,
+                options: Items,
+                optionsCaption: MultipleSelection() ? null : "&nbsp;",
+                optionsAfterRender: updateSelectionFromItems'></select>
+    </div>
+</div>

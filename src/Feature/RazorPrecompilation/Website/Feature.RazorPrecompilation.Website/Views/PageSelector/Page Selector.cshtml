@@ -1,0 +1,9 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.XA.Feature.Search.Models.PageSelectorRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "page-selector", Model.Attributes) data-properties='@Model.JsonDataProperties'>
+    <div class="component-content">
+        @Model.MessageEditHere
+    </div>
+</div>

@@ -1,0 +1,59 @@
+﻿@using System.Web.Mvc.Ajax
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Commerce.XA.Feature.Account.Models.LoginRenderingModel
+@{
+    var signing = @Html.Sitecore().CurrentItem["Sign In Button In-progress Label"];
+}
+<div @Html.Sxa().Component("cxa-login-component", Model.Attributes) data-cxa-component-class="LoginForm" data-cxa-component-initialized="false" data-cxa-component-type="form" data-return-url="@ViewBag.ReturnUrl">
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        <div class="login-content">
+            @using (Ajax.BeginRouteForm("RootApiRoutes", new { action = "Login", controller = "Account"}, new AjaxOptions { OnBegin = "LoginForm.OnBegin", OnSuccess = "LoginForm.OnSuccess", OnComplete = "LoginForm.OnComplete", HttpMethod = "Post" }, new { @id = "LoginForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                @Html.Sitecore().FormHandler()
+
+                <div class="login-username">
+                    <label for="UserName">@Html.Sitecore().Field("Email Address Label", Html.Sitecore().CurrentItem)<span class="required">*</span></label>
+                    @Html.TextBoxFor(m => m.UserName,
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Email Address Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Email Address Missing Message"],
+                        data_val_regex = Html.Sitecore().CurrentItem["Email Address Invalid Message"],
+                        data_val_regex_pattern = Model.EmailAddressValidationRegex,
+                        data_val_length_max = "256",
+                        data_val_length = string.Format(Html.Sitecore().CurrentItem["Email Address Max Length Message"].ToString(), 256),
+                        disabled = "disabled"
+                    })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </div>
+                <div class="login-password">
+                    <label for="Password">@Html.Sitecore().Field("Password Label", Html.Sitecore().CurrentItem)<span class="required">*</span></label>
+                    @Html.PasswordFor(m => m.Password,
+        new
+        {
+            placeholder = Html.Sitecore().CurrentItem["Password Hint Text"],
+            data_val_required = Html.Sitecore().CurrentItem["Password Missing Message"],
+            autocomplete = "off",
+            disabled = "disabled"
+        })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+                <div class="login-submit">
+                    <button type="submit" id="SignInButton" data-loading-text="@signing" class="disabled-in-design" style="float: left;" disabled="disabled">@Html.Sitecore().Field("Sign In Button Label", Html.Sitecore().CurrentItem)</button>
+                </div>
+            }
+        </div>
+    }
+</div>
+           

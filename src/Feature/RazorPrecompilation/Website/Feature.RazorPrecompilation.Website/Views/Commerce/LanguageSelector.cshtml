@@ -1,0 +1,53 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2017 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.LanguageSelection.Models
+
+
+@model @LanguageSelectionRenderingModel
+
+
+<div @Html.Sxa().Component("cxa-languageselector-component", Model.Attributes)>
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div>@Model.ErrorMessage</div>
+    }
+    else
+    {
+        if (Model.AvailableLanguages.Count() > 1 || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+        <div class="component-content" data-cxa-component-class="LanguageSelector" data-cxa-component-initialized="false" data-cxa-component-type="component">
+            <a class="current-language" href="javascript:void(0)" id="dLabel" type="button" disabled="disabled">
+                <span class="language-selector-icon" ></span>
+                @if (Model.CurrentLanguage != null)
+                {
+                    @Model.CurrentLanguage.DisplayName
+                }
+            </a>
+
+            @*Show language drop menu if count greater than 1*@
+            <ul class="available-languages">
+                @foreach (var language in @Model.AvailableLanguages)
+                {
+                    if (!language.Code.Equals(Model.CurrentLanguage.Code, StringComparison.OrdinalIgnoreCase))
+                    {
+                        <li><a href="javascript:void(0)" class="language-item" data-current-language="@Model.CurrentLanguage.Code" data-item-language="@language.Code">@language.DisplayName</a></li>
+                    }
+                }
+            </ul>
+        </div>
+            }
+        }
+    </div>
+

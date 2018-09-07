@@ -1,0 +1,197 @@
+﻿@using Sitecore.XA.Foundation.Grid
+@using Sitecore.XA.Foundation.Grid.Extensions
+@using Sitecore.XA.Foundation.Grid.Model
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model IEnumerable<Sitecore.XA.Foundation.Grid.Model.GridOption>
+
+    @{
+        int index = 0;
+    }
+
+    <style>
+        .grid-settings-basic .grid-parameters-button-basic {
+            text-decoration: underline;
+        }
+
+        .grid-settings-basic .grid-parameters-button-advanced {
+            text-decoration: none;
+        }
+
+        .grid-settings-advanced .grid-parameters-button-basic {
+            text-decoration: none;
+        }
+
+        .grid-settings-advanced .grid-parameters-button-advanced {
+            text-decoration: underline;
+        }
+
+        .grid-settings-basic td.grid-property-advanced, .grid-settings-basic th.grid-property-advanced, .grid-settings-basic tr.grid-property-advanced {
+            display: none;
+        }
+
+        .grid-settings-basic .grid-advanced-tab {
+            display: none;
+        }
+
+        .grid-settings-advanced .grid-basic-tab {
+            display: none;
+        }
+
+
+        .gridParams {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding-top: 10px;
+        }
+
+            .gridParams td {
+                padding: 10px;
+                border: 1px solid #f7f7f7;
+                text-align: center;
+            }
+
+            .gridParams th {
+                font-weight: bold;
+                height: 28px;
+            }
+
+                .gridParams th.grid-tooltip {
+                    cursor: help;
+                }
+
+            .gridParams tr:first-child th {
+                border: 0px;
+                vertical-align: top;
+            }
+
+            .gridParams th:first-child {
+                border: 0px;
+                padding-right: 10px;
+            }
+
+        .grid-mode-tabs {
+            height: 42px;
+            vertical-align: bottom;
+            position: relative;
+            z-index: 999;
+            border-bottom: 2px solid #474747;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .grid-tab-header {
+            background-color: #fff;
+            cursor: pointer;
+            line-height: 39px;
+            padding: 0 20px;
+            vertical-align: top;
+            display: inline-block;
+            color: #5e5e5e;
+            text-transform: uppercase;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            white-space: nowrap;
+            border-left: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        .grid-settings-advanced .grid-advanced-tab-header, .grid-settings-basic .grid-basic-tab-header{
+            background-color: #474747;
+            color: #fff;
+            cursor: default;
+            position: relative;
+            left: -1px;
+            border-top: 1px solid #474747;
+            border-right: none;
+            padding: 0 19px 0 21px;
+        }
+    </style>
+
+    <div class="@Html.Sxa().GetGridModeClass()">
+        <div class="grid-mode-tabs">
+            <span class="grid-basic-tab-header  grid-tab-header">@Sitecore.Globalization.Translate.Text(Texts.BasicTabHeader)</span>
+            <span class="grid-advanced-tab-header grid-tab-header">@Sitecore.Globalization.Translate.Text(Texts.AdvancedTabHeader)</span>
+        </div>
+        <div id="gridParams" class="gridParams">
+            <div class="grid-basic-tab">
+                <div>
+                    <table>
+                        @foreach (GridOption option in Model)
+                        {
+                            if (index == 0)
+                            {
+                                <tr>
+                                    <th></th>
+                                    @foreach (GridProperty property in option.Properties.Where(property => !property.Advanced))
+                                    {
+                                        <th class="@Html.Sxa().GetAdvancedModeClass(property.Advanced) grid-tooltip" title="@property.Tooltip">@property.Name</th>
+                                    }
+                                </tr>
+                            }
+                            <tr class="@Html.Sxa().GetAdvancedModeClass(option.Advanced)">
+                                <th class="grid-tooltip" title="@option.Tooltip">
+                                    @option.Name
+                                </th>
+                                @foreach (GridProperty property in option.Properties.Where(property => !property.Advanced))
+                                {
+                                    <td class="@Html.Sxa().GetAdvancedModeClass(property.Advanced)">
+                                        @Html.Sxa().GridFeature(property)
+                                    </td>
+                                }
+                            </tr>
+                            index++;
+                        }
+                    </table>
+                </div>
+            </div>
+            @{
+                index = 0;
+            }
+            <div class="grid-advanced-tab">
+                <div>
+                    <table>
+                        @foreach (GridOption option in Model)
+                        {
+                            if (index == 0)
+                            {
+                                <tr>
+                                    <th></th>
+                                    @foreach (GridProperty property in option.Properties.Where(property => property.Advanced))
+                                    {
+                                        <th class="@Html.Sxa().GetAdvancedModeClass(property.Advanced) grid-tooltip" title="@property.Tooltip">@property.Name</th>
+                                    }
+                                </tr>
+                            }
+                            <tr class="@Html.Sxa().GetAdvancedModeClass(option.Advanced)">
+                                <th class="grid-tooltip" title="@option.Tooltip">
+                                    @option.Name
+                                </th>
+                                @foreach (GridProperty property in option.Properties.Where(property => property.Advanced))
+                                {
+                                    <td class="@Html.Sxa().GetAdvancedModeClass(property.Advanced)">
+                                        @Html.Sxa().GridFeature(property)
+                                    </td>
+                                }
+                            </tr>
+                            index++;
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $sc(".grid-basic-tab-header").click(function () {
+            $sc(".gridParams").parent().removeClass("grid-settings-advanced");
+            $sc(".gridParams").parent().addClass("grid-settings-basic");
+            scForm.postEvent(this, event, 'webedit:setgridmode()');
+        });
+
+        $sc(".grid-advanced-tab-header").click(function () {
+            $sc(".gridParams").parent().removeClass("grid-settings-basic");
+            $sc(".gridParams").parent().addClass("grid-settings-advanced");
+            scForm.postEvent(this, event, 'webedit:setgridmode(AdvancedGridParametersMode=1)');
+        });
+    </script>

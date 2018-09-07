@@ -1,0 +1,18 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Maps.Models.MapRenderingModel
+
+@if (Model.DataSourceItem == null)
+{
+    @Model.MessageIsEmpty
+}
+else
+{
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "map", Model.Attributes) data-properties='@Model.JsonDataProperties' style="@Model.Height;@Model.Width">
+        <div class="component-content" style="height: 100%; width: 100%">                
+            @Model.MessageEditHere
+            <div id="@Guid.NewGuid().ToString()" class="map-canvas" style="height: 100%; width: 100%"></div>        
+        </div>
+    </div>
+}

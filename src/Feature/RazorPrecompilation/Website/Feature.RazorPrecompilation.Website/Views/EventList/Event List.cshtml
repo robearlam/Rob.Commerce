@@ -1,0 +1,53 @@
+﻿@using Sitecore.XA.Feature.Events.Models
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model EventListRenderingModel
+
+@{
+    bool isVisible = (ViewData["eventListVisible"] == null || (bool)ViewData["eventListVisible"]);
+    int index = 0;
+}
+@if (isVisible)
+{
+    if (!(Model.Rendering.DataSourceItem == null && !Html.Sxa().IsEdit))
+    {
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "event-list", Model.Attributes)>
+        <div class="component-content">
+
+            @Html.Sxa().RenderHeading(Model.HeadingTag, Model.DataSourceItem, "Title", Model.GetRenderingWebEditingParams())
+
+            @if (Html.Sxa().IsEdit && Model.Rendering.DataSourceItem == null)
+            {
+                @Model.MessageIsEmpty
+            }
+
+            @if (Model.Rendering.DataSourceItem != null && !Model.EventItems.Any())
+            {
+                using (Html.Sxa().BeginEditFrame(Html.Sitecore().CurrentRendering.DataSource, "Event Empty", Model.IsControlEditable))
+                {
+                    @Model.MessageIsEmpty
+                }
+            }
+
+            @if (Model.Rendering.DataSourceItem != null)
+            {
+                <ul>
+                    @foreach (EventRenderingModel item in Model.EventItems)
+                    {
+                        {
+                            Html.RenderPartial("EventListEvent", item, new ViewDataDictionary
+                            {
+                                { "cssClass", ListsHelper.BuildCssClass(index, Model.EventItems.Count()) },
+                                { "variantFields", Model.VariantFields }
+                            });
+                        }
+                        index++;
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+    }
+}

@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model RenderingModel
+@{
+    var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+    rendering.Class = "sc-ActiveUsersDataSource";
+    rendering.Requires.Script("client", "ActiveUsersDataSource.js");
+    rendering.Attributes["type"] = "text/x-sitecore-activeusersdatasource";
+    var pageSize = rendering.GetInt("PageSize", 10);
+    rendering.Attributes.Add("data-sc-pagesize", pageSize.ToString());
+    rendering.DataBind = "Users: users, IsBusy: isBusy, PageSize:pageSize, PageIndex:pageIndex";
+    var htmlAttributes = rendering.HtmlAttributes;
+}
+<script @htmlAttributes>
+</script>

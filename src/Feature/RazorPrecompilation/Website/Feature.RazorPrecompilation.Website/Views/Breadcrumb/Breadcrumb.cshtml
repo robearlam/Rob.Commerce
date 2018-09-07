@@ -1,0 +1,52 @@
+﻿@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+
+@model Sitecore.XA.Feature.Navigation.Models.BreadcrumbRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "breadcrumb", Model.Attributes)>
+    <div class="component-content">
+        @if (!Model.Children.Any())
+        {
+            @Model.MessageIsEmpty
+        }
+        <nav>
+            <ol>
+                @foreach (var item in @Model.Children)
+                {
+                    <li class="breadcrumb-item @item.CssClasses.Aggregate()">
+                        @if (@Model.IsFake)
+                        {
+                            <a href="#">@item.Name</a>
+                            <span class="separator">@Html.Raw(Html.Encode(Model.Separator))</span>
+                        }
+                        else
+                        {
+                            foreach (var variantField in Model.VariantFields)
+                            {
+                                @Html.RenderingVariants().RenderVariant(variantField, item.Item, Model.IsControlEditable, Model);
+                            }
+                            <span class="separator">@Html.Raw(Html.Encode(Model.Separator))</span>
+                            if (item.Children != null && item.Children.Any())
+                            {
+                                <ol>
+                                    @foreach (var sibling in item.Children)
+                                    {
+                                        <li>
+                                            @foreach (BaseVariantField variantField in sibling.VariantFields)
+                                            {
+                                                @Html.RenderingVariants().RenderVariant(variantField, sibling.Item, sibling.IsControlEditable, Model)
+                                            }
+                                        </li>
+                                    }
+                                </ol>
+                            }
+                        }
+                    </li>
+                }
+            </ol>
+        </nav>
+    </div>
+</div>

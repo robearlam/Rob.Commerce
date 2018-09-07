@@ -1,0 +1,14 @@
+﻿@using Sitecore.XA.Feature.Search
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Foundation.Mvc.Models.RenderingModelBase
+
+<div class='facet-heading'>
+    <h4 class='facet-title'>
+        @Html.Sxa().Field(Templates.FacetSelector.Fields.Title, Model.DataSourceItem, !Model.IsControlEditable)
+    </h4>
+    <span class='clear-filter'>x</span>
+</div>
+
+
+

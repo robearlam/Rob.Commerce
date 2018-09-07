@@ -1,0 +1,22 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Search.Models.PageSizeRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "page-size", Model.Attributes) data-properties='@Model.JsonDataProperties'>
+    <div class="component-content">
+        @if (Model.PagingSchemaItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else
+        {
+            <div class="facet-title">
+                <label for="pageSizeDropDown">
+                    @Html.Sxa().Field(@Model.FieldName, Model.PagingSchemaItem, !Model.IsControlEditable)
+                </label>
+                @Html.DropDownList("pageSizeDropDown", Model.PaggingItems)
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Search.Models.ResultsVariantSelectorRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "variant-selector", Model.Attributes) data-properties='@Html.Raw(Model.JsonDataProperties)'>
+    <div class="component-content">
+
+        @if (!Model.SelectedVariantIds.Any())
+        {
+            @Model.MessageIsEmpty
+        }
+        else
+        {
+            foreach (var variant in Model.SelectedVariantIds)
+            {
+            <div class="@variant.CssClasses" data-variant="@variant.DataVariant" data-variantIndex="@variant.DataVariantIndex"></div>
+            }
+        }
+    </div>
+</div>

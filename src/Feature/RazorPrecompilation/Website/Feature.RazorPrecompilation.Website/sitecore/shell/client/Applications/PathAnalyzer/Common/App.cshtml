@@ -1,0 +1,89 @@
+﻿@using Newtonsoft.Json
+@using Sitecore
+@using Sitecore.Data
+@using Sitecore.Data.Managers
+@using Sitecore.Mvc
+@using Sitecore.PathAnalyzer
+@using Sitecore.PathAnalyzer.Client.Data
+@using Sitecore.PathAnalyzer.Client.ParametersResolvers
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model Sitecore.Mvc.Presentation.SpeakRenderingModel
+@{
+  var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+
+  var parametersResolver = new PathExplorerParametersResolver(Model.Rendering.Item);
+
+  var dates = parametersResolver.GetDateRange();
+  var startDate = DateUtil.ToIsoDate(dates.Item1);
+  var endDate = DateUtil.ToIsoDate(dates.Item2);
+
+  var mapName = string.Empty;
+  var mapId = ID.Null;
+  var map = parametersResolver.GetMapItem();
+  if (map != null)
+  {
+      mapId = map.ID;
+      mapName = map.DisplayName;
+  }
+
+  var groupingOption = parametersResolver.GetGroupingOption();
+  var datePreset = parametersResolver.GetDatePreset();
+
+  using (var sw = new StringWriter())
+  {
+      using (var jw = new JsonTextWriter(sw))
+      {
+          jw.WriteStartObject();
+          jw.WritePropertyName("mapId");
+          jw.WriteValue(mapId.ToString());
+          jw.WritePropertyName("mapName");
+          jw.WriteValue(mapName);
+          jw.WritePropertyName("startDate");
+          jw.WriteValue(startDate);
+          jw.WritePropertyName("endDate");
+          jw.WriteValue(endDate);
+          jw.WritePropertyName("groupingOption");
+          jw.WriteValue(groupingOption.ToString());
+          jw.WritePropertyName("datePreset");
+          jw.WriteValue(datePreset);
+          jw.WriteEndObject();
+      }
+      rendering.Attributes.Add("data-sc-initialstate", sw.ToString());
+  }
+
+  var mapListBuilder = new MapListBuilder(ApplicationContainer.GetMapStatusService(), ApplicationContainer.GetConfiguration().ContentDatabaseName);
+  var mapListData = mapListBuilder.Build();
+  rendering.Attributes.Add("data-sc-maplistdata", mapListData);
+
+  var groupingOptions = parametersResolver.GetGroupingOptionItems();
+  using (var sw = new StringWriter())
+  {
+      using (var jw = new JsonTextWriter(sw))
+      {
+          jw.WriteStartArray();
+          foreach (var option in groupingOptions)
+          {
+              jw.WriteStartObject();
+              jw.WritePropertyName("name");
+              jw.WriteValue(option[Sitecore.PathAnalyzer.Constants.FieldIDs.NodeGroupingOptions.NodeGroupingOption.Title]);
+              jw.WritePropertyName("id");
+              jw.WriteValue(option.ID.ToString());
+              jw.WriteEndObject();
+          }
+          jw.WriteEndArray();
+      }
+      rendering.Attributes.Add("data-sc-nodegroupingoptions", sw.ToString());
+  }
+
+  rendering.Attributes.Add("data-sc-language", Sitecore.Context.Language.Name);
+  rendering.Attributes.Add("data-sc-culture-twoletterisocode", Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName);
+  rendering.Attributes.Add("data-bind", "visible: IsVisible");
+  rendering.Attributes.Add("data-sc-presenter", "scKoPresenter");
+  rendering.Attributes.Add("data-sc-component", "PathExplorer");
+  rendering.Attributes.Add("data-sc-properties", "{ \"IsVisible\":true,\"Tooltip\":\"\"}");
+}
+<div id="PathExplorerContainer" @rendering.HtmlAttributes>
+    <div style="margin: 303px auto; width: 32px;">
+        @Html.Raw(ThemeManager.GetImage("images/sc-spinner32.gif", 32, 32))
+    </div>
+</div>

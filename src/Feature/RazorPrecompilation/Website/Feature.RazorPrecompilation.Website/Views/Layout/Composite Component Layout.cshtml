@@ -1,0 +1,45 @@
+﻿@using Sitecore.XA.Feature.Composites.Theming
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Theming.Bundler
+@using Sitecore.XA.Foundation.Grid.Extensions
+
+@{
+    AssetLinks assetLinks = AssetLinksGenerator.GenerateLinks(new CompositeThemesProvider());
+}
+
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <style type="text/css">
+        .scChromeData {
+            display: none;
+        }
+    </style>
+    <title>@ViewBag.Title</title>
+    @foreach (string style in assetLinks.Styles)
+    {
+        @Html.Raw(style)
+    }
+</head>
+<body id="body" @Html.Sxa().Body().Decorate()>
+    <div id="wrapper">
+        <div class="@Html.Sxa().GridPlaceholderClasses("main")">
+            <div class="row">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    @{
+        foreach (string script in assetLinks.Scripts)
+        {
+            @Html.Raw(script)
+        }
+        if (!Sitecore.Context.PageMode.IsNormal)
+        {
+            <input type="hidden" id="hdPageMode" value="@(Sitecore.Context.PageMode.IsPreview ? "preview" : "edit")" />
+        }
+    }
+</body>
+</html>

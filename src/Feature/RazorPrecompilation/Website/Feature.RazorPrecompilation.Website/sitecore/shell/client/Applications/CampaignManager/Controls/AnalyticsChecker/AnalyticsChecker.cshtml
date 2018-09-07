@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@using Sitecore.Configuration;
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+  Sitecore.Shell.Web.ShellPage.IsLoggedIn();
+
+  var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+  rendering.Class = "sc-AnalyticsChecker";
+  rendering.Requires.Script("campaignmanager", "analyticsChecker.js");
+  rendering.HasNestedComponents = false;
+  rendering.Attributes.Add("data-sc-isanalyticsenabled", Settings.GetSetting("Xdb.Enabled"));
+}      
+<div @rendering.HtmlAttributes>
+</div>

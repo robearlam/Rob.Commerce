@@ -1,0 +1,20 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@{
+    Layout = Sitecore.Configuration.Settings.GetSetting("XA.Feature.Composites.CompositeComponentLayoutPath", "Composite Component Layout.cshtml");
+    ViewBag.Title = "Edit flip side";
+}
+
+<div class="component flip">
+    <div class="component-content">
+        <div class="flipsides">
+            <div class="@(string.Format("Side{0}{1}", 0, Html.Sxa().IsEdit ? "_EDIT" : string.Empty))">
+                <div class="slide-heading">
+                    @Html.Sitecore().Placeholder("section-title")
+                </div>
+                <div class="slide-content">
+                    @Html.Sitecore().Placeholder("section-content")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

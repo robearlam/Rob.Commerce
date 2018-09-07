@@ -1,0 +1,83 @@
+﻿
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Commerce.XA.Feature.Catalog.Models.ProductListHeaderRenderingModel
+
+<div @Html.Sxa().Component("cxa-productlistheader-component", Model.Attributes)>
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        if (Model == null || Model.Pagination == null || Model.Pagination.TotalResultCount <= 0)
+        {
+            return;
+        }
+
+        <div class="component-content">
+            <div class="productlist-header-section">
+                <div class="Sort-By-container">
+                    @if (Model.SortFields != null && Model.SortFields.Any())
+                    {
+                        <span>@Html.Sitecore().Field("Sort by", Html.Sitecore().CurrentItem)</span>
+                        <select class="sort-dropdown">
+                            @foreach (var sortField in Model.SortFields)
+                            {
+                                var ascSelected = string.Empty;
+                                var descSelected = string.Empty;
+
+                                if (!string.IsNullOrEmpty(Model.CurrentSortField) && Model.CurrentSortField == sortField.Name)
+                                {
+                                    if (Model.CurrentSortDirection == Sitecore.Commerce.XA.Foundation.Common.Constants.SortDirection.Asc)
+                                    {
+                                        ascSelected = "selected";
+                                    }
+                                    else
+                                    {
+                                        descSelected = "selected";
+                                    }
+                                }
+
+                                <option value="@sortField.Name+" @ascSelected>@sortField.DisplayName @Html.Sitecore().CurrentItem["Ascending"]</option>
+                                <option value="@sortField.Name-" @descSelected>@sortField.DisplayName @Html.Sitecore().CurrentItem["Descending"]</option>
+                            }
+                        </select>
+                    }
+                </div>
+                <div class="showing-amount">
+                    <h6>
+                        @Html.Sitecore().Field("Showing", Html.Sitecore().CurrentItem)
+                        <span>@Model.Pagination.StartResultIndex</span> -
+                        <span>@Model.Pagination.EndResultIndex</span> @Html.Sitecore().Field("Of", Html.Sitecore().CurrentItem)
+                        <span>@Model.Pagination.TotalResultCount</span>
+                    </h6>
+                </div>
+                <div class="results-container">
+                    <span>@Html.Sitecore().Field("Results per Page", Html.Sitecore().CurrentItem)</span>
+                    <select class="change-pagesize">
+                        @{
+                            var pageSizesString = Model.ResultsPerPageValues;
+
+                            if (!string.IsNullOrEmpty(pageSizesString))
+                            {
+                                int pageSize;
+                                var pageSizes = pageSizesString.Split('|');
+                                foreach (var size in pageSizes)
+                                {
+                                    if (int.TryParse(size, out pageSize))
+                                    {
+                                        <option value="@pageSize" @if (Model.Pagination.PageResultCount == pageSize) { <text> selected </text>         }>@pageSize</option>
+                                    }
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+                                    }
+</div>

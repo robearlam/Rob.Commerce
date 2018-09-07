@@ -1,0 +1,47 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Composites.Models.CompositeComponentRenderingModel
+
+@{
+    var headerBaseKey = "section-title";
+    var contentBaseKey = "section-content";
+}
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "flip", Model.Attributes)>
+    <div class="component-content">
+        @if (Model.HasCompositeLoop)
+        {
+            @Model.MessageHasLoop
+        }
+        else if (Model.DataSourceItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else if (Model.CompositeCount == 0)
+        {
+            using (Html.Sxa().BeginEditFrame(Model.DataSourceItem.ID.ToString(), "Flip Empty", Model.IsControlEditable))
+            {
+                @Model.MessageIsEmpty
+            }
+        }
+        else
+        {
+            <div class="flipsides">
+                @foreach (var composite in Model.CompositeItems.Select((slide, index) => new { index, slide }))
+                {
+                    var headerKey = string.Format("{0}-{1}-{2}", headerBaseKey, composite.slide.Key, Model.Id);
+                    var contentKey = string.Format("{0}-{1}-{2}", contentBaseKey, composite.slide.Key, Model.Id);
+                    var buttons = Model.CompositeItems.Count == 2 ? "Flip Full" : "Flip";
+                    using (Html.Sxa().BeginEditFrame(composite.slide.Value.ID.ToString(), buttons, Model.IsControlEditable))
+                    {
+                        <div class="@(string.Format("Side{0}{1}", composite.index, Html.Sxa().IsEdit ? "_EDIT" : string.Empty))">
+                            <div class="slide-heading">@Html.Sitecore().Placeholder(headerKey)</div>
+                            <div class="slide-content">@Html.Sitecore().Placeholder(contentKey)</div>
+                        </div>
+                    }
+                }
+            </div>
+        }
+    </div>
+</div>

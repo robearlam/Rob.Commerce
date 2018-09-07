@@ -1,0 +1,47 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using ComponentDataSource = Sitecore.Commerce.XA.Feature.Account.AccountFeatureConstants.Orders.OrderTotals.DataSourceFields
+
+@model Sitecore.Commerce.XA.Feature.Account.Models.OrderTotalsRenderingModel
+
+
+<div @Html.Sxa().Component("cxa-ordertotals-component", Model.Attributes)>
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            <p>@Model.ErrorMessage</p>
+        </div>
+    }
+    else
+    {
+        <div class="component-content" title="@Model.OrderTotalHeaderTooltip">
+            <div class="order-totals-header">
+                <h3>@Html.Sitecore().Field(ComponentDataSource.OrderTotalHeaderText, Html.Sitecore().CurrentItem)</h3>
+            </div>
+            <div id="order-totals-summary">
+                <div class="sub-total order-totals-summary-line" title="@Model.SubtotalTooltip">
+                    <span class="summary-text">@Html.Sitecore().Field(ComponentDataSource.SubtotalText, Html.Sitecore().CurrentItem)</span>
+                    <span class="summary-amount">@Model.Subtotal</span>
+                </div>
+                <div class="savings-total order-totals-summary-line" title="@Model.TotalSavingsTooltip">
+                    <span class="summary-text">@Html.Sitecore().Field(ComponentDataSource.TotalSavingsText, Html.Sitecore().CurrentItem)</span>
+                    <span class="summary-amount">@Model.TotalSavings</span>
+                </div>
+                <div class="shipping-total order-totals-summary-line" title="@Model.TotalShippingTooltip">
+                    <span class="summary-text">@Html.Sitecore().Field(ComponentDataSource.TotalShippingText, Html.Sitecore().CurrentItem)</span>
+                    <span class="summary-amount">@Model.ShippingTotal</span>
+                </div>
+                <div class="tax-total order-totals-summary-line" title="@Model.TaxTotalTooltip">
+                    <span class="summary-text">@Html.Sitecore().Field(ComponentDataSource.TaxTotalText, Html.Sitecore().CurrentItem)</span>
+                    <span class="summary-amount" pid="taxTotal" id="confirm-taxTotal">@Model.TaxTotal</span>
+                </div>
+
+                <div class="order-total order-totals-summary-line" title="@Model.OrderTotalTooltip">
+                    <span class="summary-text">@Html.Sitecore().Field(ComponentDataSource.OrderTotalText, Html.Sitecore().CurrentItem)</span>
+                    <span class="summary-amount">@Model.Total</span>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,111 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2017 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+@using System.Web.Mvc.Ajax
+@using System.Web.Mvc.Html
+@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Commerce.XA.Feature.Account.Models.ProfileEditorRenderingModel
+
+@{
+    var currentItem = Html.Sitecore().CurrentItem;
+    var saveChangesRedirectLink = Model.SaveChangesRedirectLink;
+    var cancelRedirectLink = Model.CancelRedirectLink;
+    var savingLabel = currentItem["Save Changes Button In-Progress Label"];
+}
+<div @Html.Sxa().Component("cxa-profileeditor-component", Model.Attributes)>
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        @Model.ErrorMessage
+    }
+    else
+    {
+        <div class="profileeditor-form component-content" data-cxa-component-class="ProfileEditorForm" data-cxa-component-initialized="false" data-cxa-component-type="form" data-save-redirect-link="@saveChangesRedirectLink">
+            @using (Ajax.BeginRouteForm("RootApiRoutes", new {action = "ProfileEditor", controller = "AccountProfile"}, new AjaxOptions { OnBegin = "ProfileEditorForm.OnBegin", OnSuccess = "ProfileEditorForm.OnSuccess", OnComplete = "ProfileEditorForm.OnComplete", HttpMethod = "Post" }, new { @id = "RegisterForm" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <div class="profileeditor-firstname form-element">
+                    <label for="FirstName">@Html.Sitecore().Field("First Name Label", currentItem)<span>*</span></label>
+                    @Html.TextBoxFor(m => m.FirstName,
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["First Name Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["First Name Missing Message"],
+                        disabled = "disabled"
+                    })
+                    @Html.ValidationMessageFor(m => m.FirstName, "",new { @class= "validationMessage" })
+                </div>
+
+                <div class="profileeditor-lastname form-element">
+                    <label for="LastName">@Html.Sitecore().Field("Last Name Label", currentItem)<span>*</span></label>
+                    @Html.TextBoxFor(m => m.LastName,
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Last Name Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Last Name Missing Message"],
+                        disabled = "disabled"
+                    })
+                    @Html.ValidationMessageFor(m => m.LastName)
+                </div>
+
+                <div class="profileeditor-email form-element">
+                    <label for="EmailAddress">@Html.Sitecore().Field("Email Address Label", currentItem)<span>*</span></label>
+                    @Html.TextBoxFor(m => m.EmailAddress,
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Email Address Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Email Address Missing Message"],
+                        data_val_regex = Html.Sitecore().CurrentItem["Email Address Invalid Message"],
+                        data_val_regex_pattern = Model.EmailAddressValidationRegex,
+                        data_val_length_max = "256",
+                        data_val_length = string.Format(Html.Sitecore().CurrentItem["Email Address Max Length Message"].ToString(), 256),
+                        disabled = "disabled"
+                    })
+                    @Html.ValidationMessageFor(m => m.EmailAddress)
+                </div>
+
+                <div class="profileeditor-repeatemail form-element">
+                    <label for="RepeatEmailAddress">@Html.Sitecore().Field("Repeat Email Address Label", currentItem)<span>*</span></label>
+                    @Html.TextBoxFor(m => m.RepeatEmailAddress,
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Repeat Email Address Hint Text"],
+                        data_val_equalto_other = "*.EmailAddress",
+                        data_val_equalto = Html.Sitecore().CurrentItem["Emails Do Not Match Message"],
+                        disabled = "disabled"
+                    })
+                    @Html.ValidationMessageFor(m => m.RepeatEmailAddress)
+                </div>
+
+                <div class="profileeditor-phonenumber form-element">
+                    <label for="PhoneNumber">@Html.Sitecore().Field("Phone Number Label", currentItem)<span>*</span></label>
+                    @Html.TextBoxFor(m => m.PhoneNumber,
+                    new
+                    {
+                        placeholder = Html.Sitecore().CurrentItem["Phone Number Hint Text"],
+                        data_val_required = Html.Sitecore().CurrentItem["Phone Number Missing Message"],
+                        disabled = "disabled"
+                    })
+                    @Html.ValidationMessageFor(m => m.PhoneNumber)
+                </div>
+
+                <div class="profileeditor-buttons-section">
+                    <button type="submit" data-loading-text="@savingLabel" data-text="@currentItem["Save Changes Button Label"]" title="@currentItem["Save Changes Button Tooltip"]">@Html.Sitecore().Field("Save Changes Button Label", currentItem)</button>
+                    <a title="@currentItem["Cancel Button Tooltip"]" href="@cancelRedirectLink">@Html.Sitecore().Field("Cancel Button Label", currentItem)</a>
+                </div>
+            }
+        </div>
+    }
+</div>

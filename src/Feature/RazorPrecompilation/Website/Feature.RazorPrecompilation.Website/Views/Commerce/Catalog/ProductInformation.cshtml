@@ -1,0 +1,45 @@
+﻿
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+
+@model CatalogItemRenderingModel
+
+@{
+    if (Model == null)
+    {
+        return;
+    }
+}
+
+
+<div @Html.Sxa().Component("cxa-productinformation-component", Model.Attributes)>
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        <div class="product-info component-content">
+            <div class="product-name">
+                <h1 id="displayName">@Model.DisplayNameRender</h1>
+            </div>
+            <div class="product-number">
+                <p>
+                    @Html.Sitecore().Field("Item Number", Html.Sitecore().CurrentItem)
+                    <span class="itemNumber">@Model.RenderField("ItemNumber")</span>
+                </p>
+            </div>
+            <div class="product-description">
+                <h6>@Html.Sitecore().Field("Description", Html.Sitecore().CurrentItem)</h6>
+                <p class="description">@Model.DescriptionRender</p>
+            </div>
+            <div class="product-features" id="features">
+                @Model.Features
+            </div>
+        </div>
+    }
+</div>

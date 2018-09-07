@@ -1,0 +1,52 @@
+﻿﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Theming.Bundler
+@using Sitecore.XA.Foundation.Grid.Extensions
+
+@model Sitecore.XA.Feature.Overlays.Models.OverlayRenderingModel
+
+
+@{
+    AssetLinks assetLinks = AssetLinksGenerator.GenerateLinks(new ThemesProvider());
+}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="@Model.RenderingModel.Item.Language.Name">
+<!--<![endif]-->
+<head>
+    @foreach (string style in assetLinks.Styles)
+    {
+        @Html.Raw(style)
+    }
+</head>
+<body @Html.Sxa().Body().Decorate()>
+    <div id="wrapper" class="overlay-page">
+        <div class="@Html.Sxa().GridPlaceholderClasses("main") component-content" data-width="@Model.Width" data-height="@Model.Height"  data-percent="@Model.Percent">
+            <div class="row overlay-inner">
+                @Html.Sitecore().Placeholder("overlay")
+            </div>
+        </div>
+    </div>
+
+    @{
+        foreach (string script in assetLinks.Scripts)
+        {
+            @Html.Raw(script)
+        }
+        if (!Sitecore.Context.PageMode.IsNormal)
+        {
+            <input type="hidden" value="@(Sitecore.Context.PageMode.IsPreview ? "preview" : "edit")" />
+        }
+    }
+
+    @*
+        //TODO: When Forms will be implemented rewrite this to more generic solution.
+        @{ Html.RenderDelayed("FormWrapper"); }
+    *@
+</body>
+</html>

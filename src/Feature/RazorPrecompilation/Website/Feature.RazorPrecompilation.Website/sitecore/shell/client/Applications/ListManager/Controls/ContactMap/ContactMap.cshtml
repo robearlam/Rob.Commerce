@@ -1,0 +1,71 @@
+﻿@using Sitecore
+@using Sitecore.ListManagement.Client.Web.UI.Controls.ImportMapTo
+@using Sitecore.Mvc.Presentation
+@using Texts = Sitecore.ListManagement.Client.Texts
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+
+    var rendering = new ImportMapTo(new DatasourceBasedParametersResolver(Model.Rendering))
+    {
+        Class = "sc-importMapTo"
+    };
+
+    rendering.Requires.Script("listmanager", "ContactMap.js");
+    rendering.Requires.Css("listmanager", "ImportMapTo.css");
+
+    rendering.SetAttribute("data-sc-importmodel", rendering.GetImportModelJSon());
+
+    var controlId = rendering.ControlId;
+    var htmlAttributes = rendering.HtmlAttributes;
+}
+
+<script data-layout-importmapto-row="@controlId" type="text/x-sc-importMapTo">
+  <div class="row row-fluid sc-show-padding">
+    <div class="col-md-3">
+      <span class="sc-text pull-left"><%= fieldName %><% if(required == true) { %> <span class="lm-asterisk">*</span><% } %></span>
+    </div>
+    <div class="col-md-5">
+      <input type="text" class="form-control sc-text" name="sc-text-@controlId" id="sc-text-@controlId"
+             data-datafield="<%= dataField %>" data-automap="<%= autoMap %>" data-position="<%= position %>" data-sc-maxlength="<%= maxLength %>" maxlength="<%= maxLength %>" />
+    </div>
+  </div>
+</script>
+
+<div @htmlAttributes>
+    <div>
+        <div>
+            <div class="row row-fluid sc-show-paddingLeftBottom">
+                <div class="col-md-9">
+                    <span class="pull-left" title="@ClientHost.Globalization.Translate(Texts.TheContactIdentifierIsTheUniqueValueThatIdentifiesYourContacts)">
+                        <input type="checkbox" class="sc-importmaptomanualmap"/> @ClientHost.Globalization.Translate(Texts.ManuallyMapContactIdentifiersToUseEmailAddressAsTheContactIdentifierLeaveUnchecked)
+                    </span>
+                </div>
+            </div>
+            <div class="row row-fluid sc-show-paddingLeftBottom">
+                <div class="col-md-9">
+                    <span class="pull-left" title="@ClientHost.Globalization.Translate(Texts.TheContactIdentifierSourceIsTheValueThatShowsWhichSystemTheIdentifierOriginatedFrom)">
+                        <input type="checkbox" class="sc-identifiersourcemap" /> @ClientHost.Globalization.Translate(Texts.ManuallyMapContactIdentifierSourcesToUseTheDefaultListManagerIdentifierSourceLeaveUnchecked)
+                    </span>
+                </div>
+            </div>
+            <div class="lm-header">
+                <div class="row row-fluid sc-show-padding">
+                    <div class="col-md-3">
+                        <label class="sc-label pull-left">
+                            <strong>@ClientHost.Globalization.Translate(Texts.SitecoreField)</strong>
+                        </label>
+                    </div>
+                    <div class="col-md-5">
+                        <label class="sc-label pull-left">
+                            <strong>@ClientHost.Globalization.Translate(Texts.NewContactDetails)</strong>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lm-scroll-add">
+            <div class="sc-align-center sc-importmaptobody">
+            </div>
+        </div>
+    </div>
+</div>

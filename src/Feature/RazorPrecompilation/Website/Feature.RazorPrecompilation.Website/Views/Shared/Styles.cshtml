@@ -1,0 +1,105 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Presentation
+@model Sitecore.XA.Foundation.Presentation.Models.Styling
+
+<style>
+    .style-group-list {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .style-selected {
+        color: #2694C0;
+    }
+
+    .style-field.show-selected .style-selector {
+        display: none;
+    }
+
+        .style-field.show-selected .style-selector.selected {
+            display: block;
+        }
+
+            .style-field.show-selected .style-selector.selected.hidden {
+                display: none;
+            }
+
+    .style-field .style-selector {
+        display: block;
+        padding: 0px 0px 5px 6px;
+    }
+
+    .style-field.show-selected .show-all-button {
+        pointer-events: all;
+        cursor: pointer;
+        color: #2694C0;
+    }
+
+    .style-field .show-all-button {
+        pointer-events: none;
+        cursor: default;
+        color: #999999;
+    }
+
+    .style-field .show-sellected-button {
+        pointer-events: all;
+        cursor: pointer;
+    }
+
+    .style-field.show-selected .show-sellected-button {
+        pointer-events: none;
+        cursor: default;
+        color: #999999;
+    }
+
+    .style-field .style-selector.hidden {
+        display: none;
+    }
+
+    .style-field .style-group-name {
+        font-weight: bold;
+    }
+
+    .style-group-source {
+        color: #999999;
+        font-weight: normal;
+    }
+</style>
+
+<div class="style-field">
+    <div class="scContentButtons">
+        <a href="#" class="scContentButton show-all-button">@Sitecore.Globalization.Translate.Text(Texts.ShowAll)</a>
+        <a href="#" class="scContentButton show-sellected-button">@Sitecore.Globalization.Translate.Text(Texts.ShowSelected)</a>
+        <a href="#" class="scContentButton clear-filter">@Sitecore.Globalization.Translate.Text(Texts.ClearFilter)</a>
+    </div>
+    <div>
+        <input class="filter-input" type="text" placeholder="@Sitecore.Globalization.Translate.Text(Texts.FilterByNameAndClass)" />
+    </div>
+    <div class="styles-list">
+        @foreach (var styleGroup in Model.StyleGroups)
+        {
+            <div class="style-group">
+                <div class="style-group-name">@styleGroup.FullName<span class="style-group-source">@styleGroup.Source</span></div>
+                <div class="style-group-list">
+                    @foreach (var style in styleGroup.Styles)
+                    {
+                        var check = "";
+                        var cls = "";
+                        var selected = "";
+
+                        if (style.Selected)
+                        {
+                            check = "checked";
+                            cls = "style-selected";
+                            selected = "selected";
+                        }
+
+                        <div class="style-selector @selected">
+                            <label title="@style.Classes" class="@cls"><input type="checkbox" styleId="@style.ID" classes="@style.Classes" value="@style.Name" @check>@style.Name</label>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

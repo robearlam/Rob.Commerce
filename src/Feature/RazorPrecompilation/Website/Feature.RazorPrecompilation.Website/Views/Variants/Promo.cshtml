@@ -1,0 +1,25 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "promo", Model.Attributes)>
+        <div class="component-content">
+            @if(Model.DataSourceItem == null)
+            {
+                @Model.MessageIsEmpty
+            }
+            else
+            {
+                foreach (BaseVariantField variantField in Model.VariantFields)
+                {
+                    @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+                }
+            }
+        </div>
+    </div>
+}

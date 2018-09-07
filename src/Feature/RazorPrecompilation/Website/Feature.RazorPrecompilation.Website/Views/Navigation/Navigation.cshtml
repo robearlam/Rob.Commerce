@@ -1,0 +1,15 @@
+﻿@using Sitecore.XA.Feature.Navigation.Models
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.XA.Feature.Navigation.Models.NavigationRenderingModel
+
+@if (Model.Children.Any())
+{
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "navigation", Model.Attributes)>
+        <div class="component-content">
+            <nav>
+                @{ Html.RenderPartial("NavigationLevel", new NavigationExtendedModel { Children = Model.Children }); }
+            </nav>
+        </div>
+    </div>
+}

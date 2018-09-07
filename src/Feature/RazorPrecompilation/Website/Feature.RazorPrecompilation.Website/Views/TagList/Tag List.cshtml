@@ -1,0 +1,26 @@
+@model Sitecore.XA.Feature.Taxonomy.Model.TagListRenderingModel
+@using Sitecore.Data.Items
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "tag-list", Model.Attributes)>
+    <div class="component-content">
+        @if (Model.Items.Any() && Model.VariantFields != null)
+        {
+                foreach (Item item in Model.Items)
+                {
+                        foreach (BaseVariantField variantField in Model.VariantFields)
+                        {
+                            @Html.RenderingVariants().RenderVariant(variantField, item, Model.RenderingWebEditingParams, Model, Model.HrefOverride)
+                        }
+                }
+        }
+        else
+        {
+            @Model.MessageIsEmpty
+        }
+    </div>
+</div>

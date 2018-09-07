@@ -1,0 +1,14 @@
+﻿@model Sitecore.Speak.Components.Models.AutomationCampaignLists.AutomationCampaignListRenderingModel
+@{
+    Model.DataBind.IsVisible();
+
+    Model.Requires.Clear();
+    Model.Requires.Script("ma", "AutomationCampaignList.js");
+
+    Model.Attributes["data-ma-isActive"] = Model.IsActive.ToLower();
+    Model.Attributes["data-ma-serviceurl"] = Model.ServiceUrl.ToString();
+}
+
+<div @Model.HtmlAttributes>
+    @Model.Layout
+</div>

@@ -1,0 +1,24 @@
+﻿@using Sitecore.ContentTesting
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@using Sitecore.ContentTesting.Components
+@using Sitecore.Globalization;
+@model RenderingModel
+@{
+
+  var resolver = Html.Sitecore().Controls().GetParametersResolver(Model.Rendering);
+  var component = new ZoomFrame(resolver);
+  var htmlAttributes = component.HtmlAttributes;
+
+  var textClickImageToZoom = Translate.Text(Texts.CLICK_IMAGE_TO_ZOOM);
+}
+<div @htmlAttributes>
+  <div id="dvZoom" style="display:none;">
+    <img id="imgZoomClose" src="/sitecore/shell/client/Applications/ContentTesting/Assets/crossClose.png">
+    <span class="zoomInfo">@textClickImageToZoom</span>
+  </div>
+  <div id="dvImgZoom">
+    <img id="imgZoom" />
+  </div>
+</div>

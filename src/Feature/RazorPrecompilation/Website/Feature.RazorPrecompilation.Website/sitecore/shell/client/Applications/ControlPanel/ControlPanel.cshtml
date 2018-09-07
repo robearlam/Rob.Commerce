@@ -1,0 +1,165 @@
+﻿@using Sitecore.ControlPanel
+@using Sitecore.Data
+@using Sitecore.Data.Items
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Globalization
+@using Sitecore.Mvc
+@using Sitecore.Resources
+@using Sitecore.Web.UI
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@using Sitecore.Configuration;
+@using Sitecore.Configuration.BooleanLogic
+@using Sitecore.Speak.Applications.Dependencies
+@model RenderingModel
+
+@{
+    Sitecore.Shell.Web.ShellPage.IsLoggedIn();
+
+    var control = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+    var controlPanelItem = Sitecore.Context.Database.GetItem("{AD6A5F44-088A-450E-9DBE-75DDADC94C57}");
+    const string analyticsSectionID = "{5023026B-1249-4951-AC4B-5638A9B7A8FB}";
+    const string indexingSectionID = "{63E13AE2-503A-49BD-8F30-25F2721C3598}";
+    var resetMySettingsMessage = Sitecore.ClientHost.Globalization.Translate(Sitecore.Texts.YOUR_SETTINGS_HAVE_BEEN_RESET_SOME_CHANGES_WILL_FIRST_TAKE_EFFECT_WHEN_THE_BROWSER_IS_REFRESHED);
+    var untranslatedfieldsViewerItem = Sitecore.Context.Database.GetItem("{211B10C7-F5BD-4219-8715-15EA0CAD2D80}");
+    resetMySettingsMessage = resetMySettingsMessage.Replace("\r\n", "<br />").Replace("\n", "<br />").Replace("\r", "<br />");
+    var untranslatedfieldsViewerHeader = untranslatedfieldsViewerItem["Display name"];
+    Product xdbProduct = AppDependencyManager.RegisteredProducts["xdb"];
+    var isAnalyticsEnabled = xdbProduct != null && xdbProduct.IsEnabled();
+    var isBucketsEnabled = Settings.GetBoolSetting("BucketConfiguration.ItemBucketsEnabled", false);
+
+}
+
+@functions
+{
+
+    ID populateSolrManagedOption = new ID("4B13D29A-A906-4FB5-9CFF-024C4C4C6A12");
+    ID generateSolrSchemaOption = new ID("059A4603-0DC2-4DF8-BF1F-1E38FC901C1C");
+
+    string schemaClass = Sitecore.Context.ConfigurationRules.SearchProviders[0] == "solr" ? Settings.GetSetting("ContentSearch.Solr.SolrSchemaClass") : "none";
+
+    bool IsSolrSchemaItem(ID itemId)
+    {
+        return itemId == populateSolrManagedOption || itemId == generateSolrSchemaOption;
+    }
+
+    bool SkipSolrSchemaItem(ID itemId)
+    {
+        if (schemaClass == "managed")
+        {
+            return itemId != populateSolrManagedOption;
+        }
+        if (schemaClass == "classic")
+        {
+            return itemId != generateSolrSchemaOption;
+        }
+        return true;
+    }
+
+}
+<script type="text/javascript">
+
+    //not allow to open this page in iframe
+    if (window != top) {
+        top.location.href = window.location.href;
+    }
+
+    var ControlPanel = {
+        closeModalDialogHandler: function (result) {
+            if (result) {
+                if (this.request.parameters == "globalization:untranslatedfields")
+                    scForm.showModalDialog("/sitecore/shell/Applications/Globalization/Untranslated Fields/Viewer.aspx?fi=" + result, "_blank", "getBestDialogSize:true;header:@untranslatedfieldsViewerHeader");
+
+                if (this.request.parameters == "usermanager:resetmysettings" && result == "yes")
+                    scForm.showModalDialog("/sitecore/shell/default.aspx?xmlcontrol=Alert", { message: "@Html.Raw(resetMySettingsMessage)" }, "dialogWidth:400px;dialogHeight:190px;help:no;scroll:no;resizable:no;maximizable:no;status:no;center:yes;autoIncreaseHeight:yes");
+            }
+        }
+    };
+</script>
+<div @control.HtmlAttributes>
+    @{
+        for (var n = 0; n < controlPanelItem.Children.Count; n++)
+        {
+            var child = controlPanelItem.Children[n];
+            var isAnalyticsSection = child.ID.Equals(new ID(analyticsSectionID));
+            var isIndexingSection = child.ID.Equals(new ID(indexingSectionID));
+
+
+            if (n % 3 == 0)
+            {
+                Write(Html.Raw("<div class=\"row row-" + n / 3 + "\">"));
+            }
+
+            if (!(isAnalyticsSection && !isAnalyticsEnabled) && !(isIndexingSection && !isBucketsEnabled))
+            {
+                <div class="col-md-4">
+                    <div class="sc-controlpanel-box">
+                        <div class="sc-controlpanel-box-header">
+                            <h4>@Html.Raw(Images.GetImage(child["Icon"], ImageDimension.id24x24)) @child["Header"]</h4>
+                        </div>
+
+                        <div class="sc-controlpanel-box-content">
+                            @if (child.Children.Count > 0)
+                            {
+                                <ul>
+                                    @foreach (Item option in child.Children)
+                                    {
+                                        if (IsSolrSchemaItem(option.ID) && SkipSolrSchemaItem(option.ID))
+                                        {
+                                            continue;
+                                        }
+                                        var click = option["click"];
+                                        var header = option["Header"];
+
+                                        if (option.Template.Key == "task option")
+                                        {
+                                            var url = option["Url"];
+                                            if (!string.IsNullOrEmpty(url))
+                                            {
+                                                click = "javascript: scForm.showModalDialog('" + url + "', '', '', ControlPanel.closeModalDialogHandler);";
+                                            }
+                                            else
+                                            {
+                                                if (string.IsNullOrEmpty(click))
+                                                {
+                                                    continue;
+                                                }
+
+                                                click = "javascript:return scForm.speakPostEvent(this,event,'" + click + "', ControlPanel.closeModalDialogHandler);";
+                                            }
+                                        }
+
+                                        if (option.Template.Key == "task page")
+                                        {
+                                            if (option.HasChildren)
+                                            {
+                                                click = "/sitecore/shell/default.aspx?sc_itemid=" + option.ID;
+                                            }
+                                        }
+
+                                        if (option.Template.Key == "task link")
+                                        {
+                                        }
+
+                                        <li>
+                                            <a href="javascript: void(0)" onclick="@click">@header</a>
+                                        </li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <div class="sc-controlpanel-no-items">@Sitecore.ClientHost.Globalization.Translate(Texts.NoOptionsAvailable)</div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+
+            if (n % 3 == 2)
+            {
+                Write(Html.Raw("</div>"));
+            }
+        }
+    }
+</div>

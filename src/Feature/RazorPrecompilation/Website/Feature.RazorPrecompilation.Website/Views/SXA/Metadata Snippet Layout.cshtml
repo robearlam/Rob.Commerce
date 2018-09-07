@@ -1,0 +1,64 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.Theming.Bundler
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    AssetLinks assetLinks = AssetLinksGenerator.GenerateLinks(new ThemesProvider());
+}
+
+<html>
+<head>
+    @foreach (string style in assetLinks.Styles)
+    {
+        @Html.Raw(style)
+    }
+</head>
+<body>
+    <!-- #wrapper -->
+    <div id="wrapper">
+        @Html.Sxa().RenderRaw("<html>")
+        @Html.Sxa().RenderRaw("<head>")
+        <div id="head" class="main clearfix">
+            <div class="row">
+                <div class="grid-12">
+                    @Html.Sitecore().Placeholder("head")
+                </div>
+            </div>
+        </div>
+        @Html.Sxa().RenderRaw("</head>")
+        @Html.Sxa().RenderRaw("<body>")
+        <div id="body-top" class="main clearfix">
+            <div class="row">
+                <div class="grid-12">
+                    @Html.Sitecore().Placeholder("body-top")
+                </div>
+            </div>
+        </div>
+        @Html.Sxa().RenderRaw("<div id=\"header\" class=\"main clearfix\">")
+        @Html.Sxa().RenderRaw("...")
+        @Html.Sxa().RenderRaw("</div>")
+
+        @Html.Sxa().RenderRaw("<div id=\"content\" class=\"main clearfix\">")
+        @Html.Sxa().RenderRaw("...")
+        @Html.Sxa().RenderRaw("</div>")
+
+        @Html.Sxa().RenderRaw("<div id=\"footer\" class=\"main clearfix\">")
+        @Html.Sxa().RenderRaw("...")
+        @Html.Sxa().RenderRaw("</div>")
+        <div id="body-bottom" class="main clearfix">
+            <div class="row">
+                <div class="grid-12">
+                    @Html.Sitecore().Placeholder("body-bottom")
+                </div>
+            </div>
+        </div>
+        @Html.Sxa().RenderRaw("</body>")
+        @Html.Sxa().RenderRaw("</html>")
+    </div>
+    @foreach (string script in assetLinks.Scripts)
+    {
+        @Html.Raw(script)
+    }
+</body>
+</html>

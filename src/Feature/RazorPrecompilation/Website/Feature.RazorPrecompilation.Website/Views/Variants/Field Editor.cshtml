@@ -1,0 +1,32 @@
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "field-editor", Model.Attributes)>
+    <div class="component-content">
+        @if (!Model.VariantFields.Any())
+        {
+            @Model.MessageIsEmpty
+        }
+        @if (Model.VariantFields.Any())
+        {
+            <table class="field-table">
+                @foreach (BaseVariantField variantField in Model.VariantFields)
+                {
+                    <tr>
+                        <td>
+                            @variantField.DiscoverFieldName():
+                        </td>
+                        <td>
+                            @Html.RenderingVariants().RenderVariant(variantField, Model.Rendering.Item, Model.IsControlEditable, Model)
+                        </td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+</div>

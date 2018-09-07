@@ -1,0 +1,63 @@
+﻿@using Sitecore.Web
+@using Sitecore.XA.Feature.Search
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Search.Models.ChecklistFilterRenderingModel
+
+@if (Model.IsEdit || Model.FacetItemName != null)
+{
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "facet-single-selection-list", Model.Attributes).Decorate("class", "facet-component") data-properties='@Model.JsonDataProperties'>
+    <div class="component-content">
+
+        @if (Model.DataSourceItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else if (Model.FacetItemName == null)
+        {
+            @Model.MessageFacetIsEmpty
+        }
+        else
+        {
+            { Html.RenderPartial("FacetHeader", Model); }
+            <div class="contentContainer">
+                @if (WebUtil.GetQueryString(Sitecore.XA.Feature.Search.Constants.CreativeExchangeExport) == "true")
+                {
+                    if (Model.MultiSelection)
+                    {
+                        <div class="facet-search-filter">                            
+                            <p class="facet-value" data-facetvalue="about">
+                                <input type="checkbox" name="facetValue">
+                                <label for="facetName">first <span class="facet-count" data-facetcount="1">(1)</span></label>
+                            </p>
+                            <p class="facet-value active-facet" data-facetvalue="about">
+                                <input type="checkbox" name="facetValue" checked="checked">
+                                <label for="facetName">second <span class="facet-count" data-facetcount="1">(1)</span></label>
+                            </p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="facet-search-filter">                            
+                            <p class="facet-value" data-facetvalue="about">
+                                <span>first <span class="facet-count">(1)</span></span>
+                            </p>
+                            <p class="facet-value active-facet" data-facetvalue="about">
+                                <span>second <span class="facet-count">(1)</span></span>
+                            </p>
+                        </div>
+                    }
+                }
+            </div>
+            { Html.RenderPartial("FacetRemoveFilterButton", Model); }
+            if (!String.IsNullOrWhiteSpace(Model.FilterButtonLabel) || Model.MultiSelection)
+            {
+                <div class="bottom-filter-button">
+                    <input type="button" class="filterButton" value="@(!string.IsNullOrWhiteSpace(Model.FilterButtonLabel) ? Model.FilterButtonLabel : Sitecore.Globalization.Translate.Text(Texts.Filter))" />
+                </div>
+            }
+        }
+    </div>
+</div>
+}

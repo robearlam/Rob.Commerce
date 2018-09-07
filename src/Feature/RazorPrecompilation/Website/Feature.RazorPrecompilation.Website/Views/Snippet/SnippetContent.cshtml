@@ -1,0 +1,15 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Composites.Models.SnippetRenderingModel
+
+@{
+    var contentBaseKey = "section-content";
+    var contentKey = string.Format("{0}-1-{1}", contentBaseKey, Model.Id);
+}
+
+<div class="snippet">
+    @using (Html.Sxa().BeginEditFrame(Model.CompositeItem.ID.ToString(), "Snippet", Model.IsControlEditable))
+    {
+        @Html.Sitecore().Placeholder(contentKey)
+    }
+</div>

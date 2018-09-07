@@ -1,0 +1,680 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5D267B4-FC99-44A0-928D-F10A6F74724A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Feature.RazorPrecompilation.Website</RootNamespace>
+    <AssemblyName>Feature.RazorPrecompilation.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Extensions.DependencyInjection.1.0.0\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Cintel.Client, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Cintel.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.Cintel.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Client, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.Connect.Core">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.Connect.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.Account">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.Account.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.Cart">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.Cart.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.Catalog">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.Catalog.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.CategoryNavigation">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.CategoryNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.LanguageSelection">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.LanguageSelection.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.SearchBar">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.SearchBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Feature.TopBarLinks">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Feature.TopBarLinks.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.Common">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Commerce.XA.Foundation.SiteMetadata">
+      <HintPath>..\..\..\..\..\lib\Sitecore.Commerce.XA.Foundation.SiteMetadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentTesting, Version=12.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ContentTesting.NoReferences.9.0.180604\lib\NET462\Sitecore.ContentTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ControlPanel, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ControlPanel.NoReferences.9.0.180604\lib\NET462\Sitecore.ControlPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.EDS.Client, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.EDS.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.EDS.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceExplorer.Web, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ExperienceExplorer.Web.NoReferences.9.0.180604\lib\NET462\Sitecore.ExperienceExplorer.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceForms, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ExperienceForms.NoReferences.9.0.180604\lib\NET462\Sitecore.ExperienceForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceForms.Client, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ExperienceForms.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.ExperienceForms.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceForms.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ExperienceForms.Mvc.NoReferences.9.0.180604\lib\NET462\Sitecore.ExperienceForms.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.FXM, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.FXM.NoReferences.9.0.180604\lib\NET462\Sitecore.FXM.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.FXM.Speak, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.FXM.Speak.NoReferences.9.0.180604\lib\NET462\Sitecore.FXM.Speak.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.LaunchPad, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.LaunchPad.NoReferences.9.0.180604\lib\NET462\Sitecore.LaunchPad.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ListManagement, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ListManagement.NoReferences.9.0.180604\lib\NET462\Sitecore.ListManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ListManagement.Client, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.ListManagement.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.ListManagement.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Automation.Client, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Marketing.Automation.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.Marketing.Automation.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Campaigns.Client, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Marketing.Campaigns.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.Marketing.Campaigns.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Client, Version=11.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Marketing.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.Marketing.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Mvc.NoReferences.9.0.180604\lib\NET462\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics, Version=11.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Mvc.Analytics.NoReferences.9.0.180604\lib\NET462\Sitecore.Mvc.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.PathAnalyzer, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.PathAnalyzer.NoReferences.9.0.180604\lib\NET462\Sitecore.PathAnalyzer.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.PathAnalyzer.Client, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.PathAnalyzer.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.PathAnalyzer.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Applications, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Speak.Applications.NoReferences.9.0.180604\lib\NET462\Sitecore.Speak.Applications.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Client, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Speak.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.Speak.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Components, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Speak.Components.NoReferences.9.0.180604\lib\NET462\Sitecore.Speak.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Components.Web, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.Speak.Components.Web.NoReferences.9.0.180604\lib\NET462\Sitecore.Speak.Components.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Analytics, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Analytics.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Compliancy, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Compliancy.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Compliancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Composites, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Composites.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Composites.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Context, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Context.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Engagement, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Engagement.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Engagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Events, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Events.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Forms, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Forms.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.GenericMetaRendering, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.GenericMetaRendering.3.7.0.643\lib\NET462\Sitecore.XA.Feature.GenericMetaRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Json, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Json.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.LayoutServices.Integration, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.LayoutServices.Integration.3.7.0.643\lib\NET462\Sitecore.XA.Feature.LayoutServices.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Maps, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Maps.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Media, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Media.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Navigation, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Navigation.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Overlays, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Overlays.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Overlays.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.PageContent, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.PageContent.3.7.0.643\lib\NET462\Sitecore.XA.Feature.PageContent.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.PageStructure, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.PageStructure.3.7.0.643\lib\NET462\Sitecore.XA.Feature.PageStructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Search, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Search.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Security, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Security.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.SiteMetadata, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.SiteMetadata.3.7.0.643\lib\NET462\Sitecore.XA.Feature.SiteMetadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Social, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Social.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Feature.Taxonomy, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Taxonomy.3.7.0.643\lib\NET462\Sitecore.XA.Feature.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.DynamicPlaceholders, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.DynamicPlaceholders.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.DynamicPlaceholders.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Grid, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Grid.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.JsonVariants, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.JsonVariants.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.JsonVariants.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.MarkupDecorator, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.MarkupDecorator.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Mvc, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Presentation, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Presentation.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.RenderingVariants, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.RenderingVariants.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Search, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Search.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.SitecoreExtensions.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Theming, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Theming.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Theming.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Variants.Abstractions.3.7.0.643\lib\NET462\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.Runtime.Extensions.4.1.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Feature\Feature.RazorPrecompilation.Website.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="sitecore\shell\client\Applications\CampaignManager\Controls\AnalyticsChecker\AnalyticsChecker.cshtml" />
+    <None Include="sitecore\shell\client\Applications\CampaignManager\Controls\CampaignClassifications\CampaignClassifications.cshtml" />
+    <None Include="sitecore\shell\client\Applications\CampaignManager\Controls\CampaignDataSource\CampaignDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\CampaignManager\Controls\TreeListExEditor\TreeListExEditor.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\Behaviours\MultiSelectListExtended.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\Behaviours\StateChangeListBehavior.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ButtonGroup\ButtonGroup.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\CarouselImage\CarouselImage.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\CompareImage\CompareImage.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataRepeater\ContentTestingDataRepeater.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ActivityDataSource\ActivityDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\BaseDataSource\OptimizationBaseDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\BaseDataSource\OptimizationEntriesBaseDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\BestGuessDataSource\BestGuessingDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ConversionRateDataSource\ConversionRateDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ExperienceEngagementDataSource\ExperienceEngagementDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ExperienceKPIDataSource\ExperienceKPIDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\FilteringDataSource\FilteringDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\HighestEffectDataSource\HighestEffectDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ItemFromQueryString\ItemFromQueryString.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ItemInfoDataSource\ItemInfoDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\KPIDataSource\KPIDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\MostActiveUserDataSource\MostActiveUserDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\OverallPerformanceDataSource\OverallPerformanceDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\PersonalizationRuleDataSource\PersonalizationRuleDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ReachDataSource\ReachDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ReportingDatesDataSource\ReportingDatesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\RulePerformanceDataSource\RulePerformanceDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\RulesDataSource\RulesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\RuleSetPerformanceDataSource\RuleSetPerformanceDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\SitecoreQueryDataSource\SitecoreQueryDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\SiteUsageDataSource\SiteUsageDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestCandidatesDataSource\TestCandidatesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestDefinitionDataSource\TestDefinitionDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestDurationDataSource\TestDurationDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestExpectationsDataSource\TestExpectationsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestObjectivesDataSource\TestObjectivesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestOutcomesDataSource\TestOutcomesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestsDataSource\TestsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestSummary\TestSummary.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestVariablesDataSource\TestVariablesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TestVariationsDataSource\TestVariationsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\ThumbnailImageDataSource\ThumbnailImageDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TopClicksToPagesDataSource\TopClicksToPagesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\TopGoalsDataSource\TopGoalsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\DataSource\VariablesDataSource\VariablesDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ExperienceIndicator\ExperienceIndicator.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\FilteredComboBox\FilteredComboBox.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\GroupedCheckboxList\GroupedCheckboxList.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ImageSrc\ImageSrc.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\OptionsMapper\OptionsMapper.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\PageThumbnail\PageThumbnail.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ProgressBarCustom\ProgressBarCustom.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\QueryStringParameterResolver\QueryStringParameterResolver.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ResizableFrameGrip\ResizableFrameGrip.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ScoreGainedSpot\ScoreGainedSpot.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\SliderAdvanced\SliderAdvanced.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\StateListControl\StateListControl.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\TestOptions\TestOptions.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\TextTemplate\TextTemplate.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\UnorderedList\UnorderedList.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ValueBar\ValueBar.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\WrappingLink\WrappingLink.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\ZoomFrame\ZoomFrame.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ContentTesting\Components\__OLD\KPISpot\KPISpot.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ControlPanel\ControlPanel.cshtml" />
+    <None Include="sitecore\shell\client\Applications\EDS\Common\Layouts\Renderings\Data\CustomSearchDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ExperienceProfile\Common\Layouts\Renderings\DataRepeater\DataRepeater.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ExperienceProfile\Common\Layouts\Renderings\Structures\Page Structures\Application\Task.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ExperienceProfile\Layouts\Renderings\Structures\Page Structures\Application\ContactDashboard.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\Composites\DatasourceManager\DatasourceManager.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\Composites\DatesManager\DatesManager.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\Composites\SubmitActionsManager\SubmitActionsManager.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\DynamicDatasource\DynamicDatasource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\FormDesignBoard\FormDesignBoard.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\FormsListControl\FormsListControl.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\ImageSelector\ImageSelector.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FormsBuilder\Layouts\Renderings\KeyValuePairEditor\KeyValuePairEditor.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Components\AnalyticsItemPicker.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Components\DashboardMenu.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Components\EditClientActionControl.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Components\EditElementReplacerControl.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Components\EditPageMatcherControl.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Components\FilteredTreeview.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Data\CustomSearchDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\FXM\Layouts\Renderings\Data\FxmDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\LaunchPad\Layouts\Renderings\LaunchBar.cshtml" />
+    <None Include="sitecore\shell\client\Applications\LaunchPad\Layouts\Renderings\LaunchTile.cshtml" />
+    <None Include="sitecore\shell\client\Applications\LaunchPad\Layouts\Renderings\LaunchTiles.cshtml" />
+    <None Include="sitecore\shell\client\Applications\LicenseOptions\Components\ActiveUsersDataSource\ActiveUsersDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\LicenseOptions\Components\LicenseOptionsPane\LicenseOptionsPane.cshtml" />
+    <None Include="sitecore\shell\client\Applications\LicenseOptions\Components\LicenseOption\LicenseOption.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\ContactFields\ContactFields.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\ContactMap\ContactMap.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\ContactsDataSource\ContactsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\ImportMapTo\ImportMapTo.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\ListManagementBreadCrumb\ListManagementBreadCrumb.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\ListsDataSource\ListsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\SegmentBuilder\SegmentBuilder.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\SegmentsDataSource\SegmentsDataSource.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\SegmentsView\SegmentsView.cshtml" />
+    <None Include="sitecore\shell\client\Applications\ListManager\Controls\Uploader\ListManagementUploader.cshtml" />
+    <None Include="sitecore\shell\client\Applications\MarketingAutomation\Common\Layouts\Renderings\Composites\AutomationCampaignList.cshtml" />
+    <None Include="sitecore\shell\client\Applications\MarketingAutomation\Common\Layouts\Renderings\Composites\CreatePopover.cshtml" />
+    <None Include="sitecore\shell\client\Applications\Marketing\Utilities\DeployMarketingDefinitions\DeployMarketingDefinitions.cshtml" />
+    <None Include="sitecore\shell\client\Applications\Marketing\Utilities\DeployMarketingDefinition\DeployMarketingDefinition.cshtml" />
+    <None Include="sitecore\shell\client\Applications\PathAnalyzer\Common\App.cshtml" />
+    <None Include="sitecore\shell\client\Applications\PathAnalyzer\Common\PageCode.cshtml" />
+    <None Include="sitecore\shell\client\Applications\PathAnalyzer\Common\StringDictionaryDomain.cshtml" />
+    <None Include="sitecore\shell\client\Applications\PathAnalyzer\PageAnalyzer\BodyScripts.cshtml" />
+    <None Include="sitecore\shell\client\Applications\PathAnalyzer\PathExplorer\BodyScripts.cshtml" />
+    <None Include="sitecore\shell\client\Business Component Library\Layouts\Renderings\Experience Accelerator\MapPointSelector\MapPointSelectorRendering.cshtml" />
+    <None Include="sitecore\shell\client\Sitecore\ContentTesting\Confirmation.cshtml" />
+    <None Include="sitecore\shell\client\Sitecore\ContentTesting\Error.cshtml" />
+    <None Include="sitecore\shell\client\Sitecore\ContentTesting\UtilLayout.cshtml" />
+    <None Include="sitecore\shell\client\Sitecore\ExperienceEditor\Dialogs\BaseDialogMockup\BaseDialogMockup.cshtml" />
+    <None Include="sitecore\shell\client\Sitecore\ExperienceEditor\Dialogs\Components\ContentSeparator.cshtml" />
+    <None Include="sitecore\shell\client\web.config" />
+    <None Include="Views\Accordion\Accordion.cshtml" />
+    <None Include="Views\AddThis\AddThis.cshtml" />
+    <None Include="Views\Archive\Archive.cshtml" />
+    <None Include="Views\Authoring\CompositePlaceholderDisabler.cshtml" />
+    <None Include="Views\Breadcrumb\Breadcrumb.cshtml" />
+    <None Include="Views\BrowserTitle\BrowserTitle.cshtml" />
+    <None Include="Views\Carousel\Carousel.cshtml" />
+    <None Include="Views\ChecklistFilter\Checklist Filter.cshtml" />
+    <None Include="Views\ColumnSplitter\Column Splitter.cshtml" />
+    <None Include="Views\Commerce\AccountAddress\Address Editor.cshtml" />
+    <None Include="Views\Commerce\AccountAddress\Address List.cshtml" />
+    <None Include="Views\Commerce\AccountProfile\Profile Editor.cshtml" />
+    <None Include="Views\Commerce\AccountProfile\Profile View.cshtml" />
+    <None Include="Views\Commerce\Account\Change Password.cshtml" />
+    <None Include="Views\Commerce\Account\Forgot Password.cshtml" />
+    <None Include="Views\Commerce\Account\Login.cshtml" />
+    <None Include="Views\Commerce\Account\Registration.cshtml" />
+    <None Include="Views\Commerce\AntiForgery\AntiForgery.cshtml" />
+    <None Include="Views\Commerce\Cart\AddToCart.cshtml" />
+    <None Include="Views\Commerce\Cart\MiniCart.cshtml" />
+    <None Include="Views\Commerce\Cart\PromotionCode.cshtml" />
+    <None Include="Views\Commerce\Cart\ShoppingCart.cshtml" />
+    <None Include="Views\Commerce\Cart\ShoppingCartLines.cshtml" />
+    <None Include="Views\Commerce\Cart\ShoppingCartTotal.cshtml" />
+    <None Include="Views\Commerce\Catalog\CatalogItemContainer.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductFacets.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductImages.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductInformation.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductInventory.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductList.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductListHeader.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductListItemsPerPage.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductListPageInfo.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductListPager.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductListSorting.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductPrice.cshtml" />
+    <None Include="Views\Commerce\Catalog\ProductVariants.cshtml" />
+    <None Include="Views\Commerce\Catalog\PromotedProducts.cshtml" />
+    <None Include="Views\Commerce\Catalog\SimpleText.cshtml" />
+    <None Include="Views\Commerce\Catalog\_ProductSummary.cshtml" />
+    <None Include="Views\Commerce\CategoryNavigation.cshtml" />
+    <None Include="Views\Commerce\Checkout\Billing.cshtml" />
+    <None Include="Views\Commerce\Checkout\Delivery.cshtml" />
+    <None Include="Views\Commerce\Checkout\OrderConfirmation.cshtml" />
+    <None Include="Views\Commerce\Checkout\Review.cshtml" />
+    <None Include="Views\Commerce\Checkout\StartCheckout.cshtml" />
+    <None Include="Views\Commerce\Checkout\StepIndicator.cshtml" />
+    <None Include="Views\Commerce\Checkout\_ByItem_SendByEmail.cshtml" />
+    <None Include="Views\Commerce\Checkout\_ByItem_ShipAll.cshtml" />
+    <None Include="Views\Commerce\Checkout\_PickDeliveryByItem.cshtml" />
+    <None Include="Views\Commerce\Checkout\_SendByEmail.cshtml" />
+    <None Include="Views\Commerce\Checkout\_ShipAll.cshtml" />
+    <None Include="Views\Commerce\LanguageSelector.cshtml" />
+    <None Include="Views\Commerce\MessageSummary.cshtml" />
+    <None Include="Views\Commerce\Metadata\Metadata.cshtml" />
+    <None Include="Views\Commerce\Orders\OrderHeader.cshtml" />
+    <None Include="Views\Commerce\Orders\OrderHistory.cshtml" />
+    <None Include="Views\Commerce\Orders\OrderLines.cshtml" />
+    <None Include="Views\Commerce\Orders\OrderTotals.cshtml" />
+    <None Include="Views\Commerce\Orders\RecentOrders.cshtml" />
+    <None Include="Views\Commerce\SearchBar\SearchBar.cshtml" />
+    <None Include="Views\Commerce\SiteBindings\SiteBindings.cshtml" />
+    <None Include="Views\Commerce\SubcategoryNavigation.cshtml" />
+    <None Include="Views\Commerce\TopBarLinks\Top Bar Links.cshtml" />
+    <None Include="Views\Container\Container.cshtml" />
+    <None Include="Views\CustomMetadata\CustomMetadata.cshtml" />
+    <None Include="Views\DateFilter\Date Filter.cshtml" />
+    <None Include="Views\Disqus\Disqus.cshtml" />
+    <None Include="Views\Divider\Divider.cshtml" />
+    <None Include="Views\DropdownFilter\Dropdown Filter.cshtml" />
+    <None Include="Views\EditModePanel\EditModePanel.cshtml" />
+    <None Include="Views\EventCalendar\Event Calendar.cshtml" />
+    <None Include="Views\EventList\Event List.cshtml" />
+    <None Include="Views\EventList\EventListEvent.cshtml" />
+    <None Include="Views\FacebookComments\Facebook Comments.cshtml" />
+    <None Include="Views\FacetSlider\Facet Slider.cshtml" />
+    <None Include="Views\Favicon\Favicon.cshtml" />
+    <None Include="Views\Feed\Feed.cshtml" />
+    <None Include="Views\FieldRenderer\FieldRenderer.cshtml" />
+    <None Include="Views\FileList\File List.cshtml" />
+    <None Include="Views\Flash\Flash.cshtml" />
+    <None Include="Views\Flip\Flip.cshtml" />
+    <None Include="Views\FormBuilder\Field.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Button.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Checkbox.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\CheckboxList.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Date.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\DropdownList.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Email.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\ListBox.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\MultipleLineText.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Number.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Page.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Password.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\PasswordConfirmation.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\RadioButtonList.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Section.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\SingleLineText.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Telephone.cshtml" />
+    <None Include="Views\FormBuilder\FieldTemplates\Text.cshtml" />
+    <None Include="Views\FormBuilder\Form.cshtml" />
+    <None Include="Views\FormBuilder\web.config" />
+    <None Include="Views\FormWrapper\FormsScripts.cshtml" />
+    <None Include="Views\FormWrapper\WFFM Form Wrapper.cshtml" />
+    <None Include="Views\Gallery\Gallery.cshtml" />
+    <None Include="Views\GoogleAnalytics\Google Analytics.cshtml" />
+    <None Include="Views\HtmlSnippet\HtmlSnippet.cshtml" />
+    <None Include="Views\IFrame\IFrame.cshtml" />
+    <None Include="Views\Image\Image.cshtml" />
+    <None Include="Views\JsonContent\Json Content.cshtml" />
+    <None Include="Views\JsonList\Json List.cshtml" />
+    <None Include="Views\JsonResults\Json Results.cshtml" />
+    <None Include="Views\LanguageSelector\Language Selector.cshtml" />
+    <None Include="Views\Layout\AccordionMvcLayout.cshtml" />
+    <None Include="Views\Layout\CarouselMvcLayout.cshtml" />
+    <None Include="Views\Layout\Composite Component Layout.cshtml" />
+    <None Include="Views\Layout\FlipMvcLayout.cshtml" />
+    <None Include="Views\Layout\SnippetMvcLayout.cshtml" />
+    <None Include="Views\Layout\TabMvcLayout.cshtml" />
+    <None Include="Views\LinkList\Link List.cshtml" />
+    <None Include="Views\Link\Link.cshtml" />
+    <None Include="Views\Livefyre\Livefyre.cshtml" />
+    <None Include="Views\LoadMore\Load More.cshtml" />
+    <None Include="Views\LocationFilter\Location Filter.cshtml" />
+    <None Include="Views\Login\Login.cshtml" />
+    <None Include="Views\Logout\Logout.cshtml" />
+    <None Include="Views\ManagedRangeFilter\Managed Range Filter.cshtml" />
+    <None Include="Views\Map\Map.cshtml" />
+    <None Include="Views\MediaLink\Media Link.cshtml" />
+    <None Include="Views\MetaTags\MetaTags.cshtml" />
+    <None Include="Views\Navigation\Navigation.cshtml" />
+    <None Include="Views\Navigation\NavigationLevel.cshtml" />
+    <None Include="Views\NonSxaContext\NonSxaContext.cshtml" />
+    <None Include="Views\OverlayLayout\Overlay.cshtml" />
+    <None Include="Views\OverlayLayout\OverlayEdit.cshtml" />
+    <None Include="Views\OverlayLayout\OverlayMvcLayout.cshtml" />
+    <None Include="Views\PageLayoutJson\Page layout as JSON.cshtml" />
+    <None Include="Views\PageList\Page List.cshtml" />
+    <None Include="Views\PageSelector\Page Selector.cshtml" />
+    <None Include="Views\PageSize\Page Size.cshtml" />
+    <None Include="Views\Pagination\Pagination.cshtml" />
+    <None Include="Views\Pagination\PaginationLink.cshtml" />
+    <None Include="Views\PlainHTML\PlainHTML.cshtml" />
+    <None Include="Views\Playlist\Playlist.cshtml" />
+    <None Include="Views\PrivacyWarning\Privacy Warning.cshtml" />
+    <None Include="Views\RadiusFilter\Radius Filter.cshtml" />
+    <None Include="Views\RangeSliderFilter\Range Slider Filter.cshtml" />
+    <None Include="Views\ResultsCount\Results Count.cshtml" />
+    <None Include="Views\ResultsVariantSelector\Results Variant Selector.cshtml" />
+    <None Include="Views\RichText\RichText.cshtml" />
+    <None Include="Views\RowSplitter\Row Splitter.cshtml" />
+    <None Include="Views\SearchBox\Search Box.cshtml" />
+    <None Include="Views\SearchResults\Search Results.cshtml" />
+    <None Include="Views\Shared\ExperienceExplorerView.cshtml" />
+    <None Include="Views\Shared\FacetHeader.cshtml" />
+    <None Include="Views\Shared\FacetRemoveFilterButton.cshtml" />
+    <None Include="Views\Shared\GridParameters.cshtml" />
+    <None Include="Views\Shared\Partial Design Dynamic Placeholder.cshtml" />
+    <None Include="Views\Shared\Sitecore Form Wrapper.cshtml" />
+    <None Include="Views\Shared\Styles.cshtml" />
+    <None Include="Views\SiteSelector\SiteSelector.cshtml" />
+    <None Include="Views\Snippet\Snippet.cshtml" />
+    <None Include="Views\Snippet\SnippetContent.cshtml" />
+    <None Include="Views\SocialLoginWrapper\Social Login Wrapper.cshtml" />
+    <None Include="Views\SocialMediaShare\Social Media Share.cshtml" />
+    <None Include="Views\SortResults\Sort Results.cshtml" />
+    <None Include="Views\Standard\SlideDefault.cshtml" />
+    <None Include="Views\StickyNote\StickyNote.cshtml" />
+    <None Include="Views\SxaLayout\BootstrapBody.cshtml" />
+    <None Include="Views\SxaLayout\FoundationBody.cshtml" />
+    <None Include="Views\SxaLayout\Grid960Body.cshtml" />
+    <None Include="Views\SxaLayout\SxaLayout.cshtml" />
+    <None Include="Views\SXA\Json Layout.cshtml" />
+    <None Include="Views\SXA\Meta Component Layout.cshtml" />
+    <None Include="Views\SXA\Metadata Snippet Layout.cshtml" />
+    <None Include="Views\SXA\Sample Json Rendering.cshtml" />
+    <None Include="Views\Tabs\Tabs.cshtml" />
+    <None Include="Views\Tabs\TabsContent.cshtml" />
+    <None Include="Views\Tabs\TabsHeading.cshtml" />
+    <None Include="Views\TagCloud\Tag Cloud.cshtml" />
+    <None Include="Views\TagList\Tag List.cshtml" />
+    <None Include="Views\Title\Title.cshtml" />
+    <None Include="Views\Toggle\Toggle.cshtml" />
+    <None Include="Views\Twitter\Twitter.cshtml" />
+    <None Include="Views\Variants\Field Editor.cshtml" />
+    <None Include="Views\Variants\Page Content.cshtml" />
+    <None Include="Views\Variants\Promo.cshtml" />
+    <None Include="Views\Video\Video.cshtml" />
+    <None Include="Views\Viewport\Viewport.cshtml" />
+    <None Include="Views\Web.config" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56622</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56622/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\..\..\..\..\packages\RazorGenerator.MsBuild.2.5.0\build\RazorGenerator.MsBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\..\packages\RazorGenerator.MsBuild.2.5.0\build\RazorGenerator.MsBuild.targets'))" />
+  </Target>
+  <Import Project="..\..\..\..\..\packages\RazorGenerator.MsBuild.2.5.0\build\RazorGenerator.MsBuild.targets" Condition="Exists('..\..\..\..\..\packages\RazorGenerator.MsBuild.2.5.0\build\RazorGenerator.MsBuild.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

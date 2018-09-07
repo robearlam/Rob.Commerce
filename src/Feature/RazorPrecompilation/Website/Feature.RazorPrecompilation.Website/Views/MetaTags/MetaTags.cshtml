@@ -1,0 +1,23 @@
+﻿@using Sitecore.XA.Feature.SiteMetadata.Models
+@model IEnumerable<Sitecore.XA.Feature.SiteMetadata.Models.MetaTagModel>
+
+@{
+    Layout = Sitecore.Configuration.Settings.GetSetting("XA.Foundation.Presentation.MetaComponentLayoutPath", "../SXA/Meta Component Layout.cshtml");
+}
+
+@functions {
+    private static string BuildAttribute(string attribute, string value)
+    {
+        return (!string.IsNullOrWhiteSpace(value) ? string.Format("{0}=\"{1}\"", attribute, value) : string.Empty);
+    }
+}
+
+@foreach (MetaTagModel tag in Model)
+{
+    if (!Sitecore.Context.PageMode.IsExperienceEditorEditing && string.IsNullOrWhiteSpace(tag.Content))
+    {
+        continue;        
+    }
+    
+    @Html.Raw(string.Format("<meta {0} {1} {2} />", BuildAttribute("content", tag.Content), BuildAttribute("name", tag.Name), BuildAttribute("property", tag.Property)))    
+}

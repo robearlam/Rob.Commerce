@@ -1,0 +1,36 @@
+﻿@using Sitecore.XA.Feature.Search
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Search.Models.SearchBoxRenderingModel
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "search-box", Model.Attributes) data-properties='@Html.Raw(Model.JsonDataProperties)'>
+    <div class="component-content">
+        @Model.MessageIsEmpty
+        @if (Model.DataSourceItem != null)
+        {
+            if (Model.SearchTextBoxVisible)
+            {
+                <label for="textBoxSearch">
+                    @Html.Sxa().Field(Templates.SearchBoxConfiguration.Fields.SearchTextBoxLabel, Model.DataSourceItem, !Model.IsControlEditable)
+                </label>
+                <input type="text" class="search-box-input" autocomplete="off" name="textBoxSearch" placeholder="@Model.SearchTextBoxText" />
+            }
+            if (!string.IsNullOrWhiteSpace(Model.SearchButtonText))
+            {
+                if (string.IsNullOrWhiteSpace(Model.SearchResultPageUrl))
+                {
+                    <button class="search-box-button" type="submit">
+                        @Model.SearchButtonText
+                    </button>
+                }
+                else
+                {
+                    <button class="search-box-button-with-redirect" type="submit">
+                        @Model.SearchButtonText
+                    </button>
+                }
+            }
+        }
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿@{
+    Layout = Sitecore.Configuration.Settings.GetSetting("XA.Feature.Composites.CompositeComponentLayoutPath", "Composite Component Layout.cshtml");
+    ViewBag.Title = "Edit carousel slide";
+}
+
+<div class="component carousel">
+    <div class="component-content">
+        <div data-id="divCarousel_0">
+            <div class="background"></div>
+            <ul class="slides">
+                <li class="slide">
+                    @Html.Sitecore().Placeholder("section-content")
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

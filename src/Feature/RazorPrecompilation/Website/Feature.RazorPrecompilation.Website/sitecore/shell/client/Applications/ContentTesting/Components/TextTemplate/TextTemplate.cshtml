@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.Texts
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@using Sitecore.Web.UI.XslControls
+@model Sitecore.ContentTesting.Components.TextTemplateModel
+@{
+  var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+  rendering.Class = "sc-TextTemplate";
+  rendering.Requires.Script("contenttesting", "TextTemplate.js");
+
+  var text = rendering.GetString("Text", "text");
+  
+  var textType = rendering.GetEnum<TextType>("TextType", TextType.Text);
+  var cssClass = Model.GetCssClass(textType);
+  rendering.AppendClass(cssClass);
+
+  var htmlAttributes = rendering.HtmlAttributes;
+}
+<span @htmlAttributes data-bind="text:rendered, visible:isVisible" data-sc-text="@text" data-sc-variable-bindings="@Model.GetVariableBindings()">
+</span>

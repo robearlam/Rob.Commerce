@@ -1,0 +1,54 @@
+﻿
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Commerce.XA.Feature.Catalog.Models.ProductListSortingRenderingModel
+
+<div @Html.Sxa().Component("cxa-productlistsorting-component", Model.Attributes)>
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        if (Model == null)
+        {
+            return;
+        }
+
+        <div class="component-content">
+            <div class="productlist-header-section">
+                <div class="Sort-By-container">
+                    @if (Model.SortFields != null && Model.SortFields.Any())
+                    {
+                        <span>@Html.Sitecore().Field("Sort by", Html.Sitecore().CurrentItem)</span>
+                        <select class="sort-dropdown">
+                            @foreach (var sortField in Model.SortFields)
+                            {
+                                var ascSelected = string.Empty;
+                                var descSelected = string.Empty;
+
+                                if (!string.IsNullOrEmpty(Model.CurrentSortField) && Model.CurrentSortField == sortField.Name)
+                                {
+                                    if (Model.CurrentSortDirection == Sitecore.Commerce.XA.Foundation.Common.Constants.SortDirection.Asc)
+                                    {
+                                        ascSelected = "selected";
+                                    }
+                                    else
+                                    {
+                                        descSelected = "selected";
+                                    }
+                                }
+
+                                <option value="@sortField.Name+" @ascSelected>@sortField.DisplayName @Html.Sitecore().CurrentItem["Ascending"]</option>
+                                <option value="@sortField.Name-" @descSelected>@sortField.DisplayName @Html.Sitecore().CurrentItem["Descending"]</option>
+                            }
+                        </select>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

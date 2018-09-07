@@ -1,0 +1,13 @@
+﻿@using Sitecore.ExperienceForms.Mvc.Constants
+@using Sitecore.ExperienceForms.Mvc.Html
+@model Sitecore.ExperienceForms.Mvc.Models.FormViewModel
+
+@{
+    using (Html.BeginRenderRouteForm(Model, IsPost))
+    {
+        @Html.AntiForgeryToken()
+        @Html.Hidden(AttributeNames.FormItemId, Model.ItemId)
+        @Html.ValidationSummary(true)
+        @Html.RenderFields(Model)
+    }
+}

@@ -1,0 +1,39 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.Grid.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+<div id="wrapper">
+    <!-- #header -->
+    <header>
+        <div id="header" class="@Html.Sxa().GridPlaceholderClasses("header")">
+            <div class="row">
+                <div class="grid-12">
+                    @Html.Sitecore().Placeholder("header")
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /#header -->
+    <!-- #content -->
+    <main>
+        <div id="content" class="@Html.Sxa().GridPlaceholderClasses("main")">
+            <div class="row">
+                <div class="grid-12">
+                    @Html.Sitecore().Placeholder("main")
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- /#content -->
+    <!-- #footer -->
+    <footer>
+        <div id="footer" class="@Html.Sxa().GridPlaceholderClasses("footer")">
+            <div class="row">
+                <div class="grid-12">
+                    @Html.Sitecore().Placeholder("footer")
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /#footer -->
+</div>

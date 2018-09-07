@@ -1,0 +1,9 @@
+﻿@model Sitecore.Speak.Components.Models.CompositeComponentRenderingModel
+@{
+    Model.Class.Append("sc-datesmanager");
+    Model.DataBind.IsVisible();
+}
+
+<div @Model.HtmlAttributes>
+    @Model.Layout
+</div>

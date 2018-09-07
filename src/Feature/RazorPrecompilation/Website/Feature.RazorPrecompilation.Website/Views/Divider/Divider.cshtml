@@ -1,0 +1,14 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Foundation.Mvc.Models.RenderingModelBase
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "divider", Model.Attributes)>
+    <div class="component-content">
+        <hr />
+        @if (!Model.IsControlEditable)
+        {
+            @Model.MessageEditHere
+        }
+    </div>
+</div>

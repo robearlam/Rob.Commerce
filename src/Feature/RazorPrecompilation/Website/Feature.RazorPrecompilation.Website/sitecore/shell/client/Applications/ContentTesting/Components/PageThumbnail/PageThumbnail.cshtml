@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.ContentTesting.Components
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var resolver = this.Html.Sitecore().Controls().GetParametersResolver(this.Model.Rendering);
+    var component = new PageThumbnail(resolver);
+
+    var htmlAttributes = component.HtmlAttributes;
+}
+<div @htmlAttributes class="sc-ThumbnailImage ssthumbnail blank">
+  <a class="preview" data-bind="visible: previewUrl && showLink, attr: { href: previewUrl, target: linkTarget }, click: function(){window.top.location = previewUrl();}">@component.PreviewLabel</a>
+</div>
+
+ 

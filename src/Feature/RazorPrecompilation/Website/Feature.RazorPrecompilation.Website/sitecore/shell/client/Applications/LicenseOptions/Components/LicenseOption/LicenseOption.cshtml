@@ -1,0 +1,36 @@
+﻿@using Sitecore
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Configuration
+@using Sitecore.Diagnostics
+@using Sitecore.Web
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model RenderingModel
+@{
+  var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+  rendering.Class = "sc-border sc-show-padding sc-LicenseOption";
+  rendering.Requires.Script("client", "LicenseOption.js");
+  rendering.Requires.Css("client", "LicenseOption.css");
+  var dataSourceItem = ClientHost.Items.GetItem(rendering.DataSource);
+  Assert.IsNotNull(dataSourceItem, "datasource");
+  
+  var text = dataSourceItem["Text"];
+  var imageUrl = dataSourceItem["ImageUrl"];
+  var navigateUrl = dataSourceItem["NavigateUrl"];
+  var helpText = dataSourceItem["HelpText"];
+  rendering.Attributes.Add("data-sc-navigateurl", navigateUrl);
+  var htmlAttributes = rendering.HtmlAttributes;
+}
+<div @htmlAttributes>
+  <div class="sc-border">
+    <img src="@(WebUtil.GetFullUrl(imageUrl))" alt="@text" />
+      <span class="sc-licenseoptions-text">
+        @text
+      </span>
+  </div>
+  <div class="sc-border">
+    <span class="sc-licenseoptions-helptext">
+      @helpText
+    </span>
+  </div>
+</div>

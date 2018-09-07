@@ -1,0 +1,111 @@
+﻿@using System.Globalization
+@using System.Web.Script.Serialization
+@using Newtonsoft.Json
+@using Sitecore
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@*@using Sitecore.Speak.Charting.sitecore.shell.client.SpeakCharting.Layouts.Renderings.Slider*@
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@using UserControl = Sitecore.Web.UI.Controls.Common.UserControls.UserControl
+@model RenderingModel
+@{
+    var userControl = this.Html.Sitecore().Controls().GetUserControl(this.Model.Rendering);
+    var cssClass = "sc-SliderAdvanced";
+    userControl.Requires.Css("contenttesting", "SliderAdvanced.css");
+    userControl.Requires.Script("contenttesting", "SliderAdvanced.js");
+
+    var minimum = userControl.GetDouble("Minimum", "minimum");
+    var maximum = userControl.GetDouble("Maximum", "maximum");
+    var countPoints = userControl.GetDouble("CountPoints", "countPoints");
+    var selectedValue = userControl.GetString("selectedValue", "SelectedValue");
+    var isRoundValue = userControl.GetString("IsRoundValue", "isRoundValue");
+    var isValueBackground = userControl.GetString("IsValueBackground", "IsValueBackground");    
+
+    var titleValueSuffix = userControl.GetString("TitleValueSuffix", "TitleValueSuffix");
+
+    var items = string.Empty;
+
+    //if (userControl.DataSource != null)
+    //{
+    //  items = GetItems(userControl, displayFieldName, valueFieldName);
+    //}    
+    items = userControl.GetString("Items", "Items");
+
+
+    userControl.Attributes["data-sc-minimum"] = minimum.ToString(CultureInfo.InvariantCulture);
+    userControl.Attributes["data-sc-maximum"] = maximum.ToString(CultureInfo.InvariantCulture);
+    userControl.Attributes["data-sc-items"] = items;
+    userControl.Attributes["data-sc-countpoints"] = countPoints.ToString(CultureInfo.InvariantCulture);
+    userControl.Attributes["data-sc-selectedvalue"] = selectedValue;
+    userControl.Attributes["data-sc-isroundvalue"] = isRoundValue.ToString(CultureInfo.InvariantCulture);
+    userControl.Attributes["data-sc-isvaluebackground"] = isValueBackground.ToString(CultureInfo.InvariantCulture);
+    
+    userControl.Attributes["data-sc-titlevaluesuffix"] = titleValueSuffix;
+
+
+    //userControl.DataBind = "enabled: isEnabled, visible: isVisible";
+
+    userControl.AppendClass(cssClass);
+    var htmlAttributes = userControl.HtmlAttributes;
+}
+
+@*@functions
+{
+    /// <summary>
+    /// Gets the items.
+    /// </summary>
+    /// <param name="userControl">The user control.</param>
+    /// <param name="displayFieldName">Display name of the field.</param>
+    /// <param name="valueFieldName">Name of the value field.</param>
+    /// <returns>List of items.</returns>
+    private static string GetItems([NotNull] UserControl userControl, string displayFieldName, string valueFieldName)
+    {
+        //var items = new List<SliderItem>();
+        var items = new List<dynamic>();
+
+        if (userControl.DataSource != null)
+        {
+            var dataSourceItem = ClientHost.Items.GetItem(userControl.DataSource);
+
+            foreach (Item child in dataSourceItem.Children)
+            {
+                if (child == null)
+                {
+                    continue;
+                }
+                var itemName = string.IsNullOrEmpty(displayFieldName) ? child.DisplayName : child[displayFieldName];
+                var itemId = child.ID.ToString();
+                var value = "";
+                if(string.IsNullOrEmpty(valueFieldName))
+                {
+                  if(child["Value"] != null)
+                    value = child["Value"].ToString();
+                  else
+                    value = child.ID.ToString();
+                }
+                else
+                {
+                  value = child[valueFieldName];
+                }
+                
+                //var record = new SliderItem { ItemId = itemId, ItemName = itemName, Value = value };        
+                var imgSrc = "";
+                if (child["ImgSrc"] != null)
+                    imgSrc = child["ImgSrc"];
+                var text = "";
+                if (child["Text"] != null)
+                    text = child["Text"];
+
+                items.Add(new { ItemId = itemId, ItemName = itemName, Value = value, ImgSrc = imgSrc, Text = text });
+            }
+        }
+
+        return JsonConvert.SerializeObject(items);
+    }
+
+}*@
+
+<div @htmlAttributes style="" class="sc-SliderAdvanced">  
+
+</div>

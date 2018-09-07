@@ -1,0 +1,30 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+
+@model Sitecore.XA.Feature.Forms.Models.FormWrapperRenderingModel
+
+@{
+    const string placeholderKeyPrefix = "mvcform";
+    var key = string.Format("{0}-{1}", placeholderKeyPrefix, Model.Id);
+}
+
+@if (Model != null)
+{
+    if (Model.IsModuleInstalled)
+    {
+        <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "form", Model.Attributes)>
+            <div class="component-content">
+                @Html.Sitecore().Placeholder(key)
+            </div>
+        </div>
+        using (Html.Delayed("FormWrapper", isOnlyOne: "FormWrapper"))
+        {
+            Html.RenderAction("FormsScripts", "FormWrapper");
+        }
+    }
+
+    if (!Model.IsModuleInstalled && Html.Sxa().IsEdit)
+    {
+        <span class="module-missing">[@Model.ModuleName module is missing]</span>
+    }
+}

@@ -1,0 +1,10 @@
+﻿@if (@Sitecore.Context.PageMode.IsNormal || @Sitecore.Context.PageMode.IsPreview)
+{
+    @RenderBody()
+}
+else
+{
+    <div class="meta-component-wrapper">
+        @RenderBody()
+    </div>
+}

@@ -1,0 +1,65 @@
+﻿@model Sitecore.ExperienceForms.Client.Models.KeyValuePairEditorRenderingModel
+@{
+    Model.DataBind.IsVisible().IsEnabled();
+    Model.Class.Append("sc-keyvaluepaireditor");
+}
+<div style="display: none" @Model.HtmlAttributes>
+    <div class="sc-listIterator" data-bind="foreach: Items">
+        <table class="sc-keyvaluepair" data-bind="attr:{'data-sc-index': $index()}">
+            <tr>
+                <td colspan="2">
+                    <div class="sc-formlabeltop">
+                        <span data-bind="text: $root.LabelForEditComponent">@Model.LabelForEditComponent</span>
+                        <span data-bind="text: ($index() + 1)"></span>
+                        <span data-bind="text: $root.LabelForKey">@Model.LabelForKey</span>
+                    </div>
+                </td>
+                <td class="sc-keyvaleditor-add">
+                    <div class="sc-formlabeltop">
+                        <a data-bind="click:function(){$root.addItemAt($index()+1)}" class="sc-hyperlinkbutton">+ <span data-bind="text: $root.LabelForAddNew">@Model.LabelForAddNew</span></a>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="sc-keyvaleditor-value sc-small-bottom-padding" colspan="3">
+                    <input class="sc-textbox form-control"
+                           data-bind="attr:{ placeholder: $root.WatermarkForLabels }, value:$root.getDisplayName($data), event:{ input: function(data, event) { $root.textChanged($index(), event.target.value, 'DisplayFieldName') }}"
+                           type="text"
+                           placeholder="@Model.WatermarkForLabels" />
+                </td>
+                <td class="sc-small-bottom-padding"><span class="sc-keyvaleditor-remove" data-bind="visible: $root.Items().length > 1, click:$root.removeItem">×</span></td>
+            </tr>
+            <tr data-bind="visible:$root.ValueModeSelection">
+                <td class="sc-keyvaleditor-label"><span data-bind="text: $root.LabelForValue">@Model.LabelForValue</span> </td>
+                <td class="sc-keyvaleditor-value sc-small-bottom-padding" colspan="2">
+                    <input class="sc-textbox form-control"
+                           data-bind="attr:{ placeholder: $root.WatermarkForValues }, value:$root.getValue($data), event:{ input: function(data, event) { $root.textChanged($index(), event.target.value, 'ValueFieldName') }}"
+                           type="text"
+                           placeholder="@Model.WatermarkForValues" />
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sc-small-bottom-padding">
+        <div class="sc-formlabeltop" data-bind="text: LabelForValueModeDropDown">@Model.LabelForValueModeDropDown</div>
+        <select
+            class="form-control sc-droplist sc-bottom-margin"
+            data-bind="options:ValueModeOptions, value: ValueModeSelection, optionsText:'name', optionsValue:'id'">
+        </select>
+    </div>
+    <div class="sc-small-bottom-padding">
+        <div class="sc-formlabeltop" data-bind="text: LabelForSelection">@Model.LabelForSelection</div>
+
+        <select @(Model.MultipleSelection ? "multiple" : string.Empty)
+            size='@(Model.MultipleSelection ? "8" : "1")'
+            class="form-control sc-droplist sc-selection-options-droplist"
+            data-bind='attr:{multiple:MultipleSelection || null, size:MultipleSelection() ? "8" : "1"}, optionsText:"text", optionsValue:"value", selectedOptions: Selection, options: KeyValuePairArray, optionsCaption: MultipleSelection() ? null : "&nbsp;", optionsAfterRender: function() {$root.updateSelectionFromItems()};'>
+        </select>
+
+    </div>
+</div>

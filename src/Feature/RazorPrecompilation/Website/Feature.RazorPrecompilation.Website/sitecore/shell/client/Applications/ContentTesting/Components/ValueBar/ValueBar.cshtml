@@ -1,0 +1,11 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.ContentTesting.Components
+@model RenderingModel
+@{
+  var resolver = this.Html.Sitecore().Controls().GetParametersResolver(this.Model.Rendering);
+  var component = new ValueBar(resolver);
+  var htmlAttributes = component.HtmlAttributes;
+}      
+<div @htmlAttributes class="sc-ValueBar @component.BarStyleClass">
+</div>

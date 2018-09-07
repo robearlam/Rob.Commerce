@@ -1,0 +1,78 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2017 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@model Sitecore.Commerce.XA.Feature.Account.Models.AddressListRenderingModel
+
+@{
+    var currentItem = Html.Sitecore().CurrentItem;
+    var maxRecordsToShow = Model.NumberOfAddressesToShow;
+
+    var showAddressHeader = Model.ShowAddressListHeader;
+    var addressPageLink = Model.AddressBookPageLocation;
+    var editAddressPageLink = Model.AddressBookPageLocation;
+}
+<div @Html.Sxa().Component("cxa-addresslist-component", Model.Attributes) data-cxa-component-class="AddressList" data-cxa-component-initialized="false" data-cxa-component-type="component" data-max-records="@maxRecordsToShow" data-page-url="@editAddressPageLink">
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        @Model.ErrorMessage
+    }
+    else
+    {
+        <div class="component-content">
+            @if (showAddressHeader)
+            {
+                <div>
+                    <h3 class="header-title">@Html.Sitecore().Field("Address List Header", currentItem)</h3>
+                </div>
+            }
+
+            <div class="address-list" data-bind="visible: isNotEmpty">
+                <table class="address-list-table">
+                    <thead class="address-list-table-header">
+                        <tr>
+                            <td>@Html.Sitecore().Field("Address Header", currentItem)</td>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: addresses()">
+                        <tr>
+                            <td>
+                                <div class="address-header">
+                                    <a href="#" class="address-title" data-bind="attr: { href: detailsUrl }, text: name"></a>
+                                    <span class="is-primary" data-bind="visible: isPrimary, if: isPrimary">
+                                        @currentItem["Primary Address Text"]
+                                    </span>
+                                </div>
+                                <div class="address-details">
+                                    <span class="address-detail full-address" data-bind="text: fullAddress, visible: (fullAddress() != null)"></span>
+                                    <span class="address-detail adress-line1" data-bind="text: address1, visible: (address1() != null)"></span>
+                                    <span class="address-detail adress-line2" data-bind="text: address2, visible: (address2() != null)"></span>
+                                    <span class="address-detail city" data-bind="text: city, visible: (city() != null)"></span>
+                                    <span class="address-detail country-state" data-bind="text: state() + ', ' + country(), visible: (state() != null)"></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="empty-adddress-list-message" data-bind="visible: isEmpty">
+                @Html.Sitecore().Field("Empty List Text", currentItem)
+            </div>
+            <div class="add-new-address-section">
+                <a class="add-new-address-link" href="@addressPageLink">
+                    @Html.Sitecore().Field("Add New Address Text", currentItem)
+                </a>
+            </div>
+        </div>
+    }
+</div>

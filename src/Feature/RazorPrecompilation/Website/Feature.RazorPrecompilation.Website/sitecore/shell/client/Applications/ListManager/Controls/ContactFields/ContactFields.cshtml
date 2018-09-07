@@ -1,0 +1,14 @@
+﻿@using Sitecore.ListManagement.Client.Web.UI.Controls.ImportMapTo
+@using Sitecore.Mvc.Presentation
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+
+    var rendering = new ImportMapTo(new DatasourceBasedParametersResolver(Model.Rendering))
+    {
+        Class = "sc-importMapTo"
+    };
+
+    rendering.Requires.Script("listmanager", "ImportMapTo.js");
+
+    rendering.SetAttribute("data-sc-importmodel", rendering.GetImportModelJSon());
+}

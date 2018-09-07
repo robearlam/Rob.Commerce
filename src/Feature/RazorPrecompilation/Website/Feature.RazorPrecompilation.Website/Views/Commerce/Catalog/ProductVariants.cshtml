@@ -1,0 +1,115 @@
+﻿
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+@using Sitecore.Web
+
+@model CatalogItemRenderingModel
+
+@{
+    if (Model == null)
+    {
+        return;
+    }
+
+    var invalidVariantText = Html.Sitecore().Field("Invalid Variant Message", Html.Sitecore().CurrentItem);
+    var currencyCode = Model.CurrencySymbol;
+    var hasVariants = false;
+}
+
+
+<div @Html.Sxa().Component("cxa-productvariant-component", Model.Attributes) data-cxa-component-class="ProductVariants" data-cxa-component-initialized="false" data-cxa-component-type="component">
+    <input type="hidden" value="@Model.ProductId" id="variant-component-product-id" />
+    <input type="hidden" value="@Model.CatalogName" id="variant-component-product-catalog" />
+
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        <div class="component-content">
+            @if (Model.Variants != null && Model.Variants.Count() > 0)
+            {
+                foreach (var variantDefinition in Model.VariantDefinitions)
+                {
+                    var valueList = Model.GetDistinctVariantPropertyValues(variantDefinition.PropertyName);
+                    if (valueList.Any())
+                    {
+                        var labelName = "variant" + variantDefinition.PropertyName;
+                        var selectName = "Variant_" + variantDefinition.PropertyName;
+
+                        hasVariants = true;
+
+                        <div class="product-variant-name @selectName">
+                            <label for="@labelName">@variantDefinition.DisplayName</label>
+                            <select name="@selectName" id="@labelName" onchange="VariantSelectionChanged() ">
+                                @foreach (var propertyValue in valueList)
+                                {
+                                    <option value="@propertyValue">@propertyValue</option>
+                                }
+                            </select>
+                        </div>
+                    }
+                }
+            }
+            else if (Sitecore.Context.PageMode.IsExperienceEditor || WebUtil.GetQueryString(Sitecore.XA.Feature.Search.Constants.CreativeExchangeExport) != "true")
+            {
+                <span>[Product Variant]</span>
+            }
+        </div>
+
+        <span class="invalid-variant" style="display:none">@invalidVariantText</span>
+
+        if (!hasVariants && (Model.Variants == null || Model.Variants.Count() == 0))
+        {
+            string savingsMessage = string.Empty;
+            if (Model.IsOnSale)
+            {
+                string percentLead = @Html.Sitecore().CurrentItem["Savings Lead Text"];
+                savingsMessage = percentLead + " " + Model.SavingsPercentage + "%";
+            }
+
+            <div class="variant-hidden-fields">
+
+                <input type="hidden" value="@savingsMessage" id="savingsmessage" />
+                <input type="hidden" value="@Model.ListPriceWithCurrency" id="listprice" />
+                <input type="hidden" value="@Model.AdjustedPriceWithCurrency" id="asjustedprice" />
+                <input type="hidden" value="@Model.IsOnSale.ToString().ToLower()" id="isonsale" />
+
+            </div>
+        }
+        else
+        {
+            <div class="valid-variant-combo">
+                @foreach (var variant in Model.Variants)
+                {
+                    string savingsMessage = string.Empty;
+                    if (variant.IsOnSale)
+                    {
+                        string percentLead = Html.Sitecore().CurrentItem["Savings Lead Text"];
+                        savingsMessage = percentLead + " " + variant.SavingsPercentage + "%";
+                    }
+
+                    <div class="variant-data" id="@variant.VariantId" listprice="@variant.ListPrice.ToCurrency()" adjustedprice="@variant.AdjustedPrice.ToCurrency()" isonsale="@variant.IsOnSale.ToString().ToLower()">
+                        <div class="variant-value">
+                            @foreach (var definition in Model.VariantDefinitions)
+                        {
+                            var propertyName = definition.PropertyName;
+                            var propertyValue = variant.GetPropertyValue(propertyName);
+                                <input type="hidden" value="@propertyValue" id="@propertyName" />
+                            }
+                        </div>
+                        @if (!string.IsNullOrWhiteSpace(savingsMessage))
+                        {
+                            <input type="hidden" value="@savingsMessage"  />
+                        }
+                    </div>
+                }
+            </div>
+        }
+    }
+</div>

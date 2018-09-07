@@ -1,0 +1,66 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.ContentTesting.Components
+
+@model RenderingModel
+
+@{
+    var listControl = new StateListControl(new DatasourceBasedParametersResolver(Model.Rendering));
+    listControl.GetString("Items", "Items");
+    listControl.Attributes["data-bind"] = "visible: isVisible";
+    listControl.Attributes["data-sc-language"] = Sitecore.Context.Culture.IetfLanguageTag;
+
+    var requiredEnabledRowCount = listControl.GetInt("RequiredEnabledRowCount", 0);
+    listControl.Attributes["data-sc-requiredEnabledRowCount"] = requiredEnabledRowCount.ToString();
+
+    var htmlAttributes = listControl.HtmlAttributes;
+    var id = listControl.ControlId;
+    var behaviors = listControl.GetString("Behaviors");
+}
+
+<script data-layout-main="@id" type="text/x-sc-listcontrol">
+  @Html.Raw(listControl.RenderMainLayout())
+</script>
+
+<script data-layout-header="@id" type="text/x-sc-listcontrol">
+  @Html.Raw(listControl.RenderHeader())
+</script>
+
+<script data-layout-row="@id" type="text/x-sc-listcontrol">
+  @Html.Raw(listControl.RenderRow())
+</script>
+
+<script data-layout-iconList="@id" type="text/x-sc-listcontrol"></script>
+<script data-layout-footer="@id" type="text/x-sc-listcontrol">
+  @Html.Raw(listControl.RenderFooter())
+</script>
+<script data-layout-listControl="@id" type="text/x-sc-listcontrol">
+  @Html.Raw(listControl.RenderListControl())
+</script>
+
+<script data-layout-icon="@id" type="layout">
+  <div class="sc-iconList-item">
+    <div class="sc-iconList-item-content">
+      <a data-bind="attr: {href: $url}">
+        <img data-bind="attr: {src: image}" />
+      </a>
+      <div class="sc-iconList-item-title">
+        <span data-bind="text: itemName"></span>
+      </div>
+      <div class="sc-iconList-item-caption">
+        <a data-bind="attr: {href: $url}, text: itemName"></a>
+        <table>
+          <tr>
+            @Html.Raw(listControl.RenderHeader())
+          </tr>
+          <tr>
+            @Html.Raw(listControl.RenderRow())
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</script>
+
+<div data-sc-behaviors="@behaviors" @htmlAttributes>
+</div>
+

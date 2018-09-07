@@ -1,0 +1,93 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2017 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+
+@model Sitecore.Commerce.XA.Feature.Account.Models.AddressEditorRenderingModel
+
+@{
+    var currentItem = Html.Sitecore().CurrentItem;
+    var accountPageLink = Model.AccountManagementPageLocation;
+    var newAddresLabel = currentItem["New Address Text"];
+    var countrySelectLabel = currentItem["Country Select Text"];
+    var savingLabel = currentItem["Save Changes Button In-Progress Label"];
+    var deletingLabel = currentItem["Delete Button In-Progress Label"];
+}
+
+<div @Html.Sxa().Component("cxa-addresseditor-component", Model.Attributes) data-cxa-component-class="AddressEditor" data-cxa-component-initialized="false" data-cxa-component-type="component" data-page-url="@accountPageLink" data-address-id="@Model.SelectedAddressId">
+    @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        @Model.ErrorMessage
+    }
+    else
+    {
+        <div class="component-content">
+            <input type="hidden" id="hiddenAddNewMessage" value="@currentItem["Save Changes New Address Message"]" />
+            <input type="hidden" id="hiddenEditMessage" value="@currentItem["Save Changes Edit Address Message"]" />
+            <input type="hidden" id="hiddenDeleteMessage" value="@currentItem["Delete Address Message"]" />
+
+            <div class="address-selector-section">
+                <div class="address-selector">
+                    <label for="addressBookChange">@Html.Sitecore().Field("Change Address Label", currentItem)</label>
+                    <select data-bind='options: addresses(), optionsValue : "externalId", optionsText: "fullAddress", optionsCaption: "@newAddresLabel", value: selectedAddress'></select>
+                </div>
+            </div>
+            <div class="address-edit-section" data-bind="with: address">
+
+                    <div class="address-name address-part">
+                        <label for="addressBook-Name">@Html.Sitecore().Field("Name Label", currentItem)<span class="required">*</span></label>
+                        <input type="text" placeholder="@currentItem["Name Hint Text"]" data-bind="text: name, value: name" required="required" data-val-required="@currentItem["Name Missing Message"]" />
+                    </div>
+                    <div class="address-country address-part">
+                        <label for="addressBook-Country">@Html.Sitecore().Field("Country Label", currentItem) <span class="required">*</span></label>
+                        <select data-bind='options: $root.countries(), optionsValue: "code", optionsText: "name", optionsCaption: "@countrySelectLabel", value: country' required="required" data-val-required="@currentItem["Country Missing Message"]"></select>
+                    </div>
+                    <div class="address-address address-part" >
+                        <label for="addressBook-Address">@Html.Sitecore().Field("Address Label", currentItem)<span class="required">*</span></label>
+                        <input type="text" placeholder="@currentItem["Address Hint Text"]" data-bind="text: address1, value: address1" required="required" data-val-required="@currentItem["Address Missing Message"]" />
+                    </div>
+
+
+    
+                    <div class="address-city address-part">
+                        <label for="addressBook-City">@Html.Sitecore().Field("City Label", currentItem)<span class="required">*</span></label>
+                        <input type="text" placeholder="@currentItem["City Hint Text"]" data-bind="text: city, value: city" required="required" data-val-required="@currentItem["City Missing Message"]" />
+                    </div>
+                    <div class="address-state address-part">
+                        <label for="addressBook-State">@Html.Sitecore().Field("State Label", currentItem)</label>
+                        <input type="text" placeholder="@currentItem["State Hint Text"]" data-bind="text: state, value: state" />
+                    </div>
+                    <div class="address-zip address-part">
+                        <label for="addressBook-Zipcode">@Html.Sitecore().Field("Zip Code Label", currentItem)<span class="required">*</span></label>
+                        <input type="text" placeholder="@currentItem["Zip Code Hint Text"]" data-bind="text: zipPostalCode, value: zipPostalCode" required="required" data-val-required="@currentItem["Zip Code Missing Message"]" />
+                    </div>
+
+
+                <div class="set-primary">
+                    <input type="checkbox" data-bind="checked: isPrimary" title="@currentItem["Set as Primary Tooltip"]"/> 
+                    <label>@Html.Sitecore().Field("Set as Primary Label", currentItem)</label>
+                </div>
+            </div>
+
+            <div class="address-buttons-section">
+                <button class="save-addresss-button" type="button" data-bind="click: saveAddress, enable: enableSave" data-loading-text="@savingLabel" data-text="@currentItem["Save Changes Button Label"]">@Html.Sitecore().Field("Save Changes Button Label", currentItem)</button>
+                <button class="delete-address-button" type="button" data-bind="click: deleteAddress, enable: enableDelete" data-loading-text="@deletingLabel" data-text="@currentItem["Delete Button Label"]">@Html.Sitecore().Field("Delete Button Label", currentItem)</button>
+                <a class="cancel-edit-button" type="button" data-bind="enable: enableCancel" href="@accountPageLink">@Html.Sitecore().Field("Cancel Button Label", currentItem)</a>   
+                <a href="@accountPageLink" class="back-to-my-account">
+                    @Html.Sitecore().Field("Back to My Account Text", currentItem)
+                </a>             
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "../../SXA/Meta Component Layout.cshtml";
+}
+
+@using System.Web.Mvc.Html
+@model Sitecore.Commerce.XA.Foundation.SiteMetadata.Models.SiteBindingsRenderingModel
+
+@Html.Hidden("_SiteVirtualFolder", @Model.VirtualFolder)
+@Html.Hidden("_SiteRootPath", @Model.RootPath)
+@Html.Hidden("_SiteStartPath", @Model.StartPath)
+@Html.Hidden("_SiteContentStartPath", @Model.ContentStartPath)

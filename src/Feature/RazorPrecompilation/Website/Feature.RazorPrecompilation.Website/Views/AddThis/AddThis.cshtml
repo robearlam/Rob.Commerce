@@ -1,0 +1,16 @@
+﻿﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.XA.Foundation.Mvc.Models.RenderingModelBase
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "addthis", Model.Attributes)>
+    <div class="component-content">
+        @Model.MessageEditHere
+        @if (Model.Rendering.Parameters != null && !String.IsNullOrEmpty(Model.Rendering.Parameters["pubid"]))
+        {
+            <div class="addthis_sharing_toolbox"></div>
+            <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=@Model.Rendering.Parameters["pubid"]"></script>
+            <div class="addthis_inline_share_toolbox"></div>
+        }
+    </div>
+</div>

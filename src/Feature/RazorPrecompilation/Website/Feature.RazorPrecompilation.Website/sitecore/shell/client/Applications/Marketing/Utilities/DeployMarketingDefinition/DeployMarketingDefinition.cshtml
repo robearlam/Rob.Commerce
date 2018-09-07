@@ -1,0 +1,36 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+    rendering.Class = "sc-DeployMarketingDefinition";
+    rendering.Requires.Script("marketingutilities", "DeployMarketingDefinitionComponent.js");
+    rendering.HasNestedComponents = true;
+    rendering.Attributes.Add("data-bind", "visible: isVisible");
+}
+<style type="text/css">
+    .sc-dialogHeader { height: 45px; }
+
+    .sc-progressindicator { position: relative; }
+
+    .sc-dialogContent-main { display: none; }
+
+    .sc-DeployMarketingDefinition h2 {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .progress-indicator-container {
+        height: 96px;
+        margin: 20px auto 0px auto;
+        position: relative;
+        width: 96px;
+    }
+</style>
+<div @rendering.HtmlAttributes>
+    <h2 class="message">@Html.Sitecore().Placeholder("DeployMarketingDefinition.Message")</h2>
+    <div class="progress-indicator-container">
+        @Html.Sitecore().Placeholder("DeployMarketingDefinition.ProgressIndicatorContainer")
+    </div>
+</div>

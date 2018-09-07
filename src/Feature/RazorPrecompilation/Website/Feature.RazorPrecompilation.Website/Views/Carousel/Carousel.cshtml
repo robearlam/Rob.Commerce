@@ -1,0 +1,85 @@
+﻿@using Sitecore.XA.Feature.Composites.Models
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model CarouselRenderingModel
+
+@{
+    const string baseKey = "section-content";
+    const string bulletsCssClass = "sxa-bullets";
+    const string numbersCssClass = "sxa-numbers";
+}
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "carousel", Model.Attributes) data-properties='@Model.JsonDataProperties'>
+    <div class="component-content">
+        @if (Model.HasCompositeLoop)
+        {
+            @Model.MessageHasLoop
+        }
+        else if (Model.DataSourceItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else if (Model.CompositeCount == 0 || Model.HasCompositeLoop)
+        {
+            using (Html.Sxa().BeginEditFrame(Model.DataSourceItem.ID.ToString(), "Carousel Empty", Model.IsControlEditable))
+            {
+                @Model.MessageIsEmpty
+            }
+        }
+        else
+        {
+            <div data-id="@string.Format("divCarousel_{0}",Guid.NewGuid())" class="carousel-inner">
+                <div class="background">
+                </div>
+                <ul class="slides">
+                    @foreach (var composite in Model.CompositeItems)
+                    {
+                        var headerKey = string.Format("{0}-{1}-{2}", baseKey, composite.Key, Model.Id);
+                        <li class="slide" @Html.Raw(composite.Key != 1 ? "style=\"display: none\"" : " ")>
+                            @using (Html.Sxa().BeginEditFrame(composite.Value.ID.ToString(), "Carousel", Model.IsControlEditable))
+                            {
+                                @Html.Sitecore().Placeholder(headerKey)
+                            }
+                        </li>
+                    }
+                </ul>
+
+                @{
+                    var type = Model.Settings.NavigationType;
+                }
+                @if (Model.CompositeItems.Count > 1 && type != CarouselNavigation.None)
+                {
+                    string cssClass = string.Empty;
+                    if (type == CarouselNavigation.Bullets || type == CarouselNavigation.BulletsWithPreviousNext)
+                    {
+                        cssClass = bulletsCssClass;
+                    }
+                    else if (type == CarouselNavigation.Numbers || type == CarouselNavigation.NumbersWithPreviousNext)
+                    {
+                        cssClass = numbersCssClass;
+                    }
+                    <div class="nav">
+                        @if (type == CarouselNavigation.BulletsWithPreviousNext || type == CarouselNavigation.NumbersWithPreviousNext || type == CarouselNavigation.PreviousNext)
+                        {
+                            <a class="prev-text" href="#"></a>
+                        }
+                        @if (type != CarouselNavigation.PreviousNext)
+                        {
+                            <div class="nav-items">
+                                @for (int i = 0; i < Model.CompositeItems.Count; i++)
+                                {
+                                    <div class="@cssClass">@(type == CarouselNavigation.Numbers || type == CarouselNavigation.NumbersWithPreviousNext ? (i + 1).ToString() : string.Empty)</div>
+                                }
+                            </div>
+                        }
+                        @if (type == CarouselNavigation.BulletsWithPreviousNext || type == CarouselNavigation.NumbersWithPreviousNext || type == CarouselNavigation.PreviousNext)
+                        {
+                            <a class="next-text" href="#"></a>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

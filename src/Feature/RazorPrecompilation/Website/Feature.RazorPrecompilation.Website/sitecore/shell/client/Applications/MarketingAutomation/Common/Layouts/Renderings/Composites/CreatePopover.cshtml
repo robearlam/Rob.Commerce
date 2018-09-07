@@ -1,0 +1,12 @@
+﻿@model Sitecore.Speak.Components.Models.CompositeComponentRenderingModel
+@{
+    Model.DataBind.IsVisible();
+
+    Model.Requires.Clear();
+    Model.Requires.Script("ma", "CreatePopover.js");
+    Model.Requires.Css("ma", "CreatePopover.css");
+}
+
+<div @Model.HtmlAttributes>
+    @Model.Layout
+</div>

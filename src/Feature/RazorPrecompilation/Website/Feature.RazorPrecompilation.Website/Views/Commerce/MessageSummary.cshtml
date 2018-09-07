@@ -1,0 +1,55 @@
+﻿@*//-----------------------------------------------------------------------
+    // Copyright 2017 Sitecore Corporation A/S
+    // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+    // except in compliance with the License. You may obtain a copy of the License at
+    //       http://www.apache.org/licenses/LICENSE-2.0
+    //
+    // Unless required by applicable law or agreed to in writing, software distributed under the
+    // License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+    // either express or implied. See the License for the specific language governing permissions
+    // and limitations under the License.
+    // -------------------------------------------------------------------------------------------*@
+
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+<div @Html.Sxa().Component("cxa-messagesummary-component") data-cxa-component-class="MessageSummary" data-cxa-component-model="MessageSummaryViewModel" data-cxa-component-initialized="false" data-cxa-component-type="component">
+    <div class="component-content" data-bind="visible: showComponent" style="display: none;">
+        <div class="error-message-section" data-bind="visible: showError">
+            <table>
+                <tbody data-bind="foreach: errorMessages">
+                <tr>
+                    <td>
+                        <p class="error-message" data-bind="text: message"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="warning-message-section" data-bind="visible: showWarning">
+            <table>
+                <tbody data-bind="foreach: warningMessages">
+                <tr>
+                    <td>
+                        <p class="warning-message" data-bind="text: message"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="info-message-section" data-bind="visible: showInfo">
+            <table>
+                <tbody data-bind="foreach: infoMessages">
+                <tr>
+                    <td>
+                        <p class="info-message" data-bind="text: message"></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>  
+</div>
+

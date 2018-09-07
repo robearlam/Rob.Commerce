@@ -1,0 +1,40 @@
+﻿@using Sitecore.Web
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+
+@model Sitecore.XA.Feature.Search.Models.SearchResultsRenderingModel
+
+@{
+    string variantClass = string.Empty;
+    if (Model.Attributes.ContainsKey("class"))
+    {
+        variantClass = Model.Attributes["class"].Aggregate();
+    }
+}
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "search-results", Model.Attributes) data-class-variant="@variantClass" data-properties='@Model.JsonDataProperties'>
+    @if (WebUtil.GetQueryString(Sitecore.XA.Feature.Search.Constants.CreativeExchangeExport) != "true")
+    {
+        <div class="component-content">
+            @Model.MessageIsEmpty
+            <div class="no-results" style="display: @Model.StyleDisplay">
+                @Html.Sxa().Field("ResultsNotFoundText", Model.DataSourceItem, !Model.IsControlEditable)
+                @Html.Sxa().Field("Text", Model.Item, !Model.IsControlEditable)
+            </div>
+            <div class="progress"></div>
+        </div>
+    }
+    else
+    {
+        <ul class="search-result-list">
+            <li>
+                @foreach (BaseVariantField variantField in Model.VariantFields)
+                {
+                    @Html.RenderingVariants().RenderVariant(variantField, Model.PageItem, false, Model)
+                }
+            </li>
+        </ul>
+    }
+</div>

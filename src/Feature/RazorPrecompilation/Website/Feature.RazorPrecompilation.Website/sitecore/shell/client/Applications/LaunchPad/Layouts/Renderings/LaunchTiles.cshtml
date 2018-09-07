@@ -1,0 +1,42 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model RenderingModel
+@{
+  var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+  rendering.Class = "sc-tiles";
+  var tiles = Model.Rendering.RenderingItem.Database.GetItem("{54C55A0C-D46D-4287-8643-D51ACA584084}");
+  if (tiles == null)
+  {
+    return;
+  }
+
+  var columnWidth = 12 / tiles.Children.Count();
+
+  var htmlAttributes = rendering.HtmlAttributes;
+}
+<div @htmlAttributes>
+@*  <div class="row">*@
+    @foreach (Item tile in tiles.Children)
+    {
+      var itemRenderer = new Sitecore.Web.UI.Controls.Common.ItemRenderers.ItemRenderer
+      {
+        DataSource = tile.ID.ToString(),
+        UsePlaceholders = true,
+        UseItemAsDataSource = true
+      };
+
+      @*<div class="col-md-@columnWidth">*@
+        <div class="sc-tile">
+          <h4 class="sc-tile-header">
+            @tile["DisplayName"]
+          </h4>
+          <div class="sc-tile-content">
+            @Html.Raw(itemRenderer.Render())
+          </div>
+        </div>
+      @* </div>*@
+    }
+ @* </div>*@
+</div>

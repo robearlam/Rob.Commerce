@@ -1,0 +1,8 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var fieldName = @Model.Rendering.Parameters["FieldName"];
+}
+@if (!String.IsNullOrEmpty(fieldName))
+{
+    @Html.Sitecore().Field(fieldName)
+}

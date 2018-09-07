@@ -1,0 +1,20 @@
+﻿@using Sitecore.XA.Foundation.DynamicPlaceholders.Models
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.Presentation.Services
+
+@model DynamicPlaceholdersRenderingModel
+
+@{
+    const string placeholderKeyPrefix = "container";
+    var key = string.Format("{0}-{1}", placeholderKeyPrefix, Model.Id);
+    var backgroundStyle = string.IsNullOrWhiteSpace(Model.BackgroundUrl) ? string.Empty : string.Format(@" style=""background-image: url('{0}')""", HttpUtility.HtmlEncode(Model.BackgroundUrl));
+}
+
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "container", Model.Attributes)>
+    <div class="component-content" @Html.Raw(backgroundStyle)>
+        @using (PlaceholderDatasourceContext.EnterContext(Model.Rendering.Item)) 
+        { @Html.Sitecore().Placeholder(key) }
+    </div>
+</div>

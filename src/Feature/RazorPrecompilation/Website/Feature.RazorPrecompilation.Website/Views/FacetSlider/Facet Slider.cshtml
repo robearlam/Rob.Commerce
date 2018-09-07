@@ -1,0 +1,45 @@
+﻿@using Sitecore.Web
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Search.Models.FacetSliderRenderingModel
+
+@if (Model.IsEdit || Model.FacetItemName != null)
+{
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "facet-slider", Model.Attributes).Decorate("class", "facet-component") data-properties='@Model.JsonDataProperties'>
+        <div class="component-content">
+
+            @if (Model.DataSourceItem == null)
+            {
+                @Model.MessageIsEmpty
+            }
+            else if (Model.FacetItemName == null)
+            {
+                @Model.MessageFacetIsEmpty
+            }
+            else
+            {
+                { Html.RenderPartial("FacetHeader", Model); }
+                if (WebUtil.GetQueryString(Sitecore.XA.Feature.Search.Constants.CreativeExchangeExport) == "true")
+                {
+                    <div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+                    </div>
+                }
+                else
+                {
+                    if (Model.ShowRangeIndicators)
+                    {
+                        <div class="slider-min-value">@Model.MinValue</div>
+                    }
+                    <div class="slider"></div>
+                    if (Model.ShowRangeIndicators)
+                    {
+                        <div class="slider-max-value">@Model.MaxValue</div>
+                    }
+                }
+                { Html.RenderPartial("FacetRemoveFilterButton", Model); }
+            }
+        </div>
+    </div>
+}

@@ -1,0 +1,19 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.XA.Feature.SiteMetadata.Models.CustomMetadataRenderingModel
+
+@{
+    Layout = Sitecore.Configuration.Settings.GetSetting("XA.Foundation.Presentation.MetaComponentLayoutPath", "../SXA/Meta Component Layout.cshtml");
+}
+
+
+@if (Model.Attributes.Empty() && Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <meta content="[Sample Meta Content]" name="[Sample Meta Name]" />
+}
+else
+{
+    foreach (var model in Model.Attributes)
+    {
+        @Html.Raw(String.Format("<{0} {1}/>", model.Tag, model.RenderAttributes()))
+    }
+}

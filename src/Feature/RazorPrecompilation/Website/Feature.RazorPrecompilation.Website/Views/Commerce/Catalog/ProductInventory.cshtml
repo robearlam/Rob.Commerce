@@ -1,0 +1,49 @@
+﻿
+@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Commerce.XA.Feature.Catalog.Models
+@using Sitecore.Commerce.XA.Foundation.Common.ExtensionMethods;
+@using Sitecore.Commerce.XA.Foundation.Common;
+
+
+@model CatalogItemRenderingModel
+
+@{
+    if (Model == null)
+    {
+        return;
+    }
+}
+
+<div @Html.Sxa().Component("cxa-productinventory-component", Model.Attributes)  data-cxa-component-class="ProductInventory" data-cxa-component-initialized="false" data-cxa-component-type="component">
+    @if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+    {
+        <div class="error-message">
+            @Model.ErrorMessage
+        </div>
+    }
+    else
+    {
+        {
+            <div class="component-content" >
+                <input type="hidden" value="@Model.ProductId" id="product-id" />
+                <input type="hidden" value="@Model.CatalogName" id="product-catalog" />
+                <div class="stock-info">
+                    <span class="stock-status" data-bind="css: selectedStockInfo().status()">
+                        <strong data-bind="text: selectedStockInfo().status()"></strong>
+                    </span>
+                    <span class="stock-count" data-bind="text:selectedStockInfo().count, css: selectedStockInfo().status()"></span>
+                    <!-- ko if: selectedStockInfo().showSingleLabel -->
+                    <label class="stock-count-label">@Html.Sitecore().Field("Inventory Status", Html.Sitecore().CurrentItem)</label>
+                    <!-- /ko -->
+                    <!-- ko ifnot: selectedStockInfo().showSingleLabel -->
+                    <label class="stock-count-label">@Html.Sitecore().Field("Inventory Count", Html.Sitecore().CurrentItem)</label>
+                    <!-- /ko -->
+                    <!-- ko if: selectedStockInfo().availabilityDate -->
+                    <span class="stock-availability-date" data-bind="text: selectedStockInfo().availabilityDate()"></span>
+                    <!-- /ko -->
+                </div>
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿@{
+    Layout = Sitecore.Configuration.Settings.GetSetting("XA.Feature.Composites.CompositeComponentLayoutPath", "Composite Component Layout.cshtml");
+    ViewBag.Title = "Edit tab";
+}
+
+<div class="component tabs">
+    <div class="component-content">
+        <div class="tabs-inner">
+            <ul class="tabs-heading">
+                <li>
+                    <div>
+                        @Html.Sitecore().Placeholder("section-title")
+                    </div>
+                </li>
+            </ul>
+            <div class="tabs-container">
+                <div class="tab">
+                    @Html.Sitecore().Placeholder("section-content")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

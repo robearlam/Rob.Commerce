@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.XA.Foundation.Presentation
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@{
+    Layout = Sitecore.Configuration.Settings.GetSetting("XA.Foundation.Presentation.MetaComponentLayoutPath", "../SXA/Meta Component Layout.cshtml");
+    var isDragging = Sitecore.Context.PageDesigner.IsDesigning && Sitecore.Context.Item.InheritsFrom(Templates.MetadataPartialDesign.ID);
+}
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing && (!Sitecore.Context.PageDesigner.IsDesigning || isDragging))
+{
+    <div class="stickynotes" style="visibility: hidden">
+        @Html.Sitecore().Field("StickyNotes")
+    </div>
+}

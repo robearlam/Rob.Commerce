@@ -1,0 +1,34 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.XA.Feature.Search.Models.DropdownFilterRenderingModel
+
+@if (Model.IsEdit || Model.FacetItemName != null)
+{
+<div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "facet-dropdown", Model.Attributes).Decorate("class", "facet-component") data-properties='@Model.JsonDataProperties'>
+    <div class="component-content">
+
+        @if (Model.DataSourceItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else if (Model.FacetItemName == null)
+        {
+            @Model.MessageFacetIsEmpty
+        }
+        else
+        {
+            { Html.RenderPartial("FacetHeader", Model); }
+            <div>
+                @Html.DropDownListFor(x => x.DropDownOptions, Model.DropDownOptions, new Dictionary<string, object> { { "class", "facet-dropdown-select" } })
+            </div>
+            { Html.RenderPartial("FacetRemoveFilterButton", Model); }
+        }
+    </div>
+</div>
+}
+
+
+
+
+

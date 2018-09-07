@@ -1,0 +1,10 @@
+﻿@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Links
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var showOverlay = (Request.QueryString.AllKeys.Contains("cf_overlay") || !(Html.Sxa().IsEdit || Html.Sxa().IsPreview));
+}
+
+@{
+    Html.RenderAction(showOverlay ? "Overlay" : "OverlayEdit", "OverlayLayout", new { model = Model });
+}

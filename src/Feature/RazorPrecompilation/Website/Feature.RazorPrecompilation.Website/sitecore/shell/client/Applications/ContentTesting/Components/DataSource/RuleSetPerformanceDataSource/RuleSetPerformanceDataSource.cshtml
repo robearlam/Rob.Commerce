@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Web.UI.Controls.Common.UserControls
+@model RenderingModel
+@{
+  var rendering = Html.Sitecore().Controls().GetUserControl(Model.Rendering);
+  rendering.Requires.Script("contenttesting", "RuleSetPerformanceDataSource.js");
+  rendering.Attributes["data-sc-itemid"] = rendering.GetString("ItemId", "itemId");
+  rendering.Attributes["data-sc-language"] = rendering.GetString("LanguageName", "languageName");
+  rendering.Attributes["data-sc-version"] = rendering.GetString("Version", "version");
+  rendering.Attributes["data-sc-mode"] = rendering.GetString("Mode", "mode");
+
+  var htmlAttributes = rendering.HtmlAttributes;
+}      
+<script type="x-sitecore-rulesetperformancedatasource" @htmlAttributes>
+</script>
