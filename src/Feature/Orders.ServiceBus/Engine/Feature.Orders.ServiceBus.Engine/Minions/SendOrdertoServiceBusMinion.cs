@@ -10,13 +10,13 @@ namespace Feature.Orders.ServiceBus.Engine.Minions
 {
     public class SendOrdertoServiceBusMinion : Minion
     {
-        protected SendOrdertoServiceBusMinionPipeline MinionPipeline { get; set; }
+        protected SendOrderToServiceBusPipeline Pipeline { get; set; }
 
         public override void Initialize(IServiceProvider serviceProvider, ILogger logger, MinionPolicy policy, CommerceEnvironment environment, CommerceContext globalContext)
         {
             base.Initialize(serviceProvider, logger, policy, environment, globalContext);
 
-            MinionPipeline = serviceProvider.GetService<SendOrdertoServiceBusMinionPipeline>();
+            Pipeline = serviceProvider.GetService<SendOrderToServiceBusPipeline>();
         }
 
         public override async Task<MinionRunResultsModel> Run()
@@ -33,7 +33,7 @@ namespace Feature.Orders.ServiceBus.Engine.Minions
                 foreach (var id in sendOrdertoServiceBus.IdList)
                 {
                     Logger.LogDebug($"{Name}-Sending Order to ServiceBus: {id}");
-                    await MinionPipeline.Run(id, new CommercePipelineExecutionContextOptions(new CommerceContext(Logger, MinionContext.TelemetryClient) { Environment = Environment }));
+                    await Pipeline.Run(id, new CommercePipelineExecutionContextOptions(new CommerceContext(Logger, MinionContext.TelemetryClient) { Environment = Environment }));
                 }
 
                 listCount = await GetListCount(Policy.ListToWatch);

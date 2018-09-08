@@ -26,19 +26,14 @@ namespace Feature.Orders.ServiceBus.Engine
                 )
 
                 .ConfigurePipeline<ICreateOrderPipeline>(configuration => configuration
-                    .Add<PutOrderonServiceBusListBlock>().Before<IPersistOrderPipeline>()
+                    .Add<AddOrderToServiceBusSendListBlock>().Before<IPersistOrderPipeline>()
                 )
 
-                .AddPipeline<ISendtoServiceBusPipeline, SendtoServiceBusPipeline>(configuration => configuration
-                    .Add<GetOrderBlock>()
-                    .Add<PostmanSendOrdertoServiceBusBlock>()
-                )
-
-                .AddPipeline<ISendOrdertoServiceBusMinionPipeline, SendOrdertoServiceBusMinionPipeline>(configuration => configuration
+                .AddPipeline<ISendOrderToServiceBusPipeline, SendOrderToServiceBusPipeline>(configuration => configuration
                     .Add<GetOrderBlock>()
                     .Add<SendOrdertoServiceBusBlock>()
-                    .Add<PutOrderonSenttoServiceBusListBlock>()
-                    .Add<RemoveOrderfromServiceBusListBlock>()
+                    .Add<AddOrderToServiceBusCompleteListBlock>()
+                    .Add<RemoveOrderfromServiceBusSendListBlock>()
                     .Add<PersistOrderBlock>()
                 )
 
@@ -50,10 +45,7 @@ namespace Feature.Orders.ServiceBus.Engine
                 .ConfigurePipeline<IFormatEntityViewPipeline>(configuration => configuration
                     .Add<EnsureActions>().After<PopulateEntityViewActionsBlock>()
                     .Add<EnsurePluginActions>().After<PopulateEntityViewActionsBlock>()
-                )
-
-                .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure.Add<Pipelines.Blocks.ConfigureServiceApiBlock>())
-                
+                )                
             );
 
             services.RegisterAllCommands(assembly);

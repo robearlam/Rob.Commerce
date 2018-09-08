@@ -10,20 +10,18 @@ using Sitecore.Framework.Pipelines;
 
 namespace Feature.Orders.ServiceBus.Engine.Pipelines.Blocks
 {
-    [PipelineDisplayName("Feature.Order.ServiceBus.PutOrderonServiceBusListBlock")]
-    public class PutOrderonServiceBusListBlock : PipelineBlock<Order, Order, CommercePipelineExecutionContext>
+    [PipelineDisplayName("Feature.Order.ServiceBus.AddOrderToServiceBusSendListBlock")]
+    public class AddOrderToServiceBusSendListBlock : PipelineBlock<Order, Order, CommercePipelineExecutionContext>
     {
-        public string Status { get; set; }
-
         public override Task<Order> Run (Order order, CommercePipelineExecutionContext context)
         {
             Condition.Requires(order).IsNotNull($"{Name}: The argument can not be null");
+
             var orderPlacedPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
             var transientList = order.GetComponent<TransientListMembershipsComponent>();
-
             if (!orderPlacedPolicy.Enabled)
             {
-                context.Logger.LogInformation("Feature.Order.ServiceBus is disabled, PutOrderonServiceBusListBlock is skipped.");
+                context.Logger.LogInformation("Feature.Order.ServiceBus: Plugin is disabled - Order not added to send list.");
                 return Task.FromResult(order);
             }
 
@@ -33,9 +31,7 @@ namespace Feature.Orders.ServiceBus.Engine.Pipelines.Blocks
             }
             catch (Exception ex)
             {
-                Status = "Failure Reason: ";
-                Status = Status += ex.Message;
-                context.Abort(Status, context);
+                context.Logger.LogError($"Feature.Order.ServiceBus: {ex.Message} {ex.StackTrace}");
             }
 
             return Task.FromResult(order);

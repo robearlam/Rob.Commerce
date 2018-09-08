@@ -28,7 +28,6 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
             }
 
             var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
-
             var userPluginOptions = await _commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, _commerceCommander);
 
             if (userPluginOptions.EnabledPlugins.Contains("Feature.Orders.ServiceBus"))
@@ -49,17 +48,18 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
 
             if (!pluginPolicy.Enabled)
             {
-                var newEntityView = new EntityView
-                {
-                    Name = "ServiceBus",
-                    DisplayName = "ServiceBus",
-                    Icon = pluginPolicy.Icon,
-                    ItemId = "ServiceBus"
-                };
-
-                entityView.ChildViews.Add(newEntityView);
+                return entityView;
             }
 
+            var newEntityView = new EntityView
+            {
+                Name = "ServiceBus",
+                DisplayName = "Service Bus",
+                Icon = pluginPolicy.Icon,
+                ItemId = "ServiceBus"
+            };
+
+            entityView.ChildViews.Add(newEntityView);
             return entityView;
         }
     }
