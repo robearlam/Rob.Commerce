@@ -312,7 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.RazorPrecompilation.Website.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="sitecore\shell\client\Applications\CampaignManager\Controls\AnalyticsChecker\AnalyticsChecker.cshtml" />
     <None Include="sitecore\shell\client\Applications\CampaignManager\Controls\CampaignClassifications\CampaignClassifications.cshtml" />

@@ -63,7 +63,6 @@
     <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
     <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
     <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj" />
-    <ProjectReference Include="..\..\..\Feature\Orders.ServiceBus\Engine\Feature.Orders.ServiceBus.Engine\Feature.Orders.ServiceBus.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\ProductCompare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\ProductImport\Engine\Feature.ProductImport.Engine\Feature.ProductImport.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\Rules\Engine\Feature.Rules.Engine\Feature.Rules.Engine.csproj" />

@@ -87,11 +87,12 @@ gulp.task('Publish-Commerce-Engine', function () {
         }));
 });
 
-gulp.task('Delete-Existing-Engine-Files', function () {
-    return del(config.engineAuthoringRoot + "\\**\\*.*", { force: true },
-        del(config.engineOpsRoot + "\\**\\*.*", { force: true },
-            del(config.engineMinionsRoot + "\\**\\*.*", { force: true },
-                del(config.engineShopsRoot + "\\**\\*.*", { force: true }))));
+gulp.task('Delete-Existing-Engine-Files', function (callback) {
+    for (let i = 0; i < config.engineRoles.length; i++) {
+        var engineRole = config.engineRoles[i];
+        del(engineRole.path + "\\**\\*.*", { force: true });
+    }
+    return callback();
 });
 
 
