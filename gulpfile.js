@@ -42,13 +42,10 @@ gulp.task('Start-Local-IIS', function (callback) {
     });
 });
 
-gulp.task('Copy-Published-Engine-To-All-Instances', function () {
-    for (let i = 0; i < config.engineRoles.length; i++) {
-        var engineRole = config.engineRoles[i];
-        return gulp.src(config.engineProjectPath + "/bin/publish/**/*")
-                   .pipe(gulp.dest(engineRole.path));
-
-    }
+gulp.task('Copy-Published-Engine-To-All-Instances', function (callback) {
+    return config.engineRoles.forEach(function (engineRole) {
+        gulp.src(config.engineProjectPath + "/bin/publish/**/*").pipe(gulp.dest(engineRole.path));
+     }, callback());
 });
 
 gulp.task('Transform-Website', function (callback) {
@@ -63,8 +60,7 @@ gulp.task('Transform-Website', function (callback) {
 });
 
 gulp.task('Transform-All-Engine-Roles', function (callback) {
-    for (let i = 0; i < config.engineRoles.length; i++) {
-        var engineRole = config.engineRoles[i];
+    return config.engineRoles.forEach(function (engineRole) {
         var transformscript = 'Powershell.exe ./scripts/TransformEngineRole.ps1' +
             ' -Thumbprint \'' + config.xcCertificateThumbprint + "\'" +
             ' -EnvironmentName \'' + engineRole.environmentName + "\'" +
@@ -73,8 +69,7 @@ gulp.task('Transform-All-Engine-Roles', function (callback) {
         exec(transformscript, function (err, stdout) {
             console.log(stdout);
         });
-    }
-    callback();
+    }, callback());
 });
 
 
@@ -88,14 +83,10 @@ gulp.task('Publish-Commerce-Engine', function () {
 });
 
 gulp.task('Delete-Existing-Engine-Files', function (callback) {
-    for (let i = 0; i < config.engineRoles.length; i++) {
-        var engineRole = config.engineRoles[i];
+    return config.engineRoles.forEach(function (engineRole) {
         del(engineRole.path + "\\**\\*.*", { force: true });
-    }
-    return callback();
+    }, callback());
 });
-
-
 
 gulp.task("01-Build-Commerce-Engine", function (callback) {
     var targets = ["Build"];
@@ -127,8 +118,8 @@ gulp.task('02-Publish-Commerce-Engine-To-Instances',
         "Publish-Commerce-Engine",
         "Delete-Existing-Engine-Files",
         "Copy-Published-Engine-To-All-Instances",
-        "Transform-All-Engine-Roles",
-        "Start-Local-IIS", function(done) {
+        "Start-Local-IIS",
+        "Transform-All-Engine-Roles", function(done) {
             done();
 }));
 
