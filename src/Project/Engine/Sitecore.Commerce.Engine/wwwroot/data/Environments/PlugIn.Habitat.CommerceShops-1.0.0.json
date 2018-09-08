@@ -3,22 +3,24 @@
   "ArtifactStoreId": "78A1EA61-1F37-42A7-AC89-9A3F46D60CA5",
   "Components": {
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-    "$values": [{
-      "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
-      "Memberships": {
-        "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-        "$values": ["CommerceEnvironments"]
-      },
-      "Id": "efe49ff743d34b649fffcof293615cd9",
-      "Policies": {
-        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-        "$values": []
-      },
-      "ChildComponents": {
-        "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
-        "$values": []
+    "$values": [
+      {
+        "$type": "Sitecore.Commerce.Plugin.ManagedLists.ListMembershipsComponent, Sitecore.Commerce.Plugin.ManagedLists",
+        "Memberships": {
+          "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+          "$values": [ "CommerceEnvironments" ]
+        },
+        "Id": "efe49ff743d34b649fffcof293615cd9",
+        "Policies": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
+          "$values": []
+        },
+        "ChildComponents": {
+          "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
+          "$values": []
+        }
       }
-    }]
+    ]
   },
   "DateCreated": "2016-09-23T18:04:08.1660038Z",
   "DateUpdated": "2016-09-23T18:04:08.1760227Z",
@@ -499,17 +501,11 @@
         }
       },
       {
-        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusPluginPolicy,Feature.Orders.ServiceBus.Engine",
-        "EndPoint": "Endpoint=sb://sitecore.servicebus.windows.net/;SharedAccessKeyName=SendOrders;SharedAccessKey=k4WHepJv6F3NcEPBunpEf6Fg3+kkttKNJ4m19THRpvc=;EntityPath=orders",
-        "PrimaryKey": "LHecpTc9bFa07ydo8t+9KhwBWHQRb/qGXckoghB9K44=",
-        "SecondaryKey": "",
-        "QueueName": "Orders",
-        "ListToWatch": "SendOrdertoServiceBus",
-        "SentOrdersList": "OrdersSenttoServiceBus",
-        "ApplicationID": "467b3b2f-bc5c-4bae-9561-3110b46a05f7",
-        "Mcskey": "wLr7AunVoSWVenHEWhlP6ru3036uYTR9gEmsRoNva1A=",
-        "TenantID": "91700184-c314-4dc9-bb7e-a411df456a1e",
-        "IsDisabled": false
+        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusOrderPlacedPolicy,Feature.Orders.ServiceBus.Engine",
+        "OrderPlacedListName": "SendOrdertoServiceBus",
+        "OrderSentListName": "OrdersSenttoServiceBus",
+        "Enabled": true,
+        "Icon": "elements3"
       }
     ]
   }

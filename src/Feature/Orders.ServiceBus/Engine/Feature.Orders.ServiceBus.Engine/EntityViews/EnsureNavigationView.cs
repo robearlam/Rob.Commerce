@@ -27,27 +27,27 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
                 return entityView;
             }
 
-            var pluginPolicy = context.GetPolicy<ServiceBusPluginPolicy>();
+            var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
 
             var userPluginOptions = await _commerceCommander.Command<PluginCommander>().CurrentUserSettings(context.CommerceContext, _commerceCommander);
 
             if (userPluginOptions.EnabledPlugins.Contains("Feature.Orders.ServiceBus"))
             {
-                if (userPluginOptions.HasPolicy<ServiceBusPluginPolicy>())
+                if (userPluginOptions.HasPolicy<ServiceBusOrderPlacedPolicy>())
                 {
-                    pluginPolicy = userPluginOptions.GetPolicy<ServiceBusPluginPolicy>();
+                    pluginPolicy = userPluginOptions.GetPolicy<ServiceBusOrderPlacedPolicy>();
                 }
                 else
                 {
-                    pluginPolicy.IsDisabled = false;
+                    pluginPolicy.Enabled = false;
                 }
             }
             else
             {
-                pluginPolicy.IsDisabled = true;
+                pluginPolicy.Enabled = true;
             }
 
-            if (!pluginPolicy.IsDisabled)
+            if (!pluginPolicy.Enabled)
             {
                 var newEntityView = new EntityView
                 {

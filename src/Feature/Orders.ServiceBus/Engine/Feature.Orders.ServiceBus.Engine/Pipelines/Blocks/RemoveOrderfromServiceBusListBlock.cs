@@ -25,12 +25,12 @@ namespace Feature.Orders.ServiceBus.Engine.Pipelines.Blocks
         public override async Task<Order> Run(Order order, CommercePipelineExecutionContext context)
         {
             Condition.Requires(order).IsNotNull($"{this.Name}: The argument can not be null");
-            var pluginPolicy = context.GetPolicy<ServiceBusPluginPolicy>();
+            var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
             order.GetComponent<TransientListMembershipsComponent>();
   
             try
             {
-                await _removeListEntitiesPipeline.Run(new ListEntitiesArgument(new[] { order.Id }, pluginPolicy.ListToWatch), context);
+                await _removeListEntitiesPipeline.Run(new ListEntitiesArgument(new[] { order.Id }, pluginPolicy.OrderPlacedListName), context);
             }
             catch (Exception ex)
             {

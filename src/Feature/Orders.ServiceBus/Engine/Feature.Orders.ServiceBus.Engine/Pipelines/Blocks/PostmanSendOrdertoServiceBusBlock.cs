@@ -21,7 +21,7 @@ namespace Feature.Orders.ServiceBus.Engine.Pipelines.Blocks
         {
             Condition.Requires(order).IsNotNull($"{Name}: The argument can not be null");
 
-            var serviceBusPluginPolicy = context.GetPolicy<ServiceBusPluginPolicy>();
+            var serviceBusPluginPolicy = context.GetPolicy<ServiceBusConnectionPolicy>();
             ConnectionString = serviceBusPluginPolicy.EndPoint;
             var builder = new ServiceBusConnectionStringBuilder(ConnectionString);        
             var client = new QueueClient(builder);

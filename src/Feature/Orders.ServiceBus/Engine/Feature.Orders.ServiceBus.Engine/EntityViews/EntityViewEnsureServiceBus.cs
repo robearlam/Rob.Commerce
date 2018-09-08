@@ -29,7 +29,7 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
 
             _commerceCommander.Command<ViewCommander>().CurrentEntityViewArgument(context.CommerceContext);
 
-            var pluginPolicy = context.GetPolicy<ServiceBusPluginPolicy>();
+            var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
             var scopesView = new EntityView
             {
                 EntityId = entityView.EntityId,

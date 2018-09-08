@@ -29,9 +29,9 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
                 return entityView;
             }
 
-            var pluginPolicy = context.GetPolicy<ServiceBusPluginPolicy>();
-            var count = await _getCountCommand.Process(context.CommerceContext, pluginPolicy.ListToWatch);
-            var sentOrdersCount = await _getCountCommand.Process(context.CommerceContext, pluginPolicy.SentOrdersList);
+            var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
+            var count = await _getCountCommand.Process(context.CommerceContext, pluginPolicy.OrderPlacedListName);
+            var sentOrdersCount = await _getCountCommand.Process(context.CommerceContext, pluginPolicy.OrderSentListName);
 
             entityView.UiHint = "Flat";
             entityView.Icon = pluginPolicy.Icon;
@@ -45,7 +45,7 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
                     IsReadOnly = true,
                     OriginalType = "Html",
                     UiType = "Html",
-                    RawValue = pluginPolicy.EndPoint
+                    RawValue = "END_POINT" // pluginPolicy.EndPoint
                 });
 
             entityView.ChildViews.Add(
@@ -56,7 +56,7 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
                 DisplayName = "Local Orders pending send to ServiceBus",
                 Properties = new List<ViewProperty> {
                                     new ViewProperty {Name = "ItemId", RawValue = "localordersnotsent", UiType = "EntityLink", IsHidden = true },
-                                    new ViewProperty {Name = "QueueName", RawValue = pluginPolicy.QueueName, UiType = "EntityLink" },
+                                    new ViewProperty {Name = "QueueName", RawValue = pluginPolicy.OrderPlacedListName, UiType = "EntityLink" },
                                     new ViewProperty {Name = "Orders Count", RawValue = count, UiType = "EntityLink" }                                   
 
                 }
@@ -71,7 +71,7 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
                 DisplayName = "Total Orders sent to ServiceBus",
                 Properties = new List<ViewProperty> {
                                     new ViewProperty {Name = "ItemId", RawValue = "localordersnotsent", UiType = "EntityLink", IsHidden = true },
-                                    new ViewProperty {Name = "QueueName", RawValue = pluginPolicy.QueueName, UiType = "EntityLink" },
+                                    new ViewProperty {Name = "QueueName", RawValue = pluginPolicy.OrderSentListName, UiType = "EntityLink" },
                                     new ViewProperty {Name = "Orders Count", RawValue = sentOrdersCount, UiType = "EntityLink" }
 
                 }

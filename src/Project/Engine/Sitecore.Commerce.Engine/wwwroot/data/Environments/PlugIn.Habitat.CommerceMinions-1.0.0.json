@@ -526,17 +526,28 @@
         "$type": "Sitecore.Commerce.Core.IgnorePublishedPolicy, Sitecore.Commerce.Core"
       },
       {
-        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusPluginPolicy,Feature.Orders.ServiceBus.Engine",
-        "EndPoint": "Endpoint=sb://sitecore.servicebus.windows.net/;SharedAccessKeyName=SendOrders;SharedAccessKey=k4WHepJv6F3NcEPBunpEf6Fg3+kkttKNJ4m19THRpvc=;EntityPath=orders",
-        "PrimaryKey": "LHecpTc9bFa07ydo8t+9KhwBWHQRb/qGXckoghB9K44=",
-        "SecondaryKey": "",
-        "QueueName": "Orders",
-        "ListToWatch": "SendOrdertoServiceBus",
-        "SentOrdersList": "OrdersSenttoServiceBus",
+        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusOrderPlacedPolicy,Feature.Orders.ServiceBus.Engine",
+        "OrderPlacedListName": "SendOrdertoServiceBus",
+        "OrderSentListName": "OrdersSenttoServiceBus",
+        "Enabled": true,
+        "Icon": "elements3"
+      },
+      {
+        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusConnectionPolicy,Feature.Orders.ServiceBus.Engine",
+        "EndPoint": "Endpoint=sb://rea-sym2018.servicebus.windows.net/;SharedAccessKeyName=Full-Access;SharedAccessKey=P8tFw43ckfYk3JbYrp+RI3nYH/0k+lpiew4kivzvsk8=;EntityPath=xc902",
+        "PrimaryKey": "qxmao1lVOC4Ffqd5iprkeCOzqOMviL/vVlLuzi/+pNg=",
+        "SecondaryKey": "qxmao1lVOC4Ffqd5iprkeCOzqOMviL/vVlLuzi/+pNg=",
         "ApplicationID": "467b3b2f-bc5c-4bae-9561-3110b46a05f7",
         "Mcskey": "wLr7AunVoSWVenHEWhlP6ru3036uYTR9gEmsRoNva1A=",
-        "TenantID": "91700184-c314-4dc9-bb7e-a411df456a1e",
-        "IsDisabled": false
+        "TenantID": "91700184-c314-4dc9-bb7e-a411df456a1e"
+      },
+      {
+        "$type": "Sitecore.Commerce.Core.MinionPolicy, Sitecore.Commerce.Core",
+        "WakeupInterval": "00:01:00",
+        "ListToWatch": "SendOrdertoServiceBus",
+        "FullyQualifiedName": "Feature.Orders.ServiceBus.Engine.Minions.SendOrdertoServiceBusMinion, Feature.Orders.ServiceBus.Engine",
+        "ItemsPerBatch": 10,
+        "SleepBetweenBatches": 500
       }
     ]
   }

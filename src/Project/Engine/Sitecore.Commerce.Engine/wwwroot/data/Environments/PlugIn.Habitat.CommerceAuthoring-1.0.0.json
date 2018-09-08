@@ -531,17 +531,11 @@
         "$type": "Sitecore.Commerce.Core.IgnorePublishedPolicy, Sitecore.Commerce.Core"
       },
       {
-        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusPluginPolicy,Feature.Orders.ServiceBus.Engine",
-        "EndPoint": "Endpoint=sb://sitecore.servicebus.windows.net/;SharedAccessKeyName=SendOrders;SharedAccessKey=k4WHepJv6F3NcEPBunpEf6Fg3+kkttKNJ4m19THRpvc=;EntityPath=orders",
-        "PrimaryKey": "LHecpTc9bFa07ydo8t+9KhwBWHQRb/qGXckoghB9K44=",
-        "SecondaryKey": "",
-        "QueueName": "Orders",
-        "ListToWatch": "SendOrdertoServiceBus",
-        "SentOrdersList": "OrdersSenttoServiceBus",
-        "ApplicationID": "467b3b2f-bc5c-4bae-9561-3110b46a05f7",
-        "Mcskey": "wLr7AunVoSWVenHEWhlP6ru3036uYTR9gEmsRoNva1A=",
-        "TenantID": "91700184-c314-4dc9-bb7e-a411df456a1e",
-        "IsDisabled": false
+        "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusOrderPlacedPolicy,Feature.Orders.ServiceBus.Engine",
+        "OrderPlacedListName": "SendOrdertoServiceBus",
+        "OrderSentListName": "OrdersSenttoServiceBus",
+        "Enabled": true,
+        "Icon": "elements3"
       }
     ]
   }

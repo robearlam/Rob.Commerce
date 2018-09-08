@@ -26,11 +26,11 @@ namespace Feature.Orders.ServiceBus.Engine.Pipelines.Blocks
         public override async Task<Order> Run(Order order, CommercePipelineExecutionContext context)
         {
             Condition.Requires(order).IsNotNull($"{Name}: The argument can not be null");
-            var pluginPolicy = context.GetPolicy<ServiceBusPluginPolicy>();
+            var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
 
             try
             {
-                await _addListEntitiesPipeline.Run(new ListEntitiesArgument(new[] {order.Id}, pluginPolicy.SentOrdersList), context);
+                await _addListEntitiesPipeline.Run(new ListEntitiesArgument(new[] {order.Id}, pluginPolicy.OrderSentListName), context);
             }
             catch (Exception ex)
             {
