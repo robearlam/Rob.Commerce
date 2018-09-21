@@ -44,6 +44,7 @@ namespace Feature.ProductImport.Engine
                     .Add<EnsureSellableItemExistsBlock>()
                     .Add<EnsureSellableItemIsInCategory>()
                     .Add<EnsureInventoryIsPopulatedBlock>()
+                    .Add<EnsureEntityViewsArePopulatedBlock>()
                 )
             );
 

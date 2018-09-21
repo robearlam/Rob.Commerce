@@ -21,6 +21,9 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
         private const int CatalogDisplayNameIndex = 11;
         private const int CategoryNameIndex = 12;
         private const int InventorySetsIndex = 13;
+        private const int WaistIndex = 14;
+        private const int InsideIndex = 15;
+        private const int LegIndex = 16;
         private const int CurrencyCodeIndex = 1;
         private const int ListPriceAmountIndex = 0;
         private const int InventorySetNameIndex = 0;
@@ -41,6 +44,9 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
         public string CatalogDisplayName => _rawFields[CatalogDisplayNameIndex];
         public IList<string> Categories => _rawFields[CategoryNameIndex].Split('|').ToList();
         public IDictionary<string, int> InventorySets => GenerateInventorySets();
+        public string Waist => _rawFields[WaistIndex];
+        public string InsideLeg => _rawFields[InsideIndex];
+        public string Leg => _rawFields[LegIndex];
 
         public string FullEntityCatalogName => $"{CommerceEntity.IdPrefix<Catalog>()}{CatalogName}";
         public string FullEntityCategoryName => $"{CommerceEntity.IdPrefix<Category>()}{CatalogName}-{Categories.Last()}";
