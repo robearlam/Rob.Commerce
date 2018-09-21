@@ -24,8 +24,8 @@ namespace Feature.ProductImport.Engine
 
             services.Sitecore().Pipelines(config => config
                 .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); })
-                .ConfigurePipeline<IBizFxNavigationPipeline>(d => { d.Add<EnsureNavigationView>(); })
-                .ConfigurePipeline<IGetEntityViewPipeline>(d => { d.Add<Dashboard>().Before<IFormatEntityViewPipeline>(); })
+                //.ConfigurePipeline<IBizFxNavigationPipeline>(d => { d.Add<EnsureNavigationView>(); })
+                //.ConfigurePipeline<IGetEntityViewPipeline>(d => { d.Add<Dashboard>().Before<IFormatEntityViewPipeline>(); })
 
                 .ConfigurePipeline<IConfigureServiceApiPipeline>(configure => configure
                     .Add<Pipelines.Blocks.ConfigureServiceApiBlock>()

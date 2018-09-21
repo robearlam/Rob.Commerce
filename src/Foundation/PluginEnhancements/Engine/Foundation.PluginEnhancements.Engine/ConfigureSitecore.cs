@@ -19,13 +19,17 @@ namespace Foundation.PluginEnhancements.Engine
 
             services.Sitecore().Pipelines(config => config
 
-                .ConfigurePipeline<IBizFxNavigationPipeline>(configure => configure
-                    .Add<EnsureNavigationView>()
-                )
+                //.ConfigurePipeline<IBizFxNavigationPipeline>(configure => configure
+                //    .Add<EnsureNavigationView>()
+                //)
 
                 .ConfigurePipeline<IDoActionPipeline>(configure => configure
                     .Add<DoActionEnablePlugin>().After<ValidateEntityVersionBlock>()
                     .Add<DoActionDisablePlugin>().After<ValidateEntityVersionBlock>()
+                )
+
+                .ConfigurePipeline<IGetEntityViewPipeline>(configuration => configuration
+                    .Add<Dashboard>().Before<IFormatEntityViewPipeline>()
                 )
             );
 
