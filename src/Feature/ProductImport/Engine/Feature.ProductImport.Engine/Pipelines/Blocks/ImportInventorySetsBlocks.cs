@@ -23,18 +23,18 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             var inventorySets = GetDistinctInventorySetNames(arg);
             foreach (var inventorySetName in inventorySets)
             {
-                if (InventorySetExists(inventorySetName, context))
+                if (await InventorySetExists(inventorySetName, context))
                     continue;
 
-                await _createInventorySetCommand.Process(context.CommerceContext, inventorySetName, inventorySetName, inventorySetName);
+                var result = await _createInventorySetCommand.Process(context.CommerceContext, inventorySetName, inventorySetName, inventorySetName);
             }
 
             return arg;
         }
 
-        private bool InventorySetExists(string inventorySetName, CommercePipelineExecutionContext context)
+        private async Task<bool>  InventorySetExists(string inventorySetName, CommercePipelineExecutionContext context)
         {
-            var inventorySet = _findEntityPipeline.Run(new FindEntityArgument(typeof(InventorySet), $"{CommerceEntity.IdPrefix<InventorySet>()}{inventorySetName}"), context);
+            var inventorySet = await _findEntityPipeline.Run(new FindEntityArgument(typeof(InventorySet), $"{CommerceEntity.IdPrefix<InventorySet>()}{inventorySetName}", 1), context);
             return inventorySet != null;
         }
 
