@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Sitecore.Commerce.Core" Version="2.2.29" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.2.11" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Orders" Version="2.2.22" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Rules" Version="2.2.29" />
     <PackageReference Include="Sitecore.Framework.Rules.Registry" Version="3.0.1" />
   </ItemGroup>

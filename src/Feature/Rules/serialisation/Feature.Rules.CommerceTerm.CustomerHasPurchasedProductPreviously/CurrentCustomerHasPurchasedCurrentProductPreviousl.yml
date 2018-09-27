@@ -1,0 +1,17 @@
+﻿---
+ID: "88530a0c-edc0-49f5-bd21-d03c1c97a74a"
+Parent: "cba44a1c-9802-48ab-a008-0d08b72deedf"
+Template: "5dd201a0-5b3d-4e82-8cca-608d5905c3a1"
+Path: /sitecore/Commerce/Commerce Control Panel/Commerce Engine Settings/Commerce Terms/BusinessTools/Conditions/CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180926T133234Z
+    - ID: "290defd0-7b9a-4541-a326-87c44bee5309"
+      Hint: Value
+      Value: "Current Customer Has Purchased Any Product in Cart in past [days]?"

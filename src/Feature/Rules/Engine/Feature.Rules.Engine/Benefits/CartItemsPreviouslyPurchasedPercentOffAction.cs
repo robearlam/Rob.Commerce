@@ -6,7 +6,7 @@ using Sitecore.Framework.Rules;
 namespace Feature.Rules.Engine.Benefits
 {
     [EntityIdentifier("CartItemPreviouslyPurchasedPercentOffAction")]
-    public class CartItemsPreviouslyPurchasedPercentOffAction : IAction
+    public class CartItemsPreviouslyPurchasedPercentOffAction : ICartLineAction
     {
         public IRuleValue<int> PercentOff { get; set; }
 
