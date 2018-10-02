@@ -29,6 +29,8 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
             }
 
             var pluginPolicy = context.GetPolicy<ServiceBusOrderPlacedPolicy>();
+            var connectionPolicy = context.GetPolicy<ServiceBusConnectionPolicy>();
+
             var count = await _getCountCommand.Process(context.CommerceContext, pluginPolicy.OrderPlacedListName);
             var sentOrdersCount = await _getCountCommand.Process(context.CommerceContext, pluginPolicy.OrderSentListName);
 
@@ -44,7 +46,7 @@ namespace Feature.Orders.ServiceBus.Engine.EntityViews
                     IsReadOnly = true,
                     OriginalType = "Html",
                     UiType = "Html",
-                    RawValue = "END_POINT" // pluginPolicy.EndPoint
+                    RawValue = connectionPolicy.EndPoint
                 });
 
             entityView.ChildViews.Add(
