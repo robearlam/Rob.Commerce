@@ -51,3 +51,4 @@ lib/**/*.lastcodeanalysissucceeded
 
 #node/gulp
 node_modules/
+package-lock.json
