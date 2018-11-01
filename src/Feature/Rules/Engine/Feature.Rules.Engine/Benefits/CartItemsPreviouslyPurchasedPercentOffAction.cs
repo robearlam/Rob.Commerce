@@ -75,11 +75,10 @@ namespace Feature.Rules.Engine.Benefits
             if (cart == null || string.IsNullOrWhiteSpace(contextContactComponent?.ShopperId))
                 return new List<CartLineComponent>();
 
-            var orderList = _findEntitiesInListCommand.Process<Order>(commerceContext, CommerceEntity.ListName<Order>(), 0, int.MaxValue).Result.Items.ToList();
-            var customersOrders = orderList.Where(x => x.GetComponent<ContactComponent>().CustomerId == contextContactComponent.ShopperId).ToList();
+            var listName = string.Format(commerceContext.GetPolicy<KnownOrderListsPolicy>().CustomerOrders, contextContactComponent.ShopperId);
+            var customersOrders = _findEntitiesInListCommand.Process<Order>(commerceContext, listName, 0, int.MaxValue).Result.Items.ToList();
 
             return cart.Lines.Where(cartLine => customersOrders.Any(order => order.Lines.Any(ProductExistsInOrderAndCart(cartLine))));
-
         }
 
         private static Func<CartLineComponent, bool> ProductExistsInOrderAndCart(CartLineComponent cartLine)
