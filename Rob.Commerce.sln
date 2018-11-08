@@ -33,15 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceProxy", "ServiceProx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "src\Foundation\ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{99ED5D0F-2499-47B6-8BFA-7C6824335D05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.AdventureWorks", "src\Feature\EngineSDK\Plugin.Sample.AdventureWorks\Plugin.Sample.AdventureWorks.csproj", "{A80576E2-D4F4-4A0E-96EC-61BE311148E7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Customers.CsMigration", "src\Feature\EngineSDK\Plugin.Sample.Customers.CsMigration\Plugin.Sample.Customers.CsMigration.csproj", "{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Habitat", "src\Feature\EngineSDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj", "{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Braintree", "src\Feature\EngineSDK\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj", "{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Upgrade", "src\Feature\EngineSDK\Plugin.Sample.Upgrade\Plugin.Sample.Upgrade.csproj", "{3BC75EB5-BE41-45E3-89F9-166F571CFC42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductCompare", "ProductCompare", "{68D2E66C-4F5F-4E8F-817B-4643D8BE557A}"
 EndProject
@@ -81,6 +73,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RazorPreCompilation", "Razo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.RazorPrecompilation.Website", "src\Feature\RazorPrecompilation\Website\Feature.RazorPrecompilation.Website\Feature.RazorPrecompilation.Website.csproj", "{D5D267B4-FC99-44A0-928D-F10A6F74724A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{CDD2C936-5028-480D-8E4E-43075E1759F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Braintree", "src\Feature\Payments\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj", "{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,26 +91,10 @@ Global
 		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99ED5D0F-2499-47B6-8BFA-7C6824335D05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A80576E2-D4F4-4A0E-96EC-61BE311148E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A80576E2-D4F4-4A0E-96EC-61BE311148E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A80576E2-D4F4-4A0E-96EC-61BE311148E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A80576E2-D4F4-4A0E-96EC-61BE311148E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B4FACFF-CC65-4FBE-A384-59423B0B44DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BC75EB5-BE41-45E3-89F9-166F571CFC42}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -159,6 +139,10 @@ Global
 		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,11 +153,7 @@ Global
 		{64130C81-FF1E-4B00-8AD9-7B8430C72259} = {5AA9BFF2-9CA0-472F-BBA6-306BDE978318}
 		{BB1F8DD9-410B-4F8F-9323-0B4EFFC3CE79} = {8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}
 		{99ED5D0F-2499-47B6-8BFA-7C6824335D05} = {BB1F8DD9-410B-4F8F-9323-0B4EFFC3CE79}
-		{A80576E2-D4F4-4A0E-96EC-61BE311148E7} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
-		{6B4FACFF-CC65-4FBE-A384-59423B0B44DA} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{6EFB3DC5-FAD5-463A-9CF5-536BC8FF6D01} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
-		{9FA0F40F-C2D5-4FB7-9B11-F3838A033FF0} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
-		{3BC75EB5-BE41-45E3-89F9-166F571CFC42} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{68D2E66C-4F5F-4E8F-817B-4643D8BE557A} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
 		{E5CD6265-2AE1-4064-97B4-1D42F18AFE20} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
 		{88410B58-6133-4BD4-AA67-9F16AA59487B} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
@@ -193,9 +173,11 @@ Global
 		{0D84EC04-9E1A-4807-B263-36716670D38C} = {AC526173-2555-4838-BA6B-59A1260004F1}
 		{BD72EF3C-CC06-4F17-8949-D7CD16DE189A} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
 		{D5D267B4-FC99-44A0-928D-F10A6F74724A} = {BD72EF3C-CC06-4F17-8949-D7CD16DE189A}
+		{CDD2C936-5028-480D-8E4E-43075E1759F1} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
+		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3} = {CDD2C936-5028-480D-8E4E-43075E1759F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
