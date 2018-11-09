@@ -60,7 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Feature\EngineSDK\Plugin.Sample.Habitat\Plugin.Sample.Habitat.csproj" />
+    <ProjectReference Include="..\..\..\Feature\Initialization\Engine\Feature.Initialization.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\Orders.ServiceBus\Engine\Feature.Orders.ServiceBus.Engine\Feature.Orders.ServiceBus.Engine.csproj" />
     <ProjectReference Include="..\..\..\Feature\Payments\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
     <ProjectReference Include="..\..\..\Feature\ProductCompare\Engine\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
