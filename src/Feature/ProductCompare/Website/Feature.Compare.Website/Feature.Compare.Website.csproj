@@ -160,10 +160,10 @@
       <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.3.7.0\lib\NET462\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.3.7.1\lib\NET462\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.SitecoreExtensions.3.7.0\lib\NET462\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.SitecoreExtensions.3.7.1\lib\NET462\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />

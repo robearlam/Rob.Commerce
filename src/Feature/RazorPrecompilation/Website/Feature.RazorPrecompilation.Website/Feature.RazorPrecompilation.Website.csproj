@@ -168,101 +168,100 @@
       <HintPath>..\..\..\..\..\packages\Sitecore.Speak.Components.Web.NoReferences.9.0.180604\lib\NET462\Sitecore.Speak.Components.Web.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Analytics, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Analytics.3.7.0\lib\NET462\Sitecore.XA.Feature.Analytics.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Analytics.3.7.1\lib\NET462\Sitecore.XA.Feature.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Compliancy, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Compliancy.3.7.0\lib\NET462\Sitecore.XA.Feature.Compliancy.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Compliancy.3.7.1\lib\NET462\Sitecore.XA.Feature.Compliancy.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Composites, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Composites.3.7.0\lib\NET462\Sitecore.XA.Feature.Composites.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Composites.3.7.1\lib\NET462\Sitecore.XA.Feature.Composites.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Context, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Context.3.7.0\lib\NET462\Sitecore.XA.Feature.Context.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Context.3.7.1\lib\NET462\Sitecore.XA.Feature.Context.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Engagement, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Engagement.3.7.0\lib\NET462\Sitecore.XA.Feature.Engagement.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Engagement.3.7.1\lib\NET462\Sitecore.XA.Feature.Engagement.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Events, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Events.3.7.0\lib\NET462\Sitecore.XA.Feature.Events.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Events.3.7.1\lib\NET462\Sitecore.XA.Feature.Events.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Forms, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Forms.3.7.0\lib\NET462\Sitecore.XA.Feature.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Forms.3.7.1\lib\NET462\Sitecore.XA.Feature.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.GenericMetaRendering, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.GenericMetaRendering.3.7.0\lib\NET462\Sitecore.XA.Feature.GenericMetaRendering.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.GenericMetaRendering.3.7.1\lib\NET462\Sitecore.XA.Feature.GenericMetaRendering.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Json, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Json.3.7.0\lib\NET462\Sitecore.XA.Feature.Json.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Json.3.7.1\lib\NET462\Sitecore.XA.Feature.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.LayoutServices.Integration, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.LayoutServices.Integration.3.7.0\lib\NET462\Sitecore.XA.Feature.LayoutServices.Integration.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.LayoutServices.Integration.3.7.1\lib\NET462\Sitecore.XA.Feature.LayoutServices.Integration.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Maps, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Maps.3.7.0\lib\NET462\Sitecore.XA.Feature.Maps.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Maps.3.7.1\lib\NET462\Sitecore.XA.Feature.Maps.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Media, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Media.3.7.0\lib\NET462\Sitecore.XA.Feature.Media.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Media.3.7.1\lib\NET462\Sitecore.XA.Feature.Media.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Navigation, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Navigation.3.7.0\lib\NET462\Sitecore.XA.Feature.Navigation.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Navigation.3.7.1\lib\NET462\Sitecore.XA.Feature.Navigation.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Overlays, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Overlays.3.7.0\lib\NET462\Sitecore.XA.Feature.Overlays.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Overlays.3.7.1\lib\NET462\Sitecore.XA.Feature.Overlays.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.PageContent, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.PageContent.3.7.0\lib\NET462\Sitecore.XA.Feature.PageContent.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.PageContent.3.7.1\lib\NET462\Sitecore.XA.Feature.PageContent.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.PageStructure, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.PageStructure.3.7.0\lib\NET462\Sitecore.XA.Feature.PageStructure.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.PageStructure.3.7.1\lib\NET462\Sitecore.XA.Feature.PageStructure.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Search, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Search.3.7.0\lib\NET462\Sitecore.XA.Feature.Search.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Search.3.7.1\lib\NET462\Sitecore.XA.Feature.Search.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Security, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Security.3.7.0\lib\NET462\Sitecore.XA.Feature.Security.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Security.3.7.1\lib\NET462\Sitecore.XA.Feature.Security.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.SiteMetadata, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.SiteMetadata.3.7.0\lib\NET462\Sitecore.XA.Feature.SiteMetadata.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.SiteMetadata.3.7.1\lib\NET462\Sitecore.XA.Feature.SiteMetadata.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Social, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Social.3.7.0\lib\NET462\Sitecore.XA.Feature.Social.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Social.3.7.1\lib\NET462\Sitecore.XA.Feature.Social.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Feature.Taxonomy, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Taxonomy.3.7.0\lib\NET462\Sitecore.XA.Feature.Taxonomy.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Feature.Taxonomy.3.7.1\lib\NET462\Sitecore.XA.Feature.Taxonomy.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.DynamicPlaceholders, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.DynamicPlaceholders.3.7.0\lib\NET462\Sitecore.XA.Foundation.DynamicPlaceholders.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.DynamicPlaceholders.3.7.1\lib\NET462\Sitecore.XA.Foundation.DynamicPlaceholders.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Grid, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Grid.3.7.0\lib\NET462\Sitecore.XA.Foundation.Grid.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Grid.3.7.1\lib\NET462\Sitecore.XA.Foundation.Grid.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.JsonVariants, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.JsonVariants.3.7.0\lib\NET462\Sitecore.XA.Foundation.JsonVariants.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.JsonVariants.3.7.1\lib\NET462\Sitecore.XA.Foundation.JsonVariants.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.MarkupDecorator, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.MarkupDecorator.3.7.0\lib\NET462\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.MarkupDecorator.3.7.1\lib\NET462\Sitecore.XA.Foundation.MarkupDecorator.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Mvc, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.3.7.0\lib\NET462\Sitecore.XA.Foundation.Mvc.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Mvc.3.7.1\lib\NET462\Sitecore.XA.Foundation.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Presentation, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Presentation.3.7.0\lib\NET462\Sitecore.XA.Foundation.Presentation.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Presentation.3.7.1\lib\NET462\Sitecore.XA.Foundation.Presentation.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.RenderingVariants, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.RenderingVariants.3.7.0\lib\NET462\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.RenderingVariants.3.7.1\lib\NET462\Sitecore.XA.Foundation.RenderingVariants.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Search, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Search.3.7.0\lib\NET462\Sitecore.XA.Foundation.Search.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Search.3.7.1\lib\NET462\Sitecore.XA.Foundation.Search.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.SitecoreExtensions.3.7.0\lib\NET462\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.SitecoreExtensions.3.7.1\lib\NET462\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Theming, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Theming.3.7.0\lib\NET462\Sitecore.XA.Foundation.Theming.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Theming.3.7.1\lib\NET462\Sitecore.XA.Foundation.Theming.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XA.Foundation.Variants.Abstractions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Variants.Abstractions.3.7.0\lib\NET462\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
+      <HintPath>..\..\..\..\..\packages\Sitecore.XA.Foundation.Variants.Abstractions.3.7.1\lib\NET462\Sitecore.XA.Foundation.Variants.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll</HintPath>
