@@ -44,7 +44,13 @@ gulp.task('Start-Local-IIS', function (callback) {
 
 gulp.task('Copy-Published-Engine-To-All-Instances', function (callback) {
     return config.engineRoles.forEach(function (engineRole) {
-        gulp.src(config.engineProjectPath + "/bin/publish/**/*").pipe(gulp.dest(engineRole.path));
+        var copyScript = 'Powershell.exe ./scripts/CopyEngine.ps1' +
+            ' -RolePath \'' + engineRole.path + '\''
+
+        console.log(copyScript);
+        exec(copyScript, function (err, stdout) {
+            console.log(stdout);
+        });
      }, callback());
 });
 
@@ -144,9 +150,9 @@ gulp.task("default",
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
     return gulp.src([location + "/**/Website/**/*.csproj"])
-        .pipe(flatmap(function (stream, file) {
-            return publishStream(stream);
-        }));
+               .pipe(flatmap(function (stream, file) {
+                   return publishStream(stream);
+               }));
 };
 
 var publishStream = function (stream) {
