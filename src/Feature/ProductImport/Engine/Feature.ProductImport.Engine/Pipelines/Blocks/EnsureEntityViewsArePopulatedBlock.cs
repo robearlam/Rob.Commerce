@@ -55,7 +55,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 
             entityView.EntityId = $"{CommerceEntity.IdPrefix<SellableItem>()}{arg.Line.ProductId}";
             PopulatePropertyValue(entityView, "Waist", arg.Line.Waist);
-            PopulatePropertyValue(entityView, "Leg", arg.Line.Leg);
+            PopulatePropertyValue(entityView, "OutsideLeg", arg.Line.Leg);
             PopulatePropertyValue(entityView, "InsideLeg", arg.Line.InsideLeg);
             return entityViewComponent;
         }
