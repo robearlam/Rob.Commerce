@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Feature.Rules.Website</RootNamespace>
-    <AssemblyName>Feature.Rules.Website</AssemblyName>
+    <RootNamespace>Foundation.Rules.Website</RootNamespace>
+    <AssemblyName>Foundation.Rules.Website</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -91,7 +91,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Rules.Website.Serialisation.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Rules.Website.Serialisation.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

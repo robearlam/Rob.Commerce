@@ -6,9 +6,9 @@ using Sitecore.Commerce.Plugin.Carts;
 using Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Framework.Rules;
 
-namespace Feature.Rules.Engine.Conditions
+namespace Foundation.Rules.Engine.Conditions
 {
-    [EntityIdentifier("CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition")]
+    [EntityIdentifier(RulesConstants.Conditions.CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition)]
     public class CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition : ICondition
     {
         private readonly FindEntitiesInListCommand _findEntitiesInListCommand;

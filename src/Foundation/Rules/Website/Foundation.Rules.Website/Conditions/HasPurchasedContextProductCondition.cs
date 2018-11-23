@@ -11,7 +11,7 @@ using Sitecore.Rules.Conditions;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
 
-namespace Feature.Rules.Website.Conditions
+namespace Foundation.Rules.Website.Conditions
 {
     public class HasPurchasedContextProductCondition<T> : StringOperatorCondition<T> where T : RuleContext
     {
@@ -26,20 +26,20 @@ namespace Feature.Rules.Website.Conditions
             }
 
             var productId = siteContext.CurrentCatalogItem?.Name;
-            return DidUserOrderProductInTimeframe(productId, Days);
+            return DidUserOrderProductInTimeFrame(productId, Days);
         }
 
-        protected bool DidUserOrderProductInTimeframe(string productId, int pastDaysAmount)
+        protected bool DidUserOrderProductInTimeFrame(string productId, int pastDaysAmount)
         {
             var orderGoals = GetSubmittedOrderGoals(pastDaysAmount);
-            return orderGoals.Any(orderGoal => orderGoal.Order.CartLines.Any(cartline => DoesProductIdMatch(productId, cartline)));
+            return orderGoals.Any(orderGoal => orderGoal.Order.CartLines.Any(cartLine => DoesProductIdMatch(productId, cartLine)));
         }
 
-        private static bool DoesProductIdMatch(string productId, CartLine cartline)
+        private static bool DoesProductIdMatch(string productId, CartLine cartLine)
         {
-            return (cartline.Product.ProductId.Contains("|")
-                       ? cartline.Product.ProductId.Split('|')[1]
-                       : cartline.Product.ProductId) == productId;
+            return (cartLine.Product.ProductId.Contains("|")
+                       ? cartLine.Product.ProductId.Split('|')[1]
+                       : cartLine.Product.ProductId) == productId;
         }
 
         public List<VisitorOrderCreatedGoal> GetSubmittedOrderGoals(double? pastDaysAmount)

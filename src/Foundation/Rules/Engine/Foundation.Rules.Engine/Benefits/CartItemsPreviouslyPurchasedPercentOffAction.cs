@@ -7,11 +7,10 @@ using Sitecore.Commerce.Plugin.Carts;
 using Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Commerce.Plugin.Pricing;
 using Sitecore.Framework.Rules;
-using static System.Decimal;
 
-namespace Feature.Rules.Engine.Benefits
+namespace Foundation.Rules.Engine.Benefits
 {
-    [EntityIdentifier("CartItemPreviouslyPurchasedPercentOffAction")]
+    [EntityIdentifier(RulesConstants.Benefits.CartItemPreviouslyPurchasedPercentOffAction)]
     public class CartItemsPreviouslyPurchasedPercentOffAction : ICartLineAction
     {
         private readonly FindEntitiesInListCommand _findEntitiesInListCommand;
@@ -44,12 +43,12 @@ namespace Feature.Rules.Engine.Benefits
                 var discount = commerceContext.GetPolicy<KnownCartAdjustmentTypesPolicy>().Discount;
                 var d = Convert.ToDecimal(PercentOff.Yield(context) * 0.01) * totals.Lines[line.Id].SubTotal.Amount;
                 if (commerceContext.GetPolicy<GlobalPricingPolicy>().ShouldRoundPriceCalc)
-                    d = Round(d, commerceContext.GetPolicy<GlobalPricingPolicy>().RoundDigits,
+                    d = decimal.Round(d, commerceContext.GetPolicy<GlobalPricingPolicy>().RoundDigits,
                         commerceContext.GetPolicy<GlobalPricingPolicy>().MidPointRoundUp
                             ? MidpointRounding.AwayFromZero
                             : MidpointRounding.ToEven);
 
-                var amount = d * MinusOne;
+                var amount = d * decimal.MinusOne;
                 var adjustments = line.Adjustments;
                 var awardedAdjustment = new CartLineLevelAwardedAdjustment
                 {

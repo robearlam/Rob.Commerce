@@ -16,6 +16,10 @@
     <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.26" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Rules\Engine\Foundation.Rules.Engine\Foundation.Rules.Engine.csproj" />
+  </ItemGroup>
+
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>

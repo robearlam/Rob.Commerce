@@ -65,8 +65,8 @@ namespace Feature.Initialization.Engine.Pipelines.Blocks
             var conditionModel = new ConditionModel
             {
                 Id = Guid.NewGuid().ToString(),
-                LibraryId = "CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition",
-                Name = "CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition",
+                LibraryId = Foundation.Rules.Engine.RulesConstants.Conditions.CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition,
+                Name = Foundation.Rules.Engine.RulesConstants.Conditions.CurrentCustomerHasPurchasedCurrentProductPreviouslyCondition,
                 Properties = new List<PropertyModel>
                 {
                     new PropertyModel { IsOperator = false, Name = "Days", Value = "365", DisplayType = "System.Int32" },
@@ -77,8 +77,8 @@ namespace Feature.Initialization.Engine.Pipelines.Blocks
             var actionModel = new ActionModel
             {
                 Id = Guid.NewGuid().ToString(),
-                LibraryId = "CartItemPreviouslyPurchasedPercentOffAction",
-                Name = "CartItemPreviouslyPurchasedPercentOffAction"
+                LibraryId = Foundation.Rules.Engine.RulesConstants.Benefits.CartItemPreviouslyPurchasedPercentOffAction,
+                Name = Foundation.Rules.Engine.RulesConstants.Benefits.CartItemPreviouslyPurchasedPercentOffAction
             };
             await _addBenefitPipeline.Run(new PromotionActionModelArgument(promotion,actionModel), context);
 

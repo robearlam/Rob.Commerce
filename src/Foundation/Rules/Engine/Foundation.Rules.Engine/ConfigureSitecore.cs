@@ -1,12 +1,12 @@
 ﻿using System.Reflection;
-using Feature.Rules.Engine.Pipelines.Blocks;
+using Foundation.Rules.Engine.Pipelines.Blocks;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
 using Sitecore.Framework.Rules;
 
-namespace Feature.Rules.Engine
+namespace Foundation.Rules.Engine
 {
     public class ConfigureSitecore : IConfigureSitecore
     {
