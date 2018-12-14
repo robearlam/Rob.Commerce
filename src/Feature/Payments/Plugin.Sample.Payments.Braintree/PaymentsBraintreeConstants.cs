@@ -47,11 +47,6 @@ namespace Plugin.Sample.Payments.Braintree
                 public const string SettleFederatedPaymentBlock = "PaymentsBraintree.block.SettleFederatedPayment";
 
                 /// <summary>
-                /// The void federated payment block
-                /// </summary>
-                public const string VoidFederatedPaymentBlock = "PaymentsBraintree.block.voidfederatedpayment";
-
-                /// <summary>
                 /// The void cancel order federated payment block
                 /// </summary>
                 public const string VoidCancelOrderFederatedPaymentBlock = "PaymentsBraintree.block.voidcancelorderfederatedpayment";
@@ -59,12 +54,7 @@ namespace Plugin.Sample.Payments.Braintree
                 /// <summary>
                 /// The refund federated payment block
                 /// </summary>
-                public const string RefundFederatedPaymentBlock = "PaymentsBraintree.block.refundfederatedpayment";             
-
-                /// <summary>
-                /// The void on hold order federated payment block
-                /// </summary>
-                public const string VoidOnHoldOrderFederatedPaymentBlock = "PaymentsBraintree.block.voidonholdorderfederatedpayment";
+                public const string RefundFederatedPaymentBlock = "PaymentsBraintree.block.refundfederatedpayment";
 
                 /// <summary>
                 /// The registered plugin block name.

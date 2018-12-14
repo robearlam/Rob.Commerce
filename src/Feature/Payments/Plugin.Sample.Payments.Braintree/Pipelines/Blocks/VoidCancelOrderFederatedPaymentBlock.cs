@@ -55,9 +55,9 @@ namespace Plugin.Sample.Payments.Braintree
 
             var order = arg;
           
-            if (!order.HasComponent<OnHoldOrderComponent>() &&
-                !order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Pending, StringComparison.OrdinalIgnoreCase) &&
-                !order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Problem, StringComparison.OrdinalIgnoreCase))
+            if (!order.HasComponent<OnHoldOrderComponent>()
+                && !order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Pending, StringComparison.OrdinalIgnoreCase) 
+                && !order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Problem, StringComparison.OrdinalIgnoreCase))
             {
                 var expectedStatuses = $"{context.GetPolicy<KnownOrderStatusPolicy>().Pending}, { context.GetPolicy<KnownOrderStatusPolicy>().Problem}, { context.GetPolicy<KnownOrderStatusPolicy>().OnHold}";
                 var invalidOrderStateMessage = $"{this.Name}: Expected order in '{expectedStatuses}' statuses but order was in '{order.Status}' status";
@@ -78,14 +78,8 @@ namespace Plugin.Sample.Payments.Braintree
             }
 
             var braintreeClientPolicy = context.GetPolicy<BraintreeClientPolicy>();
-            if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
-                || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
+            if (!(await braintreeClientPolicy.IsValid(context.CommerceContext).ConfigureAwait(false)))
             {
-                await context.CommerceContext.AddMessage(
-                   context.GetPolicy<KnownResultCodes>().Error,
-                   "InvalidClientPolicy",
-                   new object[] { "BraintreeClientPolicy" },
-                    $"{this.Name}. Invalid BraintreeClientPolicy");
                 return arg;
             }
 
@@ -109,24 +103,22 @@ namespace Plugin.Sample.Payments.Braintree
                 else
                 {
                     var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
-
-                            context.Abort(
-                                await context.CommerceContext.AddMessage(
-                                   context.GetPolicy<KnownResultCodes>().Error,
-                                   "PaymentVoidFailed",
-                                   new object[] { existingPayment.TransactionId },
-                                   $"{this.Name}. Payment void failed for transaction { existingPayment.TransactionId }: { errorMessages }"), 
-                                context);
-
+                    context.Abort(
+                        await context.CommerceContext.AddMessage(
+                            context.GetPolicy<KnownResultCodes>().Error,
+                            "PaymentVoidFailed",
+                            new object[] { existingPayment.TransactionId },
+                            $"{this.Name}. Payment void failed for transaction { existingPayment.TransactionId }: { errorMessages }"), 
+                        context);
                     return arg;
                 }
             }
             catch (BraintreeException ex)
             {
                 await context.CommerceContext.AddMessage(
-                   context.GetPolicy<KnownResultCodes>().Error,
-                   "PaymentVoidFailed",
-                   new object[] { order.Id, ex },
+                    context.GetPolicy<KnownResultCodes>().Error,
+                    "PaymentVoidFailed",
+                    new object[] { order.Id, ex },
                     $"{this.Name}. Payment refund failed.");
                 return arg;
             }
@@ -159,14 +151,15 @@ namespace Plugin.Sample.Payments.Braintree
                 PaymentStatus = context.GetPolicy<KnownSalesActivityStatusesPolicy>().Void
             };
 
-            salesActivity.SetComponent(new ListMembershipsComponent
-            {
-                Memberships = new List<string>
+            salesActivity.SetComponent(
+                new ListMembershipsComponent
+                {
+                    Memberships = new List<string>
                     {
                         CommerceEntity.ListName<SalesActivity>(),                        
                         string.Format(context.GetPolicy<KnownOrderListsPolicy>().OrderSalesActivities, order.FriendlyId)
                     }
-            });
+                });
 
             salesActivity.SetComponent(payment);
 

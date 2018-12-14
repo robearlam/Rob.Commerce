@@ -58,19 +58,18 @@ namespace Plugin.Sample.Payments.Braintree
                 return null;
             }
 
-            Condition.Requires(arg).IsNotNull("The arg can not be null");
-            Condition.Requires(arg.Order).IsNotNull("The order can not be null");          
+            Condition.Requires(arg).IsNotNull($"{this.Name}: The arg can not be null");
+            Condition.Requires(arg.Order).IsNotNull($"{this.Name}: The order can not be null");          
 
-            var order = arg.Order;          
-
+            var order = arg.Order;
             if (!order.Status.Equals(context.GetPolicy<KnownOrderStatusPolicy>().Completed, StringComparison.OrdinalIgnoreCase))
             {
                 var invalidOrderStateMessage = $"{this.Name}: Expected order in '{context.GetPolicy<KnownOrderStatusPolicy>().Completed}' status but order was in '{order.Status}' status";
                 await context.CommerceContext.AddMessage(
-                        context.GetPolicy<KnownResultCodes>().ValidationError,
-                        "InvalidOrderState",
-                        new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
-                        invalidOrderStateMessage);                
+                    context.GetPolicy<KnownResultCodes>().ValidationError,
+                    "InvalidOrderState",
+                    new object[] { context.GetPolicy<KnownOrderStatusPolicy>().OnHold, order.Status },
+                    invalidOrderStateMessage);                
                 return null;
             }
             
@@ -80,27 +79,18 @@ namespace Plugin.Sample.Payments.Braintree
             }
 
             var braintreeClientPolicy = context.GetPolicy<BraintreeClientPolicy>();
-            if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
-                || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
+            if (!(await braintreeClientPolicy.IsValid(context.CommerceContext).ConfigureAwait(false)))
             {
-                await context.CommerceContext.AddMessage(
-                   context.GetPolicy<KnownResultCodes>().Error,
-                   "InvalidClientPolicy",
-                   new object[] { "BraintreeClientPolicy" },
-                    $"{this.Name}. Invalid BraintreeClientPolicy");
                 return null;
             }
 
             try
             {
                 var existingPayment = order.GetComponent<FederatedPaymentComponent>();
-                var paymentToRefund = arg.Payments.FirstOrDefault(p => p.Id.Equals(existingPayment.Id, StringComparison.OrdinalIgnoreCase)) as FederatedPaymentComponent;
-                if (paymentToRefund == null)
+                if (!(arg.Payments.FirstOrDefault(p => p.Id.Equals(existingPayment.Id, StringComparison.OrdinalIgnoreCase)) is FederatedPaymentComponent paymentToRefund))
                 {
                     return order;
                 }
-
-                var gateway = new BraintreeGateway(braintreeClientPolicy?.Environment, braintreeClientPolicy.MerchantId, braintreeClientPolicy?.PublicKey, braintreeClientPolicy?.PrivateKey);
 
                 if (existingPayment.Amount.Amount < paymentToRefund.Amount.Amount)
                 {
@@ -110,8 +100,9 @@ namespace Plugin.Sample.Payments.Braintree
                         new object[] { order.Id, existingPayment.Id },
                         "Order Federated Payment amount is less than refund amount");
                     return null;
-                }                
-
+                }
+                
+                var gateway = new BraintreeGateway(braintreeClientPolicy?.Environment, braintreeClientPolicy.MerchantId, braintreeClientPolicy?.PublicKey, braintreeClientPolicy.PrivateKey);
                 var result = gateway.Transaction.Refund(existingPayment.TransactionId, paymentToRefund.Amount.Amount);
                 if (result.IsSuccess())
                 {
@@ -123,10 +114,10 @@ namespace Plugin.Sample.Payments.Braintree
                     var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
                     await context.CommerceContext.AddMessage(
-                           context.GetPolicy<KnownResultCodes>().Error,
-                           "PaymentRefundFailed",
-                           new object[] { existingPayment.TransactionId },
-                           $"{this.Name}. Payment refund failed for transaction { existingPayment.TransactionId }: { errorMessages }");                   
+                        context.GetPolicy<KnownResultCodes>().Error,
+                        "PaymentRefundFailed",
+                        new object[] { existingPayment.TransactionId },
+                        $"{this.Name}. Payment refund failed for transaction { existingPayment.TransactionId }: { errorMessages }");                   
 
                     return null;
                 }
@@ -146,9 +137,9 @@ namespace Plugin.Sample.Payments.Braintree
             catch (BraintreeException ex)
             {
                 await context.CommerceContext.AddMessage(
-                   context.GetPolicy<KnownResultCodes>().Error,
-                   "PaymentRefundFailed",
-                   new object[] { order.Id, ex },
+                    context.GetPolicy<KnownResultCodes>().Error,
+                    "PaymentRefundFailed",
+                    new object[] { order.Id, ex },
                     $"{this.Name}. Payment refund failed.");
                 return null;
             }

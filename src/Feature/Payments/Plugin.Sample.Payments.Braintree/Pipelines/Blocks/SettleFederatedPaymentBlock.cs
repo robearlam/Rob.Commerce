@@ -60,15 +60,9 @@ namespace Plugin.Sample.Payments.Braintree
             }
 
             var braintreeClientPolicy = context.GetPolicy<BraintreeClientPolicy>();
-            if (string.IsNullOrEmpty(braintreeClientPolicy.Environment) || string.IsNullOrEmpty(braintreeClientPolicy.MerchantId)
-                || string.IsNullOrEmpty(braintreeClientPolicy.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy.PrivateKey))
+            if (!(await braintreeClientPolicy.IsValid(context.CommerceContext).ConfigureAwait(false)))
             {
                 salesActivity.PaymentStatus = knownSalesActivityStatuses.Problem;
-                await context.CommerceContext.AddMessage(
-                    context.GetPolicy<KnownResultCodes>().Error,
-                    "InvalidClientPolicy",
-                    new object[] { "BraintreeClientPolicy" },
-                    $"{this.Name}. Invalid BraintreeClientPolicy");
                 return salesActivity;
             }
 
@@ -93,8 +87,7 @@ namespace Plugin.Sample.Payments.Braintree
                         // Force settlement for testing
                         if (braintreeClientPolicy.Environment.Equals("sandbox", StringComparison.OrdinalIgnoreCase))
                         {
-                            gateway.TestTransaction.Settle(payment.TransactionId);
-                            transaction = gateway.Transaction.Find(payment.TransactionId);
+                            transaction = gateway.TestTransaction.Settle(payment.TransactionId);
                             payment.TransactionStatus = transaction.Status.ToString();
                         }
 
@@ -110,10 +103,11 @@ namespace Plugin.Sample.Payments.Braintree
                             default:
                                 salesActivity.PaymentStatus = knownSalesActivityStatuses.Problem;
                                 await context.CommerceContext.AddMessage(
-                                     context.GetPolicy<KnownResultCodes>().Error,
-                                     "SettlePaymentFailed",
-                                     new object[] { payment.TransactionId },
-                                   $"{this.Name}. Settle payment failed for { payment.TransactionId }: { transaction.ProcessorResponseText }");
+                                        context.GetPolicy<KnownResultCodes>().Error,
+                                        "SettlePaymentFailed",
+                                        new object[] { payment.TransactionId },
+                                        $"{this.Name}. Settle payment failed for TransactionId='{payment.TransactionId}', TransactionStatus='{transaction.Status.ToString()}', OrderId='{salesActivity.Order.EntityTarget}', SalesActivity='{salesActivity.Id}', Errors={transaction.ProcessorResponseText}")
+                                    .ConfigureAwait(false);
                                 break;
                         }
                     }
@@ -121,11 +115,13 @@ namespace Plugin.Sample.Payments.Braintree
                     {
                         salesActivity.PaymentStatus = knownSalesActivityStatuses.Problem;
                         var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
+                        transaction = gateway.Transaction.Find(payment.TransactionId);
                         await context.CommerceContext.AddMessage(
-                            context.GetPolicy<KnownResultCodes>().Error,
-                            "SettlePaymentFailed",
-                            new object[] { payment.TransactionId },
-                            $"{this.Name}. Settle payment failed for {payment.TransactionId}: {errorMessages}");
+                                context.GetPolicy<KnownResultCodes>().Error,
+                                "SettlePaymentFailed",
+                                new object[] { payment.TransactionId },
+                                $"{this.Name}. Settle payment failed for TransactionId='{payment.TransactionId}', TransactionStatus='{transaction.Status.ToString()}', OrderId='{salesActivity.Order.EntityTarget}', SalesActivity='{salesActivity.Id}', Errors={errorMessages}")
+                            .ConfigureAwait(false);
                     }                    
                 }
             }
@@ -133,10 +129,11 @@ namespace Plugin.Sample.Payments.Braintree
             {
                 salesActivity.PaymentStatus = knownSalesActivityStatuses.Problem;
                 await context.CommerceContext.AddMessage(
-                    context.GetPolicy<KnownResultCodes>().Error,
-                    "SettlePaymentFailed",
-                    new object[] { payment.TransactionId, ex },
-                    $"{this.Name}. Settle payment failed for {payment.TransactionId}");
+                        context.GetPolicy<KnownResultCodes>().Error,
+                        "SettlePaymentFailed",
+                        new object[] { payment.TransactionId },
+                        $"{this.Name}. Settle payment failed for TransactionId='{payment.TransactionId}', TransactionStatus='', OrderId='{salesActivity.Order.EntityTarget}', SalesActivity='{salesActivity.Id}', Errors={ex.Message}")
+                    .ConfigureAwait(false);
             }
 
             return salesActivity; 

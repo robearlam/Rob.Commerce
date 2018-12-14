@@ -33,7 +33,7 @@
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
         "PolicyId": "Global",
         "AllowAdmin": true,
-        "Database": "xc902_Global",
+        "Database": "xc903_Global",
         "EffectiveDate": "0001-01-01T00:00:00",
         "IsVisible": false,
         "Password": "",
@@ -60,7 +60,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",
-        "Host": "xc902.sc",
+        "Host": "xc903.sc",
         "SitecoreDatabase": "master",
         "UserName": "admin",
         "Domain": "sitecore",

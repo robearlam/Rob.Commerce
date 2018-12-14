@@ -21,7 +21,7 @@
         "TypeFullName": "Sitecore.Commerce.Plugin.Catalog.SellableItem"
       },
       {
-        "$type": "Sitecore.Commerce.Plugin.EntityVersions.EntityVersionsActionsPolicy, Sitecore.Commerce.Plugin.EntityVersions",        
+        "$type": "Sitecore.Commerce.Plugin.EntityVersions.EntityVersionsActionsPolicy, Sitecore.Commerce.Plugin.EntityVersions",
         "AllowedActions": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
           "$values": [
@@ -32,10 +32,12 @@
             "DeleteCategory",
             "AddSellableItem",
             "DeleteSellableItem",
+            "AddBundle",
             "AssociateCategoryToCategoryOrCatalog",
             "AssociateSellableItemToCatalog",
             "AssociateSellableItemToCategory",
-            "DisassociateItem"
+            "DisassociateItem",
+            "MakePurchasable"
           ]
         }
       }

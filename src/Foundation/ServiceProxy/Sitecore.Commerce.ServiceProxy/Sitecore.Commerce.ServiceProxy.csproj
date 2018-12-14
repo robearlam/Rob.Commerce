@@ -3,7 +3,7 @@
  <PropertyGroup>
     <Description>The Sitecore Commerce Service Proxy.</Description>
     <VersionPrefix>2.0.0</VersionPrefix>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <PackageTags>$(PackageTags);Commerce;Service Proxy</PackageTags>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>

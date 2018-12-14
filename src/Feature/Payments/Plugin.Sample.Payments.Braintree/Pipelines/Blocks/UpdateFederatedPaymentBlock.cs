@@ -95,17 +95,11 @@ namespace Plugin.Sample.Payments.Braintree
             }           
 
             var braintreeClientPolicy = context.GetPolicy<BraintreeClientPolicy>();
-            if (string.IsNullOrEmpty(braintreeClientPolicy?.Environment) || string.IsNullOrEmpty(braintreeClientPolicy?.MerchantId)
-                || string.IsNullOrEmpty(braintreeClientPolicy?.PublicKey) || string.IsNullOrEmpty(braintreeClientPolicy?.PrivateKey))
+            if (!(await braintreeClientPolicy.IsValid(context.CommerceContext).ConfigureAwait(false)))
             {
-                await context.CommerceContext.AddMessage(
-                   context.GetPolicy<KnownResultCodes>().Error,
-                   "InvalidClientPolicy",
-                   new object[] { "BraintreeClientPolicy" },
-                    $"{this.Name}. Invalid BraintreeClientPolicy");
                 return arg;
             }
-            
+
             try
             {
                 var gateway = new BraintreeGateway(braintreeClientPolicy?.Environment, braintreeClientPolicy?.MerchantId, braintreeClientPolicy?.PublicKey, braintreeClientPolicy?.PrivateKey);
@@ -119,7 +113,7 @@ namespace Plugin.Sample.Payments.Braintree
                     var voidResult = gateway.Transaction.Void(orderPayment.TransactionId);
                     if (voidResult.IsSuccess())
                     {
-                        context.Logger.LogInformation($"{this.Name} - Void Payment succeeded:{ orderPayment.Id }");
+                        context.Logger.LogInformation($"{this.Name} - Void Payment succeeded: {orderPayment.Id}");
                         orderPayment.TransactionStatus = voidResult.Target.Status.ToString();
                         await this.GenerateSalesActivity(order, orderPayment, context);
                     }
@@ -129,10 +123,10 @@ namespace Plugin.Sample.Payments.Braintree
 
                         context.Abort(
                             await context.CommerceContext.AddMessage(
-                               context.GetPolicy<KnownResultCodes>().Error,
-                               "PaymentVoidFailed",
-                               new object[] { orderPayment.TransactionId },
-                               $"{this.Name}. Payment void failed for transaction { orderPayment.TransactionId }: { errorMessages }"), 
+                                context.GetPolicy<KnownResultCodes>().Error,
+                                "PaymentVoidFailed",
+                                new object[] { orderPayment.TransactionId },
+                                $"{this.Name}. Payment void failed for transaction {orderPayment.TransactionId} : {errorMessages}"), 
                             context);
 
                         return arg;
@@ -176,11 +170,11 @@ namespace Plugin.Sample.Payments.Braintree
                     var errorMessages = result.Errors.DeepAll().Aggregate(string.Empty, (current, error) => current + ("Error: " + (int)error.Code + " - " + error.Message + "\n"));
 
                     context.Abort(
-                            await context.CommerceContext.AddMessage(
-                           context.GetPolicy<KnownResultCodes>().Error,
-                           "CreatePaymentFailed",
-                           new object[] { "PaymentMethodNonce" },
-                           $"{this.Name}. Create payment failed :{ errorMessages }"), 
+                        await context.CommerceContext.AddMessage(
+                            context.GetPolicy<KnownResultCodes>().Error,
+                            "CreatePaymentFailed",
+                            new object[] { "PaymentMethodNonce" },
+                            $"{this.Name}. Create payment failed: {errorMessages}"), 
                         context);                    
                 }
 
@@ -189,9 +183,9 @@ namespace Plugin.Sample.Payments.Braintree
             catch (BraintreeException ex)
             {
                 await context.CommerceContext.AddMessage(
-                   context.GetPolicy<KnownResultCodes>().Error,
-                   "InvalidClientPolicy",
-                   new object[] { "BraintreeClientPolicy", ex },
+                    context.GetPolicy<KnownResultCodes>().Error,
+                    "InvalidClientPolicy",
+                    new object[] { "BraintreeClientPolicy", ex },
                     $"{this.Name}. Invalid BraintreeClientPolicy");
                 return arg;
             }
@@ -225,10 +219,10 @@ namespace Plugin.Sample.Payments.Braintree
             salesActivity.SetComponent(new ListMembershipsComponent
             {
                 Memberships = new List<string>
-                    {
-                        CommerceEntity.ListName<SalesActivity>(),
-                        string.Format(context.GetPolicy<KnownOrderListsPolicy>().OrderSalesActivities, order.FriendlyId)
-                    }
+                {
+                    CommerceEntity.ListName<SalesActivity>(),
+                    string.Format(context.GetPolicy<KnownOrderListsPolicy>().OrderSalesActivities, order.FriendlyId)
+                }
             });
 
             salesActivity.SetComponent(payment);

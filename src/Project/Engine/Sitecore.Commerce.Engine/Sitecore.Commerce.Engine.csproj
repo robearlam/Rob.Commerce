@@ -44,19 +44,19 @@
     <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
     <PackageReference Include="Serilog.Sinks.Async" Version="1.1.0" />
 
-    <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Composer" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="2.2.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.CacheWatcher" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Composer" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Tax" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Provider.FileSystem" Version="2.4.*" />
 
-    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="2.2.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Azure" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Search.Solr" Version="2.4.*" />
 
-    <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="2.2.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Orders.DelayedAvailability" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.FaultInjection" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Content" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="2.4.*" />
   </ItemGroup>
 
   <ItemGroup>

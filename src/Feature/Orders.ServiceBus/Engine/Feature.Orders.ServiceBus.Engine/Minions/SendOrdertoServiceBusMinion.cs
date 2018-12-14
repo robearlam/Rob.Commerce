@@ -19,13 +19,18 @@ namespace Feature.Orders.ServiceBus.Engine.Minions
             Pipeline = serviceProvider.GetService<SendOrderToServiceBusPipeline>();
         }
 
-        public override async Task<MinionRunResultsModel> Run()
+        public override Task<MinionRunResultsModel> Run()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override async Task<MinionRunResultsModel> Execute()
         {
             var runResults = new MinionRunResultsModel();
 
-            var listCount = await GetListCount(Policy.ListToWatch);       
+            var listCount = await GetListCount(Policy.ListToWatch);
             Logger.LogInformation($"{Name}-Review List {Policy.ListToWatch}: Count:{listCount}");
-            
+
             if (listCount > 0)
             {
                 var sendOrdertoServiceBus = await GetListIds<Order>(Policy.ListToWatch, System.Convert.ToInt32(listCount));

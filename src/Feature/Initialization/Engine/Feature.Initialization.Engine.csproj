@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Engine Initialization Feature</Description>
@@ -10,10 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.2.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.2.26" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.4.*" />
   </ItemGroup>
 
   <ItemGroup>

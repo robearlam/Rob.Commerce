@@ -14,7 +14,7 @@ namespace Feature.Compare.Website.Managers
 {
     public class CompareManager : CartManager, ICompareManager
     {
-        public CompareManager(IConnectServiceProvider connectServiceProvider) : base(connectServiceProvider)
+        public CompareManager(IConnectServiceProvider connectServiceProvider, IStorefrontContext storefrontContext, ISearchManager searchManager) : base(connectServiceProvider, storefrontContext, searchManager)
         {
         }
 

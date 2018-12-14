@@ -13,7 +13,7 @@
                                          "UserName":  "",
                                          "Password":  "",
                                          "Server":  ".",
-                                         "Database":  "xc902_SharedEnvironments",
+                                         "Database":  "xc903_SharedEnvironments",
                                          "AdditionalParameters":  "",
                                          "ConnectTimeout":  120000,
                                          "CommandTimeout":  180,

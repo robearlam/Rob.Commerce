@@ -34,6 +34,7 @@ namespace Sitecore.Commerce.Engine
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Core.Commands;
     using Sitecore.Commerce.Core.Logging;
+    using Sitecore.Commerce.Plugin.SQL;
     using Sitecore.Commerce.Provider.FileSystem;
     using Sitecore.Framework.Diagnostics;
     using Sitecore.Framework.Rules;
@@ -85,7 +86,7 @@ namespace Sitecore.Commerce.Engine
                                  .WriteTo.Async(a => a.File(
                                      $@"{Path.Combine(this._hostEnv.WebRootPath, "logs")}\SCF.{DateTimeOffset.UtcNow:yyyyMMdd}.log.{this._nodeInstanceId}.txt",
                                      this.GetSerilogLogLevel(),
-                                     "{ThreadId} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}",
+                                     "{ThreadId:D5} {Timestamp:HH:mm:ss} {ScLevel} {Message}{NewLine}{Exception}",
                                      fileSizeLimitBytes: fileSize,
                                      rollOnFileSizeLimit: true), bufferSize: 500)
                                  .CreateLogger();
@@ -149,7 +150,7 @@ namespace Sitecore.Commerce.Engine
 
             services.AddSingleton(_telemetryClient);
 
-            Log.Information("BootStrapping Application ...");
+            Log.Information("Bootstrapping Application ...");
             services.Sitecore()
                 .Eventing()
                 .Caching(config => config
@@ -210,6 +211,7 @@ namespace Sitecore.Commerce.Engine
         /// <param name="applicationInsightsSettings">The application insights settings.</param>
         /// <param name="certificatesSettings">The certificates settings.</param>
         /// <param name="allowedOriginsOptions"></param>
+        /// <param name="getDatabaseVersionCommand">Command to get DB version</param>
         public void Configure(
             IApplicationBuilder app,
             IConfigureServiceApiPipeline configureServiceApiPipeline,
@@ -220,8 +222,25 @@ namespace Sitecore.Commerce.Engine
             IOptions<LoggingSettings> loggingSettings,
             IOptions<ApplicationInsightsSettings> applicationInsightsSettings,
             IOptions<CertificatesSettings> certificatesSettings,
-            IOptions<List<string>> allowedOriginsOptions)
+            IOptions<List<string>> allowedOriginsOptions,
+            GetDatabaseVersionCommand getDatabaseVersionCommand)
         {
+            // TODO: Check if we can move this code to a better place, this code checks Database version against Core required version
+            // Get the core required database version from config policy
+            var coreRequiredDbVersion = string.Empty;
+            if (this.StartupEnvironment.HasPolicy<Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy>())
+            {
+                coreRequiredDbVersion = this.StartupEnvironment.GetPolicy<Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy>().Version;
+            }
+            // Get the db version
+            var dbVersion = Task.Run(() => getDatabaseVersionCommand.Process(this._nodeContext)).Result;
+            // Check versions
+            if (string.IsNullOrEmpty(dbVersion) || string.IsNullOrEmpty(coreRequiredDbVersion) || coreRequiredDbVersion != dbVersion)
+            {
+                throw new Exception($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
+            }
+            Log.Information($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
+
             app.UseDiagnostics();
             app.UseStaticFiles();
 
@@ -376,11 +395,12 @@ namespace Sitecore.Commerce.Engine
         private CommerceEnvironment GetGlobalEnvironment(EntitySerializerCommand serializer)
         {
             CommerceEnvironment environment;
+            var bootstrapProviderFolderPath = String.Concat(Path.Combine(this._hostEnv.WebRootPath, "Bootstrap"), Path.DirectorySeparatorChar);
 
-            Log.Information($"Loading Global Environment using Filesystem Provider from: {this._hostEnv.WebRootPath} s\\Bootstrap\\");
+            Log.Information($"Loading Global Environment using Filesystem Provider from: {bootstrapProviderFolderPath}");
 
             // Use the default File System provider to setup the environment
-            this._nodeContext.BootstrapProviderPath = this._hostEnv.WebRootPath + @"\Bootstrap\";
+            this._nodeContext.BootstrapProviderPath = bootstrapProviderFolderPath;
             var bootstrapProvider = new FileSystemEntityProvider(this._nodeContext.BootstrapProviderPath, serializer);
 
             var bootstrapFile = this.Configuration.GetSection("AppSettings:BootStrapFile").Value;

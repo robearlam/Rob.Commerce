@@ -62,10 +62,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.ServiceBus", "Orders
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Orders.ServiceBus.Engine", "src\Feature\Orders.ServiceBus\Engine\Feature.Orders.ServiceBus.Engine\Feature.Orders.ServiceBus.Engine.csproj", "{0D84EC04-9E1A-4807-B263-36716670D38C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RazorPreCompilation", "RazorPreCompilation", "{BD72EF3C-CC06-4F17-8949-D7CD16DE189A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feature.RazorPrecompilation.Website", "src\Feature\RazorPrecompilation\Website\Feature.RazorPrecompilation.Website\Feature.RazorPrecompilation.Website.csproj", "{D5D267B4-FC99-44A0-928D-F10A6F74724A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payments", "Payments", "{CDD2C936-5028-480D-8E4E-43075E1759F1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Sample.Payments.Braintree", "src\Feature\Payments\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj", "{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}"
@@ -124,10 +120,6 @@ Global
 		{0D84EC04-9E1A-4807-B263-36716670D38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D84EC04-9E1A-4807-B263-36716670D38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D84EC04-9E1A-4807-B263-36716670D38C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5D267B4-FC99-44A0-928D-F10A6F74724A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -168,9 +160,7 @@ Global
 		{7A6D3742-1D98-4D3B-A52B-B6F8F275DF46} = {FB8749EF-65CA-476F-8700-27851A625117}
 		{AC526173-2555-4838-BA6B-59A1260004F1} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
 		{0D84EC04-9E1A-4807-B263-36716670D38C} = {AC526173-2555-4838-BA6B-59A1260004F1}
-		{BD72EF3C-CC06-4F17-8949-D7CD16DE189A} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
-		{D5D267B4-FC99-44A0-928D-F10A6F74724A} = {BD72EF3C-CC06-4F17-8949-D7CD16DE189A}
-		{CDD2C936-5028-480D-8E4E-43075E1759F1} = {ABDDD414-A742-4F19-A1F4-06D9D0E07501}
+		{CDD2C936-5028-480D-8E4E-43075E1759F1} = {68D2E66C-4F5F-4E8F-817B-4643D8BE557A}
 		{A157B4F9-AD52-401F-9A9F-FEDFE1F51BD3} = {CDD2C936-5028-480D-8E4E-43075E1759F1}
 		{66FDA475-BFF5-472D-86C0-F6FBFACA33AD} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{E75F8E0E-9314-4915-869F-3280C152A806} = {8FECF47C-D23E-4CA4-8AA2-0A5D0EECDA36}
@@ -178,7 +168,7 @@ Global
 		{CA6D5E31-7AF4-48A4-9E67-1DE29B49DBAC} = {E75F8E0E-9314-4915-869F-3280C152A806}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal

@@ -1,15 +1,17 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="BraintreeClientPolicy.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-2018
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace Plugin.Sample.Payments.Braintree
 {
+    using System.Threading.Tasks;
+
     using Sitecore.Commerce.Core;
 
     /// <summary>
-    /// Defines the BraintreeClientPolicy for Payments.
+    /// Defines the Braintree Client Policy for Payments.
     /// </summary>
     public class BraintreeClientPolicy : Policy
     {
@@ -55,5 +57,29 @@ namespace Plugin.Sample.Payments.Braintree
         /// The private key.
         /// </value>
         public string PrivateKey { get; set; }
+
+        /// <summary>
+        /// Returns true if ... is valid.
+        /// </summary>
+        /// <param name="commerceContext">The commerce context.</param>
+        /// <returns>Returns true if ... is valid.</returns>
+        public async Task<bool> IsValid(CommerceContext commerceContext)
+        {
+            if (!string.IsNullOrEmpty(this.Environment)
+                && !string.IsNullOrEmpty(this.MerchantId)
+                && !string.IsNullOrEmpty(this.PublicKey)
+                && !string.IsNullOrEmpty(this.PrivateKey))
+            {
+                return true;
+            }
+
+            await commerceContext.AddMessage(
+                    commerceContext.GetPolicy<KnownResultCodes>().Error,
+                    "InvalidClientPolicy",
+                    null,
+                    "Invalid Braintree Client Policy")
+                .ConfigureAwait(false);
+            return false;
+        }
     }
 }
