@@ -15,6 +15,6 @@
     <PackageReference Include="Sitecore.Commerce.Plugin.SQL" Version="2.4.*" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Foundation\PluginEnhancements\Engine\Foundation.PluginEnhancements.Engine\Foundation.PluginEnhancements.Engine.csproj" />
+    <ProjectReference Include="..\..\..\Foundation\PluginEnhancements\Foundation.PluginEnhancements.Engine\Foundation.PluginEnhancements.Engine.csproj" />
   </ItemGroup>
 </Project>

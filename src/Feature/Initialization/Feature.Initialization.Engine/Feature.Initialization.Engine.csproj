@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\Rules\Engine\Foundation.Rules.Engine\Foundation.Rules.Engine.csproj" />
+    <ProjectReference Include="..\..\..\Foundation\Rules\Foundation.Rules.Engine\Foundation.Rules.Engine.csproj" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

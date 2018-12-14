@@ -83,7 +83,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Feature\ProductImport\Engine\Feature.ProductImport.Engine\Feature.ProductImport.Engine.csproj">
+    <ProjectReference Include="..\..\..\Feature\ProductImport\Feature.ProductImport.Engine\Feature.ProductImport.Engine.csproj">
       <Project>{ffce0dae-08b2-4c45-9409-554355b5e5dc}</Project>
       <Name>Feature.ProductImport.Engine</Name>
     </ProjectReference>
