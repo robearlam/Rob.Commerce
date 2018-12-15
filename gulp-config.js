@@ -1,10 +1,10 @@
 module.exports = function () {
     var webroot = "C:\\inetpub\\wwwroot";
-    var siteName = "xc902";
+    var siteName = "xc903";
     var sitecoreRoot = webroot + "\\" + siteName + ".sc";
     var config = {
         sitecoreRoot: sitecoreRoot,
-        engineProjectPath: "./src/Project/Engine/Sitecore.Commerce.Engine",
+        engineProjectPath: "./src/Project/Sitecore.Commerce.Engine",
         buildConfiguration: "Debug",
         buildToolsVersion: 15.0,
         buildMaxCpuCount: 0,

@@ -15,7 +15,10 @@
   "IsPersisted": false,
   "ListMemberships": {
     "$type": "System.Collections.ObjectModel.ReadOnlyCollection`1[[System.String, mscorlib]], mscorlib",
-    "$values": [ "Environments", "AllEntities" ]
+    "$values": [
+      "Environments",
+      "AllEntities"
+    ]
   },
   "Name": "GlobalEnvironment",
   "NameSpace": "Sitecore.Commerce",
@@ -40,7 +43,8 @@
         "Server": ".",
         "TrustedConnection": true,
         "UserName": "",
-        "View": "EntityStoreSqlPolicy"
+        "View": "EntityStoreSqlPolicy",
+        "Version": "9.0.3"
       },
       {
         "$type": "Sitecore.Commerce.Core.DeploymentPolicy, Sitecore.Commerce.Core",
@@ -51,12 +55,16 @@
       {
         "$type": "Sitecore.Commerce.Core.ControllerMethodRolesPolicy, Sitecore.Commerce.Core",
         "ControllerMethodRegularExpression": "/commerceops/",
-        "AuthorizedRoles": [ "sitecore\\Commerce Business User" ]
+        "AuthorizedRoles": [
+          "sitecore\\Commerce Business User"
+        ]
       },
       {
         "$type": "Sitecore.Commerce.Core.ControllerMethodRolesPolicy, Sitecore.Commerce.Core",
         "ControllerMethodRegularExpression": "/api/",
-        "AuthorizedRoles": [ "sitecore\\Commerce Business User" ]
+        "AuthorizedRoles": [
+          "sitecore\\Commerce Business User"
+        ]
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",

@@ -125,14 +125,14 @@
       <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Collection.Model, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Collection.Model.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.Connect.Collection.Model, Version=11.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.4.15\lib\net462\Sitecore.Commerce.Connect.Collection.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.4.15\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
+    <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.4.15\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.Engine.Connect, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Sitecore.Commerce.Engine.Connect.2.0.835\lib\net462\Sitecore.Commerce.Engine.Connect.dll</HintPath>
