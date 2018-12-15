@@ -1,0 +1,98 @@
+﻿---
+ID: "f4aa4f60-d4e3-403e-9f7e-fb0a5ae82192"
+Parent: "1aad086c-e7ad-4d4a-a0a0-7ecacbb3e50c"
+Template: "bb8a85ab-1f6d-4518-8772-1c9f4f8dac18"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Images/Placeholder 72x72
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 875
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Placeholder 72 x 72
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{E246E751-B8BD-46D1-A3C5-9724DD79B956}" />
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Platzhalter 72x72
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{E246E751-B8BD-46D1-A3C5-9724DD79B956}" />
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Placeholder 72x72
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180123T191709Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{E246E751-B8BD-46D1-A3C5-9724DD79B956}" />
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: プレースホルダー 72x72
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{E246E751-B8BD-46D1-A3C5-9724DD79B956}" />

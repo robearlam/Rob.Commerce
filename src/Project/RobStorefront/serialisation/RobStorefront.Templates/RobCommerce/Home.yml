@@ -1,0 +1,35 @@
+﻿---
+ID: "df79c7f7-a840-4cc5-a565-eb55b82bf4cc"
+Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/RobCommerce/Home
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/home.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {E9272B0E-3BBA-445F-8634-224D68966BB9}
+    {647BFB4F-9E2D-4DE4-9193-11EB3027F874}
+    {759EA983-15AC-4A46-91AC-89525599D60A}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{1780F23D-76EB-4971-8C11-0EFB11DFFC58}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T072629Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

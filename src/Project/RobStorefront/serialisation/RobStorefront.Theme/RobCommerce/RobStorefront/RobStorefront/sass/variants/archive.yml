@@ -1,0 +1,14 @@
+﻿---
+ID: "91cb6a5c-c9bb-4d63-a262-cc83d8f8777f"
+Parent: "2e07317c-b11b-47ee-b509-3d5d75aefe0b"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/variants/archive
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170613T150626Z

@@ -1,0 +1,60 @@
+﻿---
+ID: "c8968fdf-10e8-4af7-a3db-7a582b013b4b"
+Parent: "b6bbb848-ee3b-4695-8d5f-93418fbb50ab"
+Template: "b6bbb848-ee3b-4695-8d5f-93418fbb50ab"
+Path: /sitecore/templates/Project/RobCommerce/Delivery/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
+    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
+    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {4973432D-69AB-4271-A049-B1C711790BF6}
+    {DF79C7F7-A840-4CC5-A565-EB55B82BF4CC}
+    {3F9C1F11-1511-4F24-AB2A-8109F35B027C}
+    {54385DEA-C04B-475C-8AAD-40308EC8D428}
+    {4B48FA3E-2BFD-4C06-93FF-AAF3E2106F61}
+    {DB99DE13-FF08-4932-B56F-9567ACED4D9E}
+    {E487D8E0-870C-4226-9B6F-8CA07BAD527B}
+    {210CB0FE-B364-4E25-AB56-6A4BA59C278A}
+    {6706448C-92A5-43EA-9711-F6D1914A1706}
+    {A098D12C-83BD-49E4-979A-A9F7B6A37629}
+    {DDFE6B16-6472-4834-81C3-C9454EEF43AB}
+    {2662751A-A685-46EC-897C-EDA79603B232}
+    {5F0FAF12-2C70-486B-BDF2-16BD6030974D}
+    {7EF0323A-0C2E-4E0C-85A2-104BA06E4167}
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{E9658F6A-2775-4AB7-8147-54B66BDF1351}"
+- ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
+  Hint: Body Css Class
+  Value: "checkout-delivery-page"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" />
+      <d
+        id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}"
+        l="{72C595AD-68BB-44BC-B5CD-2A857039515F}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171214T025117Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Delivery

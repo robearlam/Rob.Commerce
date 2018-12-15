@@ -1,0 +1,18 @@
+﻿---
+ID: "03295810-b7a4-4567-9557-953a7d5d3d3b"
+Parent: "2e07317c-b11b-47ee-b509-3d5d75aefe0b"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/variants/promo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180103T100047Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

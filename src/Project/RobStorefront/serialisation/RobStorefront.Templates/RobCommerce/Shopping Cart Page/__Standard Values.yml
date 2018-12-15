@@ -1,0 +1,29 @@
+﻿---
+ID: "bc41f561-476b-47ee-9df0-782374ab2357"
+Parent: "088f55ff-09ee-449d-bcc9-c2298c92f0de"
+Template: "088f55ff-09ee-449d-bcc9-c2298c92f0de"
+Path: /sitecore/templates/Project/RobCommerce/Shopping Cart Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
+    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
+    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170818T061131Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

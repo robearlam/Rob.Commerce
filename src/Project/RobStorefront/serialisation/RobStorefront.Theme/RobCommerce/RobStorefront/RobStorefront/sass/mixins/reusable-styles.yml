@@ -1,0 +1,18 @@
+﻿---
+ID: "8ea73643-d1c7-4d24-a8bb-b375d2648f62"
+Parent: "c1bc3513-b16d-4a6b-93f6-df9f90ce5204"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/mixins/reusable-styles"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100954Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

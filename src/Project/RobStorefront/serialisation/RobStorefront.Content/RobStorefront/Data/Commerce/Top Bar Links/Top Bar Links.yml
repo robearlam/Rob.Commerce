@@ -1,0 +1,126 @@
+﻿---
+ID: "e939a747-f58b-46c1-87e5-cc984762bcde"
+Parent: "d526f213-77d9-4e49-8323-8fe6a35ead00"
+Template: "1340f5ec-0efe-4f68-9972-4d6229f89ad0"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Top Bar Links/Top Bar Links
+DB: master
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Topbjælkelinks
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073100Z
+    - ID: "48b894a4-5875-4f70-9cf2-20560e6d8df9"
+      Hint: Profile Edit Page Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{81E16D79-1372-4E21-A2F7-A8B833EE4758}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "fc12d76e-2c83-412c-b647-66e750196f82"
+      Hint: Quick Links
+      Type: TreelistEx
+      Value: |
+        {62A846E2-4D75-4352-A182-AA32A126C85E}
+        {54D3C123-D821-41F2-AC11-2AA7C7E1FB4A}
+        {1394027E-7D07-450B-A437-88C9C18DFA6A}
+        {87DE295E-3F2F-49C0-85DB-4322145DC1ED}
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Top Bar Links
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073100Z
+    - ID: "48b894a4-5875-4f70-9cf2-20560e6d8df9"
+      Hint: Profile Edit Page Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{81E16D79-1372-4E21-A2F7-A8B833EE4758}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "fc12d76e-2c83-412c-b647-66e750196f82"
+      Hint: Quick Links
+      Type: TreelistEx
+      Value: |
+        {62A846E2-4D75-4352-A182-AA32A126C85E}
+        {54D3C123-D821-41F2-AC11-2AA7C7E1FB4A}
+        {1394027E-7D07-450B-A437-88C9C18DFA6A}
+        {87DE295E-3F2F-49C0-85DB-4322145DC1ED}
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Top Bar Links
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T154059Z
+    - ID: "48b894a4-5875-4f70-9cf2-20560e6d8df9"
+      Hint: Profile Edit Page Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{81E16D79-1372-4E21-A2F7-A8B833EE4758}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "fc12d76e-2c83-412c-b647-66e750196f82"
+      Hint: Quick Links
+      Type: TreelistEx
+      Value: |
+        {62A846E2-4D75-4352-A182-AA32A126C85E}
+        {54D3C123-D821-41F2-AC11-2AA7C7E1FB4A}
+        {1394027E-7D07-450B-A437-88C9C18DFA6A}
+        {87DE295E-3F2F-49C0-85DB-4322145DC1ED}
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: トップ バー リンク
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "48b894a4-5875-4f70-9cf2-20560e6d8df9"
+      Hint: Profile Edit Page Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{81E16D79-1372-4E21-A2F7-A8B833EE4758}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "fc12d76e-2c83-412c-b647-66e750196f82"
+      Hint: Quick Links
+      Type: TreelistEx
+      Value: |
+        {62A846E2-4D75-4352-A182-AA32A126C85E}
+        {54D3C123-D821-41F2-AC11-2AA7C7E1FB4A}
+        {1394027E-7D07-450B-A437-88C9C18DFA6A}
+        {87DE295E-3F2F-49C0-85DB-4322145DC1ED}

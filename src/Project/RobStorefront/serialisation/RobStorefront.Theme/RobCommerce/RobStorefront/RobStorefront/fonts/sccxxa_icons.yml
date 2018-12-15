@@ -1,0 +1,14 @@
+﻿---
+ID: "03188eed-79cb-4c78-8493-b3fe2a14e4e1"
+Parent: "fcbdd9fb-84b1-4c1f-bc42-1a02830c465b"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/fonts/sccxxa_icons
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170607T060453Z

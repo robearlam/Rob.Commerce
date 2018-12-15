@@ -1,0 +1,75 @@
+﻿---
+ID: "85cfad15-dd88-4ee7-9cdc-357ad796ada1"
+Parent: "1e0bc92f-6376-423f-b0a2-d9dff651a905"
+Template: "dc66d5da-3216-48e6-ae78-bac8445b6a46"
+Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Privacy Warning
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073151Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "6af8dfd6-f541-400a-83c0-2a90a1fe8e6f"
+      Hint: PrivacyWarningButtonText
+      Value: Confirm
+    - ID: "f2ad4c49-ecc4-4d42-a967-2756182705ac"
+      Hint: PrivacyWarningContent
+      Value: |
+        Cookies help us improve your website experience.<br>
+        By using our website, you agree to our use of cookies.
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073206Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "6af8dfd6-f541-400a-83c0-2a90a1fe8e6f"
+      Hint: PrivacyWarningButtonText
+      Value: Confirm
+    - ID: "f2ad4c49-ecc4-4d42-a967-2756182705ac"
+      Hint: PrivacyWarningContent
+      Value: |
+        Cookies help us improve your website experience.<br>
+        By using our website, you agree to our use of cookies.
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T072925Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073224Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "6af8dfd6-f541-400a-83c0-2a90a1fe8e6f"
+      Hint: PrivacyWarningButtonText
+      Value: Confirm
+    - ID: "f2ad4c49-ecc4-4d42-a967-2756182705ac"
+      Hint: PrivacyWarningContent
+      Value: |
+        Cookies help us improve your website experience.<br>
+        By using our website, you agree to our use of cookies.

@@ -1,0 +1,183 @@
+﻿---
+ID: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
+Parent: "3abe8304-4841-4776-b00c-c04207dea2a7"
+Template: "df79c7f7-a840-4cc5-a565-eb55b82bf4cc"
+Path: /sitecore/content/RobCommerce/RobStorefront/Home
+DB: master
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
+    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
+    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {4973432D-69AB-4271-A049-B1C711790BF6}
+    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {DF79C7F7-A840-4CC5-A565-EB55B82BF4CC}
+    {3F9C1F11-1511-4F24-AB2A-8109F35B027C}
+    {54385DEA-C04B-475C-8AAD-40308EC8D428}
+    {4B48FA3E-2BFD-4C06-93FF-AAF3E2106F61}
+    {DB99DE13-FF08-4932-B56F-9567ACED4D9E}
+    {E487D8E0-870C-4226-9B6F-8CA07BAD527B}
+    {210CB0FE-B364-4E25-AB56-6A4BA59C278A}
+    {6706448C-92A5-43EA-9711-F6D1914A1706}
+    {A098D12C-83BD-49E4-979A-A9F7B6A37629}
+    {DDFE6B16-6472-4834-81C3-C9454EEF43AB}
+    {2662751A-A685-46EC-897C-EDA79603B232}
+    {5F0FAF12-2C70-486B-BDF2-16BD6030974D}
+    {7EF0323A-0C2E-4E0C-85A2-104BA06E4167}
+- ID: "182c3780-07f9-4586-8a1d-92c9d9bacc8f"
+  Hint: Control Panel Configuration
+  Value: "{3742816C-F082-4E3C-A66F-7B9A4F480204}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+- ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
+  Hint: Body Css Class
+  Value: "home-page"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{81050965-2BFF-4FE8-B04A-AE365C264D9C}"
+          p:before="*"
+          s:cac="1"
+          s:ds="{71CBE529-F8C7-4C85-A82F-7441455F7E71}"
+          s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+          s:par="GridParameters&amp;Product List=%7B6D97C3FA-3C0A-42DC-A436-32ABAAEBAA25%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4"
+          s:ph="/main/row-2-2/container-4"
+          s:vbd="1"
+          s:vbdev="1"
+          s:vbl="1"
+          s:vbp="1"
+          s:vbqs="1"
+          s:vbu="1"
+          s:ciu="1" />
+        <r
+          uid="{2E8CCDE3-3001-4981-8968-056292BB5C4B}"
+          p:after="r[@uid='{81050965-2BFF-4FE8-B04A-AE365C264D9C}']"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+          s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7B03F58EBC-D992-45D7-8444-2911AB4C791C%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          s:ph="/main/row-2-2" />
+        <r
+          uid="{ECBD6343-463C-4003-ADCC-CBE275B32726}"
+          p:after="r[@uid='{2E8CCDE3-3001-4981-8968-056292BB5C4B}']"
+          s:ds="{71CBE529-F8C7-4C85-A82F-7441455F7E71}"
+          s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}"
+          s:par="GridParameters&amp;Product List=%7B07F9182A-9AC4-43E1-9448-26BF1F5EC277%7D&amp;Relationship Type&amp;Use Lazy Loading=1&amp;Max Page Size=4"
+          s:ph="/main/row-1-2/container-3" />
+        <r
+          uid="{B1F0EF2E-03BF-4E3F-BEFF-F2259C7577DB}"
+          p:after="r[@uid='{ECBD6343-463C-4003-ADCC-CBE275B32726}']"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+          s:par="GridParameters&amp;BackgroundImage&amp;Styles=%7B03F58EBC-D992-45D7-8444-2911AB4C791C%7D&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          s:ph="/main/row-1-2" />
+        <r
+          uid="{061E679B-3A2F-4E62-A607-D6DCB2F10D9D}"
+          p:after="r[@uid='{B1F0EF2E-03BF-4E3F-BEFF-F2259C7577DB}']"
+          s:ds="{7577A148-3358-4705-BFAF-DF635F0B14D2}"
+          s:id="{5A21C781-8E74-4DD0-8261-8CCDA1BF0454}"
+          s:par="GridParameters&amp;Styles=%7BDC435EBF-DE31-4BFA-9993-B1359E2ACAF9%7D%7C%7B76CB475C-A611-459B-802A-390280DBDE7B%7D%7C%7BE7050C22-9914-450E-9BA3-049734422D1F%7D&amp;Navigation=%7BB4E5FE9B-F0C6-4400-A9FB-BD9978889480%7D&amp;Transition=%7BC33D1C03-14B9-4683-835E-8E517A18CC41%7D&amp;Timeout=2000&amp;PauseOnHover=1&amp;Reset Caching Options&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1&amp;NavigationPrefix=Previous&amp;NavigationPostfix=Next"
+          s:ph="main" />
+        <r
+          uid="{E874E3F3-92E8-4F0E-9045-51A258FBB3E2}"
+          p:after="*[1=2]"
+          s:id="{2DA9B139-FB9C-4FD7-BE84-CB066B2D7CC3}"
+          s:par="SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;Reset Caching Options&amp;DynamicPlaceholderId=2"
+          s:ph="main" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{92EB9EFB-88D4-4089-82BE-AAD92D4FA24E}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073137Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Home
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: RobStorefront
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073152Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Home
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: RobStorefront
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Home
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T072822Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Home
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: RobStorefront
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073207Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Home
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: RobStorefront
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"

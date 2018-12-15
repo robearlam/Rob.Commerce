@@ -1,0 +1,222 @@
+﻿---
+ID: "c41dadd0-e92d-4f4a-a9e3-f0a35b2a5de7"
+Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
+Template: "4b48fa3e-2bfd-4c06-93ff-aaf3e2106f61"
+Path: /sitecore/content/RobCommerce/RobStorefront/Home/accountmanagement
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
+    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
+    {4973432D-69AB-4271-A049-B1C711790BF6}
+    {DF79C7F7-A840-4CC5-A565-EB55B82BF4CC}
+    {3F9C1F11-1511-4F24-AB2A-8109F35B027C}
+    {54385DEA-C04B-475C-8AAD-40308EC8D428}
+    {4B48FA3E-2BFD-4C06-93FF-AAF3E2106F61}
+    {DB99DE13-FF08-4932-B56F-9567ACED4D9E}
+    {E487D8E0-870C-4226-9B6F-8CA07BAD527B}
+    {210CB0FE-B364-4E25-AB56-6A4BA59C278A}
+    {6706448C-92A5-43EA-9711-F6D1914A1706}
+    {A098D12C-83BD-49E4-979A-A9F7B6A37629}
+    {DDFE6B16-6472-4834-81C3-C9454EEF43AB}
+    {2662751A-A685-46EC-897C-EDA79603B232}
+    {5F0FAF12-2C70-486B-BDF2-16BD6030974D}
+    {7EF0323A-0C2E-4E0C-85A2-104BA06E4167}
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-200"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{D8E5A20F-D55E-43E1-874C-713F5C39B875}"
+          p:before="*"
+          s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}"
+          s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1={3D050529-A80A-4F79-A31E-C6D7CC9FE738}&amp;Styles2={3D050529-A80A-4F79-A31E-C6D7CC9FE738}&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{2DAC5C5F-3B64-4A60-9A98-262F32C05800}|{BC2E9EFE-9CAA-4B85-9310-D503C36485ED}&amp;ColumnWidth2={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{13E972EE-50F2-476F-A488-9E87DFFF4B71}|{8D887308-E775-4BD5-9F34-5514B0BBB04E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1"
+          s:ph="main" />
+        <r
+          uid="{4FAECC80-5E4B-4FD8-AC51-801041842467}"
+          p:after="r[@uid='{D8E5A20F-D55E-43E1-874C-713F5C39B875}']"
+          s:ds="{574756DE-50B8-4C2A-9088-233E0514484D}"
+          s:id="{7BAC69BC-19F8-487E-A6AA-29A145934C6C}"
+          s:par="GridParameters&amp;Display Title&amp;Display View All Orders Link&amp;View All Orders Link=/sitecore/content/RobCommerce/RobStorefront/Home/accountmanagement/myorders&amp;Number of Displayed Orders=5&amp;Display Image for Empty Lists&amp;View Order Details Link=/sitecore/content/RobCommerce/RobStorefront/Home/accountmanagement/myorder"
+          s:ph="/main/column-2-1" />
+        <r
+          uid="{63DC31F7-6350-4CF9-9E8E-1FF3018715BF}"
+          p:after="r[@uid='{4FAECC80-5E4B-4FD8-AC51-801041842467}']"
+          s:ds="{906454E0-1F4A-41B2-851D-E571BADA5A1F}"
+          s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{08B60EE1-3F06-4C49-9449-E7420AFE5A2F}|{3EBE0FCB-B055-4BFD-8C61-5FD42C9A8E9D}&amp;Styles={292B0307-A90F-46D3-9096-58BDCF6D5C2A}"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{88E7CB42-2F28-471E-9C58-2B273C4DB567}"
+          p:after="r[@uid='{63DC31F7-6350-4CF9-9E8E-1FF3018715BF}']"
+          s:ds="{F4AA4F60-D4E3-403E-9F7E-FB0A5AE82192}"
+          s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
+          s:par="GridParameters={96275667-C48B-43C7-B5E5-92CFEF77195B}|{C2F93081-F5B0-46B1-AECE-89CBF4CC1029}|{1864351A-0EDC-4650-95C0-7AB675D646AF}|{2A09D451-70CD-4A11-868C-3C56B6A7749C}&amp;Styles={E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}&amp;FieldNames"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{A59BF73B-C292-48C7-9E44-73EF1A85C6E5}"
+          p:after="r[@uid='{88E7CB42-2F28-471E-9C58-2B273C4DB567}']"
+          s:ds="{EC8DD81A-F3C6-49B7-8BEE-9E63D3EF292B}"
+          s:id="{C212B24C-5A0C-47CF-A91A-18C0B08970DD}"
+          s:par="GridParameters={0D7BE8C8-8041-43F7-BEE5-C78AF07D0692}|{B71A5A56-B4D6-4B6C-9B9F-56753B4EE431}|{80A9BB41-C410-400E-B762-771D5F9B78AA}|{878A3007-4CDD-4F2C-9226-87152561457D}&amp;Profile Edit Link=/sitecore/content/RobCommerce/RobStorefront/Home/accountmanagement/editprofile&amp;Show Profile View Header=1"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{AC7FA426-545F-422E-93E1-F0F6BAB62A7D}"
+          p:after="r[@uid='{A59BF73B-C292-48C7-9E44-73EF1A85C6E5}']"
+          s:id="{5B9272A5-E147-4C16-B9F7-41CCDCB4CB5D}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{08B60EE1-3F06-4C49-9449-E7420AFE5A2F}|{3EBE0FCB-B055-4BFD-8C61-5FD42C9A8E9D}&amp;Styles={136F0EFE-FFDB-4190-925B-25E7C949B9AD}|{E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{521665DA-2E1E-4DDA-BDE7-F533DE2C9684}"
+          p:after="r[@uid='{AC7FA426-545F-422E-93E1-F0F6BAB62A7D}']"
+          s:ds="{8712112F-BC17-434C-988C-354600CF274A}"
+          s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={292B0307-A90F-46D3-9096-58BDCF6D5C2A}"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{50352EF6-5EFD-43B2-9BEC-CDCBCD1A83A0}"
+          p:after="r[@uid='{521665DA-2E1E-4DDA-BDE7-F533DE2C9684}']"
+          s:ds="{91F2A473-88AA-487A-944E-A8FC2F9A8E6A}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{06CFD752-D382-4EC5-BF46-133100F0A79E}"
+          p:after="r[@uid='{50352EF6-5EFD-43B2-9BEC-CDCBCD1A83A0}']"
+          s:ds="{7592DE04-9988-4267-BF72-8BF2220AEE69}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{E7F89FF2-1440-4893-A832-006F888223EC}"
+          p:after="r[@uid='{06CFD752-D382-4EC5-BF46-133100F0A79E}']"
+          s:id="{5B9272A5-E147-4C16-B9F7-41CCDCB4CB5D}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{C8EAF414-28B2-4FF3-A9F9-BD898E241C0B}"
+          p:after="r[@uid='{E7F89FF2-1440-4893-A832-006F888223EC}']"
+          s:ds="{7AD14783-3B09-4B2C-9BEA-7878A5D87B6C}"
+          s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={292B0307-A90F-46D3-9096-58BDCF6D5C2A}"
+          s:ph="/main/column-1-1" />
+        <r
+          uid="{AC854E9C-4305-4CBF-8563-6642C1D0EBE9}"
+          p:after="*[1=2]"
+          s:ds="{8984120E-0BB6-45E3-A6F8-A1242D760E6A}"
+          s:id="{C7363F74-D4A6-44A6-828B-86119F24C163}"
+          s:par="Add New Address Link=/sitecore/content/RobCommerce/RobStorefront/Home/accountmanagement/addressbook&amp;Show Address List Header&amp;Number of Addresses to Show=5&amp;GridParameters"
+          s:ph="/main/column-1-1" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Kontoadministration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073137Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Account Management
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: My Account
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Kontoverwaltung
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073152Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Account Management
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: My Account
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Account Management
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170213T024908Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Account Management
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: My Account
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: アカウント管理
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073207Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Account Management
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: My Account
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"

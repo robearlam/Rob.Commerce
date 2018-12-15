@@ -1,0 +1,190 @@
+﻿---
+ID: "666d2c70-bb55-4674-8191-2bbda5f76f0c"
+Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
+Template: "5f0faf12-2c70-486b-bdf2-16bd6030974d"
+Path: /sitecore/content/RobCommerce/RobStorefront/Home/shoppingcart
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
+    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
+    {4973432D-69AB-4271-A049-B1C711790BF6}
+    {DF79C7F7-A840-4CC5-A565-EB55B82BF4CC}
+    {3F9C1F11-1511-4F24-AB2A-8109F35B027C}
+    {54385DEA-C04B-475C-8AAD-40308EC8D428}
+    {4B48FA3E-2BFD-4C06-93FF-AAF3E2106F61}
+    {DB99DE13-FF08-4932-B56F-9567ACED4D9E}
+    {E487D8E0-870C-4226-9B6F-8CA07BAD527B}
+    {210CB0FE-B364-4E25-AB56-6A4BA59C278A}
+    {6706448C-92A5-43EA-9711-F6D1914A1706}
+    {A098D12C-83BD-49E4-979A-A9F7B6A37629}
+    {DDFE6B16-6472-4834-81C3-C9454EEF43AB}
+    {2662751A-A685-46EC-897C-EDA79603B232}
+    {5F0FAF12-2C70-486B-BDF2-16BD6030974D}
+    {7EF0323A-0C2E-4E0C-85A2-104BA06E4167}
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{23FEBAB4-74C7-44A0-AEF1-1BCB139A1943}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{37141A9A-8879-4C7C-8F7C-3620CB14DA68}"
+          p:before="*"
+          s:ds="{B48BE82A-F34F-4446-AB41-94960F18D740}"
+          s:id="{3034FC89-896C-4A55-A72A-E3BC92A67BC6}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Current Step=Cart"
+          s:ph="/main/container-1" />
+        <r
+          uid="{CD75D7E7-58C3-431B-BE63-65F8F4A48A03}"
+          p:after="r[@uid='{37141A9A-8879-4C7C-8F7C-3620CB14DA68}']"
+          s:ds="{5AA0B79B-491B-430F-8DF3-76068487B951}"
+          s:id="{3E8F1BDD-037D-4AD7-953C-D39E9191C5FD}"
+          s:par="Display Table Header=1&amp;Display Delete Button=1&amp;Display Quantity=1&amp;Display Unit Price=1&amp;Display Shipping Information&amp;Display Sublines=1&amp;GridParameters&amp;Styles"
+          s:ph="/main/container-1" />
+        <r
+          uid="{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}"
+          p:after="r[@uid='{CD75D7E7-58C3-431B-BE63-65F8F4A48A03}']"
+          s:ds="{9D4C7E78-E14A-435C-B1B7-B9AFB88BDD57}"
+          s:id="{AB1E2893-6556-49D5-9095-B7AAF09B8BEF}"
+          s:par="GridParameters"
+          s:ph="/main/container-1" />
+        <r
+          uid="{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}"
+          p:after="r[@uid='{2E119C28-A8CB-4A35-ADDC-84CA337DA38F}']"
+          s:ds="{3E37DF8E-152E-4816-A7B1-277BAFA01F6B}"
+          s:id="{062251D0-4C83-43BE-8119-B33DAF14DF2F}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{08B60EE1-3F06-4C49-9449-E7420AFE5A2F}|{3EBE0FCB-B055-4BFD-8C61-5FD42C9A8E9D}"
+          s:ph="/main/container-1" />
+        <r
+          uid="{FA71BE58-6FAE-4688-B348-3E132D6D64F8}"
+          p:after="r[@uid='{901EBFB9-50D1-4BA4-ACA6-D4C99EEAAEAD}']"
+          s:ds="{12DA5C8F-ACA6-4E90-A28F-CA274C540E42}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F6DC722E-15DB-4826-920B-ACCFDA772432}|{2040C827-8640-4E61-907E-D3D5A25696C3}|{F58A39D5-1B62-4A8A-95AD-65B3878BB873}&amp;Styles={CA19E8E4-0EA0-4690-A0E6-F595045CD1F8}|{1B3F0635-2247-4455-9EA0-B4F4B6F5A976}|{6D2B30D8-B06B-4494-BBD4-41F5B9807EC8}"
+          s:ph="/main/container-1" />
+        <r
+          uid="{5128720C-BB91-4B94-BBB7-65AAF2D61430}"
+          p:after="r[@uid='{FA71BE58-6FAE-4688-B348-3E132D6D64F8}']"
+          s:ds="{952F7137-EA5B-4E4E-8987-4513F519EA84}"
+          s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F6DC722E-15DB-4826-920B-ACCFDA772432}|{2040C827-8640-4E61-907E-D3D5A25696C3}|{F58A39D5-1B62-4A8A-95AD-65B3878BB873}&amp;Styles={0BB9A48D-2E9F-4168-9785-D5C36E092C37}|{A159EDA7-6B9F-4C62-B250-6DD50865C451}|{6D2B30D8-B06B-4494-BBD4-41F5B9807EC8}"
+          s:ph="/main/container-1" />
+        <r
+          uid="{A17DE5E9-A2CA-4DCB-BC17-79F4811196FF}"
+          p:after="*[1=2]"
+          s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}"
+          s:par="GridParameters&amp;BackgroundImage&amp;Styles={3D050529-A80A-4F79-A31E-C6D7CC9FE738}&amp;DynamicPlaceholderId=1"
+          s:ph="main" />
+      </d>
+      <d
+        id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}">
+        <p:d />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Indkøbsvogn
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073140Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cart
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: ShoppingCart
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Warenkorb
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073155Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cart
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: ShoppingCart
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Shopping Cart
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170307T144008Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cart
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: ShoppingCart
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ショッピング カート
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073211Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cart
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: ShoppingCart
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"

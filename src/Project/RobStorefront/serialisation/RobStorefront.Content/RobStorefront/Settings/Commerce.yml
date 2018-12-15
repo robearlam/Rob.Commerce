@@ -1,0 +1,18 @@
+﻿---
+ID: "9c9de238-8f42-41be-ab14-ac1d67747499"
+Parent: "1e0bc92f-6376-423f-b0a2-d9dff651a905"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Commerce
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180524T074415Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,106 @@
+﻿---
+ID: "e29b4cc2-ef64-4523-81b2-f377b38d5213"
+Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
+Template: "79e04b89-212d-47b9-ae2e-6ea1a643d1fb"
+Path: /sitecore/content/RobCommerce/RobStorefront/Home/product
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/16x16/element.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
+    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
+    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {4973432D-69AB-4271-A049-B1C711790BF6}
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{D407D3DC-EA59-4B09-AF78-D27D12F1D40E}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073140Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Product
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: Product
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073154Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Product
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: Product
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Product
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170529T101702Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Product
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: Product
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073211Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Product
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: Product
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"

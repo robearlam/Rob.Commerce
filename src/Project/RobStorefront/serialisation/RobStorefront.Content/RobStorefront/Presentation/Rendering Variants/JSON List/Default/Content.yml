@@ -1,0 +1,59 @@
+﻿---
+ID: "1b18928d-bffe-44bf-8fe5-2901d83089ea"
+Parent: "6d16f4f7-7879-4fe6-a8c3-a4d058220618"
+Template: "f69d787d-0ecf-43d3-b9cb-35b303d5233a"
+Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Rendering Variants/JSON List/Default/Content
+DB: master
+BranchID: "08c12327-7685-4c17-bfca-6aae7a55f4c5"
+SharedFields:
+- ID: "3183d84b-d0b9-4e0c-8813-a82465ccbdc8"
+  Hint: Field Name
+  Value: Content
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8BD0246F-09AF-4884-9A63-C164E4CF61B3}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073145Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T072941Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073217Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

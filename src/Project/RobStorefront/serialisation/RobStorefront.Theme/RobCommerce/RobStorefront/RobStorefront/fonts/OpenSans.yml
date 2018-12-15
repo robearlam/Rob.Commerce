@@ -1,0 +1,18 @@
+﻿---
+ID: "42f41e72-8cf2-4df7-8185-8bf33b88f790"
+Parent: "fcbdd9fb-84b1-4c1f-bc42-1a02830c465b"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/fonts/OpenSans
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160624T115402Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

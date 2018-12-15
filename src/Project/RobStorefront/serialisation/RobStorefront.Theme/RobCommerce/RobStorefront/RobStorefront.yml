@@ -1,0 +1,35 @@
+﻿---
+ID: "9382005d-4f38-4641-ac01-2cb3228d4503"
+Parent: "072be520-7cce-4074-9006-28735b222555"
+Template: "f7653f31-6f17-4daa-9217-8e116babc927"
+Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront
+DB: master
+SharedFields:
+- ID: "384c2d3c-3e34-4493-9cb2-ade68caf0da2"
+  Hint: BaseLayout
+  Type: Treelist
+  Value: |
+    {05BFBCDF-4DA5-414A-8651-A221AB3F5F0F}
+    {9C1D66B3-6828-4759-9EEC-D68A7A2CE248}
+    {DF95EF99-4AFB-4E59-A341-2CC147120344}
+    {06401E9B-A3C5-4EB1-A8BA-A66658E157BC}
+    {9769975C-091E-4942-B896-BDEF8792ED35}
+    {64759BA4-67B6-4239-9D02-DD17C2A0B747}
+    {A62AF3A7-1DD3-4340-9904-B76B12C98276}
+    {27E5B605-129A-4A08-AEB5-0E7E822CF145}
+    {0DF2DDC8-D3C1-4B3E-988C-7E807C61A324}
+    {1FF2E882-18C3-4FF3-8B1A-736ECA929C5F}
+    {C7F3C097-9A71-4701-B8A9-0C6740FBF84E}
+    {D889F096-AFAB-4539-9E73-4DD3E05FCEC9}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T072824Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

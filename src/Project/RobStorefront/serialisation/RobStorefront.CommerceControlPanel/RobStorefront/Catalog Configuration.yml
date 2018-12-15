@@ -1,0 +1,40 @@
+﻿---
+ID: "ca7ed3ed-6f60-4332-8478-5f9add5e58ca"
+Parent: "3742816c-f082-4e3c-a66f-7b9a4f480204"
+Template: "d36bae09-f787-4b31-bada-d830e0799257"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront/Catalog Configuration
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "00a621a0-d2d1-4cf0-831f-36da2e8d2a91"
+  Hint: Start Navigation Category
+  Value: "{B893C063-6238-ED57-700D-72862C56038D}"
+- ID: "48420f58-f1df-4b80-8386-b62aa84e9b57"
+  Hint: Gift Card Page Link
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{73E52D2E-24C4-4A6F-AE64-9F5AD10264A2}" />
+- ID: "d7cad4b2-7027-4d9b-a813-747105fd50c8"
+  Hint: Catalog
+  Value: "{59DDADC1-9B88-727E-9E14-3F6CF321AE0F}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{50E69E44-1425-4502-9589-4031F47DCD4F}"
+- ID: "fc9c3c29-7a69-4088-8c89-22fb3d493a9a"
+  Hint: GiftCardProductId
+  Value: 6042986
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Catalog Configuration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073027Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

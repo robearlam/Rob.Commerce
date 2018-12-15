@@ -1,0 +1,82 @@
+﻿---
+ID: "7831a8ba-fda9-4a68-84cc-d2d8bb305305"
+Parent: "1aad086c-e7ad-4d4a-a0a0-7ecacbb3e50c"
+Template: "bb8a85ab-1f6d-4518-8772-1c9f4f8dac18"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Images/Order Confirmation Image
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{7F43F265-C650-40F8-A65D-D243CA93552C}" />
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{7F43F265-C650-40F8-A65D-D243CA93552C}" />
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180109T052739Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{7F43F265-C650-40F8-A65D-D243CA93552C}" />
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073101Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
+      Hint: Image
+      Value: |
+        <image mediaid="{7F43F265-C650-40F8-A65D-D243CA93552C}" />

@@ -1,0 +1,65 @@
+﻿---
+ID: "52f52612-3005-4e88-9545-f6154ae4069a"
+Parent: "d2c07652-bb45-4b2a-94c3-7778c65caf5b"
+Template: "f3c0661e-f9a9-444c-a26d-44bf2a68a186"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Search/Results Count/Default
+DB: master
+BranchID: "957565a0-bf0d-4f8b-bf2c-4a8f40ec9080"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A3F9E079-4C43-4680-9496-1C610006A6A0}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04dbbaaf-675a-4324-aebd-9b32d2d8d7d3"
+      Hint: ResultsCountText
+      Value: "There are {count} results"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073142Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04dbbaaf-675a-4324-aebd-9b32d2d8d7d3"
+      Hint: ResultsCountText
+      Value: "There are {count} results"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073157Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073033Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04dbbaaf-675a-4324-aebd-9b32d2d8d7d3"
+      Hint: ResultsCountText
+      Value: "There are {count} results"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T073214Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser

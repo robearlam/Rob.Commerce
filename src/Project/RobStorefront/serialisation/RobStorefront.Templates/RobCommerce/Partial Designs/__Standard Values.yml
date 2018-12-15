@@ -1,0 +1,22 @@
+﻿---
+ID: "804402f8-4e78-48ca-9e5a-c1c89dc80841"
+Parent: "742c956b-8e68-4cf6-96a6-f937c2f1ba73"
+Template: "742c956b-8e68-4cf6-96a6-f937c2f1ba73"
+Path: /sitecore/templates/Project/RobCommerce/Partial Designs/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {2532B32E-90D9-41B7-B6E8-937F4DC446AC}
+    {21355141-FDEB-4789-B2BC-FED32998DF83}
+    {C2A8E276-1757-4957-9DD5-8669B79FD80D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181215T072627Z
