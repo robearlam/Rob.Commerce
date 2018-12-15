@@ -67,7 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Project\z.RobStorefront.DevSettings.config" />
-    <Content Include="App_Config\Include\Project\Project.RobStorefront.Serialisation.config" />
+    <Content Include="App_Config\Include\Project\Project.RobStorefront.Serialisation.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

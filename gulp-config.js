@@ -32,6 +32,14 @@ module.exports = function () {
                 path: webroot + "\\" + siteName + ".CommerceMinions",
                 environmentName: 'HabitatMinions'
             },
+        ],
+        defaultEnvironments: [
+            "AdventureWorksAuthoring",
+            "AdventureWorksMinions",
+            "AdventureWorksShops",
+            "HabitatAuthoring",
+            "HabitatMinions",
+            "HabitatShops"
         ]
     };
     return config;
