@@ -46,28 +46,28 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Commerce.Connect.Collection.Model, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Collection.Model.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Collection.Model.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.Connect.Core, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Core.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.Connect.Remote, Version=11.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.Connect.Core.11.2.83\lib\net462\Sitecore.Commerce.Connect.Remote.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Commerce.XA.Foundation.Common, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Commerce.XA.Foundation.Common.1.4.150\lib\net462\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Commerce.XA.Foundation.Common.1.4.150\lib\net462\Sitecore.Commerce.XA.Foundation.Common.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.Kernel.NoReferences.9.0.180604\lib\NET462\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XConnect, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XConnect.NoReferences.9.0.180604\lib\NET462\Sitecore.XConnect.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.NoReferences.9.0.180604\lib\NET462\Sitecore.XConnect.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XConnect.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XConnect.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.XConnect.Client.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.Client.NoReferences.9.0.180604\lib\NET462\Sitecore.XConnect.Client.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.XConnect.Client.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\packages\Sitecore.XConnect.Client.Configuration.NoReferences.9.0.180604\lib\NET462\Sitecore.XConnect.Client.Configuration.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Sitecore.XConnect.Client.Configuration.NoReferences.9.0.180604\lib\NET462\Sitecore.XConnect.Client.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
@@ -87,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
