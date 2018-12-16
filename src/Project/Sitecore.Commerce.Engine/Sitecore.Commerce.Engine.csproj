@@ -62,7 +62,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Feature\Initialization\Feature.Initialization.Engine\Feature.Initialization.Engine.csproj" />
     <ProjectReference Include="..\..\Feature\Orders.ServiceBus\Feature.Orders.ServiceBus.Engine\Feature.Orders.ServiceBus.Engine.csproj" />
-    <ProjectReference Include="..\..\Feature\Payments\Plugin.Sample.Payments.Braintree\Plugin.Sample.Payments.Braintree.csproj" />
+    <ProjectReference Include="..\..\Feature\Payments\Feature.Payments.Engine\Feature.Payments.Engine.csproj" />
     <ProjectReference Include="..\..\Feature\ProductCompare\Feature.Compare.Engine\Feature.Compare.Engine.csproj" />
     <ProjectReference Include="..\..\Feature\ProductImport\Feature.ProductImport.Engine\Feature.ProductImport.Engine.csproj" />
     <ProjectReference Include="..\..\Foundation\PluginEnhancements\Foundation.PluginEnhancements.Engine\Foundation.PluginEnhancements.Engine.csproj" />
