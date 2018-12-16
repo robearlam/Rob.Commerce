@@ -2,10 +2,7 @@
 A series of plugins for Sitecore Experience Commerce
 
 ## Prerequisites
-
-* Built against XC9.0.3
-
-This is built against the software versions above, you should follow the installation instructions for both of these and ensure the installation is successfully running.
+* XC9.0.3 - Install a clean version of XC9.0.3, however before you run the install comment our the _"CreateDefaultTenantAndSite"_ task in the _Master_SingleServer.json_.
 
 ## Installation
 Follow the steps below to deploy the plugins contained in this solution.
@@ -17,10 +14,15 @@ Edit the _gulp-config.js_ & _z.RobStorefront.DevSettings.config_ to ensure that 
 The gulp scripts are written using ES6, which isn't supported OOTB in VS2017, follow the fix here to enable that: https://github.com/madskristensen/NpmTaskRunner/issues/47
 
 ### Deploy
-Excucute the _default_ task to build and deploy the engine to all of your roles, and all of website projects.
+Excucute the _first-install_ task to build and deploy the engine to all of your roles, and all of website projects. This will also clean the OOTB configured environments and re-bootstrap and initialize the configuration contained in this solution. Note that the final step _initial-engine-setup_ may take a little time to complete.
 
 ### Deploy Unicorn Items
 Deploy Unicorn items.
+Perform a full publish
+Perform a full rebuild of indexes.
+
+### Further deployments
+After your have initialized the engine using the steps above you can then just execute the _default_ task to deploy any code changes as required.
 
 ## Credits
 The following modules were based on code provided by:

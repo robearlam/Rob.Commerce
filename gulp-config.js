@@ -15,6 +15,12 @@ module.exports = function () {
         xcDatabaseServer: ".",
         xcCertificateThumbprint: "DDFD90315A364DBFF278AE24CB62B7A65D22865A",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
+        engineHostname: "localhost",
+        enginePort: "5000",
+        identityServerHostname: "localhost",
+        identityServerPort: "5050",
+        adminUser: "admin",
+        adminPassword: "b",
         engineRoles: [
             {
                 path: webroot + "\\" + siteName + ".CommerceAuthoring",
@@ -32,14 +38,6 @@ module.exports = function () {
                 path: webroot + "\\" + siteName + ".CommerceMinions",
                 environmentName: 'HabitatMinions'
             },
-        ],
-        defaultEnvironments: [
-            "AdventureWorksAuthoring",
-            "AdventureWorksMinions",
-            "AdventureWorksShops",
-            "HabitatAuthoring",
-            "HabitatMinions",
-            "HabitatShops"
         ]
     };
     return config;

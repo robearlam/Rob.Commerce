@@ -146,6 +146,31 @@ gulp.task("default",
             done();
 }));
 
+gulp.task("initial-engine-setup", function (callback) {
+    var script = 'Powershell.exe ./scripts/FirstDeploy.ps1' +
+        ' -EngineHostName \'' + config.engineHostname + "\'" +
+        ' -EnginePort \'' + config.enginePort + "\'" +
+        ' -IdentityServerHostname \'' + config.identityServerHostname + "\'" +
+        ' -IdentityServerPort \'' + config.identityServerPort + "\'" +
+        ' -AdminPassword \'' + config.adminPassword + "\'" +
+        ' -AdminUser \'' + config.adminUser + '\'';
+
+    console.log(script);
+    exec(script, function (err, stdout) {
+        if(err)
+            console.log(err);
+
+        console.log(stdout);
+        callback();
+    });
+});
+
+gulp.task("first-install",
+    gulp.series(
+        "default",
+        "initial-engine-setup", function (done) {
+            done();
+}));
 
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
