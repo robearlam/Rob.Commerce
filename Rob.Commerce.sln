@@ -6,15 +6,12 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{568C6A8E-A6AC-4A00-BDA0-F8BDA498A365}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		scripts\CopyEngine.ps1 = scripts\CopyEngine.ps1
 		gulp-config.js = gulp-config.js
 		gulp-config.js.user = gulp-config.js.user
 		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
 		package.json = package.json
 		README.md = README.md
-		scripts\TransformEngineRole.ps1 = scripts\TransformEngineRole.ps1
-		scripts\TransformWebsite.ps1 = scripts\TransformWebsite.ps1
 		src\Project\RobStorefront\RobStorefront.Website\App_Config\Include\Project\z.RobStorefront.DevSettings.config = src\Project\RobStorefront\RobStorefront.Website\App_Config\Include\Project\z.RobStorefront.DevSettings.config
 	EndProjectSection
 EndProject
@@ -71,6 +68,14 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Initialization.Engine", "src\Feature\Initialization\Feature.Initialization.Engine\Feature.Initialization.Engine.csproj", "{23C9B3E0-67C3-4067-B8D0-6D4D21F7801C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Payments.Engine", "src\Feature\Payments\Feature.Payments.Engine\Feature.Payments.Engine.csproj", "{FD883727-0FEA-4487-A0BE-1E6078D6C0CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShell", "PowerShell", "{9D15AE37-A812-4C0B-A069-0F6670984C25}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\CopyEngine.ps1 = scripts\CopyEngine.ps1
+		scripts\FirstDeploy.ps1 = scripts\FirstDeploy.ps1
+		scripts\TransformEngineRole.ps1 = scripts\TransformEngineRole.ps1
+		scripts\TransformWebsite.ps1 = scripts\TransformWebsite.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,9 +164,10 @@ Global
 		{A4847D1D-4E28-4D76-9E24-9D97DDD0CE5C} = {E1E0F6B9-0C51-4C11-896A-35199A614973}
 		{23C9B3E0-67C3-4067-B8D0-6D4D21F7801C} = {27295EFA-C61D-4901-BEDE-DBD3E3ADB992}
 		{FD883727-0FEA-4487-A0BE-1E6078D6C0CD} = {CDD2C936-5028-480D-8E4E-43075E1759F1}
+		{9D15AE37-A812-4C0B-A069-0F6670984C25} = {568C6A8E-A6AC-4A00-BDA0-F8BDA498A365}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
