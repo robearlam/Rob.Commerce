@@ -13,7 +13,7 @@ module.exports = function () {
         publishPlatform: "AnyCpu",
         runCleanBuilds: true,
         xcDatabaseServer: ".",
-        xcCertificateThumbprint: "DDFD90315A364DBFF278AE24CB62B7A65D22865A",
+        xcCertificateThumbprint: "DD31CE8188C9EB6F9124FD9256F7E2A02A718848",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
         engineHostname: "localhost",
         enginePort: "5000",

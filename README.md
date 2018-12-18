@@ -18,8 +18,11 @@ Excucute the _first-install_ task to build and deploy the engine to all of your 
 
 ### Deploy Unicorn Items
 Deploy Unicorn items.
-Perform a full publish
+Perform a full publish.
 Perform a full rebuild of indexes.
+
+### Accessing the site
+The storefront is configured to run against the url https://rob.storefront/. You will need to configure IIS & your hosts file manully.
 
 ### Further deployments
 After your have initialized the engine using the steps above you can then just execute the _default_ task to deploy any code changes as required.
