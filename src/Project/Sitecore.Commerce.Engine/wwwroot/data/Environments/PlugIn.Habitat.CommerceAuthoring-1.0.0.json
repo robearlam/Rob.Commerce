@@ -589,12 +589,12 @@
       },
       {
         "$type": "Feature.Orders.ServiceBus.Engine.Policies.ServiceBusConnectionPolicy,Feature.Orders.ServiceBus.Engine",
-        "EndPoint": "Endpoint=sb://rea-sym2018.servicebus.windows.net/;SharedAccessKeyName=Full-Access;SharedAccessKey=P8tFw43ckfYk3JbYrp+RI3nYH/0k+lpiew4kivzvsk8=;EntityPath=xc902",
-        "PrimaryKey": "qxmao1lVOC4Ffqd5iprkeCOzqOMviL/vVlLuzi/+pNg=",
-        "SecondaryKey": "qxmao1lVOC4Ffqd5iprkeCOzqOMviL/vVlLuzi/+pNg=",
-        "ApplicationID": "467b3b2f-bc5c-4bae-9561-3110b46a05f7",
-        "Mcskey": "wLr7AunVoSWVenHEWhlP6ru3036uYTR9gEmsRoNva1A=",
-        "TenantID": "91700184-c314-4dc9-bb7e-a411df456a1e"
+        "EndPoint": "",
+        "PrimaryKey": "",
+        "SecondaryKey": "",
+        "ApplicationID": "",
+        "Mcskey": "",
+        "TenantID": ""
       },
 
       {
