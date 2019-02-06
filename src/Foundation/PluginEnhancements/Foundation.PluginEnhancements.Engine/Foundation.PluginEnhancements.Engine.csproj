@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.37" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.4.37" />
   </ItemGroup>
 
 </Project>

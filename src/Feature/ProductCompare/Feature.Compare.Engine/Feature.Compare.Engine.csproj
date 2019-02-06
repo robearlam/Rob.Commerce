@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.ManagedLists" Version="2.4.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.37" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.ManagedLists" Version="2.4.37" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.4.21" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

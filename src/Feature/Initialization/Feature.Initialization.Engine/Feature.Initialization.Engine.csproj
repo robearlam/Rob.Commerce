@@ -10,10 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.4.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.4.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.4.*" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.4.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Coupons" Version="2.4.11" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Fulfillment" Version="2.4.11" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.GiftCards" Version="2.4.5" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.4.11" />
   </ItemGroup>
 
   <ItemGroup>
