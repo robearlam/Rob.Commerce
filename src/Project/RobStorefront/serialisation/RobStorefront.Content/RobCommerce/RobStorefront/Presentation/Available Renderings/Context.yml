@@ -12,6 +12,9 @@ SharedFields:
   Value: |
     {7E905ED5-E2A7-41A4-90E4-1C5E4807074E}
     {0F77C4A9-0727-4FE2-8E22-511A565B9959}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{FBF2AA5D-FA8A-4624-8538-299B7920C45A}"

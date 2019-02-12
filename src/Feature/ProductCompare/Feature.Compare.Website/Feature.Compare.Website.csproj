@@ -63,8 +63,6 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductCompare.config" />
     <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductCompare.Serialisation.config" />
-    <Content Include="Scripts\Commerce\Feature\ProductCompare\feature.compare.removeCompareButton.js" />
-    <Content Include="Scripts\Commerce\Feature\ProductCompare\feature.compare.addCompareButton.js" />
     <Content Include="Views\Commerce\ProductCompare\ProductCompare.cshtml" />
     <Content Include="Views\Commerce\ProductCompare\AddVewCompareButton.cshtml" />
     <Content Include="Views\Commerce\ProductCompare\_ProductComparePanel.cshtml" />

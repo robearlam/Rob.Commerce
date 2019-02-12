@@ -22,7 +22,7 @@
                 @Html.Hidden("addToCompareCatalogName", Model.CatalogName)
                 @Html.AntiForgeryToken()
 
-                <button type="submit" class="add-to-compare-btn add-to-cart-btn" data-loading-text="@Model.AddingToCompareWaitText" style="width: 170px;" @formDisabledAttr>
+                <button type="submit" class="add-to-compare-btn" data-loading-text="@Model.AddingToCompareWaitText" style="width: 170px;" @formDisabledAttr>
                     @Model.AddToCompareButtonText
                 </button>
             }

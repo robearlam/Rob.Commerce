@@ -12,6 +12,9 @@ SharedFields:
     {432E53A1-E676-4A07-92BC-A3EF517A5811}
     {D2EB2C0D-5453-4430-B4C4-B98F26F21447}
     {B761C521-23CC-4F51-8340-15F5483BE921}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 Languages:
 - Language: da
   Versions:

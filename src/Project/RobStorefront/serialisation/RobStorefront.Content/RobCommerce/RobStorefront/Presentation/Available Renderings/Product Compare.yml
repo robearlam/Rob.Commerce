@@ -1,0 +1,28 @@
+﻿---
+ID: "7b043165-2676-4d34-9df4-197b2e344ea2"
+Parent: "4c4e7d22-7307-4143-b050-372c4ab9368c"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Available Renderings/Product Compare
+DB: master
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Type: TreelistEx
+  Value: |
+    {A631F6D3-2FE0-432C-8862-488CA54CA430}
+    {F62038BD-D519-4A6F-9FA5-27C46E903375}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 450
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190211T061444Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

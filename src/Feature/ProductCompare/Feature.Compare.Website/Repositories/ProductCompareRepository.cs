@@ -42,10 +42,16 @@ namespace Feature.Compare.Website.Repositories
         {
             var model = _modelProvider.GetModel<AddViewCompareButtonModel>();
             Init(model);
+
+            Rendering.DataSourceItem.Fields.ReadAll();
+            model.ViewCompareButtonText = Rendering.DataSourceItem["View Compare Text"];
+            model.AddToCompareButtonText = Rendering.DataSourceItem["Add to Compare Text"];
+
             if (Sitecore.Context.PageMode.IsExperienceEditor)
             {
                 model.IsProductInCompareList = false;
                 model.IsEdit = true;
+                model.IsValid = true;
             }
             else
             {
@@ -59,22 +65,18 @@ namespace Feature.Compare.Website.Repositories
                                          productCompare.Result.Products.Any(x => x.FriendlyId == currentCatalogItem?.Name);
 
                 model.IsProductInCompareList = productIsInCompare;
-            }
 
-            Rendering.DataSourceItem.Fields.ReadAll();
-            model.ViewCompareButtonText = Rendering.DataSourceItem["View Compare Text"];
-            model.AddToCompareButtonText = Rendering.DataSourceItem["Add to Compare Text"];
-
-            LinkField linkField = Rendering.DataSourceItem.Fields["Compare Page"];
-            if (linkField != null && linkField.IsInternal)
-            {
-                model.IsValid = true;
-                model.ComparePageLink = LinkManager.GetItemUrl(linkField.TargetItem);
-            }
-            else
-            {
-                model.IsValid = false;
-                Log.Error("Unable to render add/view compare link, Compare Page field not populated in datasource.", this);
+                LinkField linkField = Rendering.DataSourceItem.Fields["Compare Page"];
+                if (linkField != null && linkField.IsInternal)
+                {
+                    model.IsValid = true;
+                    model.ComparePageLink = LinkManager.GetItemUrl(linkField.TargetItem);
+                }
+                else
+                {
+                    model.IsValid = false;
+                    Log.Error("Unable to render add/view compare link, Compare Page field not populated in datasource.", this);
+                }
             }
 
             return model;

@@ -1,0 +1,40 @@
+﻿---
+ID: "d35c9ccb-050e-4136-a16c-d1b19096c19e"
+Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
+Template: "e154445d-3810-4028-8d42-dea3935cdd5a"
+Path: /sitecore/content/RobCommerce/RobStorefront/Home/Compare
+DB: master
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{41CA925A-8C53-430C-A829-61C8847CCBA0}"
+              s:ds="{F3515D6A-685D-4C23-9F77-95A31FA1F30D}"
+              s:id="{F62038BD-D519-4A6F-9FA5-27C46E903375}"
+              s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
+              s:ph="main" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190211T065848Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Compare
+    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+      Hint: Title
+      Value: Compare
