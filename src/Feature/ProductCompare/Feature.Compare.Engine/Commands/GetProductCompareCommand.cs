@@ -5,6 +5,7 @@ using Feature.Compare.Engine.Pipelines;
 using Microsoft.Extensions.Logging;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Core.Commands;
+using Sitecore.Commerce.Plugin.Catalog;
 
 namespace Feature.Compare.Engine.Commands
 {
@@ -29,8 +30,7 @@ namespace Feature.Compare.Engine.Commands
                 return null;
             }
 
-            var entityPrefix = CommerceEntity.IdPrefix<ProductCompare>();
-            var entityId = cartId.StartsWith(entityPrefix, StringComparison.OrdinalIgnoreCase) ? cartId : $"{entityPrefix}{cartId}";
+            var entityId = cartId.StartsWith(CommerceEntity.IdPrefix<ProductCompare>(), StringComparison.OrdinalIgnoreCase) ? cartId : cartId.ToEntityId<ProductCompare>();
             var options = new CommercePipelineExecutionContextOptions(context);
             var productCompareComponent = await _getProductComparePipeline.Run(entityId, options);
             if (productCompareComponent == null)

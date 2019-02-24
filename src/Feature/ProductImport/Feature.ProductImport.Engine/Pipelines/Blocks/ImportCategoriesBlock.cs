@@ -79,12 +79,12 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 
         private static string GenerateFullCatalogName(string catalogName)
         {
-            return $"{CommerceEntity.IdPrefix<Catalog>()}{catalogName}";
+            return catalogName.ToEntityId<Catalog>();
         }
 
         private static string GenerateFullCategoryId(string catalogName, string categoryName)
         {
-            return $"{CommerceEntity.IdPrefix<Category>()}{catalogName}-{categoryName}";
+            return categoryName.ToCategoryId(catalogName);
         }
     }
 }

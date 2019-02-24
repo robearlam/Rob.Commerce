@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Feature.ProductImport.Engine.Pipelines.Arguments;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.EntityViews;
+using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Commerce.Plugin.Inventory;
 using Sitecore.Framework.Pipelines;
 
@@ -25,7 +26,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
                 await _associateSellableItemToInventorySetCommand.Process(context.CommerceContext,
                             arg.Line.FullEntitySellableItemName,
                             string.Empty,
-                            $"{CommerceEntity.IdPrefix<InventorySet>()}{inventorySetName}",
+                            inventorySetName.ToEntityId<InventorySet>(),
                             GenerateEntityView(inventoryAmount, arg.Line.FullEntitySellableItemName));
             }
             return arg;

@@ -48,9 +48,9 @@ namespace Feature.ProductImport.Engine.Pipelines.Arguments
         public string InsideLeg => _rawFields[InsideIndex];
         public string Leg => _rawFields[LegIndex];
 
-        public string FullEntityCatalogName => $"{CommerceEntity.IdPrefix<Catalog>()}{CatalogName}";
-        public string FullEntityCategoryName => $"{CommerceEntity.IdPrefix<Category>()}{CatalogName}-{Categories.Last()}";
-        public string FullEntitySellableItemName => $"{CommerceEntity.IdPrefix<SellableItem>()}{ProductId}";
+        public string FullEntityCatalogName => CatalogName.ToEntityId<Catalog>();
+        public string FullEntityCategoryName => Categories.Last().ToCategoryId(CatalogName);
+        public string FullEntitySellableItemName => ProductId.ToEntityId<SellableItem>();
 
         public CsvImportLine(string rawData)
         {

@@ -47,7 +47,7 @@ namespace Feature.Initialization.Engine.Pipelines.Blocks
 
         private async Task CreateSizingTemplate(CommercePipelineExecutionContext context)
         {
-            var composerTemplate = new ComposerTemplate($"{CommerceEntity.IdPrefix<ComposerTemplate>()}Sizing");
+            var composerTemplate = new ComposerTemplate("Sizing".ToEntityId<ComposerTemplate>());
             composerTemplate.GetComponent<ListMembershipsComponent>().Memberships.Add(CommerceEntity.ListName<ComposerTemplate>());
             composerTemplate.LinkedEntities = new List<string>() { "Sitecore.Commerce.Plugin.Catalog.SellableItem" };
             composerTemplate.Name = "Sizing";
@@ -90,7 +90,7 @@ namespace Feature.Initialization.Engine.Pipelines.Blocks
 
         private async Task CreateManufacturerDataTemplate(CommercePipelineExecutionContext context)
         {
-            var composerTemplate = new ComposerTemplate($"{CommerceEntity.IdPrefix<ComposerTemplate>()}Manufacturing");
+            var composerTemplate = new ComposerTemplate("Manufacturing".ToEntityId<ComposerTemplate>());
             composerTemplate.GetComponent<ListMembershipsComponent>().Memberships.Add(CommerceEntity.ListName<ComposerTemplate>());
             composerTemplate.LinkedEntities = new List<string>() {"Sitecore.Commerce.Plugin.Catalog.SellableItem"};
             composerTemplate.Name = "Manufacturing";

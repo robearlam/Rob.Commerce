@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Sitecore.Commerce.Core;
+using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Commerce.Plugin.ManagedLists;
 using Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Commerce.Plugin.Payments;
@@ -130,7 +131,7 @@ namespace Feature.Payments.Engine.Pipelines.Blocks
         {
             var salesActivity = new SalesActivity
             {
-                Id = CommerceEntity.IdPrefix<SalesActivity>() + Guid.NewGuid().ToString("N"),
+                Id = Guid.NewGuid().ToString("N").ToEntityId<SalesActivity>(),
                 ActivityAmount = new Money(existingPayment.Amount.CurrencyCode, paymentToRefund.Amount.Amount * -1),
                 Customer = new EntityReference
                 {

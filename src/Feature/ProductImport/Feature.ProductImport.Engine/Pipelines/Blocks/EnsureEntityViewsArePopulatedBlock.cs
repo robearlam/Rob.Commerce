@@ -31,7 +31,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
                 return arg;
             }
 
-            var sellableItem = await _findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), $"{CommerceEntity.IdPrefix<SellableItem>()}{arg.Line.ProductId}"), context);
+            var sellableItem = await _findEntityPipeline.Run(new FindEntityArgument(typeof(SellableItem), arg.Line.ProductId.ToEntityId<SellableItem>()), context);
             if (sellableItem == null)
             {
                 context.Abort("Unable to populate EntityView data, SellableItem not found", this);
@@ -53,7 +53,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
             if (!(entityViewComponent.View.ChildViews.FirstOrDefault(x => x.Name == viewName) is EntityView entityView))
                 return null;
 
-            entityView.EntityId = $"{CommerceEntity.IdPrefix<SellableItem>()}{arg.Line.ProductId}";
+            entityView.EntityId = arg.Line.ProductId.ToEntityId<SellableItem>();
             PopulatePropertyValue(entityView, "Waist", arg.Line.Waist);
             PopulatePropertyValue(entityView, "OutsideLeg", arg.Line.Leg);
             PopulatePropertyValue(entityView, "InsideLeg", arg.Line.InsideLeg);
@@ -71,7 +71,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 
         private async Task<CommerceEntity> GetComposerTemplate(string viewName, CommercePipelineExecutionContext context)
         {
-            return await _findEntityPipeline.Run(new FindEntityArgument(typeof(ComposerTemplate), $"{CommerceEntity.IdPrefix<ComposerTemplate>()}{viewName}"), context);
+            return await _findEntityPipeline.Run(new FindEntityArgument(typeof(ComposerTemplate), viewName.ToEntityId<ComposerTemplate>()), context);
         }
     }
 }

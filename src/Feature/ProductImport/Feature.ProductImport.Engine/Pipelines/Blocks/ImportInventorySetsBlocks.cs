@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Feature.ProductImport.Engine.Pipelines.Arguments;
 using Sitecore.Commerce.Core;
+using Sitecore.Commerce.Plugin.Catalog;
 using Sitecore.Commerce.Plugin.Inventory;
 using Sitecore.Framework.Pipelines;
 
@@ -34,7 +35,7 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 
         private async Task<bool>  InventorySetExists(string inventorySetName, CommercePipelineExecutionContext context)
         {
-            var inventorySet = await _findEntityPipeline.Run(new FindEntityArgument(typeof(InventorySet), $"{CommerceEntity.IdPrefix<InventorySet>()}{inventorySetName}", 1), context);
+            var inventorySet = await _findEntityPipeline.Run(new FindEntityArgument(typeof(InventorySet), inventorySetName.ToEntityId<InventorySet>(), 1), context);
             return inventorySet != null;
         }
 
