@@ -3,11 +3,7 @@ param
 	[Parameter(Mandatory = $true)]
     [string]$EngineHostName,
 	[Parameter(Mandatory = $true)]
-    [int]$EnginePort,
-	[Parameter(Mandatory = $true)]
     [string]$IdentityServerHostname,
-	[Parameter(Mandatory = $true)]
-    [int]$IdentityServerPort,
 	[Parameter(Mandatory = $true)]
     [string]$AdminPassword,
 	[Parameter(Mandatory = $true)]
@@ -15,7 +11,7 @@ param
 )
 
 Function Get-IdServerToken {
-    $UrlIdentityServerGetToken = ("https://{0}:{1}/connect/token" -f $IdentityServerHostname, $IdentityServerPort)
+    $UrlIdentityServerGetToken = ("https://{0}/connect/token" -f $IdentityServerHostname)
 
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Content-Type", 'application/x-www-form-urlencoded')
@@ -37,7 +33,7 @@ Function Get-IdServerToken {
 
 Function CleanEnvironment {
     Write-Host "Cleaning Environments"
-    $initializeUrl = ("https://{0}:{1}/commerceops/CleanEnvironment()" -f $EngineHostName, $EnginePort)
+    $initializeUrl = ("https://{0}/commerceops/CleanEnvironment()" -f $EngineHostName)
     $Environments = @("AdventureWorksAuthoring","AdventureWorksMinions","AdventureWorksShops","HabitatAuthoring","HabitatMinions","HabitatShops")
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Authorization", $global:sitecoreIdToken);
@@ -61,7 +57,7 @@ Function CleanEnvironment {
 
 Function BootStrapCommerceServices {
     Write-Host "BootStrapping Commerce Services."
-    $UrlCommerceShopsServicesBootstrap = ("https://{0}:{1}/commerceops/Bootstrap()" -f $EngineHostName, $EnginePort)
+    $UrlCommerceShopsServicesBootstrap = ("https://{0}/commerceops/Bootstrap()" -f $EngineHostName)
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Authorization", $global:sitecoreIdToken)
     Invoke-RestMethod $UrlCommerceShopsServicesBootstrap -TimeoutSec 1200 -Method PUT -Headers $headers 
@@ -70,20 +66,18 @@ Function BootStrapCommerceServices {
 
 Function InitializeCommerceServices {
     Write-Host "Initializing Environments"
-    $initializeParam = "/commerceops/InitializeEnvironment(environment='envNameValue')"
-    $UrlInitializeEnvironment = ("https://{0}:{1}{2}" -f $EngineHostName, $EnginePort, $initializeParam)
-    $UrlCheckCommandStatus = ("https://{0}:{1}{2}" -f $EngineHostName, $EnginePort, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
-
-    $Environments = @("HabitatAuthoring")
-
-    $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-    $headers.Add("Authorization", $global:sitecoreIdToken);
-
+	$Environments = @("HabitatAuthoring")
     foreach ($env in $Environments) {
         Write-Host "Initializing $($env) ..."
+		$initializeParam = "/commerceops/InitializeEnvironment()"
+		$UrlInitializeEnvironment = ("https://{0}{1}" -f $EngineHostName, $initializeParam)
+		$UrlCheckCommandStatus = ("https://{0}{1}" -f $EngineHostName, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
 
-        $initializeUrl = $UrlInitializeEnvironment -replace "envNameValue", $env
-        $result = Invoke-RestMethod $initializeUrl -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
+		$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+		$headers.Add("Authorization", $global:sitecoreIdToken);
+		$headers.Add("Environment", $env);
+
+        $result = Invoke-RestMethod $UrlInitializeEnvironment -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
         $checkUrl = $UrlCheckCommandStatus -replace "taskIdValue", $result.TaskId
 
         $sw = [system.diagnostics.stopwatch]::StartNew()

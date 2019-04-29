@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>A sample payemnt implementation.</Description>
@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Braintree" Version="4.11.0" />
+    <PackageReference Include="Braintree" Version="4.1.0" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="3.0.10" />
   </ItemGroup>
 

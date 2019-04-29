@@ -1,6 +1,6 @@
 module.exports = function () {
     var webroot = "C:\\inetpub\\wwwroot";
-    var siteName = "xc903";
+    var siteName = "xc91";
     var sitecoreRoot = webroot + "\\" + siteName + ".sc";
     var config = {
         sitecoreRoot: sitecoreRoot,
@@ -13,29 +13,27 @@ module.exports = function () {
         publishPlatform: "AnyCpu",
         runCleanBuilds: true,
         xcDatabaseServer: ".",
-        xcCertificateThumbprint: "DD31CE8188C9EB6F9124FD9256F7E2A02A718848",
+        xcCertificateThumbprint: "4D24F1FE8DE82073BD8CF1DE7FD5B04DFD6AEEBA",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
-        engineHostname: "localhost",
-        enginePort: "5000",
-        identityServerHostname: "localhost",
-        identityServerPort: "5050",
+        engineHostname: "commerceauthoring." + siteName + ".local",
+        identityServerHostname: siteName + ".identityserver",
         adminUser: "admin",
-        adminPassword: "b",
+        adminPassword: "sitecore",
         engineRoles: [
             {
-                path: webroot + "\\" + siteName + ".CommerceAuthoring",
+                path: webroot + "\\CommerceAuthoring_" + siteName,
                 environmentName: 'HabitatAuthoring'
             },
             {
-                path: webroot + "\\" + siteName + ".CommerceShops",
+                path: webroot + "\\CommerceShops_" + siteName,
                 environmentName: 'HabitatShops'
             },
             {
-                path: webroot + "\\" + siteName + ".CommerceOps",
-                environmentName: 'AdventureWorksOpsApi'
+                path: webroot + "\\CommerceOps_" + siteName,
+                environmentName: 'HabitatAuthoring'
             },
             {
-                path: webroot + "\\" + siteName + ".CommerceMinions",
+                path: webroot + "\\CommerceMinions_" + siteName,
                 environmentName: 'HabitatMinions'
             },
         ]

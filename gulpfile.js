@@ -149,9 +149,7 @@ gulp.task("default",
 gulp.task("initial-engine-setup", function (callback) {
     var script = 'Powershell.exe ./scripts/FirstDeploy.ps1' +
         ' -EngineHostName \'' + config.engineHostname + "\'" +
-        ' -EnginePort \'' + config.enginePort + "\'" +
         ' -IdentityServerHostname \'' + config.identityServerHostname + "\'" +
-        ' -IdentityServerPort \'' + config.identityServerPort + "\'" +
         ' -AdminPassword \'' + config.adminPassword + "\'" +
         ' -AdminUser \'' + config.adminUser + '\'';
 
