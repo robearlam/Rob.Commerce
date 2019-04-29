@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Startup.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-2018
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -10,7 +10,6 @@ namespace Sitecore.Commerce.Engine
     using System.Collections.Generic;
     using System.IO;
     using System.Threading.Tasks;
-
     using Microsoft.ApplicationInsights;
     using Microsoft.ApplicationInsights.Extensibility;
     using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -18,6 +17,7 @@ namespace Sitecore.Commerce.Engine
     using Microsoft.AspNetCore.DataProtection;
     using Microsoft.AspNetCore.DataProtection.XmlEncryption;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.OData.Builder;
     using Microsoft.AspNetCore.OData.Extensions;
     using Microsoft.AspNetCore.OData.Routing;
@@ -25,12 +25,9 @@ namespace Sitecore.Commerce.Engine
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;
-
     using Newtonsoft.Json.Serialization;
-
     using Serilog;
     using Serilog.Events;
-
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Core.Commands;
     using Sitecore.Commerce.Core.Logging;
@@ -44,7 +41,7 @@ namespace Sitecore.Commerce.Engine
     /// </summary>
     public class Startup
     {
-        private readonly string _nodeInstanceId = Guid.NewGuid().ToString("N");
+        private readonly string _nodeInstanceId = Guid.NewGuid().ToString("N", System.Globalization.CultureInfo.InvariantCulture);
         private readonly IServiceProvider _serviceProvider;
         private readonly IHostingEnvironment _hostEnv;
         private volatile CommerceEnvironment _environment;
@@ -165,6 +162,7 @@ namespace Sitecore.Commerce.Engine
             services.AddOData();
             services.AddCors();
             services.AddMvcCore(options => options.InputFormatters.Add(new ODataFormInputFormatter())).AddJsonFormatters();
+            services.AddHttpContextAccessor();
             services.AddWebEncoders();
             services.AddDistributedMemoryCache();
             services.AddAuthentication(options =>
@@ -189,11 +187,26 @@ namespace Sitecore.Commerce.Engine
             });
 
             var antiForgeryEnabledSetting = this.Configuration.GetSection("AppSettings:AntiForgeryEnabled").Value;
-            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting);
-            if (this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
+            this._nodeContext.AntiForgeryEnabled = !string.IsNullOrWhiteSpace(antiForgeryEnabledSetting) && Convert.ToBoolean(antiForgeryEnabledSetting, System.Globalization.CultureInfo.InvariantCulture);
+            this._nodeContext.CommerceServicesHostPostfix = this.Configuration.GetSection("AppSettings:CommerceServicesHostPostfix").Value;
+            if (string.IsNullOrEmpty(this._nodeContext.CommerceServicesHostPostfix))
+            {
+                if (this._nodeContext.AntiForgeryEnabled) services.AddAntiforgery(options => options.HeaderName = "X-XSRF-TOKEN");
+            }
+            else
+            {
+                if (this._nodeContext.AntiForgeryEnabled)
+                    services.AddAntiforgery(options =>
+                    {
+                        options.HeaderName = "X-XSRF-TOKEN";
+                        options.Cookie.SameSite = SameSiteMode.Lax;
+                        options.Cookie.Domain = string.Concat(".", this._nodeContext.CommerceServicesHostPostfix);
+                        options.Cookie.HttpOnly = false;
+                    });
+            }
 
             services.AddMvc()
-                    .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+                .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             this._nodeContext.AddObject(services);
         }
@@ -235,9 +248,9 @@ namespace Sitecore.Commerce.Engine
             // Get the db version
             var dbVersion = Task.Run(() => getDatabaseVersionCommand.Process(this._nodeContext)).Result;
             // Check versions
-            if (string.IsNullOrEmpty(dbVersion) || string.IsNullOrEmpty(coreRequiredDbVersion) || coreRequiredDbVersion != dbVersion)
+            if (string.IsNullOrEmpty(dbVersion) || string.IsNullOrEmpty(coreRequiredDbVersion) || !string.Equals(coreRequiredDbVersion, dbVersion, StringComparison.Ordinal))
             {
-                throw new Exception($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
+                throw new CommerceException($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
             }
             Log.Information($"Core required DB Version [{coreRequiredDbVersion}] and DB Version [{dbVersion}]");
 
@@ -263,40 +276,38 @@ namespace Sitecore.Commerce.Engine
                     .AllowAnyMethod());
 
             app.UseAuthentication();
-
-            Task.Run(() => startNodePipeline.Run(this._nodeContext, this._nodeContext.GetPipelineContextOptions())).Wait();
+            
+            Task.Run(() => startNodePipeline.Run(this._nodeContext, this._nodeContext.PipelineContextOptions)).Wait();
 
             var environmentName = this.Configuration.GetSection("AppSettings:EnvironmentName").Value;
             if (!string.IsNullOrEmpty(environmentName))
             {
                 this._nodeContext.AddDataMessage("EnvironmentStartup", $"StartEnvironment={environmentName}");
-                Task.Run(() => startEnvironmentPipeline.Run(environmentName, this._nodeContext.GetPipelineContextOptions())).Wait();
+                Task.Run(() => startEnvironmentPipeline.Run(environmentName, this._nodeContext.PipelineContextOptions)).Wait();
             }
 
             // Initialize plugins OData contexts
             app.InitializeODataBuilder();
-            var modelBuilder = new ODataConventionModelBuilder();
 
-            // Run the pipeline to configure the plugin's OData context
-            var contextResult = Task.Run(() => configureServiceApiPipeline.Run(modelBuilder, this._nodeContext.GetPipelineContextOptions())).Result;
+            // Run the pipeline to configure the plugins OData context
+            var contextResult = Task.Run(() => configureServiceApiPipeline.Run(new ODataConventionModelBuilder(), this._nodeContext.PipelineContextOptions)).Result;
             contextResult.Namespace = "Sitecore.Commerce.Engine";
 
             // Get the model and register the ODataRoute
-            var model = contextResult.GetEdmModel();
-            app.UseRouter(new ODataRoute("Api", model));
+            var apiModel = contextResult.GetEdmModel();
+            app.UseRouter(new ODataRoute("Api", apiModel));
 
             // Register the bootstrap context for the engine
-            modelBuilder = new ODataConventionModelBuilder();
-            var contextOpsResult = Task.Run(() => configureOpsServiceApiPipeline.Run(modelBuilder, this._nodeContext.GetPipelineContextOptions())).Result;
+            var contextOpsResult = Task.Run(() => configureOpsServiceApiPipeline.Run(new ODataConventionModelBuilder(), this._nodeContext.PipelineContextOptions)).Result;
             contextOpsResult.Namespace = "Sitecore.Commerce.Engine";
 
             // Get the model and register the ODataRoute
-            model = contextOpsResult.GetEdmModel();
-            app.UseRouter(new ODataRoute("CommerceOps", model));
+            var opsModel = contextOpsResult.GetEdmModel();
+            app.UseRouter(new ODataRoute("CommerceOps", opsModel));
 
             var appInsightsSettings = applicationInsightsSettings.Value;
             if (!(appInsightsSettings.TelemetryEnabled &&
-                    !string.IsNullOrWhiteSpace(appInsightsSettings.InstrumentationKey)))
+                  !string.IsNullOrWhiteSpace(appInsightsSettings.InstrumentationKey)))
             {
                 TelemetryConfiguration.Active.DisableTelemetry = true;
             }
@@ -305,6 +316,8 @@ namespace Sitecore.Commerce.Engine
             {
                 loggerFactory.AddApplicationInsights(appInsightsSettings);
             }
+
+            this._nodeContext.PipelineTraceLoggingEnabled = loggingSettings.Value.PipelineTraceLoggingEnabled;
         }
 
         /// <summary>
@@ -424,7 +437,7 @@ namespace Sitecore.Commerce.Engine
             this._nodeContext.BootstrapEnvironmentPath = bootstrapFile;
 
             this._nodeContext.GlobalEnvironmentName = environment.Name;
-            this._nodeContext.AddDataMessage("NodeStartup", $"Status='Started',GlobalEnvironmentName='{_nodeContext.GlobalEnvironmentName}'");
+            this._nodeContext.AddDataMessage("NodeStartup", $"Status='Started, GlobalEnvironmentName='{_nodeContext.GlobalEnvironmentName}'");
 
             if (this.Configuration.GetSection("AppSettings:BootStrapFile").Value != null)
             {

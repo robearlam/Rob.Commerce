@@ -4,15 +4,15 @@
     <Description>Product Compare Feature</Description>
     <Authors>Rob Earlam</Authors>
     <VersionPrefix>2.0.0</VersionPrefix>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <PackageTags>$(PackageTags);Sitecore;Commerce;Plugin;Compare</PackageTags>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.37" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.ManagedLists" Version="2.4.37" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.4.21" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.17" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.ManagedLists" Version="3.0.17" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="3.0.15" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

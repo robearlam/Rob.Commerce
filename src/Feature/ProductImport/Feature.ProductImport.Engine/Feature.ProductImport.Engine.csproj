@@ -4,18 +4,18 @@
     <Description>Commerce Engine Product Import</Description>
     <Authors>Rob Earlam</Authors>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <PackageTags>$(PackageTags);Sitecore;Commerce;Plugin;Product;Import</PackageTags>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.37" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="2.4.37" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="2.4.21" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="2.4.11" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="2.4.4" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Views" Version="2.4.37" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.17" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="3.0.17" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="3.0.15" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="3.0.10" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="3.0.9" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Views" Version="3.0.17" />
   </ItemGroup>
 
 </Project>

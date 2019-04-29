@@ -9,22 +9,22 @@
                      "$values":  [
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc903_OrdersScope",
+                                         "SearchScopeName":  "xc91_OrdersScope",
                                          "ViewName":  "OrdersDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc903_CustomersScope",
+                                         "SearchScopeName":  "xc91_CustomersScope",
                                          "ViewName":  "CustomersDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchViewPolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc903_CatalogItemsScope",
+                                         "SearchScopeName":  "xc91_CatalogItemsScope",
                                          "ViewName":  "MerchandisingDashboard"
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xc903_CatalogItemsScope",
+                                         "Name":  "xc91_CatalogItemsScope",
                                          "IncrementalListName":  "CatalogItemsIndex",
                                          "FullListName":  "CatalogItems",
                                          "DeletedListName":  "DeletedCatalogItemsIndex",
@@ -48,7 +48,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xc903_CustomersScope",
+                                         "Name":  "xc91_CustomersScope",
                                          "IncrementalListName":  "CustomersIndex",
                                          "FullListName":  "Customers",
                                          "DeletedListName":  "DeletedCustomersIndex",
@@ -70,7 +70,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.SearchScopePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "Name":  "xc903_OrdersScope",
+                                         "Name":  "xc91_OrdersScope",
                                          "IncrementalListName":  "OrdersIndex",
                                          "FullListName":  "Orders",
                                          "DeletedListName":  "DeletedOrdersIndex",
@@ -92,7 +92,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc903_CatalogItemsScope",
+                                         "SearchScopeName":  "xc91_CatalogItemsScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
@@ -197,7 +197,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc903_CustomersScope",
+                                         "SearchScopeName":  "xc91_CustomersScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",
@@ -284,7 +284,7 @@
                                      },
                                      {
                                          "$type":  "Sitecore.Commerce.Plugin.Search.IndexablePolicy, Sitecore.Commerce.Plugin.Search",
-                                         "SearchScopeName":  "xc903_OrdersScope",
+                                         "SearchScopeName":  "xc91_OrdersScope",
                                          "Properties":  {
                                                             "EntityId":  {
                                                                              "TypeName":  "System.String",

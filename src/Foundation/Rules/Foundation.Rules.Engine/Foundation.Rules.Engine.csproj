@@ -4,16 +4,16 @@
     <Description>Commerce Engine Promotion Rules</Description>
     <Authors>Rob Earlam</Authors>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <PackageTags>$(PackageTags);Sitecore;Commerce;Plugin;Rules</PackageTags>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="2.4.37" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="2.4.11" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Orders" Version="2.4.11" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Rules" Version="2.4.37" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.17" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Carts" Version="3.0.13" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Orders" Version="3.0.10" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Rules" Version="3.0.17" />
     <PackageReference Include="Sitecore.Framework.Rules.Registry" Version="3.0.1" />
   </ItemGroup>
 

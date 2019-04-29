@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="SitecoreServiceConfigurationExtensions.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2017
+//   Copyright (c) Sitecore Corporation 1999-2018
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -14,7 +14,6 @@ namespace Sitecore.Commerce.Engine
     using Sitecore.Commerce.Plugin.Payments;
     using Sitecore.Commerce.Plugin.Promotions;
     using Sitecore.Commerce.Plugin.Tax;
-
     using Sitecore.Framework.Configuration;
     using Sitecore.Framework.Pipelines.Definitions.Extensions;
 
@@ -37,7 +36,6 @@ namespace Sitecore.Commerce.Engine
             services.Pipelines(config => config
                 .ConfigurePipeline<IPopulateValidateCartPipeline>(builder => builder
                     .Add<ValidateCartCouponsBlock>().After<PopulateCartLineItemsBlock>())
-
                 .ConfigurePipeline<ICalculateCartLinesPipeline>(builder => builder
                     .Add<CalculateCartLinesSubTotalsBlock>()
                     .Add<CalculateCartLinesFulfillmentBlock>()
@@ -45,7 +43,7 @@ namespace Sitecore.Commerce.Engine
                     .Add<CalculateCartLinesTaxBlock>()
                     .Add<CalculateCartLinesTotalsBlock>())
 
-               .ConfigurePipeline<ICalculateCartPipeline>(builder => builder
+                .ConfigurePipeline<ICalculateCartPipeline>(builder => builder
                     .Add<CalculateCartSubTotalsBlock>()
                     .Add<CalculateCartFulfillmentBlock>()
                     .Add<CalculateCartPromotionsBlock>()

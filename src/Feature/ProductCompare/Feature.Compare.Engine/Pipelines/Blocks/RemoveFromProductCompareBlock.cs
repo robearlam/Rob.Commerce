@@ -34,7 +34,7 @@ namespace Feature.Compare.Engine.Pipelines.Blocks
             await _removeListEntitiesPipeline.Run(new ListEntitiesArgument(new[]
             {
                 arg.SellableItemId
-            }, arg.CompareCollection.Name), context.CommerceContext.GetPipelineContextOptions());
+            }, arg.CompareCollection.Name), context.ContextOptions);
 
             return arg.CompareCollection;
         }

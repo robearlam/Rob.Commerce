@@ -39,13 +39,14 @@ namespace Feature.ProductImport.Engine.Pipelines.Blocks
 
         private static CreateSellableItemArgument MapToArg(CsvImportLine csvImportLine)
         {
-            return new CreateSellableItemArgument(csvImportLine.ProductId, csvImportLine.ProductName, csvImportLine.DisplayName, csvImportLine.Description)
+            var sellableItem = new CreateSellableItemArgument(csvImportLine.ProductId, csvImportLine.ProductName, csvImportLine.DisplayName, csvImportLine.Description)
             {
                 Brand = csvImportLine.Brand,
                 Manufacturer = csvImportLine.Manufacturer,
-                TypeOfGood = csvImportLine.TypeOfGood,
-                Tags = csvImportLine.Tags.ToList()
+                TypeOfGood = csvImportLine.TypeOfGood
             };
+            sellableItem.Tags.InsertRange(0, csvImportLine.Tags.ToList());
+            return sellableItem;
         }
 
         private static SellableItem MapToEntity(SellableItem sellableItem, CsvImportLine csvImportLine)
