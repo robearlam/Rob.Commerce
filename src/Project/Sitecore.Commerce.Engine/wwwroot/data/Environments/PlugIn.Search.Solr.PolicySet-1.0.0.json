@@ -9,9 +9,9 @@
     "$values": [
       {
         "$type": "Sitecore.Commerce.Plugin.Search.Solr.SolrSearchPolicy, Sitecore.Commerce.Plugin.Search.Solr",
-        "SolrUrl": "https://solr:8983/solr",
+        "SolrUrl": "https://solr:8984/solr",
         "ConnectionTimeout": -1,
-        "SolrDateTimeFormatString": "yyyy-MM-dd'T'HH:mm:ss.FFF'Z'",
+        "SolrDateTimeFormatString": "yyyy-MM-dd\u0027T\u0027HH:mm:ss.FFF\u0027Z\u0027",
         "IsSolrCloud": false
       }
     ]
