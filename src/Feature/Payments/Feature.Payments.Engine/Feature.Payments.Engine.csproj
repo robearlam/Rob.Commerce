@@ -13,6 +13,10 @@
     <PackageReference Include="Sitecore.Commerce.Plugin.Payments" Version="3.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Policies\" />
+  </ItemGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>NU1603</NoWarn>
     <WarningsAsErrors />

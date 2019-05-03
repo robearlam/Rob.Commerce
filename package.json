@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/robearlam/Rob.Commerce/issues"
   },
-  "homepage": "https://github.com/robearlam/Rob.Commerce#readme"
+  "homepage": "https://github.com/robearlam/Rob.Commerce#readme",
+  "devDependencies": {
+    "msbuild": "^1.1.2"
+  }
 }

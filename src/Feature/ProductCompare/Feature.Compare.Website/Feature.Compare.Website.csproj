@@ -46,15 +46,19 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.OData.Client, Version=6.19.0.11114, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.OData.Client.6.19.0\lib\net40\Microsoft.OData.Client.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.OData.Core, Version=6.19.0.11114, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.OData.Core.6.19.0\lib\portable-net45+win+wpa81\Microsoft.OData.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.OData.Edm, Version=6.19.0.11114, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.OData.Edm.6.19.0\lib\portable-net45+win+wpa81\Microsoft.OData.Edm.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Spatial, Version=6.19.0.11114, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.Spatial.6.19.0\lib\portable-net45+win+wpa81\Microsoft.Spatial.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -139,8 +143,7 @@
     <Content Include="Views\Commerce\ProductCompare\AddVewCompareButton.cshtml" />
     <Content Include="Views\Commerce\ProductCompare\_ProductComparePanel.cshtml" />
     <None Include="packages.config" />
-    <Content Include="Properties\launchSettings.json" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Views\Web.config">
       <SubType>Designer</SubType>
     </None>
@@ -175,7 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\ServiceProxy\Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj">
-      <Project>{4d644e1a-6416-47b5-bb21-a1cc78dc1155}</Project>
+      <Project>{d09cd48e-4843-450d-bbbf-785855377996}</Project>
       <Name>Sitecore.Commerce.ServiceProxy</Name>
     </ProjectReference>
   </ItemGroup>

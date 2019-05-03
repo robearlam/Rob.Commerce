@@ -75,6 +75,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
+    <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -84,7 +85,6 @@
     <Content Include="App_Config\Include\Foundation\Foundation.Serialisation.config" />
     <Content Include="App_Config\Include\Foundation\Foundation.Serialisation.Settings.config" />
     <Content Include="App_Config\Include\Unicorn.Helix.config" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

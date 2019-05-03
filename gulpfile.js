@@ -3,9 +3,8 @@ let gulp = require('gulp');
 let fs = require('fs');
 let del = require('del');
 let exec = require('child_process').exec;
-let msbuild = require("gulp-msbuild");
+var _msbuild = require('msbuild');
 let flatmap = require('gulp-flatmap');
-let debug = require("gulp-debug");
 
 var config;
 if (fs.existsSync('./gulp-config.js.user')) {
@@ -172,35 +171,25 @@ gulp.task("first-install",
 
 var publishProjects = function (location) {
     console.log("publish to " + config.sitecoreRoot + " folder");
+
     return gulp.src([location + "/**/*Website.csproj"])
                .pipe(flatmap(function (stream, file) {
-                   return publishStream(stream);
+                   return publishStream(stream, file);
                }));
 };
 
-var publishStream = function (stream) {
-    var targets = ["Build"];
+var publishStream = function (stream, file) {
+    console.log("publishing: " + file.path);  
+    
+    var msbuild = new _msbuild(); 
+    msbuild.sourcePath = file.path;
+    msbuild.configuration = config.buildConfiguration;
+    msbuild.publishProfile = 'Local_Publish';
 
-    return stream
-        .pipe(debug({ title: "Building project:" }))
-        .pipe(msbuild({
-            targets: targets,
-            configuration: config.buildConfiguration,
-            logCommand: false,
-            verbosity: config.buildVerbosity,
-            stdout: true,
-            errorOnFail: true,
-            maxcpucount: config.buildMaxCpuCount,
-            nodeReuse: false,
-            toolsVersion: config.buildToolsVersion,
-            properties: {
-                Platform: config.publishPlatform,
-                DeployOnBuild: "true",
-                DeployDefaultTarget: "WebPublish",
-                WebPublishMethod: "FileSystem",
-                DeleteExistingFiles: "false",
-                publishUrl: config.sitecoreRoot,
-                _FindDependencies: "false"
-            }
-        }));
+    var overrideParams = [];
+    overrideParams.push('/p:VisualStudioVersion=' + config.buildToolsVersion.toFixed(1));  
+    msbuild.config('overrideParams',overrideParams);
+    msbuild.publish(); 
+
+    return stream;
 }
