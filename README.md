@@ -2,7 +2,7 @@
 A series of plugins for Sitecore Experience Commerce
 
 ## Prerequisites
-* XC9.0.3 - Install a clean version of XC9.0.3, however before you run the install comment our the _"CreateDefaultTenantAndSite"_ task in the _Master_SingleServer.json_.
+* XC91 - Install a clean version of XC91, however before you run the install comment our the _"CreateDefaultTenantAndSite"_ task in the _Master_SingleServer.json_.
 
 ## Installation
 Follow the steps below to deploy the plugins contained in this solution.
