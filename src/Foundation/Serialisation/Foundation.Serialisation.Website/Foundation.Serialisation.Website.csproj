@@ -69,12 +69,13 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Deployed.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Dilithium.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.PowerShell.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
     <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -102,7 +103,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Unicorn">
-      <Version>4.0.3</Version>
+      <Version>4.0.8</Version>
     </PackageReference>
   </ItemGroup>
   <PropertyGroup>
