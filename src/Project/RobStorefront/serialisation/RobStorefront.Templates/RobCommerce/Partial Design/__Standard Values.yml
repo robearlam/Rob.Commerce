@@ -1,7 +1,7 @@
 ﻿---
-ID: "114ba1b5-09cc-482a-9a53-be1bbebf7c86"
-Parent: "21355141-fdeb-4789-b2bc-fed32998df83"
-Template: "21355141-fdeb-4789-b2bc-fed32998df83"
+ID: "758a8377-09a4-45bd-ba8a-236c913f8677"
+Parent: "2d522ac6-8748-4c08-b127-097a48bd93e6"
+Template: "2d522ac6-8748-4c08-b127-097a48bd93e6"
 Path: /sitecore/templates/Project/RobCommerce/Partial Design/__Standard Values
 DB: master
 SharedFields:
@@ -27,8 +27,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072629Z
+      Value: 20190506T214345Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

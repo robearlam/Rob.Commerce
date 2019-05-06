@@ -1,6 +1,6 @@
 ﻿---
-ID: "1913e418-3b6d-425c-ab41-885fb6b4efe7"
-Parent: "87d9bd2d-1a66-46df-9f49-1e14e20cb35e"
+ID: "2891fbd1-00d8-4db2-a5d2-986378bbc37c"
+Parent: "05c61aea-3bbc-47f3-be1a-84bf032da185"
 Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
 Path: "/sitecore/content/RobCommerce/RobStorefront/Presentation/Styles/Flip/flip-hover"
 DB: master
@@ -30,22 +30,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073149Z
+      Value: 20190506T215228Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073204Z
+      Value: 20190506T215259Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -56,19 +56,19 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072920Z
+      Value: 20190506T214620Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073222Z
+      Value: 20190506T215337Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

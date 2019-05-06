@@ -1,6 +1,6 @@
 ﻿---
-ID: "2cad88b5-287d-4b3f-8643-6bffc9bdad0f"
-Parent: "1e0bc92f-6376-423f-b0a2-d9dff651a905"
+ID: "34b6fc2b-1451-47d0-a8fe-718bed88bf72"
+Parent: "ba21e68e-2a63-47fb-8ba0-73064fc71d1e"
 Template: "b14bab5b-8965-466b-886b-1f93175bcab3"
 Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Social Media Groups
 DB: master
@@ -16,41 +16,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073151Z
+      Value: 20190506T215232Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073206Z
+      Value: 20190506T215303Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073016Z
+      Value: 20190506T214737Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073224Z
+      Value: 20190506T215340Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

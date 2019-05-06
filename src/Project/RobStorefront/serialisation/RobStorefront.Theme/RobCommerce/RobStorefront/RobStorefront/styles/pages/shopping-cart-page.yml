@@ -1,6 +1,6 @@
 ﻿---
-ID: "220d84c0-ab33-4465-a391-a7db91324ea8"
-Parent: "89e51bf2-64a4-445a-ab00-d93af54029bd"
+ID: "ee234400-9e55-4b44-9f2e-5790d217b8de"
+Parent: "1cbc8644-e4c6-4f62-8191-db4956dc43c6"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/styles/pages/shopping-cart-page"
 DB: master
@@ -10,7 +10,7 @@ SharedFields:
   Value: "-/media/B4A4E1F31AE744C7BD9DE183F8C71686.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "c77e75c9-1052-4dfd-82df-afd29bdb6e6d"
+  BlobID: "f8a03914-94d6-458b-a4ff-6e48dd734768"
   Value: LnNob3BwaW5nLWNhcnQtcGFnZSAuY29tcG9uZW50LmxpbmsgYS5jaGVja291dCB7CiAgd2lkdGg6IDIwMHB4Owp9Cg==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size

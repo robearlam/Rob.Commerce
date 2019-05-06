@@ -1,6 +1,6 @@
 ﻿---
-ID: "ddfe6b16-6472-4834-81c3-c9454eef43ab"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "67417bdc-6736-4ee0-8f9d-efb52ea37aa8"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Category
 DB: master
@@ -12,15 +12,27 @@ SharedFields:
   Hint: __Base template
   Type: tree list
   Value: |
-    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {811E83A6-29BA-4E49-9DC7-A6DFCA9F3209}
     {DDA02EB6-5CB5-4AB8-B609-0F11835F4579}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 2500
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{C20B82D0-4871-40BB-9198-3D6D40783240}"
+  Value: "{DBB1A86B-5C13-467D-BDC1-1CAC1A5CA46E}"
 Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Kategori
+  Versions:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Kategorie
+  Versions:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -32,3 +44,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20170201T110006Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: カテゴリー
+  Versions:

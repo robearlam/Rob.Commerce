@@ -1,6 +1,6 @@
 ﻿---
-ID: "678f439a-e90b-4cad-87bb-0eaeb5e773a2"
-Parent: "0f877bf4-4099-4efd-92ca-ef14447613bb"
+ID: "f714710b-eeb3-4399-be3a-2cdbb026f1bc"
+Parent: "9b1fb0ff-dc27-4113-bc6d-e1bb9edf7610"
 Template: "6f4b34b6-fc03-45cc-bd01-3cd82360004d"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Order History
 DB: master
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
       Hint: No Order Message
-      Value: You have not placed an order yet
+      Value: Du har ikke afgivet en ordre endnu
     - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
       Hint: Date Column Header Tooltip
       Value: Ordredato
@@ -46,7 +46,7 @@ Languages:
     Fields:
     - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
       Hint: No Order Message
-      Value: You have not placed an order yet
+      Value: Sie haben noch keine Bestellung aufgegeben
     - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
       Hint: Date Column Header Tooltip
       Value: Bestelldatum
@@ -92,18 +92,18 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073025Z
+      Value: 20190506T214747Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
       Hint: No Order Message
-      Value: You have not placed an order yet
+      Value: まだ注文されていません
     - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
       Hint: Date Column Header Tooltip
       Value: 注文日

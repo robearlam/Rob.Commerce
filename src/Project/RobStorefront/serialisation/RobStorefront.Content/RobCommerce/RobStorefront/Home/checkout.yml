@@ -1,7 +1,7 @@
 ﻿---
-ID: "74c6cdae-9108-4764-964c-9dc2aec96fe5"
-Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
-Template: "7855de6c-b011-423d-ba1f-e33de3cdd131"
+ID: "db4fb229-a03b-4613-8631-1920e60df6f9"
+Parent: "7b6154b6-8251-4e2d-8ab0-e8e232a6f6d7"
+Template: "d615f395-fa77-4304-8ec5-2ed2f9d3ecda"
 Path: /sitecore/content/RobCommerce/RobStorefront/Home/checkout
 DB: master
 SharedFields:
@@ -9,13 +9,13 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: |
-    {B6BBB848-EE3B-4695-8D5F-93418FBB50AB}
-    {FA4FBC21-751B-4425-8DB7-3830BB5C7255}
-    {929A9D1C-D5CF-4723-86A9-514BDFF020C3}
-    {58DD42B3-22BA-40E6-8270-4138DE8E4B6A}
+    {551E6573-4081-4DBB-A53F-D1F32A2ACBE1}
+    {83227A92-E89B-42D5-B6D4-C7DCB483FD5F}
+    {F4AB994C-4F80-4833-B6E9-9A301C742C72}
+    {E709F2F7-FB3C-4077-B60C-17B7B056892D}
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
-  Value: "{4C5E60BB-44FE-4DA7-A557-82B9793921A0}"
+  Value: "{130BE821-81D7-483B-AF1E-17867CE2318C}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -26,7 +26,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           uid="{9BDF07F7-B6D6-49F4-B9E7-D58B7E1A9C94}"
-          s:ds="{AAE09845-9D4C-4068-BD1A-BFEF32291946}"
+          s:ds="{00C8E356-C11C-45AC-84BA-29C13AFFDBCE}"
           s:id="{7AE14FB7-E165-49CA-85FB-B45E4B14B955}"
           s:par="Shopping Cart Link=%2Fsitecore%2Fcontent%2FRobCommerce%2FRobStorefront%2FHome%2Fshoppingcart&amp;GridParameters=%7B113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2%7D"
           s:ph="main" />
@@ -43,20 +43,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073138Z
+      Value: 20190506T215205Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Checkout
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: $name
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: $name
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -67,20 +67,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073153Z
+      Value: 20190506T215235Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Checkout
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: $name
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: $name
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -109,17 +109,17 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073208Z
+      Value: 20190506T215314Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Checkout
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: $name
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: $name

@@ -1,7 +1,7 @@
 ﻿---
-ID: "531596e7-5ba9-4921-a063-b248ad1f8dd1"
-Parent: "e87118c5-5b21-4faa-8142-4d96f400fa03"
-Template: "21355141-fdeb-4789-b2bc-fed32998df83"
+ID: "4eb7b57c-6a7c-4cf7-a7e5-8af875f188cd"
+Parent: "029b379b-6c30-4021-a667-e847bf89aca1"
+Template: "2d522ac6-8748-4c08-b127-097a48bd93e6"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Partial Designs/Default Commerce Header
 DB: master
 SharedFields:
@@ -22,7 +22,7 @@ SharedFields:
         <r
           uid="{4DFAE107-537E-449B-9CD7-CB659347E412}"
           p:before="*"
-          s:ds="{F4AA4F60-D4E3-403E-9F7E-FB0A5AE82192}"
+          s:ds="{3AD0D2F4-E1CE-40F8-AD39-3C5EBDA36883}"
           s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
           s:par="GridParameters={4C80E2ED-07D6-4652-A90B-3820049E9CE4}|{2FF25A31-B1F1-4B00-8131-71323148B1F1}|{0DA3126E-497A-4DA6-9A15-EC8B151F8D7C}&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;Reset Caching Options"
           s:ph="/header/sxa-base-header-structure/row-1-1/container-1" />
@@ -30,7 +30,7 @@ SharedFields:
           uid="{BB8FA88C-5DFB-4CF1-9B7A-0A3844FEBBEF}"
           p:after="r[@uid='{4DFAE107-537E-449B-9CD7-CB659347E412}']"
           s:cac="1"
-          s:ds="{F4FAB61E-783A-4F83-BD0B-51B0E332F42D}"
+          s:ds="{E91E1CE7-48E0-4DF4-A598-D4EBD2030FDC}"
           s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
           s:par="GridParameters=%7BFD09A9D2-113E-49B8-B481-F0B4FFE9B498%7D&amp;FieldNames&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier=%2Fsitecore%2Fcontent%2FRobCommerce%2FRobStorefront%2FData%2FImages%2FLarge%20Logo"
           s:ph="/header/sxa-base-header-structure/row-1-1/container-1"
@@ -45,7 +45,7 @@ SharedFields:
           uid="{B46F1610-7414-4879-BDF7-97958EC0D9F1}"
           p:after="r[@uid='{F8C5CAA6-8E2C-442F-81CF-C834CE508E4B}']"
           s:id="{BFBD9DE2-3ABF-4078-BBCB-C95C5B2D863F}"
-          s:par="GridParameters&amp;FieldNames&amp;Styles={DC435EBF-DE31-4BFA-9993-B1359E2ACAF9}|{CA19E8E4-0EA0-4690-A0E6-F595045CD1F8}|{0BB9A48D-2E9F-4168-9785-D5C36E092C37}&amp;BreadcrumbRoot&amp;Separator=&gt;&amp;IsNavigation&amp;Filter"
+          s:par="GridParameters&amp;FieldNames&amp;Styles={81CDE51F-E7C1-4B40-A0B9-5CFDEADAC996}|{40909BC8-E0AF-4563-8371-F7EC3B77C46C}|{02C72C00-C481-43CC-B588-16E5545229C6}&amp;BreadcrumbRoot&amp;Separator=&gt;&amp;IsNavigation&amp;Filter"
           s:ph="/header/sxa-base-header-structure/row-3-1/container-2/column-1-1" />
         <r
           uid="{65655D3D-C166-4D3A-885E-AB723ADFACBB}"
@@ -74,7 +74,7 @@ SharedFields:
         <r
           uid="{1D26AA9D-CE98-4E29-9E72-DBA67E82FA4F}"
           p:after="r[@uid='{EA7F2D83-49F6-42E3-8422-A3FCBDE62F81}']"
-          s:ds="{BA94E230-2EC2-477F-94FA-8852FCE896C2}"
+          s:ds="{7BB9AF7E-F3EB-4A11-972F-F620764217B0}"
           s:id="{29E9F4F9-F2AC-4AB1-80E5-EBB3CFF7E9F2}"
           s:par="GridParameters&amp;Search Page Link=/sitecore/content/RobCommerce/RobStorefront/Home/search"
           s:ph="/header/sxa-base-header-structure/row-1-1/container-1" />
@@ -87,14 +87,14 @@ SharedFields:
         <r
           uid="{0F3E6797-2E5B-4E18-9DFC-507DEAAF24D9}"
           p:after="r[@uid='{88A67B3E-F87C-4F66-96BF-607E1F118A59}']"
-          s:ds="{B452891A-3D45-4A85-BA71-05F092E3F6A3}"
+          s:ds="{5F1CF7E5-20AA-46A8-93F1-657C33F80AAE}"
           s:id="{04B9A10C-2092-4E29-BDA3-79571F5F19FC}"
-          s:par="GridParameters&amp;View Cart Link=%7B666D2C70-BB55-4674-8191-2BBDA5F76F0C%7D&amp;Checkout Link=%7B74C6CDAE-9108-4764-964C-9DC2AEC96FE5%7D&amp;Hide Checkout Button"
+          s:par="GridParameters&amp;View Cart Link=%7BB09EF9EA-262F-4CC0-A68B-453BA8DDF06D%7D&amp;Checkout Link=%7BDB4FB229-A03B-4613-8631-1920E60DF6F9%7D&amp;Hide Checkout Button"
           s:ph="/header/sxa-base-header-structure/row-1-1/container-1" />
         <r
           uid="{2E9C4896-2643-4C50-852F-A805E5D6389A}"
           p:after="*[1=2]"
-          s:ds="{E939A747-F58B-46C1-87E5-CC984762BCDE}"
+          s:ds="{5CEA0DF2-3C70-41A7-B250-451ED0B0698C}"
           s:id="{18F9EE55-D1CB-41E2-9238-78DB8BDB1AE2}"
           s:par="GridParameters&amp;Profile Edit Page Link=%2Fsitecore%2Fcontent%2FRobCommerce%2FRobStorefront%2FHome%2Faccountmanagement%2Feditprofile"
           s:ph="/header/sxa-base-header-structure/row-1-1/container-1" />
@@ -111,14 +111,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073144Z
+      Value: 20190506T215215Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{87B5A1C0-CBFD-4E26-AEAB-9210FC93C137}"
+      Value: "{FD16891B-1DD9-4C7F-94E6-BE4A38507F1C}"
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -129,14 +129,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073159Z
+      Value: 20190506T215245Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{87B5A1C0-CBFD-4E26-AEAB-9210FC93C137}"
+      Value: "{FD16891B-1DD9-4C7F-94E6-BE4A38507F1C}"
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -154,7 +154,7 @@ Languages:
         sitecore\admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{87B5A1C0-CBFD-4E26-AEAB-9210FC93C137}"
+      Value: "{FD16891B-1DD9-4C7F-94E6-BE4A38507F1C}"
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -165,11 +165,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215323Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{87B5A1C0-CBFD-4E26-AEAB-9210FC93C137}"
+      Value: "{FD16891B-1DD9-4C7F-94E6-BE4A38507F1C}"

@@ -1,6 +1,6 @@
 ﻿---
-ID: "c2a2b8f3-21bc-4e09-b190-e3448f276e3c"
-Parent: "d0df613a-e062-4bf9-9226-83a63b038a39"
+ID: "00e4becf-a6f7-48ba-88fd-609e8d381f31"
+Parent: "2692a969-9f6c-4933-b3ad-f7ef46a24e0e"
 Template: "26fce9bf-0256-458d-8281-a713a5bf5520"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Cache Settings
 DB: master
@@ -11,41 +11,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073143Z
+      Value: 20190506T215214Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073158Z
+      Value: 20190506T215244Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072913Z
+      Value: 20190506T214612Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215322Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

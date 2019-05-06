@@ -1,13 +1,13 @@
 ﻿---
-ID: "7f44127c-1ee3-4f5b-861f-f4442cee6af9"
-Parent: "211ee5d2-a819-4924-9b5c-1a69bff2a9e6"
-Template: "d25e24a4-6cdf-4794-b43f-3da0123e0316"
+ID: "92fbab1e-e065-4770-9179-3f284002434f"
+Parent: "fc1f9c38-0e5e-4001-aa3c-03daace78da8"
+Template: "afc9211f-dfa8-4444-9ee0-d50a5ae76115"
 Path: "/sitecore/content/RobCommerce/RobStorefront/Home/Company/jobs-at-storefront"
 DB: master
 SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
-  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+  Value: "{98C76434-76C9-45A8-8E56-5D1E50EF9A17}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -19,14 +19,14 @@ SharedFields:
         <r
           uid="{E6B71D5E-D393-4E32-B037-B99EF231CC96}"
           p:before="*"
-          s:ds="{11477FCB-2170-4679-A657-64AE03357F49}"
+          s:ds="{8AFA4009-81F4-4F1B-83A4-45E501E03B3C}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={F62C2D57-5334-4D9C-9306-A93A2856DD8B}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={8308D635-75BB-4321-B8E1-58C56CBE26F6}"
           s:ph="/main/container-1" />
         <r
           uid="{5A569D29-C898-4E8D-995D-78279E755504}"
           p:after="r[@uid='{E6B71D5E-D393-4E32-B037-B99EF231CC96}']"
-          s:ds="{98435A42-D713-4515-9D83-023D06DBD64A}"
+          s:ds="{58AB3486-8464-4A7E-A94C-F30EC8C950C3}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
           s:ph="/main/container-1" />
@@ -55,20 +55,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073139Z
+      Value: 20190506T215206Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Jobs at Storefront
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Jobs at Storefront
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Jobs at Storefront
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -79,20 +79,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073154Z
+      Value: 20190506T215237Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Jobs at Storefront
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Jobs at Storefront
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Jobs at Storefront
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -111,7 +111,7 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
       Hint: Title
       Value: Jobs at Storefront
 - Language: "ja-JP"
@@ -124,17 +124,17 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073210Z
+      Value: 20190506T215315Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Jobs at Storefront
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Jobs at Storefront
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Jobs at Storefront

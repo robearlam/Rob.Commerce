@@ -1,6 +1,6 @@
 ﻿---
-ID: "6b88d64d-a682-4215-9118-c520e826ece3"
-Parent: "a29329b5-da55-4fc3-8a90-e4aa4dda35b5"
+ID: "bb1ba303-101d-46af-94c9-932b5905743f"
+Parent: "5eda83b0-bed0-4f4d-85f7-00468adab790"
 Template: "524a3c7b-95a7-4083-b03a-31b8761a8c0e"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Relationships/Training Product
 DB: master
@@ -57,11 +57,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190506T214751Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

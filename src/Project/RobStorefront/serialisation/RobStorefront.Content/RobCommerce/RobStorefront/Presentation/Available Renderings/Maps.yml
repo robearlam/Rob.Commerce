@@ -1,6 +1,6 @@
 ﻿---
-ID: "759a555e-2937-4301-9314-dd5ac203bdb6"
-Parent: "4c4e7d22-7307-4143-b050-372c4ab9368c"
+ID: "c2b8bfde-4124-4677-9830-5178cdbb38e0"
+Parent: "b794e7f4-ca5f-457e-abca-54ed4c83f981"
 Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Available Renderings/Maps
 DB: master
@@ -10,9 +10,6 @@ SharedFields:
   Hint: Renderings
   Type: TreelistEx
   Value: "{4DD74227-4504-4102-A802-76241F372B9E}"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 1500
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{35CB5E53-B61D-4218-84C5-764EEB835841}"
@@ -23,41 +20,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073143Z
+      Value: 20190506T215213Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073158Z
+      Value: 20190506T215244Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072943Z
+      Value: 20190506T214651Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215322Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

@@ -1,6 +1,6 @@
 ﻿---
-ID: "2662751a-a685-46ec-897c-eda79603b232"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "8d77c27f-b22d-4f7d-9cd1-0b0594bebe00"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Product
 DB: master
@@ -13,14 +13,26 @@ SharedFields:
   Type: tree list
   Value: |
     {79D8F390-0948-43D8-993E-582491C7F545}
-    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
+    {811E83A6-29BA-4E49-9DC7-A6DFCA9F3209}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 2600
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{4A640E14-3326-4C5E-A910-D288916B9562}"
+  Value: "{15185577-9A02-4DB7-B946-CEF6EE3BEE0D}"
 Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Produkt
+  Versions:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Produkt
+  Versions:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -32,3 +44,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20170201T111655Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 商品
+  Versions:

@@ -1,13 +1,13 @@
 ﻿---
-ID: "1d8f6095-d850-4d86-b1a0-d024f305fb5b"
-Parent: "211ee5d2-a819-4924-9b5c-1a69bff2a9e6"
-Template: "d25e24a4-6cdf-4794-b43f-3da0123e0316"
+ID: "686522e3-f6e9-463a-818f-17e07d266217"
+Parent: "fc1f9c38-0e5e-4001-aa3c-03daace78da8"
+Template: "afc9211f-dfa8-4444-9ee0-d50a5ae76115"
 Path: "/sitecore/content/RobCommerce/RobStorefront/Home/Company/corporate-sales"
 DB: master
 SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
-  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+  Value: "{98C76434-76C9-45A8-8E56-5D1E50EF9A17}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -19,14 +19,14 @@ SharedFields:
         <r
           uid="{EDBE6F62-C3B8-47DA-8A69-B6631D66A95E}"
           p:before="*"
-          s:ds="{D1A52734-1AAA-4278-A16F-29116A5E5E8D}"
+          s:ds="{9F7C58E7-6679-4052-93E6-31557CE122F2}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={F62C2D57-5334-4D9C-9306-A93A2856DD8B}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={8308D635-75BB-4321-B8E1-58C56CBE26F6}"
           s:ph="/main/container-1" />
         <r
           uid="{AB571436-2BEB-4A84-8D4D-98156CC8A95A}"
           p:after="r[@uid='{EDBE6F62-C3B8-47DA-8A69-B6631D66A95E}']"
-          s:ds="{23AC4561-F3B0-4C56-9E0E-1B6F6912AF4E}"
+          s:ds="{C02204C3-6313-4ECF-99C4-39A9F14E60CE}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
           s:ph="/main/container-1" />
@@ -55,20 +55,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073139Z
+      Value: 20190506T215206Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Corporate Sales
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Corporate Sales
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Corporate Sales
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -79,20 +79,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073154Z
+      Value: 20190506T215236Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Corporate Sales
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Corporate Sales
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Corporate Sales
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -111,7 +111,7 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
       Hint: Title
       Value: Corporate Sales
 - Language: "ja-JP"
@@ -124,17 +124,17 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073210Z
+      Value: 20190506T215315Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Corporate Sales
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Corporate Sales
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Corporate Sales

@@ -1,7 +1,7 @@
 ﻿---
-ID: "2f4e029e-6dcf-4eca-addb-e82c698e4823"
-Parent: "2bb9b222-b024-4f04-812a-6ceedba3a59c"
-Template: "2bb9b222-b024-4f04-812a-6ceedba3a59c"
+ID: "e32ce4ea-7561-47b8-bcd7-9f35a110193c"
+Parent: "64f532ec-bef7-4ea6-8cb6-71a815357512"
+Template: "64f532ec-bef7-4ea6-8cb6-71a815357512"
 Path: /sitecore/templates/Project/RobCommerce/Settings/__Standard Values
 DB: master
 Languages:
@@ -11,8 +11,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072628Z
+      Value: 20190506T214345Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

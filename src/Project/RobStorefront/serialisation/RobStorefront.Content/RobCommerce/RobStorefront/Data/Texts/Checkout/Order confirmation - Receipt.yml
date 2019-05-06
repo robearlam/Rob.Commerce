@@ -1,6 +1,6 @@
 ﻿---
-ID: "c1f0f592-d97c-449f-9c86-519a9e38de3a"
-Parent: "a81238fa-d97f-4ba4-9bd6-16af63797a29"
+ID: "3ec4a70f-5b76-49fb-925a-472a789f2ae1"
+Parent: "4dbadf24-0c05-4d2f-b934-d6342cf6a349"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
 Path: "/sitecore/content/RobCommerce/RobStorefront/Data/Texts/Checkout/Order confirmation - Receipt"
 DB: master
@@ -65,11 +65,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073104Z
+      Value: 20190506T215143Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

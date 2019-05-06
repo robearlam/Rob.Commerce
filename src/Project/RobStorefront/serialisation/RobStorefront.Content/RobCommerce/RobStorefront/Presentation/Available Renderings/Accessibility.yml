@@ -1,6 +1,6 @@
 ﻿---
-ID: "7bf53ba5-0ed0-41de-bc70-d2142fc93cdc"
-Parent: "4c4e7d22-7307-4143-b050-372c4ab9368c"
+ID: "552f3dc7-d551-43f7-be95-1f4c72b1167a"
+Parent: "b794e7f4-ca5f-457e-abca-54ed4c83f981"
 Template: "bf70a40b-6d0e-4639-9862-24bb8946094b"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Available Renderings/Accessibility
 DB: master
@@ -10,9 +10,6 @@ SharedFields:
   Hint: Renderings
   Type: TreelistEx
   Value: "{BA1B7D2A-99F1-44FC-A757-AC0737AAECFA}"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 100
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{CCFB1C95-FBA1-4191-BACE-D025E95248F2}"
@@ -23,41 +20,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073143Z
+      Value: 20190506T215213Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073158Z
+      Value: 20190506T215243Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072924Z
+      Value: 20190506T214624Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073214Z
+      Value: 20190506T215321Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

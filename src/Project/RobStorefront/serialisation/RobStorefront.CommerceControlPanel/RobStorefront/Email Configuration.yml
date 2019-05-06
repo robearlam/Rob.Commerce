@@ -1,6 +1,6 @@
 ﻿---
-ID: "1f58eaee-9c0b-4a67-847f-730ca45b4c2a"
-Parent: "3742816c-f082-4e3c-a66f-7b9a4f480204"
+ID: "1c1a4193-d91c-4249-b0b0-1c1251711529"
+Parent: "bc3a7519-ce7e-4965-9bae-d957c8a3813f"
 Template: "8753e14e-8ce5-4be3-8e63-486c7ee87702"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront/Email Configuration
 DB: master
@@ -23,8 +23,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073028Z
+      Value: 20190506T214757Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

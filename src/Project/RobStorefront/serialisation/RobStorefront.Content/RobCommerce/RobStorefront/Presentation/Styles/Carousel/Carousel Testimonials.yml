@@ -1,6 +1,6 @@
 ﻿---
-ID: "326702e8-17cb-4afa-aed3-8cd5fe3f2ee5"
-Parent: "2c8dcd68-8ba1-4e3f-b70f-350c62fedb53"
+ID: "588c79f6-cb13-42b9-afed-5ba606a8f3ce"
+Parent: "dac678b8-441e-48f9-96f8-69a4e6e799f9"
 Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Styles/Carousel/Carousel Testimonials
 DB: master
@@ -23,22 +23,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073148Z
+      Value: 20190506T215226Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073204Z
+      Value: 20190506T215257Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
@@ -56,8 +56,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073221Z
+      Value: 20190506T215335Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

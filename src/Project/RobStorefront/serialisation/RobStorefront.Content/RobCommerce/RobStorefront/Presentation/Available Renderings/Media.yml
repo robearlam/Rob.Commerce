@@ -1,6 +1,6 @@
 ﻿---
-ID: "4549de50-428b-4cc6-aef7-f37a42f989be"
-Parent: "4c4e7d22-7307-4143-b050-372c4ab9368c"
+ID: "d37558e9-327b-418a-abdf-de0b91666736"
+Parent: "b794e7f4-ca5f-457e-abca-54ed4c83f981"
 Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Available Renderings/Media
 DB: master
@@ -18,9 +18,6 @@ SharedFields:
     {F16CE601-EECF-4DFC-B278-DE5F9562551B}
     {69D0A00E-FF06-4B17-BE59-BED330577680}
     {3C84ED23-7591-45E0-8850-1AE96D1342B1}
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 1600
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{F904AFE6-7760-45A1-9535-1D9BEE5CCF0D}"
@@ -31,41 +28,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073143Z
+      Value: 20190506T215213Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073158Z
+      Value: 20190506T215244Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072944Z
+      Value: 20190506T214652Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215322Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

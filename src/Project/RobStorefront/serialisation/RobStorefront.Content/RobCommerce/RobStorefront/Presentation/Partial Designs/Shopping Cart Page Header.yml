@@ -1,7 +1,7 @@
 ﻿---
-ID: "3f900aeb-2e44-4c15-b775-2847c8296897"
-Parent: "e87118c5-5b21-4faa-8142-4d96f400fa03"
-Template: "21355141-fdeb-4789-b2bc-fed32998df83"
+ID: "b6ece9f8-c4d6-4414-90b8-c9054fd471f0"
+Parent: "029b379b-6c30-4021-a667-e847bf89aca1"
+Template: "2d522ac6-8748-4c08-b127-097a48bd93e6"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Partial Designs/Shopping Cart Page Header
 DB: master
 SharedFields:
@@ -18,28 +18,28 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073144Z
+      Value: 20190506T215215Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{4A874855-DF2A-4F7D-8DFB-692D7757E323}"
+      Value: "{B64C7363-C7AA-47F7-BA31-1CBF31C64466}"
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073159Z
+      Value: 20190506T215245Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{4A874855-DF2A-4F7D-8DFB-692D7757E323}"
+      Value: "{B64C7363-C7AA-47F7-BA31-1CBF31C64466}"
 - Language: en
   Versions:
   - Version: 1
@@ -53,18 +53,18 @@ Languages:
         sitecore\admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{4A874855-DF2A-4F7D-8DFB-692D7757E323}"
+      Value: "{B64C7363-C7AA-47F7-BA31-1CBF31C64466}"
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215323Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "76a92454-c8be-479b-b260-26aebced5a1a"
       Hint: Base Partial Design
-      Value: "{4A874855-DF2A-4F7D-8DFB-692D7757E323}"
+      Value: "{B64C7363-C7AA-47F7-BA31-1CBF31C64466}"

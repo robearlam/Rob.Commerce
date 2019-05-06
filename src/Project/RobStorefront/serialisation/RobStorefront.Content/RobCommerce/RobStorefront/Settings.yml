@@ -1,7 +1,7 @@
 ﻿---
-ID: "1e0bc92f-6376-423f-b0a2-d9dff651a905"
-Parent: "3abe8304-4841-4776-b00c-c04207dea2a7"
-Template: "2bb9b222-b024-4f04-812a-6ceedba3a59c"
+ID: "ba21e68e-2a63-47fb-8ba0-73064fc71d1e"
+Parent: "c5532e14-4632-475f-a630-dda104921efa"
+Template: "64f532ec-bef7-4ea6-8cb6-71a815357512"
 Path: /sitecore/content/RobCommerce/RobStorefront/Settings
 DB: master
 BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
@@ -24,7 +24,7 @@ SharedFields:
     {5A6BF1D1-836B-425A-A6E6-32CEAA8FF3A5}
 - ID: "af332c24-fe17-41e7-8caf-8e64c588fe72"
   Hint: EditingTheme
-  Value: "{A446F503-2173-4FD4-95BE-215D5258FFD1}"
+  Value: "{B82BC5C2-9CE2-4A17-802A-2CA44E505634}"
 - ID: "beeede03-ab13-4558-96f9-c3e8957b46f8"
   Hint: Themes
   Type: Treelist
@@ -35,14 +35,36 @@ SharedFields:
     {3F46272C-F3B8-4913-8C00-3816B436A4D3}
 - ID: "e81e1f9e-8b87-495b-9cb7-84a2a23133be"
   Hint: MediaLibrary
-  Value: "{8CEC6345-BA0B-473E-888E-B364F0516B25}"
+  Value: "{08B7E73E-1B3F-4BDB-8699-1C5E9C6D5BCA}"
 - ID: "e8881464-38af-4655-be4a-ee10586578a2"
   Hint: Templates
-  Value: "{07039A91-E2A4-428A-88D9-FCAA28CE32EB}"
+  Value: "{210EE98D-8D4E-4368-B666-0F618888F64F}"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{3E739E69-859C-4694-8D14-2BA6CA779CC6}"
 Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215230Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215301Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -53,8 +75,19 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072822Z
+      Value: 20190506T214537Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215339Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,6 +1,6 @@
 ﻿---
-ID: "1d1454e4-95e0-4a62-939f-13e21495e704"
-Parent: "a29329b5-da55-4fc3-8a90-e4aa4dda35b5"
+ID: "e1a84a84-1d9e-4e3a-ab4a-2e93ee04508c"
+Parent: "5eda83b0-bed0-4f4d-85f7-00468adab790"
 Template: "524a3c7b-95a7-4083-b03a-31b8761a8c0e"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Relationships/Warranty Product
 DB: master
@@ -57,11 +57,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190506T214751Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

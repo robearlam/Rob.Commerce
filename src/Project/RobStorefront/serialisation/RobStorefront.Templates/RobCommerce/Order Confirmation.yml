@@ -1,6 +1,6 @@
 ﻿---
-ID: "929a9d1c-d5cf-4723-86a9-514bdff020c3"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "f4ab994c-4f80-4833-b6e9-9a301c742c72"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Order Confirmation
 DB: master
@@ -11,13 +11,13 @@ SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{4973432D-69AB-4271-A049-B1C711790BF6}"
+  Value: "{378453BF-BEEF-4F97-9E98-66CF0374B092}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 3100
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{7C61B6F5-2582-4DF2-9BE2-B1C0CE65D2D4}"
+  Value: "{505DDBD4-D1F3-496A-B020-BB9321F028BD}"
 Languages:
 - Language: da
   Fields:

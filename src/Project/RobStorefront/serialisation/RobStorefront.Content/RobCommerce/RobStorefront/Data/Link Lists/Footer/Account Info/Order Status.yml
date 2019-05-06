@@ -1,6 +1,6 @@
 ﻿---
-ID: "06fb73e7-6fd1-4718-bf6b-57aafd4cba0f"
-Parent: "73403c19-580d-4173-9d30-838b74f1f40b"
+ID: "e25318e7-6462-4b90-a05a-49dc1cb31c3a"
+Parent: "5d6d7196-6a8a-4f64-b557-a942073bda57"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Link Lists/Footer/Account Info/Order Status
 DB: master
@@ -42,7 +42,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="anchor" text="Order status" url="" anchor="" />
+        <link linktype="anchor" text="Bestellstatus" url="" anchor="" />
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -68,11 +68,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073102Z
+      Value: 20190506T215138Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

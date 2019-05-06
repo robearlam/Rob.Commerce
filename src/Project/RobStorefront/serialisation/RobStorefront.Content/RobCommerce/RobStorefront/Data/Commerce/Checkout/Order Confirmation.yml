@@ -1,6 +1,6 @@
 ﻿---
-ID: "e1723ddc-7759-43f4-be4d-cd95f2424625"
-Parent: "4a09d2c9-b808-4b91-a074-9b2b09333e83"
+ID: "9e2b2540-9c82-48f4-9a01-cd8ed9b48c3a"
+Parent: "46d2a6f8-831f-4e2d-a293-f194e47669f2"
 Template: "be8d531a-ca6b-43b7-a087-ef14523a72ea"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Checkout/Order Confirmation
 DB: master
@@ -59,11 +59,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190506T214750Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

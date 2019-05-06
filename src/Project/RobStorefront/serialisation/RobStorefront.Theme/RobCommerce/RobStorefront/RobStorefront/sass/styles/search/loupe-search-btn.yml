@@ -1,6 +1,6 @@
 ﻿---
-ID: "9abbae85-20d7-4f87-82d0-cdd80a8d0845"
-Parent: "54016d57-8373-4e3e-a365-bbf4c2820b2f"
+ID: "8c559a10-59aa-4093-8fc6-67d988713954"
+Parent: "63937018-e473-41b2-be4a-ddf99245e1aa"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/styles/search/loupe-search-btn"
 DB: master
@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180402T122657Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

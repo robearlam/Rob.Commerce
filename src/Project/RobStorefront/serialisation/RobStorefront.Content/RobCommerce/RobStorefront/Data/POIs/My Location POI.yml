@@ -1,6 +1,6 @@
 ﻿---
-ID: "34322d96-b95d-48dc-887d-6c0936bb714a"
-Parent: "fe748d06-faca-4bc8-a7ca-9c237489ae45"
+ID: "26288489-b3f5-4dff-a10d-4b373e8f1ec6"
+Parent: "dbf34174-1441-4acb-9032-89319ecabcb1"
 Template: "7dd9ece5-9461-498d-8721-7cbea8111b5e"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/POIs/My Location POI
 DB: master
@@ -16,41 +16,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073141Z
+      Value: 20190506T215210Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073156Z
+      Value: 20190506T215240Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072936Z
+      Value: 20190506T214642Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073213Z
+      Value: 20190506T215318Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

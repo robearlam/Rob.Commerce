@@ -1,6 +1,6 @@
 ﻿---
-ID: "6021aac8-37f0-4055-bfec-7eb12409677a"
-Parent: "4c4e7d22-7307-4143-b050-372c4ab9368c"
+ID: "8cb1538f-08c7-4959-9ccf-b140dbc6d528"
+Parent: "b794e7f4-ca5f-457e-abca-54ed4c83f981"
 Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Available Renderings/Navigation
 DB: master
@@ -15,9 +15,6 @@ SharedFields:
     {BFBD9DE2-3ABF-4078-BBCB-C95C5B2D863F}
     {1B1FDBF9-551B-4A00-A6D8-BB2FB7B62A62}
     {4646BD4F-05FF-4A19-9600-4D74F2F1548B}
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 1700
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{AE201637-7074-45C3-9052-754E1ED302C4}"
@@ -28,41 +25,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073143Z
+      Value: 20190506T215213Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073158Z
+      Value: 20190506T215244Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072952Z
+      Value: 20190506T214706Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215322Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

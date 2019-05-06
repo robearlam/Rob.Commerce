@@ -1,6 +1,6 @@
 ﻿---
-ID: "b452891a-3d45-4a85-ba71-05f092e3f6a3"
-Parent: "a12c4b73-1975-4a85-b037-f3836277b5a8"
+ID: "5f1cf7e5-20aa-46a8-93f1-657c33f80aae"
+Parent: "0bbc1325-30f4-401e-aa96-7c96c4053f64"
 Template: "e63729f6-401e-4fd2-bcdc-7c73a065b01d"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Minicart
 DB: master
@@ -80,11 +80,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073025Z
+      Value: 20190506T214748Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

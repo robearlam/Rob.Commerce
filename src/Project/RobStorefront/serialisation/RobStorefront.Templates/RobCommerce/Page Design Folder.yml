@@ -1,6 +1,6 @@
 ﻿---
-ID: "13f39b1c-c6d9-4045-8e47-35382faba74d"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "956224a0-17b1-494b-bcdb-f20d5a83a1d3"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Page Design Folder
 DB: master
@@ -14,7 +14,7 @@ SharedFields:
   Value: "{EC7CC4E4-3A6E-4512-808B-691A8B46045E}"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{1075D99C-841A-4D87-9FE5-D77B59527F24}"
+  Value: "{977E4AC7-DEF9-4FA5-A795-BEB0AA4524C2}"
 Languages:
 - Language: en
   Versions:
@@ -22,8 +22,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072630Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\virtualssuser
+      Value: 20190506T214346Z

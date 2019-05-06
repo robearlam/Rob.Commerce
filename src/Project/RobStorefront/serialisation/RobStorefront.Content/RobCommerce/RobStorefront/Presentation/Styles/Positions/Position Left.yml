@@ -1,6 +1,6 @@
 ﻿---
-ID: "ca19e8e4-0ea0-4690-a0e6-f595045cd1f8"
-Parent: "d4ee3ef8-dda5-46ad-9fe7-1dfc55609d67"
+ID: "40909bc8-e0af-4563-8371-f7ec3b77c46c"
+Parent: "b5c752d1-227a-4a44-899e-3597739942e1"
 Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Styles/Positions/Position Left
 DB: master
@@ -19,22 +19,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073149Z
+      Value: 20190506T215229Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073205Z
+      Value: 20190506T215300Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
@@ -52,8 +52,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073223Z
+      Value: 20190506T215338Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

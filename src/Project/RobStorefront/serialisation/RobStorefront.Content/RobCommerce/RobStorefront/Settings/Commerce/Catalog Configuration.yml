@@ -1,6 +1,6 @@
 ﻿---
-ID: "fda24acf-c254-4696-b3f2-525240ae423d"
-Parent: "9c9de238-8f42-41be-ab14-ac1d67747499"
+ID: "02294b23-e945-4014-bcfb-046a2c48dc9c"
+Parent: "9fb8a462-5a46-43ed-9914-b3d881cebd47"
 Template: "205f3ef7-05bb-452d-a338-1d0bb334267c"
 Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Commerce/Catalog Configuration
 DB: master
@@ -16,6 +16,36 @@ SharedFields:
   Hint: Start Navigation Category
   Value: "{B893C063-6238-ED57-700D-72862C56038D}"
 Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Katalogkonfiguration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215230Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Katalogkonfiguration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215301Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -31,3 +61,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: カタログ設定
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215339Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

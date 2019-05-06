@@ -1,37 +1,55 @@
 ﻿---
-ID: "30795765-f065-4cae-9e78-22332389befa"
-Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
+ID: "a394da08-b304-43bb-8d80-6aeba52cabc2"
+Parent: "7b6154b6-8251-4e2d-8ab0-e8e232a6f6d7"
 Template: "334e2b54-f913-411d-b159-a7b16d65242c"
 Path: /sitecore/content/RobCommerce/RobStorefront/Home/Catalogs
 DB: master
 SharedFields:
-- ID: "d3ae7222-425d-4b77-95d8-ee33ac2b6730"
-  Hint: __Context Menu
-  Value: "{64BA1004-F0BE-429E-AAAD-20BD42BD99B5}"
-- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
-  Hint: __Security
-  Value: 
 - ID: "ed3ebccd-a230-4659-923f-014707e1945d"
   Hint: Selected Catalogs
   Value: Habitat_Master
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{17916B83-A23A-4D9F-8E12-8D39C3D770CB}"
 Languages:
-- Language: "de-DE"
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Commerce Katalog Ordner
+- Language: da
   Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215204Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215235Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20130226T074100
+      Value: 20190129T050938Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\admin
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190506T215313Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,6 +1,6 @@
 ﻿---
-ID: "2f721154-2da1-4111-829f-766d7e493f49"
-Parent: "3742816c-f082-4e3c-a66f-7b9a4f480204"
+ID: "5477f84b-3d77-41b9-9df2-4126640d29ea"
+Parent: "bc3a7519-ce7e-4965-9bae-d957c8a3813f"
 Template: "9c514ff0-fbf7-42f1-82f6-156272f70caa"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront/Language Configuration
 DB: master
@@ -26,8 +26,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073028Z
+      Value: 20190506T214757Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

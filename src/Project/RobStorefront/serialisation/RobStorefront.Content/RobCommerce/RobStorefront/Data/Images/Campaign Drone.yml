@@ -1,6 +1,6 @@
 ﻿---
-ID: "fc6af4ed-a016-4eab-b64c-bc4ff3df8f91"
-Parent: "1aad086c-e7ad-4d4a-a0a0-7ecacbb3e50c"
+ID: "91e948bc-f058-47c0-a1c9-ff60620b92cc"
+Parent: "df6f4085-d72d-4061-8d08-467e72d2580b"
 Template: "bb8a85ab-1f6d-4518-8772-1c9f4f8dac18"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Images/Campaign Drone
 DB: master
@@ -26,7 +26,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{8A5DD124-5FCA-41E8-9211-438C72F3C19C}" />
+        <image mediaid="{E51BE26F-1538-409F-839F-2FB67B945ABD}" />
 - Language: "de-DE"
   Versions:
   - Version: 1
@@ -44,7 +44,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{8A5DD124-5FCA-41E8-9211-438C72F3C19C}" />
+        <image mediaid="{E51BE26F-1538-409F-839F-2FB67B945ABD}" />
 - Language: en
   Versions:
   - Version: 1
@@ -65,18 +65,18 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{8A5DD124-5FCA-41E8-9211-438C72F3C19C}" />
+        <image mediaid="{E51BE26F-1538-409F-839F-2FB67B945ABD}" />
 - Language: "fr-FR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073102Z
+      Value: 20190506T215135Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -94,4 +94,4 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{8A5DD124-5FCA-41E8-9211-438C72F3C19C}" />
+        <image mediaid="{E51BE26F-1538-409F-839F-2FB67B945ABD}" />

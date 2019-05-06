@@ -1,6 +1,6 @@
 ﻿---
-ID: "54d3c123-d821-41f2-ac11-2aa7c7e1fb4a"
-Parent: "5af0c06b-6cdb-4dcf-a58c-2a418019267b"
+ID: "58dd0db0-4bb0-4dfa-89e7-8bc5d05c9dda"
+Parent: "a92d2619-9266-4247-a36b-ee22d240fe36"
 Template: "f9327a11-4030-42de-b83e-7b4e88490dd8"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/TopBar/Sign out
 DB: master
@@ -95,11 +95,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073103Z
+      Value: 20190506T215141Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

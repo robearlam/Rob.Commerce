@@ -1,6 +1,6 @@
 ﻿---
-ID: "5aa0b79b-491b-430f-8df3-76068487b951"
-Parent: "a12c4b73-1975-4a85-b037-f3836277b5a8"
+ID: "e7fec6b3-0e03-40d4-99aa-54fa79c0fbac"
+Parent: "0bbc1325-30f4-401e-aa96-7c96c4053f64"
 Template: "0a5acf7d-d975-45b9-bbc3-e80a4042696b"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Shopping Cart Lines
 DB: master
@@ -83,11 +83,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073025Z
+      Value: 20190506T214748Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

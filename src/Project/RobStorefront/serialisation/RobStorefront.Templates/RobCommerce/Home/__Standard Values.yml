@@ -1,7 +1,7 @@
 ﻿---
-ID: "1780f23d-76eb-4971-8c11-0efb11dffc58"
-Parent: "df79c7f7-a840-4cc5-a565-eb55b82bf4cc"
-Template: "df79c7f7-a840-4cc5-a565-eb55b82bf4cc"
+ID: "f1efb56c-0f63-466a-bfcd-42fad3a547eb"
+Parent: "a0e00961-fb20-43e3-9b54-b1c142d5a23d"
+Template: "a0e00961-fb20-43e3-9b54-b1c142d5a23d"
 Path: /sitecore/templates/Project/RobCommerce/Home/__Standard Values
 DB: master
 SharedFields:
@@ -9,13 +9,8 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: |
-    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {9C9F2F23-4195-4B23-BCD1-8E1626FCAB5E}
     {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
-    {E154445D-3810-4028-8D42-DEA3935CDD5A}
-    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
-    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
-    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
-    {4973432D-69AB-4271-A049-B1C711790BF6}
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -35,8 +30,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072629Z
+      Value: 20190506T214346Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

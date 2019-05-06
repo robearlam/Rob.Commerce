@@ -1,6 +1,6 @@
 ﻿---
-ID: "3be634f4-6433-44c5-a73e-b6797e16d18e"
-Parent: "4cc5037c-d2e4-4062-82af-e5127b57e729"
+ID: "d5926741-2ee3-4643-9457-4f46101b3259"
+Parent: "64c18577-2b66-4994-80f7-3f2c6dc8b7ee"
 Template: "ebb0b13d-ccf4-4bdf-8d3c-e2fdb4bb0240"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Search/Facet Slider
 DB: master
@@ -16,41 +16,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073142Z
+      Value: 20190506T215210Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073157Z
+      Value: 20190506T215240Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073031Z
+      Value: 20190506T215032Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073213Z
+      Value: 20190506T215318Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

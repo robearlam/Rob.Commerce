@@ -1,6 +1,6 @@
 ﻿---
-ID: "383f9e5c-a358-44ff-b8b8-c79b12c8e17e"
-Parent: "92e41a01-543f-48a9-b3f4-297ce93c4496"
+ID: "94341255-7a3c-4598-9300-3196d33a1e97"
+Parent: "f4683b8d-f251-40a7-a96f-3bcac3dc3a71"
 Template: "6042e216-f650-447c-86d1-00fea97454e7"
 Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Facets/SxaTags
 DB: master
@@ -19,44 +19,40 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073151Z
+      Value: 20190506T215231Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073206Z
+      Value: 20190506T215302Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073037Z
+      Value: 20190506T215110Z
     - ID: "31ca077f-ef38-4980-8a24-05408031b2bc"
       Hint: Name
       Value: SxaTags
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\virtualssuser
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073224Z
+      Value: 20190506T215340Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

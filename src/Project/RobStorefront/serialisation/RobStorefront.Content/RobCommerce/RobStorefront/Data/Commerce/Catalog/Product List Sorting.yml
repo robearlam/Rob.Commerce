@@ -1,6 +1,6 @@
 ﻿---
-ID: "6d30aa8b-42c9-4bf0-bbea-98c914bb84c0"
-Parent: "7cbd3874-14c4-4c8e-af4f-c641ae4c64b5"
+ID: "099b718f-f57f-418f-b588-9ec9c5e33f3c"
+Parent: "13995f11-7841-43a5-9ae1-d7bc299f43a9"
 Template: "247b66f8-62f6-49ba-b397-84f34f2f88ef"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Catalog/Product List Sorting
 DB: master
@@ -62,11 +62,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190506T214749Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

@@ -1,6 +1,6 @@
 ﻿---
-ID: "58dd42b3-22ba-40e6-8270-4138de8e4b6a"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "e709f2f7-fb3c-4077-b60c-17b7b056892d"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Review
 DB: master
@@ -11,13 +11,13 @@ SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{4973432D-69AB-4271-A049-B1C711790BF6}"
+  Value: "{378453BF-BEEF-4F97-9E98-66CF0374B092}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 3200
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{9B95F75A-E026-4DB4-BD97-3CD40D937893}"
+  Value: "{FE8C4DFE-A6AD-4C64-8578-8B00392647E0}"
 Languages:
 - Language: da
   Fields:

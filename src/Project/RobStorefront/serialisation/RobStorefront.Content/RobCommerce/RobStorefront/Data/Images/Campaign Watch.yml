@@ -1,6 +1,6 @@
 ﻿---
-ID: "1da43a2f-cb89-48f8-87aa-b3ad321b872d"
-Parent: "1aad086c-e7ad-4d4a-a0a0-7ecacbb3e50c"
+ID: "034ea6c4-5f1c-4f34-aa64-d0495b7bbf99"
+Parent: "df6f4085-d72d-4061-8d08-467e72d2580b"
 Template: "bb8a85ab-1f6d-4518-8772-1c9f4f8dac18"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Images/Campaign Watch
 DB: master
@@ -26,7 +26,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{4056031C-0FE2-4C0A-8C15-2B91EA7C10E9}" />
+        <image mediaid="{356B5A40-A6D8-4F7D-814A-E51049071A02}" />
 - Language: "de-DE"
   Versions:
   - Version: 1
@@ -44,7 +44,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{4056031C-0FE2-4C0A-8C15-2B91EA7C10E9}" />
+        <image mediaid="{356B5A40-A6D8-4F7D-814A-E51049071A02}" />
 - Language: en
   Versions:
   - Version: 1
@@ -65,18 +65,18 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{4056031C-0FE2-4C0A-8C15-2B91EA7C10E9}" />
+        <image mediaid="{356B5A40-A6D8-4F7D-814A-E51049071A02}" />
 - Language: "fr-FR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073102Z
+      Value: 20190506T215135Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -94,4 +94,4 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{4056031C-0FE2-4C0A-8C15-2B91EA7C10E9}" />
+        <image mediaid="{356B5A40-A6D8-4F7D-814A-E51049071A02}" />

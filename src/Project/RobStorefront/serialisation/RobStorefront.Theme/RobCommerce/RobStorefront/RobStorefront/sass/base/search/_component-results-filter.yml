@@ -1,6 +1,6 @@
 ﻿---
-ID: "d5d7f827-9390-4b84-a7ec-881c7c811d56"
-Parent: "895b5801-4692-42c6-b61a-9d0b14748389"
+ID: "b528789e-92cb-4c5b-8769-94b88a944042"
+Parent: "5b749514-3a80-4f78-89fd-8b2b19edd160"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/base/search/_component-results-filter"
 DB: master
@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180402T124002Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

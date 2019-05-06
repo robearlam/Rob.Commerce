@@ -1,7 +1,7 @@
 ﻿---
-ID: "4a874855-df2a-4f7d-8dfb-692d7757e323"
-Parent: "e87118c5-5b21-4faa-8142-4d96f400fa03"
-Template: "21355141-fdeb-4789-b2bc-fed32998df83"
+ID: "b64c7363-c7aa-47f7-ba31-1cbf31c64466"
+Parent: "029b379b-6c30-4021-a667-e847bf89aca1"
+Template: "2d522ac6-8748-4c08-b127-097a48bd93e6"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Partial Designs/Checkout Page Header
 DB: master
 SharedFields:
@@ -22,7 +22,7 @@ SharedFields:
         <r
           uid="{B76A9CCF-07C1-4149-B647-9117738A7FB3}"
           p:before="*"
-          s:ds="{F4FAB61E-783A-4F83-BD0B-51B0E332F42D}"
+          s:ds="{E91E1CE7-48E0-4DF4-A598-D4EBD2030FDC}"
           s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{FD09A9D2-113E-49B8-B481-F0B4FFE9B498}&amp;FieldNames&amp;Styles"
           s:ph="/header/row-1-1/container-1" />
@@ -41,7 +41,7 @@ SharedFields:
         <r
           uid="{9CB93CD6-399D-40D8-AAF3-591D0A98866F}"
           p:after="r[@uid='{FD78254E-817A-4236-89F9-7B46DBA7C2A2}']"
-          s:ds="{6A95B7C3-3636-4F3A-81B6-DC0927307292}"
+          s:ds="{168F99D1-5F25-4FB9-BC3A-813147500E16}"
           s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{4C80E2ED-07D6-4652-A90B-3820049E9CE4}|{2FF25A31-B1F1-4B00-8131-71323148B1F1}|{0DA3126E-497A-4DA6-9A15-EC8B151F8D7C}&amp;FieldNames&amp;Styles&amp;RenderingIdentifier"
           s:ph="/header/row-1-1" />
@@ -64,11 +64,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073144Z
+      Value: 20190506T215215Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -79,11 +79,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073159Z
+      Value: 20190506T215245Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -109,8 +109,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215323Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

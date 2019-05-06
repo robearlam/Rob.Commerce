@@ -1,6 +1,6 @@
 ﻿---
-ID: "3f27b08d-8b37-4a4e-b57a-1f518b4d6315"
-Parent: "df5ba156-f34a-4b43-a8bd-b571c759adb9"
+ID: "1e2ba942-0ecc-4055-997e-b12fcac82dda"
+Parent: "dfa955b0-5298-40e0-a30c-c66f0a7b58bb"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
 Path: /sitecore/media library/Project/RobCommerce/shared
 DB: master
@@ -11,8 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072631Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\virtualssuser
+      Value: 20190506T214346Z

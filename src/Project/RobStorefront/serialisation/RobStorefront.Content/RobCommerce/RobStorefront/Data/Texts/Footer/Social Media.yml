@@ -1,6 +1,6 @@
 ﻿---
-ID: "c3517724-1ecf-4c0c-bb65-67e0e11a583a"
-Parent: "81d25b85-b17f-41cc-af6f-15bf42bab1c8"
+ID: "0e581247-f2e0-43a4-9ccd-ba8ddde31430"
+Parent: "4776b2fa-f311-4da2-ba35-e238f234ee7c"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Texts/Footer/Social Media
 DB: master
@@ -53,11 +53,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073105Z
+      Value: 20190506T215144Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

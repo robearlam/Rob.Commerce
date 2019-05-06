@@ -1,6 +1,6 @@
 ﻿---
-ID: "6d97c3fa-3c0a-42dc-a436-32abaaebaa25"
-Parent: "434814ea-5472-4751-ab0f-c150593e20a7"
+ID: "17ec2236-1953-4e65-a9c7-e054e92a2771"
+Parent: "5cf95ad6-ad8e-4223-a4a3-d0dafd1ae980"
 Template: "5878f58e-eacf-40a7-913e-019840a1c502"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Product Lists/Mira Laptops
 DB: master
@@ -53,11 +53,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073100Z
+      Value: 20190506T215134Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

@@ -1,7 +1,7 @@
 ﻿---
-ID: "23febab4-74c7-44a0-aef1-1bcb139a1943"
-Parent: "36ebb500-911f-4e89-a24e-d414c6b71a8b"
-Template: "6c804996-346b-4b75-a441-939cfc05f69f"
+ID: "6de3b39f-b21e-43e3-b17a-928b09001ffb"
+Parent: "b1e80643-e534-4d1f-bd43-374b3b1cbbe5"
+Template: "2530e8c8-3be6-427f-8120-85caa34ec8eb"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Page Designs/Shopping Cart Page
 DB: master
 SharedFields:
@@ -10,7 +10,7 @@ SharedFields:
   Value: Office/32x32/pieces.png
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
-  Value: "{EC15974F-5631-4E19-A029-4A2FB064B0AA}|{3F900AEB-2E44-4C15-B775-2847C8296897}|{9D712FFC-312E-48C5-904D-27491760E456}|{C53DDED5-CAB2-4E00-B8D4-0C14881CFE0B}"
+  Value: "{A181C97C-CE53-467B-80C2-96E65A32CA4D}|{B6ECE9F8-C4D6-4414-90B8-C9054FD471F0}|{E6F5CED5-7D5F-48B1-9ABB-23B119FEAA42}|{F86BF954-799B-4D6C-8650-F3D7D21BD459}"
 Languages:
 - Language: da
   Versions:
@@ -18,22 +18,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073144Z
+      Value: 20190506T215214Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073159Z
+      Value: 20190506T215245Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
@@ -47,8 +47,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215322Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

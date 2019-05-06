@@ -1,7 +1,7 @@
 ﻿---
-ID: "6411cb13-c5b1-464c-be2f-8471cbfb8af1"
-Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
-Template: "54385dea-c04b-475c-8aad-40308ec8d428"
+ID: "b5682631-5881-4b7f-bb6b-0ce49327d903"
+Parent: "7b6154b6-8251-4e2d-8ab0-e8e232a6f6d7"
+Template: "909f13b0-268f-4b48-929b-bcf7446aa792"
 Path: /sitecore/content/RobCommerce/RobStorefront/Home/registration
 DB: master
 SharedFields:
@@ -9,29 +9,29 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: |
-    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {9C9F2F23-4195-4B23-BCD1-8E1626FCAB5E}
     {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
-    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
-    {E154445D-3810-4028-8D42-DEA3935CDD5A}
-    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
-    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
-    {4973432D-69AB-4271-A049-B1C711790BF6}
-    {DF79C7F7-A840-4CC5-A565-EB55B82BF4CC}
-    {3F9C1F11-1511-4F24-AB2A-8109F35B027C}
-    {54385DEA-C04B-475C-8AAD-40308EC8D428}
-    {4B48FA3E-2BFD-4C06-93FF-AAF3E2106F61}
-    {DB99DE13-FF08-4932-B56F-9567ACED4D9E}
-    {E487D8E0-870C-4226-9B6F-8CA07BAD527B}
-    {210CB0FE-B364-4E25-AB56-6A4BA59C278A}
-    {6706448C-92A5-43EA-9711-F6D1914A1706}
-    {A098D12C-83BD-49E4-979A-A9F7B6A37629}
-    {DDFE6B16-6472-4834-81C3-C9454EEF43AB}
-    {2662751A-A685-46EC-897C-EDA79603B232}
-    {5F0FAF12-2C70-486B-BDF2-16BD6030974D}
-    {7EF0323A-0C2E-4E0C-85A2-104BA06E4167}
+    {AFC9211F-DFA8-4444-9EE0-D50A5AE76115}
+    {7755E481-E593-4624-B5E7-B516A48D4035}
+    {811E83A6-29BA-4E49-9DC7-A6DFCA9F3209}
+    {C5D53E39-F076-4B5C-A3E5-216455C468D3}
+    {378453BF-BEEF-4F97-9E98-66CF0374B092}
+    {A0E00961-FB20-43E3-9B54-B1C142D5A23D}
+    {7811E03E-A60A-47A6-B504-3E4CB9BB325C}
+    {909F13B0-268F-4B48-929B-BCF7446AA792}
+    {F9929BD9-588B-4A91-B9C2-76AB3CBC3E5F}
+    {67D04537-1927-4084-9903-BE6762C8C327}
+    {642BC9BE-9CEF-468D-A41F-585B8D861309}
+    {09D2CC7B-9A0F-41DD-ABB4-70E8FE0932F2}
+    {79F9D862-1E9E-460B-8D08-F011AF41E87F}
+    {79581533-89BC-4C85-819E-9EF437756498}
+    {67417BDC-6736-4EE0-8F9D-EFB52EA37AA8}
+    {8D77C27F-B22D-4F7D-9CD1-0B0594BEBE00}
+    {46D9E5E1-2274-4546-B454-850F75D57B24}
+    {D605DD59-C0BA-46EA-9152-DD09AB50601E}
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
-  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+  Value: "{98C76434-76C9-45A8-8E56-5D1E50EF9A17}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -43,9 +43,9 @@ SharedFields:
         <r
           uid="{D2D9A8E9-66DA-45B8-994A-F189CC55B9A9}"
           p:before="*"
-          s:ds="{231A2624-EEF8-4E3C-A3DF-2C73CCA98F10}"
+          s:ds="{6344D1F2-3D40-43A4-A812-78FAAE02C643}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
-          s:par="Styles={F62C2D57-5334-4D9C-9306-A93A2856DD8B}&amp;GridParameters"
+          s:par="Styles={8308D635-75BB-4321-B8E1-58C56CBE26F6}&amp;GridParameters"
           s:ph="/main/container-1/column-1-1" />
         <r
           uid="{62377615-E49E-42D0-A83F-6E74F23F19C2}"
@@ -56,14 +56,14 @@ SharedFields:
         <r
           uid="{2B7DA379-1B56-40F6-81BA-307AC7AB9348}"
           p:after="r[@uid='{62377615-E49E-42D0-A83F-6E74F23F19C2}']"
-          s:ds="{192CC37C-0B77-4235-9426-AF636094E8FE}"
+          s:ds="{E16859C0-E4E9-4062-9300-3462FA61D54D}"
           s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
-          s:par="GridParameters&amp;FieldNames&amp;Styles=%7B0BB9A48D-2E9F-4168-9785-D5C36E092C37%7D%7C%7B8CCFB69C-F70C-4920-8889-739F6EA8E774%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
+          s:par="GridParameters&amp;FieldNames&amp;Styles=%7B02C72C00-C481-43CC-B588-16E5545229C6%7D%7C%7B5DD86070-574A-428F-8065-47A872774D53%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/container-1/column-2-1" />
         <r
           uid="{2F04D57A-F5B8-43C0-AE77-86F3BD6E5B3E}"
           p:after="r[@uid='{2B7DA379-1B56-40F6-81BA-307AC7AB9348}']"
-          s:ds="{FA864DCF-D089-422B-8F52-6BA571EF8035}"
+          s:ds="{53E78C89-EEBF-48E2-96F1-217856C4C014}"
           s:id="{8088A650-0910-4CE0-802A-3D5E757F1254}"
           s:par=""
           s:ph="/main/container-1/column-1-1" />
@@ -92,7 +92,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073140Z
+      Value: 20190506T215207Z
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
@@ -103,13 +103,13 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Create an Account
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Create an Account
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -120,7 +120,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073155Z
+      Value: 20190506T215238Z
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
@@ -131,13 +131,13 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Create an Account
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Create an Account
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -160,7 +160,7 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
       Hint: Title
       Value: Create an Account
 - Language: "ja-JP"
@@ -173,7 +173,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073211Z
+      Value: 20190506T215316Z
     - ID: "4c2f221f-9426-45ed-9eeb-c79bb3169565"
       Hint: StickyNotes
       Value: |
@@ -184,10 +184,10 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Create an Account
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Create an Account

@@ -1,6 +1,6 @@
 ﻿---
-ID: "11be252d-aaac-456e-88d7-f662c2025321"
-Parent: "1aad086c-e7ad-4d4a-a0a0-7ecacbb3e50c"
+ID: "b4e14dc9-43e3-4ba0-ada7-3d6b01cac5d7"
+Parent: "df6f4085-d72d-4061-8d08-467e72d2580b"
 Template: "bb8a85ab-1f6d-4518-8772-1c9f4f8dac18"
 Path: "/sitecore/content/RobCommerce/RobStorefront/Data/Images/Twitter-Logo"
 DB: master
@@ -27,7 +27,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{FAF14F9F-1710-4D21-A9FD-1927C1396FDD}"></image>
+        <image mediaid="{125C8826-27F9-4860-AFF3-7C8F56BC9D01}"></image>
 - Language: "de-DE"
   Versions:
   - Version: 1
@@ -46,7 +46,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{FAF14F9F-1710-4D21-A9FD-1927C1396FDD}"></image>
+        <image mediaid="{125C8826-27F9-4860-AFF3-7C8F56BC9D01}"></image>
 - Language: en
   Versions:
   - Version: 1
@@ -65,18 +65,18 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{FAF14F9F-1710-4D21-A9FD-1927C1396FDD}"></image>
+        <image mediaid="{125C8826-27F9-4860-AFF3-7C8F56BC9D01}"></image>
 - Language: "fr-FR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073101Z
+      Value: 20190506T215138Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -95,4 +95,4 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{FAF14F9F-1710-4D21-A9FD-1927C1396FDD}"></image>
+        <image mediaid="{125C8826-27F9-4860-AFF3-7C8F56BC9D01}"></image>

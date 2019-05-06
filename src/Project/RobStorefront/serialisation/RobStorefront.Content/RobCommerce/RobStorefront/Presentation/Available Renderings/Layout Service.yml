@@ -1,6 +1,6 @@
 ﻿---
-ID: "148b7af2-86ba-4db9-a631-44d52d546896"
-Parent: "4c4e7d22-7307-4143-b050-372c4ab9368c"
+ID: "83a3977d-f651-4453-9719-a2bb686f5764"
+Parent: "b794e7f4-ca5f-457e-abca-54ed4c83f981"
 Template: "634465da-c860-4d80-b469-98dabc3de6c8"
 Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Available Renderings/Layout Service
 DB: master
@@ -10,9 +10,6 @@ SharedFields:
   Hint: Renderings
   Type: TreelistEx
   Value: "{AFA8325E-9653-4E88-8839-1777A56B5FB1}"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 1400
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{BC13F33E-4606-44FE-9146-0AA6F5682987}"
@@ -23,41 +20,41 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073143Z
+      Value: 20190506T215213Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073158Z
+      Value: 20190506T215244Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072942Z
+      Value: 20190506T214649Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073215Z
+      Value: 20190506T215321Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

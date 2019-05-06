@@ -1,6 +1,6 @@
 ﻿---
-ID: "034e5054-b682-48d6-ab6d-fff8dc3888c9"
-Parent: "c7c8386d-8a7c-41eb-a30f-9310a2523e6d"
+ID: "84c71d06-513e-4e53-aeef-9bea8e5f0f06"
+Parent: "05c29853-2a07-4681-8588-a1e76af2d83f"
 Template: "3de7aa7e-961a-4b90-98f2-01ac2be92ec5"
 Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Social Media Groups/Default/Google Plus
 DB: master
@@ -19,7 +19,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073151Z
+      Value: 20190506T215232Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -37,14 +37,14 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073207Z
+      Value: 20190506T215303Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -62,14 +62,14 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073016Z
+      Value: 20190506T214738Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -87,14 +87,14 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073225Z
+      Value: 20190506T215341Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -112,4 +112,4 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

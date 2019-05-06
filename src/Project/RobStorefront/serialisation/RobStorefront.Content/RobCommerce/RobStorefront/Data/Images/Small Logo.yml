@@ -1,6 +1,6 @@
 ﻿---
-ID: "6a95b7c3-3636-4f3a-81b6-dc0927307292"
-Parent: "1aad086c-e7ad-4d4a-a0a0-7ecacbb3e50c"
+ID: "168f99d1-5f25-4fb9-bc3a-813147500e16"
+Parent: "df6f4085-d72d-4061-8d08-467e72d2580b"
 Template: "bb8a85ab-1f6d-4518-8772-1c9f4f8dac18"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Images/Small Logo
 DB: master
@@ -23,7 +23,7 @@ Languages:
     - ID: "54cab1ba-53d3-4ce4-ab7e-f8c17596aa47"
       Hint: TargetUrl
       Value: |
-        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{10C8A0E3-9958-44EF-88CE-D0B38DA9E72A}" />
+        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B6154B6-8251-4E2D-8AB0-E8E232A6F6D7}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -31,7 +31,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{3BA1DC62-FE57-4C1E-BBE4-0A9DA2793277}" />
+        <image mediaid="{0BC2E917-E95F-4AD0-BC09-C1FA748E569F}" />
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -46,7 +46,7 @@ Languages:
     - ID: "54cab1ba-53d3-4ce4-ab7e-f8c17596aa47"
       Hint: TargetUrl
       Value: |
-        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{10C8A0E3-9958-44EF-88CE-D0B38DA9E72A}" />
+        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B6154B6-8251-4E2D-8AB0-E8E232A6F6D7}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -54,7 +54,7 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{3BA1DC62-FE57-4C1E-BBE4-0A9DA2793277}" />
+        <image mediaid="{0BC2E917-E95F-4AD0-BC09-C1FA748E569F}" />
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -69,7 +69,7 @@ Languages:
     - ID: "54cab1ba-53d3-4ce4-ab7e-f8c17596aa47"
       Hint: TargetUrl
       Value: |
-        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{10C8A0E3-9958-44EF-88CE-D0B38DA9E72A}" />
+        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B6154B6-8251-4E2D-8AB0-E8E232A6F6D7}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -77,18 +77,18 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{3BA1DC62-FE57-4C1E-BBE4-0A9DA2793277}" />
+        <image mediaid="{0BC2E917-E95F-4AD0-BC09-C1FA748E569F}" />
 - Language: "fr-FR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073101Z
+      Value: 20190506T215137Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -103,7 +103,7 @@ Languages:
     - ID: "54cab1ba-53d3-4ce4-ab7e-f8c17596aa47"
       Hint: TargetUrl
       Value: |
-        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{10C8A0E3-9958-44EF-88CE-D0B38DA9E72A}" />
+        <Link text="Homepage" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B6154B6-8251-4E2D-8AB0-E8E232A6F6D7}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -111,4 +111,4 @@ Languages:
     - ID: "ebe4fdef-16d5-4d19-833c-24a241628a3a"
       Hint: Image
       Value: |
-        <image mediaid="{3BA1DC62-FE57-4C1E-BBE4-0A9DA2793277}" />
+        <image mediaid="{0BC2E917-E95F-4AD0-BC09-C1FA748E569F}" />

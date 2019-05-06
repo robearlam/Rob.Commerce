@@ -1,6 +1,6 @@
 ﻿---
-ID: "e246e751-b8bd-46d1-a3c5-9724dd79b956"
-Parent: "136cce68-ed44-4654-9e62-0bcdb69db7d4"
+ID: "ee653542-d4e2-41f1-bded-20fc5e3ad314"
+Parent: "43847fe6-e377-4fdf-92d7-1d775f4135be"
 Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
 Path: /sitecore/media library/Project/RobCommerce/RobStorefront/Placeholder Images/72x72
 DB: master
@@ -13,7 +13,7 @@ SharedFields:
   Value: 72
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "28b4cef7-a57f-4a13-b929-6aa460cf7101"
+  BlobID: "a4dbca20-5fcd-4e7a-b673-bad54fe6b7e3"
   Value: iVBORw0KGgoAAAANSUhEUgAAAEgAAABIBAMAAACnw650AAAAHlBMVEXMzMyWlpaqqqqcnJy+vr6jo6O3t7exsbHFxcW0tLRpB/mcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdElEQVRIiWNgGAWjYBSMghEEmIwljRMgDBFnM5zKgl0MIIwAE2dcatjSOQwYypyAjISCZlyKWBlaCxhYI0AMjnBcipw4gC5hVwAyGJoTcCkqYwVKtQJNKmMIw+nuCGZjAwaVViCDwdgYp6pRMApGwSigDwAA9g0OGOF3UNQAAAAASUVORK5CYII=
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size

@@ -1,13 +1,13 @@
 ﻿---
-ID: "ec8974b0-f7e4-4b92-be0a-d0a70d4b1dd8"
-Parent: "211ee5d2-a819-4924-9b5c-1a69bff2a9e6"
-Template: "d25e24a4-6cdf-4794-b43f-3da0123e0316"
+ID: "5bed98bc-0dcc-40da-a49f-f8d426236ea3"
+Parent: "fc1f9c38-0e5e-4001-aa3c-03daace78da8"
+Template: "afc9211f-dfa8-4444-9ee0-d50a5ae76115"
 Path: "/sitecore/content/RobCommerce/RobStorefront/Home/Company/about-storefront"
 DB: master
 SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
-  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+  Value: "{98C76434-76C9-45A8-8E56-5D1E50EF9A17}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -19,14 +19,14 @@ SharedFields:
         <r
           uid="{EB7C9747-E0D5-4DB1-A73F-F974B06F6126}"
           p:before="*"
-          s:ds="{4FEF2118-A4E9-4EF7-B08D-95A4460DBD6C}"
+          s:ds="{69EB42D3-CE69-4141-8B06-29B17959DFE3}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={F62C2D57-5334-4D9C-9306-A93A2856DD8B}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={8308D635-75BB-4321-B8E1-58C56CBE26F6}"
           s:ph="/main/container-1" />
         <r
           uid="{DB13C055-F6C3-4095-9322-9FCB0325373F}"
           p:after="r[@uid='{EB7C9747-E0D5-4DB1-A73F-F974B06F6126}']"
-          s:ds="{85D511F7-09F3-426C-B106-E0D6DBB37513}"
+          s:ds="{F15355CA-C617-4703-BF99-487F70FE550E}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
           s:ph="/main/container-1" />
@@ -55,20 +55,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073139Z
+      Value: 20190506T215206Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: About
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: About Storefront
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: About Storefront
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -79,20 +79,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073154Z
+      Value: 20190506T215236Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: About
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: About Storefront
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: About Storefront
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -111,7 +111,7 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
       Hint: Title
       Value: About Storefront
 - Language: "ja-JP"
@@ -124,17 +124,17 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073210Z
+      Value: 20190506T215314Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: About
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: About Storefront
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: About Storefront

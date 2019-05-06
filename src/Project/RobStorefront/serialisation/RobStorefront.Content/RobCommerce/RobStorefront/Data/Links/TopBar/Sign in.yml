@@ -1,6 +1,6 @@
 ﻿---
-ID: "62a846e2-4d75-4352-a182-aa32a126c85e"
-Parent: "5af0c06b-6cdb-4dcf-a58c-2a418019267b"
+ID: "ac1f909f-f241-42f7-8a97-24f37707d43f"
+Parent: "a92d2619-9266-4247-a36b-ee22d240fe36"
 Template: "f9327a11-4030-42de-b83e-7b4e88490dd8"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/TopBar/Sign in
 DB: master
@@ -35,7 +35,7 @@ Languages:
     - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F202C7E4-61A5-482B-9D4A-D12C5644C3A4}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{022C5DD2-586A-4D16-A1D0-2897C77B5637}" />
     - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
       Hint: Tooltip
       Value: Log på
@@ -60,7 +60,7 @@ Languages:
     - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
       Hint: Link
       Value: |
-        <Link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F202C7E4-61A5-482B-9D4A-D12C5644C3A4}" />
+        <Link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{022C5DD2-586A-4D16-A1D0-2897C77B5637}" />
     - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
       Hint: Tooltip
       Value: Anmelden
@@ -85,7 +85,7 @@ Languages:
     - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F202C7E4-61A5-482B-9D4A-D12C5644C3A4}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{022C5DD2-586A-4D16-A1D0-2897C77B5637}" />
     - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
       Hint: Tooltip
       Value: Sign in
@@ -95,11 +95,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073103Z
+      Value: 20190506T215141Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -121,7 +121,7 @@ Languages:
     - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F202C7E4-61A5-482B-9D4A-D12C5644C3A4}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{022C5DD2-586A-4D16-A1D0-2897C77B5637}" />
     - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
       Hint: Tooltip
       Value: サインイン

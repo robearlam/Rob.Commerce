@@ -1,6 +1,6 @@
 ﻿---
-ID: "1e46285c-d883-4730-ae4b-edd1df22f87d"
-Parent: "3742816c-f082-4e3c-a66f-7b9a4f480204"
+ID: "504cd636-c515-48fa-ac9f-472f4d762db7"
+Parent: "bc3a7519-ce7e-4965-9bae-d957c8a3813f"
 Template: "81afaa32-f1b0-47de-a8e6-3e443a06510e"
 Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront/Currency Configuration
 DB: master
@@ -26,8 +26,8 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073027Z
+      Value: 20190506T214757Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin

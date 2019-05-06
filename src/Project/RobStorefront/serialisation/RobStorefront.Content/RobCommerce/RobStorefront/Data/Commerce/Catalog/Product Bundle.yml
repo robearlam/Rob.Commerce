@@ -1,6 +1,6 @@
 ﻿---
-ID: "f787a104-7f12-49f0-8b37-bdfe63fcbd31"
-Parent: "7cbd3874-14c4-4c8e-af4f-c641ae4c64b5"
+ID: "4f4a9049-58f2-4e19-a438-7177cea54263"
+Parent: "13995f11-7841-43a5-9ae1-d7bc299f43a9"
 Template: "b5748c6f-878f-4d14-8441-031d624c4289"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Catalog/Product Bundle
 DB: master
@@ -11,46 +11,46 @@ Languages:
     Fields:
     - ID: "015fad7b-190c-4501-b787-7245cc918d41"
       Hint: View Product Text
-      Value: Go to product
+      Value: Gå til produkt
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190315T063843Z
     - ID: "4503a490-8a13-4543-879a-e468081e0593"
       Hint: Title Text
-      Value: Bundle
+      Value: Pakke
     - ID: "53a433bc-2ad1-493d-a43a-39302385e17c"
       Hint: Invalid Variant Message
-      Value: An invalid variant combination has been selected.
+      Value: Der er blevet valgt en ugyldig variantkombination.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "75222ec7-b5f2-4551-9aa8-54d491d3bf0d"
       Hint: Savings Lead Text
-      Value: "- Save up to "
+      Value: "- Spar op til"
 - Language: "de-DE"
   Versions:
   - Version: 1
     Fields:
     - ID: "015fad7b-190c-4501-b787-7245cc918d41"
       Hint: View Product Text
-      Value: Go to product
+      Value: Zum Produkt gehen
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190315T064026Z
     - ID: "4503a490-8a13-4543-879a-e468081e0593"
       Hint: Title Text
-      Value: Bundle
+      Value: Bündel
     - ID: "53a433bc-2ad1-493d-a43a-39302385e17c"
       Hint: Invalid Variant Message
-      Value: An invalid variant combination has been selected.
+      Value: Eine ungültige Variantenkombination wurde ausgewählt.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "75222ec7-b5f2-4551-9aa8-54d491d3bf0d"
       Hint: Savings Lead Text
-      Value: "- Save up to "
+      Value: "- Sparen Sie bis zu"
 - Language: en
   Versions:
   - Version: 1
@@ -64,31 +64,31 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190506T214748Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
     - ID: "015fad7b-190c-4501-b787-7245cc918d41"
       Hint: View Product Text
-      Value: Go to product
+      Value: 商品に移動
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190315T064145Z
     - ID: "4503a490-8a13-4543-879a-e468081e0593"
       Hint: Title Text
-      Value: Bundle
+      Value: バンドル
     - ID: "53a433bc-2ad1-493d-a43a-39302385e17c"
       Hint: Invalid Variant Message
-      Value: An invalid variant combination has been selected.
+      Value: 選択されたバリアントの組み合わせは無効です。
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "75222ec7-b5f2-4551-9aa8-54d491d3bf0d"
       Hint: Savings Lead Text
-      Value: "- Save up to "
+      Value: "- 最大割引"

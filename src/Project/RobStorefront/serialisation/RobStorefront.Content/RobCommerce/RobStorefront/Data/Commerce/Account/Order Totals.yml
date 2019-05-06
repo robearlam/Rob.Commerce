@@ -1,6 +1,6 @@
 ﻿---
-ID: "3d2b1efe-ed86-475d-95fb-98730c3c88ab"
-Parent: "0f877bf4-4099-4efd-92ca-ef14447613bb"
+ID: "571e1eca-e885-404c-a799-da31f771b7c3"
+Parent: "9b1fb0ff-dc27-4113-bc6d-e1bb9edf7610"
 Template: "9d1cafc5-e4e6-45d4-bad1-c8a0fe542499"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Order Totals
 DB: master
@@ -9,16 +9,31 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: Samlet ordre
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180511T083202Z
     - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
       Hint: Order Total Header Label
       Value: Oversigt
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: Besparelser
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: MOMS
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: Besparelser
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: Forsendelse i alt
     - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
       Hint: Order Total Text
       Value: Total
@@ -26,16 +41,31 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: Auftragssumme
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180511T085002Z
     - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
       Hint: Order Total Header Label
       Value: Zusammenfassung
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: Ersparnisse
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: MwSt.
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: Ersparnisse
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: Versand Gesamtbetrag
     - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
       Hint: Order Total Text
       Value: Gesamt
@@ -77,25 +107,40 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073025Z
+      Value: 20190506T214747Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
     Fields:
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: 注文合計
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180511T085627Z
     - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
       Hint: Order Total Header Label
       Value: サマリー
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: 割引
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: 消費税
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: 割引
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: 発送合計
     - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
       Hint: Order Total Text
       Value: 合計

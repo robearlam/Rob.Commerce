@@ -1,6 +1,6 @@
 ﻿---
-ID: "230582c6-4ab4-491b-8ca6-988a096fddd1"
-Parent: "4a09d2c9-b808-4b91-a074-9b2b09333e83"
+ID: "3e39273a-3466-47e9-aaa6-8893e492c408"
+Parent: "46d2a6f8-831f-4e2d-a293-f194e47669f2"
 Template: "5580f871-81dd-4abc-9cb4-bdf177f8c835"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Checkout/Billing
 DB: master
@@ -12,16 +12,25 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180511T083211Z
+    - ID: "2c84687d-2a79-496a-ad97-4b3a23f18e1b"
+      Hint: Total Label
+      Value: Samlet ordre
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7bea1dc2-34f6-4dea-bccf-5b55e11c6683"
+      Hint: Savings Label
+      Value: Besparelser
+    - ID: "885fdd76-fca3-4fe7-90fd-71d8d3ea8076"
+      Hint: Taxes Label
+      Value: MOMS
     - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
       Hint: Billing Name Label
       Value: "Navn:"
-    - ID: "a1f13965-b2bf-44d0-a0e6-55d2435c0846"
-      Hint: Billing Information Header
-      Value: Billing information
+    - ID: "af8519cb-c269-4ad8-8f43-d22616ae4cc4"
+      Hint: Shipping Cost Label
+      Value: Forsendelsesomkostning
 - Language: "de-DE"
   Versions:
   - Version: 1
@@ -29,16 +38,25 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180511T085012Z
+    - ID: "2c84687d-2a79-496a-ad97-4b3a23f18e1b"
+      Hint: Total Label
+      Value: Auftragssumme
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7bea1dc2-34f6-4dea-bccf-5b55e11c6683"
+      Hint: Savings Label
+      Value: Ersparnisse
+    - ID: "885fdd76-fca3-4fe7-90fd-71d8d3ea8076"
+      Hint: Taxes Label
+      Value: MwSt.
     - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
       Hint: Billing Name Label
       Value: "Name:"
-    - ID: "a1f13965-b2bf-44d0-a0e6-55d2435c0846"
-      Hint: Billing Information Header
-      Value: Billing information
+    - ID: "af8519cb-c269-4ad8-8f43-d22616ae4cc4"
+      Hint: Shipping Cost Label
+      Value: Versandkosten
 - Language: en
   Versions:
   - Version: 1
@@ -71,11 +89,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073026Z
+      Value: 20190506T214750Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -83,16 +101,25 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20180511T085639Z
+    - ID: "2c84687d-2a79-496a-ad97-4b3a23f18e1b"
+      Hint: Total Label
+      Value: 注文合計
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "7bea1dc2-34f6-4dea-bccf-5b55e11c6683"
+      Hint: Savings Label
+      Value: 割引
+    - ID: "885fdd76-fca3-4fe7-90fd-71d8d3ea8076"
+      Hint: Taxes Label
+      Value: 消費税
     - ID: "936800f9-906a-416a-8163-cf258a52f382"
       Hint: Email Address Label
       Value: Eメール アドレス
     - ID: "a1681c07-73de-4e45-aaa7-f11bdb25ee60"
       Hint: Billing Name Label
       Value: 名前
-    - ID: "a1f13965-b2bf-44d0-a0e6-55d2435c0846"
-      Hint: Billing Information Header
-      Value: Billing information
+    - ID: "af8519cb-c269-4ad8-8f43-d22616ae4cc4"
+      Hint: Shipping Cost Label
+      Value: 送料

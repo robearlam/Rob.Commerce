@@ -1,6 +1,6 @@
 ﻿---
-ID: "d25e24a4-6cdf-4794-b43f-3da0123e0316"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "afc9211f-dfa8-4444-9ee0-d50a5ae76115"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Content Page
 DB: master
@@ -20,13 +20,13 @@ SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{79E04B89-212D-47B9-AE2E-6EA1A643D1FB}"
+  Value: "{9C9F2F23-4195-4B23-BCD1-8E1626FCAB5E}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: "-100"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{112A61E9-9438-4BFD-A33C-B2260E4F826D}"
+  Value: "{9A06757F-5337-4FB1-A910-4B3394E7837A}"
 Languages:
 - Language: da
   Fields:

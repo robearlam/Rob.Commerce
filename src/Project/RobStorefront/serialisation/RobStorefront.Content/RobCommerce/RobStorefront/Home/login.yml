@@ -1,7 +1,7 @@
 ﻿---
-ID: "f202c7e4-61a5-482b-9d4a-d12c5644c3a4"
-Parent: "10c8a0e3-9958-44ef-88ce-d0b38da9e72a"
-Template: "3f9c1f11-1511-4f24-ab2a-8109f35b027c"
+ID: "022c5dd2-586a-4d16-a1d0-2897c77b5637"
+Parent: "7b6154b6-8251-4e2d-8ab0-e8e232a6f6d7"
+Template: "7811e03e-a60a-47a6-b504-3e4cb9bb325c"
 Path: /sitecore/content/RobCommerce/RobStorefront/Home/login
 DB: master
 SharedFields:
@@ -9,29 +9,29 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: |
-    {79E04B89-212D-47B9-AE2E-6EA1A643D1FB}
+    {9C9F2F23-4195-4B23-BCD1-8E1626FCAB5E}
     {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
-    {D25E24A4-6CDF-4794-B43F-3DA0123E0316}
-    {E154445D-3810-4028-8D42-DEA3935CDD5A}
-    {088F55FF-09EE-449D-BCC9-C2298C92F0DE}
-    {A8B06C27-39BE-4A74-ADFD-EE1E227207CF}
-    {4973432D-69AB-4271-A049-B1C711790BF6}
-    {DF79C7F7-A840-4CC5-A565-EB55B82BF4CC}
-    {3F9C1F11-1511-4F24-AB2A-8109F35B027C}
-    {54385DEA-C04B-475C-8AAD-40308EC8D428}
-    {4B48FA3E-2BFD-4C06-93FF-AAF3E2106F61}
-    {DB99DE13-FF08-4932-B56F-9567ACED4D9E}
-    {E487D8E0-870C-4226-9B6F-8CA07BAD527B}
-    {210CB0FE-B364-4E25-AB56-6A4BA59C278A}
-    {6706448C-92A5-43EA-9711-F6D1914A1706}
-    {A098D12C-83BD-49E4-979A-A9F7B6A37629}
-    {DDFE6B16-6472-4834-81C3-C9454EEF43AB}
-    {2662751A-A685-46EC-897C-EDA79603B232}
-    {5F0FAF12-2C70-486B-BDF2-16BD6030974D}
-    {7EF0323A-0C2E-4E0C-85A2-104BA06E4167}
+    {AFC9211F-DFA8-4444-9EE0-D50A5AE76115}
+    {7755E481-E593-4624-B5E7-B516A48D4035}
+    {C5D53E39-F076-4B5C-A3E5-216455C468D3}
+    {811E83A6-29BA-4E49-9DC7-A6DFCA9F3209}
+    {378453BF-BEEF-4F97-9E98-66CF0374B092}
+    {A0E00961-FB20-43E3-9B54-B1C142D5A23D}
+    {7811E03E-A60A-47A6-B504-3E4CB9BB325C}
+    {909F13B0-268F-4B48-929B-BCF7446AA792}
+    {F9929BD9-588B-4A91-B9C2-76AB3CBC3E5F}
+    {67D04537-1927-4084-9903-BE6762C8C327}
+    {642BC9BE-9CEF-468D-A41F-585B8D861309}
+    {09D2CC7B-9A0F-41DD-ABB4-70E8FE0932F2}
+    {79F9D862-1E9E-460B-8D08-F011AF41E87F}
+    {79581533-89BC-4C85-819E-9EF437756498}
+    {67417BDC-6736-4EE0-8F9D-EFB52EA37AA8}
+    {8D77C27F-B22D-4F7D-9CD1-0B0594BEBE00}
+    {46D9E5E1-2274-4546-B454-850F75D57B24}
+    {D605DD59-C0BA-46EA-9152-DD09AB50601E}
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
-  Value: "{CEED5298-67C3-468C-AF33-EC1FBA9DBCDC}"
+  Value: "{98C76434-76C9-45A8-8E56-5D1E50EF9A17}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -43,14 +43,14 @@ SharedFields:
         <r
           uid="{8A304E43-480F-4F24-8718-79FE8F6714E4}"
           p:before="*"
-          s:ds="{3842560C-3E4F-4F82-A9B1-A28E92BA2875}"
+          s:ds="{A3F9A445-0965-4AE2-BAB3-E907B9E8DBBA}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={F62C2D57-5334-4D9C-9306-A93A2856DD8B}|{E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={8308D635-75BB-4321-B8E1-58C56CBE26F6}|{0BE218D4-740E-4CB7-B4C4-4DA49A2558BB}"
           s:ph="/main/container-3/column-1-1" />
         <r
           uid="{EE656E59-2CAC-430A-9600-21DA709B2832}"
           p:after="r[@uid='{8A304E43-480F-4F24-8718-79FE8F6714E4}']"
-          s:ds="{83BB09C7-4B3B-4DF0-BF7C-70EC2A2295E5}"
+          s:ds="{248863F6-5A62-46B9-8E0B-AC64C21BF760}"
           s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles"
           s:ph="/main/container-3/column-1-1" />
@@ -58,42 +58,42 @@ SharedFields:
           uid="{A243BD8E-0DBA-48F6-BCA5-8F23DC781E3A}"
           p:after="r[@uid='{EE656E59-2CAC-430A-9600-21DA709B2832}']"
           s:id="{5B9272A5-E147-4C16-B9F7-41CCDCB4CB5D}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={0BE218D4-740E-4CB7-B4C4-4DA49A2558BB}"
           s:ph="/main/container-3/column-1-1" />
         <r
           uid="{E8BEB5F8-DD15-4489-AF8D-E64393CEE2D9}"
           p:after="r[@uid='{A243BD8E-0DBA-48F6-BCA5-8F23DC781E3A}']"
-          s:ds="{7B753EFA-5281-4DD8-A87E-4C9D7A5BC91D}"
+          s:ds="{98789F04-849C-4FB1-8A4E-FBA17061F35A}"
           s:id="{97D8D8DA-E6FD-4983-BDB6-ABD28C6E0209}"
           s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}"
           s:ph="/main/container-3/column-1-1" />
         <r
           uid="{13412F33-CC41-4B3F-BDE4-4FDC043A9FDD}"
           p:after="r[@uid='{E8BEB5F8-DD15-4489-AF8D-E64393CEE2D9}']"
-          s:ds="{6DE9A665-0E3C-451C-A655-841996B852FB}"
+          s:ds="{26E47019-7540-4DDD-8B80-4208B332848B}"
           s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
-          s:par="GridParameters={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;Styles={6D2B30D8-B06B-4494-BBD4-41F5B9807EC8}|{1B3F0635-2247-4455-9EA0-B4F4B6F5A976}&amp;FieldNames&amp;Reset Caching Options"
+          s:par="GridParameters={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;Styles={BA06F976-20AF-449A-B918-79D1FA594457}|{5866392C-BC84-4AE7-A648-58A753DC3640}&amp;FieldNames&amp;Reset Caching Options"
           s:ph="/main/container-3/column-1-1" />
         <r
           uid="{E60A5436-1311-4FF2-BFDE-65FB3885E943}"
           p:after="r[@uid='{13412F33-CC41-4B3F-BDE4-4FDC043A9FDD}']"
-          s:ds="{F63C5494-D4FD-4DBA-A679-9EB1CE40DD9C}"
+          s:ds="{6D8B69B5-B553-470E-8741-A084F097E5B3}"
           s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}"
-          s:par="GridParameters=%7BFD09A9D2-113E-49B8-B481-F0B4FFE9B498%7D%7C%7B4C80E2ED-07D6-4652-A90B-3820049E9CE4%7D&amp;FieldNames&amp;Styles=%7B0BB9A48D-2E9F-4168-9785-D5C36E092C37%7D%7C%7B8CCFB69C-F70C-4920-8889-739F6EA8E774%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
+          s:par="GridParameters=%7BFD09A9D2-113E-49B8-B481-F0B4FFE9B498%7D%7C%7B4C80E2ED-07D6-4652-A90B-3820049E9CE4%7D&amp;FieldNames&amp;Styles=%7B02C72C00-C481-43CC-B588-16E5545229C6%7D%7C%7B5DD86070-574A-428F-8065-47A872774D53%7D&amp;Reset Caching Options&amp;RenderingIdentifier"
           s:ph="/main/container-3/column-2-1" />
         <r
           uid="{52F531AD-4E90-46EA-B3D0-925D7D1C4B46}"
           p:after="r[@uid='{E60A5436-1311-4FF2-BFDE-65FB3885E943}']"
-          s:ds="{AD145481-848F-436C-87F7-86DC5A106104}"
+          s:ds="{C042F883-AB4F-416D-B2FD-D6B188211165}"
           s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{2040C827-8640-4E61-907E-D3D5A25696C3}&amp;Styles={CA19E8E4-0EA0-4690-A0E6-F595045CD1F8}|{EBE732F3-C089-4C71-AB4C-1BA2324A17DB}|{6D2B30D8-B06B-4494-BBD4-41F5B9807EC8}|{E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{2040C827-8640-4E61-907E-D3D5A25696C3}&amp;Styles={40909BC8-E0AF-4563-8371-F7EC3B77C46C}|{C580720C-5658-4649-BA31-755C54850AB4}|{BA06F976-20AF-449A-B918-79D1FA594457}|{0BE218D4-740E-4CB7-B4C4-4DA49A2558BB}"
           s:ph="/main/container-3/column-2-1" />
         <r
           uid="{CFAE7757-DAC9-4C12-B810-25A85E26E9A6}"
           p:after="r[@uid='{52F531AD-4E90-46EA-B3D0-925D7D1C4B46}']"
-          s:ds="{F6125C8F-3759-4E45-8C05-9A244C6D9177}"
+          s:ds="{8FF8CF0C-2DF7-4DF0-B368-FBCE4C31FC6B}"
           s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}"
-          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{2040C827-8640-4E61-907E-D3D5A25696C3}&amp;Styles={0BB9A48D-2E9F-4168-9785-D5C36E092C37}|{EBE732F3-C089-4C71-AB4C-1BA2324A17DB}|{E43DFE9A-4A63-4B1D-A8B1-0DBBCEBF5D62}|{6D2B30D8-B06B-4494-BBD4-41F5B9807EC8}"
+          s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{2040C827-8640-4E61-907E-D3D5A25696C3}&amp;Styles={02C72C00-C481-43CC-B588-16E5545229C6}|{C580720C-5658-4649-BA31-755C54850AB4}|{0BE218D4-740E-4CB7-B4C4-4DA49A2558BB}|{BA06F976-20AF-449A-B918-79D1FA594457}"
           s:ph="/main/container-3/column-2-1" />
         <r
           uid="{6472565A-528F-4FC3-93E7-ED3F53699C22}"
@@ -121,20 +121,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073139Z
+      Value: 20190506T215207Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Sign in
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Sign in
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Sign in
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -145,20 +145,20 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073154Z
+      Value: 20190506T215237Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Sign in
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Sign in
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Sign in
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -177,7 +177,7 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
       Hint: Title
       Value: Sign in
 - Language: "ja-JP"
@@ -190,17 +190,17 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073211Z
+      Value: 20190506T215315Z
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Sign in
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
-    - ID: "b83d7522-873f-4d5c-8238-42887a210746"
-      Hint: Title
-      Value: Sign in
+        sitecore\Admin
     - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
       Hint: TwitterCardType
       Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "cf7ef040-988f-40b6-a45f-813cd1f1f63b"
+      Hint: Title
+      Value: Sign in

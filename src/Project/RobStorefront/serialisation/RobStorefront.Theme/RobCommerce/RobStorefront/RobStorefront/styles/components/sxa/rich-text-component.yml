@@ -1,6 +1,6 @@
 ﻿---
-ID: "9881691c-0fc5-4e4e-9375-55a4eaf97c02"
-Parent: "8115f294-2827-44a2-ab9b-8f6da4b4a79b"
+ID: "a4cb708b-3236-44ee-8e36-b108be3b550f"
+Parent: "762e1e24-10ec-43df-b196-722c25447d6a"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/styles/components/sxa/rich-text-component"
 DB: master
@@ -10,7 +10,7 @@ SharedFields:
   Value: "-/media/41DBDFF35F41426FBA59B087E9F16BCA.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "5d99a67e-2d2b-41d1-b836-8c107d4d5c39"
+  BlobID: "0ef09d97-1488-47ff-bd8d-da040a86180f"
   Value: LmNvbXBvbmVudC5yaWNoLXRleHQgewogIHBhZGRpbmctbGVmdDogMDsKfQo=
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size

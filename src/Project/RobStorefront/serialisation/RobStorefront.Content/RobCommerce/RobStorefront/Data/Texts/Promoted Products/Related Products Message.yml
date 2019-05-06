@@ -1,6 +1,6 @@
 ﻿---
-ID: "903ec207-4186-4f3a-9305-4f62f3325b77"
-Parent: "8c2236d6-81d2-4d65-81e3-a4080c203bcc"
+ID: "334807af-8daf-4ed5-a5c9-97243a1bfeb2"
+Parent: "2a0ab1d2-b185-44ae-8dbd-37ca718417f2"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Texts/Promoted Products/Related Products Message
 DB: master
@@ -56,11 +56,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073105Z
+      Value: 20190506T215144Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

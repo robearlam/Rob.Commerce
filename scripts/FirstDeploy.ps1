@@ -64,6 +64,37 @@ Function BootStrapCommerceServices {
     Write-Host "Commerce Services BootStrapping completed"
 }
 
+Function SyncDefaultContentPaths {
+	Write-Host "Syncing Default Content Paths."
+    
+	#Make Request
+	$UrlCommerceShopsServicesBootstrap = ("https://{0}/commerceops/EnsureSyncDefaultContentPaths(environment='HabitatAuthoring',shopName='CommerceEngineDefaultStorefront')" -f $EngineHostName)
+    $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+    $headers.Add("Authorization", $global:sitecoreIdToken)
+    $result = Invoke-RestMethod $UrlCommerceShopsServicesBootstrap -TimeoutSec 1200 -Method PUT -Headers $headers 
+
+	#Check for completion
+	$UrlCheckCommandStatus = ("https://{0}{1}" -f $EngineHostName, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
+	$checkUrl = $UrlCheckCommandStatus -replace "taskIdValue", $result.TaskId
+	$sw = [system.diagnostics.stopwatch]::StartNew()
+    $tp = New-TimeSpan -Minute 10
+    do {
+        Start-Sleep -s 30
+        Write-Host "Checking if $($checkUrl) has completed ..."
+        $result = Invoke-RestMethod $checkUrl -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
+
+        if ($result.ResponseCode -ne "Ok") {
+            $(throw Write-Host "Syncing Default Content Paths failed, please check Engine service logs for more info.")
+        }
+        else {
+            write-Host $result.ResponseCode
+            Write-Host $result.Status
+        }
+    } while ($result.Status -ne "RanToCompletion" -and $sw.Elapsed -le $tp)
+
+    Write-Host "Commerce Services BootStrapping completed"
+}
+
 Function InitializeCommerceServices {
     Write-Host "Initializing Environments"
 	$Environments = @("HabitatAuthoring")
@@ -104,6 +135,7 @@ Function InitializeCommerceServices {
 
 Write-Host "Begining Engine First Deploy Setup..."
 Get-IdServerToken
-BootStrapCommerceServices
 CleanEnvironment
+BootStrapCommerceServices
+SyncDefaultContentPaths
 InitializeCommerceServices

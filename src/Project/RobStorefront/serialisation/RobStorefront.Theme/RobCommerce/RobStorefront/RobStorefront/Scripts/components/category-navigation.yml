@@ -1,6 +1,6 @@
 ﻿---
-ID: "c0666706-c6c1-4915-9b24-65f36c3522e6"
-Parent: "2a057ec9-de7c-4ecf-bbb8-8d68b2db9ea6"
+ID: "ccc46fa5-12b9-476e-873d-9030c1472aa1"
+Parent: "5cc3a0d6-8b68-4788-ad0e-aa3cc16ff220"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/Scripts/components/category-navigation"
 DB: master
@@ -10,11 +10,11 @@ SharedFields:
   Value: "-/media/BE97B19023914444A2F246ECD2E96775.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "abafb6a4-d486-4403-8727-d27b6e99919f"
-  Value: alF1ZXJ5KGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpIHsNCiAgICBqUXVlcnkoJy50b2dnbGUtbmF2JykuY2xpY2soZnVuY3Rpb24oZSkgew0KICAgICAgICBqUXVlcnkodGhpcykudG9nZ2xlQ2xhc3MoJ2FjdGl2ZScpOw0KICAgICAgICBqUXVlcnkoJy5jYXRlZ29yeS1uYXZpZ2F0aW9uLWxpc3QnKS50b2dnbGVDbGFzcygnYWN0aXZlJyk7DQogDQogICAgICAgIGUucHJldmVudERlZmF1bHQoKTsNCiAgICB9KTsNCn0pOw==
+  BlobID: "02d6f72d-4729-41af-94e9-13d9f3475368"
+  Value: JChmdW5jdGlvbigpIHsNCiAgJCgnLnRvZ2dsZS1uYXYnKS5jbGljayhmdW5jdGlvbihlKSB7DQogICAgJCh0aGlzKS50b2dnbGVDbGFzcygnYWN0aXZlJyk7DQogICAgJCgnLmNhdGVnb3J5LW5hdmlnYXRpb24tbGlzdCcpLnRvZ2dsZUNsYXNzKCdhY3RpdmUnKTsNCg0KICAgIGUucHJldmVudERlZmF1bHQoKTsNCiAgfSk7DQoNCiAgdmFyICRjdXJyZW50Q2F0ZWdvcnlJZE1ldGFUYWcgPSAkKCdtZXRhW25hbWU9IkN1cnJlbnRDYXRlZ29yeUlkIl0nKTsNCiAgaWYgKCRjdXJyZW50Q2F0ZWdvcnlJZE1ldGFUYWcpIHsNCiAgICB2YXIgY3VycmVudENhdGVnb3J5SWQgPSAkY3VycmVudENhdGVnb3J5SWRNZXRhVGFnLmF0dHIoJ2NvbnRlbnQnKTsNCiAgICB2YXIgJGN1cnJlbnRDYXRlZ29yeUxpbmsgPSAkKA0KICAgICAgJy5jYXRlZ29yeS1uYXZpZ2F0aW9uLWxpc3QgLmNhdGVnb3J5LWl0ZW0gLmNhdGVnb3J5LWxpbmtbaXRlbWlkPSInICsgY3VycmVudENhdGVnb3J5SWQgKyAnIl0nDQogICAgKTsNCiAgICBpZiAoJGN1cnJlbnRDYXRlZ29yeUxpbmspIHsNCiAgICAgICRjdXJyZW50Q2F0ZWdvcnlMaW5rLmNsb3Nlc3QoJy5jYXRlZ29yeS1pdGVtJykuYWRkQ2xhc3MoJ2FjdGl2ZScpOw0KICAgIH0NCiAgfQ0KfSk7DQo=
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
-  Value: 241
+  Value: 635
 - ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
   Hint: Mime Type
   Value: "application/x-javascript"

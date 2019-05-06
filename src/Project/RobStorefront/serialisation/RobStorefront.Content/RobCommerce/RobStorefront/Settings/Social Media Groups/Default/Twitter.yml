@@ -1,6 +1,6 @@
 ﻿---
-ID: "9c9396c9-4e0b-46ba-8323-9c94182b105b"
-Parent: "c7c8386d-8a7c-41eb-a30f-9310a2523e6d"
+ID: "5943163c-2428-4106-8e9f-2294296ccdce"
+Parent: "05c29853-2a07-4681-8588-a1e76af2d83f"
 Template: "3de7aa7e-961a-4b90-98f2-01ac2be92ec5"
 Path: /sitecore/content/RobCommerce/RobStorefront/Settings/Social Media Groups/Default/Twitter
 DB: master
@@ -19,7 +19,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073151Z
+      Value: 20190506T215232Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -31,7 +31,7 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "66509977-761c-499c-ac9b-65830516ee11"
       Hint: ShareTextProperty
       Value: Title
@@ -41,7 +41,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073206Z
+      Value: 20190506T215303Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -53,7 +53,7 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "66509977-761c-499c-ac9b-65830516ee11"
       Hint: ShareTextProperty
       Value: Title
@@ -63,7 +63,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073016Z
+      Value: 20190506T214738Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -75,7 +75,7 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "66509977-761c-499c-ac9b-65830516ee11"
       Hint: ShareTextProperty
       Value: Title
@@ -85,7 +85,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073224Z
+      Value: 20190506T215340Z
     - ID: "31b5c056-cfd5-4331-950d-25453a808d7c"
       Hint: ButtonCode
       Value: |
@@ -97,7 +97,7 @@ Languages:
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
     - ID: "66509977-761c-499c-ac9b-65830516ee11"
       Hint: ShareTextProperty
       Value: Title

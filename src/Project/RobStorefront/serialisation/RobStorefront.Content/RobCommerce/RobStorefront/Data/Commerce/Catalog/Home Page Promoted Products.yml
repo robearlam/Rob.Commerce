@@ -1,6 +1,6 @@
 ﻿---
-ID: "71cbe529-f8c7-4c85-a82f-7441455f7e71"
-Parent: "7cbd3874-14c4-4c8e-af4f-c641ae4c64b5"
+ID: "20646bc5-5b3e-4799-9c2a-9a98714c97a6"
+Parent: "13995f11-7841-43a5-9ae1-d7bc299f43a9"
 Template: "5b77a415-90d2-4414-97ca-03a4e241957b"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Catalog/Home Page Promoted Products
 DB: master
@@ -91,11 +91,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073100Z
+      Value: 20190506T215134Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1

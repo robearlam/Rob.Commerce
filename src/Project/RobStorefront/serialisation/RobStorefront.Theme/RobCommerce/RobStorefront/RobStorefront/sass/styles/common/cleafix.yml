@@ -1,6 +1,6 @@
 ﻿---
-ID: "53c791a2-5f8a-4464-abfd-6ef27e204e2c"
-Parent: "d967905d-96cf-4175-ad5e-ff774e225db4"
+ID: "e30b9b52-e52f-4db5-8f40-92948892c244"
+Parent: "66606d89-b837-4382-959a-1bbb24e0792e"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/styles/common/cleafix
 DB: master
@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180402T122501Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

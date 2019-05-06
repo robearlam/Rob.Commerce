@@ -1,6 +1,6 @@
 ﻿---
-ID: "d9a49e88-81f0-4b26-8a91-fbdfef293240"
-Parent: "79e04b89-212d-47b9-ae2e-6ea1a643d1fb"
+ID: "3bd9d462-4299-4702-acc9-08483552401a"
+Parent: "9c9f2f23-4195-4b23-bcd1-8e1626fcab5e"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: /sitecore/templates/Project/RobCommerce/Page/Content
 DB: master
@@ -11,8 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T072705Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\virtualssuser
+      Value: 20190506T214423Z

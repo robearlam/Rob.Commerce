@@ -1,7 +1,7 @@
 ﻿---
-ID: "923b886d-35a0-442a-9baf-74a7e1681e83"
-Parent: "7855de6c-b011-423d-ba1f-e33de3cdd131"
-Template: "7855de6c-b011-423d-ba1f-e33de3cdd131"
+ID: "ed9e5123-ee5d-4182-8263-79738ec6e237"
+Parent: "d615f395-fa77-4304-8ec5-2ed2f9d3ecda"
+Template: "d615f395-fa77-4304-8ec5-2ed2f9d3ecda"
 Path: /sitecore/templates/Project/RobCommerce/Checkout/__Standard Values
 DB: master
 SharedFields:
@@ -9,10 +9,10 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: |
-    {B6BBB848-EE3B-4695-8D5F-93418FBB50AB}
-    {FA4FBC21-751B-4425-8DB7-3830BB5C7255}
-    {929A9D1C-D5CF-4723-86A9-514BDFF020C3}
-    {58DD42B3-22BA-40E6-8270-4138DE8E4B6A}
+    {551E6573-4081-4DBB-A53F-D1F32A2ACBE1}
+    {83227A92-E89B-42D5-B6D4-C7DCB483FD5F}
+    {F4AB994C-4F80-4833-B6E9-9A301C742C72}
+    {E709F2F7-FB3C-4077-B60C-17B7B056892D}
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
   Value: "{E9658F6A-2775-4AB7-8147-54B66BDF1351}"

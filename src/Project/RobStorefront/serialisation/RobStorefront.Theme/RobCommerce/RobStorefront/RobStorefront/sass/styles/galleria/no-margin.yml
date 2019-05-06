@@ -1,6 +1,6 @@
 ﻿---
-ID: "af71bf70-e80d-4a44-99bc-9e388ca3f329"
-Parent: "9d0c554c-65f2-4c52-870f-82bd1cbc1108"
+ID: "670e1ce3-22ca-484d-abcb-ff17e607332f"
+Parent: "4f6fa6cf-a66d-47a3-a529-3fa2056f2129"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/styles/galleria/no-margin"
 DB: master
@@ -22,17 +22,6 @@ SharedFields:
   Hint: Extension
   Value: scss
 Languages:
-- Language: da
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20180402T122539Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

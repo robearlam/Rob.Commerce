@@ -1,6 +1,6 @@
 ﻿---
-ID: "7ef0323a-0c2e-4e0c-85a2-104ba06e4167"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "d605dd59-c0ba-46ea-9152-dd09ab50601e"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Buy Gift Card
 DB: master
@@ -12,14 +12,14 @@ SharedFields:
   Hint: __Base template
   Type: tree list
   Value: |
-    {E154445D-3810-4028-8D42-DEA3935CDD5A}
+    {7755E481-E593-4624-B5E7-B516A48D4035}
     {79D8F390-0948-43D8-993E-582491C7F545}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 3300
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{EEF90240-F402-49CC-A51F-20E1F6E66CBA}"
+  Value: "{D7B5B6AE-981C-4F4F-B90E-E35DF4FCADE7}"
 Languages:
 - Language: da
   Fields:

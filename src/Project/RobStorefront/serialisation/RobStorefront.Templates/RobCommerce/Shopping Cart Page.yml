@@ -1,6 +1,6 @@
 ﻿---
-ID: "088f55ff-09ee-449d-bcc9-c2298c92f0de"
-Parent: "07039a91-e2a4-428a-88d9-fcaa28ce32eb"
+ID: "c5d53e39-f076-4b5c-a3e5-216455c468d3"
+Parent: "210ee98d-8d4e-4368-b666-0f618888f64f"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
 Path: /sitecore/templates/Project/RobCommerce/Shopping Cart Page
 DB: master
@@ -20,13 +20,13 @@ SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{79E04B89-212D-47B9-AE2E-6EA1A643D1FB}"
+  Value: "{9C9F2F23-4195-4B23-BCD1-8E1626FCAB5E}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{BC41F561-476B-47EE-9DF0-782374AB2357}"
+  Value: "{9F3F3229-4DE5-41D7-B06B-578CBF85E06C}"
 Languages:
 - Language: en
   Versions:

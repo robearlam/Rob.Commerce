@@ -1,6 +1,6 @@
 ﻿---
-ID: "ad145481-848f-436c-87f7-86dc5a106104"
-Parent: "6ec61f8f-fb7f-4375-981b-8397a368d615"
+ID: "c042f883-ab4f-416d-b2fd-d6b188211165"
+Parent: "2ecf3cc0-f4bb-4b5f-9116-d4215e5ca1e9"
 Template: "e24e0789-a058-48bf-abb6-c69c0e60b6b7"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/Register New Account Link
 DB: master
@@ -23,7 +23,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="Register new account" title="Register new account" querystring="" target="" id="{6411CB13-C5B1-464C-BE2F-8471CBFB8AF1}" />
+        <link linktype="internal" text="Register new account" title="Register new account" querystring="" target="" id="{B5682631-5881-4B7F-BB6B-0CE49327D903}" />
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -42,7 +42,7 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="Register new account" title="Neues Konto registrieren" querystring="" target="" id="{6411CB13-C5B1-464C-BE2F-8471CBFB8AF1}" />
+        <link linktype="internal" text="Neues Konto einrichten" title="neues Konto einrichten" querystring="" target="" id="{B5682631-5881-4B7F-BB6B-0CE49327D903}" />
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -61,18 +61,18 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="Register new account" title="Register new account" querystring="" target="" id="{6411CB13-C5B1-464C-BE2F-8471CBFB8AF1}" />
+        <link linktype="internal" text="Register new account" title="Register new account" querystring="" target="" id="{B5682631-5881-4B7F-BB6B-0CE49327D903}" />
 - Language: "fr-FR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073103Z
+      Value: 20190506T215140Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -91,4 +91,4 @@ Languages:
     - ID: "dd05144a-bd66-4ea3-956a-4b7104daaba3"
       Hint: Link
       Value: |
-        <link linktype="internal" text="新規のアカウントを登録" title="Register new account" querystring="" target="" id="{6411CB13-C5B1-464C-BE2F-8471CBFB8AF1}" />
+        <link linktype="internal" text="新規のアカウントを登録" title="Register new account" querystring="" target="" id="{B5682631-5881-4B7F-BB6B-0CE49327D903}" />

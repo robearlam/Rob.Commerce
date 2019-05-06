@@ -1,6 +1,6 @@
 ﻿---
-ID: "3e37df8e-152e-4816-a7b1-277bafa01f6b"
-Parent: "a12c4b73-1975-4a85-b037-f3836277b5a8"
+ID: "d936631f-9538-45b0-80be-b8005078fc41"
+Parent: "0bbc1325-30f4-401e-aa96-7c96c4053f64"
 Template: "b86fa817-5304-44b9-9098-2f5d53f033e9"
 Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Shopping Cart Total
 DB: master
@@ -25,6 +25,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: Besparelser i alt
 - Language: "de-DE"
   Versions:
   - Version: 1
@@ -42,6 +45,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: Gesamtersparnis
 - Language: en
   Versions:
   - Version: 1
@@ -71,11 +77,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20181215T073025Z
+      Value: 20190506T214748Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\virtualssuser
+        sitecore\Admin
 - Language: "ja-JP"
   Versions:
   - Version: 1
@@ -93,3 +99,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\virtualssuser
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: 割引合計

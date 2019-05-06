@@ -1,6 +1,6 @@
 ﻿---
-ID: "c0b958b6-2b66-485c-a56b-28fe1aa1e636"
-Parent: "8339283d-63b7-468e-afea-63c0ae8a6ea6"
+ID: "6079e7e8-2f5d-46c4-a24b-fcad98305006"
+Parent: "473bde6f-5b6e-402f-b4b5-0c3a31d109c5"
 Template: "962b53c4-f93b-4df9-9821-415c867b8903"
 Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/components/sxa/divider-component"
 DB: master
@@ -10,7 +10,7 @@ SharedFields:
   Value: "-/media/BC8CFF0DC9A747F0924524826B503D78.ashx?h=16&thn=1&w=16"
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
-  BlobID: "96eba842-80c9-4e17-b0d5-196ff57ff2a1"
+  BlobID: "0b30b2a9-1bd5-4204-84e2-e3eb98d11d93"
   Value: QGltcG9ydCAnLi4vLi4vYmFzZS9pbmRleCc7DQpAaW1wb3J0ICcuLi8uLi9taXhpbnMvaW5kZXgnOw0KLmNvbXBvbmVudC5kaXZpZGVyIHsNCiAgICBwYWRkaW5nLWxlZnQ6IDA7DQogICAgcGFkZGluZy1yaWdodDogMDsNCiAgICAuY29tcG9uZW50LWNvbnRlbnQgew0KICAgICAgICBociB7DQogICAgICAgICAgICBjb2xvcjogbGlnaHRlbigkYm9yZGVyLWNvbG9yLCAxNSUpOw0KICAgICAgICB9DQogICAgfQ0KfQ==
 - ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
   Hint: Size
