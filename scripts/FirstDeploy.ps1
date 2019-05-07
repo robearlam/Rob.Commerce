@@ -56,16 +56,24 @@ Function CleanEnvironment {
 }
 
 Function BootStrapCommerceServices {
-    Write-Host "BootStrapping Commerce Services."
+    Write-Host "BootStrapping Commerce Services..."
     $UrlCommerceShopsServicesBootstrap = ("https://{0}/commerceops/Bootstrap()" -f $EngineHostName)
     $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
     $headers.Add("Authorization", $global:sitecoreIdToken)
-    Invoke-RestMethod $UrlCommerceShopsServicesBootstrap -TimeoutSec 1200 -Method PUT -Headers $headers 
-    Write-Host "Commerce Services BootStrapping completed"
+    $result = Invoke-RestMethod $UrlCommerceShopsServicesBootstrap -TimeoutSec 1200 -Method PUT -Headers $headers 
+	if ($result.ResponseCode -eq "Ok") {
+        Write-Host "BootStrapping completed successfully"
+    }
+    else {
+        Write-Host "BootStrapping failed"
+        Exit -1
+    }
+
+    Write-Host "Commerce Services BootStrapping completed..."
 }
 
 Function SyncDefaultContentPaths {
-	Write-Host "Syncing Default Content Paths."
+	Write-Host "Syncing Default Content Paths..."
     
 	#Make Request
 	$UrlCommerceShopsServicesBootstrap = ("https://{0}/commerceops/EnsureSyncDefaultContentPaths(environment='HabitatAuthoring',shopName='CommerceEngineDefaultStorefront')" -f $EngineHostName)
@@ -79,7 +87,7 @@ Function SyncDefaultContentPaths {
 	$sw = [system.diagnostics.stopwatch]::StartNew()
     $tp = New-TimeSpan -Minute 10
     do {
-        Start-Sleep -s 30
+        Start-Sleep -s 10
         Write-Host "Checking if $($checkUrl) has completed ..."
         $result = Invoke-RestMethod $checkUrl -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
 
@@ -92,45 +100,41 @@ Function SyncDefaultContentPaths {
         }
     } while ($result.Status -ne "RanToCompletion" -and $sw.Elapsed -le $tp)
 
-    Write-Host "Commerce Services BootStrapping completed"
+    Write-Host "Syncing Default Content Paths completed"
 }
 
 Function InitializeCommerceServices {
-    Write-Host "Initializing Environments"
-	$Environments = @("HabitatAuthoring")
-    foreach ($env in $Environments) {
-        Write-Host "Initializing $($env) ..."
-		$initializeParam = "/commerceops/InitializeEnvironment()"
-		$UrlInitializeEnvironment = ("https://{0}{1}" -f $EngineHostName, $initializeParam)
-		$UrlCheckCommandStatus = ("https://{0}{1}" -f $EngineHostName, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
+    Write-Host "Initializing HabitatAuthoring Environment..."
 
-		$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-		$headers.Add("Authorization", $global:sitecoreIdToken);
-		$headers.Add("Environment", $env);
-
-        $result = Invoke-RestMethod $UrlInitializeEnvironment -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
-        $checkUrl = $UrlCheckCommandStatus -replace "taskIdValue", $result.TaskId
-
-        $sw = [system.diagnostics.stopwatch]::StartNew()
-        $tp = New-TimeSpan -Minute 10
-        do {
-            Start-Sleep -s 30
-            Write-Host "Checking if $($checkUrl) has completed ..."
-            $result = Invoke-RestMethod $checkUrl -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
-
-            if ($result.ResponseCode -ne "Ok") {
-                $(throw Write-Host "Initialize environment $($env) failed, please check Engine service logs for more info.")
-            }
-            else {
-                write-Host $result.ResponseCode
-                Write-Host $result.Status
-            }
-        } while ($result.Status -ne "RanToCompletion" -and $sw.Elapsed -le $tp)
-
-        Write-Host "Initialization for $($env) completed ..."
+	#Make request
+	$UrlInitializeEnvironment = ("https://{0}/commerceops/InitializeEnvironment()" -f $EngineHostName)
+	$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+	$headers.Add("Authorization", $global:sitecoreIdToken);
+	$body = @{
+        environment = "HabitatAuthoring"
     }
+    $result = Invoke-RestMethod $UrlInitializeEnvironment -TimeoutSec 1200 -Method Post -Headers $headers -Body ($body | ConvertTo-Json) -ContentType "application/json"
 
-    Write-Host "Initialization completed ..."
+	#Check for completion
+	$UrlCheckCommandStatus = ("https://{0}{1}" -f $EngineHostName, "/commerceops/CheckCommandStatus(taskId=taskIdValue)")
+	$checkUrl = $UrlCheckCommandStatus -replace "taskIdValue", $result.TaskId
+    $sw = [system.diagnostics.stopwatch]::StartNew()
+    $tp = New-TimeSpan -Minute 10
+    do {
+        Start-Sleep -s 10
+        Write-Host "Checking if $($checkUrl) has completed ..."
+        $result = Invoke-RestMethod $checkUrl -TimeoutSec 1200 -Method Get -Headers $headers -ContentType "application/json"
+
+        if ($result.ResponseCode -ne "Ok") {
+            $(throw Write-Host "Initialize environment HabitatAuthoring failed, please check Engine service logs for more info.")
+        }
+        else {
+            write-Host $result.ResponseCode
+            Write-Host $result.Status
+        }
+    } while ($result.Status -ne "RanToCompletion" -and $sw.Elapsed -le $tp)
+
+    Write-Host "Initializing HabitatAuthoring Environment completed ..."
 }
 
 Write-Host "Begining Engine First Deploy Setup..."

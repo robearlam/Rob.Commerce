@@ -18,7 +18,7 @@ module.exports = function () {
         engineHostname: "commerceauthoring." + siteName + ".local",
         identityServerHostname: siteName + ".identityserver",
         adminUser: "admin",
-        adminPassword: "sitecore",
+        adminPassword: "b",
         engineRoles: [
             {
                 path: webroot + "\\CommerceAuthoring_" + siteName,
