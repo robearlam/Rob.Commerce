@@ -29,7 +29,7 @@ SharedFields:
 - ID: "fdd0d6ae-bccd-4cd9-a078-3103d720d2e7"
   Hint: Use Direct Navigation
   Type: Checkbox
-  Value: 1
+  Value: 0
 Languages:
 - Language: en
   Fields:
