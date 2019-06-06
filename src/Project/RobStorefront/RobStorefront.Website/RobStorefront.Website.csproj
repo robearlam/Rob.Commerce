@@ -69,7 +69,7 @@
     <None Include="AssemblyLists\Sitecore.XConnect.Platform.Assemblies 9.1.0 rev. 001564.csv" />
     <None Include="Directory.build.props" />
     <None Include="Helixbase.Website.wpp.targets" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\Local-Website.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,7 +114,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
-    <PublishProfile>Local</PublishProfile>
+    <PublishProfile>Local-Website</PublishProfile>
   </PropertyGroup>
   <!-- The rest can go into ProjectName.wpp.targets if you prefer -->
   <PropertyGroup>
