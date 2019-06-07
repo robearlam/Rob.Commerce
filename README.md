@@ -14,7 +14,10 @@ Edit the _gulp-config.js_ & _z.RobStorefront.DevSettings.config_ to ensure that 
 The gulp scripts are written using ES6, which isn't supported OOTB in VS2017, follow the fix here to enable that: https://github.com/madskristensen/NpmTaskRunner/issues/47
 
 ### Deploy
-Excucute the _first-install_ task to build and deploy the engine to all of your roles, and all of website projects. This will also clean the OOTB configured environments and re-bootstrap and initialize the configuration contained in this solution. Note that the final step _initial-engine-setup_ may take a little time to complete.
+Excucute the _first-install_ task to build and deploy the engine to all of your roles. This will also clean the OOTB configured environments and re-bootstrap and initialize the configuration contained in this solution. Note that the final step _initial-engine-setup_ may take a little time to complete.
+
+### Website
+The website projects are deployed using Helix Publishing Pipelines. Set the correct location in the _Local-Website.pubxml_ file, then simply build and the correct assets will be deployed.
 
 ### Deploy Unicorn Items
 Deploy Unicorn items.

@@ -3,8 +3,6 @@ let gulp = require('gulp');
 let fs = require('fs');
 let del = require('del');
 let exec = require('child_process').exec;
-var _msbuild = require('msbuild');
-let flatmap = require('gulp-flatmap');
 
 var config;
 if (fs.existsSync('./gulp-config.js.user')) {
@@ -15,17 +13,6 @@ else {
 }
 module.exports.config = config;
 
-gulp.task("Publish-Foundation-Projects", function () {
-    return publishProjects("./src/Foundation");
-});
-
-gulp.task("Publish-Feature-Projects", function () {
-    return publishProjects("./src/Feature");
-}); 
-
-gulp.task("Publish-Project-Projects", function () {
-    return publishProjects("./src/Project");
-});
 
 gulp.task('Stop-Local-IIS', function (callback) {
     exec('Powershell.exe iisreset /stop', function (err, stdout) {
@@ -53,16 +40,6 @@ gulp.task('Copy-Published-Engine-To-All-Instances', function (callback) {
      }, callback());
 });
 
-gulp.task('Transform-Website', function (callback) {
-    var transformscript = 'Powershell.exe ./scripts/TransformWebsite.ps1' +
-        ' -Thumbprint \'' + config.xcCertificateThumbprint + "\'" +
-        ' -EngineConnectIncludeDir \'' + config.engineConnectIncludeDir + '\'';
-
-    exec(transformscript, function (err, stdout) {
-        console.log(stdout);
-        callback(err);
-    });
-});
 
 gulp.task('Transform-All-Engine-Roles', function (callback) {
     return config.engineRoles.forEach(function (engineRole) {
@@ -128,20 +105,10 @@ gulp.task('02-Publish-Commerce-Engine-To-Instances',
             done();
 }));
 
-gulp.task('03-Publish-Website-Projects',
-    gulp.series(
-        "Publish-Foundation-Projects",
-        "Publish-Feature-Projects",
-        "Publish-Project-Projects",
-        "Transform-Website", function (done) {
-            done();
-}));
-
 gulp.task("default",
     gulp.series(
         "01-Build-Commerce-Engine",
-        "02-Publish-Commerce-Engine-To-Instances",
-        "03-Publish-Website-Projects", function (done) {
+        "02-Publish-Commerce-Engine-To-Instances", function (done) {
             done();
 }));
 
@@ -168,28 +135,3 @@ gulp.task("first-install",
         "initial-engine-setup", function (done) {
             done();
 }));
-
-var publishProjects = function (location) {
-    console.log("publish to " + config.sitecoreRoot + " folder");
-
-    return gulp.src([location + "/**/*Website.csproj"])
-               .pipe(flatmap(function (stream, file) {
-                   return publishStream(stream, file);
-               }));
-};
-
-var publishStream = function (stream, file) {
-    console.log("publishing: " + file.path);  
-    
-    var msbuild = new _msbuild(); 
-    msbuild.sourcePath = file.path;
-    msbuild.configuration = config.buildConfiguration;
-    msbuild.publishProfile = 'Local_Publish';
-
-    var overrideParams = [];
-    overrideParams.push('/p:VisualStudioVersion=' + config.buildToolsVersion.toFixed(1));  
-    msbuild.config('overrideParams',overrideParams);
-    msbuild.publish(); 
-
-    return stream;
-}

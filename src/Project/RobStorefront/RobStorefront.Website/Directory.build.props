@@ -5,17 +5,4 @@
     <PublishProfile>Local-Website</PublishProfile>
   </PropertyGroup>
 
-  <!-- As long as your modules follow these patterns, their content will automatically be included in the publish -->
-  <ItemGroup>
-    <ProjectReference Include="..\..\Foundation\*\code\*.csproj">
-      <Name>%(Filename)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Feature\*\code\*.csproj">
-      <Name>%(Filename)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Project\*\code\*.csproj">
-      <Name>%(Filename)</Name>
-    </ProjectReference>
-  </ItemGroup>
- 
 </Project>

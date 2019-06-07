@@ -61,10 +61,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\Project\z.RobStorefront.DevSettings.config" />
-    <None Include="App_Config\Include\Project\Project.RobStorefront.Serialisation.config">
+    <Content Include="App_Config\Include\Project\z.RobStorefront.DevSettings.config" />
+    <Content Include="App_Config\Include\Project\Project.RobStorefront.Serialisation.config">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
     <None Include="AssemblyLists\Sitecore.Platform.Assemblies 9.1.0 rev. 001564.csv" />
     <None Include="AssemblyLists\Sitecore.XConnect.Platform.Assemblies 9.1.0 rev. 001564.csv" />
     <None Include="Directory.build.props" />
