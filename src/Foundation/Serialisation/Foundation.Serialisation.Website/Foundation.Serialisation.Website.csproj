@@ -76,6 +76,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.DeployedContentEditorWarnings.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
+    <None Include="Properties\PublishProfiles\CI.pubxml" />
     <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>

@@ -143,6 +143,7 @@
     <Content Include="Views\Commerce\ProductCompare\AddVewCompareButton.cshtml" />
     <Content Include="Views\Commerce\ProductCompare\_ProductComparePanel.cshtml" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CI.pubxml" />
     <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Views\Web.config">
       <SubType>Designer</SubType>
