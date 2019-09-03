@@ -93,7 +93,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Rules.Website.Serialisation.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\CI.pubxml" />
     <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />

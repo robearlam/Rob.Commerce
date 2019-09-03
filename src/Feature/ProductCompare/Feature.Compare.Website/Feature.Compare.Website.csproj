@@ -138,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductCompare.config" />
-    <Content Include="App_Config\Include\Feature\Commerce\Feature.ProductCompare.Serialisation.config" />
     <Content Include="Views\Commerce\ProductCompare\ProductCompare.cshtml" />
     <Content Include="Views\Commerce\ProductCompare\AddVewCompareButton.cshtml" />
     <Content Include="Views\Commerce\ProductCompare\_ProductComparePanel.cshtml" />
