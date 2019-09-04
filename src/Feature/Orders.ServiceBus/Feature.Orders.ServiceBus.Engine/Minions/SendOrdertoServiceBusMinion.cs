@@ -12,16 +12,11 @@ namespace Feature.Orders.ServiceBus.Engine.Minions
     {
         protected SendOrderToServiceBusPipeline Pipeline { get; set; }
 
-        public override void Initialize(IServiceProvider serviceProvider, ILogger logger, MinionPolicy policy, CommerceEnvironment environment, CommerceContext globalContext)
+        public override void Initialize(IServiceProvider serviceProvider, MinionPolicy policy, CommerceContext globalContext)
         {
-            base.Initialize(serviceProvider, logger, policy, environment, globalContext);
+            base.Initialize(serviceProvider, policy, globalContext);
 
             Pipeline = serviceProvider.GetService<SendOrderToServiceBusPipeline>();
-        }
-
-        public override Task<MinionRunResultsModel> Run()
-        {
-            throw new NotImplementedException();
         }
 
         protected override async Task<MinionRunResultsModel> Execute()

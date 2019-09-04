@@ -10,12 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Sitecore.Commerce.Core" Version="3.0.17" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="3.0.17" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="3.0.15" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="3.0.10" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="3.0.9" />
-    <PackageReference Include="Sitecore.Commerce.Plugin.Views" Version="3.0.17" />
+    <PackageReference Include="Sitecore.Commerce.Core" Version="4.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.BusinessUsers" Version="4.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Catalog" Version="4.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Inventory" Version="4.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Pricing" Version="4.0.*" />
+    <PackageReference Include="Sitecore.Commerce.Plugin.Views" Version="4.0.*" />
   </ItemGroup>
 
 </Project>

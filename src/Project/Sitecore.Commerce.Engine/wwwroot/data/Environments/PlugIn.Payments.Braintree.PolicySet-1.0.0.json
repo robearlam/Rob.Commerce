@@ -1,4 +1,4 @@
-﻿{
+{
   "$type": "Sitecore.Commerce.Core.PolicySet, Sitecore.Commerce.Core",
   "Id": "Entity-PolicySet-BraintreePolicySet",
   "Version": 1,
@@ -8,7 +8,7 @@
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
-        "$type": "Feature.Payments.Engine.BraintreeClientPolicy, Feature.Payments.Engine",
+        "$type": "Plugin.Sample.Payments.Braintree.BraintreeClientPolicy, Plugin.Sample.Payments.Braintree",
         "Environment": "sandbox",
         "MerchantId": "624qhcdgygp58k3n",
         "PublicKey": "vbfd3dm8dhb2pfvc",

@@ -23,7 +23,7 @@ namespace Feature.ProductImport.Engine.Commands
         {
             using (CommandActivity.Start(commerceContext, this))
             {
-                var pipelineContextOptions = commerceContext.GetPipelineContextOptions();
+                //var pipelineContextOptions = commerceContext.GetPipelineContextOptions();
                 var catalogsArgument = new ImportCsvProductsArgument(importFile, mode)
                 {
                     ErrorThreshold = errorThreshold
@@ -32,7 +32,8 @@ namespace Feature.ProductImport.Engine.Commands
                 if (publishEntities)
                     commerceContext.Environment.SetPolicy(new AutoApprovePolicy());
 
-                var importResult = await _importCsvProductsPipeline.Run(catalogsArgument, pipelineContextOptions);
+                //var importResult = await _importCsvProductsPipeline.Run(catalogsArgument, pipelineContextOptions);
+                var importResult = await _importCsvProductsPipeline.Run(catalogsArgument);
                 if (importResult != null)
                 {
                     Messages.AddRange(importResult.Errors);

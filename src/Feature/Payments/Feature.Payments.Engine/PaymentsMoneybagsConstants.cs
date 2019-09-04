@@ -38,7 +38,7 @@
                 /// <summary>
                 /// The settle federated payment block name
                 /// </summary>
-                public const string SettleFederatedPaymentBlock = "PaymentsMoneybags.block.SettleFederatedPayment";
+                public const string SettleOrderSalesActivitiesBlock = "PaymentsMoneybags.block.SettleOrderSalesActivitiesBlock";
 
                 /// <summary>
                 /// The void federated payment block

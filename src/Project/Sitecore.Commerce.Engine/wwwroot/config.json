@@ -1,6 +1,6 @@
 {
   "AppSettings": {
-    "SiteTitle": "Sitecore Commerce Engine",
+    "SiteTitle": "CommerceAuthoring_xc92",
     "BootStrapFile": "Global",
     "DeploymentId": "Deployment01",
     "EnvironmentName": "HabitatAuthoring",
@@ -8,24 +8,18 @@
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
     "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
-    "SitecoreIdentityServerUrl": "https://xc91.identityserver",
+    "SitecoreIdentityServerUrl": "https://xc92.IdentityServer",
     "AllowedOrigins": [
       "https://localhost:4200",
-      "http://xc91.sc",
-      "https://bizfx.xc91.local"
+      "https://bizfx.xc92.com",
+      "https://sxa.storefront.com" 
     ],
-    "AntiForgeryEnabled": false,
-    "CommerceServicesHostPostfix": "xc91.local",
-    "UseHttpsInKestrel": true,
-    "SslPort": 5000,
-    "SslPfxPath": "wwwroot/localhost.pfx",
-    "SslPfxPassword": "sitecore"
+    "AntiForgeryEnabled": true,
+    "CommerceServicesHostPostfix": "xc92.com",
+    "UseHttpsInKestrel": false
   },
   "ApplicationInsights": {
-    "InstrumentationKey": "",
-    "MinimumLevel": "Warning",
-    "DeveloperMode": true,
-    "TelemetryEnabled": false
+    "InstrumentationKey": ""
   },
   "Logging": {
     "IncludeScopes": false,
@@ -34,12 +28,15 @@
       "System": "Warning",
       "Microsoft": "Warning"
     },
-    "ApplicationInsightsLoggingEnabled": false,
-    "PipelineTraceLoggingEnabled": false,
-    "SerilogLoggingEnabled": true
+    "SerilogLoggingEnabled": true,
+    "PipelineTraceLoggingEnabled": false
   },
   "Serilog": {
-    "Using":  ["Serilog.Sinks.Literate", "Serilog.Sinks.File"],
+    "Using": [
+      "Serilog.Sinks.Literate",
+      "Serilog.Sinks.File",
+      "Serilog.Sinks.ApplicationInsights" 
+    ],
     "MinimumLevel": {
       "Default": "Warning",
       "Override": {
@@ -47,18 +44,61 @@
         "System": "Warning"
       }
     },
+    "WriteTo": [
+      {
+        "Name": "ApplicationInsights",
+        "Args": {
+          "restrictedToMinimumLevel": "Warning",
+          "telemetryConverter": "Serilog.Sinks.ApplicationInsights.Sinks.ApplicationInsights.TelemetryConverters.TraceTelemetryConverter, Serilog.Sinks.ApplicationInsights"
+        }
+      }
+    ],
     "FileSizeLimitBytes": 100000000
   },
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "434947B07E07ABEB02405CBCE54C83F20AE0141F",
+        "Thumbprint": "FF35D1BCFC347F7364E2BA38D134590699BDA0CB",
         "DefaultRoles": [
           "sitecore\\QA",
-          "sitecore\\Commerce Business User"
+          "sitecore\\Commerce Business User" 
         ]
       }
     ],
     "CertificateHeaderName": "X-CommerceEngineCert"
-  } 
+  },
+  "Caching": {
+    "Memory": {
+      "Enabled": false,
+      "CacheStoreName": "Commerce-Memory-Store"
+    },
+    "Redis": {
+      "Enabled": true,
+      "CacheStoreName": "Commerce-Redis-Store",
+      "Options": {
+        "Configuration": "localhost",
+        "InstanceName": "Redis"
+      }
+    }
+  },
+  "Compression": {
+    "Enabled": true,
+    "ResponseCompressionOptions": {
+      "EnableForHttps": true,
+      "MimeTypes": [
+        "text/plain",
+        "text/css",
+        "application/javascript",
+        "text/html",
+        "application/xml",
+        "text/xml",
+        "application/json",
+        "text/json",
+        "application/wasm"
+      ]
+    },
+    "GzipCompressionProviderOptions": {
+      "Level": "Fastest" 
+    }
+  }
 }

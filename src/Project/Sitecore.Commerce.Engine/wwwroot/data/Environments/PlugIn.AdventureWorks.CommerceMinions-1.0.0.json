@@ -1,6 +1,6 @@
 {
     "$type":  "Sitecore.Commerce.Core.CommerceEnvironment, Sitecore.Commerce.Core",
-    "ArtifactStoreId":  "78A1EA61-1F37-42A7-AC89-9A3F46D60CA5",
+    "ArtifactStoreId":  "40E77B7B-4BE9-4186-B53B-5BFD89A6A83B",
     "Components":  {
                        "$type":  "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Component, Sitecore.Commerce.Core]], mscorlib",
                        "$values":  [
@@ -12,14 +12,14 @@
                                                                                "CommerceEnvironments"
                                                                            ]
                                                            },
-                                           "Id":  "efe49ff743d34b649fffcof293615cd9"
+                                           "Id":  "c132ddc8e1b24a0ca378b6d069c14b84"
                                        }
                                    ]
                    },
-    "Id":  "Entity-CommerceEnvironment-HabitatMinions",
+    "Id":  "Entity-CommerceEnvironment-AdventureWorksMinions",
     "Version":  1,
     "IsPersisted":  false,
-    "Name":  "HabitatMinions",
+    "Name":  "AdventureWorksMinions",
     "Policies":  {
                      "$type":  "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
                      "$values":  [

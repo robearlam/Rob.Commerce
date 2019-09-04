@@ -148,7 +148,7 @@ namespace Feature.Initialization.Engine.Pipelines.Blocks
             using (var stream = new FileStream(GetPath("Habitat.zip"), FileMode.Open, FileAccess.Read))
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
-                await _importCatalogsCommand.Process(context.CommerceContext, file, CatalogConstants.Replace, 10);
+                await _importCatalogsCommand.Process(context.CommerceContext, file, CatalogConstants.Replace, 100, 100);
             }
         }
 

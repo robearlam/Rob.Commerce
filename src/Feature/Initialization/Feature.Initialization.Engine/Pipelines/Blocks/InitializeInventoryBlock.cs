@@ -30,7 +30,7 @@ namespace Feature.Initialization.Engine.Pipelines.Blocks
             using (var stream = new FileStream(GetPath("Habitat_Inventory.zip"), FileMode.Open, FileAccess.Read))
             {
                 var file = new FormFile(stream, 0, stream.Length, stream.Name, stream.Name);
-                await ImportInventorySetsCommand.Process(context.CommerceContext, file, CatalogConstants.Replace, 10);
+                await ImportInventorySetsCommand.Process(context.CommerceContext, file, CatalogConstants.Replace, 100, 100);
             }
 
             return arg;

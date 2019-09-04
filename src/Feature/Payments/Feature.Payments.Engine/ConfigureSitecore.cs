@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Commerce.Core;
 using Sitecore.Commerce.Plugin.Orders;
 using Sitecore.Commerce.Plugin.Payments;
+using Sitecore.Commerce.Plugin.FaultInjection;
 using Sitecore.Framework.Configuration;
 using Sitecore.Framework.Pipelines.Definitions.Extensions;
 using GetClientTokenBlock = Feature.Payments.Engine.Pipelines.Blocks.GetClientTokenBlock;
@@ -47,12 +48,7 @@ namespace Feature.Payments.Engine
                 .ConfigurePipeline<IReleaseOnHoldOrderPipeline>(d =>
                 {
                     d.Add<UpdateFederatedPaymentBlock>().After<ValidateOnHoldOrderBlock>();
-                })
-                .ConfigurePipeline<ISettleSalesActivityPipeline>(d =>
-                {
-                    d.Add<SettleFederatedPaymentBlock>().After<ValidateSalesActivityBlock>()
-                     .Add<UpdateOrderAfterFederatedPaymentSettlementBlock>().After<SettleFederatedPaymentBlock>();
-                })               
+                })           
                 .ConfigurePipeline<IRefundPaymentsPipeline>(d =>
                 {
                     d.Add<RefundFederatedPaymentBlock>().Before<PersistOrderBlock>();
@@ -62,7 +58,8 @@ namespace Feature.Payments.Engine
                     d.Add<VoidCancelOrderFederatedPaymentBlock>().After<GetPendingOrderBlock>();
                 })
 
-                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); }));
+                .ConfigurePipeline<IRunningPluginsPipeline>(c => { c.Add<RegisteredPluginBlock>().After<RunningPluginsBlock>(); })
+                .ConfigurePipeline<IReleasedOrdersMinionPipeline>(c => { c.Add<SettleOrderSalesActivitiesBlock>().After<SettlePaymentFaultBlock>(); }));
 
             services.RegisterAllCommands(assembly);
         }
