@@ -1,6 +1,6 @@
 module.exports = function () {
     var webroot = "C:\\inetpub\\wwwroot";
-    var siteName = "xc91";
+    var siteName = "xc92";
     var sitecoreRoot = webroot + "\\" + siteName + ".sc";
     var config = {
         sitecoreRoot: sitecoreRoot,
@@ -13,9 +13,9 @@ module.exports = function () {
         publishPlatform: "AnyCpu",
         runCleanBuilds: true,
         xcDatabaseServer: ".",
-        xcCertificateThumbprint: "4D24F1FE8DE82073BD8CF1DE7FD5B04DFD6AEEBA",
+        xcCertificateThumbprint: "FF35D1BCFC347F7364E2BA38D134590699BDA0CB",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
-        engineHostname: "commerceauthoring." + siteName + ".local",
+        engineHostname: "commerceauthoring." + siteName + ".com",
         identityServerHostname: siteName + ".identityserver",
         adminUser: "admin",
         adminPassword: "b",
