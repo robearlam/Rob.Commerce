@@ -27,7 +27,7 @@
    <ItemGroup>
      <PackageReference Include="Microsoft.Extensions.DependencyInjection" version="2.1.*" />
      <PackageReference Include="Microsoft.OData.Client" version="6.19.0" />
-     <PackageReference Include="Sitecore.Kernel" Version="9.1.1" PrivateAssets="All" />
+     <PackageReference Include="Sitecore.Kernel" Version="9.2.0" PrivateAssets="All" />
    </ItemGroup>
 
    <ItemGroup>

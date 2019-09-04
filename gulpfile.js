@@ -89,12 +89,6 @@ gulp.task('Publish-Commerce-Engine', function () {
         }));
 });
 
-//gulp.task('Delete-Existing-Engine-Files', function (callback) {
-//    return config.engineRoles.forEach(function (engineRole) {
-//        del(engineRole.path + "\\**\\*.*", { force: true });
-//    }, callback());
-//});
-
 gulp.task("01-Build-Commerce-Engine", function (callback) {
     var targets = ["Build"];
     if (config.runCleanBuilds) {
@@ -123,7 +117,6 @@ gulp.task('02-Publish-Commerce-Engine-To-Instances',
     gulp.series(
         "Stop-Local-IIS",
         "Publish-Commerce-Engine",
-        //"Delete-Existing-Engine-Files",
         "Copy-Published-Engine-To-All-Instances",
         "Start-Local-IIS",
         "Transform-All-Engine-Roles", function(done) {
@@ -143,7 +136,7 @@ gulp.task("default",
     gulp.series(
         "01-Build-Commerce-Engine",
         "02-Publish-Commerce-Engine-To-Instances",
-        //"03-Publish-Website-Projects", 
+        "03-Publish-Website-Projects", 
         function (done) {
             done();
 }));
