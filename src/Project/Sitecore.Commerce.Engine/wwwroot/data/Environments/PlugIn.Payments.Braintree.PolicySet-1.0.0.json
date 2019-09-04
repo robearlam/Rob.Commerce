@@ -8,7 +8,7 @@
     "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
     "$values": [
       {
-        "$type": "Plugin.Sample.Payments.Braintree.BraintreeClientPolicy, Plugin.Sample.Payments.Braintree",
+        "$type": "Feature.Payments.Engine.BraintreeClientPolicy, Feature.Payments.Engine",
         "Environment": "sandbox",
         "MerchantId": "624qhcdgygp58k3n",
         "PublicKey": "vbfd3dm8dhb2pfvc",

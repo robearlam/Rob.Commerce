@@ -14,7 +14,7 @@
       "https://bizfx.xc92.com",
       "https://sxa.storefront.com" 
     ],
-    "AntiForgeryEnabled": true,
+    "AntiForgeryEnabled": false,
     "CommerceServicesHostPostfix": "xc92.com",
     "UseHttpsInKestrel": false
   },
