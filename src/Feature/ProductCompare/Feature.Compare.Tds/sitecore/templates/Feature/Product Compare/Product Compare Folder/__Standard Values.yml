@@ -1,0 +1,32 @@
+---
+ID: "3e202874-5ae3-41de-8099-b14e2f7da410"
+Parent: "999c2f01-3f1a-4710-ba43-21a231faa78c"
+Template: "999c2f01-3f1a-4710-ba43-21a231faa78c"
+Path: /sitecore/templates/Feature/Product Compare/Product Compare Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{836E6F9C-E261-4AD1-AE4D-3D68E653AD78}|{39B86C7B-CC75-401D-8B75-A3C29978E7F1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180309T195046Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5231d9b4-2dfd-4943-90de-82ade7d8e35a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190903T070523Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn

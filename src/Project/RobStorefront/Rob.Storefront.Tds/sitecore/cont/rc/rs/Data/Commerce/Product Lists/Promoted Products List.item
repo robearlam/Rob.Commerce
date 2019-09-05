@@ -1,0 +1,282 @@
+----item----
+version: 1
+id: {93464E73-8572-46F0-809F-74C06A1F41E1}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Product Lists/Promoted Products List
+parent: {3C2FE4C5-31DC-49C3-B1B6-718FF72C5AF7}
+name: Promoted Products List
+master: {00000000-0000-0000-0000-000000000000}
+template: {091B84A9-0A36-46F6-BF5C-09A536EBBF79}
+templatekey: Selected Products
+created: 20190905T022949Z
+
+----field----
+field: {84AE61A2-AD10-42E5-9954-220FED6EE9A5}
+name: Products List
+key: products list
+content-length: 389
+
+{7E76956B-D676-E497-BD4B-46F6A45AA2FD}|{BB7C992B-90B7-8A57-C4C6-D3864BD9F8D9}|{C16A549C-7515-4A61-57AB-610412E710AD}|{39CED455-F74F-4C8D-18ED-146876C69C4D}|{A7932324-BE99-90E7-B361-BB6B24361019}|{A72E4408-2A14-A2FE-7BC7-874B01AC18D4}|{3D9297EA-D528-F260-0B14-E62C6064C641}|{FC549E48-C1CA-52A8-213C-898C663C9F34}|{D19C7297-1D9C-5592-F06C-4C5B6F99B8FE}|{332EA0C2-499E-D55F-021F-E7AFB8F9C7F5}
+----version----
+language: da
+version: 1
+revision: 30b223ed-c8f6-4f92-9e08-deaf7de83eb9
+
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 19
+
+Produkter på tilbud
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083046Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+30b223ed-c8f6-4f92-9e08-deaf7de83eb9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T083046Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: de-DE
+version: 1
+revision: 26734d5e-5aa5-46a8-8f32-81387afd836f
+
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 18
+
+Beworbene Produkte
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084846Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+26734d5e-5aa5-46a8-8f32-81387afd836f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T084846Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: en
+version: 1
+revision: 066e1694-ae80-4516-a042-147814586d4a
+
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 17
+
+Promoted Products
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170805T165017Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+066e1694-ae80-4516-a042-147814586d4a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180109T150652Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: 4b74c83a-de20-474d-a221-c0a742bdab91
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022958Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4b74c83a-de20-474d-a221-c0a742bdab91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022958Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 0418c257-06ae-4541-888b-8eea374c8b6b
+
+----field----
+field: {89C0A60E-6B17-4921-AFEC-6482A13C7F9E}
+name: Title
+key: title
+content-length: 9
+
+プロモーション商品
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085430Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0418c257-06ae-4541-888b-8eea374c8b6b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T085430Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser

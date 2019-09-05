@@ -1,0 +1,245 @@
+----item----
+version: 1
+id: {3A7CD6B7-CD51-4648-9403-7CD49FA3AE80}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Settings/Privacy Warning
+parent: {84F79B53-12D5-480C-ACC8-6E7F979E9682}
+name: Privacy Warning
+master: {00000000-0000-0000-0000-000000000000}
+template: {DC66D5DA-3216-48E6-AE78-BAC8445B6A46}
+templatekey: Privacy Warning
+created: 20190905T022617Z
+
+----version----
+language: da
+version: 1
+revision: e472f3c4-d355-4edb-8afb-381974a770e3
+
+----field----
+field: {F2AD4C49-ECC4-4D42-A967-2756182705AC}
+name: PrivacyWarningContent
+key: privacywarningcontent
+content-length: 108
+
+Cookies help us improve your website experience.<br>
+By using our website, you agree to our use of cookies.
+----field----
+field: {6AF8DFD6-F541-400A-83C0-2A90A1FE8E6F}
+name: PrivacyWarningButtonText
+key: privacywarningbuttontext
+content-length: 7
+
+Confirm
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023043Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e472f3c4-d355-4edb-8afb-381974a770e3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023043Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 6c7c59db-53ad-451d-9c02-28ace3dafc42
+
+----field----
+field: {F2AD4C49-ECC4-4D42-A967-2756182705AC}
+name: PrivacyWarningContent
+key: privacywarningcontent
+content-length: 108
+
+Cookies help us improve your website experience.<br>
+By using our website, you agree to our use of cookies.
+----field----
+field: {6AF8DFD6-F541-400A-83C0-2A90A1FE8E6F}
+name: PrivacyWarningButtonText
+key: privacywarningbuttontext
+content-length: 7
+
+Confirm
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023109Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6c7c59db-53ad-451d-9c02-28ace3dafc42
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023109Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 1ef5f623-1ddc-41a2-8330-89a50d95e0eb
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022617Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1ef5f623-1ddc-41a2-8330-89a50d95e0eb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022617Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: c2e4ab36-d0af-4e6d-9e8d-19c92b7e60fc
+
+----field----
+field: {F2AD4C49-ECC4-4D42-A967-2756182705AC}
+name: PrivacyWarningContent
+key: privacywarningcontent
+content-length: 108
+
+Cookies help us improve your website experience.<br>
+By using our website, you agree to our use of cookies.
+----field----
+field: {6AF8DFD6-F541-400A-83C0-2A90A1FE8E6F}
+name: PrivacyWarningButtonText
+key: privacywarningbuttontext
+content-length: 7
+
+Confirm
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023136Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c2e4ab36-d0af-4e6d-9e8d-19c92b7e60fc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023136Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

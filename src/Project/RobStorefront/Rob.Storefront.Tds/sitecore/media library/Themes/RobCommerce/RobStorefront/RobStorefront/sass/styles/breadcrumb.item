@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {AF719D75-DFD3-4E09-9B88-A4E66AEE5E27}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/styles/breadcrumb
+parent: {40CD4A88-F079-4DA4-A441-789C0C05985F}
+name: breadcrumb
+master: {00000000-0000-0000-0000-000000000000}
+template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
+templatekey: Media folder
+created: 20190905T022533Z
+
+----version----
+language: en
+version: 1
+revision: 885119de-f4cb-42eb-b58f-c37c3d743832
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170614T063734Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+885119de-f4cb-42eb-b58f-c37c3d743832
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233251Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

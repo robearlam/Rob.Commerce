@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {8FBA9E92-562C-4B21-B11F-AA7CE7D43F0F}
+database: master
+path: /sitecore/templates/Project/RobCommerce/Page Designs
+parent: {75071254-F254-4E1E-A4A4-16F8E34A3F2E}
+name: Page Designs
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+created: 20190905T022337Z
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 116
+
+{4A27A071-4D99-408F-B97E-2C9852C8D137}|{CA64FCD7-7CA9-415A-824B-28B0FEAC1EF7}|{1479D1EC-DE94-4546-B02F-84636B2061C2}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{FF5C481D-C331-4DC0-BAC2-2504B61DC91F}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 31
+
+Office/32x32/document_chart.png
+----version----
+language: en
+version: 1
+revision: 866f4a27-6097-4992-b4b5-ff0559229482
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022338Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+866f4a27-6097-4992-b4b5-ff0559229482
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022427Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

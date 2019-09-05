@@ -1,0 +1,289 @@
+----item----
+version: 1
+id: {A7C9B533-49D0-4120-B0AA-836D638742A0}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Search Bar/Search Bar
+parent: {1E570E8E-969B-4539-BA40-BBBC52EC6E56}
+name: Search Bar
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADBF000C-955A-45C3-8C57-B8D8535BC711}
+templatekey: Search Bar
+created: 20190905T022759Z
+
+----version----
+language: da
+version: 1
+revision: 2f9af42a-5cb6-4e56-8ead-52494f3224cf
+
+----field----
+field: {F8259316-3307-4EC1-A4E3-604069E93967}
+name: Search Hint Text
+key: search hint text
+content-length: 3
+
+Søg
+----field----
+field: {35F73747-48BB-4112-A53B-8AF20EEABFED}
+name: Search Button Tooltip
+key: search button tooltip
+content-length: 21
+
+Klik på udfør søgning
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083116Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2f9af42a-5cb6-4e56-8ead-52494f3224cf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T083116Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: de-DE
+version: 1
+revision: 56cff18f-2b34-4a8a-b927-ca196644b5ee
+
+----field----
+field: {F8259316-3307-4EC1-A4E3-604069E93967}
+name: Search Hint Text
+key: search hint text
+content-length: 5
+
+Suche
+----field----
+field: {35F73747-48BB-4112-A53B-8AF20EEABFED}
+name: Search Button Tooltip
+key: search button tooltip
+content-length: 33
+
+Anklicken, um Suche durchzuführen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084914Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+56cff18f-2b34-4a8a-b927-ca196644b5ee
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T084914Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: en
+version: 1
+revision: 8ade1fb4-b0ec-4e8b-a240-c4ed143292e4
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T154050Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8ade1fb4-b0ec-4e8b-a240-c4ed143292e4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20171119T203804Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: e0f6250d-ad1e-4a84-9e5e-0502aefdd944
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022805Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e0f6250d-ad1e-4a84-9e5e-0502aefdd944
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022805Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: bd03a79c-b505-4633-82a2-9cd06f069381
+
+----field----
+field: {F8259316-3307-4EC1-A4E3-604069E93967}
+name: Search Hint Text
+key: search hint text
+content-length: 2
+
+検索
+----field----
+field: {35F73747-48BB-4112-A53B-8AF20EEABFED}
+name: Search Button Tooltip
+key: search button tooltip
+content-length: 11
+
+クリックして検索を実行
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085513Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bd03a79c-b505-4633-82a2-9cd06f069381
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T085513Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser

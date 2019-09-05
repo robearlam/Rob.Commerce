@@ -1,0 +1,366 @@
+----item----
+version: 1
+id: {49C4D262-842C-40BE-8CB7-D2AF210AB295}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/TopBar/Gift cards
+parent: {5D468B0D-8BF6-4BA3-90A6-2E2AFE733937}
+name: Gift cards
+master: {00000000-0000-0000-0000-000000000000}
+template: {F9327A11-4030-42DE-B83E-7B4E88490DD8}
+templatekey: Quick Link
+created: 20190905T022950Z
+
+----field----
+field: {1E3D9F7A-6433-49FD-8EF0-40A57A6F8900}
+name: Show Always
+key: show always
+content-length: 1
+
+1
+----field----
+field: {FD4E2050-186C-4375-8B99-E8A85DD7436E}
+name: __Enable item fallback
+key: __enable item fallback
+content-length: 1
+
+1
+----version----
+language: da
+version: 1
+revision: dcc42636-2bdd-4d76-bae2-3d9052fc9107
+
+----field----
+field: {60D17BD9-92A5-45E1-9B60-6B0671893ED8}
+name: Link
+key: link
+content-length: 133
+
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{18348778-F01A-4474-83C9-EB8112C8E072}" />
+----field----
+field: {24629943-2D2A-442A-8D18-8A8634850715}
+name: Text
+key: text
+content-length: 8
+
+Gavekort
+----field----
+field: {9F587C98-BBAF-496F-B652-7F7139A1A608}
+name: Tooltip
+key: tooltip
+content-length: 8
+
+Gavekort
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Gavekort
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083045Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dcc42636-2bdd-4d76-bae2-3d9052fc9107
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023002Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 4f976506-e51e-4c27-896b-32a91faa490b
+
+----field----
+field: {60D17BD9-92A5-45E1-9B60-6B0671893ED8}
+name: Link
+key: link
+content-length: 133
+
+<Link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{18348778-F01A-4474-83C9-EB8112C8E072}" />
+----field----
+field: {24629943-2D2A-442A-8D18-8A8634850715}
+name: Text
+key: text
+content-length: 14
+
+Geschenkkarten
+----field----
+field: {9F587C98-BBAF-496F-B652-7F7139A1A608}
+name: Tooltip
+key: tooltip
+content-length: 14
+
+Geschenkkarten
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 14
+
+Geschenkkarten
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084846Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4f976506-e51e-4c27-896b-32a91faa490b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023002Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 6b361235-5811-496f-88c5-9d019afacca4
+
+----field----
+field: {60D17BD9-92A5-45E1-9B60-6B0671893ED8}
+name: Link
+key: link
+content-length: 133
+
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{18348778-F01A-4474-83C9-EB8112C8E072}" />
+----field----
+field: {24629943-2D2A-442A-8D18-8A8634850715}
+name: Text
+key: text
+content-length: 10
+
+Gift cards
+----field----
+field: {9F587C98-BBAF-496F-B652-7F7139A1A608}
+name: Tooltip
+key: tooltip
+content-length: 10
+
+Gift cards
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 10
+
+Gift cards
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171119T215041Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6b361235-5811-496f-88c5-9d019afacca4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023002Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 2d4099dc-3f6c-4a4e-ae24-b1d04410b6ea
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023002Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2d4099dc-3f6c-4a4e-ae24-b1d04410b6ea
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023002Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 2e76c165-ea96-4f14-8d76-868add302003
+
+----field----
+field: {60D17BD9-92A5-45E1-9B60-6B0671893ED8}
+name: Link
+key: link
+content-length: 133
+
+<link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{18348778-F01A-4474-83C9-EB8112C8E072}" />
+----field----
+field: {24629943-2D2A-442A-8D18-8A8634850715}
+name: Text
+key: text
+content-length: 7
+
+ギフト カード
+----field----
+field: {9F587C98-BBAF-496F-B652-7F7139A1A608}
+name: Tooltip
+key: tooltip
+content-length: 7
+
+ギフト カード
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+ギフト カード
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085429Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2e76c165-ea96-4f14-8d76-868add302003
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023002Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

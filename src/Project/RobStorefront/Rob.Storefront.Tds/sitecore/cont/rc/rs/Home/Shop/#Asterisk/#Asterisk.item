@@ -1,0 +1,326 @@
+----item----
+version: 1
+id: {C1D68F48-67C8-429A-9304-BB78F1E1D99E}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Home/Shop/*/*
+parent: {242A230D-6A20-49B6-9832-4C80DFCBFC08}
+name: *
+master: {00000000-0000-0000-0000-000000000000}
+template: {9A534BAF-CCCF-46B5-9FB1-364D171BF2AB}
+templatekey: Product
+created: 20190905T022800Z
+
+----field----
+field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
+name: Page Design
+key: page design
+content-length: 38
+
+{C80DBF67-6325-491B-9196-F058F5C3E04E}
+----field----
+field: {D4952280-2D7D-4BF4-A99A-EA36DAD0F0A7}
+name: Body Css Class
+key: body css class
+content-length: 20
+
+product-details-page
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 24
+
+Office/16x16/element.png
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 779
+
+{056A0135-E7A7-4E10-9A85-72FF41413818}|{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}|{FA7C9D14-AFD5-42E3-B67F-2D5AE26AFE81}|{4469991C-FC3A-4AD4-B692-7FA1613A61A4}|{F1D13DB9-C566-4B72-BB0A-091868612DAA}|{1E8313EB-7D55-4F84-828F-94B57050E650}|{74EFA349-F17C-47BD-ABAC-9D88D13AC909}|{F9E6772C-B91F-4B18-B26C-077D22B3F90E}|{78B9500D-544B-49A4-9B4C-58BEC8C762E7}|{042C7BBC-46C6-4867-9374-C05F46F4228B}|{E10259DF-6E72-445E-B1F9-5F0AF0677BA7}|{30A167FB-7831-4D42-8DC9-31BDB5858FE8}|{2E8A94AE-9335-444F-8F34-72BD93B6ECA1}|{0AD9F1CE-1EBD-4600-B032-3BDFA5F81C0C}|{34F55872-5993-486C-B26B-3A9E6D41D7BA}|{3BC5B479-4314-40C0-99D3-825D97DA658E}|{7131DD67-52C5-41F2-BF70-300FB851423E}|{9A534BAF-CCCF-46B5-9FB1-364D171BF2AB}|{B5D37F44-698F-42DA-9AD0-B921E1B8FD44}|{F8180C7C-A55B-46E7-98A8-0DB39E15D166}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 3948
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{7FDAD893-FA7F-43B1-9BFB-EB8250B88562}" p:before="*" s:ds="{AF291E32-039F-4FAD-8869-60F911509A6A}" s:id="{AB50BF90-23E9-4452-8FA5-DF7A293CB6BE}" s:par="GridParameters&amp;Product Lists&amp;Use Lazy Loading=1&amp;Max Page Size=4&amp;Relationship Type={F17E7338-EB56-40FF-9D41-637562BD06EC}" s:ph="/main/column-1-3" /><r uid="{86EC009D-C8D1-4F73-9F50-A3605856688A}" p:after="r[@uid='{7FDAD893-FA7F-43B1-9BFB-EB8250B88562}']" s:ds="{C3DFF822-5616-403A-84B8-E6DC5D17C9E4}" s:id="{C4222625-2637-43FE-82D7-341009A277CA}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/column-2-2" /><r uid="{CD1F2857-06D5-475B-A22B-59A8CA828FD0}" p:after="r[@uid='{86EC009D-C8D1-4F73-9F50-A3605856688A}']" s:ds="" s:id="{24A792CF-1F2A-4A0D-9CEE-89B6BC696C55}" s:par="GridParameters" s:ph="/main/column-1-2" /><r uid="{62FB9058-126D-491B-B693-ED9A43DA577B}" p:after="r[@uid='{CD1F2857-06D5-475B-A22B-59A8CA828FD0}']" s:ds="{30A9379F-4837-4F75-AFC2-D792FA165D5F}" s:id="{B79DF484-3464-441A-811C-DC1BFEED8CA1}" s:par="GridParameters" s:ph="/main/column-2-2" /><r uid="{92C7EFA3-02C1-4B74-81D1-DC3CCC69EA94}" p:after="r[@uid='{62FB9058-126D-491B-B693-ED9A43DA577B}']" s:ds="{A9015040-DEC3-45CA-92B1-0809A3A5BFDB}" s:id="{32C08A8F-1576-4DED-905D-DDAB77466027}" s:par="GridParameters" s:ph="/main/column-2-2" /><r uid="{B1D0CD1A-21D9-41A6-8C5F-2C6C3C9CFE66}" p:after="r[@uid='{92C7EFA3-02C1-4B74-81D1-DC3CCC69EA94}']" s:ds="{0D1253E3-7385-4C49-B227-F20F2C90E2E3}" s:id="{63B19D58-0764-495A-80CB-4B06C99C3F70}" s:par="GridParameters" s:ph="/main/column-2-2" /><r uid="{D000B62D-26A0-454C-B163-AB855D796292}" p:after="r[@uid='{B1D0CD1A-21D9-41A6-8C5F-2C6C3C9CFE66}']" s:id="{64B12137-C6CE-423D-B29C-9BD7EAD1D76E}" s:ph="/main/column-2-2" /><r uid="{0EBC1A0C-CB43-4468-8FC6-D54A1C4FA89E}" p:after="r[@uid='{D000B62D-26A0-454C-B163-AB855D796292}']" s:ds="{F99C6626-D2DA-44B8-A2C1-70C3CDC0EE9F}" s:id="{93BC3DB7-582A-48EE-ADE8-F410561FA411}" s:par="GridParameters" s:ph="/main/column-2-2" /><r uid="{337A5544-89EB-450A-8DD0-634EB8BA97B9}" p:after="r[@uid='{0EBC1A0C-CB43-4468-8FC6-D54A1C4FA89E}']" s:ds="" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2={EB47CAAD-2F12-4930-B0D1-BE7D00A31CB3}&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{2040C827-8640-4E61-907E-D3D5A25696C3}|{F58A39D5-1B62-4A8A-95AD-65B3878BB873}&amp;ColumnWidth2={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{2040C827-8640-4E61-907E-D3D5A25696C3}|{F58A39D5-1B62-4A8A-95AD-65B3878BB873}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=2&amp;Reset Caching Options" s:ph="/main" /><r uid="{AB45FF19-7F5C-4EF4-982E-D870E3CA3905}" p:after="r[@uid='{337A5544-89EB-450A-8DD0-634EB8BA97B9}']" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;ColumnWidth2={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;Reset Caching Options&amp;DynamicPlaceholderId=3" s:ph="main" /><r uid="{44F1CB27-F9EB-468E-B320-C832C5169EE6}" p:after="r[@uid='{AB45FF19-7F5C-4EF4-982E-D870E3CA3905}']" s:id="{8136E17F-7B43-4B1E-BA17-6521B05F58D0}" s:par="" s:ph="main" /><r uid="{A578ADD3-16BD-4989-B0F3-9CEB8D58E270}" p:after="*[1=2]" s:id="{7F30A08E-92A2-4C33-B9CF-0AA6AEB064C3}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="nav-bar" /></d><d id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}"><p:d /></d></r>
+----version----
+language: da
+version: 1
+revision: c7078127-3114-4537-8f8c-30b80adfc354
+
+----field----
+field: {43F1B6B5-19E0-48E4-A6B9-F8723C45E6B7}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 15
+
+Product Details
+----field----
+field: {CE53062E-4385-4244-8382-C2B4530A51BA}
+name: TwitterCardType
+key: twittercardtype
+content-length: 38
+
+{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 1
+
+*
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023024Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c7078127-3114-4537-8f8c-30b80adfc354
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023024Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: e740b5d1-4090-4678-9672-f3e58c7371cc
+
+----field----
+field: {43F1B6B5-19E0-48E4-A6B9-F8723C45E6B7}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 15
+
+Product Details
+----field----
+field: {CE53062E-4385-4244-8382-C2B4530A51BA}
+name: TwitterCardType
+key: twittercardtype
+content-length: 38
+
+{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 1
+
+*
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023049Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e740b5d1-4090-4678-9672-f3e58c7371cc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023049Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 0c7d0598-64d4-4937-bed1-2a1b3b7c7861
+
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 15
+
+Product Details
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 1
+
+*
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170201T123158Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0c7d0598-64d4-4937-bed1-2a1b3b7c7861
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023222Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 8ff0afd5-8506-411e-8d98-039fb1c2862f
+
+----field----
+field: {43F1B6B5-19E0-48E4-A6B9-F8723C45E6B7}
+name: Title
+key: title
+content-length: 5
+
+$name
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 15
+
+Product Details
+----field----
+field: {CE53062E-4385-4244-8382-C2B4530A51BA}
+name: TwitterCardType
+key: twittercardtype
+content-length: 38
+
+{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 1
+
+*
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023116Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8ff0afd5-8506-411e-8d98-039fb1c2862f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023116Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

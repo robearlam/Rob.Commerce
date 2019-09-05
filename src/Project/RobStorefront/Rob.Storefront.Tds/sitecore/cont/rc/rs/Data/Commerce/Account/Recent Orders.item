@@ -1,0 +1,513 @@
+----item----
+version: 1
+id: {5B23BDD8-8350-448A-892F-13C4A8CD6B4F}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Recent Orders
+parent: {13357D80-0871-4A7C-891F-17F6070CC883}
+name: Recent Orders
+master: {00000000-0000-0000-0000-000000000000}
+template: {E60D0F52-657C-45DA-998D-8A958ABAF4D0}
+templatekey: Recent Orders
+created: 20190905T022759Z
+
+----version----
+language: da
+version: 1
+revision: 1812bcd9-0b3f-4097-b8d0-84c47ecb966e
+
+----field----
+field: {91D15D22-956C-4CF6-9C12-8D15E1AD8796}
+name: Recent Orders Header Label
+key: recent orders header label
+content-length: 13
+
+Nylige ordrer
+----field----
+field: {FFC07126-39A5-42BB-B6A1-33F9BDACA3AD}
+name: Recent Orders Tooltip
+key: recent orders tooltip
+content-length: 40
+
+Dine ordrer inden for de seneste 30 dage
+----field----
+field: {EE04B789-94F6-4633-80E8-AAE3DA0ED5C9}
+name: View All Orders Text
+key: view all orders text
+content-length: 15
+
+Vis alle ordrer
+----field----
+field: {6D9CFEFA-A68A-4E93-B7BD-30234889ECB2}
+name: View All Orders Tooltip
+key: view all orders tooltip
+content-length: 38
+
+Klik for at få vist komplet ordreliste
+----field----
+field: {251B0FBD-F16E-402D-AB68-8FE27CB56B92}
+name: Date Column Header
+key: date column header
+content-length: 4
+
+Dato
+----field----
+field: {39EDE8E7-7BA7-4D8A-BDD7-C5D438391924}
+name: Date Column Header Tooltip
+key: date column header tooltip
+content-length: 9
+
+Ordredato
+----field----
+field: {9BDCE726-04E4-4102-8E80-C634BA602F05}
+name: Order ID Column Header
+key: order id column header
+content-length: 11
+
+Ordrenummer
+----field----
+field: {71185C51-88C2-4E28-B1A4-2738AA05B57A}
+name: Order ID Column Header Tooltip
+key: order id column header tooltip
+content-length: 11
+
+Ordrenummer
+----field----
+field: {474CE772-2FC2-47C3-8238-C81E6B71BB2F}
+name: Order Status Column Header
+key: order status column header
+content-length: 6
+
+Status
+----field----
+field: {AE860896-9745-4A7C-B71E-F936FF71BD91}
+name: Order Status Column Header Tooltip
+key: order status column header tooltip
+content-length: 6
+
+Status
+----field----
+field: {1B64AA73-8529-4CAE-A182-7D4071F9C3B8}
+name: Order Details Column Header Tooltip
+key: order details column header tooltip
+content-length: 43
+
+Klik på rækken for at få vist ordredetaljer
+----field----
+field: {374B7A69-A0FC-435D-890E-B20C49C8F624}
+name: No Order Message
+key: no order message
+content-length: 46
+
+Du har ikke afgivet en ordre de sidste 30 dage
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083119Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1812bcd9-0b3f-4097-b8d0-84c47ecb966e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190315T063848Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 0933803f-5f46-48e7-b4b3-974177a963f4
+
+----field----
+field: {91D15D22-956C-4CF6-9C12-8D15E1AD8796}
+name: Recent Orders Header Label
+key: recent orders header label
+content-length: 22
+
+Kürzliche Bestellungen
+----field----
+field: {FFC07126-39A5-42BB-B6A1-33F9BDACA3AD}
+name: Recent Orders Tooltip
+key: recent orders tooltip
+content-length: 32
+
+Bestellungen der letzten 30 Tage
+----field----
+field: {EE04B789-94F6-4633-80E8-AAE3DA0ED5C9}
+name: View All Orders Text
+key: view all orders text
+content-length: 25
+
+Alle Bestellungen ansehen
+----field----
+field: {6D9CFEFA-A68A-4E93-B7BD-30234889ECB2}
+name: View All Orders Tooltip
+key: view all orders tooltip
+content-length: 49
+
+Anklicken, um vollständige Bestellliste anzusehen
+----field----
+field: {251B0FBD-F16E-402D-AB68-8FE27CB56B92}
+name: Date Column Header
+key: date column header
+content-length: 5
+
+Datum
+----field----
+field: {39EDE8E7-7BA7-4D8A-BDD7-C5D438391924}
+name: Date Column Header Tooltip
+key: date column header tooltip
+content-length: 12
+
+Bestelldatum
+----field----
+field: {9BDCE726-04E4-4102-8E80-C634BA602F05}
+name: Order ID Column Header
+key: order id column header
+content-length: 13
+
+Bestellnummer
+----field----
+field: {71185C51-88C2-4E28-B1A4-2738AA05B57A}
+name: Order ID Column Header Tooltip
+key: order id column header tooltip
+content-length: 13
+
+Bestellnummer
+----field----
+field: {474CE772-2FC2-47C3-8238-C81E6B71BB2F}
+name: Order Status Column Header
+key: order status column header
+content-length: 6
+
+Status
+----field----
+field: {AE860896-9745-4A7C-B71E-F936FF71BD91}
+name: Order Status Column Header Tooltip
+key: order status column header tooltip
+content-length: 6
+
+Status
+----field----
+field: {1B64AA73-8529-4CAE-A182-7D4071F9C3B8}
+name: Order Details Column Header Tooltip
+key: order details column header tooltip
+content-length: 55
+
+Klicken Sie auf eine Reihe, um Bestelldetails anzusehen
+----field----
+field: {374B7A69-A0FC-435D-890E-B20C49C8F624}
+name: No Order Message
+key: no order message
+content-length: 61
+
+Sie haben in den letzten 30 Tagen keine Bestellung aufgegeben
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084918Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0933803f-5f46-48e7-b4b3-974177a963f4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190315T064031Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: f2103052-50d2-4cda-b80d-c9d98a894622
+
+----field----
+field: {EE04B789-94F6-4633-80E8-AAE3DA0ED5C9}
+name: View All Orders Text
+key: view all orders text
+content-length: 15
+
+View All Orders
+----field----
+field: {6D9CFEFA-A68A-4E93-B7BD-30234889ECB2}
+name: View All Orders Tooltip
+key: view all orders tooltip
+content-length: 33
+
+Click to view full list of orders
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T153545Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f2103052-50d2-4cda-b80d-c9d98a894622
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022803Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 46fba4ca-0bf9-4d1a-aa9e-52e851a6544d
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022803Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+46fba4ca-0bf9-4d1a-aa9e-52e851a6544d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022803Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: b1ccea45-9ba0-4d30-8260-a97266abac9c
+
+----field----
+field: {91D15D22-956C-4CF6-9C12-8D15E1AD8796}
+name: Recent Orders Header Label
+key: recent orders header label
+content-length: 5
+
+最近の注文
+----field----
+field: {FFC07126-39A5-42BB-B6A1-33F9BDACA3AD}
+name: Recent Orders Tooltip
+key: recent orders tooltip
+content-length: 10
+
+最近30日以内の注文
+----field----
+field: {EE04B789-94F6-4633-80E8-AAE3DA0ED5C9}
+name: View All Orders Text
+key: view all orders text
+content-length: 8
+
+全ての注文を表示
+----field----
+field: {6D9CFEFA-A68A-4E93-B7BD-30234889ECB2}
+name: View All Orders Tooltip
+key: view all orders tooltip
+content-length: 15
+
+クリックして全注文リストを表示
+----field----
+field: {251B0FBD-F16E-402D-AB68-8FE27CB56B92}
+name: Date Column Header
+key: date column header
+content-length: 2
+
+日付
+----field----
+field: {39EDE8E7-7BA7-4D8A-BDD7-C5D438391924}
+name: Date Column Header Tooltip
+key: date column header tooltip
+content-length: 3
+
+注文日
+----field----
+field: {9BDCE726-04E4-4102-8E80-C634BA602F05}
+name: Order ID Column Header
+key: order id column header
+content-length: 4
+
+注文番号
+----field----
+field: {71185C51-88C2-4E28-B1A4-2738AA05B57A}
+name: Order ID Column Header Tooltip
+key: order id column header tooltip
+content-length: 4
+
+注文番号
+----field----
+field: {474CE772-2FC2-47C3-8238-C81E6B71BB2F}
+name: Order Status Column Header
+key: order status column header
+content-length: 2
+
+状態
+----field----
+field: {AE860896-9745-4A7C-B71E-F936FF71BD91}
+name: Order Status Column Header Tooltip
+key: order status column header tooltip
+content-length: 2
+
+状態
+----field----
+field: {1B64AA73-8529-4CAE-A182-7D4071F9C3B8}
+name: Order Details Column Header Tooltip
+key: order details column header tooltip
+content-length: 15
+
+行をクリックして注文詳細を表示
+----field----
+field: {374B7A69-A0FC-435D-890E-B20C49C8F624}
+name: No Order Message
+key: no order message
+content-length: 16
+
+直近30日間で注文がありません。
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085518Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1ccea45-9ba0-4d30-8260-a97266abac9c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190315T064151Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

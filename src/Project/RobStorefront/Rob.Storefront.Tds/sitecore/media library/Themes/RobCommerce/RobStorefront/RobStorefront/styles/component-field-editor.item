@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {13D9E741-2EA7-438C-9CF6-14C8F5546060}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/styles/component-field-editor
+parent: {C550C0A2-1C3D-4FD9-9137-B9A445B9BD2D}
+name: component-field-editor
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190905T022536Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1016
+
+LyogYnJlYWtwb2ludHMgKi8KLmZpZWxkLWVkaXRvciB7CiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQoKLmZpZWxkLWVkaXRvciAuZmllbGQtdGFibGUgewogIHdpZHRoOiAxMDAlOwogIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cn0KCi5maWVsZC1lZGl0b3IgLmZpZWxkLXRhYmxlIHRhYmxlIHsKICB3b3JkLXdyYXA6IGJyZWFrLXdvcmQ7CiAgdGFibGUtbGF5b3V0OiBmaXhlZDsKfQoKLmZpZWxkLWVkaXRvciAuZmllbGQtdGFibGUgdGJvZHkgewogIGJvcmRlcjogbm9uZTsKICBiYWNrZ3JvdW5kOiBub25lOwp9CgouZmllbGQtZWRpdG9yIC5maWVsZC10YWJsZSB0Ym9keSB0ciB7CiAgYmFja2dyb3VuZDogbm9uZTsKfQoKLmZpZWxkLWVkaXRvciAuZmllbGQtdGFibGUgdGggewogIGNvbG9yOiAjMDAwOwogIHBhZGRpbmc6IDVweCAxMHB4OwogIHRleHQtYWxpZ246IGxlZnQ7CiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTsKfQoKLmZpZWxkLWVkaXRvciAuZmllbGQtdGFibGUgdGQgewogIGNvbG9yOiAjNzQ3NDc0OwogIHBhZGRpbmc6IDVweCAxMHB4OwogIHRleHQtYWxpZ246IGxlZnQ7CiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTsKfQoKLmZpZWxkLWVkaXRvci5wb3NpdGlvbi1yaWdodCAuZmllbGQtdGFibGUgdGQgewogIHRleHQtYWxpZ246IHJpZ2h0Owp9CgouZmllbGQtZWRpdG9yLnBvc2l0aW9uLWNlbnRlciAuZmllbGQtdGFibGUgdGQgewogIHRleHQtYWxpZ246IGNlbnRlcjsKfQo=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+css
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 8
+
+text/css
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 3
+
+761
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/C6346769C9F141CD9FB96C36E4DB1DCD.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 582f21a5-83a3-412a-95ba-14a488d05951
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170414T150059Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+582f21a5-83a3-412a-95ba-14a488d05951
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233250Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

@@ -1,0 +1,347 @@
+----item----
+version: 1
+id: {C7B0E6AC-24CF-4AD7-AC0B-60ED644AF0B9}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/RobStorefront Emails
+parent: {91A6C3D6-AB74-4C03-9B08-AC00F97FC152}
+name: RobStorefront Emails
+master: {F8FAE92A-4F10-470C-AD5C-7ED9E6B636AF}
+template: {CF9C8A2A-2794-4FEA-980A-EF8426F3D6C3}
+templatekey: Manager Root
+created: 20190905T022612Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{DB7A8703-C5AE-41FF-8B23-264195634B9E}
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 247
+
+ar|sitecore\EXM Users|pd|^*|+item:read|pe|^*|+item:read|ar|sitecore\EXM Advanced Users|pd|+item:delete|+item:admin|+item:create|+item:rename|^*|+item:read|+item:write|pe|+item:delete|+item:admin|+item:create|+item:rename|^*|+item:read|+item:write|
+----version----
+language: da
+version: 1
+revision: f6c5a1ce-9543-46ce-8766-a980cad907a6
+
+----field----
+field: {D13E4A70-3EA1-4C12-9891-748D315E7B68}
+name: Marketing Category Groups
+key: marketing category groups
+content-length: 38
+
+{8DF1EB92-AB86-436D-8644-36FDEA56EAF6}
+----field----
+field: {85FDC8E9-0AC4-4C70-B5A7-5D17451C1E5A}
+name: Preference Center Title
+key: preference center title
+content-length: 23
+
+Email Preference Center
+----field----
+field: {DB528F31-F54F-48D5-A86A-CA31D8074348}
+name: Preference Center Intro
+key: preference center intro
+content-length: 83
+
+<p>To update your email preferences, select the items you wish to subscribe to.</p>
+----field----
+field: {3E20D02F-A3BF-4672-B1E5-D922758DC67A}
+name: Preference Center Unsubscribe from all
+key: preference center unsubscribe from all
+content-length: 78
+
+I do not want to receive any emails from $brandname$. Unsubscribe me from all.
+----field----
+field: {75DDDE7F-AC74-486E-82F8-B849ACDC5266}
+name: Preference Center Submit
+key: preference center submit
+content-length: 20
+
+Update Subscriptions
+----field----
+field: {E34202A5-65E3-4509-9687-CE73E819700A}
+name: Preference Center Success
+key: preference center success
+content-length: 57
+
+Thank you, your preferences have been saved successfully.
+----field----
+field: {94AD306E-97AB-4E94-95D2-C4EC12EF6D14}
+name: Preference Center Error
+key: preference center error
+content-length: 67
+
+There was an error saving your preferences. Please try again later.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023024Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f6c5a1ce-9543-46ce-8766-a980cad907a6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023024Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 18bf4e8b-656f-479a-ac65-181119ab5cd9
+
+----field----
+field: {D13E4A70-3EA1-4C12-9891-748D315E7B68}
+name: Marketing Category Groups
+key: marketing category groups
+content-length: 38
+
+{8DF1EB92-AB86-436D-8644-36FDEA56EAF6}
+----field----
+field: {85FDC8E9-0AC4-4C70-B5A7-5D17451C1E5A}
+name: Preference Center Title
+key: preference center title
+content-length: 23
+
+Email Preference Center
+----field----
+field: {DB528F31-F54F-48D5-A86A-CA31D8074348}
+name: Preference Center Intro
+key: preference center intro
+content-length: 83
+
+<p>To update your email preferences, select the items you wish to subscribe to.</p>
+----field----
+field: {3E20D02F-A3BF-4672-B1E5-D922758DC67A}
+name: Preference Center Unsubscribe from all
+key: preference center unsubscribe from all
+content-length: 78
+
+I do not want to receive any emails from $brandname$. Unsubscribe me from all.
+----field----
+field: {75DDDE7F-AC74-486E-82F8-B849ACDC5266}
+name: Preference Center Submit
+key: preference center submit
+content-length: 20
+
+Update Subscriptions
+----field----
+field: {E34202A5-65E3-4509-9687-CE73E819700A}
+name: Preference Center Success
+key: preference center success
+content-length: 57
+
+Thank you, your preferences have been saved successfully.
+----field----
+field: {94AD306E-97AB-4E94-95D2-C4EC12EF6D14}
+name: Preference Center Error
+key: preference center error
+content-length: 67
+
+There was an error saving your preferences. Please try again later.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023049Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+18bf4e8b-656f-479a-ac65-181119ab5cd9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023050Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 6908a60f-b0da-4cbc-a2f6-35d143f59e6f
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022612Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6908a60f-b0da-4cbc-a2f6-35d143f59e6f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022612Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: b04042cd-d850-4af8-b0f9-535fecc510c4
+
+----field----
+field: {D13E4A70-3EA1-4C12-9891-748D315E7B68}
+name: Marketing Category Groups
+key: marketing category groups
+content-length: 38
+
+{8DF1EB92-AB86-436D-8644-36FDEA56EAF6}
+----field----
+field: {85FDC8E9-0AC4-4C70-B5A7-5D17451C1E5A}
+name: Preference Center Title
+key: preference center title
+content-length: 23
+
+Email Preference Center
+----field----
+field: {DB528F31-F54F-48D5-A86A-CA31D8074348}
+name: Preference Center Intro
+key: preference center intro
+content-length: 83
+
+<p>To update your email preferences, select the items you wish to subscribe to.</p>
+----field----
+field: {3E20D02F-A3BF-4672-B1E5-D922758DC67A}
+name: Preference Center Unsubscribe from all
+key: preference center unsubscribe from all
+content-length: 78
+
+I do not want to receive any emails from $brandname$. Unsubscribe me from all.
+----field----
+field: {75DDDE7F-AC74-486E-82F8-B849ACDC5266}
+name: Preference Center Submit
+key: preference center submit
+content-length: 20
+
+Update Subscriptions
+----field----
+field: {E34202A5-65E3-4509-9687-CE73E819700A}
+name: Preference Center Success
+key: preference center success
+content-length: 57
+
+Thank you, your preferences have been saved successfully.
+----field----
+field: {94AD306E-97AB-4E94-95D2-C4EC12EF6D14}
+name: Preference Center Error
+key: preference center error
+content-length: 67
+
+There was an error saving your preferences. Please try again later.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T023117Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b04042cd-d850-4af8-b0f9-535fecc510c4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T023117Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

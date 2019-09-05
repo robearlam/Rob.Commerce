@@ -1,0 +1,254 @@
+----item----
+version: 1
+id: {B5FE2FF7-36D6-4F4C-8308-4EEA9DEFBF0B}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Checkout/Step Indicator
+parent: {B3B4AC5E-D945-4956-AE69-453BC56EEAE5}
+name: Step Indicator
+master: {00000000-0000-0000-0000-000000000000}
+template: {C4C5B2ED-8336-4D9C-BCE7-4000EFC50347}
+templatekey: Step Indicator
+created: 20190905T022759Z
+
+----version----
+language: da
+version: 1
+revision: cc02d485-090f-4086-bb26-089dcfa59cdb
+
+----field----
+field: {A1AE012C-3162-439B-AECC-E30D9241CAE0}
+name: Step Name and Labels
+key: step name and labels
+content-length: 73
+
+Vogn=Vogn&Levering=Levering&Fakturering=Fakturering&Gennemgang=Gennemgang
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083240Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cc02d485-090f-4086-bb26-089dcfa59cdb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180517T102348Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: de-DE
+version: 1
+revision: 317f68ce-89f8-43ec-b9cc-e9f82727d61a
+
+----field----
+field: {A1AE012C-3162-439B-AECC-E30D9241CAE0}
+name: Step Name and Labels
+key: step name and labels
+content-length: 57
+
+Cart=Cart&Delivery=Delivery&Billing=Billing&Review=Review
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085042Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+317f68ce-89f8-43ec-b9cc-e9f82727d61a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180517T101728Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: en
+version: 1
+revision: 31abbec0-ff69-4632-8d8b-e12a20495bdc
+
+----field----
+field: {A1AE012C-3162-439B-AECC-E30D9241CAE0}
+name: Step Name and Labels
+key: step name and labels
+content-length: 57
+
+Cart=Cart&Delivery=Delivery&Billing=Billing&Review=Review
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T153952Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+31abbec0-ff69-4632-8d8b-e12a20495bdc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180109T084947Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: 61a43ab3-e532-42b4-b414-b724363899bd
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190905T022805Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+61a43ab3-e532-42b4-b414-b724363899bd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190905T022805Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: a9007325-692a-4dd9-bf17-886b52dca3e1
+
+----field----
+field: {A1AE012C-3162-439B-AECC-E30D9241CAE0}
+name: Step Name and Labels
+key: step name and labels
+content-length: 57
+
+Cart=Cart&Delivery=Delivery&Billing=Billing&Review=Review
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085720Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a9007325-692a-4dd9-bf17-886b52dca3e1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180517T103158Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
