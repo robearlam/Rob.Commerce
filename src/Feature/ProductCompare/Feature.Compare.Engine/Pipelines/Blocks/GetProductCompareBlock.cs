@@ -32,7 +32,8 @@ namespace Feature.Compare.Engine.Pipelines.Blocks
 
         protected virtual async Task<IEnumerable<SellableItem>> GetListItems(string listName, int take, CommercePipelineExecutionContext context)
         {
-            return (await _findEntitiesInListPipeline.Run(new FindEntitiesInListArgument(typeof(SellableItem), listName, 0, take), context)).List.Items.OfType<SellableItem>();
+            var listResult = await _findEntitiesInListPipeline.Run(new FindEntitiesInListArgument(typeof(SellableItem), listName, 0, take), context);
+            return listResult.List.Items.OfType<SellableItem>();
         }
     }
 }

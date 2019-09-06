@@ -43,7 +43,7 @@ namespace Feature.Compare.Engine.Pipelines.Blocks
             }
 
             var addArg = new ListEntitiesArgument(new List<string> {sellableItem.Id}, arg.CompareCollection.Name);
-            await _addListEntitiesPipeline.Run(addArg, context);
+            var result = await _addListEntitiesPipeline.Run(addArg, context);
             return arg.CompareCollection;
         }
 
