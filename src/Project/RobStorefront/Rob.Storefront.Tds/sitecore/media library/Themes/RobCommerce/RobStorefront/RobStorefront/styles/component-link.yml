@@ -1,0 +1,45 @@
+---
+ID: "8168a562-8a45-4fce-a1fb-ad528a990b13"
+Parent: "c550c0a2-1c3d-4fd9-9137-b9a445b9bd2d"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/styles/component-link"
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: LyogYnJlYWtwb2ludHMgKi8KLmxpbmsgewogIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50OwogIC8qIGJyZWFrcG9pbnRzICovCn0KCi5saW5rIGEgewogIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OwogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICBmb250LXNpemU6IDFlbTsKICBjb2xvcjogIzc0NzQ3NDsKICBib3JkZXItYm90dG9tOiAxcHggc29saWQgIzg5QzZDQzsKfQoKLmxpbmsgYTpob3ZlciB7CiAgY29sb3I6ICM4Nzg3ODc7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: css
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: text/css
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 280
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/822C72E4FF0A455497BB582F50F765B4.ashx?h=16&thn=1&w=16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170608T142449Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "25bcd706-1cb0-4873-bf76-afc541d98634"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190527T233250Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn

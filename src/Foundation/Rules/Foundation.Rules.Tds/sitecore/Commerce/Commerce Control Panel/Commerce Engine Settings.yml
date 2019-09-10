@@ -1,0 +1,32 @@
+---
+ID: "1f420f55-f5ef-4680-bf60-5364e3ea2cd5"
+Parent: "770ef91b-36cc-42bf-865e-b76633fac34b"
+Template: "bff2d09d-0b61-4b88-b60b-630d0160b4f4"
+Path: /sitecore/Commerce/Commerce Control Panel/Commerce Engine Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161127T132209Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4f8971d3-93ef-4a0f-9e9e-4f5e0c4a972a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20161202T122405Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

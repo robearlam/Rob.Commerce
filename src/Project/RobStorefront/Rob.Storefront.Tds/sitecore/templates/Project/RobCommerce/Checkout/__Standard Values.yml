@@ -1,0 +1,41 @@
+---
+ID: "07fe511a-33db-4909-8b1b-df845aba6442"
+Parent: "da0cb6c6-3ac7-418d-b356-c57d13f772b7"
+Template: "da0cb6c6-3ac7-418d-b356-c57d13f772b7"
+Path: /sitecore/templates/Project/RobCommerce/Checkout/__Standard Values
+DB: master
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{E9658F6A-2775-4AB7-8147-54B66BDF1351}"
+- ID: "d4952280-2d7d-4bf4-a99a-ea36dad0f0a7"
+  Hint: Body Css Class
+  Value: "checkout-page"
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{56A4943D-4876-4C79-9DE8-9B134D97A159}|{C9F709CA-8F0A-4774-A5B2-366D8AFDFB4B}|{CC072835-A852-4136-AE1D-22E50BF6C3CA}|{05D8D2D2-DBC3-4296-96A4-1C064412EE87}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{BCFC7537-EFF4-434C-96F5-BF4F55FD175B}" /><d id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}" l="{72C595AD-68BB-44BC-B5CD-2A857039515F}" /></r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Checkout
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171214T025048Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9d29cc18-1a9d-472f-9b83-f5c42b93ba54"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190905T023011Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

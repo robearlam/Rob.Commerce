@@ -1,0 +1,44 @@
+---
+ID: "2daedb7e-e67a-483d-b00a-323a745a1698"
+Parent: "06a7fc61-a4de-44ec-97d6-68dd3273ee70"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/variants/tag-cloud/Links"
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: c3Bhbi5maWVsZC10aXRsZSB7DQogICAgJi50YWctbGlua3Mgew0KICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7DQogICAgICAgIHBhZGRpbmc6IDVweCAkZGVmYXVsdC1wYWRkaW5nOw0KICAgICAgICBkaXNwbGF5OiBibG9jazsNCiAgICAgICAgJjpsYXN0LWNoaWxkIHsNCiAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMDsNCiAgICAgICAgfQ0KICAgICAgICAudGFnLXVzYWdlcyB7DQogICAgICAgICAgICAmOmJlZm9yZSB7DQogICAgICAgICAgICAgICAgY29udGVudDogIigiOw0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgJjphZnRlciB7DQogICAgICAgICAgICAgICAgY29udGVudDogIikiOw0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgZm9udC1zaXplOiBpbmhlcml0Ow0KICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7DQogICAgICAgIH0NCiAgICAgICAgYSB7DQogICAgICAgICAgICBmb250LXNpemU6ICRmb250LW5vcm1hbDsNCiAgICAgICAgICAgICY6aG92ZXIgew0KICAgICAgICAgICAgfQ0KICAgICAgICB9DQogICAgfQ0KfQ0K
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 546
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/FBFC5A78D1CD4C728C6BD12929FAF9DB.ashx?h=16&thn=1&w=16"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190109T092938Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c640d7cb-31b1-4d77-ba48-d26a3b674ad1"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190527T233302Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn

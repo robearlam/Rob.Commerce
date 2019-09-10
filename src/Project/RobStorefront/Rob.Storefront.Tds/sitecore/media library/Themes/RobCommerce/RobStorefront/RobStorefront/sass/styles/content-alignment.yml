@@ -1,0 +1,24 @@
+---
+ID: "1b2f253a-79d1-4fab-98f1-b18105e1cd48"
+Parent: "40cd4a88-f079-4da4-a441-789c0c05985f"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/styles/content-alignment"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170614T063744Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a2f5b2e2-ee2e-48af-b9ed-5a0dac9ce1bf"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190527T233251Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn

@@ -1,0 +1,47 @@
+---
+ID: "fa7c9d14-afd5-42e3-b67f-2d5ae26afe81"
+Parent: "75071254-f254-4e1e-a4a4-16f8e34a3f2e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/RobCommerce/Content Page
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{056A0135-E7A7-4E10-9A85-72FF41413818}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{F7A51A66-6B71-4895-870F-4F6C47448F00}"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/16x16/window.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-100"
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{2FA513FA-E25E-491E-927E-5363D206B41B}|{CB32CE1B-1A05-4D3E-94A2-B349858386AB}|{7D98DBB3-4D8A-4FD9-9722-029200EC82BE}|{CE7D72F3-4574-4C94-9FD9-2E77360043A4}|{FCF864A1-F3CB-4CCB-8FF4-33DF6F3FE98C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Content Page
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170811T082140Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "239b6751-5616-4907-b5d7-742c36ac29a2"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190905T022431Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

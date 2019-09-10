@@ -1,0 +1,41 @@
+---
+ID: "89b332d8-4ecd-42d8-ba1b-f02bfa9cb952"
+Parent: "3d0095fe-ad90-4eca-abac-660eca4b91aa"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/mixins/_index
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: QGltcG9ydCAncmVzcG9uc2l2ZSc7DQpAaW1wb3J0ICdsYXlvdXRzJzsNCkBpbXBvcnQgJ2Zvcm1zJzsNCkBpbXBvcnQgJ2ljb25zJzsNCkBpbXBvcnQgJ3V0aWxzJzsNCkBpbXBvcnQgJ3RhYmxlcyc7DQpAaW1wb3J0ICd2aXN1YWwtZWxlbWVudHMnOw0KQGltcG9ydCAncmV1c2FibGUtc3R5bGVzL3JvdW5kZWQtY29udGFpbmVyJzsNCkBpbXBvcnQgJ3JldXNhYmxlLXN0eWxlcy9uby1tYXJnaW4nOw0KQGltcG9ydCAncmV1c2FibGUtc3R5bGVzL25vLXBhZGRpbmcnOw0KQGltcG9ydCAncmV1c2FibGUtc3R5bGVzL2JveC1zaGFkb3cnOw0KQGltcG9ydCAiYW5pbWF0aW9uIjsNCkBpbXBvcnQgImljb24iOw0KQGltcG9ydCAiaW5wdXQiOw0KQGltcG9ydCAidG9vbHMiOw0KQGltcG9ydCAic2lkZWJhciI7DQoNCg==
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 403
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/C4A40EFC8CE24ED5B62DDE91846328DF.ashx?h=16&thn=1&w=16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100951Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "89116dbf-7446-4e47-8b80-e45578d4d738"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20171120T100951Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

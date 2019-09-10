@@ -197,7 +197,8 @@
             "^List-PurgeCategories.*?$",
             "Entity-Catalog.*?$",
             "Entity-Category.*?$",
-            "Entity-SellableItem.*?$"
+            "Entity-SellableItem.*?$",
+            "^List-Entity-ProductCompare.*?$"
           ]
         },
         "TableName": "CatalogLists"

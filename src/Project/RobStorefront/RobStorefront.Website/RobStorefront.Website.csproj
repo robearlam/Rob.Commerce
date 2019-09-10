@@ -43,6 +43,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.XA.Feature.Navigation">
+      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\xc92.sc\bin\Sitecore.XA.Feature.Navigation.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -62,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Project\z.RobStorefront.DevSettings.config" />
+    <Content Include="App_Config\Include\Project\z.RobStorefront.Serialization.config" />
     <None Include="Properties\PublishProfiles\CI.pubxml" />
     <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Web.config" />
@@ -84,6 +88,9 @@
     <PackageReference Include="Microsoft.Net.Compilers">
       <Version>2.9.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

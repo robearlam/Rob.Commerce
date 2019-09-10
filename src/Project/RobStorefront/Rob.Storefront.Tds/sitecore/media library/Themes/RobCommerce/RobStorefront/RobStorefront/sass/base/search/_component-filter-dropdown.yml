@@ -1,0 +1,41 @@
+---
+ID: "b98808b5-ab18-4370-a3c2-a4a0b39fc18e"
+Parent: "3cf84b56-3c80-4c75-8e0f-9e3cc7a7e4dd"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/base/search/_component-filter-dropdown"
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: LmZhY2V0LWRyb3Bkb3duIHsNCiAgICBtYXJnaW46IDEwcHggMDsNCiAgICBzZWxlY3Qgew0KICAgICAgICBtaW4td2lkdGg6IDEwMCU7DQogICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7DQogICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsNCiAgICAgICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTsNCiAgICAgICAgQGluY2x1ZGUgYm9yZGVyLWJhc2ljKCk7DQogICAgICAgIGJveC1zaGFkb3c6IGluc2V0IDAgMXB4IDFweCByZ2JhKDAsIDAsIDAsIC4wNzUpOw0KICAgICAgICB0cmFuc2l0aW9uOiBib3JkZXItY29sb3IgZWFzZS1pbi1vdXQgLjE1cywgYm94LXNoYWRvdyBlYXNlLWluLW91dCAuMTVzOw0KICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7DQogICAgICAgIGhlaWdodDogMzRweDsNCiAgICAgICAgcGFkZGluZzogNnB4IDEycHg7DQogICAgICAgIGZvbnQtc2l6ZTogMTRweDsNCiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogJGJnLWJhc2ljLWNvbG9yOw0KICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7DQogICAgICAgIG1hcmdpbi1ib3R0b206IDVweDsNCiAgICB9DQp9DQo=
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 569
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/E16A9D634EDD42CDA12E54DBFE9C55D0.ashx?h=16&thn=1&w=16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20190110T084345:636827066259682333Z"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "45ad763e-2dc5-4d80-8c02-cd1304d22347"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190527T233302Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn

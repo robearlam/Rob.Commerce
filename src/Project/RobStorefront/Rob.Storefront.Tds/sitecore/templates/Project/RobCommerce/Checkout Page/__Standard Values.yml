@@ -1,0 +1,36 @@
+---
+ID: "a9cd295e-c8e6-4579-9171-e1135cfd8abb"
+Parent: "74efa349-f17c-47bd-abac-9d88d13ac909"
+Template: "74efa349-f17c-47bd-abac-9d88d13ac909"
+Path: /sitecore/templates/Project/RobCommerce/Checkout Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{2FA513FA-E25E-491E-927E-5363D206B41B}|{CB32CE1B-1A05-4D3E-94A2-B349858386AB}|{CE7D72F3-4574-4C94-9FD9-2E77360043A4}|{FCF864A1-F3CB-4CCB-8FF4-33DF6F3FE98C}|{7D98DBB3-4D8A-4FD9-9722-029200EC82BE}|{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170818T060956Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "549b539b-b179-470f-880c-56550940fb58"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190905T022431Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,41 @@
+---
+ID: "9506fe2e-7e1a-4fd3-ab27-706b8dd0e9ee"
+Parent: "66fc6694-f322-4e44-8964-dc74990338e3"
+Template: "962b53c4-f93b-4df9-9821-415c867b8903"
+Path: "/sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/components/sxa/bread-crumb-component"
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: QGltcG9ydCAnLi4vLi4vbWl4aW5zL2luZGV4JzsNCkBpbXBvcnQgJy4uLy4uL2Jhc2UvaW5kZXgnOw0KLmNvbXBvbmVudC5icmVhZGNydW1iIHsNCiAgICBwYWRkaW5nLWxlZnQ6IDA7DQogICAgYmFja2dyb3VuZC1jb2xvcjogJHNlY29uZGFyeS1iYWNrZ3JvdW5kLWNvbG9yOw0KICAgIG1hcmdpbi10b3A6IDVweDsNCiAgICBtYXJnaW4tYm90dG9tOiAwOw0KICAgIG5hdiBvbCB7DQogICAgICAgIEBpbmNsdWRlIHJvdy1vZi1lbGVtZW50cy1wYWNrZWQoZmFsc2UsICR0b3Atb3ItbGVmdCwgJHBhY2tlZC1lbGVtZW50cy1tYXJnaW4pOw0KICAgICAgICBsaSB7DQogICAgICAgICAgICBAaW5jbHVkZSByb3ctb2YtZWxlbWVudHMtcGFja2VkKGZhbHNlLCAkdG9wLW9yLWxlZnQsICRwYWNrZWQtZWxlbWVudHMtbWFyZ2luKTsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogJGZvbnQtc2l6ZS1iYXNlOw0KICAgICAgICB9DQogICAgfQ0KfQ==
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: scss
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/octet-stream"
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 472
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/1B01C78F043C475A8B288E2EFA47A8BB.ashx?h=16&thn=1&w=16"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171120T100946Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "543202ac-17fc-4e98-b05f-198642479391"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20171120T100946Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

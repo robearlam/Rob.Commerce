@@ -39,7 +39,7 @@ namespace Feature.Compare.Website.Controllers
         [AllowAnonymous]
         [HttpPost]
         [OutputCache(Location = OutputCacheLocation.None, NoStore = true)]
-        public ActionResult AddProductToCompareList(string addToCompareCatalogName, string addToCompareProductId, string addToCompareVarientId)
+        public JsonResult AddProductToCompareList(string addToCompareCatalogName, string addToCompareProductId, string addToCompareVarientId)
         {
             BaseJsonResult baseJsonResult;
             try

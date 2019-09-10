@@ -1,0 +1,46 @@
+---
+ID: "d574a685-da21-4a69-aba0-7635b944dab4"
+Parent: "a979ce46-7f5d-4bcc-bed9-6a3936a73d13"
+Template: "762364a6-3ccb-43d2-9acb-c889db0f7fcf"
+Path: "/sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront/Country-Region Configuration"
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "6d8c6738-20ec-4ca0-b9ee-dc6b64ca224f"
+  Hint: "Countries-Regions"
+  Value: "{9E9E8CB4-B03D-4650-9388-2F73CD0AD28F}|{60D23160-C39D-4B72-89DB-489CCB57276A}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F974A4BD-5F0D-4EE5-8A0E-AC55D19B7306}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: "Country-Region configuration"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190905T022808Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47cee44d-a2eb-4a44-a59b-b163e1484c5e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190905T022956Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
