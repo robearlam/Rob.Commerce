@@ -30,6 +30,8 @@ namespace Feature.Compare.Engine.Commands
                 return null;
             }
 
+            //add a prefix to the cart id so it won't parse into a guid
+            cartId += "xxx";
             var entityId = cartId.StartsWith(CommerceEntity.IdPrefix<ProductCompare>(), StringComparison.OrdinalIgnoreCase) ? cartId : cartId.ToEntityId<ProductCompare>();
             var options = new CommercePipelineExecutionContextOptions(context);
             var productCompareComponent = await _getProductComparePipeline.Run(entityId, options);

@@ -20,7 +20,7 @@
                 if (catalogRenderingModel.Images != null && catalogRenderingModel.Images.Count > 0)
                 {
                     <a href="@catalogRenderingModel.Link">
-                        <img src="@catalogRenderingModel.Images[0].GetImageUrl(300, 300)" alt="product image" title="@catalogRenderingModel.DisplayName" />
+                        <img src="@catalogRenderingModel.Images.FirstOrDefault().GetImageUrl(300, 300)" alt="product image" title="@catalogRenderingModel.DisplayName" />
                     </a>
                 }
                 else
@@ -36,7 +36,7 @@
             if (catalogRenderingModel.Images != null && catalogRenderingModel.Images.Count > 0)
             {
                 <a href="@catalogRenderingModel.Link">
-                    <img src="@catalogRenderingModel.Images[0].GetImageUrl(300, 300)" alt="product image" title="@catalogRenderingModel.DisplayName" />
+                    <img src="@catalogRenderingModel.Images.FirstOrDefault().GetImageUrl(300, 300)" alt="product image" title="@catalogRenderingModel.DisplayName" />
                 </a>
             }
             else
