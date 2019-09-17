@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {47B355F9-68E3-4B36-B7E1-5623E8B29CF0}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/gulp/tasks/watchImg Copied from Storefront Branded Extension
+parent: {CE00EBEB-6700-493C-9A7A-BE9B015D4386}
+name: watchImg Copied from Storefront Branded Extension
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032807Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 868
+
+aW1wb3J0IGd1bHAgZnJvbSAnZ3VscCc7DQppbXBvcnQgc2FzcyBmcm9tICdndWxwLXNhc3MnOw0KaW1wb3J0IHdhdGNoIGZyb20gJ2d1bHAtd2F0Y2gnOw0KaW1wb3J0IGNvbG9ycyBmcm9tICdjb2xvcnMnDQovLw0KaW1wb3J0IGxvZ2luIGZyb20gJy4vbG9naW4nOw0KaW1wb3J0IGNvbmZpZyBmcm9tICcuLi9jb25maWcnOw0KaW1wb3J0IGZpbGVBY3Rpb25SZXNvbHZlciBmcm9tICcuLi91dGlsL2ZpbGVBY3Rpb25SZXNvbHZlcic7DQovLw0KDQpndWxwLnRhc2soJ3dhdGNoLWltZycsIFsnbG9naW4nXSwgKCkgPT4gew0KICAgIHZhciBjb25mID0gY29uZmlnLmltZzsNCiAgICBzZXRUaW1lb3V0KGZ1bmN0aW9uKCkgew0KICAgICAgICBjb25zb2xlLmxvZygnV2F0Y2hpbmcgSW1hZ2UgZmlsZXMgc3RhcnRlZC4uLicuZ3JlZW4pOw0KICAgIH0sIDApOw0KICAgIHJldHVybiB3YXRjaChjb25mLnBhdGgsIGZ1bmN0aW9uKGZpbGUpIHsNCiAgICAgICAgZmlsZUFjdGlvblJlc29sdmVyKGZpbGUpOw0KICAgIH0pDQp9KTsNCg0KZ3VscC50YXNrKCdpbWctd2F0Y2gnLCBbJ2xvZ2luJ10sDQogICAgZnVuY3Rpb24oKSB7DQogICAgICAgIGdsb2JhbC5pc1dhdGNoaW5nID0gdHJ1ZTsNCiAgICAgICAgZ3VscC5ydW4oJ3dhdGNoLWltZycpDQogICAgfSk=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 2
+
+js
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/x-javascript
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 3
+
+650
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/2C21535C94BA42418D8C3C4EC178AB23.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: cb1b8287-c413-4431-b6e1-85acbcc24d09
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180405T051927Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cb1b8287-c413-4431-b6e1-85acbcc24d09
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180405T051927Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

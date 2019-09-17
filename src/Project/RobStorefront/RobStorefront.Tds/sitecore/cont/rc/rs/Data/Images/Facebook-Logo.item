@@ -1,0 +1,310 @@
+----item----
+version: 1
+id: {28D307E3-FBBA-4F78-A5F9-D37F113B8E47}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Images/Facebook-Logo
+parent: {CE0AD351-8EE7-47B3-8AAE-9980422BB624}
+name: Facebook-Logo
+master: {00000000-0000-0000-0000-000000000000}
+template: {BB8A85AB-1F6D-4518-8772-1C9F4F8DAC18}
+templatekey: Image
+created: 20190916T033050Z
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+400
+----version----
+language: da
+version: 1
+revision: 063cd6bf-c0dd-4c8f-8116-5ddef8eaa932
+
+----field----
+field: {EBE4FDEF-16D5-4D19-833C-24A241628A3A}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{B61FE390-EA86-4BCC-8E70-0991307211FC}"></image>
+----field----
+field: {54CAB1BA-53D3-4CE4-AB7E-F8C17596AA47}
+name: TargetUrl
+key: targeturl
+content-length: 59
+
+<link linktype="external" url="https://www.facebook.com" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180517T102351Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+063cd6bf-c0dd-4c8f-8116-5ddef8eaa932
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 39b9875c-8031-4aca-b607-16eb2869b2be
+
+----field----
+field: {EBE4FDEF-16D5-4D19-833C-24A241628A3A}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{B61FE390-EA86-4BCC-8E70-0991307211FC}"></image>
+----field----
+field: {54CAB1BA-53D3-4CE4-AB7E-F8C17596AA47}
+name: TargetUrl
+key: targeturl
+content-length: 59
+
+<Link linktype="external" url="https://www.facebook.com" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180517T101730Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+39b9875c-8031-4aca-b607-16eb2869b2be
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 7cfc2416-ab80-4541-bcba-da6ca5646237
+
+----field----
+field: {EBE4FDEF-16D5-4D19-833C-24A241628A3A}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{B61FE390-EA86-4BCC-8E70-0991307211FC}"></image>
+----field----
+field: {54CAB1BA-53D3-4CE4-AB7E-F8C17596AA47}
+name: TargetUrl
+key: targeturl
+content-length: 59
+
+<link linktype="external" url="https://www.facebook.com" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171206T034704Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7cfc2416-ab80-4541-bcba-da6ca5646237
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 0a7c0772-4a57-4256-b21b-fe42875f8d58
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0a7c0772-4a57-4256-b21b-fe42875f8d58
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 3a63e69e-1b5c-4a5d-b87d-8575344e72fa
+
+----field----
+field: {EBE4FDEF-16D5-4D19-833C-24A241628A3A}
+name: Image
+key: image
+content-length: 64
+
+<image mediaid="{B61FE390-EA86-4BCC-8E70-0991307211FC}"></image>
+----field----
+field: {54CAB1BA-53D3-4CE4-AB7E-F8C17596AA47}
+name: TargetUrl
+key: targeturl
+content-length: 59
+
+<link linktype="external" url="https://www.facebook.com" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180517T103201Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3a63e69e-1b5c-4a5d-b87d-8575344e72fa
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

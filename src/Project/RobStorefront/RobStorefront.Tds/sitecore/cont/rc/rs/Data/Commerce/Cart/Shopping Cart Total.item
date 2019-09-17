@@ -1,0 +1,324 @@
+----item----
+version: 1
+id: {3C35CB96-B7A3-4D09-90E6-3CF6CE4093B8}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Shopping Cart Total
+parent: {80045893-286A-4D75-8183-0FD1342B2827}
+name: Shopping Cart Total
+master: {00000000-0000-0000-0000-000000000000}
+template: {B86FA817-5304-44B9-9098-2F5D53F033E9}
+templatekey: Shopping Cart Total
+created: 20190916T032938Z
+
+----version----
+language: da
+version: 1
+revision: 9dc59023-8572-48b1-a229-10fc8705fe70
+
+----field----
+field: {03E9D642-754B-4FD7-9208-916FAE7FE7E7}
+name: Order Total Header
+key: order total header
+content-length: 8
+
+Oversigt
+----field----
+field: {536065AB-7FFA-4353-A5E1-F354E484AE81}
+name: Subtotal Label
+key: subtotal label
+content-length: 8
+
+Subtotal
+----field----
+field: {2F777A53-15C1-4BBB-BC15-4C0F286D67F1}
+name: VAT Label
+key: vat label
+content-length: 7
+
+Skatter
+----field----
+field: {FFA529E6-F767-4F73-8191-31DD5465928D}
+name: Savings Tooltip
+key: savings tooltip
+content-length: 17
+
+Besparelser i alt
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083032Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9dc59023-8572-48b1-a229-10fc8705fe70
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 139da985-d4c5-433e-bcfd-99d8709dd0de
+
+----field----
+field: {03E9D642-754B-4FD7-9208-916FAE7FE7E7}
+name: Order Total Header
+key: order total header
+content-length: 15
+
+Zusammenfassung
+----field----
+field: {2F777A53-15C1-4BBB-BC15-4C0F286D67F1}
+name: VAT Label
+key: vat label
+content-length: 7
+
+Steuern
+----field----
+field: {FFA529E6-F767-4F73-8191-31DD5465928D}
+name: Savings Tooltip
+key: savings tooltip
+content-length: 15
+
+Gesamtersparnis
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084834Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+139da985-d4c5-433e-bcfd-99d8709dd0de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: a373da9e-b155-4b34-89d9-f8c0451e42e8
+
+----field----
+field: {03E9D642-754B-4FD7-9208-916FAE7FE7E7}
+name: Order Total Header
+key: order total header
+content-length: 7
+
+Summary
+----field----
+field: {536065AB-7FFA-4353-A5E1-F354E484AE81}
+name: Subtotal Label
+key: subtotal label
+content-length: 9
+
+Sub total
+----field----
+field: {2F777A53-15C1-4BBB-BC15-4C0F286D67F1}
+name: VAT Label
+key: vat label
+content-length: 5
+
+Taxes
+----field----
+field: {FFA529E6-F767-4F73-8191-31DD5465928D}
+name: Savings Tooltip
+key: savings tooltip
+content-length: 14
+
+Total savings 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T153641Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a373da9e-b155-4b34-89d9-f8c0451e42e8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: e169e8db-1727-44cd-bf1e-bc1c56444ad9
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e169e8db-1727-44cd-bf1e-bc1c56444ad9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 4ae5706a-3fa3-4121-8a0d-758434b9d190
+
+----field----
+field: {03E9D642-754B-4FD7-9208-916FAE7FE7E7}
+name: Order Total Header
+key: order total header
+content-length: 4
+
+サマリー
+----field----
+field: {2F777A53-15C1-4BBB-BC15-4C0F286D67F1}
+name: VAT Label
+key: vat label
+content-length: 1
+
+税
+----field----
+field: {FFA529E6-F767-4F73-8191-31DD5465928D}
+name: Savings Tooltip
+key: savings tooltip
+content-length: 4
+
+割引合計
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085413Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4ae5706a-3fa3-4121-8a0d-758434b9d190
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

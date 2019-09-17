@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {00AD23BD-4E71-48E6-9D4B-4879150CA085}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/styles/privacy-warning
+parent: {0D7ACE52-9912-44A2-8786-CD9881EDE259}
+name: privacy-warning
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032804Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1688
+
+LyogYnJlYWtwb2ludHMgKi8KLnByaXZhY3ktd2FybmluZyB7CiAgZm9udC1zaXplOiAxNHB4OwogIGZvbnQtc2l6ZTogMS40cmVtOwogIG9wYWNpdHk6IDAuODsKICBwb3NpdGlvbjogZml4ZWQ7CiAgbGVmdDogMDsKICBib3R0b206IDA7CiAgd2lkdGg6IDEwMCU7CiAgaGVpZ2h0OiBhdXRvOwogIG1hcmdpbjogMDsKICBwYWRkaW5nOiAyMHB4IDAgMDsKICBjb2xvcjogI0ZGRkZGRjsKICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgei1pbmRleDogMTAwMDsKICBiYWNrZ3JvdW5kOiB1cmwoLi4vSW1hZ2VzL292ZXJsYXktYmcucG5nKTsKfQoKLnByaXZhY3ktd2FybmluZyAuY29tcG9uZW50LWNvbnRlbnQgewogIHBvc2l0aW9uOiByZWxhdGl2ZTsKICBoZWlnaHQ6IGF1dG87CiAgd2lkdGg6IDkwJTsKICBwYWRkaW5nOiAxNXB4OwogIG1hcmdpbjogMCBhdXRvOwp9CgoucHJpdmFjeS13YXJuaW5nIGEgewogIGNvbG9yOiAjRkZGRkZGOwp9CgoucHJpdmFjeS13YXJuaW5nIGE6aG92ZXIsIC5wcml2YWN5LXdhcm5pbmcgYTpmb2N1cyB7CiAgY29sb3I6ICNGRkZGRkY7Cn0KCi5wcml2YWN5LXdhcm5pbmcgLmNsb3NlIHsKICAtd2Via2l0LXRyYW5zZm9ybTogc2NhbGUoMS4zLCAwLjk1KTsKICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgxLjMsIDAuOTUpOwogIHRyYW5zZm9ybTogc2NhbGUoMS4zLCAwLjk1KTsKICBmb250LXNpemU6IDM1cHg7CiAgZm9udC1zaXplOiAzLjVyZW07CiAgcG9zaXRpb246IGFic29sdXRlOwogIHRvcDogLTEwcHg7CiAgcmlnaHQ6IDhweDsKICBmb250LXdlaWdodDogYm9sZDsKfQoKLnByaXZhY3ktd2FybmluZyAubGVhcm5Nb3JlIHsKICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7CiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTsKICBtYXJnaW4tcmlnaHQ6IDEwcHg7Cn0KCi5wcml2YWN5LXdhcm5pbmcgLnN1Ym1pdCB7CiAgZGlzcGxheTogaW5saW5lLWJsb2NrOwogIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7CiAgcGFkZGluZzogMjBweCAwOwp9CgoucHJpdmFjeS13YXJuaW5nIC5zdWJtaXQgYSB7CiAgZm9udC1zaXplOiAxM3B4OwogIGZvbnQtc2l6ZTogMS4zcmVtOwogIGJvcmRlci13aWR0aDogMXB4OwogIGJvcmRlci1zdHlsZTogc29saWQ7CiAgYm9yZGVyLWNvbG9yOiAjZDJkMmQyOwogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICBmb250LXdlaWdodDogYm9sZDsKICBiYWNrZ3JvdW5kOiAjRkZGRkZGOwogIHBhZGRpbmc6IDVweCAxMHB4OwogIGN1cnNvcjogcG9pbnRlcjsKICBjb2xvcjogIzAwMDsKfQo=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+css
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 8
+
+text/css
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1265
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/9B93DE2D8ED845AEA016777D1E0F278E.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 87ccee60-056e-47f8-8c1a-5befcf20a49e
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171207T152204Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+87ccee60-056e-47f8-8c1a-5befcf20a49e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233250Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

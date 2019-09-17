@@ -1,0 +1,207 @@
+----item----
+version: 1
+id: {28ACA701-D8DB-425F-A66A-D15B6F13596B}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Styles/Commerce/Box Shadow
+parent: {479F4465-88E3-4F27-A127-A91DE829AA02}
+name: Box Shadow
+master: {00000000-0000-0000-0000-000000000000}
+template: {6B8AABEF-D650-46E0-97D0-C0B04F7F016B}
+templatekey: Style
+created: 20190916T033053Z
+
+----field----
+field: {09147FB2-EBFB-4949-8C8E-26A424409D5E}
+name: Value
+key: value
+content-length: 10
+
+box-shadow
+----field----
+field: {69BB49F3-DA64-4B0E-ABD6-184B832FF6AB}
+name: Allowed Renderings
+key: allowed renderings
+content-length: 233
+
+{896A2C68-1362-4E88-8BA0-1805AE6D4837}|{C25766C8-9AFD-4D28-87FE-147774F6806D}|{2DA9B139-FB9C-4FD7-BE84-CB066B2D7CC3}|{334E98C2-3C70-4E32-8B2A-B32DC49C1660}|{4A0D4E0B-BC20-4F2E-BD84-A4BD35834E86}|{69D0A00E-FF06-4B17-BE59-BED330577680}
+----version----
+language: da
+version: 1
+revision: 345209c7-a126-4a47-a0b0-4b4bef5d3726
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033125Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+345209c7-a126-4a47-a0b0-4b4bef5d3726
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033125Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 93f4136d-1f8a-4a13-92cc-9b8c9955ee3c
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033142Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+93f4136d-1f8a-4a13-92cc-9b8c9955ee3c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033142Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 6a96eb91-bd95-41a0-ab66-138a898a3594
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171109T140841Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6a96eb91-bd95-41a0-ab66-138a898a3594
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170712T040330Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: f095187a-0d07-4885-99ef-10cf75f80551
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033158Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f095187a-0d07-4885-99ef-10cf75f80551
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033158Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

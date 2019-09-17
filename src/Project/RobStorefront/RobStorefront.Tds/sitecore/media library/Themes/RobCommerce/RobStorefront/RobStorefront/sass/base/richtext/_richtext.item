@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {461722C7-5C3B-4A4B-90D9-CA43FBB469DA}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/base/richtext/_richtext
+parent: {52440984-8942-4518-9D87-12A4A555891D}
+name: _richtext
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032802Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 2256
+
+aDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7DQogICAgY29sb3I6ICR0ZXh0LWhlYWRpbmctY29sb3I7DQp9DQpoMSwgaDIgew0KICAgIG1hcmdpbjogJHNtYWxsLW1hcmdpbiAwOw0KfQ0KaDMsIGg0LCBwIHsNCiAgICBtYXJnaW46ICRleHRyYXNtYWxsLW1hcmdpbiAwOw0KfQ0KaDUsIGg2IHsNCiAgICBtYXJnaW46ICRleHRyYXNtYWxsLW1hcmdpbiAwIDA7DQp9DQpzdHJvbmcgew0KICAgIGZvbnQtd2VpZ2h0OiA3MDA7DQp9DQp1bCwgb2wgew0KICAgIHBhZGRpbmctYm90dG9tOiAkZXh0cmFzbWFsbC1tYXJnaW47DQogICAgcGFkZGluZy10b3A6ICRleHRyYXNtYWxsLW1hcmdpbjsNCiAgICBtYXJnaW4tbGVmdDogJHNtYWxsLW1hcmdpbjsNCn0NCmxpIHsNCiAgICBmb250LXNpemU6ICRmb250LW5vcm1hbDsNCiAgICBtYXJnaW4tbGVmdDogMTVweDsNCn0NCnVsIHsNCiAgICBsaSB7DQogICAgICAgIGxpc3Qtc3R5bGU6IGRpc2M7DQogICAgICAgIGxpc3Qtc3R5bGUtcG9zaXRpb246IGluc2lkZTsNCiAgICB9DQp9DQpvbCB7DQogICAgbGkgew0KICAgICAgICBsaXN0LXN0eWxlOiBkZWNpbWFsOw0KICAgICAgICBsaXN0LXN0eWxlLXBvc2l0aW9uOiBpbnNpZGU7DQogICAgfQ0KfQ0KYSB7DQogICAgY29sb3I6ICRyaWNoLWNvbnRlbnQtbGluay1jb2xvcjsNCiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsNCiAgICBmb250LXNpemU6IDFlbTsNCiAgICAmOmhvdmVyIHsNCiAgICAgICAgY29sb3I6ICRyaWNoLWNvbnRlbnQtbGluay1jb2xvci1hY3RpdmU7DQogICAgfQ0KfQ0KdGFibGUgew0KICAgIGhlaWdodDogYXV0byAhaW1wb3J0YW50Ow0KICAgIGJvcmRlcjogMnB4IHNvbGlkICRib3JkZXItZ3JheTsNCiAgICAmLCB0ciwgdGgsIHRkIHsNCiAgICAgICAgYm9yZGVyOiBzb2xpZCAycHggJGJvcmRlci1ncmF5Ow0KICAgICAgICBiYWNrZ3JvdW5kOiAkYmctYmFzaWMtY29sb3I7DQogICAgICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7DQogICAgICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7DQogICAgfQ0KICAgIHRyLCB0aCwgdGQgew0KICAgICAgICBwYWRkaW5nOiA1cHg7DQogICAgfQ0KICAgIGNhcHRpb24gew0KICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkYmctbGlnaHQtZ3JheTsNCiAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAgICAgICAgcGFkZGluZzogMTBweDsNCiAgICAgICAgZm9udC1zaXplOiAkZm9udC1iaWc7DQogICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkOw0KICAgICAgICBtYXJnaW4tbGVmdDogMDsNCiAgICB9DQogICAgdHIgew0KICAgICAgICBib3JkZXI6IG5vbmU7DQogICAgfQ0KICAgIHRoLCB0ZCB7DQogICAgICAgIGJvcmRlci13aWR0aDogMnB4IDAgMCAycHg7DQogICAgfQ0KICAgIHRoIHsNCiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRlbigkYmctbGlnaHQtZ3JheSwgNSUpOw0KICAgICAgICBmb250LXNpemU6ICRmb250LW5vcm1hbDsNCiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7DQogICAgICAgIHBhZGRpbmc6IDdweDsNCiAgICAgICAgJjpmaXJzdC1jaGlsZCB7DQogICAgICAgICAgICBib3JkZXItbGVmdDogMDsNCiAgICAgICAgfQ0KICAgIH0NCiAgICB0ZCB7DQogICAgICAgICY6Zmlyc3QtY2hpbGQgew0KICAgICAgICAgICAgYm9yZGVyLWxlZnQ6IDA7DQogICAgICAgIH0NCiAgICB9DQp9DQo=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 4
+
+scss
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/octet-stream
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1691
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/2C8CDB914DD446A3B3586B889E66A1B4.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 4c1798b0-c826-4af8-9d9f-1c105457c71e
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170614T063702Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4c1798b0-c826-4af8-9d9f-1c105457c71e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233302Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

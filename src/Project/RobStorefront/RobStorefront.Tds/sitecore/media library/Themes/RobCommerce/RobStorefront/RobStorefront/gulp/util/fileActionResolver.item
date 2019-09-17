@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {A53A010E-91E9-4D3D-9C7D-64681EFDDF4C}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/gulp/util/fileActionResolver
+parent: {8013CA22-719D-498A-A7C4-436FF346D1CD}
+name: fileActionResolver
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032801Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1816
+
+aW1wb3J0IGNvbmZpZyBmcm9tICcuLi9jb25maWcnOw0KaW1wb3J0IHVwbG9hZCBmcm9tICdndWxwLXVwbG9hZCc7DQppbXBvcnQgcGF0aCBmcm9tICdwYXRoJzsNCmltcG9ydCBndWxwIGZyb20gJ2d1bHAnOw0KaW1wb3J0IHVybGxpYiBmcm9tICd1cmxsaWInOw0KaW1wb3J0IGZvcm1zdHJlYW0gZnJvbSAnZm9ybXN0cmVhbSc7DQppbXBvcnQgcmVxdWVzdCBmcm9tICdyZXF1ZXN0JzsNCmltcG9ydCBmb3JtRGF0YSBmcm9tICdmb3JtLWRhdGEnOw0KaW1wb3J0ICogYXMgZnMgZnJvbSAnZnMnOw0KaW1wb3J0IHF1ZXJ5c3RyaW5nIGZyb20gJ3F1ZXJ5c3RyaW5nJzsNCmltcG9ydCBkZWxldGVGaWxlIGZyb20gJy4vcmVxdWVzdERlbGV0ZUZpbGUnOw0KaW1wb3J0IGNoYW5nZUZpbGUgZnJvbSAnLi9yZXF1ZXN0Q2hhbmdlRmlsZSc7DQppbXBvcnQgc2tpcFNlbmRpbmcgZnJvbSAnLi9za2lwU2VuZGluZyc7DQppbXBvcnQgY2hhbmdlVGVtcGxhdGUgZnJvbSAnLi9yZXF1ZXN0Q2hhbmdlVGVtcGxhdGUnOw0KaW1wb3J0IFF1ZXVlIGZyb20gJy4vUXVldWUnOw0KDQpjb25zdCBxdWV1ZSA9IG5ldyBRdWV1ZSgpOw0KbW9kdWxlLmV4cG9ydHMucXVldWVJbnN0YW5jZSA9IHF1ZXVlOw0KbW9kdWxlLmV4cG9ydHMuZmlsZUFjdGlvblJlc29sdmVyID0gIGZ1bmN0aW9uIChmaWxlLCBjYWxsYmFjayA9IG51bGwpIHsNCiAgICBsZXQgZmlsZU5hbWUgPSBwYXRoLmJhc2VuYW1lKGZpbGUucGF0aCksDQogICAgICAgIGV2ZW50VHlwZSA9IGZpbGUuZXZlbnQ7Ly8gYWRkLCB1bmxpbmsgLCBjaGFuZ2UgDQogICAgaWYgKHNraXBTZW5kaW5nKGZpbGUucGF0aCkpIHsNCiAgICAgICAgY29uc29sZS5sb2coKCdTZW5kaW5nIG9mIGZpbGUgJyArIGZpbGVOYW1lICsgJyB3YXMgc2tpcHBlZCcpLmJsdWUpOw0KICAgICAgICByZXR1cm47DQogICAgfQ0KICAgIGlmIChmaWxlTmFtZS5pbmRleE9mKCcuaHRtbCcpID4gLTEpIHsNCiAgICAgICAgcmV0dXJuIHF1ZXVlLmFkZChmdW5jdGlvbiAoKSB7DQogICAgICAgICAgICByZXR1cm4gY2hhbmdlVGVtcGxhdGUoZmlsZSkNCiAgICAgICAgfSk7DQogICAgfQ0KICAgIGlmIChldmVudFR5cGUgPT0gJ2NoYW5nZScgfHwgZXZlbnRUeXBlID09ICdhZGQnKSB7DQogICAgICAgIHJldHVybiBxdWV1ZS5hZGQoZnVuY3Rpb24gKCkgew0KICAgICAgICAgICAgcmV0dXJuIGNoYW5nZUZpbGUoZmlsZSkNCiAgICAgICAgfSk7DQoNCiAgICB9IGVsc2UgaWYgKGV2ZW50VHlwZSA9PSAndW5saW5rJykgew0KICAgICAgICByZXR1cm4gcXVldWUuYWRkKGZ1bmN0aW9uICgpIHsNCiAgICAgICAgICAgIHJldHVybiBkZWxldGVGaWxlKGZpbGUpOw0KICAgICAgICB9KTsNCg0KICAgIH0NCg0KfTs=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 2
+
+js
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/x-javascript
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1361
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/D5906F02A5AD4B928E10966E75F8C360.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 19b29055-cab2-4875-ad3f-b972348bf865
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170614T065215Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+19b29055-cab2-4875-ad3f-b972348bf865
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233300Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

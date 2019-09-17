@@ -1,0 +1,751 @@
+----item----
+version: 1
+id: {5B00E60F-65C5-4EDF-8179-A8D68852A5C4}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Checkout/Review
+parent: {DD52CF2A-006E-4003-AF67-C622CF6C2A0F}
+name: Review
+master: {00000000-0000-0000-0000-000000000000}
+template: {3B930FDE-9943-4BDF-A99D-DBFA4C63AD3A}
+templatekey: Review
+created: 20190916T032938Z
+
+----version----
+language: da
+version: 1
+revision: 72802b58-109d-4603-8aef-6c118cddb266
+
+----field----
+field: {336CE5B8-2852-4E70-BD46-841A44461F2A}
+name: Next Button In-Progress Label
+key: next button in-progress label
+content-length: 12
+
+Behandler...
+----field----
+field: {75804796-80A9-4165-B297-47022956AB55}
+name: Next Button Label
+key: next button label
+content-length: 13
+
+Bekræft ordre
+----field----
+field: {B4D813B6-3145-4965-8D72-6F2436B0F407}
+name: Previous Button Label
+key: previous button label
+content-length: 23
+
+Tilbage til fakturering
+----field----
+field: {E880861C-AE2B-426A-A628-AAD139CBCB74}
+name: Delivery Label
+key: delivery label
+content-length: 9
+
+Levering:
+----field----
+field: {E2585533-00E3-408C-BF30-13EF5E1D350E}
+name: Discount Label
+key: discount label
+content-length: 5
+
+Rabat
+----field----
+field: {01A84314-BBFF-4A8D-BC77-F05049F785F7}
+name: Product Details Header
+key: product details header
+content-length: 15
+
+Produktdetaljer
+----field----
+field: {95BA4B7D-B78F-41E9-91BD-DC556EB143EF}
+name: Quantity Header
+key: quantity header
+content-length: 5
+
+Antal
+----field----
+field: {BDCCFEF3-787C-4E21-A0A4-DB19F6D65E6A}
+name: Total Header
+key: total header
+content-length: 5
+
+Total
+----field----
+field: {726E50A5-D112-4BA7-AFB6-E916CBE3FD5A}
+name: Unit Price Header
+key: unit price header
+content-length: 10
+
+Enhedspris
+----field----
+field: {918481E9-6622-4878-9559-50441413C24A}
+name: Variant Label
+key: variant label
+content-length: 7
+
+Variant
+----field----
+field: {50917B7D-2AF4-4FFB-80A3-2D6BE166619C}
+name: Billing Address Header
+key: billing address header
+content-length: 19
+
+Faktureringsadresse
+----field----
+field: {E43AAE63-313C-433F-B2FA-77B71B34D498}
+name: Credit Card Label
+key: credit card label
+content-length: 10
+
+Kreditkort
+----field----
+field: {E879B1FA-0EE9-4B3B-B067-7F9AF9740E87}
+name: Edit Billing Address Text
+key: edit billing address text
+content-length: 27
+
+Rediger faktureringsadresse
+----field----
+field: {161BD054-8D77-4E31-901B-8BE71AF30948}
+name: Edit Payment Methods Text
+key: edit payment methods text
+content-length: 23
+
+Rediger betalingsmetode
+----field----
+field: {A8344352-0B64-4D39-AF8A-923DF6AC19D7}
+name: Edit Shipping Address Text
+key: edit shipping address text
+content-length: 27
+
+Rediger forsendelsesadresse
+----field----
+field: {F7912817-6731-48B0-92E1-AA8313FE6F1F}
+name: Gift Cards Header
+key: gift cards header
+content-length: 8
+
+Gavekort
+----field----
+field: {4C2FA1C2-E2A2-498E-9606-264F22F0B45C}
+name: Order Information Header
+key: order information header
+content-length: 16
+
+Ordreinformation
+----field----
+field: {2B6252FA-7878-4F18-8EC0-0C9EBA2191C7}
+name: Payment Methods Header
+key: payment methods header
+content-length: 16
+
+Betalingsmetoder
+----field----
+field: {C21D066E-5B38-4EA9-A4A6-38C4B34E8B3E}
+name: Savings Label
+key: savings label
+content-length: 11
+
+Besparelser
+----field----
+field: {20B0A545-B3B4-458A-8F92-C9D84AF6D431}
+name: Shipping Address Header
+key: shipping address header
+content-length: 19
+
+Forsendelsesadresse
+----field----
+field: {15DEEE21-97B9-4B0E-A089-E78A2AC6F8B9}
+name: Shipping Cost Label
+key: shipping cost label
+content-length: 22
+
+Forsendelsesomkostning
+----field----
+field: {AA46B5B7-A08B-4FBC-91FF-24DB0B85B5D2}
+name: Subtotal Label
+key: subtotal label
+content-length: 8
+
+Subtotal
+----field----
+field: {369EFCE9-B982-4261-A28E-C8D7AC7B06CD}
+name: Taxes Label
+key: taxes label
+content-length: 4
+
+MOMS
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083001Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+72802b58-109d-4603-8aef-6c118cddb266
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032942Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 05d05693-13dc-4cfc-a77a-f3e387878574
+
+----field----
+field: {336CE5B8-2852-4E70-BD46-841A44461F2A}
+name: Next Button In-Progress Label
+key: next button in-progress label
+content-length: 17
+
+Wird verarbeitet…
+----field----
+field: {75804796-80A9-4165-B297-47022956AB55}
+name: Next Button Label
+key: next button label
+content-length: 21
+
+Bestellung bestätigen
+----field----
+field: {B4D813B6-3145-4965-8D72-6F2436B0F407}
+name: Previous Button Label
+key: previous button label
+content-length: 21
+
+Zurück zur Abrechnung
+----field----
+field: {E880861C-AE2B-426A-A628-AAD139CBCB74}
+name: Delivery Label
+key: delivery label
+content-length: 10
+
+Lieferung:
+----field----
+field: {E2585533-00E3-408C-BF30-13EF5E1D350E}
+name: Discount Label
+key: discount label
+content-length: 6
+
+Rabatt
+----field----
+field: {01A84314-BBFF-4A8D-BC77-F05049F785F7}
+name: Product Details Header
+key: product details header
+content-length: 14
+
+Produktdetails
+----field----
+field: {95BA4B7D-B78F-41E9-91BD-DC556EB143EF}
+name: Quantity Header
+key: quantity header
+content-length: 5
+
+Menge
+----field----
+field: {BDCCFEF3-787C-4E21-A0A4-DB19F6D65E6A}
+name: Total Header
+key: total header
+content-length: 6
+
+Gesamt
+----field----
+field: {726E50A5-D112-4BA7-AFB6-E916CBE3FD5A}
+name: Unit Price Header
+key: unit price header
+content-length: 10
+
+Stückpreis
+----field----
+field: {918481E9-6622-4878-9559-50441413C24A}
+name: Variant Label
+key: variant label
+content-length: 8
+
+Variante
+----field----
+field: {50917B7D-2AF4-4FFB-80A3-2D6BE166619C}
+name: Billing Address Header
+key: billing address header
+content-length: 16
+
+Rechnungsadresse
+----field----
+field: {E43AAE63-313C-433F-B2FA-77B71B34D498}
+name: Credit Card Label
+key: credit card label
+content-length: 11
+
+Kreditkarte
+----field----
+field: {E879B1FA-0EE9-4B3B-B067-7F9AF9740E87}
+name: Edit Billing Address Text
+key: edit billing address text
+content-length: 26
+
+Zahlungsadresse bearbeiten
+----field----
+field: {161BD054-8D77-4E31-901B-8BE71AF30948}
+name: Edit Payment Methods Text
+key: edit payment methods text
+content-length: 27
+
+Zahlungsmethoden bearbeiten
+----field----
+field: {A8344352-0B64-4D39-AF8A-923DF6AC19D7}
+name: Edit Shipping Address Text
+key: edit shipping address text
+content-length: 25
+
+Versandadresse bearbeiten
+----field----
+field: {F7912817-6731-48B0-92E1-AA8313FE6F1F}
+name: Gift Cards Header
+key: gift cards header
+content-length: 14
+
+Geschenkkarten
+----field----
+field: {4C2FA1C2-E2A2-498E-9606-264F22F0B45C}
+name: Order Information Header
+key: order information header
+content-length: 18
+
+Bestellbestätigung
+----field----
+field: {2B6252FA-7878-4F18-8EC0-0C9EBA2191C7}
+name: Payment Methods Header
+key: payment methods header
+content-length: 16
+
+Zahlungsmethoden
+----field----
+field: {C21D066E-5B38-4EA9-A4A6-38C4B34E8B3E}
+name: Savings Label
+key: savings label
+content-length: 11
+
+Ersparnisse
+----field----
+field: {20B0A545-B3B4-458A-8F92-C9D84AF6D431}
+name: Shipping Address Header
+key: shipping address header
+content-length: 14
+
+Versandadresse
+----field----
+field: {15DEEE21-97B9-4B0E-A089-E78A2AC6F8B9}
+name: Shipping Cost Label
+key: shipping cost label
+content-length: 13
+
+Versandkosten
+----field----
+field: {AA46B5B7-A08B-4FBC-91FF-24DB0B85B5D2}
+name: Subtotal Label
+key: subtotal label
+content-length: 13
+
+Zwischensumme
+----field----
+field: {369EFCE9-B982-4261-A28E-C8D7AC7B06CD}
+name: Taxes Label
+key: taxes label
+content-length: 5
+
+MwSt.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084805Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+05d05693-13dc-4cfc-a77a-f3e387878574
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032942Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: f1b929e6-8b84-45d3-b525-5c115c589e50
+
+----field----
+field: {C21D066E-5B38-4EA9-A4A6-38C4B34E8B3E}
+name: Savings Label
+key: savings label
+content-length: 7
+
+Savings
+----field----
+field: {15DEEE21-97B9-4B0E-A089-E78A2AC6F8B9}
+name: Shipping Cost Label
+key: shipping cost label
+content-length: 13
+
+Shipping cost
+----field----
+field: {369EFCE9-B982-4261-A28E-C8D7AC7B06CD}
+name: Taxes Label
+key: taxes label
+content-length: 3
+
+VAT
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T154002Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f1b929e6-8b84-45d3-b525-5c115c589e50
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032942Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 627c3ee7-d484-4645-aa61-713c0dad95c5
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032942Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+627c3ee7-d484-4645-aa61-713c0dad95c5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032942Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 4028fa82-7c3c-4224-aecd-52c93062c327
+
+----field----
+field: {336CE5B8-2852-4E70-BD46-841A44461F2A}
+name: Next Button In-Progress Label
+key: next button in-progress label
+content-length: 6
+
+処理中...
+----field----
+field: {75804796-80A9-4165-B297-47022956AB55}
+name: Next Button Label
+key: next button label
+content-length: 5
+
+注文を確認
+----field----
+field: {B4D813B6-3145-4965-8D72-6F2436B0F407}
+name: Previous Button Label
+key: previous button label
+content-length: 5
+
+請求に戻る
+----field----
+field: {E880861C-AE2B-426A-A628-AAD139CBCB74}
+name: Delivery Label
+key: delivery label
+content-length: 3
+
+配送:
+----field----
+field: {E2585533-00E3-408C-BF30-13EF5E1D350E}
+name: Discount Label
+key: discount label
+content-length: 2
+
+割引
+----field----
+field: {01A84314-BBFF-4A8D-BC77-F05049F785F7}
+name: Product Details Header
+key: product details header
+content-length: 5
+
+商品の詳細
+----field----
+field: {95BA4B7D-B78F-41E9-91BD-DC556EB143EF}
+name: Quantity Header
+key: quantity header
+content-length: 2
+
+数量
+----field----
+field: {BDCCFEF3-787C-4E21-A0A4-DB19F6D65E6A}
+name: Total Header
+key: total header
+content-length: 2
+
+合計
+----field----
+field: {726E50A5-D112-4BA7-AFB6-E916CBE3FD5A}
+name: Unit Price Header
+key: unit price header
+content-length: 2
+
+単価
+----field----
+field: {918481E9-6622-4878-9559-50441413C24A}
+name: Variant Label
+key: variant label
+content-length: 5
+
+バリアント
+----field----
+field: {50917B7D-2AF4-4FFB-80A3-2D6BE166619C}
+name: Billing Address Header
+key: billing address header
+content-length: 6
+
+請求書送付先
+----field----
+field: {E43AAE63-313C-433F-B2FA-77B71B34D498}
+name: Credit Card Label
+key: credit card label
+content-length: 9
+
+クレジット カード
+----field----
+field: {E879B1FA-0EE9-4B3B-B067-7F9AF9740E87}
+name: Edit Billing Address Text
+key: edit billing address text
+content-length: 9
+
+請求書送付先を編集
+----field----
+field: {161BD054-8D77-4E31-901B-8BE71AF30948}
+name: Edit Payment Methods Text
+key: edit payment methods text
+content-length: 8
+
+支払い方法を編集
+----field----
+field: {A8344352-0B64-4D39-AF8A-923DF6AC19D7}
+name: Edit Shipping Address Text
+key: edit shipping address text
+content-length: 8
+
+発送先住所を編集
+----field----
+field: {F7912817-6731-48B0-92E1-AA8313FE6F1F}
+name: Gift Cards Header
+key: gift cards header
+content-length: 7
+
+ギフト カード
+----field----
+field: {4C2FA1C2-E2A2-498E-9606-264F22F0B45C}
+name: Order Information Header
+key: order information header
+content-length: 4
+
+注文情報
+----field----
+field: {2B6252FA-7878-4F18-8EC0-0C9EBA2191C7}
+name: Payment Methods Header
+key: payment methods header
+content-length: 5
+
+支払い方法
+----field----
+field: {C21D066E-5B38-4EA9-A4A6-38C4B34E8B3E}
+name: Savings Label
+key: savings label
+content-length: 2
+
+割引
+----field----
+field: {20B0A545-B3B4-458A-8F92-C9D84AF6D431}
+name: Shipping Address Header
+key: shipping address header
+content-length: 5
+
+発送先住所
+----field----
+field: {15DEEE21-97B9-4B0E-A089-E78A2AC6F8B9}
+name: Shipping Cost Label
+key: shipping cost label
+content-length: 2
+
+送料
+----field----
+field: {AA46B5B7-A08B-4FBC-91FF-24DB0B85B5D2}
+name: Subtotal Label
+key: subtotal label
+content-length: 2
+
+小計
+----field----
+field: {369EFCE9-B982-4261-A28E-C8D7AC7B06CD}
+name: Taxes Label
+key: taxes label
+content-length: 3
+
+消費税
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085335Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4028fa82-7c3c-4224-aecd-52c93062c327
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032942Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

@@ -1,0 +1,303 @@
+----item----
+version: 1
+id: {D44AA23B-B330-4701-9BF2-579306714828}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/Checkout As Guest Link
+parent: {1A9BB719-315C-48A4-9E99-B35D19E6A310}
+name: Checkout As Guest Link
+master: {00000000-0000-0000-0000-000000000000}
+template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
+templatekey: Link
+created: 20190916T033051Z
+
+----version----
+language: da
+version: 1
+revision: c8f74e2e-364e-427c-bf21-3e79ab7f8a64
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 191
+
+<link linktype="internal" text="Checkout as guest" title="Checkout as guest" class="secondary-button-line large-height" querystring="" target="" id="{AC9F992C-B66E-4AAD-BDEC-41FCD8269C08}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 31
+
+Link til gå til kassen som gæst
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083211Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c8f74e2e-364e-427c-bf21-3e79ab7f8a64
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: a273ec57-09e4-4526-ad3c-e2043a54780e
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 195
+
+<link linktype="internal" text="Als Gast zur Kasse gehen" title="Kasse als Gast" class="secondary-button-line large-height" querystring="" target="" id="{AC9F992C-B66E-4AAD-BDEC-41FCD8269C08}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+Als Gast zur Kasse gehen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085012Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a273ec57-09e4-4526-ad3c-e2043a54780e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: e0e8ad33-06ad-4299-b95f-20147bec8ad2
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 191
+
+<link linktype="internal" text="Checkout as guest" title="Checkout as guest" class="secondary-button-line large-height" querystring="" target="" id="{AC9F992C-B66E-4AAD-BDEC-41FCD8269C08}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 22
+
+Checkout As Guest Link
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170203T034636Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e0e8ad33-06ad-4299-b95f-20147bec8ad2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 93e2efbe-de3d-4591-8d17-f73c36bfe278
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+93e2efbe-de3d-4591-8d17-f73c36bfe278
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 11a227e9-d20c-493f-b9e6-cee7c7e43bf5
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 185
+
+<link linktype="internal" text="ゲストとしてレジに進む" title="Checkout as guest" class="secondary-button-line large-height" querystring="" target="" id="{AC9F992C-B66E-4AAD-BDEC-41FCD8269C08}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+ゲストとしてレジに進む リンク
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085640Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+11a227e9-d20c-493f-b9e6-cee7c7e43bf5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

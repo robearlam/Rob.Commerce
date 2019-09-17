@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {941970D7-C118-4F4D-AD52-0F877ADA076A}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/base/fontawesome/_mixins
+parent: {85867EEC-D2A9-4091-BC1F-71CA3CA87A17}
+name: _mixins
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032802Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 2184
+
+Ly8gTWl4aW5zCi8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCgpAbWl4aW4gZmEtaWNvbigpIHsKICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7CiAgZm9udDogbm9ybWFsIG5vcm1hbCBub3JtYWwgI3skZmEtZm9udC1zaXplLWJhc2V9LyN7JGZhLWxpbmUtaGVpZ2h0LWJhc2V9IEZvbnRBd2Vzb21lOyAvLyBzaG9ydGVuaW5nIGZvbnQgZGVjbGFyYXRpb24KICBmb250LXNpemU6IGluaGVyaXQ7IC8vIGNhbid0IGhhdmUgZm9udC1zaXplIGluaGVyaXQgb24gbGluZSBhYm92ZSwgc28gbmVlZCB0byBvdmVycmlkZQogIHRleHQtcmVuZGVyaW5nOiBhdXRvOyAvLyBvcHRpbWl6ZWxlZ2liaWxpdHkgdGhyb3dzIHRoaW5ncyBvZmYgIzEwOTQKICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDsKICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlOwoKfQoKQG1peGluIGZhLWljb24tcm90YXRlKCRkZWdyZWVzLCAkcm90YXRpb24pIHsKICAtbXMtZmlsdGVyOiAicHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LkJhc2ljSW1hZ2Uocm90YXRpb249I3skcm90YXRpb259KSI7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSgkZGVncmVlcyk7CiAgICAgIC1tcy10cmFuc2Zvcm06IHJvdGF0ZSgkZGVncmVlcyk7CiAgICAgICAgICB0cmFuc2Zvcm06IHJvdGF0ZSgkZGVncmVlcyk7Cn0KCkBtaXhpbiBmYS1pY29uLWZsaXAoJGhvcml6LCAkdmVydCwgJHJvdGF0aW9uKSB7CiAgLW1zLWZpbHRlcjogInByb2dpZDpEWEltYWdlVHJhbnNmb3JtLk1pY3Jvc29mdC5CYXNpY0ltYWdlKHJvdGF0aW9uPSN7JHJvdGF0aW9ufSwgbWlycm9yPTEpIjsKICAtd2Via2l0LXRyYW5zZm9ybTogc2NhbGUoJGhvcml6LCAkdmVydCk7CiAgICAgIC1tcy10cmFuc2Zvcm06IHNjYWxlKCRob3JpeiwgJHZlcnQpOwogICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZSgkaG9yaXosICR2ZXJ0KTsKfQoKCi8vIE9ubHkgZGlzcGxheSBjb250ZW50IHRvIHNjcmVlbiByZWFkZXJzLiBBIGxhIEJvb3RzdHJhcCA0LgovLwovLyBTZWU6IGh0dHA6Ly9hMTF5cHJvamVjdC5jb20vcG9zdHMvaG93LXRvLWhpZGUtY29udGVudC8KCkBtaXhpbiBzci1vbmx5IHsKICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgd2lkdGg6IDFweDsKICBoZWlnaHQ6IDFweDsKICBwYWRkaW5nOiAwOwogIG1hcmdpbjogLTFweDsKICBvdmVyZmxvdzogaGlkZGVuOwogIGNsaXA6IHJlY3QoMCwwLDAsMCk7CiAgYm9yZGVyOiAwOwp9CgovLyBVc2UgaW4gY29uanVuY3Rpb24gd2l0aCAuc3Itb25seSB0byBvbmx5IGRpc3BsYXkgY29udGVudCB3aGVuIGl0J3MgZm9jdXNlZC4KLy8KLy8gVXNlZnVsIGZvciAiU2tpcCB0byBtYWluIGNvbnRlbnQiIGxpbmtzOyBzZWUgaHR0cDovL3d3dy53My5vcmcvVFIvMjAxMy9OT1RFLVdDQUcyMC1URUNIUy0yMDEzMDkwNS9HMQovLwovLyBDcmVkaXQ6IEhUTUw1IEJvaWxlcnBsYXRlCgpAbWl4aW4gc3Itb25seS1mb2N1c2FibGUgewogICY6YWN0aXZlLAogICY6Zm9jdXMgewogICAgcG9zaXRpb246IHN0YXRpYzsKICAgIHdpZHRoOiBhdXRvOwogICAgaGVpZ2h0OiBhdXRvOwogICAgbWFyZ2luOiAwOwogICAgb3ZlcmZsb3c6IHZpc2libGU7CiAgICBjbGlwOiBhdXRvOwogIH0KfQo=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 4
+
+scss
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/octet-stream
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1637
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/4E92744DF37B4D3B99EB2176A3473CC7.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 5898e48c-080e-44c7-9933-4d32618fc43e
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170614T063642Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5898e48c-080e-44c7-9933-4d32618fc43e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233302Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

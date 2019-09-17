@@ -1,0 +1,424 @@
+----item----
+version: 1
+id: {D50E59E7-C588-40E7-BE02-238650A32997}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Carousels/Home Carousel/Slide 2
+parent: {D20F9AC4-49E3-42EB-BDE8-6FF9E13767F8}
+name: Slide 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {142E5FC1-EC62-4540-BAD9-CD88F337CD2E}
+templatekey: Carousel Slide
+created: 20190916T033050Z
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+225
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 418
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{CB7B1C66-77F9-45E4-9AA3-12AC3E1EDF5A}"><p:d /></r><r uid="{5AE8DA54-901A-4F6A-BA6F-BADC83351479}" s:ds="" s:id="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" s:par="GridParameters&amp;FieldNames=%7B39184E9B-ACBF-4C62-A1AB-599A953A0E1B%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="section-content" /></d></r>
+----version----
+language: 
+version: 1
+revision: 0f476b7e-7de8-4a42-a576-41a98463c9de
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033123Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0f476b7e-7de8-4a42-a576-41a98463c9de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033156Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: da
+version: 1
+revision: a7b5c39f-96dd-4679-907f-c9288c794fb2
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" src="" height="" mediaid="{776745DC-CE09-4B00-92DC-504087527E91}" hspace="" usethumbnail="" showineditor="" width="" alt="home carousel slide" vspace="" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 177
+
+<h1 style="color:white!important;font-size:70px;">Dronerne er her!</h1>
+<p style="color:white!important;font-size:16px;">Få din egen flåde af droner og hersk over himmelen!</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 156
+
+<link linktype="javascript" url="javascript:CXAApplication.Goto('/shop/Cameras=habitat_master%20cameras/SeekerIVDrone—2GBmicroSDQuad=7042131')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+Slide2
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T082943Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a7b5c39f-96dd-4679-907f-c9288c794fb2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 8e3d0d28-d8c8-422a-8ef5-85e452729461
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" src="" height="" mediaid="{776745DC-CE09-4B00-92DC-504087527E91}" hspace="" usethumbnail="" showineditor="" width="" alt="home carousel slide" vspace="" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 207
+
+<h1 style="color:white!important;font-size:70px;">Die Drohnen sind da!</h1>
+<p style="color:white!important;font-size:16px;">Holen Sie sich Ihre eigene Drohnenflotte und werden Herrscher über die Lüfte!</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 156
+
+<link linktype="Javascript" url="javascript:CXAApplication.Goto('/shop/Cameras=habitat_master%20cameras/SeekerIVDrone—2GBmicroSDQuad=7042131')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+Folie2
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084746Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8e3d0d28-d8c8-422a-8ef5-85e452729461
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: d21e1494-e66c-4544-b0ea-ba567727def3
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 182
+
+<image mediapath="" src="" height="" mediaid="{776745DC-CE09-4B00-92DC-504087527E91}" hspace="" usethumbnail="" showineditor="" width="" alt="home carousel slide" vspace="" ></image>
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 173
+
+<h1 style="color:white!important;font-size:70px;">The drones are here!</h1>
+<p style="color:white!important;font-size:16px;">Get your own drone fleet and rule the skies!</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 156
+
+<link linktype="javascript" url="javascript:CXAApplication.Goto('/shop/Cameras=habitat_master%20cameras/SeekerIVDrone—2GBmicroSDQuad=7042131')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+Slide 2
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170123T111808Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d21e1494-e66c-4544-b0ea-ba567727def3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033227Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 9dfb7dce-f795-4226-9bba-beb2960eeace
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9dfb7dce-f795-4226-9bba-beb2960eeace
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: b1ebef44-182d-44cb-a012-f36ce20027ec
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" src="" height="" mediaid="{776745DC-CE09-4B00-92DC-504087527E91}" hspace="" usethumbnail="" showineditor="" width="" alt="home carousel slide" vspace="" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 137
+
+<h1 style="color:white!important;font-size:70px;">ドローンはこちらです！</h1>
+<p style="color:white!important;font-size:16px;">自分のドローンを手に入れましょう</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 156
+
+<link linktype="javascript" url="javascript:CXAApplication.Goto('/shop/Cameras=habitat_master%20cameras/SeekerIVDrone—2GBmicroSDQuad=7042131')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+スライド 2
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085312Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1ebef44-182d-44cb-a012-f36ce20027ec
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

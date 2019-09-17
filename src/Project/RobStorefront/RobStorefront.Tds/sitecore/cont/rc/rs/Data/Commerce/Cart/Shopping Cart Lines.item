@@ -1,0 +1,338 @@
+----item----
+version: 1
+id: {169E0D27-AA44-4D67-B1D7-CB959A3C2B3C}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Shopping Cart Lines
+parent: {80045893-286A-4D75-8183-0FD1342B2827}
+name: Shopping Cart Lines
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A5ACF7D-D975-45B9-BBC3-E80A4042696B}
+templatekey: Shopping Cart Lines
+created: 20190916T032938Z
+
+----version----
+language: da
+version: 1
+revision: 34cc73a5-7e4e-41bf-b2fe-58270b92655e
+
+----field----
+field: {7C56F710-46E8-4394-99B3-6B42212AB55F}
+name: Product Details Label
+key: product details label
+content-length: 15
+
+Produktdetaljer
+----field----
+field: {08CE05FA-9940-4ACC-BBC9-6585981DFA55}
+name: Savings Label
+key: savings label
+content-length: 5
+
+Rabat
+----field----
+field: {9576CE68-BA55-473C-9200-DE51B55AA9AD}
+name: Delivery Label
+key: delivery label
+content-length: 9
+
+Shipping:
+----field----
+field: {D4D04D1A-A6F6-4DAB-B90F-FBE455FA836D}
+name: Address Label
+key: address label
+content-length: 8
+
+Address:
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083210Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+34cc73a5-7e4e-41bf-b2fe-58270b92655e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033116Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 3624ddba-50e7-4845-8944-e02186a46d2a
+
+----field----
+field: {7C56F710-46E8-4394-99B3-6B42212AB55F}
+name: Product Details Label
+key: product details label
+content-length: 14
+
+Produktdetails
+----field----
+field: {08CE05FA-9940-4ACC-BBC9-6585981DFA55}
+name: Savings Label
+key: savings label
+content-length: 6
+
+Rabatt
+----field----
+field: {9576CE68-BA55-473C-9200-DE51B55AA9AD}
+name: Delivery Label
+key: delivery label
+content-length: 9
+
+Shipping:
+----field----
+field: {D4D04D1A-A6F6-4DAB-B90F-FBE455FA836D}
+name: Address Label
+key: address label
+content-length: 8
+
+Address:
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085011Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3624ddba-50e7-4845-8944-e02186a46d2a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033134Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 1b4a1d12-ad24-41b9-be36-5ab4e43bf129
+
+----field----
+field: {7C56F710-46E8-4394-99B3-6B42212AB55F}
+name: Product Details Label
+key: product details label
+content-length: 15
+
+Product details
+----field----
+field: {BB9BC68A-3249-4CDD-8A98-1F3637FF55FD}
+name: Discount Label
+key: discount label
+content-length: 8
+
+Discount
+----field----
+field: {08CE05FA-9940-4ACC-BBC9-6585981DFA55}
+name: Savings Label
+key: savings label
+content-length: 8
+
+Discount
+----field----
+field: {9576CE68-BA55-473C-9200-DE51B55AA9AD}
+name: Delivery Label
+key: delivery label
+content-length: 9
+
+Shipping:
+----field----
+field: {D4D04D1A-A6F6-4DAB-B90F-FBE455FA836D}
+name: Address Label
+key: address label
+content-length: 8
+
+Address:
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T153637Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1b4a1d12-ad24-41b9-be36-5ab4e43bf129
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 37a9af39-d608-4b26-a5bc-588707d0a8f8
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+37a9af39-d608-4b26-a5bc-588707d0a8f8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 0275c880-69bd-4f53-866b-48f76075959e
+
+----field----
+field: {7C56F710-46E8-4394-99B3-6B42212AB55F}
+name: Product Details Label
+key: product details label
+content-length: 5
+
+商品の詳細
+----field----
+field: {9576CE68-BA55-473C-9200-DE51B55AA9AD}
+name: Delivery Label
+key: delivery label
+content-length: 9
+
+Shipping:
+----field----
+field: {D4D04D1A-A6F6-4DAB-B90F-FBE455FA836D}
+name: Address Label
+key: address label
+content-length: 8
+
+Address:
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085638Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0275c880-69bd-4f53-866b-48f76075959e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033150Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

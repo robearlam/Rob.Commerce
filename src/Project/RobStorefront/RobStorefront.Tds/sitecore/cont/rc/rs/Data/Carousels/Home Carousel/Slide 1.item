@@ -1,0 +1,424 @@
+----item----
+version: 1
+id: {E98AE295-A6BD-4772-8335-391AD5238485}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Carousels/Home Carousel/Slide 1
+parent: {D20F9AC4-49E3-42EB-BDE8-6FF9E13767F8}
+name: Slide 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {142E5FC1-EC62-4540-BAD9-CD88F337CD2E}
+templatekey: Carousel Slide
+created: 20190916T033050Z
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+212
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 418
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{CB7B1C66-77F9-45E4-9AA3-12AC3E1EDF5A}"><p:d /></r><r uid="{31066EF5-C7C5-4077-B5C1-0A8942E32F8E}" s:ds="" s:id="{8B0393E9-EE25-4F0B-A5FD-777B3AD2C737}" s:par="GridParameters&amp;FieldNames=%7B39184E9B-ACBF-4C62-A1AB-599A953A0E1B%7D&amp;Styles&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="section-content" /></d></r>
+----version----
+language: 
+version: 1
+revision: fbcb3004-16c0-4e7b-9c51-96ead4c7a542
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033123Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fbcb3004-16c0-4e7b-9c51-96ead4c7a542
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033155Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: da
+version: 1
+revision: 2edaf1a8-9ecb-40b6-986f-c244d9b19228
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" alt="home carousel slide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D0018BE2-A62D-406F-89D3-F262EC87C895}" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 216
+
+<h1 style="color:white!important;font-size:70px;">Det er nu</h1>
+<p style="color:white!important;font-size:16px;">Med dit nye ur vil du kunne få styr på tiden og komme tilbage på sporet for at få et sundere liv.</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 206
+
+<link linktype="javascript" url="javascript:CXAApplication.Goto('/shop/Health%2CBeautyandFitness=habitat_master%20health%20%20beauty%20and%20fitness/HabitatStrivaSmartFitnessGPSWatch=6042891')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+Slide1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083113Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2edaf1a8-9ecb-40b6-986f-c244d9b19228
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 49604c31-06ee-4815-9a4f-b4589d5d2dab
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" alt="home carousel slide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D0018BE2-A62D-406F-89D3-F262EC87C895}" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 238
+
+<h1 style="color:white!important;font-size:70px;">Es ist an der Zeit</h1>
+<p style="color:white!important;font-size:16px;">Mit Ihrer neuen Uhr sind Sie in der Lage, Ihre Zeit zu verwalten und kommen auf Kurs für ein gesünderes Leben.</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 206
+
+<link linktype="Javascript" url="javascript:CXAApplication.Goto('/shop/Health%2CBeautyandFitness=habitat_master%20health%20%20beauty%20and%20fitness/HabitatStrivaSmartFitnessGPSWatch=6042891')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+Folie1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084910Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+49604c31-06ee-4815-9a4f-b4589d5d2dab
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 2da11cdb-bdd1-4fc8-ad14-e314a97f47b0
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" alt="home carousel slide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D0018BE2-A62D-406F-89D3-F262EC87C895}" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 216
+
+<h1 style="color:white!important;font-size:70px;">Now's the time</h1>
+<p style="color:white!important;font-size:16px;">With your new watch you'll be able to manage your time and get on track for a healthier life.</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 206
+
+<link linktype="javascript" url="javascript:CXAApplication.Goto('/shop/Health%2CBeautyandFitness=habitat_master%20health%20%20beauty%20and%20fitness/HabitatStrivaSmartFitnessGPSWatch=6042891')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+Slide 1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170123T111858Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2da11cdb-bdd1-4fc8-ad14-e314a97f47b0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033227Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: e6890cfe-2f0f-4583-937b-9ae101f2c10e
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e6890cfe-2f0f-4583-937b-9ae101f2c10e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 3b3b3ac6-dd5a-49fd-8540-2b316374a1cd
+
+----field----
+field: {427EC0BD-3BF2-45B9-880F-BDB0054E7925}
+name: SlideImage
+key: slideimage
+content-length: 175
+
+<image mediapath="" alt="home carousel slide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D0018BE2-A62D-406F-89D3-F262EC87C895}" />
+----field----
+field: {7209159D-6B3E-4281-983E-F7F82104FA1B}
+name: SlideText
+key: slidetext
+content-length: 148
+
+<h1 style="color:white!important;font-size:70px;">今がその時です。</h1>
+<p style="color:white!important;font-size:16px;">新しい時計で時間を管理して、より健康な生活手に入れましょう。</p>
+----field----
+field: {B31D5DDD-1EDA-4B22-B97D-FF71FC8E72BC}
+name: SlideLink
+key: slidelink
+content-length: 206
+
+<link linktype="javascript" url="javascript:CXAApplication.Goto('/shop/Health%2CBeautyandFitness=habitat_master%20health%20%20beauty%20and%20fitness/HabitatStrivaSmartFitnessGPSWatch=6042891')" anchor="" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 6
+
+スライド 1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085507Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3b3b3ac6-dd5a-49fd-8540-2b316374a1cd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

@@ -1,0 +1,243 @@
+----item----
+version: 1
+id: {219316F7-64D9-4803-BDF5-48B79088CD06}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Rendering Variants/POI/Default/Template
+parent: {3FAD61F3-4ECE-458B-A427-436932301A81}
+name: Template
+master: {0F31020C-79AF-47C9-B8E6-C98720AE8A13}
+template: {C645DD63-2462-470C-A48D-8B55757A2DB3}
+templatekey: VariantTemplate
+created: 20190916T032844Z
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{22F88A7E-2BAB-431E-909D-D0A213B25C85}
+----version----
+language: da
+version: 1
+revision: d17a8378-d754-4c87-8d97-ee51a3a8cf0e
+
+----field----
+field: {D90F5D1A-19E1-48CC-B673-47D6B5D9B3ED}
+name: Template
+key: template
+content-length: 105
+
+#if($geospatial.Distance)
+Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+#end
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033123Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d17a8378-d754-4c87-8d97-ee51a3a8cf0e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033123Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 99b958e8-5bdc-4e59-8d79-7d8e9f307306
+
+----field----
+field: {D90F5D1A-19E1-48CC-B673-47D6B5D9B3ED}
+name: Template
+key: template
+content-length: 105
+
+#if($geospatial.Distance)
+Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+#end
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033140Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+99b958e8-5bdc-4e59-8d79-7d8e9f307306
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033140Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 5edb1fcf-8a2c-4758-99e9-bd2dde7bd5d0
+
+----field----
+field: {D90F5D1A-19E1-48CC-B673-47D6B5D9B3ED}
+name: Template
+key: template
+content-length: 105
+
+#if($geospatial.Distance)
+Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+#end
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032844Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5edb1fcf-8a2c-4758-99e9-bd2dde7bd5d0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032844Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 72d094d5-61a3-4fbb-9851-1704bfa166b0
+
+----field----
+field: {D90F5D1A-19E1-48CC-B673-47D6B5D9B3ED}
+name: Template
+key: template
+content-length: 105
+
+#if($geospatial.Distance)
+Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+#end
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033156Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+72d094d5-61a3-4fbb-9851-1704bfa166b0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033156Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

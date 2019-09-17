@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {04D54DC8-D499-4C54-AEEA-A8DB2BE3F87D}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/gulp/util/skipSending Copied from Storefront Branded Extension
+parent: {8013CA22-719D-498A-A7C4-436FF346D1CD}
+name: skipSending Copied from Storefront Branded Extension
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032807Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1260
+
+aW1wb3J0IHBhdGggZnJvbSAncGF0aCc7DQppbXBvcnQgY29uZmlnIGZyb20gJy4uL2NvbmZpZyc7DQppbXBvcnQgY29sb3JzIGZyb20gJ2NvbG9ycycNCg0KdmFyIHRlc3RQYXRoID0gZnVuY3Rpb24oZWxlbWVudCwgZmlsZVBhdGgpIHsNCiAgICB2YXIgcmVzID0gZmFsc2U7DQogICAgaWYgKHR5cGVvZiBlbGVtZW50ID09ICdvYmplY3QnKSB7DQogICAgICAgIHJlcyA9IGVsZW1lbnQudGVzdChmaWxlUGF0aCk7DQogICAgfSBlbHNlIHsNCiAgICAgICAgcmVzID0gZmlsZVBhdGguaW5kZXhPZihwYXRoLm5vcm1hbGl6ZShlbGVtZW50KSkgPiAtMTsNCiAgICB9DQogICAgcmV0dXJuIHJlczsNCn0NCg0KZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24oZmlsZVBhdGgpIHsNCiAgICBsZXQgZXhjbHVkZWRQYXRoID0gY29uZmlnLmV4Y2x1ZGVkUGF0aC5zb21lKGZ1bmN0aW9uKGVsZW1lbnQsIGluZGV4LCBhcnJheSkgew0KICAgICAgICByZXR1cm4gdGVzdFBhdGgoZWxlbWVudCwgZmlsZVBhdGgpDQogICAgfSk7DQogICAgbGV0IG5hbWVWYWxpZGF0aW9uID0gY29uZmlnLnNlcnZlck5hbWVWYWxpZGF0aW9uLnNvbWUoZnVuY3Rpb24oZWxlbWVudCwgaW5kZXgsIGFycmF5KSB7DQogICAgICAgIGxldCBwYXRoTm9FeHRlbnNpb24gPSBwYXRoLmJhc2VuYW1lKGZpbGVQYXRoKS5yZXBsYWNlKC9cLlteLy5dKyQvLCAiIiksDQogICAgICAgICAgICBuYW1lVmFsaWRhdGlvbiA9ICF0ZXN0UGF0aChlbGVtZW50LCBwYXRoTm9FeHRlbnNpb24pOw0KICAgICAgICBpZiAobmFtZVZhbGlkYXRpb24pIHsNCiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdJbmNvcnJlY3QgRmlsZSBOYW1lLicuYmx1ZSk7DQogICAgICAgIH0NCiAgICAgICAgcmV0dXJuIG5hbWVWYWxpZGF0aW9uOw0KICAgIH0pOw0KICAgIHJldHVybiAhIShleGNsdWRlZFBhdGggfHwgbmFtZVZhbGlkYXRpb24pOw0KfTs=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 2
+
+js
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/x-javascript
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 3
+
+944
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/1D24327B00964024AA8578E2F32AEB60.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: d8c21d2d-ea35-4602-b334-44e553bcd384
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180405T051929Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d8c21d2d-ea35-4602-b334-44e553bcd384
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180405T051929Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

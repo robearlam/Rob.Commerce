@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {36C68CEC-3B05-4717-A4AC-CA91C6D61C47}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/base/fontawesome/_path
+parent: {85867EEC-D2A9-4091-BC1F-71CA3CA87A17}
+name: _path
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032802Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 1080
+
+LyogRk9OVCBQQVRICiAqIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovCgpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ0ZvbnRBd2Vzb21lJzsKICBzcmM6IHVybCgnI3skZmEtZm9udC1wYXRofS9mb250YXdlc29tZS13ZWJmb250LWVvdC5lb3Q/dj0jeyRmYS12ZXJzaW9ufScpOwogIHNyYzogdXJsKCcjeyRmYS1mb250LXBhdGh9L2ZvbnRhd2Vzb21lLXdlYmZvbnQtZW90LmVvdD8jaWVmaXgmdj0jeyRmYS12ZXJzaW9ufScpIGZvcm1hdCgnZW1iZWRkZWQtb3BlbnR5cGUnKSwKICAgIHVybCgnI3skZmEtZm9udC1wYXRofS9mb250YXdlc29tZS13ZWJmb250LXdvZmYyLndvZmYyP3Y9I3skZmEtdmVyc2lvbn0nKSBmb3JtYXQoJ3dvZmYyJyksCiAgICB1cmwoJyN7JGZhLWZvbnQtcGF0aH0vZm9udGF3ZXNvbWUtd2ViZm9udC13b2ZmLndvZmY/dj0jeyRmYS12ZXJzaW9ufScpIGZvcm1hdCgnd29mZicpLAogICAgdXJsKCcjeyRmYS1mb250LXBhdGh9L2ZvbnRhd2Vzb21lLXdlYmZvbnQtdHRmLnR0Zj92PSN7JGZhLXZlcnNpb259JykgZm9ybWF0KCd0cnVldHlwZScpLAogICAgdXJsKCcjeyRmYS1mb250LXBhdGh9L2ZvbnRhd2Vzb21lLXdlYmZvbnQtc3ZnLnN2Zz92PSN7JGZhLXZlcnNpb259I2ZvbnRhd2Vzb21lcmVndWxhcicpIGZvcm1hdCgnc3ZnJyk7Ci8vICBzcmM6IHVybCgnI3skZmEtZm9udC1wYXRofS9Gb250QXdlc29tZS5vdGYnKSBmb3JtYXQoJ29wZW50eXBlJyk7IC8vIHVzZWQgd2hlbiBkZXZlbG9waW5nIGZvbnRzCiAgZm9udC13ZWlnaHQ6IG5vcm1hbDsKICBmb250LXN0eWxlOiBub3JtYWw7Cn0K
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 4
+
+scss
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/octet-stream
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 3
+
+810
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/71F446977A9643E1AF7967F65F726F61.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 24bd4c42-7ff8-4bd9-8425-e402d7c06bc3
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170614T063644Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+24bd4c42-7ff8-4bd9-8425-e402d7c06bc3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190527T233303Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

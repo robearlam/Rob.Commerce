@@ -1,0 +1,275 @@
+----item----
+version: 1
+id: {3189E82C-10DC-4FEE-A63D-9816598DD54D}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Checkout/Delivery
+parent: {DD52CF2A-006E-4003-AF67-C622CF6C2A0F}
+name: Delivery
+master: {00000000-0000-0000-0000-000000000000}
+template: {ABBADEB8-D7C2-492F-A96E-BA78D898328E}
+templatekey: Delivery
+created: 20190916T032938Z
+
+----version----
+language: da
+version: 1
+revision: 5149e8db-76f6-4f73-acd4-3858e7f40254
+
+----field----
+field: {3C527720-2C82-4EFF-932A-6072DFEDA6AC}
+name: Previous Button Label
+key: previous button label
+content-length: 43
+
+Fortsæt med at shoppe fantastiske produkter
+----field----
+field: {C13D2D38-E9DB-489C-AD66-CB7AFBD7FDCF}
+name: Name Label
+key: name label
+content-length: 5
+
+Navn:
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T083334Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5149e8db-76f6-4f73-acd4-3858e7f40254
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T083334Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: de-DE
+version: 1
+revision: 49eef043-7610-4c0e-94cd-b17a615214db
+
+----field----
+field: {3C527720-2C82-4EFF-932A-6072DFEDA6AC}
+name: Previous Button Label
+key: previous button label
+content-length: 50
+
+Fahren Sie damit fort, tolle  Produkte einzukaufen
+----field----
+field: {C13D2D38-E9DB-489C-AD66-CB7AFBD7FDCF}
+name: Name Label
+key: name label
+content-length: 5
+
+Name:
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085136Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+49eef043-7610-4c0e-94cd-b17a615214db
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T085136Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: en
+version: 1
+revision: e65591e1-194d-4046-9bb2-2c661dec4eba
+
+----field----
+field: {3C527720-2C82-4EFF-932A-6072DFEDA6AC}
+name: Previous Button Label
+key: previous button label
+content-length: 32
+
+Continue shopping great products
+----field----
+field: {C13D2D38-E9DB-489C-AD66-CB7AFBD7FDCF}
+name: Name Label
+key: name label
+content-length: 4
+
+Name
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171023T153942Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e65591e1-194d-4046-9bb2-2c661dec4eba
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180114T174619Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: 77048573-b91b-4776-bcdf-a6081134d8da
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+77048573-b91b-4776-bcdf-a6081134d8da
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T032941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: db6d737b-17a2-4b34-a31d-e363f87384cc
+
+----field----
+field: {C13D2D38-E9DB-489C-AD66-CB7AFBD7FDCF}
+name: Name Label
+key: name label
+content-length: 2
+
+名前
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085839Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+db6d737b-17a2-4b34-a31d-e363f87384cc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180511T085839Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser

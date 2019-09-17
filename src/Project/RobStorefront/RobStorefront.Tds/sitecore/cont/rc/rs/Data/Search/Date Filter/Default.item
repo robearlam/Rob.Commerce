@@ -1,0 +1,256 @@
+----item----
+version: 1
+id: {64CECF13-8FC2-457C-AB1E-3F07F0DCEC1B}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Search/Date Filter/Default
+parent: {4B129D1F-73F7-4910-BC8A-98A98170F2A8}
+name: Default
+master: {957565A0-BF0D-4F8B-BF2C-4A8F40EC9080}
+template: {AD89C1F1-E991-48EF-8659-38AB13AA28F1}
+templatekey: Date Filter
+created: 20190916T033020Z
+
+----field----
+field: {734F9A5A-C02A-4D34-87E8-29C732D8EB67}
+name: Facet
+key: facet
+content-length: 38
+
+{87A830FB-4E2F-4F76-896B-F20CFA2374DD}
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{B2960D81-4DE1-4C3E-A0A7-20F544AD36D7}
+----version----
+language: da
+version: 1
+revision: 6d255259-01bb-4672-b0ce-8a1f5f760aee
+
+----field----
+field: {3DC2D905-C97A-4C68-A24F-67A8181441F3}
+name: FromDateText
+key: fromdatetext
+content-length: 4
+
+From
+----field----
+field: {7B6F8374-8FAA-4CC0-BEFE-B6DE5D864FC1}
+name: ToDateText
+key: todatetext
+content-length: 2
+
+To
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033117Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6d255259-01bb-4672-b0ce-8a1f5f760aee
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033117Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 6b25c33c-3593-4ae4-b469-cc2cad6127cd
+
+----field----
+field: {3DC2D905-C97A-4C68-A24F-67A8181441F3}
+name: FromDateText
+key: fromdatetext
+content-length: 4
+
+From
+----field----
+field: {7B6F8374-8FAA-4CC0-BEFE-B6DE5D864FC1}
+name: ToDateText
+key: todatetext
+content-length: 2
+
+To
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033134Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6b25c33c-3593-4ae4-b469-cc2cad6127cd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033134Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: b9c60e25-e7dd-40bf-8b07-629c25ace877
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033021Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b9c60e25-e7dd-40bf-8b07-629c25ace877
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033021Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: be134857-8afd-460c-ab9f-769b91925541
+
+----field----
+field: {3DC2D905-C97A-4C68-A24F-67A8181441F3}
+name: FromDateText
+key: fromdatetext
+content-length: 4
+
+From
+----field----
+field: {7B6F8374-8FAA-4CC0-BEFE-B6DE5D864FC1}
+name: ToDateText
+key: todatetext
+content-length: 2
+
+To
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033151Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+be134857-8afd-460c-ab9f-769b91925541
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033151Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

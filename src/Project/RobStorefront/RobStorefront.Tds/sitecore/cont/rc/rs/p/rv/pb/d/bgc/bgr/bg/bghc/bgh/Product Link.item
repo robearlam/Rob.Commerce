@@ -1,0 +1,249 @@
+----item----
+version: 1
+id: {980D7EBF-9B75-40B9-83E6-B8C2EF3A233E}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Rendering Variants/Product Bundle/Default/Bundle Groups Container/Bundle Groups Reference/Bundle Group/Bundle Group Header Container/Bundle Group Header/Product Link
+parent: {ADA4DAE6-92C6-4315-A126-97FDF4E6B8BE}
+name: Product Link
+master: {00000000-0000-0000-0000-000000000000}
+template: {7C02E9F5-54B5-4EF4-BD10-F4C5D448A48C}
+templatekey: VariantText
+created: 20190916T032939Z
+
+----field----
+field: {1AA68C0B-EB67-4575-9CA8-1689C2AFF091}
+name: Tag
+key: tag
+content-length: 38
+
+{FF819CDE-E98A-4AB7-B8B0-65EE989369F7}
+----field----
+field: {8414031E-7B85-426C-8516-84D6223A1208}
+name: CssClass
+key: cssclass
+content-length: 12
+
+product-link
+----field----
+field: {C35B2285-B4A8-406F-A91C-24A60391DC12}
+name: DataAttributes
+key: dataattributes
+content-length: 25
+
+href=%40%28ProductLink%29
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+225
+----version----
+language: da
+version: 1
+revision: afe9b52a-b955-47f7-a56e-502e940e00bc
+
+----field----
+field: {07211F80-7FFC-4DF4-A4DE-C8956F391850}
+name: Text
+key: text
+content-length: 14
+
+Gå til produkt
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190315T063844Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+afe9b52a-b955-47f7-a56e-502e940e00bc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190315T063844Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: c379c5ec-b202-446e-837c-2d99b63b61cf
+
+----field----
+field: {07211F80-7FFC-4DF4-A4DE-C8956F391850}
+name: Text
+key: text
+content-length: 17
+
+Zum Produkt gehen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190315T064028Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c379c5ec-b202-446e-837c-2d99b63b61cf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190315T064028Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: beeda5b7-b8aa-41b2-a16a-2a35d4dfcfd0
+
+----field----
+field: {07211F80-7FFC-4DF4-A4DE-C8956F391850}
+name: Text
+key: text
+content-length: 13
+
+Go to product
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20181214T024107Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+beeda5b7-b8aa-41b2-a16a-2a35d4dfcfd0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20181214T024545Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 191dccdc-35c1-4089-a534-e30ca0b3fd20
+
+----field----
+field: {07211F80-7FFC-4DF4-A4DE-C8956F391850}
+name: Text
+key: text
+content-length: 5
+
+商品に移動
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190315T064148Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+191dccdc-35c1-4089-a534-e30ca0b3fd20
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190315T064148Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

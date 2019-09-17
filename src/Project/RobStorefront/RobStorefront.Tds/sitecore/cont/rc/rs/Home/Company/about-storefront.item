@@ -1,0 +1,326 @@
+----item----
+version: 1
+id: {B598BF2F-AE79-433C-BEA0-FC6FFEB78F35}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Home/Company/about-storefront
+parent: {1BB8CB9F-8BEE-40F1-9769-2E1DED9A4F82}
+name: about-storefront
+master: {00000000-0000-0000-0000-000000000000}
+template: {B1C6B23A-0F8A-4B9D-98F0-1EB37E8EA8FB}
+templatekey: Content Page
+created: 20190916T033051Z
+
+----field----
+field: {24171BF1-C0E1-480E-BE76-4C0A1876F916}
+name: Page Design
+key: page design
+content-length: 38
+
+{DDA87291-1338-4DD9-854E-8FA0596DFA88}
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 272
+
+{2F1EFD56-7042-4D4A-A042-17F73AB884B9}|{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}|{B5862F68-266D-4FA8-9428-E0E829482286}|{B1C6B23A-0F8A-4B9D-98F0-1EB37E8EA8FB}|{CCF551A0-B19D-4CD8-9EB4-16401B83268F}|{143C5C30-9686-4BCB-91A3-DA8CFED435EB}|{903311FF-71D1-4926-B07C-EACDA8BC6338}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1275
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{EB7C9747-E0D5-4DB1-A73F-F974B06F6126}" p:before="*" s:ds="{D89893C6-118F-4761-A13B-1F090812EB56}" s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={89CEAA96-DAD6-4AA4-929D-8B21030294F9}" s:ph="/main/container-1" /><r uid="{DB13C055-F6C3-4095-9322-9FCB0325373F}" p:after="r[@uid='{EB7C9747-E0D5-4DB1-A73F-F974B06F6126}']" s:ds="{A4D9DFC7-5220-4CD5-B8EF-05B039F6D271}" s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/container-1" /><r uid="{513ED268-3EE6-4F71-B001-39249C212CBB}" p:after="r[@uid='{DB13C055-F6C3-4095-9322-9FCB0325373F}']" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;DynamicPlaceholderId=1" s:ph="main" /><r uid="{4C4D63AF-654F-45EA-8160-EBE9E1A808FA}" p:after="*[1=2]" s:id="{2DA9B139-FB9C-4FD7-BE84-CB066B2D7CC3}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;DynamicPlaceholderId=1&amp;GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="main" /></d></r>
+----version----
+language: da
+version: 1
+revision: ff3490ea-c180-4ff4-8563-c12fd05e156f
+
+----field----
+field: {4E9CB879-77C9-4D78-9E53-02724AD942B5}
+name: Title
+key: title
+content-length: 16
+
+About Storefront
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 5
+
+About
+----field----
+field: {CE53062E-4385-4244-8382-C2B4530A51BA}
+name: TwitterCardType
+key: twittercardtype
+content-length: 38
+
+{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Om Storefront
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033112Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ff3490ea-c180-4ff4-8563-c12fd05e156f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033112Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: aa8ee4ff-4dcd-478d-8fd6-a1f52d264966
+
+----field----
+field: {4E9CB879-77C9-4D78-9E53-02724AD942B5}
+name: Title
+key: title
+content-length: 16
+
+About Storefront
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 5
+
+About
+----field----
+field: {CE53062E-4385-4244-8382-C2B4530A51BA}
+name: TwitterCardType
+key: twittercardtype
+content-length: 38
+
+{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Über Storefront
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033132Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+aa8ee4ff-4dcd-478d-8fd6-a1f52d264966
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033132Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 65027fc3-9f2b-4a53-bf03-57365b8fc339
+
+----field----
+field: {4E9CB879-77C9-4D78-9E53-02724AD942B5}
+name: Title
+key: title
+content-length: 16
+
+About Storefront
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 5
+
+About
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 16
+
+About Storefront
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170414T051014Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+65027fc3-9f2b-4a53-bf03-57365b8fc339
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033227Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 30561584-0113-4baf-b118-1dab7fa55f93
+
+----field----
+field: {4E9CB879-77C9-4D78-9E53-02724AD942B5}
+name: Title
+key: title
+content-length: 16
+
+About Storefront
+----field----
+field: {4E0720E9-9D50-4DDC-87CF-ECD65E8E94C8}
+name: NavigationTitle
+key: navigationtitle
+content-length: 5
+
+About
+----field----
+field: {CE53062E-4385-4244-8382-C2B4530A51BA}
+name: TwitterCardType
+key: twittercardtype
+content-length: 38
+
+{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+Storefront について
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033148Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+30561584-0113-4baf-b118-1dab7fa55f93
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033148Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

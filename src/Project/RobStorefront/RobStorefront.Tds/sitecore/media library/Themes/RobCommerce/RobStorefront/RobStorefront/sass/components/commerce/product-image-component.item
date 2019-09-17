@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {5B127914-522C-41C7-A936-911935D0FF0E}
+database: master
+path: /sitecore/media library/Themes/RobCommerce/RobStorefront/RobStorefront/sass/components/commerce/product-image-component
+parent: {2A3C74D1-8DDA-4878-8C39-A73820F404CF}
+name: product-image-component
+master: {00000000-0000-0000-0000-000000000000}
+template: {962B53C4-F93B-4DF9-9821-415C867B8903}
+templatekey: File
+created: 20190916T032807Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 2108
+
+QGltcG9ydCAnLi4vLi4vaW5kZXgnOw0KLmN4YS1wcm9kdWN0aW1hZ2VzLWNvbXBvbmVudCB7DQogICAgbWFyZ2luOiAwOw0KICAgIC5wcm9kdWN0LWltYWdlIHsNCiAgICAgICAgcGFkZGluZzogJHBhZGRpbmcvMjsNCiAgICAgICAgYmFja2dyb3VuZDogJGxpZ2h0Ow0KICAgICAgICBib3JkZXItcmFkaXVzOiAkYm9yZGVyLXJhZGl1czsNCiAgICAgICAgYm94LXNoYWRvdzogMCAxcHggNHB4IDAgcmdiYSgwLCAwLCAwLCAwLjEpOw0KICAgICAgICBpbWcgew0KICAgICAgICAgICAgd2lkdGg6IDEwMCU7DQogICAgICAgIH0NCiAgICB9DQogICAgLnByb2R1Y3QtaW1hZ2VzIHsNCiAgICAgICAgYmFja2dyb3VuZDogbm9uZTsNCiAgICAgICAgbWFyZ2luLXRvcDogJG1hcmdpbjsNCiAgICAgICAgdWwgew0KICAgICAgICAgICAgbGkgew0KICAgICAgICAgICAgICAgIGZsb2F0OiBsZWZ0Ow0KICAgICAgICAgICAgICAgIG1hcmdpbi1yaWdodDogMi42JTsNCiAgICAgICAgICAgICAgICB3aWR0aDogNzJweDsNCiAgICAgICAgICAgICAgICBoZWlnaHQ6IDYycHg7DQogICAgICAgICAgICAgICAgbWFyZ2luLWJvdHRvbTogMS44JTsNCiAgICAgICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuOw0KICAgICAgICAgICAgICAgIGJvcmRlcjogNHB4IHNvbGlkICRsaWdodDsgDQogICAgICAgICAgICAgICAgIGEgew0KICAgICAgICAgICAgICAgICAgICBpbWcgew0KICAgICAgICAgICAgICAgICAgICAgICAgbWF4LXdpZHRoOiAxMjBweDsNCiAgICAgICAgICAgICAgICAgICAgICAgIG1heC1oZWlnaHQ6IDEyMHB4Ow0KICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgICAmLmFjdGl2ZSB7DQogICAgICAgICAgICAgICAgICAgICY6YmVmb3JlIHsNCiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1sZWZ0OiA3cHggc29saWQgdHJhbnNwYXJlbnQ7DQogICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItcmlnaHQ6IDdweCBzb2xpZCB0cmFuc3BhcmVudDsNCiAgICAgICAgICAgICAgICAgICAgICAgIGJvcmRlci1ib3R0b206IDhweCBzb2xpZDsNCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRlbnQ6ICIiOw0KICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpb246IGFic29sdXRlOw0KICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luOiAtMTBweCAwIDAgMjZweDsNCiAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgfSAgICAgICAgICAgDQogICAgICAgICAgICAgICAgJi5hY3RpdmUgew0KICAgICAgICAgICAgICAgICAgICBib3JkZXI6IDRweCBzb2xpZCAkcHJpbWFyeS1jb2xvcjsNCiAgICAgICAgICAgICAgICAgICAgQGluY2x1ZGUgdHJhbnNpdGlvbigwLjJzLCBib3JkZXIpOw0KICAgICAgICAgICAgICAgICAgICAmOmJlZm9yZSB7DQogICAgICAgICAgICAgICAgICAgICAgICBib3JkZXItYm90dG9tLWNvbG9yOiAkcHJpbWFyeS1jb2xvcjsNCiAgICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgIH0NCn0=
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 4
+
+scss
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 24
+
+application/octet-stream
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+1580
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/F67738395BB748E281E5AA1A49662247.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: 07232eab-1a1b-466b-aba7-7abd2267789c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171120T100938Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+07232eab-1a1b-466b-aba7-7abd2267789c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180222T074045Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

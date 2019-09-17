@@ -1,0 +1,303 @@
+----item----
+version: 1
+id: {C51064DB-0DFE-4BBF-A722-838CE2B78642}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/Register New Account Link
+parent: {1A9BB719-315C-48A4-9E99-B35D19E6A310}
+name: Register New Account Link
+master: {00000000-0000-0000-0000-000000000000}
+template: {E24E0789-A058-48BF-ABB6-C69C0E60B6B7}
+templatekey: Link
+created: 20190916T033051Z
+
+----version----
+language: da
+version: 1
+revision: 7f6f2d40-e430-4f9f-8611-7dcf29a2d92f
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 154
+
+<link linktype="internal" text="Register new account" title="Register new account" querystring="" target="" id="{E737676E-AD58-4F82-9A0B-43608CBABE22}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 23
+
+Registrer nyt kontolink
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T082959Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7f6f2d40-e430-4f9f-8611-7dcf29a2d92f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 06b866d5-3a30-452d-8354-6def8b4e0d27
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 158
+
+<link linktype="internal" text="Neues Konto einrichten" title="neues Konto einrichten" querystring="" target="" id="{E737676E-AD58-4F82-9A0B-43608CBABE22}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 29
+
+Neues Konto Link registrieren
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084803Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+06b866d5-3a30-452d-8354-6def8b4e0d27
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 93262639-78be-4f84-8393-0441891b05a9
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 154
+
+<link linktype="internal" text="Register new account" title="Register new account" querystring="" target="" id="{E737676E-AD58-4F82-9A0B-43608CBABE22}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 25
+
+Register New Account Link
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170203T034421Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+93262639-78be-4f84-8393-0441891b05a9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: 4167e5b1-c813-4edc-98d9-d2dc4242f1b8
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4167e5b1-c813-4edc-98d9-d2dc4242f1b8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: dc68a60a-9f69-440b-81a4-9c835aa181c7
+
+----field----
+field: {DD05144A-BD66-4EA3-956A-4B7104DAABA3}
+name: Link
+key: link
+content-length: 145
+
+<link linktype="internal" text="新規のアカウントを登録" title="Register new account" querystring="" target="" id="{E737676E-AD58-4F82-9A0B-43608CBABE22}" />
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+新規のアカウントを登録 リンク
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085332Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 22
+
+sitecore\virtualssuser
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dc68a60a-9f69-440b-81a4-9c835aa181c7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033059Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

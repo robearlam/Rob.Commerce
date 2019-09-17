@@ -1,0 +1,371 @@
+----item----
+version: 1
+id: {503A1DDF-AB6A-4A4E-9143-F5C92CFE0B67}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/RobStorefront Emails/Messages/Service Messages/Self-Service Subscription/Subscription Confirmation
+parent: {35011205-C882-4512-B7ED-F31BEB592E9D}
+name: Subscription Confirmation
+master: {F8FAE92A-4F10-470C-AD5C-7ED9E6B636AF}
+template: {ECF0A9C8-FE56-45D8-B750-6BDE3A34A532}
+templatekey: HTML Message
+created: 20190916T032826Z
+
+----field----
+field: {0934BEC4-325A-427B-95BB-46F78CEA9591}
+name: Message Type
+key: message type
+content-length: 38
+
+{B2F77E26-C5AC-4A6B-BBB3-F290100EB3D8}
+----field----
+field: {AF0FE26A-A78B-491D-885C-03D95BC17342}
+name: State
+key: state
+content-length: 6
+
+Active
+----field----
+field: {22E8644C-99EA-43A4-AADD-ABA96804C154}
+name: Exclude From Reports
+key: exclude from reports
+content-length: 1
+
+1
+----field----
+field: {E2D1D8A4-24AA-4536-A420-7EADD8719CF6}
+name: Service Message
+key: service message
+content-length: 1
+
+1
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{BD875E8E-B834-4D15-A5E8-7ABFFF1176EC}
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 58
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><p:da name="xsi" /></r>
+----version----
+language: da
+version: 1
+revision: 84d907dd-5802-4677-bb20-56d753968b8f
+
+----field----
+field: {8E6B1F0C-1267-4651-BFAA-AFFD48A799EE}
+name: Subject
+key: subject
+content-length: 25
+
+Subscription Confirmation
+----field----
+field: {89B7628A-3564-4C9A-8116-DCB15F692573}
+name: Body
+key: body
+content-length: 344
+
+<p>We have received a subscription request to this e-mail account.</p>
+
+<p>If you did not initiate this request, you may ignore this message.</p>
+
+<p><a href="$link$">Please click this link to confirm the subscription</a></p>
+
+<p>If this link does not work, please copy and paste this text into a browser address bar:</p>
+
+<p>$link$</p>
+----field----
+field: {1E5221D9-A813-4EE1-BADA-33F70028A709}
+name: AlternateText
+key: alternatetext
+content-length: 196
+
+We have received a subscription request to this e-mail account.
+
+If you did not initiate this request, you may ignore this message.
+
+Please click this link to confirm the subscription:
+$link$
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033115Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+84d907dd-5802-4677-bb20-56d753968b8f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033116Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 7caba3e0-68bd-49a7-bf53-fc94e293fac9
+
+----field----
+field: {8E6B1F0C-1267-4651-BFAA-AFFD48A799EE}
+name: Subject
+key: subject
+content-length: 25
+
+Subscription Confirmation
+----field----
+field: {89B7628A-3564-4C9A-8116-DCB15F692573}
+name: Body
+key: body
+content-length: 344
+
+<p>We have received a subscription request to this e-mail account.</p>
+
+<p>If you did not initiate this request, you may ignore this message.</p>
+
+<p><a href="$link$">Please click this link to confirm the subscription</a></p>
+
+<p>If this link does not work, please copy and paste this text into a browser address bar:</p>
+
+<p>$link$</p>
+----field----
+field: {1E5221D9-A813-4EE1-BADA-33F70028A709}
+name: AlternateText
+key: alternatetext
+content-length: 196
+
+We have received a subscription request to this e-mail account.
+
+If you did not initiate this request, you may ignore this message.
+
+Please click this link to confirm the subscription:
+$link$
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033133Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7caba3e0-68bd-49a7-bf53-fc94e293fac9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033133Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 5cdce425-cb58-4172-8965-bed8f181789b
+
+----field----
+field: {8E6B1F0C-1267-4651-BFAA-AFFD48A799EE}
+name: Subject
+key: subject
+content-length: 25
+
+Subscription Confirmation
+----field----
+field: {89B7628A-3564-4C9A-8116-DCB15F692573}
+name: Body
+key: body
+content-length: 344
+
+<p>We have received a subscription request to this e-mail account.</p>
+
+<p>If you did not initiate this request, you may ignore this message.</p>
+
+<p><a href="$link$">Please click this link to confirm the subscription</a></p>
+
+<p>If this link does not work, please copy and paste this text into a browser address bar:</p>
+
+<p>$link$</p>
+----field----
+field: {1E5221D9-A813-4EE1-BADA-33F70028A709}
+name: AlternateText
+key: alternatetext
+content-length: 196
+
+We have received a subscription request to this e-mail account.
+
+If you did not initiate this request, you may ignore this message.
+
+Please click this link to confirm the subscription:
+$link$
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 25
+
+Subscription Confirmation
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032826Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5cdce425-cb58-4172-8965-bed8f181789b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033227Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: b82d5c9f-446e-4b49-aff2-5a3f8ad81061
+
+----field----
+field: {8E6B1F0C-1267-4651-BFAA-AFFD48A799EE}
+name: Subject
+key: subject
+content-length: 25
+
+Subscription Confirmation
+----field----
+field: {89B7628A-3564-4C9A-8116-DCB15F692573}
+name: Body
+key: body
+content-length: 344
+
+<p>We have received a subscription request to this e-mail account.</p>
+
+<p>If you did not initiate this request, you may ignore this message.</p>
+
+<p><a href="$link$">Please click this link to confirm the subscription</a></p>
+
+<p>If this link does not work, please copy and paste this text into a browser address bar:</p>
+
+<p>$link$</p>
+----field----
+field: {1E5221D9-A813-4EE1-BADA-33F70028A709}
+name: AlternateText
+key: alternatetext
+content-length: 196
+
+We have received a subscription request to this e-mail account.
+
+If you did not initiate this request, you may ignore this message.
+
+Please click this link to confirm the subscription:
+$link$
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033150Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b82d5c9f-446e-4b49-aff2-5a3f8ad81061
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033150Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

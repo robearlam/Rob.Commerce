@@ -1,0 +1,242 @@
+----item----
+version: 1
+id: {46D55A47-E252-4C58-BA94-FF9FD4A601E9}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Settings
+parent: {18FD4E3E-9708-4091-8F2F-6FD700B534EF}
+name: Settings
+master: {B90549B5-C997-4D6B-B102-C9AB82528974}
+template: {6480A654-4D31-4D51-AB51-7528DD85AD9A}
+templatekey: Settings
+created: 20190916T032759Z
+
+----field----
+field: {E8881464-38AF-4655-BE4A-EE10586578A2}
+name: Templates
+key: templates
+content-length: 38
+
+{E63367DC-3FF2-45C1-8315-A9ACDE7DB873}
+----field----
+field: {BEEEDE03-AB13-4558-96F9-C3E8957B46F8}
+name: Themes
+key: themes
+content-length: 78
+
+|{33D8C071-16E5-49D2-B9DB-A11914833C2C}|{48FFBFC8-E705-44E1-8ACD-6A714FFD09E3}
+----field----
+field: {E81E1F9E-8B87-495B-9CB7-84A2A23133BE}
+name: MediaLibrary
+key: medialibrary
+content-length: 38
+
+{F04651CA-2D2A-4151-B19F-36BD85DDDD54}
+----field----
+field: {AF332C24-FE17-41E7-8CAF-8E64C588FE72}
+name: EditingTheme
+key: editingtheme
+content-length: 38
+
+{C070554F-6414-4CFC-8CDD-C395A6ECD1AD}
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 38
+
+{3E739E69-859C-4694-8D14-2BA6CA779CC6}
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 467
+
+{11F57D7B-CBB2-4647-B98C-71457564BA4F}|{F86FE270-00A4-492F-BFAF-5BF27E40CE13}|{70461699-48E4-45FA-B74B-0CCE849FCA6A}|{20EF5E69-B366-4E9E-960B-E451B24DBD46}|{5C76AD53-96CD-4B96-9690-DD9AF2650171}|{44936C95-BCA9-4FB3-9D98-2066A5FBBB4D}|{DC66D5DA-3216-48E6-AE78-BAC8445B6A46}|{0D792404-79AA-483D-BB0C-50785F2E295B}|{E1CF805E-7F49-4EC9-A25A-182DC798CB5F}|{B14BAB5B-8965-466B-886B-1F93175BCAB3}|{041C1F9F-99A4-4EE6-8308-985499F91032}|{5A6BF1D1-836B-425A-A6E6-32CEAA8FF3A5}
+----version----
+language: da
+version: 1
+revision: e1b4a9f4-74ec-4bab-a371-8f1f2e0c1a9a
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033127Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e1b4a9f4-74ec-4bab-a371-8f1f2e0c1a9a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033127Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: efe8d9c9-2fba-4379-a55f-b8443a811956
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033144Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+efe8d9c9-2fba-4379-a55f-b8443a811956
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033144Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: 537fad02-323e-475c-95de-f429920a8d69
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 8
+
+Settings
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T032800Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+537fad02-323e-475c-95de-f429920a8d69
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033201Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: a7f4137d-f7ad-45e4-aaba-7c2f1f56b8dd
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033159Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a7f4137d-f7ad-45e4-aaba-7c2f1f56b8dd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033159Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

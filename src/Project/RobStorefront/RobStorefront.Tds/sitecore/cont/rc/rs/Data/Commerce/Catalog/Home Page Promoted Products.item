@@ -1,0 +1,401 @@
+----item----
+version: 1
+id: {D2713C70-BAC5-4EBE-B9CF-6EECCDA4EF3B}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Catalog/Home Page Promoted Products
+parent: {00B7860B-D3AB-4E3C-BDB7-47223D5D291D}
+name: Home Page Promoted Products
+master: {00000000-0000-0000-0000-000000000000}
+template: {5B77A415-90D2-4414-97CA-03A4E241957B}
+templatekey: Promoted Products
+created: 20190916T033050Z
+
+----version----
+language: da
+version: 1
+revision: 2ecc328d-5c99-416b-a7b6-049e4fda21eb
+
+----field----
+field: {F36BAA6A-D3AC-47A5-A157-1BF076DD0907}
+name: Save Percent Lead
+key: save percent lead
+content-length: 11
+
+Spar op til
+----field----
+field: {E3CD10EC-06B9-4723-BCAA-FFE03E59A502}
+name: Product Page Link Text
+key: product page link text
+content-length: 8
+
+Detaljer
+----field----
+field: {35CDE6E8-54E0-42AC-A8E5-D01A4BC552A5}
+name: Category
+key: category
+content-length: 8
+
+Kategori
+----field----
+field: {D013413A-1C0E-4877-A80E-D76FE1D7FEBB}
+name: Price Starting From Text
+key: price starting from text
+content-length: 11
+
+Starter fra
+----field----
+field: {86606DE8-EE24-4362-BB12-CA94992B2CED}
+name: Relationship Titles
+key: relationship titles
+content-length: 112
+
+Related=Goes%20well%20together%20with%20these&Warranty=Warranty%20Offerings&Installation=Installation%20Services
+----field----
+field: {F2F7D133-2BE5-4080-A4BB-DD533E858756}
+name: Show More Products Text
+key: show more products text
+content-length: 8
+
+Vis mere
+----field----
+field: {705673CE-882A-4249-B2EC-8F465E458670}
+name: Show More Products Tooltip
+key: show more products tooltip
+content-length: 8
+
+Vis mere
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T082941Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2ecc328d-5c99-416b-a7b6-049e4fda21eb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: de-DE
+version: 1
+revision: 3a3e3d29-2c9b-40e4-9964-445a6fa60cb9
+
+----field----
+field: {F36BAA6A-D3AC-47A5-A157-1BF076DD0907}
+name: Save Percent Lead
+key: save percent lead
+content-length: 17
+
+Bis zu     sparen
+----field----
+field: {E3CD10EC-06B9-4723-BCAA-FFE03E59A502}
+name: Product Page Link Text
+key: product page link text
+content-length: 7
+
+Details
+----field----
+field: {35CDE6E8-54E0-42AC-A8E5-D01A4BC552A5}
+name: Category
+key: category
+content-length: 9
+
+Kategorie
+----field----
+field: {D013413A-1C0E-4877-A80E-D76FE1D7FEBB}
+name: Price Starting From Text
+key: price starting from text
+content-length: 11
+
+Starten von
+----field----
+field: {86606DE8-EE24-4362-BB12-CA94992B2CED}
+name: Relationship Titles
+key: relationship titles
+content-length: 112
+
+Related=Goes%20well%20together%20with%20these&Warranty=Warranty%20Offerings&Installation=Installation%20Services
+----field----
+field: {F2F7D133-2BE5-4080-A4BB-DD533E858756}
+name: Show More Products Text
+key: show more products text
+content-length: 13
+
+Mehr anzeigen
+----field----
+field: {705673CE-882A-4249-B2EC-8F465E458670}
+name: Show More Products Tooltip
+key: show more products tooltip
+content-length: 13
+
+Mehr anzeigen
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T084744Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3a3e3d29-2c9b-40e4-9964-445a6fa60cb9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: en
+version: 1
+revision: fa8bd559-ce70-411b-a17e-c85b73274361
+
+----field----
+field: {E3CD10EC-06B9-4723-BCAA-FFE03E59A502}
+name: Product Page Link Text
+key: product page link text
+content-length: 7
+
+Details
+----field----
+field: {F2F7D133-2BE5-4080-A4BB-DD533E858756}
+name: Show More Products Text
+key: show more products text
+content-length: 9
+
+Show more
+----field----
+field: {705673CE-882A-4249-B2EC-8F465E458670}
+name: Show More Products Tooltip
+key: show more products tooltip
+content-length: 9
+
+Show more
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20171119T195507Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fa8bd559-ce70-411b-a17e-c85b73274361
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: fr-FR
+version: 1
+revision: d450b358-f0bd-4339-a427-d296ddef2cd5
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d450b358-f0bd-4339-a427-d296ddef2cd5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
+----version----
+language: ja-JP
+version: 1
+revision: 6dd5f5dc-39c1-41de-b2ed-19c3c6b68686
+
+----field----
+field: {F36BAA6A-D3AC-47A5-A157-1BF076DD0907}
+name: Save Percent Lead
+key: save percent lead
+content-length: 4
+
+最大割引
+----field----
+field: {E3CD10EC-06B9-4723-BCAA-FFE03E59A502}
+name: Product Page Link Text
+key: product page link text
+content-length: 2
+
+詳細
+----field----
+field: {35CDE6E8-54E0-42AC-A8E5-D01A4BC552A5}
+name: Category
+key: category
+content-length: 5
+
+カテゴリー
+----field----
+field: {D013413A-1C0E-4877-A80E-D76FE1D7FEBB}
+name: Price Starting From Text
+key: price starting from text
+content-length: 13
+
+Starting from
+----field----
+field: {86606DE8-EE24-4362-BB12-CA94992B2CED}
+name: Relationship Titles
+key: relationship titles
+content-length: 112
+
+Related=Goes%20well%20together%20with%20these&Warranty=Warranty%20Offerings&Installation=Installation%20Services
+----field----
+field: {F2F7D133-2BE5-4080-A4BB-DD533E858756}
+name: Show More Products Text
+key: show more products text
+content-length: 2
+
+詳細
+----field----
+field: {705673CE-882A-4249-B2EC-8F465E458670}
+name: Show More Products Tooltip
+key: show more products tooltip
+content-length: 2
+
+詳細
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180511T085309Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6dd5f5dc-39c1-41de-b2ed-19c3c6b68686
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190916T033057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
