@@ -1,0 +1,36 @@
+---
+ID: "60318b83-2f11-480a-b42d-8daac4b4f4c0"
+Parent: "5459b90f-67c2-4568-8fa3-a67adcf9124d"
+Template: "836e6f9c-e261-4ad1-ae4d-3d68e653ad78"
+Path: "/sitecore/content/RobCommerce/RobStorefront/Data/Product Compare/Add-View Compare Button"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7da2cede-b7a4-4f20-9df1-99d1922a0597"
+      Hint: Compare Page
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="|Custom" querystring="" id="{9A59D62C-2DE0-42F8-B4FA-A33FFB6A4079}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T050659Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "60d376f8-d907-47e4-bfa4-708114cdaf14"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T050728Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

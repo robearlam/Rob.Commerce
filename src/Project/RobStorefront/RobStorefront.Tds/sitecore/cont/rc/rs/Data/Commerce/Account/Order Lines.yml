@@ -1,0 +1,225 @@
+---
+ID: "8ecdf114-6ee4-4891-80cc-e181b053c76f"
+Parent: "61ae999d-632a-453b-a939-e727cd0a0ee5"
+Template: "9b901ea7-7073-4ed9-b884-ee0e37621a56"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Order Lines
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "712e89d5-f394-474b-a1bc-f69885f20dca"
+      Hint: Order Lines Header Tooltip
+      Value: Produkter i denne ordre
+    - ID: "fccc41bc-8b79-49ad-b5ea-eec9e8b51624"
+      Hint: Order Lines Discount Label
+      Value: Rabat
+    - ID: "2eeace4f-e4fb-489b-bf5b-52d4ddcd93fe"
+      Hint: Order Lines Delivery Label
+      Value: Forsendelse
+    - ID: "05a6014c-cb19-4066-a717-971dcbe693f3"
+      Hint: Order Lines Bundle Quantity Label
+      Value: "{0}Pakke med {1} elementer"
+    - ID: "f1f0fbd1-dc6c-444d-9414-988f3e9a08f4"
+      Hint: Product Details Label
+      Value: Produktdetaljer
+    - ID: "696f4f6c-5006-433e-b97c-65a44156794d"
+      Hint: Unit Price Label
+      Value: Enhedspris
+    - ID: "d451f65c-72b3-41b2-beb3-2aaf0ce444d8"
+      Hint: Quantity Label
+      Value: Antal
+    - ID: "e87c39da-194b-420b-b6ee-e150b7cd2422"
+      Hint: Total Label
+      Value: Total
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Ordrelinjer
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083007Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a2a741aa-1976-4307-a511-c88c43e9ed58"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "712e89d5-f394-474b-a1bc-f69885f20dca"
+      Hint: Order Lines Header Tooltip
+      Value: Produkte in dieser Bestellung
+    - ID: "fccc41bc-8b79-49ad-b5ea-eec9e8b51624"
+      Hint: Order Lines Discount Label
+      Value: Rabatt
+    - ID: "2eeace4f-e4fb-489b-bf5b-52d4ddcd93fe"
+      Hint: Order Lines Delivery Label
+      Value: Versand
+    - ID: "05a6014c-cb19-4066-a717-971dcbe693f3"
+      Hint: Order Lines Bundle Quantity Label
+      Value: "{0} Bündel von {1} Elementen"
+    - ID: "f1f0fbd1-dc6c-444d-9414-988f3e9a08f4"
+      Hint: Product Details Label
+      Value: Produktdetails
+    - ID: "696f4f6c-5006-433e-b97c-65a44156794d"
+      Hint: Unit Price Label
+      Value: Stückpreis
+    - ID: "d451f65c-72b3-41b2-beb3-2aaf0ce444d8"
+      Hint: Quantity Label
+      Value: Menge
+    - ID: "e87c39da-194b-420b-b6ee-e150b7cd2422"
+      Hint: Total Label
+      Value: Gesamt
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Bestelllinien
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T084811Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "07ceedff-8238-4415-b75b-7b6301f1a84f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "fd3be299-5255-4b17-95f2-d09237bc8ffc"
+      Hint: Order Lines Header Label
+      Value: 
+    - ID: "2eeace4f-e4fb-489b-bf5b-52d4ddcd93fe"
+      Hint: Order Lines Delivery Label
+      Value: Shipping
+    - ID: "05a6014c-cb19-4066-a717-971dcbe693f3"
+      Hint: Order Lines Bundle Quantity Label
+      Value: "{0} Bundle of {1} items"
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Order Lines
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T153512Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9fd5be4-6d45-4881-b08e-07a72ae849f4"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032940Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4044812-8452-44d0-a99b-361aa0ecd13f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "712e89d5-f394-474b-a1bc-f69885f20dca"
+      Hint: Order Lines Header Tooltip
+      Value: 本注文の商品
+    - ID: "fccc41bc-8b79-49ad-b5ea-eec9e8b51624"
+      Hint: Order Lines Discount Label
+      Value: 割引
+    - ID: "2eeace4f-e4fb-489b-bf5b-52d4ddcd93fe"
+      Hint: Order Lines Delivery Label
+      Value: 発送
+    - ID: "05a6014c-cb19-4066-a717-971dcbe693f3"
+      Hint: Order Lines Bundle Quantity Label
+      Value: " {1} 商品の {0} バンドル"
+    - ID: "f1f0fbd1-dc6c-444d-9414-988f3e9a08f4"
+      Hint: Product Details Label
+      Value: 商品の詳細
+    - ID: "696f4f6c-5006-433e-b97c-65a44156794d"
+      Hint: Unit Price Label
+      Value: 単価
+    - ID: "d451f65c-72b3-41b2-beb3-2aaf0ce444d8"
+      Hint: Quantity Label
+      Value: 数量
+    - ID: "e87c39da-194b-420b-b6ee-e150b7cd2422"
+      Hint: Total Label
+      Value: 合計
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: 注文品目
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085342Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aae33abc-6657-47e2-a5ab-b1a936033774"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

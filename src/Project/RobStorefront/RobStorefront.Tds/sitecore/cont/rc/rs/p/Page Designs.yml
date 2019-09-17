@@ -1,0 +1,114 @@
+---
+ID: "8a8a2fab-cf04-4683-abc5-69ddecb1b0e5"
+Parent: "d389ca34-7824-4f4e-8ae3-e28618909c5e"
+Template: "0982785a-ea2f-4638-a596-ffcb840efeba"
+Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Page Designs
+DB: master
+BranchID: "b90549b5-c997-4d6b-b102-c9ab82528974"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7bE90FBFA8-E468-4945-837E-648383DE2A61%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7b09F66CF0-29C1-46CC-A561-B64A9BDC65D6%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7b2F1EFD56-7042-4D4A-A042-17F73AB884B9%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7bCCF551A0-B19D-4CD8-9EB4-16401B83268F%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7b143C5C30-9686-4BCB-91A3-DA8CFED435EB%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7bB5862F68-266D-4FA8-9428-E0E829482286%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7bB1C6B23A-0F8A-4B9D-98F0-1EB37E8EA8FB%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7bF3108438-B308-4843-B8D7-6C6A76C7304E%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7b903311FF-71D1-4926-B07C-EACDA8BC6338%7d%3d%257B24B129BC-950E-4509-BC10-F8E257AEB7D7%257D%26%7bF15BA640-99E7-483D-989B-34253FA400E6%7d%3d%257bFE12E539-C0DC-4145-98D7-C496F283FB0A%257d%26%7b10654D6C-9CC9-4C1A-877C-2B89B20AB091%7d%3d%257bF5084EA7-7C72-4A42-853A-A68E7CB67F8D%257d%26%7bB1A3BE91-D0E5-4B75-BDC6-4F331D428A43%7d%3d%257b196C9BBD-9C84-4432-A7D2-D17FAB9E3435%257d%26%7b8321E8C8-8B5C-4C24-A6DA-671AC0CDE0E0%7d%3d%257b18CDFD77-4FF9-4451-A9D1-B3C9F9CB631B%257d"
+- ID: "c0c88e34-d7e6-46a0-b84f-b0a432d11642"
+  Hint: Theme
+  Value: "%7bFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7d%3d%257B48FFBFC8-E705-44E1-8ACD-6A714FFD09E3%257D"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5D5CE43E-D5C6-4C53-89BC-36285DDE8EC9}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033120Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "913435dc-eb7c-4037-8276-2325fbdb90d3"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033120Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033136Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c3b585f5-044f-4c6c-83fa-1d9491332513"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033136Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032800Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "14365428-d75b-4129-bb8b-6cd61282299d"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033226Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033152Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c327bc12-b4d1-4146-89e0-946d9cd55b9c"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033152Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

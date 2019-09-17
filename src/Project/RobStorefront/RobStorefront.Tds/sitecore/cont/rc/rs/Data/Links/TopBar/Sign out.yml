@@ -1,0 +1,187 @@
+---
+ID: "2066331f-2164-4c1c-8fe9-dfc2944152ad"
+Parent: "bfb027a9-540e-46f7-a7fb-a546ca2aa21e"
+Template: "f9327a11-4030-42de-b83e-7b4e88490dd8"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/TopBar/Sign out
+DB: master
+SharedFields:
+- ID: "8ecd2641-8088-46e4-a37f-11a358de9475"
+  Hint: Show When Authenticated
+  Value: 1
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" linktype="external" url="/api/cxa/account/logoff" anchor="" title="" class="" querystring="" target="" id="" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Log ud
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Log ud
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Log ud
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083256Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b2248c49-c4b5-412c-b6ff-d82116538dd0"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180518T025650Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" linktype="external" url="/api/cxa/account/logoff" anchor="" title="" class="" querystring="" target="" id="" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Abmelden
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Abmelden
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Abmelden
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085058Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59e18d04-259f-4910-8909-3029a9995c9e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180518T025657Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" linktype="external" url="/api/cxa/account/logoff" anchor="" title="" class="" querystring="" target="" id="" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Sign out
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Sign out
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Sign out
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171119T215041Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "918561db-941b-460c-9f8b-7c61a2c446ec"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180518T025642Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033059Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bdc2e5db-f3b1-4526-a040-80e0402de32f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" linktype="external" url="/api/cxa/account/logoff" anchor="" title="" class="" querystring="" target="" id="" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: サインアウト
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: サインアウト
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: サインアウト
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085744Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "56b93696-0bb6-48df-ab40-1f544b8e7b81"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

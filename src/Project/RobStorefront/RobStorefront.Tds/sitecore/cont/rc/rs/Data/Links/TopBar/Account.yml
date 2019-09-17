@@ -1,0 +1,187 @@
+---
+ID: "d4530878-30c0-4c45-b4d2-381688eae916"
+Parent: "bfb027a9-540e-46f7-a7fb-a546ca2aa21e"
+Template: "f9327a11-4030-42de-b83e-7b4e88490dd8"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/TopBar/Account
+DB: master
+SharedFields:
+- ID: "8ecd2641-8088-46e4-a37f-11a358de9475"
+  Hint: Show When Authenticated
+  Value: 1
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{AD1A4705-A1FC-41D4-BB40-0BB57530BFC3}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Vælg
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Vælg
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Vælg
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083027Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c246b893-8bdc-47cd-b7d7-34a2c0cba64b"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <Link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{AD1A4705-A1FC-41D4-BB40-0BB57530BFC3}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Account
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Account
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Account
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T084830Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "695de64c-b7cb-4a1d-80f9-f3ab4c464355"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{AD1A4705-A1FC-41D4-BB40-0BB57530BFC3}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Account
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Account
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Account
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171119T215041Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9b0b99ae-53c0-4f80-9a75-f76e6710581b"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033059Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90972561-1fdf-4b56-a528-0e8bbd4bddf4"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{AD1A4705-A1FC-41D4-BB40-0BB57530BFC3}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: 選択
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: 選択
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: 選択
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085407Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ea97723f-fa69-4f17-b78f-4f61f633bb22"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

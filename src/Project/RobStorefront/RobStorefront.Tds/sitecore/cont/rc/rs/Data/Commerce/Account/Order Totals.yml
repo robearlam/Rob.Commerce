@@ -1,0 +1,204 @@
+---
+ID: "da970dc7-2912-4fb7-b469-413f019bddcb"
+Parent: "61ae999d-632a-453b-a939-e727cd0a0ee5"
+Template: "9d1cafc5-e4e6-45d4-bad1-c8a0fe542499"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Order Totals
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
+      Hint: Order Total Header Label
+      Value: Oversigt
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: Forsendelse i alt
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: MOMS
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: Besparelser
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: Besparelser
+    - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
+      Hint: Order Total Text
+      Value: Total
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: Samlet ordre
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083202Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b3f2f6e-3971-4898-abc9-8aeeed349c3c"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
+      Hint: Order Total Header Label
+      Value: Zusammenfassung
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: Versand Gesamtbetrag
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: MwSt.
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: Ersparnisse
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: Ersparnisse
+    - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
+      Hint: Order Total Text
+      Value: Gesamt
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: Auftragssumme
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085002Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c686eba0-b059-4fd6-aabb-472eff0b736a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
+      Hint: Order Total Header Label
+      Value: Summary
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: Shipping total
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: VAT
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: Savings
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: Savings
+    - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
+      Hint: Order Total Text
+      Value: Total
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: Order total
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T153520Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6f571163-8db9-46c8-bac0-a72a1fc5581c"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032940Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "65b11a13-ff20-4595-bae5-03cd8d90b2c6"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4902e256-f5b7-4aaf-8c51-f0d72392f508"
+      Hint: Order Total Header Label
+      Value: サマリー
+    - ID: "a1fb85eb-2083-459d-a8c0-1094c204536e"
+      Hint: Total Shipping Text
+      Value: 発送合計
+    - ID: "7d63a0fd-57ed-4a04-a84a-41ee5a60e3ab"
+      Hint: Tax Total Text
+      Value: 消費税
+    - ID: "569c1d04-970d-49a7-b92a-8942d42a527d"
+      Hint: Total Savings Text
+      Value: 割引
+    - ID: "81a44c6e-2d8b-4a05-9707-8f00cfd66fcb"
+      Hint: Total Savings Tooltip
+      Value: 割引
+    - ID: "e4345f9c-2bf1-4018-92e7-5a60e5039a9f"
+      Hint: Order Total Text
+      Value: 合計
+    - ID: "11a27333-2d0a-454d-89a7-2d85c4b56f31"
+      Hint: Order Total Tooltip
+      Value: 注文合計
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085627Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa98c5a3-4c77-4543-bd22-3ad7960a021a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

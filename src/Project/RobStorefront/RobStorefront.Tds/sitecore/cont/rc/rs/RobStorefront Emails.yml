@@ -1,0 +1,171 @@
+---
+ID: "4305433a-7c8c-4d9b-b6eb-fd0a54222781"
+Parent: "18fd4e3e-9708-4091-8f2f-6fd700b534ef"
+Template: "cf9c8a2a-2794-4fea-980a-ef8426f3d6c3"
+Path: /sitecore/content/RobCommerce/RobStorefront/RobStorefront Emails
+DB: master
+BranchID: "f8fae92a-4f10-470c-ad5c-7ed9e6b636af"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{DB7A8703-C5AE-41FF-8B23-264195634B9E}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\EXM Users|pd|^*|+item:read|pe|^*|+item:read|ar|sitecore\EXM Advanced Users|pd|+item:delete|+item:admin|+item:create|+item:rename|^*|+item:read|+item:write|pe|+item:delete|+item:admin|+item:create|+item:rename|^*|+item:read|+item:write|
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d13e4a70-3ea1-4c12-9891-748d315e7b68"
+      Hint: Marketing Category Groups
+      Value: "{8DF1EB92-AB86-436D-8644-36FDEA56EAF6}"
+    - ID: "85fdc8e9-0ac4-4c70-b5a7-5d17451c1e5a"
+      Hint: Preference Center Title
+      Value: Email Preference Center
+    - ID: "db528f31-f54f-48d5-a86a-ca31d8074348"
+      Hint: Preference Center Intro
+      Value: <p>To update your email preferences, select the items you wish to subscribe to.</p>
+    - ID: "3e20d02f-a3bf-4672-b1e5-d922758dc67a"
+      Hint: Preference Center Unsubscribe from all
+      Value: I do not want to receive any emails from $brandname$. Unsubscribe me from all.
+    - ID: "75ddde7f-ac74-486e-82f8-b849acdc5266"
+      Hint: Preference Center Submit
+      Value: Update Subscriptions
+    - ID: "e34202a5-65e3-4509-9687-ce73e819700a"
+      Hint: Preference Center Success
+      Value: Thank you, your preferences have been saved successfully.
+    - ID: "94ad306e-97ab-4e94-95d2-c4ec12ef6d14"
+      Hint: Preference Center Error
+      Value: There was an error saving your preferences. Please try again later.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033115Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "513d3e83-282c-4d1a-9c93-e6d519b2c5ea"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033115Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d13e4a70-3ea1-4c12-9891-748d315e7b68"
+      Hint: Marketing Category Groups
+      Value: "{8DF1EB92-AB86-436D-8644-36FDEA56EAF6}"
+    - ID: "85fdc8e9-0ac4-4c70-b5a7-5d17451c1e5a"
+      Hint: Preference Center Title
+      Value: Email Preference Center
+    - ID: "db528f31-f54f-48d5-a86a-ca31d8074348"
+      Hint: Preference Center Intro
+      Value: <p>To update your email preferences, select the items you wish to subscribe to.</p>
+    - ID: "3e20d02f-a3bf-4672-b1e5-d922758dc67a"
+      Hint: Preference Center Unsubscribe from all
+      Value: I do not want to receive any emails from $brandname$. Unsubscribe me from all.
+    - ID: "75ddde7f-ac74-486e-82f8-b849acdc5266"
+      Hint: Preference Center Submit
+      Value: Update Subscriptions
+    - ID: "e34202a5-65e3-4509-9687-ce73e819700a"
+      Hint: Preference Center Success
+      Value: Thank you, your preferences have been saved successfully.
+    - ID: "94ad306e-97ab-4e94-95d2-c4ec12ef6d14"
+      Hint: Preference Center Error
+      Value: There was an error saving your preferences. Please try again later.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033133Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ab315bf9-ca0a-4912-8a57-6b3a39a93a9e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033133Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032826Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fd943d26-60ae-439a-893b-870d3fa08bfa"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032826Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d13e4a70-3ea1-4c12-9891-748d315e7b68"
+      Hint: Marketing Category Groups
+      Value: "{8DF1EB92-AB86-436D-8644-36FDEA56EAF6}"
+    - ID: "85fdc8e9-0ac4-4c70-b5a7-5d17451c1e5a"
+      Hint: Preference Center Title
+      Value: Email Preference Center
+    - ID: "db528f31-f54f-48d5-a86a-ca31d8074348"
+      Hint: Preference Center Intro
+      Value: <p>To update your email preferences, select the items you wish to subscribe to.</p>
+    - ID: "3e20d02f-a3bf-4672-b1e5-d922758dc67a"
+      Hint: Preference Center Unsubscribe from all
+      Value: I do not want to receive any emails from $brandname$. Unsubscribe me from all.
+    - ID: "75ddde7f-ac74-486e-82f8-b849acdc5266"
+      Hint: Preference Center Submit
+      Value: Update Subscriptions
+    - ID: "e34202a5-65e3-4509-9687-ce73e819700a"
+      Hint: Preference Center Success
+      Value: Thank you, your preferences have been saved successfully.
+    - ID: "94ad306e-97ab-4e94-95d2-c4ec12ef6d14"
+      Hint: Preference Center Error
+      Value: There was an error saving your preferences. Please try again later.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033149Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "13814dff-9a27-4fa2-8fd5-af8beddc28b5"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033149Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,40 @@
+---
+ID: "35b978b9-1fce-450a-842d-0d53ee1c5428"
+Parent: "99a2d449-7cc0-4fac-b516-db2176898898"
+Template: "59190273-fdcc-4048-9537-7edbdf94b22d"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B0CFD948-A7EB-4F73-888A-E3A2E1B6A387}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "a68724cc-9513-46f5-aa82-d26c0644b21d"
+      Hint: Title
+      Value: RobStorefront
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032947Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d7244426-3bab-4db7-9fd6-2167b98cca8b"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032947Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

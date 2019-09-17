@@ -1,0 +1,204 @@
+---
+ID: "9d617bd8-d68f-4224-962a-a2c4a1e94127"
+Parent: "61ae999d-632a-453b-a939-e727cd0a0ee5"
+Template: "6f4b34b6-fc03-45cc-bd01-3cd82360004d"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Order History
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "ab988154-668e-4d6a-a02d-980612465467"
+      Hint: Date Column Header
+      Value: Dato
+    - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
+      Hint: Date Column Header Tooltip
+      Value: Ordredato
+    - ID: "f4c9d3fe-6e22-4d57-bdef-29f50e2159af"
+      Hint: Order ID Column Header
+      Value: Ordrenummer
+    - ID: "51a46c67-8cbe-4d03-9fea-e26b4a39857b"
+      Hint: Order ID Column Header Tooltip
+      Value: Ordrenummer
+    - ID: "6f4e84a8-8730-43a2-8680-8819f2c12851"
+      Hint: Order Status Column Header
+      Value: Status
+    - ID: "f70d4927-a5a2-4988-8adc-3801babed7ca"
+      Hint: Order Status Column Header Tooltip
+      Value: Ordrestatus
+    - ID: "fe199c3f-d55c-4eeb-b3b6-ed482bc031d7"
+      Hint: Order Details Column Header Tooltip
+      Value: Klik på rækken for at få vist ordredetaljerne
+    - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
+      Hint: No Order Message
+      Value: Du har ikke afgivet en ordre endnu
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083209Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6dc58532-930a-4479-998a-b725097f12b9"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190315T063855Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "ab988154-668e-4d6a-a02d-980612465467"
+      Hint: Date Column Header
+      Value: Datum
+    - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
+      Hint: Date Column Header Tooltip
+      Value: Bestelldatum
+    - ID: "f4c9d3fe-6e22-4d57-bdef-29f50e2159af"
+      Hint: Order ID Column Header
+      Value: Bestellnummer
+    - ID: "51a46c67-8cbe-4d03-9fea-e26b4a39857b"
+      Hint: Order ID Column Header Tooltip
+      Value: Bestellnummer
+    - ID: "6f4e84a8-8730-43a2-8680-8819f2c12851"
+      Hint: Order Status Column Header
+      Value: Status
+    - ID: "f70d4927-a5a2-4988-8adc-3801babed7ca"
+      Hint: Order Status Column Header Tooltip
+      Value: Bestellstatus
+    - ID: "fe199c3f-d55c-4eeb-b3b6-ed482bc031d7"
+      Hint: Order Details Column Header Tooltip
+      Value: Klicken Sie auf die Reihe, um die Bestelldetails anzusehen
+    - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
+      Hint: No Order Message
+      Value: Sie haben noch keine Bestellung aufgegeben
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085010Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b771234d-461d-4e39-8ac1-529e5d4762dd"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190315T064038Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T153505Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3c962fca-998b-44cd-91ab-3de1546948df"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20171023T153505Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032940Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "19da5f03-77b4-4fb9-8cd1-3fd603d56603"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "ab988154-668e-4d6a-a02d-980612465467"
+      Hint: Date Column Header
+      Value: 日付
+    - ID: "1c2161e9-159f-416b-b799-e7aae93eff2e"
+      Hint: Date Column Header Tooltip
+      Value: 注文日
+    - ID: "f4c9d3fe-6e22-4d57-bdef-29f50e2159af"
+      Hint: Order ID Column Header
+      Value: 注文番号
+    - ID: "51a46c67-8cbe-4d03-9fea-e26b4a39857b"
+      Hint: Order ID Column Header Tooltip
+      Value: 注文番号
+    - ID: "6f4e84a8-8730-43a2-8680-8819f2c12851"
+      Hint: Order Status Column Header
+      Value: 状態
+    - ID: "f70d4927-a5a2-4988-8adc-3801babed7ca"
+      Hint: Order Status Column Header Tooltip
+      Value: 注文のステータス
+    - ID: "fe199c3f-d55c-4eeb-b3b6-ed482bc031d7"
+      Hint: Order Details Column Header Tooltip
+      Value: 行をクリックして注文詳細を表示
+    - ID: "07096abe-6e2a-4f8d-82e6-33db85086537"
+      Hint: No Order Message
+      Value: まだ注文されていません
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085636Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b788d89b-745c-4190-bb8a-63d0c49bac82"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190315T064159Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

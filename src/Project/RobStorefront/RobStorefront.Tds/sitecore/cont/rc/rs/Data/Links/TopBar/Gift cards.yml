@@ -1,0 +1,187 @@
+---
+ID: "83a6b304-0e67-4d34-8705-97daca21307b"
+Parent: "bfb027a9-540e-46f7-a7fb-a546ca2aa21e"
+Template: "f9327a11-4030-42de-b83e-7b4e88490dd8"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Links/TopBar/Gift cards
+DB: master
+SharedFields:
+- ID: "1e3d9f7a-6433-49fd-8ef0-40a57a6f8900"
+  Hint: Show Always
+  Value: 1
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{87C2F41F-8D42-48F5-987A-1AE134052244}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Gavekort
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Gavekort
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Gavekort
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083045Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "663259af-f421-4149-a2d8-410ed23a5432"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <Link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{87C2F41F-8D42-48F5-987A-1AE134052244}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Geschenkkarten
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Geschenkkarten
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Geschenkkarten
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T084846Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "514a7c6a-bb21-4680-b61d-f9c1d957d338"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{87C2F41F-8D42-48F5-987A-1AE134052244}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: Gift cards
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: Gift cards
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Gift cards
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171119T215041Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "20509669-8a6f-4eb1-a01f-ceff38501686"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033059Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6f89d715-de76-4655-ba05-a6077eba0e49"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "60d17bd9-92a5-45e1-9b60-6b0671893ed8"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{87C2F41F-8D42-48F5-987A-1AE134052244}" />
+    - ID: "24629943-2d2a-442a-8d18-8a8634850715"
+      Hint: Text
+      Value: ギフト カード
+    - ID: "9f587c98-bbaf-496f-b652-7f7139a1a608"
+      Hint: Tooltip
+      Value: ギフト カード
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: ギフト カード
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085429Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "916476cf-f557-432f-a46f-86af7fd4e306"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033059Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {48FA959C-E95D-407E-B7F3-4A2F9A062A7D}
+database: master
+path: /sitecore/templates/Feature/Product Compare/Datasource/Add-View-Compare-Button/__Standard Values
+parent: {836E6F9C-E261-4AD1-AE4D-3D68E653AD78}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {836E6F9C-E261-4AD1-AE4D-3D68E653AD78}
+templatekey: Add-View-Compare-Button
+created: 20190916T045926Z
+
+----version----
+language: en
+version: 1
+revision: 7a4fa6ee-f535-4001-a5fd-89a8a9066a5c
+
+----field----
+field: {DDF7A736-3405-411A-883B-C858802BEA57}
+name: Add to Compare Text
+key: add to compare text
+content-length: 14
+
+Add to compare
+----field----
+field: {84AD6914-262E-42F6-AA6D-6F438BD5BD51}
+name: View Compare Text
+key: view compare text
+content-length: 12
+
+View compare
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180823T013933Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7a4fa6ee-f535-4001-a5fd-89a8a9066a5c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190903T070523Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 16
+
+sitecore\unicorn

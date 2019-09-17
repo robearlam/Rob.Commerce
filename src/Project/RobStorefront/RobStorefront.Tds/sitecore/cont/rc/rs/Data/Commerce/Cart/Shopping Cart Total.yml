@@ -1,0 +1,162 @@
+---
+ID: "3c35cb96-b7a3-4d09-90e6-3cf6ce4093b8"
+Parent: "80045893-286a-4d75-8183-0fd1342b2827"
+Template: "b86fa817-5304-44b9-9098-2f5d53f033e9"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Shopping Cart Total
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03e9d642-754b-4fd7-9208-916fae7fe7e7"
+      Hint: Order Total Header
+      Value: Oversigt
+    - ID: "536065ab-7ffa-4353-a5e1-f354e484ae81"
+      Hint: Subtotal Label
+      Value: Subtotal
+    - ID: "2f777a53-15c1-4bbb-bc15-4c0f286d67f1"
+      Hint: VAT Label
+      Value: Skatter
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: Besparelser i alt
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083032Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9dc59023-8572-48b1-a229-10fc8705fe70"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03e9d642-754b-4fd7-9208-916fae7fe7e7"
+      Hint: Order Total Header
+      Value: Zusammenfassung
+    - ID: "2f777a53-15c1-4bbb-bc15-4c0f286d67f1"
+      Hint: VAT Label
+      Value: Steuern
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: Gesamtersparnis
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T084834Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "139da985-d4c5-433e-bcfd-99d8709dd0de"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03e9d642-754b-4fd7-9208-916fae7fe7e7"
+      Hint: Order Total Header
+      Value: Summary
+    - ID: "536065ab-7ffa-4353-a5e1-f354e484ae81"
+      Hint: Subtotal Label
+      Value: Sub total
+    - ID: "2f777a53-15c1-4bbb-bc15-4c0f286d67f1"
+      Hint: VAT Label
+      Value: Taxes
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: Total savings 
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T153641Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a373da9e-b155-4b34-89d9-f8c0451e42e8"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032941Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e169e8db-1727-44cd-bf1e-bc1c56444ad9"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03e9d642-754b-4fd7-9208-916fae7fe7e7"
+      Hint: Order Total Header
+      Value: サマリー
+    - ID: "2f777a53-15c1-4bbb-bc15-4c0f286d67f1"
+      Hint: VAT Label
+      Value: 税
+    - ID: "ffa529e6-f767-4f73-8191-31dd5465928d"
+      Hint: Savings Tooltip
+      Value: 割引合計
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085413Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4ae5706a-3fa3-4121-8a0d-758434b9d190"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

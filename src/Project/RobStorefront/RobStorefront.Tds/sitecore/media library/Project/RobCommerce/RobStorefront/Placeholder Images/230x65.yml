@@ -1,0 +1,56 @@
+---
+ID: "a301da57-2680-4939-90bb-c701f285981f"
+Parent: "3d8c4519-ef52-41cf-a0da-34bbc4c6cf69"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Project/RobCommerce/RobStorefront/Placeholder Images/230x65
+DB: master
+SharedFields:
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "00000000-0000-0000-0000-000000000000"
+  Value: iVBORw0KGgoAAAANSUhEUgAAAOYAAABBBAMAAAA3XcXeAAAAG1BMVEXMzMyWlpbFxcWqqqqcnJyjo6OxsbG3t7e+vr6pf3+GAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABeElEQVRYhe2Vz06DQBCHf13+lKNbtsXjNto7GL2zlqpHqG3PkPQBSmLitRh9b2dRbB/APWjmC2FgOHyZ3Z0BYBiGYRiGYRjm3yJuVxof6gbwivT8w36q0Ul56cDpq2oSyY3UyIr4LB+qKkdbFE8OnE0dxsEETSqmqPQpP8rDBHsHQoI8apRiXpKirU/59iB2uHPjLABzdSQnFTsvgXEMegIyTbdnN85XQFnFwb+g9YQtvKttWCw1ltmDG2sYQ5gZ/NxeQJcWNltUMoeUsnTibCYQUmkqkkqllokTm5XrxUwofT1zofTUkbq0qoc6xVdpUtNBfkM0daAUZm3DvBz2E1Vt7/Zs2WgcOAMaBO8a/nBuEcl7m99Yre7dv05LA687YPTTn/5jv4UNrW1IO+1ibe3soX3M6mEOtXUfutRLIurVxIHTbLfbsdpQj37P24J0FAJlSmQr46JXqAUlXhRpPGldtMRB/y/JlvRidg6UDMMwDMMwDPMX+ASZVjJwJZpyPQAAAABJRU5ErkJggg==
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 230
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 65
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 493
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 230 x 65
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/39DD76FE3B6E4D8C9FF54226DBE02C6C.ashx?h=16&thn=1&w=16"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Placeholder image  230x65
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170718T034412Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7f337a7c-bfb5-405c-b302-10675ceb0338"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180411T072610Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin

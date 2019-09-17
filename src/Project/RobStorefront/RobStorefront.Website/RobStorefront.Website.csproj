@@ -65,7 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Project\z.RobStorefront.DevSettings.config" />
-    <Content Include="App_Config\Include\Project\z.RobStorefront.Serialization.config" />
     <None Include="Properties\PublishProfiles\CI.pubxml" />
     <None Include="Properties\PublishProfiles\Local_Publish.pubxml" />
     <None Include="Web.config" />

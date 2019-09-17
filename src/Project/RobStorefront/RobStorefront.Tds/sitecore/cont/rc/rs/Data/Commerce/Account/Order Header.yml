@@ -1,0 +1,186 @@
+---
+ID: "1fa5735a-40a6-4d61-8b5d-429a709eaf67"
+Parent: "61ae999d-632a-453b-a939-e727cd0a0ee5"
+Template: "39195ca1-14e1-407a-804e-c8b5ff875d23"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Account/Order Header
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "517de6bc-678e-474b-bf5e-b813c1ab48ed"
+      Hint: Order ID Label Text
+      Value: Ordrenummer
+    - ID: "755b4187-2374-4574-a51e-834541823644"
+      Hint: Order ID Label Tooltip
+      Value: Ordresporingsnummer
+    - ID: "4bc3e098-7c7c-4dbf-ab82-45fad2147005"
+      Hint: Order Date Label Text
+      Value: Ordredato
+    - ID: "7ec67164-8b46-441a-b7b2-27949332958f"
+      Hint: Order Date Label Tooltip
+      Value: Ordredato
+    - ID: "7cdcbf0e-0845-4981-8b8d-908b87c7742d"
+      Hint: Order Status Label Text
+      Value: Ordrestatus
+    - ID: "2d3280b4-2daf-4682-ab42-9d495e2fecbe"
+      Hint: Order Status Label Tooltip
+      Value: Ordrestatus
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083104Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2e965c70-c5a1-46b3-94a5-7bc108f5de68"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180511T083104Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\virtualssuser
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "517de6bc-678e-474b-bf5e-b813c1ab48ed"
+      Hint: Order ID Label Text
+      Value: Bestellnummer
+    - ID: "755b4187-2374-4574-a51e-834541823644"
+      Hint: Order ID Label Tooltip
+      Value: Bestellung Trackingnummer
+    - ID: "4bc3e098-7c7c-4dbf-ab82-45fad2147005"
+      Hint: Order Date Label Text
+      Value: Bestelldatum
+    - ID: "7ec67164-8b46-441a-b7b2-27949332958f"
+      Hint: Order Date Label Tooltip
+      Value: Bestelldatum
+    - ID: "7cdcbf0e-0845-4981-8b8d-908b87c7742d"
+      Hint: Order Status Label Text
+      Value: Bestellstatus
+    - ID: "2d3280b4-2daf-4682-ab42-9d495e2fecbe"
+      Hint: Order Status Label Tooltip
+      Value: Bestellstatus
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T084902Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "232119e5-df32-4a97-b627-84ecf88ea650"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180511T084903Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\virtualssuser
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T153458Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "329fd70c-3a3d-48fc-bfe7-2b1ffdd19919"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20171023T153458Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032940Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dcb00d9f-718e-48bf-9db8-8f5926ea9d60"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032940Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "517de6bc-678e-474b-bf5e-b813c1ab48ed"
+      Hint: Order ID Label Text
+      Value: 注文番号
+    - ID: "755b4187-2374-4574-a51e-834541823644"
+      Hint: Order ID Label Tooltip
+      Value: 注文の追跡番号
+    - ID: "4bc3e098-7c7c-4dbf-ab82-45fad2147005"
+      Hint: Order Date Label Text
+      Value: 注文日
+    - ID: "7ec67164-8b46-441a-b7b2-27949332958f"
+      Hint: Order Date Label Tooltip
+      Value: 注文日
+    - ID: "7cdcbf0e-0845-4981-8b8d-908b87c7742d"
+      Hint: Order Status Label Text
+      Value: 注文のステータス
+    - ID: "2d3280b4-2daf-4682-ab42-9d495e2fecbe"
+      Hint: Order Status Label Tooltip
+      Value: 注文のステータス
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\virtualssuser
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085455Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6751c28d-e253-4d10-9cdd-fc2b4196f7d9"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180511T085455Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\virtualssuser

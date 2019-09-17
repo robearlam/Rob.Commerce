@@ -1,0 +1,159 @@
+---
+ID: "6110aa53-d2af-4d6d-a0e4-a2cae65ff3a1"
+Parent: "6979cfb6-502f-44b1-aa5b-c5bfc6da0d91"
+Template: "7ed9eefa-5a07-45cb-a14a-e2d3486748b7"
+Path: /sitecore/content/RobCommerce/RobStorefront/Home/login
+DB: master
+SharedFields:
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{DDA87291-1338-4DD9-854E-8FA0596DFA88}"
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{2F1EFD56-7042-4D4A-A042-17F73AB884B9}|{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}|{B1C6B23A-0F8A-4B9D-98F0-1EB37E8EA8FB}|{B5862F68-266D-4FA8-9428-E0E829482286}|{CCF551A0-B19D-4CD8-9EB4-16401B83268F}|{143C5C30-9686-4BCB-91A3-DA8CFED435EB}|{903311FF-71D1-4926-B07C-EACDA8BC6338}|{09F66CF0-29C1-46CC-A561-B64A9BDC65D6}|{7ED9EEFA-5A07-45CB-A14A-E2D3486748B7}|{CEF49EA4-DB89-4F6D-A103-F0429609A5E4}|{E8379934-2434-48E4-81F0-2C2C58C0CBA0}|{F1BB863F-C886-48A8-B810-8B455EC81DCD}|{A52958B9-34C0-4A73-8527-B91F32BFC629}|{148191AB-F8F1-4551-88A0-D863F180269F}|{8C5B578D-E777-429F-A490-ECA9D93C3522}|{AC236D9C-D289-446D-B9E9-FA581D6D2025}|{E90FBFA8-E468-4945-837E-648383DE2A61}|{F3108438-B308-4843-B8D7-6C6A76C7304E}|{D02F4291-AE2D-4785-AECB-6DA4BE6C03B1}|{C0815551-0F3B-48B4-B159-35C1C38B05BC}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{8A304E43-480F-4F24-8718-79FE8F6714E4}" p:before="*" s:ds="{23E47246-25F5-45B0-B373-0A8C95C40310}" s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={89CEAA96-DAD6-4AA4-929D-8B21030294F9}|{478266F1-42A0-4580-B9B0-AA2D4EC4CA7C}" s:ph="/main/container-3/column-1-1" /><r uid="{EE656E59-2CAC-430A-9600-21DA709B2832}" p:after="r[@uid='{8A304E43-480F-4F24-8718-79FE8F6714E4}']" s:ds="{F9E17E53-363B-440C-9B08-A5D615E1D44F}" s:id="{87182F78-4399-4896-8D59-9D6A45282F8A}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles" s:ph="/main/container-3/column-1-1" /><r uid="{A243BD8E-0DBA-48F6-BCA5-8F23DC781E3A}" p:after="r[@uid='{EE656E59-2CAC-430A-9600-21DA709B2832}']" s:id="{5B9272A5-E147-4C16-B9F7-41CCDCB4CB5D}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}&amp;Styles={478266F1-42A0-4580-B9B0-AA2D4EC4CA7C}" s:ph="/main/container-3/column-1-1" /><r uid="{E8BEB5F8-DD15-4489-AF8D-E64393CEE2D9}" p:after="r[@uid='{A243BD8E-0DBA-48F6-BCA5-8F23DC781E3A}']" s:ds="{E3901604-1D7D-41B9-B170-AD79895D29BB}" s:id="{97D8D8DA-E6FD-4983-BDB6-ABD28C6E0209}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}" s:ph="/main/container-3/column-1-1" /><r uid="{13412F33-CC41-4B3F-BDE4-4FDC043A9FDD}" p:after="r[@uid='{E8BEB5F8-DD15-4489-AF8D-E64393CEE2D9}']" s:ds="{485D45E7-B698-48A6-B410-CA18D3A498E6}" s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}" s:par="GridParameters={FB140AEF-DE33-4088-9F1D-406C6BA32A8E}&amp;Styles={84C1A19C-66EE-4856-A450-4BC7206B8686}|{6816CF7F-4659-4191-9BCB-95C6C833F94C}&amp;FieldNames&amp;Reset Caching Options" s:ph="/main/container-3/column-1-1" /><r uid="{E60A5436-1311-4FF2-BFDE-65FB3885E943}" p:after="r[@uid='{13412F33-CC41-4B3F-BDE4-4FDC043A9FDD}']" s:ds="{ADEA77FE-4786-4121-8738-A1CE82426401}" s:id="{69D0A00E-FF06-4B17-BE59-BED330577680}" s:par="GridParameters=%7BFD09A9D2-113E-49B8-B481-F0B4FFE9B498%7D%7C%7B4C80E2ED-07D6-4652-A90B-3820049E9CE4%7D&amp;FieldNames&amp;Styles=%7BDF72DB07-CCF5-4997-91D0-8436FA2183C7%7D%7C%7B28ACA701-D8DB-425F-A66A-D15B6F13596B%7D&amp;Reset Caching Options&amp;RenderingIdentifier" s:ph="/main/container-3/column-2-1" /><r uid="{52F531AD-4E90-46EA-B3D0-925D7D1C4B46}" p:after="r[@uid='{E60A5436-1311-4FF2-BFDE-65FB3885E943}']" s:ds="{C51064DB-0DFE-4BBF-A722-838CE2B78642}" s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{2040C827-8640-4E61-907E-D3D5A25696C3}&amp;Styles={5D59C657-4CC4-42ED-BC28-D9A476D30AC0}|{9CADADD3-3921-4D97-B18A-9C2D066464BA}|{84C1A19C-66EE-4856-A450-4BC7206B8686}|{478266F1-42A0-4580-B9B0-AA2D4EC4CA7C}" s:ph="/main/container-3/column-2-1" /><r uid="{CFAE7757-DAC9-4C12-B810-25A85E26E9A6}" p:after="r[@uid='{52F531AD-4E90-46EA-B3D0-925D7D1C4B46}']" s:ds="{D44AA23B-B330-4701-9BF2-579306714828}" s:id="{3972C278-7E7A-4C2B-A293-66AF860F5C3A}" s:par="GridParameters={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{2040C827-8640-4E61-907E-D3D5A25696C3}&amp;Styles={DF72DB07-CCF5-4997-91D0-8436FA2183C7}|{9CADADD3-3921-4D97-B18A-9C2D066464BA}|{478266F1-42A0-4580-B9B0-AA2D4EC4CA7C}|{84C1A19C-66EE-4856-A450-4BC7206B8686}" s:ph="/main/container-3/column-2-1" /><r uid="{6472565A-528F-4FC3-93E7-ED3F53699C22}" p:after="r[@uid='{CFAE7757-DAC9-4C12-B810-25A85E26E9A6}']" s:ds="" s:id="{C25766C8-9AFD-4D28-87FE-147774F6806D}" s:par="SplitterSize=2&amp;EnabledPlaceholders=1,2&amp;Styles1&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles8&amp;ColumnWidth1={8636EB85-386A-42BA-AA14-D5F592867741}|{689708EA-D282-4A39-9F6F-6F95F428942F}&amp;ColumnWidth2={113BEF7C-97E6-46CA-8CF3-916F7FAA8DE2}|{F2FCE948-4F77-44AF-A188-B2030061F793}|{30AB3BE4-973A-4029-A69B-9523220444C1}|{3BD71913-44BE-4DDD-9A6B-6D68CD361848}&amp;ColumnWidth3&amp;ColumnWidth4&amp;ColumnWidth5&amp;ColumnWidth6&amp;ColumnWidth7&amp;ColumnWidth8&amp;DynamicPlaceholderId=1&amp;Reset Caching Options" s:ph="/main/container-3" /><r uid="{1AB8A927-B528-4DF8-BDA6-96D6917AE529}" p:after="*[1=2]" s:id="{896A2C68-1362-4E88-8BA0-1805AE6D4837}" s:par="GridParameters&amp;BackgroundImage&amp;Styles&amp;DynamicPlaceholderId=3" s:ph="main" /></d></r>
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4e9cb879-77c9-4d78-9e53-02724ad942b5"
+      Hint: Title
+      Value: Sign in
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Sign in
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Log ind
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033113Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fc0c5135-8b23-4c38-b59a-06f9607260e7"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033113Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4e9cb879-77c9-4d78-9e53-02724ad942b5"
+      Hint: Title
+      Value: Sign in
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Sign in
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Login
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033132Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5d0debe6-2b8a-4871-b3c4-ae2a12ebfd4a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033132Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4e9cb879-77c9-4d78-9e53-02724ad942b5"
+      Hint: Title
+      Value: Sign in
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Sign in
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Login
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170125T111438Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d687d44-0fd8-4555-a556-b8b15e336078"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033227Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4e9cb879-77c9-4d78-9e53-02724ad942b5"
+      Hint: Title
+      Value: Sign in
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Sign in
+    - ID: "ce53062e-4385-4244-8382-c2b4530a51ba"
+      Hint: TwitterCardType
+      Value: "{32F6A4E4-93DD-4A9C-AA60-CDEDB0BEDABB}"
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: ログオン
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033148Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e8b7119e-126a-4817-80de-313b962ff8e3"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033149Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

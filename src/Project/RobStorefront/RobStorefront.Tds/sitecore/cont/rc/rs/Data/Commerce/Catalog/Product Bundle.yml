@@ -1,0 +1,160 @@
+---
+ID: "7d2560ce-0930-4e6f-ad3c-7bf8f0a9fda9"
+Parent: "00b7860b-d3ab-4e3c-bdb7-47223d5d291d"
+Template: "b5748c6f-878f-4d14-8441-031d624c4289"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Catalog/Product Bundle
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "53a433bc-2ad1-493d-a43a-39302385e17c"
+      Hint: Invalid Variant Message
+      Value: Der er blevet valgt en ugyldig variantkombination.
+    - ID: "75222ec7-b5f2-4551-9aa8-54d491d3bf0d"
+      Hint: Savings Lead Text
+      Value: "- Spar op til"
+    - ID: "015fad7b-190c-4501-b787-7245cc918d41"
+      Hint: View Product Text
+      Value: Gå til produkt
+    - ID: "4503a490-8a13-4543-879a-e468081e0593"
+      Hint: Title Text
+      Value: Pakke
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190315T063843Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2eb4ee0c-a5fb-4d21-8892-570d67a061ab"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190315T063843Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "53a433bc-2ad1-493d-a43a-39302385e17c"
+      Hint: Invalid Variant Message
+      Value: Eine ungültige Variantenkombination wurde ausgewählt.
+    - ID: "75222ec7-b5f2-4551-9aa8-54d491d3bf0d"
+      Hint: Savings Lead Text
+      Value: "- Sparen Sie bis zu"
+    - ID: "015fad7b-190c-4501-b787-7245cc918d41"
+      Hint: View Product Text
+      Value: Zum Produkt gehen
+    - ID: "4503a490-8a13-4543-879a-e468081e0593"
+      Hint: Title Text
+      Value: Bündel
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190315T064026Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8fd10e0e-1500-4ac1-81a3-ff3dba05e15f"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190315T064026Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180913T164359Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dbc73ccc-d6f2-48f4-95fa-59f7e6347ad1"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20180913T164359Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032941Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1571b773-6b8f-4aa7-9c00-82a23cd5381e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "53a433bc-2ad1-493d-a43a-39302385e17c"
+      Hint: Invalid Variant Message
+      Value: 選択されたバリアントの組み合わせは無効です。
+    - ID: "75222ec7-b5f2-4551-9aa8-54d491d3bf0d"
+      Hint: Savings Lead Text
+      Value: "- 最大割引"
+    - ID: "015fad7b-190c-4501-b787-7245cc918d41"
+      Hint: View Product Text
+      Value: 商品に移動
+    - ID: "4503a490-8a13-4543-879a-e468081e0593"
+      Hint: Title Text
+      Value: バンドル
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190315T064145Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "555349bd-4f64-4482-aa2d-8f2136765b44"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190315T064146Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

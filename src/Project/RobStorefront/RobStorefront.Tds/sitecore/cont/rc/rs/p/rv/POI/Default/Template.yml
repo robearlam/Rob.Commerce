@@ -1,0 +1,136 @@
+---
+ID: "219316f7-64d9-4803-bdf5-48b79088cd06"
+Parent: "3fad61f3-4ece-458b-a427-436932301a81"
+Template: "c645dd63-2462-470c-a48d-8b55757a2db3"
+Path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Rendering Variants/POI/Default/Template
+DB: master
+BranchID: "0f31020c-79af-47c9-b8e6-c98720ae8a13"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{22F88A7E-2BAB-431E-909D-D0A213B25C85}"
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d90f5d1a-19e1-48cc-b673-47d6b5d9b3ed"
+      Hint: Template
+      Value: |
+        #if($geospatial.Distance)
+        Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+        #end
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033123Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d17a8378-d754-4c87-8d97-ee51a3a8cf0e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033123Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d90f5d1a-19e1-48cc-b673-47d6b5d9b3ed"
+      Hint: Template
+      Value: |
+        #if($geospatial.Distance)
+        Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+        #end
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033140Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "99b958e8-5bdc-4e59-8d79-7d8e9f307306"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033140Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d90f5d1a-19e1-48cc-b673-47d6b5d9b3ed"
+      Hint: Template
+      Value: |
+        #if($geospatial.Distance)
+        Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+        #end
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032844Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5edb1fcf-8a2c-4758-99e9-bd2dde7bd5d0"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032844Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "d90f5d1a-19e1-48cc-b673-47d6b5d9b3ed"
+      Hint: Template
+      Value: |
+        #if($geospatial.Distance)
+        Distance: $numberTool.Format($geospatial.Distance, "0") $geospatial.Unit
+        #end
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T033156Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72d094d5-61a3-4fbb-9851-1704bfa166b0"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033156Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

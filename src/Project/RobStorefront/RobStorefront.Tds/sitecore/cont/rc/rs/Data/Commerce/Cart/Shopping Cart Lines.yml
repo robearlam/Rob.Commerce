@@ -1,0 +1,168 @@
+---
+ID: "169e0d27-aa44-4d67-b1d7-cb959a3c2b3c"
+Parent: "80045893-286a-4d75-8183-0fd1342b2827"
+Template: "0a5acf7d-d975-45b9-bbc3-e80a4042696b"
+Path: /sitecore/content/RobCommerce/RobStorefront/Data/Commerce/Cart/Shopping Cart Lines
+DB: master
+Languages:
+- Language: da
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7c56f710-46e8-4394-99b3-6b42212ab55f"
+      Hint: Product Details Label
+      Value: Produktdetaljer
+    - ID: "08ce05fa-9940-4acc-bbc9-6585981dfa55"
+      Hint: Savings Label
+      Value: Rabat
+    - ID: "9576ce68-ba55-473c-9200-de51b55aa9ad"
+      Hint: Delivery Label
+      Value: "Shipping:"
+    - ID: "d4d04d1a-a6f6-4dab-b90f-fbe455fa836d"
+      Hint: Address Label
+      Value: "Address:"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T083210Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "34cc73a5-7e4e-41bf-b2fe-58270b92655e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033116Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7c56f710-46e8-4394-99b3-6b42212ab55f"
+      Hint: Product Details Label
+      Value: Produktdetails
+    - ID: "08ce05fa-9940-4acc-bbc9-6585981dfa55"
+      Hint: Savings Label
+      Value: Rabatt
+    - ID: "9576ce68-ba55-473c-9200-de51b55aa9ad"
+      Hint: Delivery Label
+      Value: "Shipping:"
+    - ID: "d4d04d1a-a6f6-4dab-b90f-fbe455fa836d"
+      Hint: Address Label
+      Value: "Address:"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085011Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3624ddba-50e7-4845-8944-e02186a46d2a"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033134Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7c56f710-46e8-4394-99b3-6b42212ab55f"
+      Hint: Product Details Label
+      Value: Product details
+    - ID: "bb9bc68a-3249-4cdd-8a98-1f3637ff55fd"
+      Hint: Discount Label
+      Value: Discount
+    - ID: "08ce05fa-9940-4acc-bbc9-6585981dfa55"
+      Hint: Savings Label
+      Value: Discount
+    - ID: "9576ce68-ba55-473c-9200-de51b55aa9ad"
+      Hint: Delivery Label
+      Value: "Shipping:"
+    - ID: "d4d04d1a-a6f6-4dab-b90f-fbe455fa836d"
+      Hint: Address Label
+      Value: "Address:"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171023T153637Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b4a1d12-ad24-41b9-be36-5ab4e43bf129"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032941Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "37a9af39-d608-4b26-a5bc-588707d0a8f8"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T032941Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7c56f710-46e8-4394-99b3-6b42212ab55f"
+      Hint: Product Details Label
+      Value: 商品の詳細
+    - ID: "9576ce68-ba55-473c-9200-de51b55aa9ad"
+      Hint: Delivery Label
+      Value: "Shipping:"
+    - ID: "d4d04d1a-a6f6-4dab-b90f-fbe455fa836d"
+      Hint: Address Label
+      Value: "Address:"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T085638Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\virtualssuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0275c880-69bd-4f53-866b-48f76075959e"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033150Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,49 @@
+---
+ID: "acd8a94b-9b04-4276-82fa-0357e3a7f47a"
+Parent: "35b978b9-1fce-450a-842d-0d53ee1c5428"
+Template: "a2a80c92-826a-4928-beed-6e46fff31919"
+Path: /sitecore/Commerce/Commerce Control Panel/Storefront Settings/Storefronts/RobStorefront/Fulfillment Configuration
+DB: master
+BranchID: "cab95775-02c2-4b53-9cd4-983a8cc5ca4a"
+SharedFields:
+- ID: "0452eb98-bc28-4fd8-a3b4-533f26c62705"
+  Hint: Fulfillment Options
+  Value: "{3878B502-85AC-41B5-9203-E0F8712A854B}|{2FB0128E-FBBD-4FCE-9197-F000D8D39F5C}|{3817F8D5-994B-4FBC-8BBE-4C342EC7553A}"
+- ID: "769b63db-453f-44e6-aa90-cbc916e47f7d"
+  Hint: Allow items to be delivered Individually
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{6E94CE45-F54F-4002-9B41-A08EC788C583}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+      Hint: __Display name
+      Value: Fulfillment Configuration
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190916T032947Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1eb9a0ed-2af2-453a-9e40-ab4d1a1af9f1"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190916T033055Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
