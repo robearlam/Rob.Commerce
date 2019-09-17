@@ -17,8 +17,8 @@ The gulp scripts are written using ES6, which isn't supported OOTB in VS2017, fo
 Before you execute the install you will need remove all of the Keys from your Redis cache using the FLUSHALL command on the Redis-CLI.
 Excucute the _first-install_ task to build and deploy the engine to all of your roles, and all of website projects. This will also clean the OOTB configured environments and re-bootstrap and initialize the configuration contained in this solution. Note that the final step _initial-engine-setup_ may take a little time to complete.
 
-### Deploy Unicorn Items
-Deploy Unicorn items.
+### Deploy TDS
+Deploy all TDS projects
 Perform a full publish.
 Perform a full rebuild of indexes.
 
