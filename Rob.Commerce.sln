@@ -134,20 +134,10 @@ Global
 		{D09CD48E-4843-450D-BBBF-785855377996}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D09CD48E-4843-450D-BBBF-785855377996}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E0378CC-AC02-404B-87A1-5AA4752FB22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E0378CC-AC02-404B-87A1-5AA4752FB22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E0378CC-AC02-404B-87A1-5AA4752FB22F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{6E0378CC-AC02-404B-87A1-5AA4752FB22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E0378CC-AC02-404B-87A1-5AA4752FB22F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E0378CC-AC02-404B-87A1-5AA4752FB22F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{61C8A4A6-AFBE-4FF8-AC7F-16718068433D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61C8A4A6-AFBE-4FF8-AC7F-16718068433D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61C8A4A6-AFBE-4FF8-AC7F-16718068433D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{61C8A4A6-AFBE-4FF8-AC7F-16718068433D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61C8A4A6-AFBE-4FF8-AC7F-16718068433D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61C8A4A6-AFBE-4FF8-AC7F-16718068433D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -184,7 +174,7 @@ Global
 		{F2FCC574-C6DD-4758-85B5-320AE559427E} = {58559F1B-2C1D-486E-95A9-D9A840A71B5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

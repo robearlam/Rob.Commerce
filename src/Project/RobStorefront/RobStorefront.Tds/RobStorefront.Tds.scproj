@@ -28,11 +28,21 @@
     <SitecoreAccessGuid>80dece4b-10a0-4394-b3d9-d5024ad8a8f9</SitecoreAccessGuid>
     <SitecoreWebUrl>http://xc92.sc</SitecoreWebUrl>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\xc92.sc</SitecoreDeployFolder>
+    <BuildWebDeploy>True</BuildWebDeploy>
+    <WebDeployPackageCodeAndItemOptions>ItemOnly</WebDeployPackageCodeAndItemOptions>
+    <WebDeployPackageName />
+    <WebDeployAppendDateAndTimeToPackageName>False</WebDeployAppendDateAndTimeToPackageName>
+    <ContinueOnItemDeployError>False</ContinueOnItemDeployError>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <BuildWebDeploy>True</BuildWebDeploy>
+    <WebDeployPackageCodeAndItemOptions>ItemOnly</WebDeployPackageCodeAndItemOptions>
+    <WebDeployPackageName>RobCommerce</WebDeployPackageName>
+    <WebDeployAppendDateAndTimeToPackageName>False</WebDeployAppendDateAndTimeToPackageName>
+    <ContinueOnItemDeployError>False</ContinueOnItemDeployError>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -1675,6 +1685,22 @@
     <SitecoreItem Include="sitecore\templates\Project\RobCommerce\Site\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\RobCommerce\Tenant.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\RobCommerce\Tenant\__Standard Values.item"><ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization><ItemDeployment>DeployOnce</ItemDeployment></SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\..\Feature\ProductCompare\Feature.Compare.Tds\Feature.Compare.Tds.scproj">
+      <ProjectId>{6e0378cc-ac02-404b-87a1-5aa4752fb22f}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\..\Foundation\Rules\Foundation.Rules.Tds\Foundation.Rules.Tds.scproj">
+      <ProjectId>{61c8a4a6-afbe-4ff8-ac7f-16718068433d}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\ProductCompare\Feature.Compare.Tds\Feature.Compare.Tds.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Rules\Foundation.Rules.Tds\Foundation.Rules.Tds.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
