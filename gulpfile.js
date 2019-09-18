@@ -1,12 +1,12 @@
 let { build, publish } = require('gulp-dotnet-cli');
 let gulp = require('gulp');
 let fs = require('fs');
-let del = require('del');
 let exec = require('child_process').exec;
 var _msbuild = require('msbuild');
 let flatmap = require('gulp-flatmap');
 let rimraf = require('rimraf');
 let path = require("path");
+let mkdirp = require('mkdirp');
 
 var config;
 if (fs.existsSync('./gulp-config.js.user')) {
@@ -174,6 +174,20 @@ var publishProjects = function (location) {
                }));
 };
 
+var buildProject = function (project) {
+    console.log("Building: " + project);  
+    
+    var msbuild = new _msbuild(); 
+    msbuild.sourcePath = project;
+    msbuild.configuration = config.buildConfiguration;
+
+    var overrideParams = [];
+    overrideParams.push('/p:VisualStudioVersion=' + config.buildToolsVersion.toFixed(1));  
+    overrideParams.push('/p:SolutionConfig=' + config.buildConfiguration);  
+    msbuild.config('overrideParams',overrideParams);
+    msbuild.build(); 
+};
+
 var publishStream = function (stream, file) {
     console.log("publishing: " + file.path);  
     console.log("Using publishing profile: " + config.publishProfile);
@@ -195,14 +209,28 @@ var publishStream = function (stream, file) {
 /* CI Tasks below here  */
 /************************/
 
+gulp.task("CI-Build-Solution", function (callback) {
+    console.log("Executing CI-Build-TDS-WDP Task");
+    buildProject("./Rob.Commerce.sln");
+    callback();
+});
+
+gulp.task("CI-CreateOutputDirs", function (callback) {
+    console.log("Creating './Output/wwwroot' folder");
+    mkdirp('./Output', function (err) {
+        console.log('WTF');
+        callback();
+    });
+});
+
 gulp.task("CI-Clean", function (callback) {
     console.log("Cleaning output folder for CI Build & Publish");
     rimraf.sync(path.resolve("./Output"), callback());
 });
 
 gulp.task("CI-Update-Publish-Params", function (callback) {
-    console.log("Publish Web Projects to './Output' folder");
-    config.sitecoreRoot = path.resolve("./Output");
+    console.log("Publish Web Projects to './Output/wwwroot' folder");
+    config.sitecoreRoot = path.resolve("./Output/wwwroot");
     config.publishProfile = "CI";
     config.buildConfiguration = "Release";
     fs.mkdirSync(config.sitecoreRoot);
@@ -212,7 +240,9 @@ gulp.task("CI-Update-Publish-Params", function (callback) {
 gulp.task("CI-Run",
     gulp.series(
         "CI-Clean",
+        "CI-CreateOutputDirs",
         "CI-Update-Publish-Params",
+        "CI-Build-Solution",
         "Publish-Foundation-Projects",
         "Publish-Feature-Projects",
         "Publish-Project-Projects", function (done) {

@@ -5,7 +5,7 @@ module.exports = function () {
     var config = {
         sitecoreRoot: sitecoreRoot,
         engineProjectPath: "./src/Project/Sitecore.Commerce.Engine",
-        buildConfiguration: "Debug",
+        buildConfiguration: "Release",
         buildToolsVersion: 15.0,
         buildMaxCpuCount: 0,
         buildVerbosity: "minimal",

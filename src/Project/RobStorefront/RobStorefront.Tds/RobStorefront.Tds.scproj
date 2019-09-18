@@ -16,6 +16,7 @@
     <AssemblyName>RobStorefront.Tds</AssemblyName>
     <Name>RobStorefront.Tds</Name>
     <RootNamespace>RobStorefront.Tds</RootNamespace>
+    <SolutionConfig>Release</SolutionConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
