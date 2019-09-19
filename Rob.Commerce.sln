@@ -140,7 +140,6 @@ Global
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2FCC574-C6DD-4758-85B5-320AE559427E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
