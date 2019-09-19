@@ -174,7 +174,7 @@ var publishProjects = function (location) {
                }));
 };
 
-var buildProject = function (project) {
+var buildProject = function (project, callback) {
     console.log("Building: " + project);  
     
     var msbuild = new _msbuild(); 
@@ -186,6 +186,7 @@ var buildProject = function (project) {
     overrideParams.push('/p:SolutionConfig=' + config.buildConfiguration);  
     msbuild.config('overrideParams',overrideParams);
     msbuild.build(); 
+    callback();
 };
 
 var publishStream = function (stream, file) {
@@ -211,8 +212,7 @@ var publishStream = function (stream, file) {
 
 gulp.task("CI-Build-Solution", function (callback) {
     console.log("Executing CI-Build-TDS-WDP Task");
-    buildProject("./Rob.Commerce.sln");
-    callback();
+    buildProject("./Rob.Commerce.sln", callback);
 });
 
 gulp.task("CI-CreateOutputDirs", function (callback) {
@@ -238,8 +238,8 @@ gulp.task("CI-Update-Publish-Params", function (callback) {
 
 gulp.task("CI-Move-TDS-WDP", function (callback) {
     console.log("Moving TDS WDP package to './Output' folder");
-    gulp.src('./src/Project/RobStorefront/RobStorefront.Tds/bin/WebDeploy_Release/RobCommerce.wdp.zip').pipe(gulp.dest('./Output'));
-    callback();
+    gulp.src('./src/Project/RobStorefront/RobStorefront.Tds/bin/WebDeploy_Release/RobCommerce.wdp.zip').pipe(gulp.dest('./Output'));   
+    callback()
 });
 
 gulp.task("CI-Run",
@@ -251,6 +251,7 @@ gulp.task("CI-Run",
         "Publish-Foundation-Projects",
         "Publish-Feature-Projects",
         "Publish-Project-Projects",
-        "CI-Move-TDS-WDP", function (done) {
+        "CI-Move-TDS-WDP", 
+        function (done) {
             done();
 }));
