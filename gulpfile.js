@@ -218,7 +218,6 @@ gulp.task("CI-Build-Solution", function (callback) {
 gulp.task("CI-CreateOutputDirs", function (callback) {
     console.log("Creating './Output/wwwroot' folder");
     mkdirp('./Output', function (err) {
-        console.log('WTF');
         callback();
     });
 });
@@ -237,6 +236,12 @@ gulp.task("CI-Update-Publish-Params", function (callback) {
     callback();
 });
 
+gulp.task("CI-Move-TDS-WDP", function (callback) {
+    console.log("Moving TDS WDP package to './Output' folder");
+    gulp.src('./src/Project/RobStorefront/RobStorefront.Tds/bin/WebDeploy_Release/RobCommerce.wdp.zip').pipe(gulp.dest('./Output'));
+    callback();
+});
+
 gulp.task("CI-Run",
     gulp.series(
         "CI-Clean",
@@ -245,6 +250,7 @@ gulp.task("CI-Run",
         "CI-Build-Solution",
         "Publish-Foundation-Projects",
         "Publish-Feature-Projects",
-        "Publish-Project-Projects", function (done) {
+        "Publish-Project-Projects",
+        "CI-Move-TDS-WDP", function (done) {
             done();
 }));
