@@ -69,11 +69,11 @@
   },
   "Caching": {
     "Memory": {
-      "Enabled": false,
+      "Enabled": true,
       "CacheStoreName": "Commerce-Memory-Store"
     },
     "Redis": {
-      "Enabled": true,
+      "Enabled": false,
       "CacheStoreName": "Commerce-Redis-Store",
       "Options": {
         "Configuration": "localhost",
