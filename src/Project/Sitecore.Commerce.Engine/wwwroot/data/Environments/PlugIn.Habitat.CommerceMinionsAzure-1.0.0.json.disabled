@@ -102,9 +102,7 @@
           "EntityTarget": "Entity-Country-USA",
           "Policies": {
             "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-            "$values": [
-
-            ]
+            "$values": []
           }
         },
         "Countries": {
@@ -116,9 +114,7 @@
               "EntityTarget": "Entity-Country-USA",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -127,9 +123,7 @@
               "EntityTarget": "Entity-Country-CAN",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             }
           ]
@@ -138,9 +132,7 @@
         "FirstDayOfWeek": "Sunday",
         "PostalCodeOptionalCountries": {
           "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-          "$values": [
-
-          ]
+          "$values": []
         }
       },
       {
@@ -176,9 +168,7 @@
               "Name": "",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             }
           ]
@@ -289,9 +279,7 @@
               "Name": "Ground",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -304,9 +292,7 @@
               "Name": "Standard",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -319,9 +305,7 @@
               "Name": "Next Day Air",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -334,9 +318,7 @@
               "Name": "Standard Overnight",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -349,9 +331,7 @@
               "Name": "Ground",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -364,9 +344,7 @@
               "Name": "Standard",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -379,9 +357,7 @@
               "Name": "Next Day Air",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {
@@ -394,9 +370,7 @@
               "Name": "Standard Overnight",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             }
           ]

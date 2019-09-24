@@ -3,7 +3,7 @@
     "SiteTitle": "CommerceAuthoring_xc92",
     "BootStrapFile": "Global",
     "DeploymentId": "Deployment01",
-    "EnvironmentName": "HabitatAuthoring",
+    "EnvironmentName": "HabitatShops",
     "EncryptionProtectionType": "Machine",
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
@@ -69,11 +69,11 @@
   },
   "Caching": {
     "Memory": {
-      "Enabled": false,
+      "Enabled": true,
       "CacheStoreName": "Commerce-Memory-Store"
     },
     "Redis": {
-      "Enabled": true,
+      "Enabled": false,
       "CacheStoreName": "Commerce-Redis-Store",
       "Options": {
         "Configuration": "localhost",
