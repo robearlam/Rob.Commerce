@@ -1,7 +1,8 @@
 {
+  "webroot": "C:\\Solutions\\Rob.Commerce\\src\\Project\\Sitecore.Commerce.Engine",
   "FileTransforms": [
     {
-      "FileName": "/wwwroot/Bootstrap/Global.json",
+      "FileName": "\\wwwroot\\Bootstrap\\Global.json",
       "Transforms": [
         {
           "selector": "Policies.$values.2.Database",
