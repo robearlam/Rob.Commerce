@@ -156,9 +156,7 @@
               "Name": "",
               "Policies": {
                 "$type": "System.Collections.Generic.List`1[[Sitecore.Commerce.Core.Policy, Sitecore.Commerce.Core]], mscorlib",
-                "$values": [
-
-                ]
+                "$values": []
               }
             },
             {

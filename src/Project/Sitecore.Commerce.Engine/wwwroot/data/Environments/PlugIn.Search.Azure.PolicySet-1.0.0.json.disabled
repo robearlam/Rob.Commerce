@@ -10,9 +10,9 @@
     "$values": [
       {
         "$type": "Sitecore.Commerce.Plugin.Search.Azure.AzureSearchPolicy, Sitecore.Commerce.Plugin.Search.Azure",
-        "SearchServiceName": "PlaceHolderForAzureSearchServiceName",
-        "SearchServiceAdminApiKey": "PlaceHolderForAzureSearchServiceAdminApiKey",
-        "SearchServiceQueryApiKey": "PlaceHolderForAzureSearchServiceQueryApiKey"
+        "SearchServiceName": "rea-xc92-as",
+        "SearchServiceAdminApiKey": "4F3B384FB6CF9019B81B29ED9DCF7371",
+        "SearchServiceQueryApiKey": "4F3B384FB6CF9019B81B29ED9DCF7371"
       }
     ]
   }
