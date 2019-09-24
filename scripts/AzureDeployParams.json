@@ -1,0 +1,29 @@
+{
+  "FileTransforms": [
+    {
+      "FileName": "/wwwroot/Bootstrap/Global.json",
+      "Transforms": [
+        {
+          "selector": "Policies.$values.2.Database",
+          "value": "rea-xc92-global-db"
+        },
+        {
+          "selector": "Policies.$values.2.Password",
+          "value": "<<transformed_on_release>>"
+        },
+        {
+          "selector": "Policies.$values.2.Server",
+          "value": "rea-xc92-sql.database.windows.net"
+        },
+        {
+          "selector": "Policies.$values.2.TrustedConnection",
+          "value": false
+        },
+        {
+          "selector": "Policies.$values.2.UserName",
+          "value": "engineglobaluser"
+        }
+      ]
+    }
+  ]
+}

@@ -61,6 +61,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feature.Payments.Engine", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShell", "PowerShell", "{9D15AE37-A812-4C0B-A069-0F6670984C25}"
 	ProjectSection(SolutionItems) = preProject
+		scripts\AzureDeploy.ps1 = scripts\AzureDeploy.ps1
+		scripts\AzureDeployParams.json = scripts\AzureDeployParams.json
 		scripts\CopyEngine.ps1 = scripts\CopyEngine.ps1
 		scripts\FirstDeploy.ps1 = scripts\FirstDeploy.ps1
 		scripts\TransformEngineRole.ps1 = scripts\TransformEngineRole.ps1
@@ -173,7 +175,7 @@ Global
 		{F2FCC574-C6DD-4758-85B5-320AE559427E} = {58559F1B-2C1D-486E-95A9-D9A840A71B5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {AF967BA9-3942-4A64-82E0-ABDD6779EFE4}
 	EndGlobalSection
 EndGlobal
