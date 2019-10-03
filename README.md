@@ -33,4 +33,3 @@ The following modules were based on code provided by:
 - Foundation.PluginEnhancements - [Kerry Havas](https://github.com/kerryhavas)
 - Feature.Order.ServiceBus - Mike Shae
 - Feature.Payments - [Sitecore.HabitatHome.Commerce](https://github.com/Sitecore/Sitecore.HabitatHome.Commerce)
-.
