@@ -84,7 +84,7 @@ gulp.task('Publish-Commerce-Engine', function () {
     return gulp.src(config.engineProjectPath + '/Sitecore.Commerce.Engine.csproj', { read: false })
         .pipe(publish({
             configuration: config.buildConfiguration,
-            output: "./bin/publish",
+            output: "./output/publish",
             verbosity: config.buildVerbosity
         }));
 });

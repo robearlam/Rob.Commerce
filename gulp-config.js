@@ -13,7 +13,7 @@ module.exports = function () {
         publishPlatform: "AnyCpu",
         runCleanBuilds: true,
         xcDatabaseServer: ".",
-        xcCertificateThumbprint: "27A86A14AC2C98D8E531DA2D0C68B31A4DD3D2B1",
+        xcCertificateThumbprint: "1D6F8BC71613D86F2E4FBC2F993B01F84DC5C3F7",
         engineConnectIncludeDir: sitecoreRoot + '\\App_Config\\Include\\Y.Commerce.Engine',
         engineHostname: "commerceauthoring." + siteName + ".com",
         identityServerHostname: siteName + ".identityserver",

@@ -10,11 +10,25 @@ template: {F0D16EEE-3A05-4E43-A082-795A32B873C0}
 templatekey: Condition
 created: 20190916T045914Z
 
+----field----
+field: {AB51C8B2-F0E1-4471-9AAE-CC080D774923}
+name: Type
+key: type
+content-length: 96
+
+Foundation.Rules.Website.Conditions.HasPurchasedContextProductCondition,Foundation.Rules.Website
 ----version----
 language: en
 version: 1
-revision: 6727c38d-6abd-449a-804c-6cd899eda7d4
+revision: 677649b2-23fb-46bd-9199-fd9343d4af6e
 
+----field----
+field: {AF321234-4EB9-4EF5-9197-65903351939C}
+name: Text
+key: text
+content-length: 148
+
+Context user has previously purchased context product in past  [Days,Int,defaultValue=365&validationText=Please enter a valid number of days., days]
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -35,18 +49,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6727c38d-6abd-449a-804c-6cd899eda7d4
+677649b2-23fb-46bd-9199-fd9343d4af6e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190903T070518Z
+20191009T095550Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 16
+content-length: 14
 
-sitecore\unicorn
+sitecore\Admin

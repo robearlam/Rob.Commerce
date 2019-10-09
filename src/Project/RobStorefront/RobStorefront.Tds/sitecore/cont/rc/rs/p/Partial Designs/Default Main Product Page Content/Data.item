@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {A9EA4328-6E81-4484-ACAE-19D4C8903E56}
+database: master
+path: /sitecore/content/RobCommerce/RobStorefront/Presentation/Partial Designs/Default Main Product Page Content/Data
+parent: {32434C0D-3A65-4DCE-8470-0EC74F21CEE0}
+name: Data
+master: {00000000-0000-0000-0000-000000000000}
+template: {1C82E550-EBCD-4E5D-8ABD-D50D0809541E}
+templatekey: Page Data
+created: 20191009T094902Z
+
+----version----
+language: en
+version: 1
+revision: e94632af-57ad-4b02-b088-179f4e14b03c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20191009T094902Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e94632af-57ad-4b02-b088-179f4e14b03c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20191009T094902Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
