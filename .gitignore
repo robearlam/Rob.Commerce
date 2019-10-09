@@ -53,4 +53,4 @@ lib/**/*.lastcodeanalysissucceeded
 node_modules/
 package-lock.json
 
-/Output
+/[Oo]utput
