@@ -12,7 +12,8 @@
     "AllowedOrigins": [
       "https://localhost:4200",
       "https://bizfx.xc92.com",
-      "https://sxa.storefront.com" 
+      "https://sxa.storefront.com",
+      "https://vwr.plumber-sc.com"
     ],
     "AntiForgeryEnabled": false,
     "CommerceServicesHostPostfix": "xc92.com",
@@ -58,10 +59,10 @@
   "Certificates": {
     "Certificates": [
       {
-        "Thumbprint": "FF35D1BCFC347F7364E2BA38D134590699BDA0CB",
+        "Thumbprint": "1D6F8BC71613D86F2E4FBC2F993B01F84DC5C3F7",
         "DefaultRoles": [
           "sitecore\\QA",
-          "sitecore\\Commerce Business User" 
+          "sitecore\\Commerce Business User"
         ]
       }
     ],
