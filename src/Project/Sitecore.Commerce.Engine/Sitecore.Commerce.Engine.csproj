@@ -43,9 +43,9 @@
     <PackageReference Include="Sitecore.Commerce.Plugin.Workflow" Version="4.0.*" />
     <PackageReference Include="Sitecore.Commerce.Plugin.Journaling" Version="4.0.*" />
     
-    <PackageReference Include="Microsoft.IdentityModel.Logging" Version="5.2.0" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.2.0" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Logging" Version="5.7.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.7.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.7.0" />
   </ItemGroup>
 
   <ItemGroup>
